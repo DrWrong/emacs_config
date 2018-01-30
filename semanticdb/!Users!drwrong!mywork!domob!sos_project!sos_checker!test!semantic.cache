@@ -1,0 +1,48 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables
+  (list
+    (semanticdb-table "clenttest.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [47 56])
+            ("unittest" include nil nil [57 72])
+            ("ConfigParser" include nil nil [73 92])
+            ("sys" include nil nil [93 103])
+            ("thrift.transport" include nil nil [104 140])
+            ("thrift.transport" include nil nil [141 180])
+            ("thrift.protocol" include nil nil [181 224])
+            ("BASE_DIR" variable nil nil [225 288])
+            ("print" code nil nil [329 343])
+            ("sys" code nil nil [358 392])
+            ("sys" code nil nil [393 428])
+            ("os" code nil nil [498 564])
+            ("domob_thrift.sos.checkserver" include nil nil [634 686])
+            ("domob_thrift.sos.checkserver_types.ttypes" include nil nil [687 810])
+            ("sos_check_server.checkserver" include nil nil [811 865])
+            ("sos_check_server.db" include nil nil [866 933])
+            ("TestCheckServer" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1062 1066]))                          )
+                        (reparse-symbol indented_block_body) [1052 1815])
+                    ("testMakeRequest" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1955 1959]))                          )
+                        (reparse-symbol indented_block_body) [1935 2440]))                  
+                :type "class")
+                nil [1005 2440])
+            ("if" code nil nil [3418 3465]))          
+      :file "clenttest.py"
+      :pointmax 3465
+      :fsize 3488
+      :lastmodtime '(21979 13474 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_checker!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

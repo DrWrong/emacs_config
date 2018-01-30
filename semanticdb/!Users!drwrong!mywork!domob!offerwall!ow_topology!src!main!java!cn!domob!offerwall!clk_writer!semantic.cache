@@ -1,0 +1,112 @@
+;; Object clk_writer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "clk_writer/"
+  :tables
+  (list
+    (semanticdb-table "ClkWriterBolt.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.clk_writer" package nil nil [1 39])
+            ("org.apache.storm.topology.base.BaseRichBolt" include nil nil [41 92])
+            ("org.apache.storm.tuple.Fields" include nil nil [93 130])
+            ("org.apache.storm.spout.MultiScheme" include nil nil [131 173])
+            ("java.nio.ByteBuffer" include nil nil [174 201])
+            ("org.apache.storm.topology.OutputFieldsDeclarer" include nil nil [202 256])
+            ("org.apache.storm.task.OutputCollector" include nil nil [257 302])
+            ("org.apache.storm.task.TopologyContext" include nil nil [303 348])
+            ("cn.domob.offerwall.thrift.settle.ClkEvent" include nil nil [349 398])
+            ("java.util.Map" include nil nil [399 420])
+            ("org.apache.storm.tuple.Tuple" include nil nil [421 457])
+            ("ClkWriterBolt" type
+               (:typemodifiers ("public")
+                :superclasses "BaseRichBolt"
+                :members 
+                  ( ("execute" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("tuple" variable
+                               (:typemodifiers ("final")
+                                :type "Tuple")
+                                (reparse-symbol formal_parameters) [880 897]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [854 962])
+                    ("prepare" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("map" variable
+                               (:typemodifiers ("final")
+                                :type "Map")
+                                (reparse-symbol formal_parameters) [1245 1258])
+                            ("topologyContext" variable
+                               (:typemodifiers ("final")
+                                :type "TopologyContext")
+                                (reparse-symbol formal_parameters) [1260 1297])
+                            ("outputCollector" variable
+                               (:typemodifiers ("final")
+                                :type "OutputCollector")
+                                (reparse-symbol formal_parameters) [1299 1336]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1219 1346])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("outputFieldsDeclarer" variable
+                               (:typemodifiers ("final")
+                                :type "OutputFieldsDeclarer")
+                                (reparse-symbol formal_parameters) [1616 1663]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1578 1673]))                  
+                :type "class")
+                nil [625 1678]))          
+      :file "ClkWriterBolt.java"
+      :pointmax 1679
+      :fsize 1678
+      :lastmodtime '(22768 23041 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ClkWriter.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.clk_act_checker" package nil nil [1 44])
+            ("ClkWriter" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("redisPrefix" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [238 265])
+                    ("keyTimeOut" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [270 293])
+                    ("jedisPool" variable
+                       (:typemodifiers ("private")
+                        :type "DomobJedisPool")
+                        (reparse-symbol class_member_declaration) [298 331])
+                    ("ClkWriter" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("conf" variable (:type "Map") (reparse-symbol formal_parameters) [430 438]))                          )
+                        (reparse-symbol class_member_declaration) [413 448])
+                    ("getDeviceIdentify" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("event" variable (:type "ClkEvent") (reparse-symbol formal_parameters) [529 543]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [496 631])
+                    ("recordEvent" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("event" variable (:type "ClkEvent") (reparse-symbol formal_parameters) [691 705]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [667 715]))                  
+                :type "class")
+                nil [208 718]))          
+      :file "ClkWriter.java"
+      :pointmax 719
+      :fsize 718
+      :lastmodtime '(22768 23705 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!offerwall!ow_topology!src!main!java!cn!domob!offerwall!clk_writer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

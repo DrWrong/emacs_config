@@ -1,0 +1,29 @@
+;; Object conf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "conf/"
+  :tables
+  (list
+    (semanticdb-table "settings.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [25 34])
+            ("BASE_DIR" variable nil nil [36 89])
+            ("SECRET_KEY" variable nil nil [92 157])
+            ("DEBUG" variable nil nil [225 237])
+            ("LANGUAGE_CODE" variable nil nil [240 263])
+            ("TIME_ZONE" variable nil nil [265 292])
+            ("USE_I18N" variable nil nil [294 309])
+            ("USE_L10N" variable nil nil [311 326])
+            ("USE_TZ" variable nil nil [328 341])
+            ("LOGGING" variable nil nil [344 1612])
+            ("DATABASES" variable nil nil [1693 2173])
+            ("USERADSERVER_THRIFT_CONFIG" variable nil nil [2175 2292])
+            ("THRIFT_TRANSACTIONSERVER" variable nil nil [2294 2388]))          
+      :file "settings.py"
+      :pointmax 2389
+      :fsize 2406
+      :lastmodtime '(22159 27370 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_h5ad_processor!conf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

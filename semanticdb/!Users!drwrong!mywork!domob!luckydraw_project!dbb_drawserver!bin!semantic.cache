@@ -1,0 +1,53 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "crawler.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("argparse" include nil nil [48 63])
+            ("os" include nil nil [64 73])
+            ("sys" include nil nil [74 84])
+            ("BASE_DIR" variable nil nil [86 149])
+            ("sys" code nil nil [150 196])
+            ("if" code nil nil [198 826]))          
+      :file "crawler.py"
+      :pointmax 826
+      :fsize 826
+      :lastmodtime '(22766 61719 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "startcelery.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("argparse" include nil nil [48 63])
+            ("os" include nil nil [64 73])
+            ("sys" include nil nil [74 84])
+            ("domob_pyutils.dm303" include nil nil [86 127])
+            ("BASE_DIR" variable nil nil [130 193])
+            ("sys" code nil nil [195 241])
+            ("if" code nil nil [243 1128]))          
+      :file "startcelery.py"
+      :pointmax 1128
+      :fsize 1127
+      :lastmodtime '(22321 31449 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "crawl360.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [48 57])
+            ("sys" include nil nil [58 68])
+            ("datetime" include nil nil [69 84])
+            ("argparse" include nil nil [85 100])
+            ("django" include nil nil [101 114])
+            ("BASE_DIR" variable nil nil [115 178])
+            ("sys" code nil nil [179 225])
+            ("if" code nil nil [228 978]))          
+      :file "crawl360.py"
+      :pointmax 1020
+      :fsize 1019
+      :lastmodtime '(22766 61796 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!luckydraw_project!dbb_drawserver!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,44 @@
+;; Object conf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "conf/"
+  :tables
+  (list
+    (semanticdb-table "django_settings.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("DEBUG" variable nil nil [61 74])
+            ("TEMPLATE_DEBUG" variable nil nil [75 97])
+            ("ADMINS" variable nil nil [99 158])
+            ("MANAGERS" variable nil nil [160 177])
+            ("DATABASES" variable nil nil [179 962])
+            ("ALLOWED_HOSTS" variable nil nil [964 982])
+            ("TIME_ZONE" variable nil nil [983 1010])
+            ("LANGUAGE_CODE" variable nil nil [1011 1034])
+            ("SITE_ID" variable nil nil [1035 1046])
+            ("USE_I18N" variable nil nil [1047 1062])
+            ("USE_L10N" variable nil nil [1063 1078])
+            ("SEND_DB" variable nil nil [1079 1094])
+            ("SEND_AD" variable nil nil [1095 1377])
+            ("USE_TZ" variable nil nil [1452 1466])
+            ("MEDIA_ROOT" variable nil nil [1588 1603])
+            ("MEDIA_URL" variable nil nil [1764 1778])
+            ("STATIC_ROOT" variable nil nil [2026 2042])
+            ("STATIC_URL" variable nil nil [2145 2168])
+            ("STATICFILES_DIRS" variable nil nil [2209 2420])
+            ("STATICFILES_FINDERS" variable nil nil [2506 2721])
+            ("SECRET_KEY" variable nil nil [2776 2841])
+            ("TEMPLATE_LOADERS" variable nil nil [2919 3093])
+            ("MIDDLEWARE_CLASSES" variable nil nil [3095 3530])
+            ("ROOT_URLCONF" variable nil nil [3532 3556])
+            ("WSGI_APPLICATION" variable nil nil [3631 3671])
+            ("TEMPLATE_DIRS" variable nil nil [3673 3894])
+            ("INSTALLED_APPS" variable nil nil [3896 4290])
+            ("LOGGING" variable nil nil [4594 5146]))          
+      :file "django_settings.py"
+      :pointmax 5147
+      :fsize 5146
+      :lastmodtime '(22711 64395 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_kafaka_db!conf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

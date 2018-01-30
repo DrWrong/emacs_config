@@ -1,0 +1,43 @@
+;; Object conf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "conf/"
+  :tables
+  (list
+    (semanticdb-table "django_settings.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Django settings for aow_report project.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/1.6/topics/settings/
+
+For the full list of settings and their values, see
+https://docs.djangoproject.com/en/1.6/ref/settings/
+\"\"\"" code nil nil [1 248])
+            ("os" include nil nil [322 331])
+            ("BASE_DIR" variable nil nil [332 385])
+            ("SECRET_KEY" variable nil nil [591 656])
+            ("DEBUG" variable nil nil [739 752])
+            ("TEMPLATE_DEBUG" variable nil nil [754 775])
+            ("ALLOWED_HOSTS" variable nil nil [777 795])
+            ("EVENTSERVER" variable nil nil [797 879])
+            ("INSTALLED_APPS" variable nil nil [908 1114])
+            ("MIDDLEWARE_CLASSES" variable nil nil [1116 1483])
+            ("ROOT_URLCONF" variable nil nil [1485 1517])
+            ("WSGI_APPLICATION" variable nil nil [1519 1567])
+            ("DATABASES" variable nil nil [1646 3270])
+            ("LANGUAGE_CODE" variable nil nil [3347 3370])
+            ("TIME_ZONE" variable nil nil [3371 3398])
+            ("USE_I18N" variable nil nil [3399 3414])
+            ("USE_L10N" variable nil nil [3415 3430])
+            ("USE_TZ" variable nil nil [3431 3445])
+            ("STATIC_URL" variable nil nil [3548 3571]))          
+      :file "django_settings.py"
+      :pointmax 4514
+      :fsize 4513
+      :lastmodtime '(22783 6224 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_point_server!conf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1120 @@
+;; Object logging/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "logging/"
+  :tables
+  (list
+    (semanticdb-table "handlers.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Additional handlers for the logging package for Python. The core package is
+based on PEP 282 and comments thereto in comp.lang.python.
+
+Copyright (C) 2001-2013 Vinay Sajip. All Rights Reserved.
+
+To use, simply 'import logging.handlers' and log away!
+\"\"\"" code nil nil [988 1245])
+            ("re" include nil nil [1247 1299])
+            ("time" include nil nil [1247 1299])
+            ("struct" include nil nil [1247 1299])
+            ("pickle" include nil nil [1247 1299])
+            ("os" include nil nil [1247 1299])
+            ("socket" include nil nil [1247 1299])
+            ("logging" include nil nil [1247 1299])
+            ("stat" include nil nil [1300 1341])
+            ("queue" include nil nil [1342 1354])
+            ("try" code nil nil [1355 1440])
+            ("DEFAULT_TCP_LOGGING_PORT" variable nil nil [1466 1500])
+            ("DEFAULT_UDP_LOGGING_PORT" variable nil nil [1501 1535])
+            ("DEFAULT_HTTP_LOGGING_PORT" variable nil nil [1536 1570])
+            ("DEFAULT_SOAP_LOGGING_PORT" variable nil nil [1571 1605])
+            ("SYSLOG_UDP_PORT" variable nil nil [1606 1639])
+            ("SYSLOG_TCP_PORT" variable nil nil [1640 1673])
+            ("_MIDNIGHT" code nil nil [1675 1699])
+            ("BaseRotatingHandler" type
+               (:documentation "
+    Base class for handlers that rotate log files at a certain point.
+    Not meant to be instantiated directly.  Instead, use RotatingFileHandler
+    or TimedRotatingFileHandler.
+    "
+                :superclasses ("logging.FileHandler")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        Use the specified filename for streamed logging
+        \"\"\"" code nil (reparse-symbol indented_block_body) [2051 2122])
+                            ("logging" code nil (reparse-symbol indented_block_body) [2131 2198])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2207 2223])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2232 2256])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2265 2282])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2291 2310]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1992 1996])
+                            ("filename" variable nil (reparse-symbol function_parameters) [1998 2006])
+                            ("mode" variable nil (reparse-symbol function_parameters) [2008 2012])
+                            ("encoding" variable nil (reparse-symbol function_parameters) [2014 2022])
+                            ("delay" variable nil (reparse-symbol function_parameters) [2029 2034]))                          
+                        :documentation "
+        Use the specified filename for streamed logging
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1979 2311])
+                    ("emit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2325 2329])
+                            ("record" variable nil (reparse-symbol function_parameters) [2331 2337]))                          
+                        :documentation "
+        Emit a record.
+
+        Output the record to the file, catering for rollover as described
+        in doRollover().
+        ")
+                        (reparse-symbol indented_block_body) [2316 2692])
+                    ("rotation_filename" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2719 2723])
+                            ("default_name" variable nil (reparse-symbol function_parameters) [2725 2737]))                          
+                        :documentation "
+        Modify the filename of a log file when rotating.
+
+        This is provided so that a custom filename can be provided.
+
+        The default implementation calls the 'namer' attribute of the
+        handler, if it's callable, passing the default name to
+        it. If the attribute isn't callable (the default is None), the name
+        is returned unchanged.
+
+        :param default_name: The default name for the log file.
+        ")
+                        (reparse-symbol indented_block_body) [2697 3349])
+                    ("rotate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3365 3369])
+                            ("source" variable nil (reparse-symbol function_parameters) [3371 3377])
+                            ("dest" variable nil (reparse-symbol function_parameters) [3379 3383]))                          
+                        :documentation "
+        When rotating, rotate the current log.
+
+        The default implementation calls the 'rotator' attribute of the
+        handler, if it's callable, passing the source and dest arguments to
+        it. If the attribute isn't callable (the default is None), the source
+        is simply renamed to the destination.
+
+        :param source: The source filename. This is normally the base
+                       filename, e.g. 'test.log'
+        :param dest:   The destination filename. This is normally
+                       what the source is rotated to, e.g. 'test.log.1'.
+        ")
+                        (reparse-symbol indented_block_body) [3354 4238]))                  
+                :type "class")
+                nil [1731 4238])
+            ("RotatingFileHandler" type
+               (:documentation "
+    Handler for logging to a set of files, which switches from one file
+    to the next when the current file reaches a certain size.
+    "
+                :superclasses ("BaseRotatingHandler")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        Open the specified file and use it as the stream for logging.
+
+        By default, the file grows indefinitely. You can specify particular
+        values of maxBytes and backupCount to allow the file to rollover at
+        a predetermined size.
+
+        Rollover occurs whenever the current log file is nearly maxBytes in
+        length. If backupCount is >= 1, the system will successively create
+        new files with the same pathname as the base file, but with extensions
+        \".1\", \".2\" etc. appended to it. For example, with a backupCount of 5
+        and a base file name of \"app.log\", you would get \"app.log\",
+        \"app.log.1\", \"app.log.2\", ... through to \"app.log.5\". The file being
+        written to is always \"app.log\" - when it gets filled up, it is closed
+        and renamed to \"app.log.1\", and if files \"app.log.1\", \"app.log.2\" etc.
+        exist, then they are renamed to \"app.log.2\", \"app.log.3\" etc.
+        respectively.
+
+        If maxBytes is zero, rollover never occurs.
+        \"\"\"" code nil (reparse-symbol indented_block_body) [4544 5568])
+                            ("if" code nil (reparse-symbol indented_block_body) [5918 5958])
+                            ("BaseRotatingHandler" code nil (reparse-symbol indented_block_body) [5966 6033])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6042 6066])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6075 6105]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4454 4458])
+                            ("filename" variable nil (reparse-symbol function_parameters) [4460 4468])
+                            ("mode" variable nil (reparse-symbol function_parameters) [4470 4474])
+                            ("maxBytes" variable nil (reparse-symbol function_parameters) [4480 4488])
+                            ("backupCount" variable nil (reparse-symbol function_parameters) [4492 4503])
+                            ("encoding" variable nil (reparse-symbol function_parameters) [4507 4515])
+                            ("delay" variable nil (reparse-symbol function_parameters) [4522 4527]))                          
+                        :documentation "
+        Open the specified file and use it as the stream for logging.
+
+        By default, the file grows indefinitely. You can specify particular
+        values of maxBytes and backupCount to allow the file to rollover at
+        a predetermined size.
+
+        Rollover occurs whenever the current log file is nearly maxBytes in
+        length. If backupCount is >= 1, the system will successively create
+        new files with the same pathname as the base file, but with extensions
+        \".1\", \".2\" etc. appended to it. For example, with a backupCount of 5
+        and a base file name of \"app.log\", you would get \"app.log\",
+        \"app.log.1\", \"app.log.2\", ... through to \"app.log.5\". The file being
+        written to is always \"app.log\" - when it gets filled up, it is closed
+        and renamed to \"app.log.1\", and if files \"app.log.1\", \"app.log.2\" etc.
+        exist, then they are renamed to \"app.log.2\", \"app.log.3\" etc.
+        respectively.
+
+        If maxBytes is zero, rollover never occurs.
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4441 6106])
+                    ("doRollover" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6126 6130]))                          
+                        :documentation "
+        Do a rollover, as described in __init__().
+        ")
+                        (reparse-symbol indented_block_body) [6111 7014])
+                    ("shouldRollover" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7038 7042])
+                            ("record" variable nil (reparse-symbol function_parameters) [7044 7050]))                          
+                        :documentation "
+        Determine if rollover should occur.
+
+        Basically, see if the supplied record would cause the file to exceed
+        the size limit we have.
+        ")
+                        (reparse-symbol indented_block_body) [7019 7640]))                  
+                :type "class")
+                nil [4239 7640])
+            ("TimedRotatingFileHandler" type
+               (:documentation "
+    Handler for logging to a file, rotating the log file at certain timed
+    intervals.
+
+    If backupCount is > 0, when rollover is done, no more than backupCount
+    files are kept - the oldest ones are deleted.
+    "
+                :superclasses ("BaseRotatingHandler")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("BaseRotatingHandler" code nil (reparse-symbol indented_block_body) [8056 8122])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8131 8155])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8164 8194])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8203 8217])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8226 8246])
+                            ("if" code nil (reparse-symbol indented_block_body) [8763 10172])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10181 10232])
+                            ("self" code nil (reparse-symbol indented_block_body) [10241 10281])
+                            ("if" code nil (reparse-symbol indented_block_body) [10320 10440])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10448 10489]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7942 7946])
+                            ("filename" variable nil (reparse-symbol function_parameters) [7948 7956])
+                            ("when" variable nil (reparse-symbol function_parameters) [7958 7962])
+                            ("interval" variable nil (reparse-symbol function_parameters) [7968 7976])
+                            ("backupCount" variable nil (reparse-symbol function_parameters) [7980 7991])
+                            ("encoding" variable nil (reparse-symbol function_parameters) [7995 8003])
+                            ("delay" variable nil (reparse-symbol function_parameters) [8010 8015])
+                            ("utc" variable nil (reparse-symbol function_parameters) [8023 8026])
+                            ("atTime" variable nil (reparse-symbol function_parameters) [8034 8040]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [7929 10490])
+                    ("computeRollover" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10515 10519])
+                            ("currentTime" variable nil (reparse-symbol function_parameters) [10521 10532]))                          
+                        :documentation "
+        Work out the rollover time based on the specified time.
+        ")
+                        (reparse-symbol indented_block_body) [10495 14562])
+                    ("shouldRollover" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14586 14590])
+                            ("record" variable nil (reparse-symbol function_parameters) [14592 14598]))                          
+                        :documentation "
+        Determine if rollover should occur.
+
+        record is not used, as we are just comparing times, but it is needed so
+        the method signatures are the same
+        ")
+                        (reparse-symbol indented_block_body) [14567 14893])
+                    ("getFilesToDelete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14919 14923]))                          
+                        :documentation "
+        Determine the files to delete when rolling over.
+
+        More specific than the earlier method, which just used glob.glob().
+        ")
+                        (reparse-symbol indented_block_body) [14898 15683])
+                    ("doRollover" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15703 15707]))                          
+                        :documentation "
+        do a rollover; in this case, a date/time stamp is appended to the filename
+        when the rollover happens.  However, you want the file to be named for the
+        start of the interval, not the current time.  If there is a backup count,
+        then we have to get a list of matching filenames, sort them and remove
+        the one with the oldest suffix.
+        ")
+                        (reparse-symbol indented_block_body) [15688 17934]))                  
+                :type "class")
+                nil [7641 17934])
+            ("WatchedFileHandler" type
+               (:documentation "
+    A handler for logging to a file, which watches the file
+    to see if it has changed while in use. This can happen because of
+    usage of programs such as newsyslog and logrotate which perform
+    log file rotation. This handler, intended for use under Unix,
+    watches the file to see if it has changed since the last emit.
+    (A file has changed if its device or inode have changed.)
+    If it has changed, the old file stream is closed, and the file
+    opened to get a new stream.
+
+    This handler is not appropriate for use under Windows, because
+    under Windows open files cannot be moved or renamed - logging
+    opens the files with exclusive locks - and so there is no need
+    for such a handler. Furthermore, ST_INO is not supported under
+    Windows; stat always returns zero for this value.
+
+    This handler is based on a suggestion and patch by Chad J.
+    Schroeder.
+    "
+                :superclasses ("logging.FileHandler")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("logging" code nil (reparse-symbol indented_block_body) [18971 19038])
+                            ("self, self" code nil (reparse-symbol indented_block_body) [19047 19074])
+                            ("self" code nil (reparse-symbol indented_block_body) [19083 19101]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18908 18912])
+                            ("filename" variable nil (reparse-symbol function_parameters) [18914 18922])
+                            ("mode" variable nil (reparse-symbol function_parameters) [18924 18928])
+                            ("encoding" variable nil (reparse-symbol function_parameters) [18934 18942])
+                            ("delay" variable nil (reparse-symbol function_parameters) [18949 18954]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [18895 19102])
+                    ("_statstream" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19123 19127]))                          )
+                        (reparse-symbol indented_block_body) [19107 19264])
+                    ("emit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19278 19282])
+                            ("record" variable nil (reparse-symbol function_parameters) [19284 19290]))                          
+                        :documentation "
+        Emit a record.
+
+        First check if the underlying file has changed, and if it
+        has, close the old stream and reopen the file to get the
+        current stream.
+        ")
+                        (reparse-symbol indented_block_body) [19269 20514]))                  
+                :type "class")
+                nil [17935 20514])
+            ("SocketHandler" type
+               (:documentation "
+    A handler class which writes logging records, in pickle format, to
+    a streaming socket. The socket is kept open across logging calls.
+    If the peer resets it, an attempt is made to reconnect on the next call.
+    The pickle which is sent is that of the LogRecord's attribute dictionary
+    (__dict__), so that the receiver does not need to have the logging module
+    installed in order to process the logging event.
+
+    To unpickle the record at the receiving end into a LogRecord, use the
+    makeLogRecord function.
+    "
+                :superclasses ("logging.Handler")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        Initializes the handler with a specific host address and port.
+
+        When the attribute *closeOnError* is set to True - if a socket error
+        occurs, the socket is silently closed and then reopened on the next
+        logging call.
+        \"\"\"" code nil (reparse-symbol indented_block_body) [21144 21406])
+                            ("logging" code nil (reparse-symbol indented_block_body) [21415 21445])
+                            ("self" variable nil (reparse-symbol indented_block_body) [21454 21470])
+                            ("self" variable nil (reparse-symbol indented_block_body) [21479 21495])
+                            ("if" code nil (reparse-symbol indented_block_body) [21504 21607])
+                            ("self" variable nil (reparse-symbol indented_block_body) [21615 21631])
+                            ("self" variable nil (reparse-symbol indented_block_body) [21640 21665])
+                            ("self" variable nil (reparse-symbol indented_block_body) [21674 21695])
+                            ("self" variable nil (reparse-symbol indented_block_body) [21766 21787])
+                            ("self" variable nil (reparse-symbol indented_block_body) [21796 21816])
+                            ("self" variable nil (reparse-symbol indented_block_body) [21825 21847]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21117 21121])
+                            ("host" variable nil (reparse-symbol function_parameters) [21123 21127])
+                            ("port" variable nil (reparse-symbol function_parameters) [21129 21133]))                          
+                        :documentation "
+        Initializes the handler with a specific host address and port.
+
+        When the attribute *closeOnError* is set to True - if a socket error
+        occurs, the socket is silently closed and then reopened on the next
+        logging call.
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [21104 21848])
+                    ("makeSocket" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21868 21872])
+                            ("timeout" variable nil (reparse-symbol function_parameters) [21874 21881]))                          
+                        :documentation "
+        A factory method which allows subclasses to define the precise
+        type of socket they want.
+        ")
+                        (reparse-symbol indented_block_body) [21853 22430])
+                    ("createSocket" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22452 22456]))                          
+                        :documentation "
+        Try to create a socket, using an exponential backoff with
+        a max retry time. Thanks to Robert Olson for the original patch
+        (SF #815911) which has been slightly refactored.
+        ")
+                        (reparse-symbol indented_block_body) [22435 23591])
+                    ("send" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23605 23609])
+                            ("s" variable nil (reparse-symbol function_parameters) [23611 23612]))                          
+                        :documentation "
+        Send a pickled string to the socket.
+
+        This function allows for partial sends which can happen when the
+        network is busy.
+        ")
+                        (reparse-symbol indented_block_body) [23596 24266])
+                    ("makePickle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24286 24290])
+                            ("record" variable nil (reparse-symbol function_parameters) [24292 24298]))                          
+                        :documentation "
+        Pickles the record in binary format with a length prefix, and
+        returns it ready for transmission across the socket.
+        ")
+                        (reparse-symbol indented_block_body) [24271 25028])
+                    ("handleError" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25049 25053])
+                            ("record" variable nil (reparse-symbol function_parameters) [25055 25061]))                          
+                        :documentation "
+        Handle an error during logging.
+
+        An error has occurred during logging. Most likely cause -
+        connection lost. Close the socket so that we can retry on the
+        next event.
+        ")
+                        (reparse-symbol indented_block_body) [25033 25491])
+                    ("emit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25505 25509])
+                            ("record" variable nil (reparse-symbol function_parameters) [25511 25517]))                          
+                        :documentation "
+        Emit a record.
+
+        Pickles the record and writes it to the socket in binary format.
+        If there is an error with the socket, silently drop the packet.
+        If there was a problem with the socket, re-establishes the
+        socket.
+        ")
+                        (reparse-symbol indented_block_body) [25496 25937])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25952 25956]))                          
+                        :documentation "
+        Closes the socket.
+        ")
+                        (reparse-symbol indented_block_body) [25942 26223]))                  
+                :type "class")
+                nil [20516 26223])
+            ("DatagramHandler" type
+               (:documentation "
+    A handler class which writes logging records, in pickle format, to
+    a datagram socket.  The pickle which is sent is that of the LogRecord's
+    attribute dictionary (__dict__), so that the receiver does not need to
+    have the logging module installed in order to process the logging event.
+
+    To unpickle the record at the receiving end into a LogRecord, use the
+    makeLogRecord function.
+
+    "
+                :superclasses ("SocketHandler")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        Initializes the handler with a specific host address and port.
+        \"\"\"" code nil (reparse-symbol indented_block_body) [26725 26811])
+                            ("SocketHandler" code nil (reparse-symbol indented_block_body) [26820 26860])
+                            ("self" variable nil (reparse-symbol indented_block_body) [26869 26894]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26698 26702])
+                            ("host" variable nil (reparse-symbol function_parameters) [26704 26708])
+                            ("port" variable nil (reparse-symbol function_parameters) [26710 26714]))                          
+                        :documentation "
+        Initializes the handler with a specific host address and port.
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [26685 26895])
+                    ("makeSocket" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26915 26919]))                          
+                        :documentation "
+        The factory method of SocketHandler is here overridden to create
+        a UDP socket (SOCK_DGRAM).
+        ")
+                        (reparse-symbol indented_block_body) [26900 27240])
+                    ("send" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27254 27258])
+                            ("s" variable nil (reparse-symbol function_parameters) [27260 27261]))                          
+                        :documentation "
+        Send a pickled string to a socket.
+
+        This function no longer allows for partial sends which can happen
+        when the network is busy - UDP does not guarantee delivery and
+        can deliver packets out of sequence.
+        ")
+                        (reparse-symbol indented_block_body) [27245 27626]))                  
+                :type "class")
+                nil [26224 27626])
+            ("SysLogHandler" type
+               (:documentation "
+    A handler class which sends formatted logging records to a syslog
+    server. Based on Sam Rushing's syslog module:
+    http://www.nightmare.com/squirl/python-ext/misc/syslog.py
+    Contributed by Nicolas Untz (after which minor refactoring changes
+    have been made).
+    "
+                :superclasses ("logging.Handler")
+                :members 
+                  ( ("LOG_EMERG" variable nil (reparse-symbol indented_block_body) [28453 28470])
+                    ("LOG_ALERT" variable nil (reparse-symbol indented_block_body) [28503 28520])
+                    ("LOG_CRIT" variable nil (reparse-symbol indented_block_body) [28567 28584])
+                    ("LOG_ERR" variable nil (reparse-symbol indented_block_body) [28618 28635])
+                    ("LOG_WARNING" variable nil (reparse-symbol indented_block_body) [28666 28683])
+                    ("LOG_NOTICE" variable nil (reparse-symbol indented_block_body) [28716 28733])
+                    ("LOG_INFO" variable nil (reparse-symbol indented_block_body) [28780 28797])
+                    ("LOG_DEBUG" variable nil (reparse-symbol indented_block_body) [28825 28842])
+                    ("LOG_KERN" variable nil (reparse-symbol indented_block_body) [28900 28917])
+                    ("LOG_USER" variable nil (reparse-symbol indented_block_body) [28947 28964])
+                    ("LOG_MAIL" variable nil (reparse-symbol indented_block_body) [29005 29022])
+                    ("LOG_DAEMON" variable nil (reparse-symbol indented_block_body) [29048 29065])
+                    ("LOG_AUTH" variable nil (reparse-symbol indented_block_body) [29094 29111])
+                    ("LOG_SYSLOG" variable nil (reparse-symbol indented_block_body) [29157 29174])
+                    ("LOG_LPR" variable nil (reparse-symbol indented_block_body) [29229 29246])
+                    ("LOG_NEWS" variable nil (reparse-symbol indented_block_body) [29283 29300])
+                    ("LOG_UUCP" variable nil (reparse-symbol indented_block_body) [29337 29354])
+                    ("LOG_CRON" variable nil (reparse-symbol indented_block_body) [29383 29400])
+                    ("LOG_AUTHPRIV" variable nil (reparse-symbol indented_block_body) [29427 29445])
+                    ("LOG_FTP" variable nil (reparse-symbol indented_block_body) [29500 29518])
+                    ("LOG_LOCAL0" variable nil (reparse-symbol indented_block_body) [29597 29615])
+                    ("LOG_LOCAL1" variable nil (reparse-symbol indented_block_body) [29651 29669])
+                    ("LOG_LOCAL2" variable nil (reparse-symbol indented_block_body) [29705 29723])
+                    ("LOG_LOCAL3" variable nil (reparse-symbol indented_block_body) [29759 29777])
+                    ("LOG_LOCAL4" variable nil (reparse-symbol indented_block_body) [29813 29831])
+                    ("LOG_LOCAL5" variable nil (reparse-symbol indented_block_body) [29867 29885])
+                    ("LOG_LOCAL6" variable nil (reparse-symbol indented_block_body) [29921 29939])
+                    ("LOG_LOCAL7" variable nil (reparse-symbol indented_block_body) [29975 29993])
+                    ("priority_names" variable nil (reparse-symbol indented_block_body) [30030 30485])
+                    ("facility_names" variable nil (reparse-symbol indented_block_body) [30491 31191])
+                    ("priority_map" variable nil (reparse-symbol indented_block_body) [31445 31609])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        Initialize a handler.
+
+        If address is specified as a string, a UNIX socket is used. To log to a
+        local syslogd, \"SysLogHandler(address=\"/dev/log\")\" can be used.
+        If facility is not specified, LOG_USER is used. If socktype is
+        specified as socket.SOCK_DGRAM or socket.SOCK_STREAM, that specific
+        socket type will be used. For Unix sockets, you can also specify a
+        socktype of None, in which case socket.SOCK_DGRAM will be used, falling
+        back to socket.SOCK_STREAM.
+        \"\"\"" code nil (reparse-symbol indented_block_body) [31734 32270])
+                            ("logging" code nil (reparse-symbol indented_block_body) [32279 32309])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32319 32341])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32350 32374])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32383 32407])
+                            ("if" code nil (reparse-symbol indented_block_body) [32417 32850])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32858 32879]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31628 31632])
+                            ("address" variable nil (reparse-symbol function_parameters) [31634 31641])
+                            ("facility" variable nil (reparse-symbol function_parameters) [31691 31699])
+                            ("socktype" variable nil (reparse-symbol function_parameters) [31710 31718]))                          
+                        :documentation "
+        Initialize a handler.
+
+        If address is specified as a string, a UNIX socket is used. To log to a
+        local syslogd, \"SysLogHandler(address=\"/dev/log\")\" can be used.
+        If facility is not specified, LOG_USER is used. If socktype is
+        specified as socket.SOCK_DGRAM or socket.SOCK_STREAM, that specific
+        socket type will be used. For Unix sockets, you can also specify a
+        socktype of None, in which case socket.SOCK_DGRAM will be used, falling
+        back to socket.SOCK_STREAM.
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [31615 32880])
+                    ("_connect_unixsocket" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32909 32913])
+                            ("address" variable nil (reparse-symbol function_parameters) [32915 32922]))                          )
+                        (reparse-symbol indented_block_body) [32885 33820])
+                    ("encodePriority" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33844 33848])
+                            ("facility" variable nil (reparse-symbol function_parameters) [33850 33858])
+                            ("priority" variable nil (reparse-symbol function_parameters) [33860 33868]))                          
+                        :documentation "
+        Encode the facility and priority. You can pass in strings or
+        integers - if strings are passed, the facility_names and
+        priority_names mapping dictionaries are used to convert them to
+        integers.
+        ")
+                        (reparse-symbol indented_block_body) [33825 34343])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34359 34363]))                          
+                        :documentation "
+        Closes the socket.
+        ")
+                        (reparse-symbol indented_block_body) [34348 34569])
+                    ("mapPriority" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34590 34594])
+                            ("levelName" variable nil (reparse-symbol function_parameters) [34596 34605]))                          
+                        :documentation "
+        Map a logging level name to a key in the priority_names map.
+        This is useful in two scenarios: when custom levels are being
+        used, and in the case where you can't do a straightforward
+        mapping by lowercasing the logging level name because of locale-
+        specific issues (see SF #1524081).
+        ")
+                        (reparse-symbol indented_block_body) [34574 35013])
+                    ("ident" variable nil (reparse-symbol indented_block_body) [35018 35028])
+                    ("append_nul" variable nil (reparse-symbol indented_block_body) [35070 35087])
+                    ("emit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35154 35158])
+                            ("record" variable nil (reparse-symbol function_parameters) [35160 35166]))                          
+                        :documentation "
+        Emit a record.
+
+        The record is formatted, and then sent to the syslog server. If
+        exception information is present, it is NOT sent to the server.
+        ")
+                        (reparse-symbol indented_block_body) [35145 36480]))                  
+                :type "class")
+                nil [27627 36480])
+            ("SMTPHandler" type
+               (:documentation "
+    A handler class which sends an SMTP email for each logging event.
+    "
+                :superclasses ("logging.Handler")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        Initialize the handler.
+
+        Initialize the instance with the from and to addresses and subject
+        line of the email. To specify a non-standard SMTP port, use the
+        (host, port) tuple format for the mailhost argument. To specify
+        authentication credentials, supply a (username, password) tuple
+        for the credentials argument. To specify the use of a secure
+        protocol (TLS), pass in a tuple for the secure argument. This will
+        only be used when authentication credentials are supplied. The tuple
+        will be either an empty tuple, or a single-value tuple with the name
+        of a keyfile, or a 2-value tuple with the names of the keyfile and
+        certificate file. (This tuple is passed to the `starttls` method).
+        A timeout in seconds can be specified for the SMTP connection (the
+        default is one second).
+        \"\"\"" code nil (reparse-symbol indented_block_body) [36734 37628])
+                            ("logging" code nil (reparse-symbol indented_block_body) [37637 37667])
+                            ("if" code nil (reparse-symbol indented_block_body) [37676 37840])
+                            ("if" code nil (reparse-symbol indented_block_body) [37848 37993])
+                            ("self" variable nil (reparse-symbol indented_block_body) [38001 38025])
+                            ("if" code nil (reparse-symbol indented_block_body) [38034 38095])
+                            ("self" variable nil (reparse-symbol indented_block_body) [38103 38125])
+                            ("self" variable nil (reparse-symbol indented_block_body) [38134 38156])
+                            ("self" variable nil (reparse-symbol indented_block_body) [38165 38185])
+                            ("self" variable nil (reparse-symbol indented_block_body) [38194 38216]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36620 36624])
+                            ("mailhost" variable nil (reparse-symbol function_parameters) [36626 36634])
+                            ("fromaddr" variable nil (reparse-symbol function_parameters) [36636 36644])
+                            ("toaddrs" variable nil (reparse-symbol function_parameters) [36646 36653])
+                            ("subject" variable nil (reparse-symbol function_parameters) [36655 36662])
+                            ("credentials" variable nil (reparse-symbol function_parameters) [36681 36692])
+                            ("secure" variable nil (reparse-symbol function_parameters) [36699 36705])
+                            ("timeout" variable nil (reparse-symbol function_parameters) [36712 36719]))                          
+                        :documentation "
+        Initialize the handler.
+
+        Initialize the instance with the from and to addresses and subject
+        line of the email. To specify a non-standard SMTP port, use the
+        (host, port) tuple format for the mailhost argument. To specify
+        authentication credentials, supply a (username, password) tuple
+        for the credentials argument. To specify the use of a secure
+        protocol (TLS), pass in a tuple for the secure argument. This will
+        only be used when authentication credentials are supplied. The tuple
+        will be either an empty tuple, or a single-value tuple with the name
+        of a keyfile, or a 2-value tuple with the names of the keyfile and
+        certificate file. (This tuple is passed to the `starttls` method).
+        A timeout in seconds can be specified for the SMTP connection (the
+        default is one second).
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [36607 38217])
+                    ("getSubject" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38237 38241])
+                            ("record" variable nil (reparse-symbol function_parameters) [38243 38249]))                          
+                        :documentation "
+        Determine the subject for the email.
+
+        If you want to specify a subject line which is record-dependent,
+        override this method.
+        ")
+                        (reparse-symbol indented_block_body) [38222 38453])
+                    ("emit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38467 38471])
+                            ("record" variable nil (reparse-symbol function_parameters) [38473 38479]))                          
+                        :documentation "
+        Emit a record.
+
+        Format the record and send it to the specified addressees.
+        ")
+                        (reparse-symbol indented_block_body) [38458 39561]))                  
+                :type "class")
+                nil [36481 39561])
+            ("NTEventLogHandler" type
+               (:documentation "
+    A handler class which sends events to the NT Event Log. Adds a
+    registry entry for the specified application name. If no dllname is
+    provided, win32service.pyd (which contains some basic message
+    placeholders) is used. Note that use of these placeholders will make
+    your event logs big, as the entire message source is held in the log.
+    If you want slimmer logs, you have to pass in the name of your own DLL
+    which contains the message definitions you want to use in the event log.
+    "
+                :superclasses ("logging.Handler")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("logging" code nil (reparse-symbol indented_block_body) [40202 40232])
+                            ("try" code nil (reparse-symbol indented_block_body) [40241 41366]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40141 40145])
+                            ("appname" variable nil (reparse-symbol function_parameters) [40147 40154])
+                            ("dllname" variable nil (reparse-symbol function_parameters) [40156 40163])
+                            ("logtype" variable nil (reparse-symbol function_parameters) [40170 40177]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [40128 41366])
+                    ("getMessageID" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41388 41392])
+                            ("record" variable nil (reparse-symbol function_parameters) [41394 41400]))                          
+                        :documentation "
+        Return the message ID for the event record. If you are using your
+        own messages, you could do this by having the msg passed to the
+        logger being an ID rather than a formatting string. Then, in here,
+        you could use a dictionary lookup to get the message ID. This
+        version returns 1, which is the base message ID in win32service.pyd.
+        ")
+                        (reparse-symbol indented_block_body) [41371 41812])
+                    ("getEventCategory" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41838 41842])
+                            ("record" variable nil (reparse-symbol function_parameters) [41844 41850]))                          
+                        :documentation "
+        Return the event category for the record.
+
+        Override this if you want to specify your own categories. This version
+        returns 0.
+        ")
+                        (reparse-symbol indented_block_body) [41817 42043])
+                    ("getEventType" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42065 42069])
+                            ("record" variable nil (reparse-symbol function_parameters) [42071 42077]))                          
+                        :documentation "
+        Return the event type for the record.
+
+        Override this if you want to specify your own types. This version does
+        a mapping using the handler's typemap attribute, which is set up in
+        __init__() to a dictionary which contains mappings for DEBUG, INFO,
+        WARNING, ERROR and CRITICAL. If you are using your own levels you will
+        either need to override this method or place a suitable dictionary in
+        the handler's typemap attribute.
+        ")
+                        (reparse-symbol indented_block_body) [42048 42642])
+                    ("emit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42656 42660])
+                            ("record" variable nil (reparse-symbol function_parameters) [42662 42668]))                          
+                        :documentation "
+        Emit a record.
+
+        Determine the message ID, event category and event type. Then
+        log the message in the NT event log.
+        ")
+                        (reparse-symbol indented_block_body) [42647 43210])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43225 43229]))                          
+                        :documentation "
+        Clean up this handler.
+
+        You can remove the application name from the registry as a
+        source of event log entries. However, if you do this, you will
+        not be able to see the events as you intended in the Event Log
+        Viewer - it needs to be able to access the registry to get the
+        DLL name.
+        ")
+                        (reparse-symbol indented_block_body) [43215 43695]))                  
+                :type "class")
+                nil [39562 43695])
+            ("HTTPHandler" type
+               (:documentation "
+    A class which sends records to a Web server, using either GET or
+    POST semantics.
+    "
+                :superclasses ("logging.Handler")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        Initialize the instance with the host, the request URL, and the method
+        (\"GET\" or \"POST\")
+        \"\"\"" code nil (reparse-symbol indented_block_body) [43957 44077])
+                            ("logging" code nil (reparse-symbol indented_block_body) [44086 44116])
+                            ("method" variable nil (reparse-symbol indented_block_body) [44125 44148])
+                            ("if" code nil (reparse-symbol indented_block_body) [44157 44250])
+                            ("if" code nil (reparse-symbol indented_block_body) [44258 44413])
+                            ("self" variable nil (reparse-symbol indented_block_body) [44421 44437])
+                            ("self" variable nil (reparse-symbol indented_block_body) [44446 44460])
+                            ("self" variable nil (reparse-symbol indented_block_body) [44469 44489])
+                            ("self" variable nil (reparse-symbol indented_block_body) [44498 44518])
+                            ("self" variable nil (reparse-symbol indented_block_body) [44527 44557])
+                            ("self" variable nil (reparse-symbol indented_block_body) [44566 44588]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43854 43858])
+                            ("host" variable nil (reparse-symbol function_parameters) [43860 43864])
+                            ("url" variable nil (reparse-symbol function_parameters) [43866 43869])
+                            ("method" variable nil (reparse-symbol function_parameters) [43871 43877])
+                            ("secure" variable nil (reparse-symbol function_parameters) [43885 43891])
+                            ("credentials" variable nil (reparse-symbol function_parameters) [43899 43910])
+                            ("context" variable nil (reparse-symbol function_parameters) [43934 43941]))                          
+                        :documentation "
+        Initialize the instance with the host, the request URL, and the method
+        (\"GET\" or \"POST\")
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [43841 44589])
+                    ("mapLogRecord" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44611 44615])
+                            ("record" variable nil (reparse-symbol function_parameters) [44617 44623]))                          
+                        :documentation "
+        Default implementation of mapping the log record into a dict
+        that is sent as the CGI data. Overwrite in your class.
+        Contributed by Franz Glasner.
+        ")
+                        (reparse-symbol indented_block_body) [44594 44851])
+                    ("emit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44865 44869])
+                            ("record" variable nil (reparse-symbol function_parameters) [44871 44877]))                          
+                        :documentation "
+        Emit a record.
+
+        Send the record to the Web server as a percent-encoded dictionary
+        ")
+                        (reparse-symbol indented_block_body) [44856 46543]))                  
+                :type "class")
+                nil [43696 46543])
+            ("BufferingHandler" type
+               (:documentation "
+  A handler class which buffers logging records in memory. Whenever each
+  record is added to the buffer, a check is made to see if the buffer should
+  be flushed. If it should, then flush() is expected to do what's needed.
+    "
+                :superclasses ("logging.Handler")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        Initialize the handler with the buffer size.
+        \"\"\"" code nil (reparse-symbol indented_block_body) [46867 46935])
+                            ("logging" code nil (reparse-symbol indented_block_body) [46944 46974])
+                            ("self" variable nil (reparse-symbol indented_block_body) [46983 47007])
+                            ("self" variable nil (reparse-symbol indented_block_body) [47016 47032]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [46842 46846])
+                            ("capacity" variable nil (reparse-symbol function_parameters) [46848 46856]))                          
+                        :documentation "
+        Initialize the handler with the buffer size.
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [46829 47033])
+                    ("shouldFlush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [47054 47058])
+                            ("record" variable nil (reparse-symbol function_parameters) [47060 47066]))                          
+                        :documentation "
+        Should the handler flush its buffer?
+
+        Returns true if the buffer is up to capacity. This method can be
+        overridden to implement custom flushing strategies.
+        ")
+                        (reparse-symbol indented_block_body) [47038 47323])
+                    ("emit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [47337 47341])
+                            ("record" variable nil (reparse-symbol function_parameters) [47343 47349]))                          
+                        :documentation "
+        Emit a record.
+
+        Append the record. If shouldFlush() tells us to, call flush() to process
+        the buffer.
+        ")
+                        (reparse-symbol indented_block_body) [47328 47598])
+                    ("flush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [47613 47617]))                          
+                        :documentation "
+        Override to implement custom flushing behaviour.
+
+        This version just zaps the buffer to empty.
+        ")
+                        (reparse-symbol indented_block_body) [47603 47863])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [47878 47882]))                          
+                        :documentation "
+        Close the handler.
+
+        This version just flushes and chains to the parent class' close().
+        ")
+                        (reparse-symbol indented_block_body) [47868 48069]))                  
+                :type "class")
+                nil [46544 48069])
+            ("MemoryHandler" type
+               (:documentation "
+    A handler class which buffers logging records in memory, periodically
+    flushing them to a target handler. Flushing occurs whenever the buffer
+    is full, or when an event of a certain severity or greater is seen.
+    "
+                :superclasses ("BufferingHandler")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        Initialize the handler with the buffer size, the level at which
+        flushing should occur and an optional target.
+
+        Note that without a target being set either here or via setTarget(),
+        a MemoryHandler is no use to anyone!
+        \"\"\"" code nil (reparse-symbol indented_block_body) [48427 48691])
+                            ("BufferingHandler" code nil (reparse-symbol indented_block_body) [48700 48741])
+                            ("self" variable nil (reparse-symbol indented_block_body) [48750 48778])
+                            ("self" variable nil (reparse-symbol indented_block_body) [48787 48807]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [48363 48367])
+                            ("capacity" variable nil (reparse-symbol function_parameters) [48369 48377])
+                            ("flushLevel" variable nil (reparse-symbol function_parameters) [48379 48389])
+                            ("target" variable nil (reparse-symbol function_parameters) [48405 48411]))                          
+                        :documentation "
+        Initialize the handler with the buffer size, the level at which
+        flushing should occur and an optional target.
+
+        Note that without a target being set either here or via setTarget(),
+        a MemoryHandler is no use to anyone!
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [48350 48808])
+                    ("shouldFlush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [48829 48833])
+                            ("record" variable nil (reparse-symbol function_parameters) [48835 48841]))                          
+                        :documentation "
+        Check for buffer full or a record at the flushLevel or higher.
+        ")
+                        (reparse-symbol indented_block_body) [48813 49047])
+                    ("setTarget" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [49066 49070])
+                            ("target" variable nil (reparse-symbol function_parameters) [49072 49078]))                          
+                        :documentation "
+        Set the target handler for this handler.
+        ")
+                        (reparse-symbol indented_block_body) [49052 49183])
+                    ("flush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [49198 49202]))                          
+                        :documentation "
+        For a MemoryHandler, flushing means just sending the buffered
+        records to the target, if there is one. Override if you want
+        different behaviour.
+
+        The record buffer is also cleared by this operation.
+        ")
+                        (reparse-symbol indented_block_body) [49188 49690])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [49705 49709]))                          
+                        :documentation "
+        Flush, set the target to None and lose the buffer.
+        ")
+                        (reparse-symbol indented_block_body) [49695 49968]))                  
+                :type "class")
+                nil [48070 49968])
+            ("QueueHandler" type
+               (:documentation "
+    This handler sends events to a queue. Typically, it would be used together
+    with a multiprocessing Queue to centralise logging to file in one process
+    (in a multi-process application), so as to avoid file write contention
+    between processes.
+
+    This code is new in Python 3.2, but this class can be copy pasted into
+    user code for use with earlier Python versions.
+    "
+                :superclasses ("logging.Handler")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        Initialise an instance, using the passed queue.
+        \"\"\"" code nil (reparse-symbol indented_block_body) [50446 50517])
+                            ("logging" code nil (reparse-symbol indented_block_body) [50526 50556])
+                            ("self" variable nil (reparse-symbol indented_block_body) [50565 50583]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [50424 50428])
+                            ("queue" variable nil (reparse-symbol function_parameters) [50430 50435]))                          
+                        :documentation "
+        Initialise an instance, using the passed queue.
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [50411 50584])
+                    ("enqueue" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [50601 50605])
+                            ("record" variable nil (reparse-symbol function_parameters) [50607 50613]))                          
+                        :documentation "
+        Enqueue a record.
+
+        The base implementation uses put_nowait. You may want to override
+        this method if you want to use blocking, timeouts or custom queue
+        implementations.
+        ")
+                        (reparse-symbol indented_block_body) [50589 50878])
+                    ("prepare" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [50895 50899])
+                            ("record" variable nil (reparse-symbol function_parameters) [50901 50907]))                          
+                        :documentation "
+        Prepares a record for queuing. The object returned by this method is
+        enqueued.
+
+        The base implementation formats the record to merge the message
+        and arguments, and removes unpickleable items from the record
+        in-place.
+
+        You might want to override this method if you want to convert
+        the record to a dict or JSON string, or send a modified copy
+        of the record while leaving the original intact.
+        ")
+                        (reparse-symbol indented_block_body) [50883 51931])
+                    ("emit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [51945 51949])
+                            ("record" variable nil (reparse-symbol function_parameters) [51951 51957]))                          
+                        :documentation "
+        Emit a record.
+
+        Writes the LogRecord to the queue, preparing it for pickling first.
+        ")
+                        (reparse-symbol indented_block_body) [51936 52207]))                  
+                :type "class")
+                nil [49970 52207])
+            ("if" code nil nil [52208 56126]))          
+      :file "handlers.py"
+      :pointmax 56126
+      :fsize 56125
+      :lastmodtime '(21741 45488 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!openProject!Python-3.4.3!Lib!logging!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

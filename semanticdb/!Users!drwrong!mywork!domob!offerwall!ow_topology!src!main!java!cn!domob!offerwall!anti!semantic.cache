@@ -1,0 +1,107 @@
+;; Object anti/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "anti/"
+  :tables
+  (list
+    (semanticdb-table "AntiBolt.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.anti" package nil nil [1 33])
+            ("java.util.Map" include nil nil [35 56])
+            ("cn.domob.offerwall.common.RichBoltWithMetric" include nil nil [58 110])
+            ("cn.domob.offerwall.thrift.settle.AntiRes" include nil nil [111 159])
+            ("cn.domob.offerwall.thrift.settle.SettleEvent" include nil nil [160 212])
+            ("cn.domob.offerwall.thrift.settle.SettleStage" include nil nil [213 265])
+            ("org.apache.storm.task.OutputCollector" include nil nil [266 311])
+            ("org.apache.storm.task.TopologyContext" include nil nil [312 357])
+            ("org.apache.storm.topology.OutputFieldsDeclarer" include nil nil [358 412])
+            ("org.apache.storm.tuple.Fields" include nil nil [413 450])
+            ("org.apache.storm.tuple.Tuple" include nil nil [451 487])
+            ("org.apache.storm.tuple.Values" include nil nil [488 525])
+            ("org.slf4j.Logger" include nil nil [526 550])
+            ("org.slf4j.LoggerFactory" include nil nil [551 582])
+            ("AntiBolt" type
+               (:typemodifiers ("public")
+                :superclasses "RichBoltWithMetric"
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [640 717])
+                    ("antiProxy" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "AntiProxy")
+                        (reparse-symbol class_member_declaration) [723 761])
+                    ("collector" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "OutputCollector")
+                        (reparse-symbol class_member_declaration) [767 811])
+                    ("prepare" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [838 851])
+                            ("context" variable (:type "TopologyContext") (reparse-symbol formal_parameters) [853 876])
+                            ("collector" variable (:type "OutputCollector") (reparse-symbol formal_parameters) [878 903]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [818 1087])
+                    ("execute" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable (:type "Tuple") (reparse-symbol formal_parameters) [1113 1124]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1093 1897])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("declarer" variable (:type "OutputFieldsDeclarer") (reparse-symbol formal_parameters) [1935 1964]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1903 2105]))                  
+                :type "class")
+                nil [585 2107]))          
+      :file "AntiBolt.java"
+      :pointmax 2108
+      :fsize 2107
+      :lastmodtime '(22775 5341 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "AntiProxy.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.anti" package nil nil [1 33])
+            ("java.util.Map" include nil nil [36 57])
+            ("cn.domob.offerwall.common.ThriftProxy" include nil nil [59 104])
+            ("cn.domob.offerwall.thrift.common.OfferType" include nil nil [105 155])
+            ("cn.domob.offerwall.thrift.settle.AntiRes" include nil nil [156 204])
+            ("cn.domob.offerwall.thrift.settle.SettleEvent" include nil nil [205 257])
+            ("cn.domob.offerwall.thrift.settle.SettleService" include nil nil [258 312])
+            ("org.apache.thrift.TException" include nil nil [313 349])
+            ("org.slf4j.Logger" include nil nil [350 374])
+            ("org.slf4j.LoggerFactory" include nil nil [375 406])
+            ("AntiProxy" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [437 515])
+                    ("AntiProxy" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("conf" variable (:type "Map") (reparse-symbol formal_parameters) [596 604]))                          )
+                        (reparse-symbol class_member_declaration) [579 1267])
+                    ("anti" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("event" variable (:type "SettleEvent") (reparse-symbol formal_parameters) [1295 1312]))                          
+                        :type "AntiRes")
+                        (reparse-symbol class_member_declaration) [1275 1791]))                  
+                :type "class")
+                nil [409 1795]))          
+      :file "AntiProxy.java"
+      :pointmax 1796
+      :fsize 1795
+      :lastmodtime '(22793 32972 0 0)
+      :unmatched-syntax '((SEMICOLON 572 . 573) (GT 559 . 560) (PRIVATE 520 . 527) (LT 539 . 540) (IDENTIFIER 1796 . 1797) (SEMICOLON 572 . 573) (GT 559 . 560) (PRIVATE 520 . 527) (LT 539 . 540))))
+  :file "!Users!drwrong!mywork!domob!offerwall!ow_topology!src!main!java!cn!domob!offerwall!anti!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

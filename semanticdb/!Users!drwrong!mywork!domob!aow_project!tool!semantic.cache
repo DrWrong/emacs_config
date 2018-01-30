@@ -1,0 +1,27 @@
+;; Object tool/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tool/"
+  :tables
+  (list
+    (semanticdb-table "export_data_reader.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [19 29])
+            ("thrift.transport.TTransport" include nil nil [30 90])
+            ("thrift.protocol.TBinaryProtocol" include nil nil [91 150])
+            ("domob_thrift.aow.adserver_types.ttypes" include nil nil [152 211])
+            ("read_offer" function (:arguments 
+              ( ("protocol" variable nil (reparse-symbol function_parameters) [229 237]))              ) nil [214 305])
+            ("print_offer" function (:arguments 
+              ( ("offer" variable nil (reparse-symbol function_parameters) [323 328]))              ) nil [307 490])
+            ("read_file" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [506 514]))              ) nil [492 812])
+            ("read_file" code nil nil [814 836]))          
+      :file "export_data_reader.py"
+      :pointmax 837
+      :fsize 836
+      :lastmodtime '(22701 2242 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!tool!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

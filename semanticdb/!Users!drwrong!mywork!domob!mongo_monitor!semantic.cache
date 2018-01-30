@@ -1,0 +1,108 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("pymongo" include nil nil [19 50])
+            ("load_merics" function (:arguments 
+              ( ("host" variable nil (reparse-symbol function_parameters) [69 73])
+                ("port" variable nil (reparse-symbol function_parameters) [75 79]))              ) nil [53 176]))          
+      :file "mongo_metric.py"
+      :pointmax 181
+      :fsize 175
+      :lastmodtime '(22934 42366 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("json" include nil nil [1249 1260])
+            ("os" include nil nil [1261 1270])
+            ("re" include nil nil [1271 1280])
+            ("socket" include nil nil [1281 1294])
+            ("string" include nil nil [1295 1308])
+            ("time" include nil nil [1309 1320])
+            ("copy" include nil nil [1321 1332])
+            ("NAME_PREFIX" variable nil nil [1334 1358])
+            ("PARAMS" variable nil nil [1359 1658])
+            ("METRICS" variable nil nil [1659 1702])
+            ("LAST_METRICS" variable nil nil [1703 1740])
+            ("METRICS_CACHE_TTL" variable nil nil [1741 1762])
+            ("flatten" function
+               (:documentation "Flatten a dict (i.e. dict['a']['b']['c'] => dict['a_b_c'])"
+                :arguments 
+                  ( ("d" variable nil (reparse-symbol function_parameters) [1777 1778])
+                    ("pre" variable nil (reparse-symbol function_parameters) [1780 1783])
+                    ("sep" variable nil (reparse-symbol function_parameters) [1788 1791]))                  )
+                nil [1765 2076])
+            ("get_metrics" function (:documentation "Return all metrics") nil [2078 3167])
+            ("get_value" function
+               (:documentation "Return a value for the requested metric"
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [3183 3187]))                  )
+                nil [3169 3481])
+            ("get_rate" function
+               (:documentation "Return change over time for the requested metric"
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [3496 3500]))                  )
+                nil [3483 3979])
+            ("get_opcounter_rate" function
+               (:documentation "Return change over time for an opcounter metric"
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [4004 4008]))                  )
+                nil [3981 4212])
+            ("get_globalLock_ratio" function
+               (:documentation "Return the global lock ratio"
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [4239 4243]))                  )
+                nil [4214 4495])
+            ("get_indexCounters_btree_miss_ratio" function
+               (:documentation "Return the btree miss ratio"
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [4536 4540]))                  )
+                nil [4497 4806])
+            ("get_connections_current_ratio" function
+               (:documentation "Return the percentage of connections used"
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [4842 4846]))                  )
+                nil [4808 5128])
+            ("get_slave_delay" function
+               (:documentation "Return the replica set slave delay"
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [5150 5154]))                  )
+                nil [5130 5948])
+            ("get_asserts_total_rate" function
+               (:documentation "Return the total number of asserts per second"
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [5977 5981]))                  )
+                nil [5950 6217])
+            ("metric_init" function
+               (:documentation "Initialize metric descriptors"
+                :arguments 
+                  ( ("lparams" variable nil (reparse-symbol function_parameters) [6235 6242]))                  )
+                nil [6219 14708])
+            ("metric_cleanup" function (:documentation "Cleanup") nil [14710 14760])
+            ("if" code nil nil [14812 15084]))          
+      :file "mongodb.py"
+      :pointmax 15084
+      :fsize 15083
+      :lastmodtime '(22934 37549 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("subprocess" include nil nil [23 40])
+            ("time" include nil nil [41 52])
+            ("mongodb" include nil nil [53 103])
+            ("descriptors" variable nil nil [105 302])
+            ("while" code nil nil [305 797]))          
+      :file "gmetric.py"
+      :pointmax 797
+      :fsize 796
+      :lastmodtime '(22934 37571 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!mongo_monitor!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

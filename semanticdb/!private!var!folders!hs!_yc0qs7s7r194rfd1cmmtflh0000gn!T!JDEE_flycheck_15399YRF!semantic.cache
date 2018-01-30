@@ -1,0 +1,63 @@
+;; Object JDEE_flycheck_15399YRF/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "JDEE_flycheck_15399YRF/"
+  :tables
+  (list
+    (semanticdb-table "AowAntiBolt.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.settle.bolts" package nil nil [1 36])
+            ("org.apache.storm.task.OutputCollector" include nil nil [38 83])
+            ("org.apache.storm.task.TopologyContext" include nil nil [84 129])
+            ("org.apache.storm.topology.OutputFieldsDeclarer" include nil nil [130 184])
+            ("org.apache.storm.topology.base.BaseRichBolt" include nil nil [185 236])
+            ("org.apache.storm.tuple.Fields" include nil nil [237 274])
+            ("org.apache.storm.tuple.Tuple" include nil nil [275 311])
+            ("org.apache.storm.tuple.Values" include nil nil [312 349])
+            ("cn.domob.aow.stat_types2.thrift.AowEvent" include nil nil [350 398])
+            ("org.slf4j.Logger" include nil nil [399 423])
+            ("org.slf4j.LoggerFactory" include nil nil [424 455])
+            ("java.util.Map" include nil nil [457 478])
+            ("AowAntiBolt" type
+               (:typemodifiers ("public")
+                :superclasses "BaseRichBolt"
+                :members 
+                  ( ("antiHandler" variable (:type "AowAnti") (reparse-symbol class_member_declaration) [633 653])
+                    ("coll" variable
+                       (:typemodifiers ("private")
+                        :type "OutputCollector")
+                        (reparse-symbol class_member_declaration) [658 687])
+                    ("log" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [692 763])
+                    ("prepare" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("conf" variable (:type "Map") (reparse-symbol formal_parameters) [803 811])
+                            ("context" variable (:type "TopologyContext") (reparse-symbol formal_parameters) [813 836])
+                            ("collector" variable (:type "OutputCollector") (reparse-symbol formal_parameters) [838 863]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [783 1786])
+                    ("execute" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable (:type "Tuple") (reparse-symbol formal_parameters) [1826 1837]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1806 2283])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("declarer" variable (:type "OutputFieldsDeclarer") (reparse-symbol formal_parameters) [2335 2364]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2303 2418]))                  
+                :type "class")
+                nil [581 2420]))          
+      :file "AowAntiBolt.java"
+      :pointmax 2421
+      :fsize 2420
+      :lastmodtime '(22735 37562 0 0)
+      :unmatched-syntax nil))
+  :file "!private!var!folders!hs!_yc0qs7s7r194rfd1cmmtflh0000gn!T!JDEE_flycheck_15399YRF!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

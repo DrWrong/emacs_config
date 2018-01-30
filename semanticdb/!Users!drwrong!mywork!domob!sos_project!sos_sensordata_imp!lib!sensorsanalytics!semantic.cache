@@ -1,0 +1,520 @@
+;; Object sensorsanalytics/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sensorsanalytics/"
+  :tables
+  (list
+    (semanticdb-table "sdk.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [17 56])
+            ("base64" include nil nil [57 70])
+            ("datetime" include nil nil [71 86])
+            ("time" include nil nil [87 98])
+            ("json" include nil nil [99 110])
+            ("gzip" include nil nil [111 122])
+            ("re" include nil nil [123 132])
+            ("threading" include nil nil [133 149])
+            ("try" code nil nil [151 327])
+            ("SDK_VERSION" variable nil nil [328 349])
+            ("try" code nil nil [351 518])
+            ("try" code nil nil [518 694])
+            ("SensorsAnalyticsException" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [744 748]))                  
+                :type "class")
+                nil [696 749])
+            ("SensorsAnalyticsIllegalDataException" type
+               (:documentation "
+    在发送的数据格式有误时，SDK会抛出此异常，用户应当捕获并处理。
+    "
+                :superclasses ("SensorsAnalyticsException")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [879 883]))                  
+                :type "class")
+                nil [751 884])
+            ("SensorsAnalyticsNetworkException" type
+               (:documentation "
+    在因为网络或者不可预知的问题导致数据无法发送时，SDK会抛出此异常，用户应当捕获并处理。
+    "
+                :superclasses ("SensorsAnalyticsException")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [1022 1026]))                  
+                :type "class")
+                nil [886 1027])
+            ("SensorsAnalytics" type
+               (:documentation "
+    使用一个 SensorsAnalytics 的实例来进行数据发送。
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("NAME_PATTERN" variable nil (reparse-symbol indented_block_body) [1120 1165])
+                    ("DatetimeSerializer" type
+                       (:documentation "
+        实现 date 和 datetime 类型的 JSON 序列化，以符合 SensorsAnalytics 的要求。
+        "
+                        :superclasses ("json.JSONEncoder")
+                        :members 
+                          ( ("default" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [1326 1330])
+                                    ("obj" variable nil (reparse-symbol function_parameters) [1332 1335]))                                  )
+                                (reparse-symbol indented_block_body) [1314 1786]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1171 1786])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        初始化一个 SensorsAnalytics 的实例。可以选择使用默认的 DefaultConsumer，也可以选择其它的 Consumer 实现。
+
+        已实现的 Consumer 包括:
+        DefaultConsumer: 默认实现，逐条、同步的发送数据。
+        BatchConsumer: 批量、同步的发送数据。
+        AsyncBatchConsumer: 批量、异步的发送数据。
+        \"\"\"" code nil (reparse-symbol indented_block_body) [1834 2076])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2085 2110]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1804 1808])
+                            ("consumer" variable nil (reparse-symbol function_parameters) [1810 1818]))                          
+                        :documentation "
+        初始化一个 SensorsAnalytics 的实例。可以选择使用默认的 DefaultConsumer，也可以选择其它的 Consumer 实现。
+
+        已实现的 Consumer 包括:
+        DefaultConsumer: 默认实现，逐条、同步的发送数据。
+        BatchConsumer: 批量、同步的发送数据。
+        AsyncBatchConsumer: 批量、异步的发送数据。
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1791 2111])
+                    ("_now" function
+                       (:typemodifiers ("static")
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2116 2185])
+                    ("_json_dumps" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("data" variable nil (reparse-symbol function_parameters) [2224 2228]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2190 2327])
+                    ("track" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2342 2346])
+                            ("distinct_id" variable nil (reparse-symbol function_parameters) [2348 2359])
+                            ("event_name" variable nil (reparse-symbol function_parameters) [2361 2371])
+                            ("properties" variable nil (reparse-symbol function_parameters) [2373 2383]))                          
+                        :documentation "
+        跟踪一个用户的行为。
+
+        :param distinct_id: 用户的唯一标识。
+        :param event_name: 事件名称。
+        :param properties: 事件的属性。
+        ")
+                        (reparse-symbol indented_block_body) [2332 3032])
+                    ("track_signup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3054 3058])
+                            ("distinct_id" variable nil (reparse-symbol function_parameters) [3060 3071])
+                            ("original_id" variable nil (reparse-symbol function_parameters) [3073 3084])
+                            ("event_name" variable nil (reparse-symbol function_parameters) [3086 3096])
+                            ("properties" variable nil (reparse-symbol function_parameters) [3098 3108]))                          
+                        :documentation "
+        跟踪一个用户的注册行为。
+
+        :param distinct_id: 用户注册之后的唯一标识。
+        :param original_id: 用户注册前的唯一标识。
+        :param event_name: 事件名称。
+        :param properties: 事件的属性。
+        ")
+                        (reparse-symbol indented_block_body) [3037 3850])
+                    ("_normalize_data" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("data" variable nil (reparse-symbol function_parameters) [3893 3897]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3855 6115])
+                    ("_get_common_properties" function
+                       (:typemodifiers ("static")
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          
+                        :documentation "
+        构造所有 Event 通用的属性:
+        ")
+                        (reparse-symbol indented_block_body) [6120 6316])
+                    ("_extract_user_time" function
+                       (:typemodifiers ("static")
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("properties" variable nil (reparse-symbol function_parameters) [6362 6372]))                          
+                        :documentation "
+        如果用户传入了 $time 字段，则不使用当前时间。
+        ")
+                        (reparse-symbol indented_block_body) [6321 6610])
+                    ("profile_set" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6631 6635])
+                            ("distinct_id" variable nil (reparse-symbol function_parameters) [6637 6648])
+                            ("profiles" variable nil (reparse-symbol function_parameters) [6650 6658]))                          
+                        :documentation "
+        直接设置一个用户的 Profile，如果已存在则覆盖。
+        ")
+                        (reparse-symbol indented_block_body) [6615 6795])
+                    ("profile_increment" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6822 6826])
+                            ("distinct_id" variable nil (reparse-symbol function_parameters) [6828 6839])
+                            ("profiles" variable nil (reparse-symbol function_parameters) [6841 6849]))                          
+                        :documentation "
+        增减/减少一个用户的某一个或者多个数值类型的 Profile。
+        ")
+                        (reparse-symbol indented_block_body) [6800 6996])
+                    ("profile_append" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7020 7024])
+                            ("distinct_id" variable nil (reparse-symbol function_parameters) [7026 7037])
+                            ("profiles" variable nil (reparse-symbol function_parameters) [7039 7047]))                          
+                        :documentation "
+        追加一个用户的某一个或者多个集合类型的 Profile。
+        ")
+                        (reparse-symbol indented_block_body) [7001 7188])
+                    ("profile_unset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7211 7215])
+                            ("distinct_id" variable nil (reparse-symbol function_parameters) [7217 7228])
+                            ("profile_keys" variable nil (reparse-symbol function_parameters) [7230 7242]))                          
+                        :documentation "
+        删除一个用户的一个或者多个 Profile。
+        ")
+                        (reparse-symbol indented_block_body) [7193 7492])
+                    ("profile_delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7516 7520])
+                            ("distinct_id" variable nil (reparse-symbol function_parameters) [7522 7533]))                          
+                        :documentation "
+        删除整个用户的信息。
+        ")
+                        (reparse-symbol indented_block_body) [7497 7650])
+                    ("_profile_update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7675 7679])
+                            ("update_type" variable nil (reparse-symbol function_parameters) [7681 7692])
+                            ("distinct_id" variable nil (reparse-symbol function_parameters) [7694 7705])
+                            ("profiles" variable nil (reparse-symbol function_parameters) [7707 7715]))                          )
+                        (reparse-symbol indented_block_body) [7655 8049])
+                    ("flush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8064 8068]))                          
+                        :documentation "
+        对于不立即发送数据的 Consumer，调用此接口应当立即进行已有数据的发送。
+        ")
+                        (reparse-symbol indented_block_body) [8054 8174])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8189 8193]))                          
+                        :documentation "
+        在进程结束或者数据发送完成时，应当调用此接口，以保证所有数据被发送完毕。
+        如果发生意外，此方法将抛出异常。
+        ")
+                        (reparse-symbol indented_block_body) [8179 8321]))                  
+                :type "class")
+                nil [1029 8321])
+            ("DebugConsumer" type
+               (:documentation "
+    调试用的 Consumer，直接输出数据。
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("pass" code nil (reparse-symbol indented_block_body) [8427 8431]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8412 8416]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [8399 8432])
+                    ("send" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("msg" variable nil (reparse-symbol function_parameters) [8464 8467]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [8437 8489])
+                    ("flush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8504 8508]))                          )
+                        (reparse-symbol indented_block_body) [8494 8524])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8539 8543]))                          )
+                        (reparse-symbol indented_block_body) [8529 8559]))                  
+                :type "class")
+                nil [8323 8559])
+            ("DefaultConsumer" type
+               (:documentation "
+    默认的 Consumer实现，逐条、同步的发送数据给接收服务器。
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        初始化 Consumer。
+
+        :param url_prefix: 服务器的 URL 地址。
+        :param request_timeout: 请求的超时时间，单位毫秒。
+        \"\"\"" code nil (reparse-symbol indented_block_body) [8712 8836])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8845 8874])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8883 8922]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8663 8667])
+                            ("url_prefix" variable nil (reparse-symbol function_parameters) [8669 8679])
+                            ("request_timeout" variable nil (reparse-symbol function_parameters) [8681 8696]))                          
+                        :documentation "
+        初始化 Consumer。
+
+        :param url_prefix: 服务器的 URL 地址。
+        :param request_timeout: 请求的超时时间，单位毫秒。
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [8650 8923])
+                    ("_gzip_string" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("data" variable nil (reparse-symbol function_parameters) [8963 8967]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [8928 9258])
+                    ("_do_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9279 9283])
+                            ("data" variable nil (reparse-symbol function_parameters) [9285 9289]))                          
+                        :documentation "
+        使用 urllib 发送数据给服务器，如果发生错误会抛出异常。
+        ")
+                        (reparse-symbol indented_block_body) [9263 9795])
+                    ("send" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9809 9813])
+                            ("msg" variable nil (reparse-symbol function_parameters) [9815 9818]))                          )
+                        (reparse-symbol indented_block_body) [9800 9931])
+                    ("_encode_msg" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9952 9956])
+                            ("msg" variable nil (reparse-symbol function_parameters) [9958 9961]))                          )
+                        (reparse-symbol indented_block_body) [9936 10035])
+                    ("_encode_msg_list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10061 10065])
+                            ("msg_list" variable nil (reparse-symbol function_parameters) [10067 10075]))                          )
+                        (reparse-symbol indented_block_body) [10040 10178])
+                    ("flush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10193 10197]))                          )
+                        (reparse-symbol indented_block_body) [10183 10213])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10228 10232]))                          )
+                        (reparse-symbol indented_block_body) [10218 10248]))                  
+                :type "class")
+                nil [8561 10248])
+            ("BatchConsumer" type
+               (:documentation "
+    批量发送数据的 Consumer，当且仅当数据达到 max_size 参数指定的量时，才将数据进行发送。
+    "
+                :superclasses ("DefaultConsumer")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        初始化 BatchConsumer。
+
+        :param url_prefix: 服务器的 URL 地址。
+        :param max_size: 批量发送的阈值。
+        :param request_timeout: 请求服务器的超时时间，单位毫秒。
+        :return:
+        \"\"\"" code nil (reparse-symbol indented_block_body) [10441 10624])
+                            ("super" code nil (reparse-symbol indented_block_body) [10633 10697])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10706 10724])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10733 10767]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10379 10383])
+                            ("url_prefix" variable nil (reparse-symbol function_parameters) [10385 10395])
+                            ("max_size" variable nil (reparse-symbol function_parameters) [10397 10405])
+                            ("request_timeout" variable nil (reparse-symbol function_parameters) [10410 10425]))                          
+                        :documentation "
+        初始化 BatchConsumer。
+
+        :param url_prefix: 服务器的 URL 地址。
+        :param max_size: 批量发送的阈值。
+        :param request_timeout: 请求服务器的超时时间，单位毫秒。
+        :return:
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [10366 10768])
+                    ("send" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10782 10786])
+                            ("json_message" variable nil (reparse-symbol function_parameters) [10788 10800]))                          )
+                        (reparse-symbol indented_block_body) [10773 10920])
+                    ("flush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10935 10939]))                          
+                        :documentation "
+        用户可以主动调用 flush 接口，以便在需要的时候立即进行数据发送。
+        ")
+                        (reparse-symbol indented_block_body) [10925 11286])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11301 11305]))                          
+                        :documentation "
+        在发送完成时，调用此接口以保证数据发送完成。
+        ")
+                        (reparse-symbol indented_block_body) [11291 11384]))                  
+                :type "class")
+                nil [10250 11384])
+            ("AsyncBatchConsumer" type
+               (:documentation "
+    异步、批量发送数据的 Consumer。使用独立的线程进行数据发送，当满足以下两个条件之一时进行数据发送:
+    1. 数据条数大于预定义的最大值
+    2. 数据发送间隔超过预定义的最大时间
+    "
+                :superclasses ("DefaultConsumer")
+                :members 
+                  ( ("AsyncFlushThread" type
+                       (:documentation "
+        发送数据的独立线程，在这里执行实际的网络请求。
+        "
+                        :superclasses ("threading.Thread")
+                        :members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("super" code nil (reparse-symbol indented_block_body) [11702 11761])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [11774 11799])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [11835 11871]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [11673 11677])
+                                    ("consumer" variable nil (reparse-symbol function_parameters) [11679 11687]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [11660 11872])
+                            ("stop" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [11890 11894]))                                  
+                                :documentation "
+            需要退出时调用此方法，以保证线程安全结束。
+            ")
+                                (reparse-symbol indented_block_body) [11881 11998])
+                            ("run" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [12015 12019]))                                  )
+                                (reparse-symbol indented_block_body) [12007 12436]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [11553 12436])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        初始化 AsyncBatchConsumer。
+
+        :param url_prefix: 服务器的 URL 地址。
+        :param flush_max_time: 两次发送的最大间隔时间，单位秒。
+        :param flush_size: 队列缓存的阈值，超过此值将立即进行发送。
+        :param max_batch_size: 单个请求发送的最大大小。
+        :param max_size: 整个缓存队列的最大大小。
+        :param request_timeout: 请求的超时时间，单位毫秒。
+        \"\"\"" code nil (reparse-symbol indented_block_body) [12588 12900])
+                            ("super" code nil (reparse-symbol indented_block_body) [12909 12978])
+                            ("self" variable nil (reparse-symbol indented_block_body) [12988 13017])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13026 13062])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13071 13108])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13118 13153])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13190 13225])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13234 13257])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13300 13365])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13374 13409])
+                            ("self" code nil (reparse-symbol indented_block_body) [13418 13447]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12454 12458])
+                            ("url_prefix" variable nil (reparse-symbol function_parameters) [12460 12470])
+                            ("flush_max_time" variable nil (reparse-symbol function_parameters) [12472 12486])
+                            ("flush_size" variable nil (reparse-symbol function_parameters) [12490 12500])
+                            ("max_batch_size" variable nil (reparse-symbol function_parameters) [12522 12536])
+                            ("max_size" variable nil (reparse-symbol function_parameters) [12542 12550])
+                            ("request_timeout" variable nil (reparse-symbol function_parameters) [12557 12572]))                          
+                        :documentation "
+        初始化 AsyncBatchConsumer。
+
+        :param url_prefix: 服务器的 URL 地址。
+        :param flush_max_time: 两次发送的最大间隔时间，单位秒。
+        :param flush_size: 队列缓存的阈值，超过此值将立即进行发送。
+        :param max_batch_size: 单个请求发送的最大大小。
+        :param max_size: 整个缓存队列的最大大小。
+        :param request_timeout: 请求的超时时间，单位毫秒。
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [12441 13448])
+                    ("send" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13462 13466])
+                            ("json_message" variable nil (reparse-symbol function_parameters) [13468 13480]))                          )
+                        (reparse-symbol indented_block_body) [13453 13762])
+                    ("flush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13777 13781]))                          )
+                        (reparse-symbol indented_block_body) [13767 13814])
+                    ("sync_flush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13834 13838])
+                            ("throw_exception" variable nil (reparse-symbol function_parameters) [13840 13855]))                          
+                        :documentation "
+        执行一次异步发送。 throw_exception 表示在发送失败时是否向外抛出异常。
+        ")
+                        (reparse-symbol indented_block_body) [13819 14656])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14671 14675]))                          )
+                        (reparse-symbol indented_block_body) [14661 14874]))                  
+                :type "class")
+                nil [11386 14874]))          
+      :file "sdk.py"
+      :pointmax 14874
+      :fsize 16919
+      :lastmodtime '(21969 21689 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 14563 . 14627) (NEWLINE 14562 . 14563) (COLON 14561 . 14562) (TRY 14279 . 14282) (AS 14557 . 14559) (INDENT_BLOCK 13621 . 13675) (NEWLINE 13620 . 13621) (COLON 13619 . 13620) (TRY 13535 . 13538) (AS 13615 . 13617) (INDENT_BLOCK 9721 . 9775) (NEWLINE 9720 . 9721) (COLON 9719 . 9720) (TRY 9425 . 9428) (AS 9715 . 9717))))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_sensordata_imp!lib!sensorsanalytics!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

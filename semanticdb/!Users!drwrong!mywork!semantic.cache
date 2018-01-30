@@ -1,0 +1,33 @@
+;; Object mywork/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mywork/"
+  :tables
+  (list
+    (semanticdb-table "demo.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "demo.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22615 31730 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "test2.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("calculate" function (:arguments 
+              ( ("datas" variable nil (reparse-symbol function_parameters) [15 20]))              ) nil [1 235])
+            ("print" code nil nil [237 270]))          
+      :file "test2.py"
+      :pointmax 271
+      :fsize 270
+      :lastmodtime '(22899 7760 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "test.java"
+      :major-mode 'jdee-mode
+      :tags nil
+      :file "test.java"
+      :pointmax 1
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

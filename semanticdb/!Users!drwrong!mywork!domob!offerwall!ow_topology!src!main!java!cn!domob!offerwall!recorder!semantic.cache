@@ -1,0 +1,70 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.recorder" package nil nil [1 37])
+            ("java.util.Map" include nil nil [39 60])
+            ("cn.domob.offerwall.common.RichBoltWithMetric" include nil nil [62 114])
+            ("cn.domob.offerwall.common.UserServerProxy" include nil nil [115 164])
+            ("cn.domob.offerwall.thrift.userserver.TaskRecordRes" include nil nil [165 223])
+            ("cn.domob.offerwall.thrift.settle.SettleEvent" include nil nil [224 276])
+            ("cn.domob.offerwall.thrift.settle.SettleStage" include nil nil [277 329])
+            ("org.apache.storm.task.OutputCollector" include nil nil [330 375])
+            ("org.apache.storm.task.TopologyContext" include nil nil [376 421])
+            ("org.apache.storm.topology.OutputFieldsDeclarer" include nil nil [422 476])
+            ("org.apache.storm.tuple.Fields" include nil nil [477 514])
+            ("org.apache.storm.tuple.Tuple" include nil nil [515 551])
+            ("org.apache.storm.tuple.Values" include nil nil [552 589])
+            ("org.apache.thrift.TException" include nil nil [590 626])
+            ("org.slf4j.Logger" include nil nil [627 651])
+            ("org.slf4j.LoggerFactory" include nil nil [652 683])
+            ("AdRecorderBolt" type
+               (:typemodifiers ("public")
+                :superclasses "RichBoltWithMetric"
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [913 996])
+                    ("collector" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "OutputCollector")
+                        (reparse-symbol class_member_declaration) [1002 1046])
+                    ("proxy" variable
+                       (:typemodifiers ("private")
+                        :type "UserServerProxy")
+                        (reparse-symbol class_member_declaration) [1051 1081])
+                    ("prepare" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [1107 1120])
+                            ("context" variable (:type "TopologyContext") (reparse-symbol formal_parameters) [1122 1145])
+                            ("collector" variable (:type "OutputCollector") (reparse-symbol formal_parameters) [1147 1172]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1087 1468])
+                    ("execute" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable (:type "Tuple") (reparse-symbol formal_parameters) [1494 1505]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1474 2528])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("declarer" variable (:type "OutputFieldsDeclarer") (reparse-symbol formal_parameters) [2566 2595]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2534 2651]))                  
+                :type "class")
+                nil [851 2653]))          
+      :file "AdRecorderBolt.java"
+      :pointmax 2654
+      :fsize 2653
+      :lastmodtime '(22943 65202 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!offerwall!ow_topology!src!main!java!cn!domob!offerwall!recorder!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

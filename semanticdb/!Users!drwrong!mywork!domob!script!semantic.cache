@@ -1,0 +1,188 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [23 54])
+            ("collections" include nil nil [55 90])
+            ("fileinput" include nil nil [91 107])
+            ("datetime" include nil nil [108 148])
+            ("domob_pyutils.monitor_utils" include nil nil [150 201])
+            ("count" variable nil nil [205 234])
+            ("total" variable nil nil [235 244])
+            ("for" code nil nil [245 774])
+            ("mnu" variable nil nil [775 794])
+            ("now" code nil nil [795 838])
+            ("mnu" code nil nil [840 917])
+            ("for" code nil nil [919 1012]))          
+      :file "stats.py"
+      :pointmax 1012
+      :fsize 1011
+      :lastmodtime '(22167 36059 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("matplotlib" include nil nil [24 60])
+            ("re" include nil nil [61 70])
+            ("datetime" include nil nil [71 100])
+            ("times" variable nil nil [102 112])
+            ("with" code nil nil [113 787])
+            ("y" variable nil nil [787 793])
+            ("x" variable nil nil [794 800])
+            ("for" code nil nil [801 1026])
+            ("plt" code nil nil [1027 1047])
+            ("plt" code nil nil [1048 1058]))          
+      :file "stastic.py"
+      :pointmax 1059
+      :fsize 1058
+      :lastmodtime '(21979 13474 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("MySQLdb" include nil nil [23 37])
+            ("thrift.transport" include nil nil [38 86])
+            ("thrift.protocol" include nil nil [87 130])
+            ("domob_thrift.user_profile" include nil nil [132 188])
+            ("domob_thrift.user_profile.ttypes" include nil nil [189 258])
+            ("db" variable nil nil [261 313])
+            ("cursor" variable nil nil [314 334])
+            ("transport" variable nil nil [335 382])
+            ("transport" variable nil nil [383 433])
+            ("protocol" variable nil nil [434 487])
+            ("client" variable nil nil [488 532])
+            ("transport" code nil nil [533 549])
+            ("with" code nil nil [551 1039]))          
+      :file "insertdb.py"
+      :pointmax 1039
+      :fsize 1038
+      :lastmodtime '(21979 13474 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("csv" include nil nil [25 35])
+            ("collections" include nil nil [36 71])
+            ("f" variable nil nil [73 115])
+            ("data" variable nil nil [117 178])
+            ("for" code nil nil [179 316])
+            ("f" code nil nil [317 326])
+            ("after_filter" variable nil nil [327 344])
+            ("for" code nil nil [345 441])
+            ("f" variable nil nil [442 487])
+            ("w" variable nil nil [488 505])
+            ("w" code nil nil [506 531])
+            ("f" code nil nil [532 541]))          
+      :file "data_processing.py"
+      :pointmax 542
+      :fsize 541
+      :lastmodtime '(21960 24831 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("MySQLdb" include nil nil [47 61])
+            ("openpyxl" include nil nil [62 91])
+            ("domob_thrift.enums.ttypes" include nil nil [92 140])
+            ("db" variable nil nil [142 194])
+            ("cursor" variable nil nil [195 215])
+            ("query" variable nil nil [217 285])
+            ("cursor" code nil nil [286 307])
+            ("wb" variable nil nil [308 323])
+            ("ws" variable nil nil [324 338])
+            ("ws" code nil nil [339 368])
+            ("for" code nil nil [369 568])
+            ("wb" code nil nil [568 590]))          
+      :file "querydb.py"
+      :pointmax 591
+      :fsize 602
+      :lastmodtime '(21979 13474 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("urllib.parse" include nil nil [25 69])
+            ("url" variable nil nil [71 79])
+            ("parsed_url" variable nil nil [81 107])
+            ("query" variable nil nil [109 144])
+            ("res" variable nil nil [146 154])
+            ("expected" variable nil nil [156 169])
+            ("for" code nil nil [171 300]))          
+      :file "dm_sign_valid.py"
+      :pointmax 309
+      :fsize 219
+      :lastmodtime '(22739 38172 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("csv" include nil nil [25 35])
+            ("requests" include nil nil [36 51])
+            ("time" include nil nil [52 63])
+            ("processed_result" variable nil nil [65 86])
+            ("with" code nil nil [87 762])
+            ("with" code nil nil [762 867]))          
+      :file "add_region_info.py"
+      :pointmax 867
+      :fsize 866
+      :lastmodtime '(21979 13474 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 433 . 509) (NEWLINE 432 . 433) (COLON 431 . 432) (TRY 364 . 367) (AS 427 . 429)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("csv" include nil nil [24 34])
+            ("resultdict" variable nil nil [36 51])
+            ("with" code nil nil [53 256])
+            ("with" code nil nil [257 505])
+            ("with" code nil nil [506 855])
+            ("with" code nil nil [856 1484])
+            ("with" code nil nil [1485 2281])
+            ("with" code nil nil [2282 2934])
+            ("f" variable nil nil [2935 2974])
+            ("writer" variable nil nil [2975 2997])
+            ("for" code nil nil [2998 3512])
+            ("f" code nil nil [3513 3522]))          
+      :file "gengerate_csv.py"
+      :pointmax 3523
+      :fsize 3522
+      :lastmodtime '(21979 13474 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("json" include nil nil [25 36])
+            ("matplotlib.pyplot" include nil nil [37 68])
+            ("data" variable nil nil [70 104])
+            ("data" variable nil nil [105 203])
+            ("x" variable nil nil [204 210])
+            ("y" variable nil nil [211 217])
+            ("for" code nil nil [218 335])
+            ("plt" code nil nil [336 350])
+            ("plt" code nil nil [351 361]))          
+      :file "vis.py"
+      :pointmax 362
+      :fsize 361
+      :lastmodtime '(22943 60771 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("json" include nil nil [23 34])
+            ("pymongo" include nil nil [35 66])
+            ("client" variable nil nil [68 90])
+            ("db" variable nil nil [93 111])
+            ("c" variable nil nil [112 129])
+            ("data" variable nil nil [130 232])
+            ("print" code nil nil [234 257]))          
+      :file "calculate.py"
+      :pointmax 258
+      :fsize 257
+      :lastmodtime '(22943 57686 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!script!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

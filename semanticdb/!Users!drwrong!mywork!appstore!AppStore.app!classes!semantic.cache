@@ -1,0 +1,328 @@
+;; Object classes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "classes/"
+  :tables
+  (list
+    (semanticdb-table "ASPurchasedViewController.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ASIPadPurchasedViewController" variable (:type "int") nil [309 428])
+            ("ASIPhonePurchasedViewController" variable (:type "int") nil [309 428])
+            ("ASPurchasedPage" variable (:type "int") nil [309 428])
+            ("NSString" variable (:type "int") nil [309 428])
+            ("SSFamilyMember" variable (:type "int") nil [309 428])
+            ("UIImageView" variable (:type "int") nil [309 428])
+            ("_shouldForwardViewWillTransitionToSize" variable (:type "int") nil [901 940])
+            ("arg1" variable (:type "int") nil [987 992])
+            ("arg2" variable (:type "int") nil [1062 1067])
+            ("cxx_destruct" variable (:type "int") nil [1077 1090])
+            ("arg1" variable (:type "int") nil [1126 1131])
+            ("arg1" variable (:type "int") nil [1178 1183])
+            ("arg1" variable (:type "int") nil [1219 1224])
+            ("_reloadData" variable (:type "int") nil [1233 1245])
+            ("_reloadDataAndCheckForUpdates" variable (:type "int") nil [1254 1284])
+            ("_reloadView" variable (:type "int") nil [1293 1305])
+            ("arg1" variable (:type "int") nil [1359 1364])
+            ("arg2" variable (:type "int") nil [1442 1447])
+            ("arg2" variable (:type "int") nil [1520 1525])
+            ("arg2" variable (:type "int") nil [1607 1612])
+            ("arg2" variable (:type "int") nil [1683 1688])
+            ("arg1" variable (:type "int") nil [1747 1752])
+            ("dealloc" variable (:type "int") nil [1761 1769])
+            ("familyMember" variable
+               (:pointer 1
+                :type ("SSFamilyMember" type (:type "class") nil nil))
+                nil [1799 1828])
+            ("arg2" variable (:type "int") nil [1914 1919])
+            ("loadView" variable (:type "int") nil [1928 1937])
+            ("viewDidLayoutSubviews" variable (:type "int") nil [1946 1968])
+            ("arg1" variable (:type "int") nil [1999 2004])
+            ("arg2" variable (:type "int") nil [2088 2093])
+            ("debugDescription" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [2145 2172])
+            ("description" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [2199 2221])
+            ("hash" variable (:type "unsigned long long") nil [2242 2266])
+            ("superclass" variable (:type ("Class" type (:type "class") nil nil)) nil [2287 2304]))          
+      :file "ASPurchasedViewController.h"
+      :pointmax 2312
+      :fsize 2311
+      :lastmodtime '(22652 54442 0 0)
+      :unmatched-syntax '((symbol 2307 . 2310) (punctuation 2306 . 2307) (semantic-list 2276 . 2286) (symbol 2268 . 2276) (punctuation 2267 . 2268) (semantic-list 2231 . 2241) (symbol 2223 . 2231) (punctuation 2222 . 2223) (semantic-list 2182 . 2198) (symbol 2174 . 2182) (punctuation 2173 . 2174) (semantic-list 2128 . 2144) (symbol 2120 . 2128) (punctuation 2119 . 2120) (semantic-list 2084 . 2088) (punctuation 2083 . 2084) (symbol 2058 . 2083) (symbol 2053 . 2057) (semantic-list 2038 . 2053) (punctuation 2037 . 2038) (symbol 2013 . 2037) (semantic-list 2007 . 2013) (punctuation 2005 . 2006) (semantic-list 1992 . 1999) (punctuation 1991 . 1992) (symbol 1977 . 1991) (semantic-list 1971 . 1977) (punctuation 1969 . 1970) (semantic-list 1940 . 1946) (punctuation 1938 . 1939) (semantic-list 1922 . 1928) (punctuation 1920 . 1921) (semantic-list 1910 . 1914) (punctuation 1909 . 1910) (symbol 1903 . 1909) (symbol 1898 . 1902) (semantic-list 1894 . 1898) (punctuation 1893 . 1894) (symbol 1878 . 1893) (semantic-list 1874 . 1878) (punctuation 1872 . 1873) (semantic-list 1779 . 1798) (symbol 1771 . 1779) (punctuation 1770 . 1771) (semantic-list 1755 . 1761) (punctuation 1753 . 1754) (semantic-list 1743 . 1747) (punctuation 1742 . 1743) (symbol 1697 . 1742) (semantic-list 1691 . 1697) (punctuation 1689 . 1690) (semantic-list 1679 . 1683) (punctuation 1678 . 1679) (symbol 1659 . 1678) (symbol 1654 . 1658) (semantic-list 1650 . 1654) (punctuation 1649 . 1650) (symbol 1621 . 1649) (semantic-list 1615 . 1621) (punctuation 1613 . 1614) (semantic-list 1600 . 1607) (punctuation 1599 . 1600) (symbol 1572 . 1599) (symbol 1567 . 1571) (semantic-list 1563 . 1567) (punctuation 1562 . 1563) (symbol 1534 . 1562) (semantic-list 1528 . 1534) (punctuation 1526 . 1527) (semantic-list 1516 . 1520) (punctuation 1515 . 1516) (symbol 1494 . 1515) (symbol 1489 . 1493) (semantic-list 1485 . 1489) (punctuation 1484 . 1485) (symbol 1456 . 1484) (semantic-list 1450 . 1456) (punctuation 1448 . 1449) (semantic-list 1431 . 1442) (punctuation 1430 . 1431) (symbol 1411 . 1430) (symbol 1406 . 1410) (semantic-list 1402 . 1406) (punctuation 1401 . 1402) (symbol 1373 . 1401) (semantic-list 1367 . 1373) (punctuation 1365 . 1366) (semantic-list 1344 . 1359) (punctuation 1343 . 1344) (symbol 1314 . 1343) (semantic-list 1308 . 1314) (punctuation 1306 . 1307) (semantic-list 1287 . 1293) (punctuation 1285 . 1286) (semantic-list 1248 . 1254) (punctuation 1246 . 1247) (semantic-list 1227 . 1233) (punctuation 1225 . 1226) (semantic-list 1215 . 1219) (punctuation 1214 . 1215) (symbol 1192 . 1214) (semantic-list 1186 . 1192) (punctuation 1184 . 1185) (semantic-list 1174 . 1178) (punctuation 1173 . 1174) (symbol 1140 . 1173) (semantic-list 1134 . 1140) (punctuation 1132 . 1133) (semantic-list 1122 . 1126) (punctuation 1121 . 1122) (symbol 1099 . 1121) (semantic-list 1093 . 1099) (punctuation 1091 . 1092) (punctuation 1076 . 1077) (semantic-list 1070 . 1076) (punctuation 1068 . 1069) (semantic-list 1058 . 1062) (punctuation 1057 . 1058) (symbol 1052 . 1057) (symbol 1047 . 1051) (semantic-list 1043 . 1047) (punctuation 1042 . 1043) (symbol 999 . 1042) (semantic-list 995 . 999) (punctuation 993 . 994) (semantic-list 972 . 987) (punctuation 971 . 972) (symbol 954 . 971) (semantic-list 943 . 954) (punctuation 941 . 942) (semantic-list 894 . 901) (punctuation 892 . 893) (semantic-list 585 . 890) (punctuation 583 . 584) (symbol 556 . 583) (punctuation 554 . 555) (symbol 529 . 554) (punctuation 527 . 528) (symbol 489 . 527) (punctuation 488 . 489) (symbol 469 . 487) (punctuation 467 . 468) (symbol 441 . 466) (symbol 431 . 440) (punctuation 430 . 431) (CLASS 303 . 308) (punctuation 302 . 303) (string 269 . 300) (symbol 262 . 268) (punctuation 261 . 262) (string 231 . 260) (symbol 224 . 230) (punctuation 223 . 224) (string 180 . 222) (symbol 173 . 179) (punctuation 172 . 173) (string 148 . 170) (symbol 141 . 147) (punctuation 140 . 141)))
+    (semanticdb-table "ASPurchasedPage.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("NSArray" variable (:type "int") nil [169 219])
+            ("NSString" variable (:type "int") nil [169 219])
+            ("SSFamilyCircle" variable (:type "int") nil [169 219])
+            ("SSFamilyMember" variable (:type "int") nil [169 219])
+            ("cxx_destruct" variable (:type "int") nil [484 497])
+            ("deviceType" variable (:type "long long") nil [519 540])
+            ("didFilterInstalledApps" variable (:type ("_Bool" type (:type "class") nil nil)) nil [601 630])
+            ("familyCircle" variable
+               (:pointer 1
+                :type ("SSFamilyCircle" type (:type "class") nil nil))
+                nil [723 752])
+            ("familyMember" variable
+               (:pointer 1
+                :type ("SSFamilyMember" type (:type "class") nil nil))
+                nil [825 854])
+            ("hidesInstalledApps" variable (:type ("_Bool" type (:type "class") nil nil)) nil [919 944])
+            ("items" variable
+               (:pointer 1
+                :type ("NSArray" type (:type "class") nil nil))
+                nil [1029 1044])
+            ("searchTerm" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1101 1122]))          
+      :file "ASPurchasedPage.h"
+      :pointmax 1169
+      :fsize 1168
+      :lastmodtime '(22652 54442 0 0)
+      :unmatched-syntax '((symbol 1164 . 1167) (punctuation 1163 . 1164) (semantic-list 1083 . 1100) (symbol 1075 . 1083) (punctuation 1074 . 1075) (semantic-list 1009 . 1028) (symbol 1001 . 1009) (punctuation 1000 . 1001) (semantic-list 907 . 918) (symbol 899 . 907) (punctuation 898 . 899) (semantic-list 805 . 824) (symbol 797 . 805) (punctuation 796 . 797) (semantic-list 703 . 722) (symbol 695 . 703) (punctuation 694 . 695) (semantic-list 589 . 600) (symbol 581 . 589) (punctuation 580 . 581) (semantic-list 507 . 518) (symbol 499 . 507) (punctuation 498 . 499) (punctuation 483 . 484) (semantic-list 477 . 483) (punctuation 475 . 476) (semantic-list 259 . 473) (symbol 250 . 258) (punctuation 248 . 249) (symbol 232 . 247) (symbol 222 . 231) (punctuation 221 . 222) (CLASS 163 . 168) (punctuation 162 . 163) (string 148 . 160) (symbol 141 . 147) (punctuation 140 . 141)))
+    (semanticdb-table "ASPurchasedItem.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("SKUIItemOffer" variable (:type "int") nil [169 205])
+            ("SSPurchasableAppItem" variable (:type "int") nil [169 205])
+            ("cxx_destruct" variable (:type "int") nil [361 374])
+            ("ageBandRange" variable (:type "int") nil [394 407])
+            ("artistName" variable (:type "int") nil [414 425])
+            ("arg1" variable (:type "int") nil [461 466])
+            ("bundleIdentifier" variable (:type "int") nil [473 490])
+            ("categoryName" variable (:type "int") nil [497 510])
+            ("arg1" variable (:type "int") nil [548 553])
+            ("familyShareable" variable (:type ("_Bool" type (:type "class") nil nil)) nil [611 633])
+            ("hideable" variable (:type ("_Bool" type (:type "class") nil nil)) nil [674 689])
+            ("isNewsstandApp" variable (:type "int") nil [734 749])
+            ("supportedOnIPad" variable (:type ("_Bool" type (:type "class") nil nil)) nil [807 829])
+            ("supportedOnIPhone" variable (:type ("_Bool" type (:type "class") nil nil)) nil [889 913])
+            ("itemIdentifier" variable (:type "int") nil [927 942])
+            ("itemKind" variable (:type "int") nil [956 965])
+            ("itemKindString" variable (:type "int") nil [972 987])
+            ("largestArtworkURL" variable (:type "int") nil [994 1012])
+            ("numberOfUserRatings" variable (:type "int") nil [1026 1046])
+            ("parentalControlsRank" variable (:type "int") nil [1060 1081])
+            ("primaryItemOffer" variable (:type "int") nil [1088 1105])
+            ("productPageURLString" variable (:type "int") nil [1112 1133])
+            ("title" variable (:type "int") nil [1140 1146])
+            ("userRating" variable (:type "int") nil [1156 1167])
+            ("versionIdentifier" variable (:type "int") nil [1181 1199])
+            ("versionString" variable (:type "int") nil [1206 1220]))          
+      :file "ASPurchasedItem.h"
+      :pointmax 1228
+      :fsize 1227
+      :lastmodtime '(22652 54442 0 0)
+      :unmatched-syntax '((symbol 1223 . 1226) (punctuation 1222 . 1223) (semantic-list 1202 . 1206) (punctuation 1200 . 1201) (semantic-list 1170 . 1181) (punctuation 1168 . 1169) (semantic-list 1149 . 1156) (punctuation 1147 . 1148) (semantic-list 1136 . 1140) (punctuation 1134 . 1135) (semantic-list 1108 . 1112) (punctuation 1106 . 1107) (semantic-list 1084 . 1088) (punctuation 1082 . 1083) (semantic-list 1049 . 1060) (punctuation 1047 . 1048) (semantic-list 1015 . 1026) (punctuation 1013 . 1014) (semantic-list 990 . 994) (punctuation 988 . 989) (semantic-list 968 . 972) (punctuation 966 . 967) (semantic-list 945 . 956) (punctuation 943 . 944) (semantic-list 916 . 927) (punctuation 914 . 915) (semantic-list 839 . 888) (symbol 831 . 839) (punctuation 830 . 831) (semantic-list 759 . 806) (symbol 751 . 759) (punctuation 750 . 751) (semantic-list 727 . 734) (punctuation 725 . 726) (semantic-list 643 . 673) (symbol 635 . 643) (punctuation 634 . 635) (semantic-list 563 . 610) (symbol 555 . 563) (punctuation 554 . 555) (semantic-list 544 . 548) (punctuation 543 . 544) (symbol 517 . 543) (semantic-list 513 . 517) (punctuation 511 . 512) (semantic-list 493 . 497) (punctuation 491 . 492) (semantic-list 469 . 473) (punctuation 467 . 468) (semantic-list 450 . 461) (punctuation 449 . 450) (symbol 432 . 449) (semantic-list 428 . 432) (punctuation 426 . 427) (semantic-list 410 . 414) (punctuation 408 . 409) (semantic-list 377 . 394) (punctuation 375 . 376) (punctuation 360 . 361) (semantic-list 354 . 360) (punctuation 352 . 353) (semantic-list 245 . 350) (symbol 236 . 244) (punctuation 234 . 235) (symbol 218 . 233) (symbol 208 . 217) (punctuation 207 . 208) (CLASS 163 . 168) (punctuation 162 . 163) (string 148 . 160) (symbol 141 . 147) (punctuation 140 . 141)))
+    (semanticdb-table "ASUpdatesViewController.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ASUpdatesPage" variable (:type "int") nil [431 575])
+            ("NSMutableSet" variable (:type "int") nil [431 575])
+            ("NSString" variable (:type "int") nil [431 575])
+            ("SKUIItemCollectionController" variable (:type "int") nil [431 575])
+            ("SKUILayoutCache" variable (:type "int") nil [431 575])
+            ("SSSoftwareUpdatesStore" variable (:type "int") nil [431 575])
+            ("UIAlertView" variable (:type "int") nil [431 575])
+            ("UIColor" variable (:type "int") nil [431 575])
+            ("UITableView" variable (:type "int") nil [431 575])
+            ("_shouldForwardViewWillTransitionToSize" variable (:type "int") nil [1277 1316])
+            ("cxx_destruct" variable (:type "int") nil [1326 1339])
+            ("arg1" variable (:type "int") nil [1384 1389])
+            ("_displayAutoUpdatesDiscovery" variable (:type "int") nil [1398 1427])
+            ("_enableForcedBadgeIfApplicable" variable (:type "int") nil [1436 1467])
+            ("arg1" variable (:type "int") nil [1497 1502])
+            ("arg1" variable (:type "int") nil [1543 1548])
+            ("arg1" variable (:type "int") nil [1583 1588])
+            ("_isUpdateAllEnabled" variable (:type "int") nil [1598 1618])
+            ("_itemCollectionController" variable (:type "int") nil [1625 1651])
+            ("arg1" variable (:type "int") nil [1680 1685])
+            ("arg1" variable (:type "int") nil [1726 1731])
+            ("arg1" variable (:type "int") nil [1772 1777])
+            ("_reloadBars" variable (:type "int") nil [1786 1798])
+            ("_reloadData" variable (:type "int") nil [1807 1819])
+            ("arg1" variable (:type "int") nil [1859 1864])
+            ("_reloadTableView" variable (:type "int") nil [1873 1890])
+            ("_sectionsRangeForUpdateItems" variable (:type "int") nil [1910 1939])
+            ("arg2" variable (:type "int") nil [2001 2006])
+            ("arg1" variable (:type "int") nil [2043 2048])
+            ("_softwareUpdatesStore" variable (:type "int") nil [2055 2077])
+            ("_tableView" variable (:type "int") nil [2084 2095])
+            ("arg1" variable (:type "int") nil [2132 2137])
+            ("_updatableItems" variable (:type "int") nil [2144 2160])
+            ("arg1" variable (:type "int") nil [2190 2195])
+            ("arg1" variable (:type "int") nil [2230 2235])
+            ("arg1" variable (:type "int") nil [2280 2285])
+            ("arg2" variable (:type "int") nil [2350 2355])
+            ("arg1" variable (:type "int") nil [2384 2389])
+            ("dealloc" variable (:type "int") nil [2398 2406])
+            ("arg2" variable (:type "int") nil [2449 2454])
+            ("arg2" variable (:type "int") nil [2529 2534])
+            ("arg2" variable (:type "int") nil [2627 2632])
+            ("arg2" variable (:type "int") nil [2688 2693])
+            ("arg1" variable (:type "int") nil [2741 2746])
+            ("arg2" variable (:type "int") nil [2818 2823])
+            ("arg1" variable (:type "int") nil [2862 2867])
+            ("loadView" variable (:type "int") nil [2876 2885])
+            ("arg1" variable (:type "int") nil [2931 2936])
+            ("arg2" variable (:type "int") nil [2987 2992])
+            ("reloadData" variable (:type "int") nil [3001 3012])
+            ("arg1" variable (:type "int") nil [3054 3059])
+            ("arg1" variable (:type "int") nil [3100 3105])
+            ("arg3" variable (:type "int") nil [3227 3232])
+            ("arg1" variable (:type "int") nil [3259 3264])
+            ("arg1" variable (:type "int") nil [3330 3335])
+            ("supportedInterfaceOrientations" variable (:type "int") nil [3358 3389])
+            ("arg2" variable (:type "int") nil [3441 3446])
+            ("arg3" variable (:type "int") nil [3526 3531])
+            ("arg2" variable (:type "int") nil [3587 3592])
+            ("arg2" variable (:type "int") nil [3650 3655])
+            ("arg2" variable (:type "int") nil [3721 3726])
+            ("arg2" variable (:type "int") nil [3787 3792])
+            ("arg2" variable (:type "int") nil [3852 3857])
+            ("arg3" variable (:type "int") nil [3932 3937])
+            ("arg1" variable (:type "int") nil [3967 3972])
+            ("arg1" variable (:type "int") nil [4005 4010])
+            ("viewDidLayoutSubviews" variable (:type "int") nil [4019 4041])
+            ("arg1" variable (:type "int") nil [4072 4077])
+            ("arg2" variable (:type "int") nil [4161 4166])
+            ("arg1" variable (:type "int") nil [4234 4239])
+            ("debugDescription" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [4291 4318])
+            ("description" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [4345 4367])
+            ("hash" variable (:type "unsigned long long") nil [4388 4412])
+            ("superclass" variable (:type ("Class" type (:type "class") nil nil)) nil [4433 4450]))          
+      :file "ASUpdatesViewController.h"
+      :pointmax 4458
+      :fsize 4457
+      :lastmodtime '(22652 54442 0 0)
+      :unmatched-syntax '((symbol 4453 . 4456) (punctuation 4452 . 4453) (semantic-list 4422 . 4432) (symbol 4414 . 4422) (punctuation 4413 . 4414) (semantic-list 4377 . 4387) (symbol 4369 . 4377) (punctuation 4368 . 4369) (semantic-list 4328 . 4344) (symbol 4320 . 4328) (punctuation 4319 . 4320) (semantic-list 4274 . 4290) (symbol 4266 . 4274) (punctuation 4265 . 4266) (semantic-list 4230 . 4234) (punctuation 4229 . 4230) (symbol 4186 . 4229) (semantic-list 4169 . 4186) (punctuation 4167 . 4168) (semantic-list 4157 . 4161) (punctuation 4156 . 4157) (symbol 4131 . 4156) (symbol 4126 . 4130) (semantic-list 4111 . 4126) (punctuation 4110 . 4111) (symbol 4086 . 4110) (semantic-list 4080 . 4086) (punctuation 4078 . 4079) (semantic-list 4065 . 4072) (punctuation 4064 . 4065) (symbol 4050 . 4064) (semantic-list 4044 . 4050) (punctuation 4042 . 4043) (semantic-list 4013 . 4019) (punctuation 4011 . 4012) (semantic-list 3998 . 4005) (punctuation 3997 . 3998) (symbol 3981 . 3997) (semantic-list 3975 . 3981) (punctuation 3973 . 3974) (semantic-list 3960 . 3967) (punctuation 3959 . 3960) (symbol 3946 . 3959) (semantic-list 3940 . 3946) (punctuation 3938 . 3939) (semantic-list 3928 . 3932) (punctuation 3927 . 3928) (symbol 3910 . 3927) (symbol 3905 . 3909) (semantic-list 3901 . 3905) (punctuation 3900 . 3901) (symbol 3885 . 3900) (symbol 3880 . 3884) (semantic-list 3876 . 3880) (punctuation 3875 . 3876) (symbol 3866 . 3875) (semantic-list 3860 . 3866) (punctuation 3858 . 3859) (semantic-list 3841 . 3852) (punctuation 3840 . 3841) (symbol 3818 . 3840) (symbol 3813 . 3817) (semantic-list 3809 . 3813) (punctuation 3808 . 3809) (symbol 3799 . 3808) (semantic-list 3795 . 3799) (punctuation 3793 . 3794) (semantic-list 3776 . 3787) (punctuation 3775 . 3776) (symbol 3752 . 3775) (symbol 3747 . 3751) (semantic-list 3743 . 3747) (punctuation 3742 . 3743) (symbol 3733 . 3742) (semantic-list 3729 . 3733) (punctuation 3727 . 3728) (semantic-list 3710 . 3721) (punctuation 3709 . 3710) (symbol 3688 . 3709) (symbol 3683 . 3687) (semantic-list 3679 . 3683) (punctuation 3678 . 3679) (symbol 3669 . 3678) (semantic-list 3658 . 3669) (punctuation 3656 . 3657) (semantic-list 3646 . 3650) (punctuation 3645 . 3646) (symbol 3622 . 3645) (symbol 3617 . 3621) (semantic-list 3613 . 3617) (punctuation 3612 . 3613) (symbol 3603 . 3612) (semantic-list 3595 . 3603) (punctuation 3593 . 3594) (semantic-list 3583 . 3587) (punctuation 3582 . 3583) (symbol 3559 . 3582) (symbol 3554 . 3558) (semantic-list 3550 . 3554) (punctuation 3549 . 3550) (symbol 3540 . 3549) (semantic-list 3534 . 3540) (punctuation 3532 . 3533) (semantic-list 3522 . 3526) (punctuation 3521 . 3522) (symbol 3504 . 3521) (symbol 3499 . 3503) (semantic-list 3495 . 3499) (punctuation 3494 . 3495) (symbol 3474 . 3494) (symbol 3469 . 3473) (semantic-list 3465 . 3469) (punctuation 3464 . 3465) (symbol 3455 . 3464) (semantic-list 3449 . 3455) (punctuation 3447 . 3448) (semantic-list 3437 . 3441) (punctuation 3436 . 3437) (symbol 3415 . 3436) (symbol 3410 . 3414) (semantic-list 3406 . 3410) (punctuation 3405 . 3406) (symbol 3396 . 3405) (semantic-list 3392 . 3396) (punctuation 3390 . 3391) (semantic-list 3338 . 3358) (punctuation 3336 . 3337) (semantic-list 3326 . 3330) (punctuation 3325 . 3326) (symbol 3274 . 3325) (semantic-list 3267 . 3274) (punctuation 3265 . 3266) (semantic-list 3255 . 3259) (punctuation 3254 . 3255) (symbol 3241 . 3254) (semantic-list 3235 . 3241) (punctuation 3233 . 3234) (semantic-list 3203 . 3227) (punctuation 3202 . 3203) (symbol 3183 . 3202) (symbol 3178 . 3182) (semantic-list 3162 . 3178) (punctuation 3161 . 3162) (symbol 3149 . 3161) (symbol 3144 . 3148) (semantic-list 3140 . 3144) (punctuation 3139 . 3140) (symbol 3114 . 3139) (semantic-list 3108 . 3114) (punctuation 3106 . 3107) (semantic-list 3096 . 3100) (punctuation 3095 . 3096) (symbol 3068 . 3095) (semantic-list 3062 . 3068) (punctuation 3060 . 3061) (semantic-list 3050 . 3054) (punctuation 3049 . 3050) (symbol 3021 . 3049) (semantic-list 3015 . 3021) (punctuation 3013 . 3014) (semantic-list 2995 . 3001) (punctuation 2993 . 2994) (semantic-list 2983 . 2987) (punctuation 2982 . 2983) (symbol 2975 . 2982) (symbol 2970 . 2974) (semantic-list 2966 . 2970) (punctuation 2965 . 2966) (symbol 2946 . 2965) (semantic-list 2939 . 2946) (punctuation 2937 . 2938) (semantic-list 2927 . 2931) (punctuation 2926 . 2927) (symbol 2899 . 2926) (semantic-list 2888 . 2899) (punctuation 2886 . 2887) (semantic-list 2870 . 2876) (punctuation 2868 . 2869) (semantic-list 2858 . 2862) (punctuation 2857 . 2858) (symbol 2832 . 2857) (semantic-list 2826 . 2832) (punctuation 2824 . 2825) (semantic-list 2814 . 2818) (punctuation 2813 . 2814) (symbol 2778 . 2813) (symbol 2773 . 2777) (semantic-list 2769 . 2773) (punctuation 2768 . 2769) (symbol 2755 . 2768) (semantic-list 2749 . 2755) (punctuation 2747 . 2748) (semantic-list 2737 . 2741) (punctuation 2736 . 2737) (symbol 2702 . 2736) (semantic-list 2696 . 2702) (punctuation 2694 . 2695) (semantic-list 2684 . 2688) (punctuation 2683 . 2684) (symbol 2666 . 2683) (symbol 2661 . 2665) (semantic-list 2657 . 2661) (punctuation 2656 . 2657) (symbol 2641 . 2656) (semantic-list 2635 . 2641) (punctuation 2633 . 2634) (semantic-list 2611 . 2627) (punctuation 2610 . 2611) (symbol 2588 . 2610) (symbol 2583 . 2587) (semantic-list 2579 . 2583) (punctuation 2578 . 2579) (symbol 2554 . 2578) (semantic-list 2537 . 2554) (punctuation 2535 . 2536) (semantic-list 2518 . 2529) (punctuation 2517 . 2518) (symbol 2495 . 2517) (symbol 2490 . 2494) (semantic-list 2486 . 2490) (punctuation 2485 . 2486) (symbol 2461 . 2485) (semantic-list 2457 . 2461) (punctuation 2455 . 2456) (semantic-list 2445 . 2449) (punctuation 2444 . 2445) (symbol 2438 . 2444) (symbol 2433 . 2437) (semantic-list 2429 . 2433) (punctuation 2428 . 2429) (symbol 2413 . 2428) (semantic-list 2409 . 2413) (punctuation 2407 . 2408) (semantic-list 2392 . 2398) (punctuation 2390 . 2391) (semantic-list 2380 . 2384) (punctuation 2379 . 2380) (symbol 2364 . 2379) (semantic-list 2358 . 2364) (punctuation 2356 . 2357) (semantic-list 2339 . 2350) (punctuation 2338 . 2339) (symbol 2313 . 2338) (symbol 2308 . 2312) (semantic-list 2304 . 2308) (punctuation 2303 . 2304) (symbol 2294 . 2303) (semantic-list 2288 . 2294) (punctuation 2286 . 2287) (semantic-list 2276 . 2280) (punctuation 2275 . 2276) (symbol 2244 . 2275) (semantic-list 2238 . 2244) (punctuation 2236 . 2237) (semantic-list 2226 . 2230) (punctuation 2225 . 2226) (symbol 2202 . 2225) (semantic-list 2198 . 2202) (punctuation 2196 . 2197) (semantic-list 2186 . 2190) (punctuation 2185 . 2186) (symbol 2169 . 2185) (semantic-list 2163 . 2169) (punctuation 2161 . 2162) (semantic-list 2140 . 2144) (punctuation 2138 . 2139) (semantic-list 2128 . 2132) (punctuation 2127 . 2128) (symbol 2102 . 2127) (semantic-list 2098 . 2102) (punctuation 2096 . 2097) (semantic-list 2080 . 2084) (punctuation 2078 . 2079) (semantic-list 2051 . 2055) (punctuation 2049 . 2050) (semantic-list 2039 . 2043) (punctuation 2038 . 2039) (symbol 2015 . 2038) (semantic-list 2009 . 2015) (punctuation 2007 . 2008) (semantic-list 1994 . 2001) (punctuation 1993 . 1994) (symbol 1984 . 1993) (symbol 1979 . 1983) (semantic-list 1975 . 1979) (punctuation 1974 . 1975) (symbol 1948 . 1974) (semantic-list 1942 . 1948) (punctuation 1940 . 1941) (semantic-list 1893 . 1910) (punctuation 1891 . 1892) (semantic-list 1867 . 1873) (punctuation 1865 . 1866) (semantic-list 1855 . 1859) (punctuation 1854 . 1855) (symbol 1828 . 1854) (semantic-list 1822 . 1828) (punctuation 1820 . 1821) (semantic-list 1801 . 1807) (punctuation 1799 . 1800) (semantic-list 1780 . 1786) (punctuation 1778 . 1779) (semantic-list 1768 . 1772) (punctuation 1767 . 1768) (symbol 1738 . 1767) (semantic-list 1734 . 1738) (punctuation 1732 . 1733) (semantic-list 1722 . 1726) (punctuation 1721 . 1722) (symbol 1699 . 1721) (semantic-list 1688 . 1699) (punctuation 1686 . 1687) (semantic-list 1676 . 1680) (punctuation 1675 . 1676) (symbol 1658 . 1675) (semantic-list 1654 . 1658) (punctuation 1652 . 1653) (semantic-list 1621 . 1625) (punctuation 1619 . 1620) (semantic-list 1591 . 1598) (punctuation 1589 . 1590) (semantic-list 1579 . 1583) (punctuation 1578 . 1579) (symbol 1558 . 1578) (semantic-list 1551 . 1558) (punctuation 1549 . 1550) (semantic-list 1532 . 1543) (punctuation 1531 . 1532) (symbol 1509 . 1531) (semantic-list 1505 . 1509) (punctuation 1503 . 1504) (semantic-list 1493 . 1497) (punctuation 1492 . 1493) (symbol 1476 . 1492) (semantic-list 1470 . 1476) (punctuation 1468 . 1469) (semantic-list 1430 . 1436) (punctuation 1428 . 1429) (semantic-list 1392 . 1398) (punctuation 1390 . 1391) (semantic-list 1380 . 1384) (punctuation 1379 . 1380) (symbol 1348 . 1379) (semantic-list 1342 . 1348) (punctuation 1340 . 1341) (punctuation 1325 . 1326) (semantic-list 1319 . 1325) (punctuation 1317 . 1318) (semantic-list 1270 . 1277) (punctuation 1268 . 1269) (semantic-list 808 . 1266) (punctuation 806 . 807) (symbol 787 . 806) (punctuation 785 . 786) (symbol 764 . 785) (punctuation 762 . 763) (symbol 743 . 762) (punctuation 741 . 742) (symbol 716 . 741) (punctuation 714 . 715) (symbol 691 . 714) (punctuation 689 . 690) (symbol 662 . 689) (punctuation 660 . 661) (symbol 634 . 660) (punctuation 633 . 634) (symbol 614 . 632) (punctuation 612 . 613) (symbol 588 . 611) (symbol 578 . 587) (punctuation 577 . 578) (CLASS 425 . 430) (punctuation 424 . 425) (string 399 . 422) (symbol 392 . 398) (punctuation 391 . 392) (string 365 . 390) (symbol 358 . 364) (punctuation 357 . 358) (string 333 . 356) (symbol 326 . 332) (punctuation 325 . 326) (string 295 . 324) (symbol 288 . 294) (punctuation 287 . 288) (string 259 . 286) (symbol 252 . 258) (punctuation 251 . 252) (string 219 . 250) (symbol 212 . 218) (punctuation 211 . 212) (string 180 . 210) (symbol 173 . 179) (punctuation 172 . 173) (string 148 . 170) (symbol 141 . 147) (punctuation 140 . 141)))
+    (semanticdb-table "ASUpdateItem.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("NSString" type
+               (:prototype t
+                :type "class")
+                nil [163 178])
+            ("cxx_destruct" variable (:type "int") nil [322 335])
+            ("description" variable (:type "int") nil [342 354])
+            ("arg1" variable (:type "int") nil [390 395])
+            ("systemApp" variable (:type ("_Bool" type (:type "class") nil nil)) nil [447 463])
+            ("lastUpdateDateString" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [532 563])
+            ("updateDescription" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [654 682]))          
+      :file "ASUpdateItem.h"
+      :pointmax 743
+      :fsize 742
+      :lastmodtime '(22652 54442 0 0)
+      :unmatched-syntax '((symbol 738 . 741) (punctuation 737 . 738) (semantic-list 632 . 653) (symbol 624 . 632) (punctuation 623 . 624) (semantic-list 510 . 531) (symbol 502 . 510) (punctuation 501 . 502) (semantic-list 405 . 446) (symbol 397 . 405) (punctuation 396 . 397) (semantic-list 386 . 390) (punctuation 385 . 386) (symbol 361 . 385) (semantic-list 357 . 361) (punctuation 355 . 356) (semantic-list 338 . 342) (punctuation 336 . 337) (punctuation 321 . 322) (semantic-list 315 . 321) (punctuation 313 . 314) (semantic-list 215 . 311) (symbol 206 . 214) (punctuation 204 . 205) (symbol 191 . 203) (symbol 181 . 190) (punctuation 180 . 181) (punctuation 162 . 163) (string 148 . 160) (symbol 141 . 147) (punctuation 140 . 141)))
+    (semanticdb-table "ASAppDelegate.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ASLaunchNotificationsController" variable (:type "int") nil [293 397])
+            ("NSMutableArray" variable (:type "int") nil [293 397])
+            ("NSString" variable (:type "int") nil [293 397])
+            ("SKUIApplicationController" variable (:type "int") nil [293 397])
+            ("SKUIURL" variable (:type "int") nil [293 397])
+            ("UIWindow" variable (:type "int") nil [293 397])
+            ("cxx_destruct" variable (:type "int") nil [908 921])
+            ("arg1" variable (:type "int") nil [968 973])
+            ("arg1" variable (:type "int") nil [1015 1020])
+            ("arg1" variable (:type "int") nil [1061 1066])
+            ("arg2" variable (:type "int") nil [1139 1144])
+            ("arg1" variable (:type "int") nil [1187 1192])
+            ("arg2" variable (:type "int") nil [1246 1251])
+            ("arg3" variable (:type "int") nil [1327 1332])
+            ("_selectUpdatesTab" variable (:type "int") nil [1341 1359])
+            ("_showBlankPlaceholderViewController" variable (:type "int") nil [1368 1404])
+            ("arg1" variable (:type "int") nil [1448 1453])
+            ("arg1" variable (:type "int") nil [1483 1488])
+            ("arg1" variable (:type "int") nil [1530 1535])
+            ("arg1" variable (:type "int") nil [1579 1584])
+            ("arg2" variable (:type "int") nil [1641 1646])
+            ("arg2" variable (:type "int") nil [1711 1716])
+            ("arg4" variable (:type "int") nil [1806 1811])
+            ("arg3" variable (:type "int") nil [1917 1922])
+            ("arg3" variable (:type "int") nil [1982 1987])
+            ("arg2" variable (:type "int") nil [2075 2080])
+            ("arg3" variable (:type "int") nil [2181 2186])
+            ("arg1" variable (:type "int") nil [2226 2231])
+            ("arg1" variable (:type "int") nil [2278 2283])
+            ("arg1" variable (:type "int") nil [2327 2332])
+            ("arg1" variable (:type "int") nil [2373 2378])
+            ("arg1" variable (:type "int") nil [2416 2421])
+            ("dealloc" variable (:type "int") nil [2430 2438])
+            ("init" variable (:type "int") nil [2445 2450])
+            ("debugDescription" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [2502 2529])
+            ("description" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [2556 2578])
+            ("hash" variable (:type "unsigned long long") nil [2599 2623])
+            ("superclass" variable (:type ("Class" type (:type "class") nil nil)) nil [2644 2661])
+            ("window" variable
+               (:pointer 1
+                :type ("UIWindow" type (:type "class") nil nil))
+                nil [2691 2708]))          
+      :file "ASAppDelegate.h"
+      :pointmax 2716
+      :fsize 2715
+      :lastmodtime '(22694 48742 0 0)
+      :unmatched-syntax '((symbol 2711 . 2714) (punctuation 2710 . 2711) (semantic-list 2671 . 2690) (symbol 2663 . 2671) (punctuation 2662 . 2663) (semantic-list 2633 . 2643) (symbol 2625 . 2633) (punctuation 2624 . 2625) (semantic-list 2588 . 2598) (symbol 2580 . 2588) (punctuation 2579 . 2580) (semantic-list 2539 . 2555) (symbol 2531 . 2539) (punctuation 2530 . 2531) (semantic-list 2485 . 2501) (symbol 2477 . 2485) (punctuation 2476 . 2477) (semantic-list 2441 . 2445) (punctuation 2439 . 2440) (semantic-list 2424 . 2430) (punctuation 2422 . 2423) (semantic-list 2412 . 2416) (punctuation 2411 . 2412) (symbol 2387 . 2411) (semantic-list 2381 . 2387) (punctuation 2379 . 2380) (semantic-list 2369 . 2373) (punctuation 2368 . 2369) (symbol 2341 . 2368) (semantic-list 2335 . 2341) (punctuation 2333 . 2334) (semantic-list 2323 . 2327) (punctuation 2322 . 2323) (symbol 2292 . 2322) (semantic-list 2286 . 2292) (punctuation 2284 . 2285) (semantic-list 2274 . 2278) (punctuation 2273 . 2274) (symbol 2240 . 2273) (semantic-list 2234 . 2240) (punctuation 2232 . 2233) (semantic-list 2222 . 2226) (punctuation 2221 . 2222) (symbol 2195 . 2221) (semantic-list 2189 . 2195) (punctuation 2187 . 2188) (semantic-list 2177 . 2181) (punctuation 2176 . 2177) (symbol 2151 . 2176) (symbol 2146 . 2150) (semantic-list 2131 . 2146) (punctuation 2130 . 2131) (symbol 2110 . 2130) (symbol 2105 . 2109) (semantic-list 2101 . 2105) (punctuation 2100 . 2101) (symbol 2089 . 2100) (semantic-list 2083 . 2089) (punctuation 2081 . 2082) (semantic-list 2071 . 2075) (punctuation 2070 . 2071) (symbol 2031 . 2070) (symbol 2026 . 2030) (semantic-list 2022 . 2026) (punctuation 2021 . 2022) (symbol 2010 . 2021) (semantic-list 1990 . 2010) (punctuation 1988 . 1989) (semantic-list 1978 . 1982) (punctuation 1977 . 1978) (symbol 1970 . 1977) (symbol 1965 . 1969) (semantic-list 1961 . 1965) (punctuation 1960 . 1961) (symbol 1953 . 1960) (symbol 1948 . 1952) (semantic-list 1944 . 1948) (punctuation 1943 . 1944) (symbol 1932 . 1943) (semantic-list 1925 . 1932) (punctuation 1923 . 1924) (semantic-list 1897 . 1917) (punctuation 1896 . 1897) (symbol 1879 . 1896) (symbol 1874 . 1878) (semantic-list 1870 . 1874) (punctuation 1869 . 1870) (symbol 1841 . 1869) (symbol 1836 . 1840) (semantic-list 1832 . 1836) (punctuation 1831 . 1832) (symbol 1820 . 1831) (semantic-list 1814 . 1820) (punctuation 1812 . 1813) (semantic-list 1802 . 1806) (punctuation 1801 . 1802) (symbol 1791 . 1801) (symbol 1786 . 1790) (semantic-list 1782 . 1786) (punctuation 1781 . 1782) (symbol 1764 . 1781) (symbol 1759 . 1763) (semantic-list 1755 . 1759) (punctuation 1754 . 1755) (symbol 1747 . 1754) (symbol 1742 . 1746) (semantic-list 1738 . 1742) (punctuation 1737 . 1738) (symbol 1726 . 1737) (semantic-list 1719 . 1726) (punctuation 1717 . 1718) (semantic-list 1707 . 1711) (punctuation 1706 . 1707) (symbol 1677 . 1706) (symbol 1672 . 1676) (semantic-list 1668 . 1672) (punctuation 1667 . 1668) (symbol 1656 . 1667) (semantic-list 1649 . 1656) (punctuation 1647 . 1648) (semantic-list 1637 . 1641) (punctuation 1636 . 1637) (symbol 1614 . 1636) (symbol 1609 . 1613) (semantic-list 1605 . 1609) (punctuation 1604 . 1605) (symbol 1593 . 1604) (semantic-list 1587 . 1593) (punctuation 1585 . 1586) (semantic-list 1571 . 1579) (punctuation 1570 . 1571) (symbol 1549 . 1570) (semantic-list 1538 . 1549) (punctuation 1536 . 1537) (semantic-list 1526 . 1530) (punctuation 1525 . 1526) (symbol 1497 . 1525) (semantic-list 1491 . 1497) (punctuation 1489 . 1490) (semantic-list 1479 . 1483) (punctuation 1478 . 1479) (symbol 1462 . 1478) (semantic-list 1456 . 1462) (punctuation 1454 . 1455) (semantic-list 1444 . 1448) (punctuation 1443 . 1444) (symbol 1413 . 1443) (semantic-list 1407 . 1413) (punctuation 1405 . 1406) (semantic-list 1362 . 1368) (punctuation 1360 . 1361) (semantic-list 1335 . 1341) (punctuation 1333 . 1334) (semantic-list 1316 . 1327) (punctuation 1315 . 1316) (symbol 1304 . 1315) (symbol 1299 . 1303) (semantic-list 1295 . 1299) (punctuation 1294 . 1295) (symbol 1287 . 1294) (symbol 1282 . 1286) (semantic-list 1278 . 1282) (punctuation 1277 . 1278) (symbol 1261 . 1277) (semantic-list 1254 . 1261) (punctuation 1252 . 1253) (semantic-list 1242 . 1246) (punctuation 1241 . 1242) (symbol 1234 . 1241) (symbol 1229 . 1233) (semantic-list 1225 . 1229) (punctuation 1224 . 1225) (symbol 1202 . 1224) (semantic-list 1195 . 1202) (punctuation 1193 . 1194) (semantic-list 1176 . 1187) (punctuation 1175 . 1176) (symbol 1151 . 1175) (semantic-list 1147 . 1151) (punctuation 1145 . 1146) (semantic-list 1128 . 1139) (punctuation 1127 . 1128) (symbol 1122 . 1127) (symbol 1117 . 1121) (semantic-list 1113 . 1117) (punctuation 1112 . 1113) (symbol 1073 . 1112) (semantic-list 1069 . 1073) (punctuation 1067 . 1068) (semantic-list 1057 . 1061) (punctuation 1056 . 1057) (symbol 1029 . 1056) (semantic-list 1023 . 1029) (punctuation 1021 . 1022) (semantic-list 1011 . 1015) (punctuation 1010 . 1011) (symbol 982 . 1010) (semantic-list 976 . 982) (punctuation 974 . 975) (semantic-list 964 . 968) (punctuation 963 . 964) (symbol 930 . 963) (semantic-list 924 . 930) (punctuation 922 . 923) (punctuation 907 . 908) (semantic-list 901 . 907) (punctuation 899 . 900) (semantic-list 527 . 897) (punctuation 525 . 526) (symbol 495 . 525) (punctuation 493 . 494) (symbol 465 . 493) (punctuation 463 . 464) (symbol 439 . 463) (punctuation 438 . 439) (symbol 426 . 437) (punctuation 424 . 425) (symbol 410 . 423) (symbol 400 . 409) (punctuation 399 . 400) (CLASS 287 . 292) (punctuation 286 . 287) (string 252 . 284) (symbol 245 . 251) (punctuation 244 . 245) (string 209 . 243) (symbol 202 . 208) (punctuation 201 . 202) (string 173 . 200) (symbol 166 . 172) (punctuation 165 . 166) (string 148 . 163) (symbol 141 . 147) (punctuation 140 . 141)))
+    (semanticdb-table "ASClientContext.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("NSBundle" variable (:type "int") nil [178 218])
+            ("SKUILocalizedStringDictionary" variable (:type "int") nil [178 218])
+            ("cxx_destruct" variable (:type "int") nil [358 371])
+            ("arg1" variable (:type "int") nil [447 452])
+            ("arg1" variable (:type "int") nil [495 500])
+            ("arg1" variable (:type "int") nil [535 540])
+            ("arg2" variable (:type "int") nil [590 595]))          
+      :file "ASClientContext.h"
+      :pointmax 603
+      :fsize 602
+      :lastmodtime '(22652 54442 0 0)
+      :unmatched-syntax '((symbol 598 . 601) (punctuation 597 . 598) (semantic-list 586 . 590) (punctuation 585 . 586) (symbol 578 . 585) (symbol 573 . 577) (semantic-list 569 . 573) (punctuation 568 . 569) (symbol 547 . 568) (semantic-list 543 . 547) (punctuation 541 . 542) (semantic-list 531 . 535) (punctuation 530 . 531) (symbol 507 . 530) (semantic-list 503 . 507) (punctuation 501 . 502) (semantic-list 491 . 495) (punctuation 490 . 491) (symbol 459 . 490) (semantic-list 455 . 459) (punctuation 453 . 454) (semantic-list 427 . 447) (punctuation 426 . 427) (symbol 380 . 426) (semantic-list 374 . 380) (punctuation 372 . 373) (punctuation 357 . 358) (semantic-list 351 . 357) (punctuation 349 . 350) (semantic-list 267 . 347) (symbol 249 . 266) (punctuation 247 . 248) (symbol 231 . 246) (symbol 221 . 230) (punctuation 220 . 221) (CLASS 172 . 177) (punctuation 171 . 172) (string 148 . 169) (symbol 141 . 147) (punctuation 140 . 141)))
+    (semanticdb-table "ASLaunchNotificationsController.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("AAUIFamilySetupPrompter" variable (:type "int") nil [169 248])
+            ("NSOperationQueue" variable (:type "int") nil [169 248])
+            ("SKUIClientContext" variable (:type "int") nil [169 248])
+            ("UIViewController" variable (:type "int") nil [169 248])
+            ("cxx_destruct" variable (:type "int") nil [492 505])
+            ("_hasDisplayedFamilySetup" variable (:type "int") nil [515 540])
+            ("_showFamilySetupPrompt" variable (:type "int") nil [549 572])
+            ("checkForNotifications" variable (:type "int") nil [581 603])
+            ("clientContext" variable
+               (:pointer 1
+                :type ("SKUIClientContext" type (:type "class") nil nil))
+                nil [633 666])
+            ("arg1" variable (:type "int") nil [751 756]))          
+      :file "ASLaunchNotificationsController.h"
+      :pointmax 764
+      :fsize 763
+      :lastmodtime '(22652 54442 0 0)
+      :unmatched-syntax '((symbol 759 . 762) (punctuation 758 . 759) (semantic-list 747 . 751) (punctuation 746 . 747) (symbol 718 . 746) (semantic-list 714 . 718) (punctuation 712 . 713) (semantic-list 613 . 632) (symbol 605 . 613) (punctuation 604 . 605) (semantic-list 575 . 581) (punctuation 573 . 574) (semantic-list 543 . 549) (punctuation 541 . 542) (semantic-list 508 . 515) (punctuation 506 . 507) (punctuation 491 . 492) (semantic-list 485 . 491) (punctuation 483 . 484) (semantic-list 304 . 481) (symbol 295 . 303) (punctuation 293 . 294) (symbol 261 . 292) (symbol 251 . 260) (punctuation 250 . 251) (CLASS 163 . 168) (punctuation 162 . 163) (string 148 . 160) (symbol 141 . 147) (punctuation 140 . 141))))
+  :file "!Users!drwrong!mywork!appstore!AppStore.app!classes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

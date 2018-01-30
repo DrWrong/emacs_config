@@ -1,0 +1,57 @@
+;; Object weather_server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "weather_server/"
+  :tables
+  (list
+    (semanticdb-table "handler.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [25 54])
+            ("django.conf" include nil nil [55 87])
+            ("urllib" include nil nil [88 123])
+            ("hashlib" include nil nil [124 148])
+            ("hmac" include nil nil [149 160])
+            ("base64" include nil nil [161 174])
+            ("requests" include nil nil [175 190])
+            ("RegionCode" include nil nil [205 222])
+            ("Handler" type
+               (:superclasses ("object")
+                :members 
+                  ( ("get_weather_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [274 278])
+                            ("header" variable nil (reparse-symbol function_parameters) [280 286])
+                            ("city_code" variable nil (reparse-symbol function_parameters) [288 297]))                          )
+                        (reparse-symbol indented_block_body) [253 1336]))                  
+                :type "class")
+                nil [225 1336]))          
+      :file "handler.py"
+      :pointmax 1336
+      :fsize 1335
+      :lastmodtime '(22294 60157 0 0)
+      :unmatched-syntax '((FROM 192 . 196) (PERIOD 197 . 198)))
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.db" include nil nil [25 53])
+            ("RegionCode" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("area_code" variable nil (reparse-symbol indented_block_body) [92 125])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [151 166])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [175 199]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [131 200]))                  
+                :type "class")
+                nil [56 200]))          
+      :file "models.py"
+      :pointmax 200
+      :fsize 199
+      :lastmodtime '(22293 58439 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_weather_server!lib!weather_server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

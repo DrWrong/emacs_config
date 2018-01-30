@@ -1,0 +1,40 @@
+;; Object user/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "user/"
+  :tables
+  (list
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.db" include nil nil [1 29])
+            ("django.contrib.auth.models" include nil nil [30 81])
+            ("User" type
+               (:superclasses ("AbstractUser")
+                :members 
+                  ( ("fb_account_id" variable nil (reparse-symbol indented_block_body) [141 190])
+                    ("fb_access_token" variable nil (reparse-symbol indented_block_body) [195 244]))                  
+                :type "class")
+                nil [111 245]))          
+      :file "models.py"
+      :pointmax 245
+      :fsize 244
+      :lastmodtime '(22811 59055 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "apps.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.apps" include nil nil [1 34])
+            ("UserConfig" type
+               (:superclasses ("AppConfig")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [70 83]))                  
+                :type "class")
+                nil [37 84]))          
+      :file "apps.py"
+      :pointmax 84
+      :fsize 83
+      :lastmodtime '(22811 57702 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!facebook!fbdemo!user!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,127 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.metric" package nil nil [804 836])
+            ("com.google.common.base.Predicate" include nil nil [838 878])
+            ("com.google.common.collect.Iterables" include nil nil [879 922])
+            ("com.google.common.collect.Lists" include nil nil [923 962])
+            ("org.apache.storm.Config" include nil nil [963 994])
+            ("org.apache.storm.metric.api.IMetricsConsumer" include nil nil [995 1047])
+            ("org.apache.storm.metric.util.DataPointExpander" include nil nil [1048 1102])
+            ("org.apache.storm.task.IBolt" include nil nil [1103 1138])
+            ("org.apache.storm.task.OutputCollector" include nil nil [1139 1184])
+            ("org.apache.storm.task.TopologyContext" include nil nil [1185 1230])
+            ("org.apache.storm.tuple.Tuple" include nil nil [1231 1267])
+            ("org.slf4j.Logger" include nil nil [1268 1292])
+            ("org.slf4j.LoggerFactory" include nil nil [1293 1324])
+            ("java.util.Collection" include nil nil [1326 1354])
+            ("java.util.List" include nil nil [1355 1377])
+            ("java.util.Map" include nil nil [1378 1399])
+            ("java.util.concurrent.BlockingQueue" include nil nil [1400 1442])
+            ("java.util.concurrent.LinkedBlockingDeque" include nil nil [1443 1491])
+            ("MetricsConsumerBolt" type
+               (:typemodifiers ("public")
+                :interfaces ("IBolt")
+                :members 
+                  ( ("LOG" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1549 1633])
+                    ("_metricsConsumer" variable (:type "IMetricsConsumer") (reparse-symbol class_member_declaration) [1639 1673])
+                    ("_consumerClassName" variable (:type "String") (reparse-symbol class_member_declaration) [1678 1704])
+                    ("_collector" variable (:type "OutputCollector") (reparse-symbol class_member_declaration) [1709 1736])
+                    ("_registrationArgument" variable (:type "Object") (reparse-symbol class_member_declaration) [1741 1770])
+                    ("_maxRetainMetricTuples" variable
+                       (:typemodifiers ("private" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1775 1816])
+                    ("_expander" variable
+                       (:typemodifiers ("private" "final")
+                        :type "DataPointExpander")
+                        (reparse-symbol class_member_declaration) [1895 1937])
+                    ("_taskExecuteThread" variable
+                       (:typemodifiers ("private")
+                        :type "Thread")
+                        (reparse-symbol class_member_declaration) [2000 2034])
+                    ("_running" variable
+                       (:typemodifiers ("private" "volatile")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2039 2080])
+                    ("MetricsConsumerBolt" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("consumerClassName" variable (:type "String") (reparse-symbol formal_parameters) [2113 2137])
+                            ("registrationArgument" variable (:type "Object") (reparse-symbol formal_parameters) [2139 2166])
+                            ("maxRetainMetricTuples" variable (:type "int") (reparse-symbol formal_parameters) [2168 2193])
+                            ("" variable (:type "filterPredicate") (reparse-symbol formal_parameters) [2264 2279])
+                            ("expander" variable (:type "DataPointExpander") (reparse-symbol formal_parameters) [2281 2307]))                          )
+                        (reparse-symbol class_member_declaration) [2086 2749])
+                    ("prepare" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [2789 2802])
+                            ("context" variable (:type "TopologyContext") (reparse-symbol formal_parameters) [2804 2827])
+                            ("collector" variable (:type "OutputCollector") (reparse-symbol formal_parameters) [2829 2854]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2769 3509])
+                    ("execute" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable (:type "Tuple") (reparse-symbol formal_parameters) [3553 3564]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3533 4175])
+                    ("getFilteredDataPoints" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "dataPoints") (reparse-symbol formal_parameters) [4283 4293]))                          )
+                        (reparse-symbol class_member_declaration) [4222 4385])
+                    ("cleanup" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4405 4536])
+                    ("MetricsTask" type
+                       (:typemodifiers ("static")
+                        :members 
+                          ( ("taskInfo" variable
+                               (:typemodifiers ("private")
+                                :type "IMetricsConsumer.TaskInfo")
+                                (reparse-symbol class_member_declaration) [4577 4620])
+                            ("MetricsTask" function
+                               (:constructor-flag t
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("taskInfo" variable (:type "IMetricsConsumer.TaskInfo") (reparse-symbol formal_parameters) [4716 4750])
+                                    ("" variable (:type "dataPoints") (reparse-symbol formal_parameters) [4791 4801]))                                  )
+                                (reparse-symbol class_member_declaration) [4697 4894])
+                            ("getTaskInfo" function
+                               (:typemodifiers ("public")
+                                :type "IMetricsConsumer.TaskInfo")
+                                (reparse-symbol class_member_declaration) [4904 4991])
+                            ("getDataPoints" function (:constructor-flag t) (reparse-symbol class_member_declaration) [5047 5105]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [4542 5111])
+                    ("MetricsHandlerRunnable" type
+                       (:interfaces ("Runnable")
+                        :members 
+                          ( ("run" function
+                               (:typemodifiers ("public")
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [5195 5660]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [5117 5666]))                  
+                :type "class")
+                nil [1493 5669]))          
+      :file "MetricsConsumerBolt.java"
+      :pointmax 5670
+      :fsize 5669
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax '((GT 5045 . 5046) (PUBLIC 5001 . 5007) (LT 5018 . 5019) (GT 4789 . 4790) (IDENTIFIER 4752 . 4762) (LT 4762 . 4763) (SEMICOLON 4686 . 4687) (GT 4674 . 4675) (PRIVATE 4629 . 4636) (LT 4647 . 4648) (GT 4281 . 4282) (IDENTIFIER 4244 . 4254) (LT 4254 . 4255) (GT 4220 . 4221) (PRIVATE 4181 . 4188) (LT 4193 . 4194) (GT 2262 . 2263) (IDENTIFIER 2226 . 2235) (LT 2235 . 2236) (SEMICOLON 1994 . 1995) (GT 1982 . 1983) (PRIVATE 1943 . 1950) (LT 1970 . 1971) (SEMICOLON 1889 . 1890) (GT 1871 . 1872) (PRIVATE 1821 . 1828) (LT 1844 . 1845))))
+  :file "!Users!drwrong!openProject!storm!storm-core!src!jvm!org!apache!storm!metric!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

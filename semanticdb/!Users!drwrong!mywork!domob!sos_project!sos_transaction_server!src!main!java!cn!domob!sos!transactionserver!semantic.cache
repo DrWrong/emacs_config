@@ -1,0 +1,263 @@
+;; Object transactionserver/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "transactionserver/"
+  :tables
+  (list
+    (semanticdb-table "TransactionInsertPostProcess.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.sos.transactionserver" package nil nil [1 40])
+            ("cn.domob.jasf.bootstrap.SystemService" include nil nil [42 87])
+            ("cn.domob.sos.transactionserver.thrift.IncomeItem" include nil nil [88 144])
+            ("cn.domob.sos.transactionserver.utils.TTextProtocol" include nil nil [145 203])
+            ("com.google.gson.Gson" include nil nil [204 232])
+            ("org.apache.thrift.TException" include nil nil [233 269])
+            ("org.apache.thrift.transport.TMemoryBuffer" include nil nil [270 319])
+            ("org.slf4j.Logger" include nil nil [320 344])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [345 407])
+            ("redis.clients.jedis.Jedis" include nil nil [408 441])
+            ("redis.clients.jedis.JedisPool" include nil nil [442 479])
+            ("redis.clients.jedis.Transaction" include nil nil [480 519])
+            ("javax.annotation.Resource" include nil nil [521 554])
+            ("java.io.UnsupportedEncodingException" include nil nil [555 599])
+            ("java.util.Calendar" include nil nil [600 626])
+            ("java.util.concurrent.BlockingQueue" include nil nil [627 669])
+            ("java.util.Date" include nil nil [670 692])
+            ("TransactionInsertPostProcess" type
+               (:typemodifiers ("public")
+                :interfaces ("SystemService")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [809 910])
+                    ("loggerData" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [915 1069])
+                    ("running" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1075 1099])
+                    ("TransactionInsertPostProcess" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [1106 1152])
+                    ("getRedisKey" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("uid" variable (:type "long") (reparse-symbol formal_parameters) [1185 1193]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1158 1255])
+                    ("jedisPool" variable
+                       (:typemodifiers ("private")
+                        :type "JedisPool")
+                        (reparse-symbol class_member_declaration) [1276 1304])
+                    ("getServiceName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1397 1482])
+                    ("init" function
+                       (:throws ("Throwable")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1502 1569])
+                    ("stop" function
+                       (:throws ("Throwable")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1589 1703])
+                    ("logToFile" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("incomeItem" variable (:type "IncomeItem") (reparse-symbol formal_parameters) [1732 1753]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1709 2222])
+                    ("recordToRedis" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("incomeItem" variable (:type "IncomeItem") (reparse-symbol formal_parameters) [2272 2293]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2245 3373])
+                    ("run" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3394 3870]))                  
+                :type "class")
+                nil [736 3872]))          
+      :file "TransactionInsertPostProcess.java"
+      :pointmax 3873
+      :fsize 3890
+      :lastmodtime '(22250 12599 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Application.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.sos.transactionserver" package nil nil [1 40])
+            ("cn.domob.jasf.bootstrap.Server" include nil nil [42 80])
+            ("cn.domob.jasf.bootstrap.SystemService" include nil nil [81 126])
+            ("cn.domob.sos.transactionserver.configuration.TransactionServerConfig" include nil nil [127 203])
+            ("org.slf4j.Logger" include nil nil [204 228])
+            ("org.slf4j.LoggerFactory" include nil nil [229 260])
+            ("org.springframework.boot.autoconfigure.SpringBootApplication" include nil nil [261 329])
+            ("org.springframework.context.ApplicationContext" include nil nil [330 384])
+            ("org.springframework.boot.SpringApplication" include nil nil [385 435])
+            ("java.io.IOException" include nil nil [437 464])
+            ("java.io.OutputStream" include nil nil [465 493])
+            ("java.net.ConnectException" include nil nil [494 527])
+            ("java.net.Socket" include nil nil [528 551])
+            ("Application" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("shutdownCommand" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [609 660])
+                    ("reloadCommand" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [665 712])
+                    ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [720 794])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [823 836]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [799 1971])
+                    ("shutdown" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("shutdownPort" variable (:type "int") (reparse-symbol formal_parameters) [2036 2052]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2007 2650])
+                    ("reload" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("shutdownPort" variable (:type "int") (reparse-symbol formal_parameters) [2717 2733]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2690 3327]))                  
+                :type "class")
+                nil [576 3329]))          
+      :file "Application.java"
+      :pointmax 3330
+      :fsize 3405
+      :lastmodtime '(22184 58198 0 0)
+      :unmatched-syntax '((IDENTIFIER 553 . 575)))
+    (semanticdb-table "TransactionServerHandler.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.sos.transactionserver" package nil nil [1 40])
+            ("java.util.List" include nil nil [42 64])
+            ("java.util.concurrent.BlockingQueue" include nil nil [65 107])
+            ("cn.domob.dm303.dm_status" include nil nil [109 141])
+            ("cn.domob.jasf.dm303.DomobBase" include nil nil [142 179])
+            ("cn.domob.sos.transactionserver.configuration.TransactionServerConfig" include nil nil [180 256])
+            ("cn.domob.sos.transactionserver.models.*" include nil nil [257 304])
+            ("cn.domob.sos.transactionserver.thrift.QueryBuilder" include nil nil [305 363])
+            ("com.sequoiadb.base.SequoiadbDatasource" include nil nil [364 410])
+            ("org.apache.http.annotation.Obsolete" include nil nil [411 454])
+            ("org.apache.ibatis.session.SqlSessionFactory" include nil nil [455 506])
+            ("org.apache.thrift.TException" include nil nil [507 543])
+            ("cn.domob.sos.transactionserver.thrift.IncomeItem" include nil nil [545 601])
+            ("cn.domob.sos.transactionserver.thrift.TransactionServer.Iface" include nil nil [602 671])
+            ("org.slf4j.Logger" include nil nil [672 696])
+            ("org.slf4j.LoggerFactory" include nil nil [697 728])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [729 791])
+            ("org.springframework.beans.factory.annotation.Value" include nil nil [792 850])
+            ("org.springframework.stereotype.Service" include nil nil [851 897])
+            ("redis.clients.jedis.JedisPool" include nil nil [898 935])
+            ("javax.annotation.Resource" include nil nil [937 970])
+            ("TransactionServerHandler" type
+               (:typemodifiers ("public")
+                :interfaces ("Iface")
+                :superclasses "DomobBase"
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1058 1142])
+                    ("version" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1167 1190])
+                    ("datasource" variable
+                       (:typemodifiers ("private")
+                        :type "SequoiadbDatasource")
+                        (reparse-symbol class_member_declaration) [1208 1247])
+                    ("sqlSessionFactory" variable
+                       (:typemodifiers ("private")
+                        :type "SqlSessionFactory")
+                        (reparse-symbol class_member_declaration) [1262 1306])
+                    ("jedisPool" variable
+                       (:typemodifiers ("private")
+                        :type "JedisPool")
+                        (reparse-symbol class_member_declaration) [1322 1350])
+                    ("transactionServerConfig" variable
+                       (:typemodifiers ("private")
+                        :type "TransactionServerConfig")
+                        (reparse-symbol class_member_declaration) [1431 1487])
+                    ("setModelField" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("model" variable (:type "AbstractModel") (reparse-symbol formal_parameters) [1518 1537]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1491 1829])
+                    ("TransactionServerHandler" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [1864 1875]))                          )
+                        (reparse-symbol class_member_declaration) [1832 1897])
+                    ("getIncomeItem" function
+                       (:constructor-flag t
+                        :throws ("TException")
+                        :arguments 
+                          ( ("query" variable (:type "QueryBuilder") (reparse-symbol formal_parameters) [1949 1967]))                          )
+                        (reparse-symbol class_member_declaration) [1935 2279])
+                    ("insertIncomeItem" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("uid" variable (:type "long") (reparse-symbol formal_parameters) [2325 2333])
+                            ("item" variable (:type "IncomeItem") (reparse-symbol formal_parameters) [2335 2350]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2293 2724])
+                    ("userScoreRecord" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("item" variable (:type "IncomeItem") (reparse-symbol formal_parameters) [2769 2784]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2738 3065])
+                    ("getVersion" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3079 3146])
+                    ("getStatus" function
+                       (:typemodifiers ("public")
+                        :type "dm_status")
+                        (reparse-symbol class_member_declaration) [3160 3219])
+                    ("getCpuProfile" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("profileDurationInSec" variable (:type "int") (reparse-symbol formal_parameters) [3261 3285]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3233 3324]))                  
+                :type "class")
+                nil [982 3326]))          
+      :file "TransactionServerHandler.java"
+      :pointmax 3327
+      :fsize 3326
+      :lastmodtime '(22185 35945 0 0)
+      :unmatched-syntax '((GT 1933 . 1934) (IDENTIFIER 1900 . 1909) (PUBLIC 1911 . 1917) (LT 1922 . 1923) (SEMICOLON 1415 . 1416) (GT 1396 . 1397) (IDENTIFIER 1353 . 1362) (PRIVATE 1364 . 1371) (LT 1385 . 1386) (STRING_LITERAL 1152 . 1164) (IDENTIFIER 973 . 981))))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_transaction_server!src!main!java!cn!domob!sos!transactionserver!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

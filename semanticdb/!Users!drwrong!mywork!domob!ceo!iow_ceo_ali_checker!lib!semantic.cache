@@ -1,0 +1,122 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables
+  (list
+    (semanticdb-table "iow_ceo_ali_checker_service.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Author:Chen Wei
+Date:2017-02-22 16:13:50
+File Name: lib/iow_ceo_ali_checker_service.py
+Description：
+启动方法是：
+   nohup python <scriptName>
+\"\"\"" code nil nil [39 182])
+            ("__future__" include nil nil [183 222])
+            ("sys" include nil nil [224 234])
+            ("reload" code nil nil [235 246])
+            ("sys" code nil nil [247 278])
+            ("logging" include nil nil [279 293])
+            ("time" include nil nil [294 305])
+            ("signal" include nil nil [306 319])
+            ("time" include nil nil [320 331])
+            ("random" include nil nil [332 345])
+            ("django.db" include nil nil [346 362])
+            ("django.conf" include nil nil [363 395])
+            ("django.db" include nil nil [396 442])
+            ("domob_pyutils.statscol" include nil nil [443 483])
+            ("domob_thrift.sos.aliserver.ttypes" include nil nil [484 531])
+            ("client.aliserver" include nil nil [532 576])
+            ("models.ow_model" include nil nil [577 644])
+            ("models.fn_model" include nil nil [645 699])
+            ("ali_item" include nil nil [701 729])
+            ("IowCeoAliCheckerService" type
+               (:superclasses ("object")
+                :members 
+                  ( ("'''
+    IowCeoAliChecker Service
+    '''" code nil (reparse-symbol indented_block_body) [774 814])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [872 931])
+                            ("self" variable nil (reparse-symbol indented_block_body) [961 1020])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1176 1196])
+                            ("self" code nil (reparse-symbol indented_block_body) [1205 1231]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [832 836]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [819 1232])
+                    ("init_signal_handler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1436 1440]))                          )
+                        (reparse-symbol indented_block_body) [1412 1668])
+                    ("handle_signal" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1695 1699])
+                            ("signal" variable nil (reparse-symbol function_parameters) [1701 1707])
+                            ("frame" variable nil (reparse-symbol function_parameters) [1709 1714]))                          )
+                        (reparse-symbol indented_block_body) [1677 1914])
+                    ("get_waiting_items" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1941 1945]))                          )
+                        (reparse-symbol indented_block_body) [1919 2528])
+                    ("check_item_status" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2555 2559])
+                            ("item" variable nil (reparse-symbol function_parameters) [2561 2565]))                          )
+                        (reparse-symbol indented_block_body) [2533 3192])
+                    ("finish_items_charge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3221 3225])
+                            ("items" variable nil (reparse-symbol function_parameters) [3227 3232]))                          )
+                        (reparse-symbol indented_block_body) [3197 6026])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6043 6047]))                          )
+                        (reparse-symbol indented_block_body) [6035 7312])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7330 7334]))                          )
+                        (reparse-symbol indented_block_body) [7321 7430]))                  
+                :type "class")
+                nil [731 7430]))          
+      :file "iow_ceo_ali_checker_service.py"
+      :pointmax 7473
+      :fsize 8150
+      :lastmodtime '(22718 32298 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ali_item.py"
+      :file "ali_item.py"
+      :fsize 560
+      :lastmodtime '(22718 31743 0 0))
+    (semanticdb-table "iow_ceo_ali_checker_main.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [49 58])
+            ("sys" include nil nil [59 69])
+            ("argparse" include nil nil [70 85])
+            ("django.conf" include nil nil [87 119])
+            ("domob_pyutils.dm303" include nil nil [120 161])
+            ("exePath" variable nil nil [198 251])
+            ("basepath" variable nil nil [252 315])
+            ("sys" code nil nil [316 340])
+            ("sys" code nil nil [341 377])
+            ("if" code nil nil [379 1274]))          
+      :file "iow_ceo_ali_checker_main.py"
+      :pointmax 1275
+      :fsize 1380
+      :lastmodtime '(22718 31743 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!ceo!iow_ceo_ali_checker!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

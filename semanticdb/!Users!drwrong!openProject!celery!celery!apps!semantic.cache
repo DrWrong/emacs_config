@@ -1,0 +1,289 @@
+;; Object apps/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "apps/"
+  :tables
+  (list
+    (semanticdb-table "worker.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+    celery.apps.worker
+    ~~~~~~~~~~~~~~~~~~
+
+    This module is the 'program-version' of :mod:`celery.worker`.
+
+    It does everything necessary to run that module
+    as an actual application, like installing signal handlers,
+    platform tweaks, and so on.
+
+\"\"\"" code nil nil [25 294])
+            ("__future__" include nil nil [295 367])
+            ("logging" include nil nil [369 383])
+            ("os" include nil nil [384 393])
+            ("platform" include nil nil [394 422])
+            ("sys" include nil nil [423 433])
+            ("datetime" include nil nil [435 464])
+            ("functools" include nil nil [465 494])
+            ("billiard.process" include nil nil [496 540])
+            ("kombu.utils.encoding" include nil nil [541 582])
+            ("kombu.utils.url" include nil nil [583 629])
+            ("celery" include nil nil [631 684])
+            ("celery.app" include nil nil [685 713])
+            ("celery.exceptions" include nil nil [714 775])
+            ("celery.five" include nil nil [776 816])
+            ("celery.loaders.app" include nil nil [817 857])
+            ("celery.platforms" include nil nil [858 922])
+            ("celery.utils" include nil nil [923 959])
+            ("celery.utils.imports" include nil nil [960 1001])
+            ("celery.utils.log" include nil nil [1002 1075])
+            ("celery.utils.text" include nil nil [1076 1115])
+            ("celery.worker" include nil nil [1116 1156])
+            ("__all__" variable nil nil [1158 1178])
+            ("logger" variable nil nil [1180 1209])
+            ("is_jython" variable nil nil [1210 1253])
+            ("is_pypy" variable nil nil [1254 1297])
+            ("active_thread_count" function nil nil [1300 1452])
+            ("safe_say" function (:arguments 
+              ( ("msg" variable nil (reparse-symbol function_parameters) [1467 1470]))              ) nil [1454 1525])
+            ("ARTLINES" variable nil nil [1526 1816])
+            ("BANNER" variable nil nil [1818 2015])
+            ("EXTRA_INFO_FMT" variable nil nil [2017 2057])
+            ("Worker" type
+               (:superclasses ("WorkController")
+                :members 
+                  ( ("on_before_init" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2114 2118])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2120 2128]))                          )
+                        (reparse-symbol indented_block_body) [2095 2484])
+                    ("on_after_init" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2507 2511])
+                            ("purge" variable nil (reparse-symbol function_parameters) [2513 2518])
+                            ("no_color" variable nil (reparse-symbol function_parameters) [2526 2534])
+                            ("redirect_stdouts" variable nil (reparse-symbol function_parameters) [2563 2579])
+                            ("redirect_stdouts_level" variable nil (reparse-symbol function_parameters) [2586 2608])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2637 2645]))                          )
+                        (reparse-symbol indented_block_body) [2489 3205])
+                    ("on_init_blueprint" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3232 3236]))                          )
+                        (reparse-symbol indented_block_body) [3210 3443])
+                    ("on_start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3461 3465]))                          )
+                        (reparse-symbol indented_block_body) [3448 4342])
+                    ("on_consumer_ready" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4369 4373])
+                            ("consumer" variable nil (reparse-symbol function_parameters) [4375 4383]))                          )
+                        (reparse-symbol indented_block_body) [4347 4498])
+                    ("setup_logging" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4521 4525])
+                            ("colorize" variable nil (reparse-symbol function_parameters) [4527 4535]))                          )
+                        (reparse-symbol indented_block_body) [4503 4808])
+                    ("purge_messages" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4832 4836]))                          )
+                        (reparse-symbol indented_block_body) [4813 5039])
+                    ("tasklist" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5057 5061])
+                            ("include_builtins" variable nil (reparse-symbol function_parameters) [5063 5079])
+                            ("sep" variable nil (reparse-symbol function_parameters) [5086 5089])
+                            ("int_" variable nil (reparse-symbol function_parameters) [5096 5100]))                          )
+                        (reparse-symbol indented_block_body) [5044 5295])
+                    ("extra_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5315 5319]))                          )
+                        (reparse-symbol indented_block_body) [5300 5555])
+                    ("startup_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5577 5581]))                          )
+                        (reparse-symbol indented_block_body) [5560 7236])
+                    ("install_platform_tweaks" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7269 7273])
+                            ("worker" variable nil (reparse-symbol function_parameters) [7275 7281]))                          
+                        :documentation "Install platform specific tweaks and workarounds.")
+                        (reparse-symbol indented_block_body) [7241 8187])
+                    ("osx_proxy_detection_workaround" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8227 8231]))                          
+                        :documentation "See http://github.com/celery/celery/issues#issue/161")
+                        (reparse-symbol indented_block_body) [8192 8371])
+                    ("set_process_status" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8399 8403])
+                            ("info" variable nil (reparse-symbol function_parameters) [8405 8409]))                          )
+                        (reparse-symbol indented_block_body) [8376 8600]))                  
+                :type "class")
+                nil [2060 8600])
+            ("_shutdown_handler" function (:arguments 
+              ( ("worker" variable nil (reparse-symbol function_parameters) [8624 8630])
+                ("sig" variable nil (reparse-symbol function_parameters) [8632 8635])
+                ("how" variable nil (reparse-symbol function_parameters) [8644 8647])
+                ("exc" variable nil (reparse-symbol function_parameters) [8678 8681])
+                ("callback" variable nil (reparse-symbol function_parameters) [8698 8706])
+                ("exitcode" variable nil (reparse-symbol function_parameters) [8713 8721]))              ) nil [8602 9367])
+            ("install_worker_term_handler" variable nil nil [9367 9477])
+            ("if" code nil nil [9478 9801])
+            ("on_SIGINT" function (:arguments 
+              ( ("worker" variable nil (reparse-symbol function_parameters) [9817 9823]))              ) nil [9803 9964])
+            ("if" code nil nil [9964 10232])
+            ("_reload_current_worker" function nil nil [10234 10415])
+            ("install_worker_restart_handler" function (:arguments 
+              ( ("worker" variable nil (reparse-symbol function_parameters) [10452 10458])
+                ("sig" variable nil (reparse-symbol function_parameters) [10460 10463]))              ) nil [10417 10897])
+            ("install_cry_handler" function (:arguments 
+              ( ("sig" variable nil (reparse-symbol function_parameters) [10923 10926]))              ) nil [10899 11258])
+            ("install_rdb_handler" function (:arguments 
+              ( ("envvar" variable nil (reparse-symbol function_parameters) [11284 11290])
+                ("sig" variable nil (reparse-symbol function_parameters) [11332 11335]))              ) nil [11260 11790])
+            ("install_HUP_not_supported_handler" function (:arguments 
+              ( ("worker" variable nil (reparse-symbol function_parameters) [11830 11836])
+                ("sig" variable nil (reparse-symbol function_parameters) [11838 11841]))              ) nil [11792 12114]))          
+      :file "worker.py"
+      :pointmax 12114
+      :fsize 12113
+      :lastmodtime '(22222 50300 0 0)
+      :unmatched-syntax '((NAME 11640 . 11645) (IF 11656 . 11658) (ELSE 11664 . 11668)))
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22222 50300 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "beat.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+    celery.apps.beat
+    ~~~~~~~~~~~~~~~~
+
+    This module is the 'program-version' of :mod:`celery.beat`.
+
+    It does everything necessary to run that module
+    as an actual application, like installing signal handlers
+    and so on.
+
+\"\"\"" code nil nil [25 270])
+            ("__future__" include nil nil [271 343])
+            ("numbers" include nil nil [345 359])
+            ("socket" include nil nil [360 373])
+            ("sys" include nil nil [374 384])
+            ("datetime" include nil nil [386 415])
+            ("celery" include nil nil [417 467])
+            ("celery.five" include nil nil [468 498])
+            ("celery.utils.imports" include nil nil [499 540])
+            ("celery.utils.log" include nil nil [541 592])
+            ("celery.utils.timeutils" include nil nil [593 644])
+            ("__all__" variable nil nil [646 664])
+            ("STARTUP_INFO_FMT" variable nil nil [666 936])
+            ("logger" variable nil nil [938 972])
+            ("Beat" type
+               (:superclasses ("object")
+                :members 
+                  ( ("Service" variable nil (reparse-symbol indented_block_body) [999 1021])
+                    ("app" variable nil (reparse-symbol indented_block_body) [1026 1036])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"Starts the beat task scheduler.\"\"\"" code nil (reparse-symbol indented_block_body) [1343 1380])
+                            ("self" code nil (reparse-symbol indented_block_body) [1389 1421])
+                            ("either" variable nil (reparse-symbol indented_block_body) [1430 1454])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1463 1487])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1496 1518])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1527 1585])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1594 1654])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1663 1761])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1770 1886])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1896 1928])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1937 1973])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1982 2006])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2015 2154])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2163 2185])
+                            ("if" code nil (reparse-symbol indented_block_body) [2195 2309]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1055 1059])
+                            ("max_interval" variable nil (reparse-symbol function_parameters) [1061 1073])
+                            ("app" variable nil (reparse-symbol function_parameters) [1080 1083])
+                            ("socket_timeout" variable nil (reparse-symbol function_parameters) [1107 1121])
+                            ("pidfile" variable nil (reparse-symbol function_parameters) [1126 1133])
+                            ("no_color" variable nil (reparse-symbol function_parameters) [1140 1148])
+                            ("loglevel" variable nil (reparse-symbol function_parameters) [1172 1180])
+                            ("logfile" variable nil (reparse-symbol function_parameters) [1189 1196])
+                            ("schedule" variable nil (reparse-symbol function_parameters) [1203 1211])
+                            ("scheduler_cls" variable nil (reparse-symbol function_parameters) [1235 1248])
+                            ("redirect_stdouts" variable nil (reparse-symbol function_parameters) [1255 1271])
+                            ("redirect_stdouts_level" variable nil (reparse-symbol function_parameters) [1295 1317])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1324 1332]))                          
+                        :documentation "Starts the beat task scheduler."
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1042 2309])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2322 2326]))                          )
+                        (reparse-symbol indented_block_body) [2314 2527])
+                    ("setup_logging" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2550 2554])
+                            ("colorize" variable nil (reparse-symbol function_parameters) [2556 2564]))                          )
+                        (reparse-symbol indented_block_body) [2532 2853])
+                    ("start_scheduler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2878 2882]))                          )
+                        (reparse-symbol indented_block_body) [2858 3957])
+                    ("init_loader" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3978 3982]))                          )
+                        (reparse-symbol indented_block_body) [3962 4141])
+                    ("startup_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4163 4167])
+                            ("beat" variable nil (reparse-symbol function_parameters) [4169 4173]))                          )
+                        (reparse-symbol indented_block_body) [4146 4725])
+                    ("set_process_title" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4752 4756]))                          )
+                        (reparse-symbol indented_block_body) [4730 4925])
+                    ("install_sync_handler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4955 4959])
+                            ("beat" variable nil (reparse-symbol function_parameters) [4961 4965]))                          
+                        :documentation "Install a `SIGTERM` + `SIGINT` handler that saves
+        the beat schedule.")
+                        (reparse-symbol indented_block_body) [4930 5212]))                  
+                :type "class")
+                nil [975 5212]))          
+      :file "beat.py"
+      :pointmax 5212
+      :fsize 5211
+      :lastmodtime '(22222 50300 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 3806 . 3957) (NEWLINE 3805 . 3806) (COLON 3804 . 3805) (TRY 3699 . 3702) (AS 3798 . 3800))))
+  :file "!Users!drwrong!openProject!celery!celery!apps!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

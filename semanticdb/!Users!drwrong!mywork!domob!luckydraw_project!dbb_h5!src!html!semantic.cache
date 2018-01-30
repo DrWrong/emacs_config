@@ -1,0 +1,25 @@
+;; Object html/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "html/"
+  :tables
+  (list
+    (semanticdb-table "show.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("夺宝吧" section nil nil [448 477])
+            ("{{i.user.user_name}}" section nil nil [477 2001])
+            ("-->
+	<script type=\"text/javascript\" src=\"../js/zepto.js\">" section nil nil [2001 2073])
+            ("" section nil nil [2073 2136])
+            ("" section nil nil [2136 2197])
+            ("" section nil nil [2197 2268])
+            ("" section nil nil [2268 2334])
+            ("" section nil nil [2334 2407]))          
+      :file "show.html"
+      :pointmax 2407
+      :fsize 2452
+      :lastmodtime '(22297 44511 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!luckydraw_project!dbb_h5!src!html!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

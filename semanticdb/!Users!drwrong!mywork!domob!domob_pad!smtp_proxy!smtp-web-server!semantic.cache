@@ -1,0 +1,19 @@
+;; Object smtp-web-server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "smtp-web-server/"
+  :tables
+  (list
+    (semanticdb-table "manage.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [23 32])
+            ("sys" include nil nil [33 43])
+            ("if" code nil nil [46 260]))          
+      :file "manage.py"
+      :pointmax 260
+      :fsize 259
+      :lastmodtime '(22717 15294 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!domob_pad!smtp_proxy!smtp-web-server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

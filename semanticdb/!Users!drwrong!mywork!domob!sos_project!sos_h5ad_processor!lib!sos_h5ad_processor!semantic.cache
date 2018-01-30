@@ -1,0 +1,103 @@
+;; Object sos_h5ad_processor/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sos_h5ad_processor/"
+  :tables
+  (list
+    (semanticdb-table "processor.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [24 38])
+            ("time" include nil nil [39 50])
+            ("datetime" include nil nil [51 91])
+            ("django.db" include nil nil [92 125])
+            ("django.db" include nil nil [126 169])
+            ("django.db.models" include nil nil [170 200])
+            ("django.conf" include nil nil [201 233])
+            ("domob_pyutils.thriftext.TThriftClientPool" include nil nil [234 305])
+            ("domob_thrift.ah5ad.useradserver" include nil nil [306 362])
+            ("domob_thrift.sos.transactionserver" include nil nil [363 427])
+            ("domob_thrift.sos.transactionserver.ttypes" include nil nil [428 492])
+            ("sos_h5ad_processor.models" include nil nil [495 542])
+            ("AdProcessor" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [474 532])
+                            ("self" variable nil (reparse-symbol indented_block_body) [541 667]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [590 594]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [577 799])
+                    ("producer" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [946 950]))                          )
+                        (reparse-symbol indented_block_body) [933 1391])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1408 1412]))                          )
+                        (reparse-symbol indented_block_body) [1396 2509])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2522 2526]))                          )
+                        (reparse-symbol indented_block_body) [2514 2640]))                  
+                :type "class")
+                nil [545 2640]))          
+      :file "processor.py"
+      :pointmax 2640
+      :fsize 2657
+      :lastmodtime '(22159 27322 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 40])
+            ("django.db" include nil nil [42 70])
+            ("AdRecord" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("uid" variable nil (reparse-symbol indented_block_body) [107 134])
+                    ("product" variable nil (reparse-symbol indented_block_body) [139 170])
+                    ("adid" variable nil (reparse-symbol indented_block_body) [175 203])
+                    ("adname" variable nil (reparse-symbol indented_block_body) [208 249])
+                    ("account" variable nil (reparse-symbol indented_block_body) [254 285])
+                    ("status" variable nil (reparse-symbol indented_block_body) [290 320])
+                    ("point" variable nil (reparse-symbol indented_block_body) [325 357])
+                    ("dt" variable nil (reparse-symbol indented_block_body) [362 388])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [414 429])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [438 460])
+                            ("unique_together" variable nil (reparse-symbol indented_block_body) [469 537]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [394 538]))                  
+                :type "class")
+                nil [73 538])
+            ("UserScore" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [575 617])
+                    ("total" variable nil (reparse-symbol indented_block_body) [622 654])
+                    ("consumed" variable nil (reparse-symbol indented_block_body) [659 694])
+                    ("createtime" variable nil (reparse-symbol indented_block_body) [699 733])
+                    ("lastupdate" variable nil (reparse-symbol indented_block_body) [738 772])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [797 812])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [821 844]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [777 845]))                  
+                :type "class")
+                nil [540 845]))          
+      :file "models.py"
+      :pointmax 845
+      :fsize 844
+      :lastmodtime '(22159 27095 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_h5ad_processor!lib!sos_h5ad_processor!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

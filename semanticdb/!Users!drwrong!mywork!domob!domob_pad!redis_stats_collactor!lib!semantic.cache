@@ -1,0 +1,185 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables
+  (list
+    (semanticdb-table "redis_pool_adaptor.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("abc" include nil nil [19 58])
+            ("domob_pydocRedis.DomobPydocRedis" include nil nil [60 120])
+            ("domob_pydocRedis.DomobPydocRedisPool" include nil nil [121 189])
+            ("redis" include nil nil [190 229])
+            ("AbstractPool" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__metaclass__" variable nil (reparse-symbol indented_block_body) [264 287])
+                    ("get_connection" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [332 336]))                          
+                        :decorators 
+                          ( ("abstractmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [293 352]))                  
+                :type "class")
+                nil [232 352])
+            ("DomobRedisPool" type
+               (:superclasses ("AbstractPool")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [416 463]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [408 412])
+                            ("redis_config" variable nil (reparse-symbol function_parameters) [414 426]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [395 485])
+                    ("get_connection" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [509 513]))                          )
+                        (reparse-symbol indented_block_body) [490 558]))                  
+                :type "class")
+                nil [354 558])
+            ("RedisPool" type
+               (:superclasses ("AbstractPool")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [638 680]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [609 613])
+                            ("redis_config" variable nil (reparse-symbol function_parameters) [615 627]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [596 681])
+                    ("get_connection" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [705 709]))                          )
+                        (reparse-symbol indented_block_body) [686 760]))                  
+                :type "class")
+                nil [560 760]))          
+      :file "redis_pool_adaptor.py"
+      :pointmax 760
+      :fsize 759
+      :lastmodtime '(22710 39720 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "collector_test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("domob_pyutils.dm303.DomobBase" include nil nil [23 71])
+            ("res" variable nil nil [118 140])
+            ("print" code nil nil [141 150])
+            ("transport" code nil nil [152 169]))          
+      :file "collector_test.py"
+      :pointmax 170
+      :fsize 169
+      :lastmodtime '(22710 49806 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "collector.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("thrift.transport" include nil nil [19 67])
+            ("thrift.protocol" include nil nil [68 111])
+            ("thrift.server" include nil nil [112 145])
+            ("django.conf" include nil nil [146 178])
+            ("multiprocessing" include nil nil [179 214])
+            ("logging" include nil nil [215 244])
+            ("domob_pyutils.dm303.DomobBase" include nil nil [246 297])
+            ("domob_pyutils.dm303.DomobService" include nil nil [298 352])
+            ("redis_pool_adaptor" include nil nil [354 399])
+            ("CollectorHandler" type
+               (:superclasses ("DomobBase")
+                :members 
+                  ( ("'''
+    处理handler
+    '''" code nil (reparse-symbol indented_block_body) [441 466])
+                    ("__init__" function
+                       (:suite 
+                          ( ("name" variable nil (reparse-symbol indented_block_body) [522 559])
+                            ("self" variable nil (reparse-symbol indented_block_body) [568 584])
+                            ("self" variable nil (reparse-symbol indented_block_body) [593 637])
+                            ("DomobBase" code nil (reparse-symbol indented_block_body) [646 676])
+                            ("self" variable nil (reparse-symbol indented_block_body) [685 735]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [485 489])
+                            ("pool" variable nil (reparse-symbol function_parameters) [491 495])
+                            ("project_config" variable nil (reparse-symbol function_parameters) [497 511]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [472 736])
+                    ("getCounters" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [757 761]))                          )
+                        (reparse-symbol indented_block_body) [741 1030])
+                    ("getCounter" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1050 1054])
+                            ("key" variable nil (reparse-symbol function_parameters) [1056 1059]))                          )
+                        (reparse-symbol indented_block_body) [1035 1191])
+                    ("resetCounter" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1213 1217])
+                            ("key" variable nil (reparse-symbol function_parameters) [1219 1222]))                          )
+                        (reparse-symbol indented_block_body) [1196 1330])
+                    ("reinitialize" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1352 1356]))                          )
+                        (reparse-symbol indented_block_body) [1335 1399]))                  
+                :type "class")
+                nil [402 1399])
+            ("CollectorProcess" type
+               (:superclasses ("Process")
+                :members 
+                  ( ("'''
+    collector的处理进程
+    '''" code nil (reparse-symbol indented_block_body) [1438 1468])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [1535 1590])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1599 1633])
+                            ("self" code nil (reparse-symbol indented_block_body) [1642 1708])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1717 1767])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1776 1834]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1487 1491])
+                            ("project_config" variable nil (reparse-symbol function_parameters) [1493 1507])
+                            ("args" variable nil (reparse-symbol function_parameters) [1509 1514])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1516 1524]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1474 1835])
+                    ("create_project_handler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1867 1871])
+                            ("project_config" variable nil (reparse-symbol function_parameters) [1873 1887]))                          )
+                        (reparse-symbol indented_block_body) [1840 2252])
+                    ("create_redis_pool_cluster" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2287 2291])
+                            ("redis_config" variable nil (reparse-symbol function_parameters) [2293 2305]))                          )
+                        (reparse-symbol indented_block_body) [2257 2352])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2365 2369]))                          )
+                        (reparse-symbol indented_block_body) [2357 2874]))                  
+                :type "class")
+                nil [1401 2874])
+            ("main" function nil nil [2876 3004]))          
+      :file "collector.py"
+      :pointmax 3004
+      :fsize 3017
+      :lastmodtime '(22710 49956 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!domob_pad!redis_stats_collactor!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

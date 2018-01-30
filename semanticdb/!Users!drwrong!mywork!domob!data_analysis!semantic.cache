@@ -1,0 +1,36 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("sys" include nil nil [25 46])
+            ("numpy" include nil nil [47 65])
+            ("collections" include nil nil [66 101])
+            ("matplotlib.pyplot" include nil nil [102 133])
+            ("data" variable nil nil [147 171])
+            ("mean" variable nil nil [173 191])
+            ("max_value" variable nil nil [192 214])
+            ("min_value" variable nil nil [215 237])
+            ("var" variable nil nil [238 254])
+            ("print" code nil nil [282 309])
+            ("print" code nil nil [310 347])
+            ("print" code nil nil [348 385])
+            ("print" code nil nil [386 411])
+            ("total_num" variable nil nil [413 434])
+            ("stats" variable nil nil [435 465])
+            ("over" code nil nil [466 490])
+            ("for" code nil nil [491 635])
+            ("for" code nil nil [636 718])
+            ("plt" code nil nil [755 782])
+            ("plt" code nil nil [783 793]))          
+      :file "stats.py"
+      :pointmax 794
+      :fsize 793
+      :lastmodtime '(22921 9253 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!data_analysis!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

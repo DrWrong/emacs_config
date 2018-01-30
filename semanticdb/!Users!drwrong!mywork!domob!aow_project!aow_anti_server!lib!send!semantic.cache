@@ -1,0 +1,53 @@
+;; Object send/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "send/"
+  :tables
+  (list
+    (semanticdb-table "send_biz.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [26 40])
+            ("domob_thrift.aow.event.EventServer" include nil nil [42 105])
+            ("domob_thrift.common.ttypes" include nil nil [106 158])
+            ("ut.thriftutils" include nil nil [160 197])
+            ("SendBiz" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [260 274])
+                            ("self" variable nil (reparse-symbol indented_block_body) [283 334])
+                            ("self" variable nil (reparse-symbol indented_block_body) [343 370])
+                            ("self" variable nil (reparse-symbol indented_block_body) [379 437]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [240 244])
+                            ("cfg" variable nil (reparse-symbol function_parameters) [246 249]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [227 438])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [451 455])
+                            ("d" variable nil (reparse-symbol function_parameters) [457 458]))                          )
+                        (reparse-symbol indented_block_body) [443 548])
+                    ("run_by_evt" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [568 572])
+                            ("name" variable nil (reparse-symbol function_parameters) [574 578])
+                            ("client" variable nil (reparse-symbol function_parameters) [580 586])
+                            ("d" variable nil (reparse-symbol function_parameters) [588 589])
+                            ("func_name" variable nil (reparse-symbol function_parameters) [591 600])
+                            ("args" variable nil (reparse-symbol function_parameters) [602 606]))                          )
+                        (reparse-symbol indented_block_body) [553 1215]))                  
+                :type "class")
+                nil [200 1215]))          
+      :file "send_biz.py"
+      :pointmax 1215
+      :fsize 1214
+      :lastmodtime '(22699 54901 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_anti_server!lib!send!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

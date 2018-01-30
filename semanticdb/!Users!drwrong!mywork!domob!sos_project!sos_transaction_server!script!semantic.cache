@@ -1,0 +1,198 @@
+;; Object script/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "script/"
+  :tables
+  (list
+    (semanticdb-table "transaction_import.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("argparse" include nil nil [49 64])
+            ("logging" include nil nil [65 79])
+            ("collections" include nil nil [80 114])
+            ("Queue" include nil nil [115 145])
+            ("threading" include nil nil [146 174])
+            ("time" include nil nil [175 203])
+            ("signal" include nil nil [204 217])
+            ("domob_pyutils.thriftext.TThriftClientPool" include nil nil [219 290])
+            ("domob_thrift.sos.transactionserver" include nil nil [291 355])
+            ("domob_thrift.sos.transactionserver.ttypes" include nil nil [356 420])
+            ("MySQLdb" include nil nil [421 435])
+            ("logging" code nil nil [438 566])
+            ("mysqldb" variable nil nil [569 728])
+            ("queue" variable nil nil [731 750])
+            ("Record" variable nil nil [752 834])
+            ("db" variable nil nil [836 867])
+            ("cursor" variable nil nil [868 888])
+            ("ProducerThread" type
+               (:superclasses ("Thread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [984 1002])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1011 1025])
+                            ("db" variable nil (reparse-symbol indented_block_body) [1034 1065])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1074 1099])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1108 1129])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1138 1161])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1170 1189])
+                            ("super" code nil (reparse-symbol indented_block_body) [1198 1251]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [939 943])
+                            ("bottom" variable nil (reparse-symbol function_parameters) [945 951])
+                            ("top" variable nil (reparse-symbol function_parameters) [953 956])
+                            ("args" variable nil (reparse-symbol function_parameters) [958 963])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [965 973]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [926 1252])
+                    ("get_src_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1274 1278])
+                            ("bottom" variable nil (reparse-symbol function_parameters) [1280 1286])
+                            ("top" variable nil (reparse-symbol function_parameters) [1288 1291]))                          )
+                        (reparse-symbol indented_block_body) [1257 1773])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1786 1790]))                          )
+                        (reparse-symbol indented_block_body) [1778 2146])
+                    ("terminate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2165 2169]))                          )
+                        (reparse-symbol indented_block_body) [2151 2203]))                  
+                :type "class")
+                nil [891 2203])
+            ("WriteThread" type
+               (:superclasses ("Thread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2282 2300])
+                            ("super" code nil (reparse-symbol indented_block_body) [2309 2359])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2368 2462]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2250 2254])
+                            ("args" variable nil (reparse-symbol function_parameters) [2256 2261])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2263 2271]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2237 2463])
+                    ("insert_one_record" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2490 2494])
+                            ("record" variable nil (reparse-symbol function_parameters) [2496 2502]))                          )
+                        (reparse-symbol indented_block_body) [2468 2867])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2880 2884]))                          )
+                        (reparse-symbol indented_block_body) [2872 3211]))                  
+                :type "class")
+                nil [2205 3211])
+            ("if" code nil nil [3213 4197]))          
+      :file "transaction_import.py"
+      :pointmax 4197
+      :fsize 4196
+      :lastmodtime '(22164 38854 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "transaction_import_mongo.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("argparse" include nil nil [49 64])
+            ("logging" include nil nil [65 79])
+            ("collections" include nil nil [80 114])
+            ("Queue" include nil nil [115 145])
+            ("threading" include nil nil [146 174])
+            ("time" include nil nil [175 203])
+            ("signal" include nil nil [204 217])
+            ("pymongo" include nil nil [218 249])
+            ("MySQLdb" include nil nil [250 264])
+            ("domob_pyutils.dm303" include nil nil [266 307])
+            ("domob_pyutils.statscol" include nil nil [308 348])
+            ("logging" code nil nil [350 478])
+            ("mysqldb" variable nil nil [481 640])
+            ("queue" variable nil nil [643 662])
+            ("Record" variable nil nil [664 746])
+            ("db" variable nil nil [795 826])
+            ("cursor" variable nil nil [827 847])
+            ("ProducerThread" type
+               (:superclasses ("Thread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [813 831])
+                            ("self" variable nil (reparse-symbol indented_block_body) [840 854])
+                            ("db" variable nil (reparse-symbol indented_block_body) [863 894])
+                            ("self" variable nil (reparse-symbol indented_block_body) [903 928])
+                            ("self" variable nil (reparse-symbol indented_block_body) [937 958])
+                            ("self" variable nil (reparse-symbol indented_block_body) [967 990])
+                            ("self" variable nil (reparse-symbol indented_block_body) [999 1018])
+                            ("super" code nil (reparse-symbol indented_block_body) [1027 1080]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [898 902])
+                            ("bottom" variable nil (reparse-symbol function_parameters) [904 910])
+                            ("top" variable nil (reparse-symbol function_parameters) [912 915])
+                            ("args" variable nil (reparse-symbol function_parameters) [917 922])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [924 932]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [885 1211])
+                    ("get_src_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1233 1237])
+                            ("bottom" variable nil (reparse-symbol function_parameters) [1239 1245])
+                            ("top" variable nil (reparse-symbol function_parameters) [1247 1250]))                          )
+                        (reparse-symbol indented_block_body) [1216 1732])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1745 1749]))                          )
+                        (reparse-symbol indented_block_body) [1737 2105])
+                    ("terminate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2124 2128]))                          )
+                        (reparse-symbol indented_block_body) [2110 2162]))                  
+                :type "class")
+                nil [850 2162])
+            ("WriteThread" type
+               (:superclasses ("Thread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2111 2129])
+                            ("super" code nil (reparse-symbol indented_block_body) [2138 2188])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2197 2250]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2209 2213])
+                            ("args" variable nil (reparse-symbol function_parameters) [2215 2220])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2222 2230]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2196 2381])
+                    ("insert_one_record" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2408 2412])
+                            ("record" variable nil (reparse-symbol function_parameters) [2414 2420]))                          )
+                        (reparse-symbol indented_block_body) [2386 3239])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3252 3256]))                          )
+                        (reparse-symbol indented_block_body) [3244 3583]))                  
+                :type "class")
+                nil [2164 3583])
+            ("if" code nil nil [3585 4569]))          
+      :file "transaction_import_mongo.py"
+      :pointmax 4569
+      :fsize 4568
+      :lastmodtime '(22911 62129 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_transaction_server!script!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

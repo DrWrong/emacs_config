@@ -1,0 +1,1563 @@
+;; Object worker/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "worker/"
+  :tables
+  (list
+    (semanticdb-table "loops.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"The consumers highly-optimized inner loop.\"\"\"" code nil nil [1 49])
+            ("__future__" include nil nil [50 106])
+            ("errno" include nil nil [107 119])
+            ("socket" include nil nil [120 133])
+            ("celery" include nil nil [134 162])
+            ("celery.exceptions" include nil nil [163 241])
+            ("celery.utils.log" include nil nil [242 281])
+            ("state" include nil nil [289 301])
+            ("__all__" variable nil nil [303 336])
+            ("logger" variable nil nil [445 474])
+            ("_quick_drain" function (:arguments 
+              ( ("connection" variable nil (reparse-symbol function_parameters) [494 504])
+                ("timeout" variable nil (reparse-symbol function_parameters) [506 513]))              ) nil [477 769])
+            ("_enable_amqheartbeats" function (:arguments 
+              ( ("timer" variable nil (reparse-symbol function_parameters) [797 802])
+                ("connection" variable nil (reparse-symbol function_parameters) [804 814])
+                ("rate" variable nil (reparse-symbol function_parameters) [816 820]))              ) nil [771 1082])
+            ("asynloop" function
+               (:documentation "Non-blocking event loop."
+                :arguments 
+                  ( ("obj" variable nil (reparse-symbol function_parameters) [1097 1100])
+                    ("connection" variable nil (reparse-symbol function_parameters) [1102 1112])
+                    ("consumer" variable nil (reparse-symbol function_parameters) [1114 1122])
+                    ("blueprint" variable nil (reparse-symbol function_parameters) [1124 1133])
+                    ("hub" variable nil (reparse-symbol function_parameters) [1135 1138])
+                    ("qos" variable nil (reparse-symbol function_parameters) [1140 1143])
+                    ("heartbeat" variable nil (reparse-symbol function_parameters) [1158 1167])
+                    ("clock" variable nil (reparse-symbol function_parameters) [1169 1174])
+                    ("hbrate" variable nil (reparse-symbol function_parameters) [1176 1182]))                  )
+                nil [1084 3481])
+            ("synloop" function
+               (:documentation "Fallback blocking event loop for transports that doesn't support AIO."
+                :arguments 
+                  ( ("obj" variable nil (reparse-symbol function_parameters) [3495 3498])
+                    ("connection" variable nil (reparse-symbol function_parameters) [3500 3510])
+                    ("consumer" variable nil (reparse-symbol function_parameters) [3512 3520])
+                    ("blueprint" variable nil (reparse-symbol function_parameters) [3522 3531])
+                    ("hub" variable nil (reparse-symbol function_parameters) [3533 3536])
+                    ("qos" variable nil (reparse-symbol function_parameters) [3538 3541])
+                    ("heartbeat" variable nil (reparse-symbol function_parameters) [3555 3564])
+                    ("clock" variable nil (reparse-symbol function_parameters) [3566 3571])
+                    ("hbrate" variable nil (reparse-symbol function_parameters) [3573 3579])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [3585 3593]))                  )
+                nil [3483 4395]))          
+      :file "loops.py"
+      :pointmax 4395
+      :fsize 4394
+      :lastmodtime '(22764 51938 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 3388 . 3481) (NEWLINE 3387 . 3388) (COLON 3354 . 3355) (TRY 3294 . 3297) (AS 3348 . 3350) (INDENT_BLOCK 639 . 769) (NEWLINE 638 . 639) (COLON 605 . 606) (TRY 524 . 527) (AS 599 . 601) (FROM 282 . 286) (PERIOD 287 . 288)))
+    (semanticdb-table "state.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"Internal worker state (global).
+
+This includes the currently active and reserved tasks,
+statistics, and revoked tasks.
+\"\"\"" code nil nil [25 150])
+            ("__future__" include nil nil [151 223])
+            ("os" include nil nil [225 234])
+            ("sys" include nil nil [235 245])
+            ("platform" include nil nil [246 261])
+            ("shelve" include nil nil [262 275])
+            ("weakref" include nil nil [276 290])
+            ("zlib" include nil nil [291 302])
+            ("kombu.serialization" include nil nil [304 359])
+            ("kombu.utils.objects" include nil nil [360 407])
+            ("celery" include nil nil [409 439])
+            ("celery.exceptions" include nil nil [440 501])
+            ("celery.five" include nil nil [502 533])
+            ("celery.utils.collections" include nil nil [534 581])
+            ("__all__" variable nil nil [583 788])
+            ("SOFTWARE_INFO" variable nil nil [831 939])
+            ("REVOKES_MAX" variable nil nil [989 1008])
+            ("REVOKE_EXPIRES" variable nil nil [1116 1138])
+            ("requests" variable nil nil [1181 1194])
+            ("reserved_requests" variable nil nil [1262 1299])
+            ("active_requests" variable nil nil [1371 1406])
+            ("total_count" variable nil nil [1466 1489])
+            ("all_total_count" variable nil nil [1536 1557])
+            ("revoked" variable nil nil [1631 1695])
+            ("should_stop" variable nil nil [1697 1715])
+            ("should_terminate" variable nil nil [1716 1739])
+            ("reset_state" function nil nil [1742 1913])
+            ("maybe_shutdown" function (:documentation "Shutdown if flags have been set.") nil [1915 2204])
+            ("task_reserved" function
+               (:documentation "Update global state when a task has been reserved."
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [2224 2231])
+                    ("add_request" variable nil (reparse-symbol function_parameters) [2251 2262])
+                    ("add_reserved_request" variable nil (reparse-symbol function_parameters) [2303 2323]))                  )
+                nil [2206 2480])
+            ("task_accepted" function
+               (:documentation "Update global state when a task has been accepted."
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [2500 2507])
+                    ("_all_total_count" variable nil (reparse-symbol function_parameters) [2527 2543])
+                    ("add_active_request" variable nil (reparse-symbol function_parameters) [2579 2597])
+                    ("add_to_total_count" variable nil (reparse-symbol function_parameters) [2637 2655]))                  )
+                nil [2482 2840])
+            ("task_ready" function
+               (:documentation "Update global state when a task is ready."
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [2857 2864])
+                    ("remove_request" variable nil (reparse-symbol function_parameters) [2881 2895])
+                    ("discard_active_request" variable nil (reparse-symbol function_parameters) [2925 2947])
+                    ("discard_reserved_request" variable nil (reparse-symbol function_parameters) [2988 3012]))                  )
+                nil [2842 3204])
+            ("C_BENCH" code nil nil [3206 3275])
+            ("C_BENCH_EVERY" variable nil nil [3276 3396])
+            ("if" code nil nil [3397 5154])
+            ("Persistent" type
+               (:documentation "Stores worker state between restarts.
+
+    This is the persistent data stored by the worker when
+    :option:`celery worker --statedb` is enabled.
+
+    Currently only stores revoked task id's.
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("storage" variable nil (reparse-symbol indented_block_body) [5395 5411])
+                    ("protocol" variable nil (reparse-symbol indented_block_body) [5416 5442])
+                    ("compress" variable nil (reparse-symbol indented_block_body) [5447 5471])
+                    ("decompress" variable nil (reparse-symbol indented_block_body) [5476 5504])
+                    ("_is_open" variable nil (reparse-symbol indented_block_body) [5509 5525])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [5588 5606])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5615 5639])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5648 5666])
+                            ("self" code nil (reparse-symbol indented_block_body) [5675 5687]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5544 5548])
+                            ("state" variable nil (reparse-symbol function_parameters) [5550 5555])
+                            ("filename" variable nil (reparse-symbol function_parameters) [5557 5565])
+                            ("clock" variable nil (reparse-symbol function_parameters) [5567 5572]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5531 5688])
+                    ("open" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5702 5706]))                          )
+                        (reparse-symbol indented_block_body) [5693 5820])
+                    ("merge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5835 5839]))                          )
+                        (reparse-symbol indented_block_body) [5825 5876])
+                    ("sync" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5890 5894]))                          )
+                        (reparse-symbol indented_block_body) [5881 5953])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5968 5972]))                          )
+                        (reparse-symbol indented_block_body) [5958 6063])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6077 6081]))                          )
+                        (reparse-symbol indented_block_body) [6068 6125])
+                    ("_merge_with" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6146 6150])
+                            ("d" variable nil (reparse-symbol function_parameters) [6152 6153]))                          )
+                        (reparse-symbol indented_block_body) [6130 6233])
+                    ("_sync_with" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6253 6257])
+                            ("d" variable nil (reparse-symbol function_parameters) [6259 6260]))                          )
+                        (reparse-symbol indented_block_body) [6238 6526])
+                    ("_merge_clock" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6548 6552])
+                            ("d" variable nil (reparse-symbol function_parameters) [6554 6555]))                          )
+                        (reparse-symbol indented_block_body) [6531 6655])
+                    ("_merge_revoked" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6679 6683])
+                            ("d" variable nil (reparse-symbol function_parameters) [6685 6686]))                          )
+                        (reparse-symbol indented_block_body) [6660 6985])
+                    ("_merge_revoked_v3" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7012 7016])
+                            ("zrevoked" variable nil (reparse-symbol function_parameters) [7018 7026]))                          )
+                        (reparse-symbol indented_block_body) [6990 7130])
+                    ("_merge_revoked_v2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7157 7161])
+                            ("saved" variable nil (reparse-symbol function_parameters) [7163 7168]))                          )
+                        (reparse-symbol indented_block_body) [7135 7363])
+                    ("_merge_revoked_v1" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7390 7394])
+                            ("saved" variable nil (reparse-symbol function_parameters) [7396 7401]))                          )
+                        (reparse-symbol indented_block_body) [7368 7491])
+                    ("_dumps" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7507 7511])
+                            ("obj" variable nil (reparse-symbol function_parameters) [7513 7516]))                          )
+                        (reparse-symbol indented_block_body) [7496 7576])
+                    ("_revoked_tasks" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7614 7618]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [7581 7655])
+                    ("db" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7688 7692]))                          
+                        :decorators 
+                          ( ("cached_property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [7660 7751]))                  
+                :type "class")
+                nil [5156 7751]))          
+      :file "state.py"
+      :pointmax 7751
+      :fsize 7750
+      :lastmodtime '(22764 51938 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"Worker implementation.\"\"\"" code nil nil [1 29])
+            ("__future__" include nil nil [30 86])
+            ("WorkController" include nil nil [100 121])
+            ("__all__" variable nil nil [123 151]))          
+      :file "__init__.py"
+      :pointmax 152
+      :fsize 151
+      :lastmodtime '(22764 51938 0 0)
+      :unmatched-syntax '((FROM 87 . 91) (PERIOD 92 . 93)))
+    (semanticdb-table "components.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"Worker-level Bootsteps.\"\"\"" code nil nil [25 54])
+            ("__future__" include nil nil [55 111])
+            ("atexit" include nil nil [113 126])
+            ("warnings" include nil nil [127 142])
+            ("kombu.async" include nil nil [144 211])
+            ("kombu.async.semaphore" include nil nil [212 276])
+            ("kombu.async.timer" include nil nil [277 322])
+            ("celery" include nil nil [324 352])
+            ("celery._state" include nil nil [353 404])
+            ("celery.exceptions" include nil nil [405 455])
+            ("celery.five" include nil nil [456 488])
+            ("celery.platforms" include nil nil [489 528])
+            ("celery.utils.log" include nil nil [529 581])
+            ("__all__" variable nil nil [583 648])
+            ("GREEN_POOLS" variable nil nil [650 686])
+            ("ERR_B_GREEN" variable nil nil [688 793])
+            ("W_POOL_SETTING" variable nil nil [795 987])
+            ("Timer" type
+               (:documentation "Timer bootstep."
+                :superclasses ("bootsteps.Step")
+                :members 
+                  ( ("create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1061 1065])
+                            ("w" variable nil (reparse-symbol function_parameters) [1067 1068]))                          )
+                        (reparse-symbol indented_block_body) [1050 1691])
+                    ("on_timer_error" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1715 1719])
+                            ("exc" variable nil (reparse-symbol function_parameters) [1721 1724]))                          )
+                        (reparse-symbol indented_block_body) [1696 1787])
+                    ("on_timer_tick" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1810 1814])
+                            ("delay" variable nil (reparse-symbol function_parameters) [1816 1821]))                          )
+                        (reparse-symbol indented_block_body) [1792 1888]))                  
+                :type "class")
+                nil [990 1888])
+            ("Hub" type
+               (:documentation "Worker starts the event loop."
+                :superclasses ("bootsteps.StartStopStep")
+                :members 
+                  ( ("requires" variable nil (reparse-symbol indented_block_body) [1971 1990])
+                    ("__init__" function
+                       (:suite 
+                          ( ("w" variable nil (reparse-symbol indented_block_body) [2037 2049])
+                            ("super" code nil (reparse-symbol indented_block_body) [2058 2096]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2009 2013])
+                            ("w" variable nil (reparse-symbol function_parameters) [2015 2016])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2018 2026]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1996 2097])
+                    ("include_if" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2117 2121])
+                            ("w" variable nil (reparse-symbol function_parameters) [2123 2124]))                          )
+                        (reparse-symbol indented_block_body) [2102 2158])
+                    ("create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2174 2178])
+                            ("w" variable nil (reparse-symbol function_parameters) [2180 2181]))                          )
+                        (reparse-symbol indented_block_body) [2163 2477])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2492 2496])
+                            ("w" variable nil (reparse-symbol function_parameters) [2498 2499]))                          )
+                        (reparse-symbol indented_block_body) [2482 2515])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2529 2533])
+                            ("w" variable nil (reparse-symbol function_parameters) [2535 2536]))                          )
+                        (reparse-symbol indented_block_body) [2520 2561])
+                    ("terminate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2580 2584])
+                            ("w" variable nil (reparse-symbol function_parameters) [2586 2587]))                          )
+                        (reparse-symbol indented_block_body) [2566 2612])
+                    ("_patch_thread_primitives" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2646 2650])
+                            ("w" variable nil (reparse-symbol function_parameters) [2652 2653]))                          )
+                        (reparse-symbol indented_block_body) [2617 2952]))                  
+                :type "class")
+                nil [1890 2952])
+            ("Pool" type
+               (:documentation "Bootstep managing the worker pool.
+
+    Describes how to initialize the worker pool, and starts and stops
+    the pool during worker start-up/shutdown.
+
+    Adds attributes:
+
+        * autoscale
+        * pool
+        * max_concurrency
+        * min_concurrency
+    "
+                :superclasses ("bootsteps.StartStopStep")
+                :members 
+                  ( ("requires" variable nil (reparse-symbol indented_block_body) [3273 3290])
+                    ("__init__" function
+                       (:suite 
+                          ( ("w" variable nil (reparse-symbol indented_block_body) [3353 3366])
+                            ("w" variable nil (reparse-symbol indented_block_body) [3375 3399])
+                            ("w" variable nil (reparse-symbol indented_block_body) [3408 3441])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3450 3484])
+                            ("if" code nil (reparse-symbol indented_block_body) [3493 3648])
+                            ("w" variable nil (reparse-symbol indented_block_body) [3656 3679])
+                            ("if" code nil (reparse-symbol indented_block_body) [3688 3767])
+                            ("super" code nil (reparse-symbol indented_block_body) [3775 3814]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3309 3313])
+                            ("w" variable nil (reparse-symbol function_parameters) [3315 3316])
+                            ("autoscale" variable nil (reparse-symbol function_parameters) [3318 3327])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [3334 3342]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3296 3815])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3830 3834])
+                            ("w" variable nil (reparse-symbol function_parameters) [3836 3837]))                          )
+                        (reparse-symbol indented_block_body) [3820 3886])
+                    ("terminate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3905 3909])
+                            ("w" variable nil (reparse-symbol function_parameters) [3911 3912]))                          )
+                        (reparse-symbol indented_block_body) [3891 3965])
+                    ("create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3981 3985])
+                            ("w" variable nil (reparse-symbol function_parameters) [3987 3988]))                          )
+                        (reparse-symbol indented_block_body) [3970 5428])
+                    ("info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5442 5446])
+                            ("w" variable nil (reparse-symbol function_parameters) [5448 5449]))                          )
+                        (reparse-symbol indented_block_body) [5433 5510])
+                    ("register_with_event_loop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5544 5548])
+                            ("w" variable nil (reparse-symbol function_parameters) [5550 5551])
+                            ("hub" variable nil (reparse-symbol function_parameters) [5553 5556]))                          )
+                        (reparse-symbol indented_block_body) [5515 5604]))                  
+                :type "class")
+                nil [2954 5604])
+            ("Beat" type
+               (:documentation "Step used to embed a beat process.
+
+    Enabled when the ``beat`` argument is set.
+    "
+                :superclasses ("bootsteps.StartStopStep")
+                :members 
+                  ( ("label" variable nil (reparse-symbol indented_block_body) [5746 5760])
+                    ("conditional" variable nil (reparse-symbol indented_block_body) [5765 5783])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [5842 5870])
+                            ("w" variable nil (reparse-symbol indented_block_body) [5879 5892])
+                            ("super" code nil (reparse-symbol indented_block_body) [5901 5951]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5802 5806])
+                            ("w" variable nil (reparse-symbol function_parameters) [5808 5809])
+                            ("beat" variable nil (reparse-symbol function_parameters) [5811 5815])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [5823 5831]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5789 5952])
+                    ("create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5968 5972])
+                            ("w" variable nil (reparse-symbol function_parameters) [5974 5975]))                          )
+                        (reparse-symbol indented_block_body) [5957 6346]))                  
+                :type "class")
+                nil [5606 6346])
+            ("StateDB" type
+               (:documentation "Bootstep that sets up between-restart state database file."
+                :superclasses ("bootsteps.Step")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [6494 6518])
+                            ("w" variable nil (reparse-symbol indented_block_body) [6527 6548])
+                            ("super" code nil (reparse-symbol indented_block_body) [6557 6599]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6466 6470])
+                            ("w" variable nil (reparse-symbol function_parameters) [6472 6473])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [6475 6483]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [6453 6600])
+                    ("create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6616 6620])
+                            ("w" variable nil (reparse-symbol function_parameters) [6622 6623]))                          )
+                        (reparse-symbol indented_block_body) [6605 6748]))                  
+                :type "class")
+                nil [6348 6748])
+            ("Consumer" type
+               (:documentation "Bootstep starting the Consumer blueprint."
+                :superclasses ("bootsteps.StartStopStep")
+                :members 
+                  ( ("last" variable nil (reparse-symbol indented_block_body) [6848 6859])
+                    ("create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6876 6880])
+                            ("w" variable nil (reparse-symbol function_parameters) [6882 6883]))                          )
+                        (reparse-symbol indented_block_body) [6865 7629]))                  
+                :type "class")
+                nil [6750 7629]))          
+      :file "components.py"
+      :pointmax 7629
+      :fsize 7628
+      :lastmodtime '(22764 51938 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "request.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"Task request.
+
+This module defines the :class:`Request` class, that specifies
+how tasks are executed.
+\"\"\"" code nil nil [25 133])
+            ("__future__" include nil nil [134 190])
+            ("logging" include nil nil [192 206])
+            ("sys" include nil nil [207 217])
+            ("datetime" include nil nil [219 248])
+            ("weakref" include nil nil [249 272])
+            ("billiard.common" include nil nil [274 314])
+            ("kombu.utils.encoding" include nil nil [315 367])
+            ("kombu.utils.objects" include nil nil [368 415])
+            ("celery" include nil nil [417 443])
+            ("celery.app.trace" include nil nil [444 499])
+            ("" code nil nil [530 675])
+            ("celery.five" include nil nil [676 735])
+            ("celery.platforms" include nil nil [736 784])
+            ("celery.utils.functional" include nil nil [785 832])
+            ("celery.utils.log" include nil nil [833 872])
+            ("celery.utils.nodenames" include nil nil [873 919])
+            ("celery.utils.time" include nil nil [920 991])
+            ("celery.utils.serialization" include nil nil [992 1052])
+            ("state" include nil nil [1061 1073])
+            ("__all__" variable nil nil [1075 1096])
+            ("IS_PYPY" variable nil nil [1205 1248])
+            ("logger" variable nil nil [1250 1279])
+            ("debug, info, warn, error" code nil nil [1280 1392])
+            ("_does_info" variable nil nil [1393 1411])
+            ("_does_debug" variable nil nil [1412 1431])
+            ("__optimize__" function nil nil [1434 1676])
+            ("__optimize__" code nil nil [1676 1690])
+            ("tz_or_local" variable nil nil [1717 1751])
+            ("send_revoked" variable nil nil [1752 1792])
+            ("task_accepted" variable nil nil [1794 1829])
+            ("task_ready" variable nil nil [1830 1859])
+            ("revoked_tasks" variable nil nil [1860 1889])
+            ("Request" type
+               (:documentation "A request for task execution."
+                :superclasses ("object")
+                :members 
+                  ( ("acknowledged" variable nil (reparse-symbol indented_block_body) [1989 2009])
+                    ("time_start" variable nil (reparse-symbol indented_block_body) [2014 2031])
+                    ("worker_pid" variable nil (reparse-symbol indented_block_body) [2036 2053])
+                    ("time_limits" variable nil (reparse-symbol indented_block_body) [2058 2084])
+                    ("_already_revoked" variable nil (reparse-symbol indented_block_body) [2089 2113])
+                    ("_terminate_on_ack" variable nil (reparse-symbol indented_block_body) [2118 2142])
+                    ("_apply_result" variable nil (reparse-symbol indented_block_body) [2147 2167])
+                    ("_tzlocal" variable nil (reparse-symbol indented_block_body) [2172 2187])
+                    ("if" code nil (reparse-symbol indented_block_body) [2193 2611])
+                    ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [2999 3057])
+                            ("if" code nil (reparse-symbol indented_block_body) [3065 3114])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3122 3136])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3145 3167])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3176 3192])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3201 3215])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3224 3247])
+                            ("if" code nil (reparse-symbol indented_block_body) [3256 3478])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3487 3510])
+                            ("type" variable nil (reparse-symbol indented_block_body) [3519 3565])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3574 3611])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3620 3661])
+                            ("if" code nil (reparse-symbol indented_block_body) [3670 3749])
+                            ("if" code nil (reparse-symbol indented_block_body) [3757 3836])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3844 3887])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3896 3943])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3952 3972])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3981 4007])
+                            ("self" code nil (reparse-symbol indented_block_body) [4016 4057])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4066 4088])
+                            ("self" code nil (reparse-symbol indented_block_body) [4097 4145])
+                            ("self" code nil (reparse-symbol indented_block_body) [4154 4194])
+                            ("eta" variable nil (reparse-symbol indented_block_body) [4324 4348])
+                            ("if" code nil (reparse-symbol indented_block_body) [4357 4712])
+                            ("expires" variable nil (reparse-symbol indented_block_body) [4721 4753])
+                            ("if" code nil (reparse-symbol indented_block_body) [4762 5149])
+                            ("delivery_info" code nil (reparse-symbol indented_block_body) [5158 5201])
+                            ("properties" code nil (reparse-symbol indented_block_body) [5210 5247])
+                            ("headers" code nil (reparse-symbol indented_block_body) [5256 5690])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5699 5726]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2629 2633])
+                            ("message" variable nil (reparse-symbol function_parameters) [2635 2642])
+                            ("on_ack" variable nil (reparse-symbol function_parameters) [2644 2650])
+                            ("hostname" variable nil (reparse-symbol function_parameters) [2674 2682])
+                            ("eventer" variable nil (reparse-symbol function_parameters) [2689 2696])
+                            ("app" variable nil (reparse-symbol function_parameters) [2703 2706])
+                            ("connection_errors" variable nil (reparse-symbol function_parameters) [2730 2747])
+                            ("request_dict" variable nil (reparse-symbol function_parameters) [2754 2766])
+                            ("task" variable nil (reparse-symbol function_parameters) [2790 2794])
+                            ("on_reject" variable nil (reparse-symbol function_parameters) [2801 2810])
+                            ("body" variable nil (reparse-symbol function_parameters) [2817 2821])
+                            ("headers" variable nil (reparse-symbol function_parameters) [2845 2852])
+                            ("decoded" variable nil (reparse-symbol function_parameters) [2859 2866])
+                            ("utc" variable nil (reparse-symbol function_parameters) [2874 2877])
+                            ("maybe_make_aware" variable nil (reparse-symbol function_parameters) [2901 2917])
+                            ("maybe_iso8601" variable nil (reparse-symbol function_parameters) [2953 2966])
+                            ("opts" variable nil (reparse-symbol function_parameters) [2982 2988]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2616 5727])
+                    ("delivery_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5764 5768]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5732 5821])
+                    ("execute_using_pool" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5849 5853])
+                            ("pool" variable nil (reparse-symbol function_parameters) [5855 5859])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [5861 5869]))                          
+                        :documentation "Used by the worker to send this task to the pool.
+
+        Arguments:
+            pool (~celery.concurrency.base.TaskPool): The execution pool
+                used to execute this request.
+
+        Raises:
+            celery.exceptions.TaskRevokedError: if the task was revoked.
+        ")
+                        (reparse-symbol indented_block_body) [5826 6991])
+                    ("execute" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7008 7012])
+                            ("loglevel" variable nil (reparse-symbol function_parameters) [7014 7022])
+                            ("logfile" variable nil (reparse-symbol function_parameters) [7029 7036]))                          
+                        :documentation "Execute the task in a :func:`~celery.app.trace.trace_task`.
+
+        Arguments:
+            loglevel (int): The loglevel used by the task.
+            logfile (str): The logfile used by the task.
+        ")
+                        (reparse-symbol indented_block_body) [6996 8111])
+                    ("maybe_expire" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8133 8137]))                          
+                        :documentation "If expired, mark the task as revoked.")
+                        (reparse-symbol indented_block_body) [8116 8375])
+                    ("terminate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8394 8398])
+                            ("pool" variable nil (reparse-symbol function_parameters) [8400 8404])
+                            ("signal" variable nil (reparse-symbol function_parameters) [8406 8412]))                          )
+                        (reparse-symbol indented_block_body) [8380 8863])
+                    ("_announce_revoked" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8890 8894])
+                            ("reason" variable nil (reparse-symbol function_parameters) [8896 8902])
+                            ("terminated" variable nil (reparse-symbol function_parameters) [8904 8914])
+                            ("signum" variable nil (reparse-symbol function_parameters) [8916 8922])
+                            ("expired" variable nil (reparse-symbol function_parameters) [8924 8931]))                          )
+                        (reparse-symbol indented_block_body) [8868 9392])
+                    ("revoked" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9409 9413]))                          
+                        :documentation "If revoked, skip task and mark state.")
+                        (reparse-symbol indented_block_body) [9397 9896])
+                    ("send_event" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9916 9920])
+                            ("type" variable nil (reparse-symbol function_parameters) [9922 9926])
+                            ("fields" variable nil (reparse-symbol function_parameters) [9928 9936]))                          )
+                        (reparse-symbol indented_block_body) [9901 10075])
+                    ("on_accepted" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10096 10100])
+                            ("pid" variable nil (reparse-symbol function_parameters) [10102 10105])
+                            ("time_accepted" variable nil (reparse-symbol function_parameters) [10107 10120]))                          
+                        :documentation "Handler called when task is accepted by worker pool.")
+                        (reparse-symbol indented_block_body) [10080 10593])
+                    ("on_timeout" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10613 10617])
+                            ("soft" variable nil (reparse-symbol function_parameters) [10619 10623])
+                            ("timeout" variable nil (reparse-symbol function_parameters) [10625 10632]))                          
+                        :documentation "Handler called if the task times out.")
+                        (reparse-symbol indented_block_body) [10598 11242])
+                    ("on_success" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11262 11266])
+                            ("failed__retval__runtime" variable nil (reparse-symbol function_parameters) [11268 11291])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [11293 11301]))                          
+                        :documentation "Handler called if the task was successfully processed.")
+                        (reparse-symbol indented_block_body) [11247 11790])
+                    ("on_retry" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11808 11812])
+                            ("exc_info" variable nil (reparse-symbol function_parameters) [11814 11822]))                          
+                        :documentation "Handler called if the task should be retried.")
+                        (reparse-symbol indented_block_body) [11795 12122])
+                    ("on_failure" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12142 12146])
+                            ("exc_info" variable nil (reparse-symbol function_parameters) [12148 12156])
+                            ("send_failed_event" variable nil (reparse-symbol function_parameters) [12158 12175])
+                            ("return_ok" variable nil (reparse-symbol function_parameters) [12182 12191]))                          
+                        :documentation "Handler called if the task raised an exception.")
+                        (reparse-symbol indented_block_body) [12127 14058])
+                    ("acknowledge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14079 14083]))                          
+                        :documentation "Acknowledge task.")
+                        (reparse-symbol indented_block_body) [14063 14245])
+                    ("reject" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14261 14265])
+                            ("requeue" variable nil (reparse-symbol function_parameters) [14267 14274]))                          )
+                        (reparse-symbol indented_block_body) [14250 14484])
+                    ("info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14498 14502])
+                            ("safe" variable nil (reparse-symbol function_parameters) [14504 14508]))                          )
+                        (reparse-symbol indented_block_body) [14489 14928])
+                    ("humaninfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14947 14951]))                          )
+                        (reparse-symbol indented_block_body) [14933 15001])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15018 15022]))                          
+                        :documentation "``str(self)``.")
+                        (reparse-symbol indented_block_body) [15006 15259])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15277 15281]))                          
+                        :documentation "``repr(self)``.")
+                        (reparse-symbol indented_block_body) [15264 15463])
+                    ("tzlocal" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15494 15498]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [15468 15615])
+                    ("store_errors" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15651 15655]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [15620 15761])
+                    ("task_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15792 15796]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [15766 15843])
+                    ("task_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15888 15892])
+                            ("value" variable nil (reparse-symbol function_parameters) [15894 15899]))                          
+                        :decorators 
+                          ( ("task_id.setter" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [15848 15926])
+                    ("task_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15959 15963]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [15931 16012])
+                    ("task_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16061 16065])
+                            ("value" variable nil (reparse-symbol function_parameters) [16067 16072]))                          
+                        :decorators 
+                          ( ("task_name.setter" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [16017 16101])
+                    ("reply_to" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16133 16137]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [16106 16256])
+                    ("correlation_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16294 16298]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [16261 16389])
+                    ("_payload" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16428 16432]))                          
+                        :decorators 
+                          ( ("cached_property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [16394 16503])
+                    ("chord" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16539 16543]))                          
+                        :decorators 
+                          ( ("cached_property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [16508 16834])
+                    ("errbacks" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16873 16877]))                          
+                        :decorators 
+                          ( ("cached_property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [16839 17171])
+                    ("group" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17207 17211]))                          
+                        :decorators 
+                          ( ("cached_property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [17176 17354]))                  
+                :type "class")
+                nil [1921 17354])
+            ("create_request_cls" function (:arguments 
+              ( ("base" variable nil (reparse-symbol function_parameters) [17379 17383])
+                ("task" variable nil (reparse-symbol function_parameters) [17385 17389])
+                ("pool" variable nil (reparse-symbol function_parameters) [17391 17395])
+                ("hostname" variable nil (reparse-symbol function_parameters) [17397 17405])
+                ("eventer" variable nil (reparse-symbol function_parameters) [17407 17414])
+                ("ref" variable nil (reparse-symbol function_parameters) [17439 17442])
+                ("revoked_tasks" variable nil (reparse-symbol function_parameters) [17448 17461])
+                ("task_ready" variable nil (reparse-symbol function_parameters) [17500 17510])
+                ("trace" variable nil (reparse-symbol function_parameters) [17523 17528]))              ) nil [17356 19414]))          
+      :file "request.py"
+      :pointmax 19414
+      :fsize 19413
+      :lastmodtime '(22764 51938 0 0)
+      :unmatched-syntax '((RETURN 16443 . 16449) (IF 16460 . 16462) (ELSE 16477 . 16481) (INDENT_BLOCK 4919 . 5036) (NEWLINE 4918 . 4919) (COLON 4917 . 4918) (TRY 4798 . 4801) (AS 4911 . 4913) (INDENT_BLOCK 4502 . 4611) (NEWLINE 4501 . 4502) (COLON 4500 . 4501) (TRY 4389 . 4392) (AS 4494 . 4496) (FROM 1054 . 1058) (PERIOD 1059 . 1060)))
+    (semanticdb-table "control.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"Worker remote control command implementations.\"\"\"" code nil nil [25 77])
+            ("__future__" include nil nil [78 134])
+            ("io" include nil nil [136 145])
+            ("tempfile" include nil nil [146 161])
+            ("collections" include nil nil [163 197])
+            ("billiard.common" include nil nil [199 239])
+            ("kombu.utils.encoding" include nil nil [240 282])
+            ("celery.exceptions" include nil nil [284 328])
+            ("celery.five" include nil nil [329 386])
+            ("celery.platforms" include nil nil [387 435])
+            ("celery.utils.functional" include nil nil [436 482])
+            ("celery.utils.log" include nil nil [483 522])
+            ("celery.utils.serialization" include nil nil [523 580])
+            ("celery.utils.time" include nil nil [581 615])
+            ("state" include nil nil [624 652])
+            ("Request" include nil nil [667 681])
+            ("__all__" variable nil nil [683 702])
+            ("DEFAULT_TASK_INFO_ITEMS" variable nil nil [704 771])
+            ("logger" variable nil nil [772 801])
+            ("controller_info_t" variable nil nil [803 955])
+            ("ok" function (:arguments 
+              ( ("value" variable nil (reparse-symbol function_parameters) [965 970]))              ) nil [958 998])
+            ("nok" function (:arguments 
+              ( ("value" variable nil (reparse-symbol function_parameters) [1008 1013]))              ) nil [1000 1044])
+            ("Panel" type
+               (:documentation "Global registry of remote control commands."
+                :superclasses ("UserDict")
+                :members 
+                  ( ("data" variable nil (reparse-symbol indented_block_body) [1128 1137])
+                    ("meta" variable nil (reparse-symbol indented_block_body) [1162 1171])
+                    ("register" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [1218 1221])
+                            ("args" variable nil (reparse-symbol function_parameters) [1223 1228])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1230 1238]))                          )
+                        (reparse-symbol indented_block_body) [1188 1347])
+                    ("_register" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [1383 1386])
+                            ("name" variable nil (reparse-symbol function_parameters) [1388 1392])
+                            ("alias" variable nil (reparse-symbol function_parameters) [1399 1404])
+                            ("type" variable nil (reparse-symbol function_parameters) [1411 1415])
+                            ("visible" variable nil (reparse-symbol function_parameters) [1445 1452])
+                            ("default_timeout" variable nil (reparse-symbol function_parameters) [1459 1474])
+                            ("help" variable nil (reparse-symbol function_parameters) [1480 1484])
+                            ("signature" variable nil (reparse-symbol function_parameters) [1509 1518])
+                            ("args" variable nil (reparse-symbol function_parameters) [1525 1529])
+                            ("variadic" variable nil (reparse-symbol function_parameters) [1536 1544]))                          )
+                        (reparse-symbol indented_block_body) [1352 2004]))                  
+                :type "class")
+                nil [1046 2004])
+            ("control_command" function (:arguments 
+              ( ("kwargs" variable nil (reparse-symbol function_parameters) [2026 2034]))              ) nil [2006 2089])
+            ("inspect_command" function (:arguments 
+              ( ("kwargs" variable nil (reparse-symbol function_parameters) [2111 2119]))              ) nil [2091 2174])
+            ("" code nil nil [2202 2204])
+            ("report" function
+               (:documentation "Information about Celery installation for bug reports."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [2216 2221]))                  )
+                nil [2205 2326])
+            ("" code nil nil [2344 2483])
+            ("conf" function
+               (:documentation "List configuration."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [2493 2498])
+                    ("with_defaults" variable nil (reparse-symbol function_parameters) [2500 2513])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [2521 2529]))                  )
+                nil [2484 2731])
+            ("_wanted_config_key" function (:arguments 
+              ( ("key" variable nil (reparse-symbol function_parameters) [2756 2759]))              ) nil [2733 2828])
+            ("" code nil nil [2857 2921])
+            ("query_task" function
+               (:documentation "Query for task information by id."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [2937 2942])
+                    ("ids" variable nil (reparse-symbol function_parameters) [2944 2947])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [2949 2957]))                  )
+                nil [2922 3130])
+            ("_find_requests_by_id" function (:arguments 
+              ( ("ids" variable nil (reparse-symbol function_parameters) [3157 3160])
+                ("get_request" variable nil (reparse-symbol function_parameters) [3187 3198]))              ) nil [3132 3353])
+            ("_state_of_task" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [3374 3381])
+                ("is_active" variable nil (reparse-symbol function_parameters) [3402 3411])
+                ("is_reserved" variable nil (reparse-symbol function_parameters) [3474 3485]))              ) nil [3355 3659])
+            ("" code nil nil [3677 3745])
+            ("revoke" function
+               (:documentation "Revoke task by task id (or list of ids).
+
+    Keyword Arguments:
+        terminate (bool): Also terminate the process if the task is active.
+        signal (str): Name of signal to use for terminate (e.g., ``KILL``).
+    "
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [3757 3762])
+                    ("task_id" variable nil (reparse-symbol function_parameters) [3764 3771])
+                    ("terminate" variable nil (reparse-symbol function_parameters) [3773 3782])
+                    ("signal" variable nil (reparse-symbol function_parameters) [3790 3796])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [3803 3811]))                  )
+                nil [3746 5101])
+            ("" code nil nil [5119 5226])
+            ("terminate" function
+               (:documentation "Terminate task by task id (or list of ids)."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [5241 5246])
+                    ("signal" variable nil (reparse-symbol function_parameters) [5248 5254])
+                    ("task_id" variable nil (reparse-symbol function_parameters) [5256 5263])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [5265 5273]))                  )
+                nil [5227 5395])
+            ("" code nil nil [5413 5540])
+            ("rate_limit" function
+               (:documentation "Tell worker(s) to modify the rate limit for a task by type.
+
+    See Also:
+        :attr:`celery.task.base.Task.rate_limit`.
+
+    Arguments:
+        task_name (str): Type of task to set rate limit for.
+        rate_limit (int, str): New rate limit.
+    "
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [5556 5561])
+                    ("task_name" variable nil (reparse-symbol function_parameters) [5563 5572])
+                    ("rate_limit" variable nil (reparse-symbol function_parameters) [5574 5584])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [5586 5594]))                  )
+                nil [5541 6713])
+            ("" code nil nil [6731 6855])
+            ("time_limit" function
+               (:documentation "Tell worker(s) to modify the time limit for task by type.
+
+    Arguments:
+        task_name (str): Name of task to change.
+        hard (float): Hard time limit.
+        soft (float): Soft time limit.
+    "
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [6871 6876])
+                    ("task_name" variable nil (reparse-symbol function_parameters) [6878 6887])
+                    ("hard" variable nil (reparse-symbol function_parameters) [6894 6898])
+                    ("soft" variable nil (reparse-symbol function_parameters) [6905 6909])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [6916 6924]))                  )
+                nil [6856 7586])
+            ("" code nil nil [7618 7620])
+            ("clock" function
+               (:documentation "Get current logical clock value."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [7631 7636])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [7638 7646]))                  )
+                nil [7621 7736])
+            ("" code nil nil [7754 7756])
+            ("election" function
+               (:documentation "Hold election.
+
+    Arguments:
+        id (str): Unique election id.
+        topic (str): Election topic.
+        action (str): Action to take for elected actor.
+    "
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [7770 7775])
+                    ("id" variable nil (reparse-symbol function_parameters) [7777 7779])
+                    ("topic" variable nil (reparse-symbol function_parameters) [7781 7786])
+                    ("action" variable nil (reparse-symbol function_parameters) [7788 7794])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [7801 7809]))                  )
+                nil [7757 8077])
+            ("" code nil nil [8095 8097])
+            ("enable_events" function
+               (:documentation "Tell worker(s) to send task-related events."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [8116 8121]))                  )
+                nil [8098 8478])
+            ("" code nil nil [8496 8498])
+            ("disable_events" function
+               (:documentation "Tell worker(s) to stop sending task-related events."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [8518 8523]))                  )
+                nil [8499 8869])
+            ("" code nil nil [8887 8889])
+            ("heartbeat" function
+               (:documentation "Tell worker(s) to send event heartbeat immediately."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [8904 8909]))                  )
+                nil [8890 9152])
+            ("" code nil nil [9183 9198])
+            ("hello" function
+               (:documentation "Request mingle sync-data."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [9209 9214])
+                    ("from_node" variable nil (reparse-symbol function_parameters) [9216 9225])
+                    ("revoked" variable nil (reparse-symbol function_parameters) [9227 9234])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [9241 9249]))                  )
+                nil [9199 9707])
+            ("" code nil nil [9725 9746])
+            ("ping" function
+               (:documentation "Ping worker(s)."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [9756 9761])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [9763 9771]))                  )
+                nil [9747 9822])
+            ("" code nil nil [9840 9842])
+            ("stats" function
+               (:documentation "Request worker statistics/information."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [9853 9858])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [9860 9868]))                  )
+                nil [9843 9965])
+            ("" code nil nil [9983 10006])
+            ("scheduled" function
+               (:documentation "List of currently scheduled ETA/countdown tasks."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [10021 10026])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [10028 10036]))                  )
+                nil [10007 10161])
+            ("_iter_schedule_requests" function (:arguments 
+              ( ("timer" variable nil (reparse-symbol function_parameters) [10191 10196]))              ) nil [10163 10618])
+            ("" code nil nil [10636 10659])
+            ("reserved" function
+               (:documentation "List of currently reserved tasks, not including scheduled/active."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [10673 10678])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [10680 10688]))                  )
+                nil [10660 11001])
+            ("" code nil nil [11019 11040])
+            ("active" function
+               (:documentation "List of tasks currently being executed."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [11052 11057])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [11059 11067]))                  )
+                nil [11041 11216])
+            ("" code nil nil [11234 11256])
+            ("revoked" function
+               (:documentation "List of revoked task-ids."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [11269 11274])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [11276 11284]))                  )
+                nil [11257 11361])
+            ("" code nil nil [11379 11483])
+            ("registered" function
+               (:documentation "List of registered tasks.
+
+    Arguments:
+        taskinfoitems (Sequence[str]): List of task attributes to include.
+            Defaults to ``exchange,routing_key,rate_limit``.
+        builtins (bool): Also include built-in tasks.
+    "
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [11499 11504])
+                    ("taskinfoitems" variable nil (reparse-symbol function_parameters) [11506 11519])
+                    ("builtins" variable nil (reparse-symbol function_parameters) [11526 11534])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [11542 11550]))                  )
+                nil [11484 12408])
+            ("" code nil nil [12442 12598])
+            ("objgraph" function
+               (:documentation "Create graph of uncollected objects (memory-leak debugging).
+
+    Arguments:
+        num (int): Max number of objects to graph.
+        max_depth (int): Traverse at most n levels deep.
+        type (str): Name of object to graph.  Default is ``\"Request\"``.
+    "
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [12612 12617])
+                    ("num" variable nil (reparse-symbol function_parameters) [12619 12622])
+                    ("max_depth" variable nil (reparse-symbol function_parameters) [12628 12637])
+                    ("type" variable nil (reparse-symbol function_parameters) [12642 12646]))                  )
+                nil [12599 13503])
+            ("" code nil nil [13521 13523])
+            ("memsample" function
+               (:documentation "Sample current RSS memory usage."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [13538 13543])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [13545 13553]))                  )
+                nil [13524 13669])
+            ("" code nil nil [13687 13751])
+            ("memdump" function
+               (:documentation "Dump statistics of previous memsample requests."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [13764 13769])
+                    ("samples" variable nil (reparse-symbol function_parameters) [13771 13778])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [13783 13791]))                  )
+                nil [13752 13985])
+            ("" code nil nil [14014 14063])
+            ("pool_grow" function
+               (:documentation "Grow pool by n processes/threads."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [14078 14083])
+                    ("n" variable nil (reparse-symbol function_parameters) [14085 14086])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [14090 14098]))                  )
+                nil [14064 14380])
+            ("" code nil nil [14398 14447])
+            ("pool_shrink" function
+               (:documentation "Shrink pool by n processes/threads."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [14464 14469])
+                    ("n" variable nil (reparse-symbol function_parameters) [14471 14472])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [14476 14484]))                  )
+                nil [14448 14775])
+            ("" code nil nil [14793 14795])
+            ("pool_restart" function
+               (:documentation "Restart execution pool."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [14813 14818])
+                    ("modules" variable nil (reparse-symbol function_parameters) [14820 14827])
+                    ("reload" variable nil (reparse-symbol function_parameters) [14834 14840])
+                    ("reloader" variable nil (reparse-symbol function_parameters) [14848 14856])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [14863 14871]))                  )
+                nil [14796 15129])
+            ("" code nil nil [15147 15218])
+            ("autoscale" function
+               (:documentation "Modify autoscale settings."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [15233 15238])
+                    ("max" variable nil (reparse-symbol function_parameters) [15240 15243])
+                    ("min" variable nil (reparse-symbol function_parameters) [15250 15253]))                  )
+                nil [15219 15536])
+            ("" code nil nil [15554 15556])
+            ("shutdown" function
+               (:documentation "Shutdown worker(s)."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [15570 15575])
+                    ("msg" variable nil (reparse-symbol function_parameters) [15577 15580])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [15609 15617]))                  )
+                nil [15557 15704])
+            ("" code nil nil [15735 15938])
+            ("add_consumer" function
+               (:documentation "Tell worker(s) to consume from task queue by name."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [15956 15961])
+                    ("queue" variable nil (reparse-symbol function_parameters) [15963 15968])
+                    ("exchange" variable nil (reparse-symbol function_parameters) [15970 15978])
+                    ("exchange_type" variable nil (reparse-symbol function_parameters) [15985 15998])
+                    ("routing_key" variable nil (reparse-symbol function_parameters) [16022 16033])
+                    ("options" variable nil (reparse-symbol function_parameters) [16040 16049]))                  )
+                nil [15939 16306])
+            ("" code nil nil [16324 16382])
+            ("cancel_consumer" function
+               (:documentation "Tell worker(s) to stop consuming from task queue by name."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [16403 16408])
+                    ("queue" variable nil (reparse-symbol function_parameters) [16410 16415])
+                    ("_" variable nil (reparse-symbol function_parameters) [16417 16420]))                  )
+                nil [16383 16636])
+            ("" code nil nil [16654 16656])
+            ("active_queues" function
+               (:documentation "List the task queues a worker are currently consuming from."
+                :arguments 
+                  ( ("state" variable nil (reparse-symbol function_parameters) [16675 16680]))                  )
+                nil [16657 16920]))          
+      :file "control.py"
+      :pointmax 16920
+      :fsize 16919
+      :lastmodtime '(22764 51938 0 0)
+      :unmatched-syntax '((NAME 11892 . 11897) (IF 11904 . 11906) (ELSE 11916 . 11920) (INDENT_BLOCK 6068 . 6135) (NEWLINE 6067 . 6068) (COLON 6066 . 6067) (TRY 6008 . 6011) (AS 6060 . 6062) (FROM 653 . 657) (PERIOD 658 . 659) (FROM 617 . 621) (PERIOD 622 . 623)))
+    (semanticdb-table "strategy.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+    celery.worker.strategy
+    ~~~~~~~~~~~~~~~~~~~~~~
+
+    Task execution strategy (optimization).
+
+\"\"\"" code nil nil [25 132])
+            ("__future__" include nil nil [133 171])
+            ("logging" include nil nil [173 187])
+            ("kombu.async.timer" include nil nil [189 231])
+            ("kombu.five" include nil nil [232 263])
+            ("celery.exceptions" include nil nil [265 311])
+            ("celery.utils.log" include nil nil [312 351])
+            ("celery.utils.saferepr" include nil nil [352 394])
+            ("celery.utils.timeutils" include nil nil [395 438])
+            ("create_request_cls" include nil nil [454 488])
+            ("Request" include nil nil [454 488])
+            ("task_reserved" include nil nil [501 521])
+            ("__all__" variable nil nil [523 544])
+            ("logger" variable nil nil [546 575])
+            ("proto1_to_proto2" function
+               (:documentation "Converts Task message protocol 1 arguments to protocol 2.
+
+    Returns tuple of ``(body, headers, already_decoded_status, utc)``
+
+    "
+                :arguments 
+                  ( ("message" variable nil (reparse-symbol function_parameters) [599 606])
+                    ("body" variable nil (reparse-symbol function_parameters) [608 612]))                  )
+                nil [578 1498])
+            ("default" function (:arguments 
+              ( ("task" variable nil (reparse-symbol function_parameters) [1512 1516])
+                ("app" variable nil (reparse-symbol function_parameters) [1518 1521])
+                ("consumer" variable nil (reparse-symbol function_parameters) [1523 1531])
+                ("info" variable nil (reparse-symbol function_parameters) [1545 1549])
+                ("error" variable nil (reparse-symbol function_parameters) [1563 1568])
+                ("task_reserved" variable nil (reparse-symbol function_parameters) [1583 1596])
+                ("to_system_tz" variable nil (reparse-symbol function_parameters) [1624 1636])
+                ("bytes" variable nil (reparse-symbol function_parameters) [1657 1662])
+                ("buffer_t" variable nil (reparse-symbol function_parameters) [1670 1678])
+                ("proto1_to_proto2" variable nil (reparse-symbol function_parameters) [1701 1717]))              ) nil [1500 4688]))          
+      :file "strategy.py"
+      :pointmax 4688
+      :fsize 4686
+      :lastmodtime '(22764 58976 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 4221 . 4338) (NEWLINE 4220 . 4221) (COLON 4219 . 4220) (ELSE 4215 . 4219) (INDENT_BLOCK 4021 . 4203) (NEWLINE 4020 . 4021) (COLON 4019 . 4020) (TRY 3799 . 3802) (AS 4013 . 4015) (NAME 2766 . 2770) (IF 2785 . 2787) (ELSE 2815 . 2819) (FROM 489 . 493) (PERIOD 494 . 495) (FROM 440 . 444) (PERIOD 445 . 446)))
+    (semanticdb-table "worker.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"WorkController can be used to instantiate in-process workers.
+
+The command-line interface for the worker is in :mod:`celery.bin.worker`,
+while the worker program is in :mod:`celery.apps.worker`.
+
+The worker program is responsible for adding signal handlers,
+setting up logging, etc.  This is a bare-bones worker without
+global side-effects (i.e., except for the global state stored in
+:mod:`celery.worker.state`).
+
+The worker consists of several components, all managed by bootsteps
+(mod:`celery.bootsteps`).
+\"\"\"" code nil nil [25 540])
+            ("__future__" include nil nil [541 597])
+            ("os" include nil nil [599 608])
+            ("sys" include nil nil [609 619])
+            ("try" code nil nil [620 713])
+            ("billiard" include nil nil [714 744])
+            ("kombu.utils.compat" include nil nil [745 794])
+            ("celery" include nil nil [796 824])
+            ("celery.bootsteps" include nil nil [825 868])
+            ("celery" include nil nil [869 915])
+            ("celery" include nil nil [916 942])
+            ("" code nil nil [973 1037])
+            ("celery.five" include nil nil [1038 1097])
+            ("celery.platforms" include nil nil [1098 1153])
+            ("celery.utils.imports" include nil nil [1154 1202])
+            ("celery.utils.log" include nil nil [1203 1263])
+            ("celery.utils.nodenames" include nil nil [1264 1330])
+            ("celery.utils.text" include nil nil [1331 1372])
+            ("celery.utils.threads" include nil nil [1373 1428])
+            ("state" include nil nil [1437 1449])
+            ("__all__" variable nil nil [1451 1479])
+            ("SHUTDOWN_SOCKET_TIMEOUT" variable nil nil [1520 1549])
+            ("SELECT_UNKNOWN_QUEUE" variable nil nil [1551 1789])
+            ("DESELECT_UNKNOWN_QUEUE" variable nil nil [1791 1923])
+            ("WorkController" type
+               (:documentation "Unmanaged worker instance."
+                :superclasses ("object")
+                :members 
+                  ( ("app" variable nil (reparse-symbol indented_block_body) [2027 2037])
+                    ("pidlock" variable nil (reparse-symbol indented_block_body) [2043 2057])
+                    ("blueprint" variable nil (reparse-symbol indented_block_body) [2062 2078])
+                    ("pool" variable nil (reparse-symbol indented_block_body) [2083 2094])
+                    ("semaphore" variable nil (reparse-symbol indented_block_body) [2099 2115])
+                    ("exitcode" variable nil (reparse-symbol indented_block_body) [2192 2207])
+                    ("Blueprint" type
+                       (:documentation "Worker bootstep blueprint."
+                        :superclasses ("bootsteps.Blueprint")
+                        :members 
+                          ( ("name" variable nil (reparse-symbol indented_block_body) [2301 2316])
+                            ("default_steps" variable nil (reparse-symbol indented_block_body) [2325 2684]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [2213 2685])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [2753 2779])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2788 2830])
+                            ("self" code nil (reparse-symbol indented_block_body) [2839 2868])
+                            ("self" code nil (reparse-symbol indented_block_body) [2877 2906])
+                            ("self" code nil (reparse-symbol indented_block_body) [2915 2944])
+                            ("self" code nil (reparse-symbol indented_block_body) [2953 2981])
+                            ("self" code nil (reparse-symbol indented_block_body) [2991 3041]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2703 2707])
+                            ("app" variable nil (reparse-symbol function_parameters) [2709 2712])
+                            ("hostname" variable nil (reparse-symbol function_parameters) [2719 2727])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2734 2742]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2690 3042])
+                    ("setup_instance" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3066 3070])
+                            ("queues" variable nil (reparse-symbol function_parameters) [3072 3078])
+                            ("ready_callback" variable nil (reparse-symbol function_parameters) [3085 3099])
+                            ("pidfile" variable nil (reparse-symbol function_parameters) [3106 3113])
+                            ("include" variable nil (reparse-symbol function_parameters) [3143 3150])
+                            ("use_eventloop" variable nil (reparse-symbol function_parameters) [3157 3170])
+                            ("exclude_queues" variable nil (reparse-symbol function_parameters) [3177 3191])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [3221 3229]))                          )
+                        (reparse-symbol indented_block_body) [3047 4455])
+                    ("on_init_blueprint" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4482 4486]))                          )
+                        (reparse-symbol indented_block_body) [4460 4502])
+                    ("on_before_init" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4526 4530])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [4532 4540]))                          )
+                        (reparse-symbol indented_block_body) [4507 4556])
+                    ("on_after_init" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4579 4583])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [4585 4593]))                          )
+                        (reparse-symbol indented_block_body) [4561 4609])
+                    ("on_start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4627 4631]))                          )
+                        (reparse-symbol indented_block_body) [4614 4715])
+                    ("on_consumer_ready" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4742 4746])
+                            ("consumer" variable nil (reparse-symbol function_parameters) [4748 4756]))                          )
+                        (reparse-symbol indented_block_body) [4720 4772])
+                    ("on_close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4790 4794]))                          )
+                        (reparse-symbol indented_block_body) [4777 4839])
+                    ("on_stopped" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4859 4863]))                          )
+                        (reparse-symbol indented_block_body) [4844 4986])
+                    ("setup_queues" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5008 5012])
+                            ("include" variable nil (reparse-symbol function_parameters) [5014 5021])
+                            ("exclude" variable nil (reparse-symbol function_parameters) [5023 5030]))                          )
+                        (reparse-symbol indented_block_body) [4991 5636])
+                    ("setup_includes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5660 5664])
+                            ("includes" variable nil (reparse-symbol function_parameters) [5666 5674]))                          )
+                        (reparse-symbol indented_block_body) [5641 6202])
+                    ("prepare_args" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6224 6228])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [6230 6238]))                          )
+                        (reparse-symbol indented_block_body) [6207 6263])
+                    ("_send_worker_shutdown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6294 6298]))                          )
+                        (reparse-symbol indented_block_body) [6268 6351])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6366 6370]))                          )
+                        (reparse-symbol indented_block_body) [6356 6789])
+                    ("register_with_event_loop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6823 6827])
+                            ("hub" variable nil (reparse-symbol function_parameters) [6829 6832]))                          )
+                        (reparse-symbol indented_block_body) [6794 6977])
+                    ("_process_task_sem" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7004 7008])
+                            ("req" variable nil (reparse-symbol function_parameters) [7010 7013]))                          )
+                        (reparse-symbol indented_block_body) [6982 7076])
+                    ("_process_task" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7099 7103])
+                            ("req" variable nil (reparse-symbol function_parameters) [7105 7108]))                          
+                        :documentation "Process task by sending it to the pool of workers.")
+                        (reparse-symbol indented_block_body) [7081 7393])
+                    ("signal_consumer_close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7424 7428]))                          )
+                        (reparse-symbol indented_block_body) [7398 7526])
+                    ("should_use_eventloop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7556 7560]))                          )
+                        (reparse-symbol indented_block_body) [7531 7720])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7734 7738])
+                            ("in_sighandler" variable nil (reparse-symbol function_parameters) [7740 7753])
+                            ("exitcode" variable nil (reparse-symbol function_parameters) [7761 7769]))                          
+                        :documentation "Graceful shutdown of the worker server.")
+                        (reparse-symbol indented_block_body) [7725 8120])
+                    ("terminate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8139 8143])
+                            ("in_sighandler" variable nil (reparse-symbol function_parameters) [8145 8158]))                          
+                        :documentation "Not so graceful shutdown of the worker server.")
+                        (reparse-symbol indented_block_body) [8125 8417])
+                    ("_shutdown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8436 8440])
+                            ("warm" variable nil (reparse-symbol function_parameters) [8442 8446]))                          )
+                        (reparse-symbol indented_block_body) [8422 8793])
+                    ("reload" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8809 8813])
+                            ("modules" variable nil (reparse-symbol function_parameters) [8815 8822])
+                            ("reload" variable nil (reparse-symbol function_parameters) [8829 8835])
+                            ("reloader" variable nil (reparse-symbol function_parameters) [8843 8851]))                          )
+                        (reparse-symbol indented_block_body) [8798 9173])
+                    ("_reload_modules" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9198 9202])
+                            ("modules" variable nil (reparse-symbol function_parameters) [9204 9211])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [9218 9226]))                          )
+                        (reparse-symbol indented_block_body) [9178 9427])
+                    ("_maybe_reload_module" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9457 9461])
+                            ("module" variable nil (reparse-symbol function_parameters) [9463 9469])
+                            ("force_reload" variable nil (reparse-symbol function_parameters) [9471 9483])
+                            ("reloader" variable nil (reparse-symbol function_parameters) [9491 9499]))                          )
+                        (reparse-symbol indented_block_body) [9432 9809])
+                    ("info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9823 9827]))                          )
+                        (reparse-symbol indented_block_body) [9814 9961])
+                    ("rusage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9977 9981]))                          )
+                        (reparse-symbol indented_block_body) [9966 10726])
+                    ("stats" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10741 10745]))                          )
+                        (reparse-symbol indented_block_body) [10731 11034])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11052 11056]))                          
+                        :documentation "``repr(worker)``.")
+                        (reparse-symbol indented_block_body) [11039 11263])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11280 11284]))                          
+                        :documentation "``str(worker) == worker.hostname``.")
+                        (reparse-symbol indented_block_body) [11268 11366])
+                    ("state" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11395 11399]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [11371 11423])
+                    ("setup_defaults" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11447 11451])
+                            ("concurrency" variable nil (reparse-symbol function_parameters) [11453 11464])
+                            ("loglevel" variable nil (reparse-symbol function_parameters) [11471 11479])
+                            ("logfile" variable nil (reparse-symbol function_parameters) [11488 11495])
+                            ("task_events" variable nil (reparse-symbol function_parameters) [11525 11536])
+                            ("pool" variable nil (reparse-symbol function_parameters) [11543 11547])
+                            ("consumer_cls" variable nil (reparse-symbol function_parameters) [11554 11566])
+                            ("timer_cls" variable nil (reparse-symbol function_parameters) [11596 11605])
+                            ("timer_precision" variable nil (reparse-symbol function_parameters) [11612 11627])
+                            ("autoscaler_cls" variable nil (reparse-symbol function_parameters) [11657 11671])
+                            ("pool_putlocks" variable nil (reparse-symbol function_parameters) [11701 11714])
+                            ("pool_restarts" variable nil (reparse-symbol function_parameters) [11744 11757])
+                            ("optimization" variable nil (reparse-symbol function_parameters) [11787 11799])
+                            ("O" variable nil (reparse-symbol function_parameters) [11806 11807])
+                            ("statedb" variable nil (reparse-symbol function_parameters) [11858 11865])
+                            ("time_limit" variable nil (reparse-symbol function_parameters) [11895 11905])
+                            ("soft_time_limit" variable nil (reparse-symbol function_parameters) [11935 11950])
+                            ("scheduler" variable nil (reparse-symbol function_parameters) [11980 11989])
+                            ("pool_cls" variable nil (reparse-symbol function_parameters) [12019 12027])
+                            ("state_db" variable nil (reparse-symbol function_parameters) [12085 12093])
+                            ("task_time_limit" variable nil (reparse-symbol function_parameters) [12154 12169])
+                            ("task_soft_time_limit" variable nil (reparse-symbol function_parameters) [12226 12246])
+                            ("scheduler_cls" variable nil (reparse-symbol function_parameters) [12303 12316])
+                            ("schedule_filename" variable nil (reparse-symbol function_parameters) [12374 12391])
+                            ("max_tasks_per_child" variable nil (reparse-symbol function_parameters) [12421 12440])
+                            ("prefetch_multiplier" variable nil (reparse-symbol function_parameters) [12470 12489])
+                            ("disable_rate_limits" variable nil (reparse-symbol function_parameters) [12496 12515])
+                            ("worker_lost_wait" variable nil (reparse-symbol function_parameters) [12545 12561])
+                            ("max_memory_per_child" variable nil (reparse-symbol function_parameters) [12591 12611])
+                            ("_kw" variable nil (reparse-symbol function_parameters) [12618 12623]))                          )
+                        (reparse-symbol indented_block_body) [11428 14449]))                  
+                :type "class")
+                nil [1955 14449]))          
+      :file "worker.py"
+      :pointmax 14449
+      :fsize 14448
+      :lastmodtime '(22764 51938 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 6746 . 6789) (NEWLINE 6745 . 6746) (COLON 6744 . 6745) (EXCEPT 6720 . 6726) (INDENT_BLOCK 6671 . 6712) (NEWLINE 6670 . 6671) (COLON 6669 . 6670) (AS 6663 . 6665) (EXCEPT 6645 . 6651) (INDENT_BLOCK 6519 . 6637) (NEWLINE 6518 . 6519) (COLON 6517 . 6518) (TRY 6381 . 6384) (AS 6511 . 6513) (INDENT_BLOCK 5413 . 5522) (NEWLINE 5412 . 5413) (COLON 5411 . 5412) (AS 5405 . 5407) (INDENT_BLOCK 5210 . 5317) (NEWLINE 5209 . 5210) (COLON 5208 . 5209) (TRY 5124 . 5127) (AS 5202 . 5204) (FROM 1430 . 1434) (PERIOD 1435 . 1436)))
+    (semanticdb-table "Request.py"
+      :file "Request.py"
+      :fsize 19413
+      :lastmodtime '(22764 51938 0 0)))
+  :file "!Users!drwrong!openProject!celery!celery!worker!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,28 @@
+;; Object domob_pyutils/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "domob_pyutils/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"domob的各种python公共库，这些库通常都是公司内部的业务逻辑
+
+主要包含如下的几类
+ * hadoop/hive相关
+ * mysql相关，简单的orm - 不推荐使用，建议使用django
+ * 发送短信，邮件的工具
+ * thrift扩展，连接池等
+ * 用于应用统计
+ * dm303支持
+ * func_stats 用于统计函数执行情况
+\"\"\"" code nil nil [26 209])
+            ("__version__" variable nil nil [210 232]))          
+      :file "__init__.py"
+      :pointmax 233
+      :fsize 416
+      :lastmodtime '(22127 33384 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!domob_pyutils!domob_pyutils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

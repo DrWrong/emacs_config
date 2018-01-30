@@ -1,0 +1,26 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "main.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("argparse" include nil nil [49 64])
+            ("logging.config" include nil nil [65 86])
+            ("os" include nil nil [87 96])
+            ("sys" include nil nil [97 107])
+            ("domob_pyutils.dm303" include nil nil [109 150])
+            ("basepath" variable nil nil [152 215])
+            ("sys" code nil nil [216 250])
+            ("sys" code nil nil [251 292])
+            ("biz.config" include nil nil [294 323])
+            ("if" code nil nil [325 1250]))          
+      :file "main.py"
+      :pointmax 1250
+      :fsize 1271
+      :lastmodtime '(22726 5565 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_kafka_db!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

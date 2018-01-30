@@ -1,0 +1,294 @@
+;; Object sos_trans_supply/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sos_trans_supply/"
+  :tables
+  (list
+    (semanticdb-table "freeze_server.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+对于待审核的而且邀请数大于一定阈值的订单，进行冻结操作
+'''" code nil nil [22 57])
+            ("logging" include nil nil [58 72])
+            ("json" include nil nil [73 84])
+            ("datetime" include nil nil [85 125])
+            ("django.conf" include nil nil [126 158])
+            ("sos_trans_supply.db.models" include nil nil [160 223])
+            ("sos_trans_supply.utils" include nil nil [224 274])
+            ("logger" variable nil nil [352 404])
+            ("FreezeServer" type
+               (:superclasses ("object")
+                :members 
+                  ( ("'''
+    2016.12.26 这块逻辑用途不是太大 准备废弃了
+    '''" code nil (reparse-symbol indented_block_body) [439 482])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [533 553])
+                            ("self" variable nil (reparse-symbol indented_block_body) [562 577]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [501 505])
+                            ("args" variable nil (reparse-symbol function_parameters) [507 512])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [514 522]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [488 578])
+                    ("" code nil (reparse-symbol indented_block_body) [595 625])
+                    ("" code nil (reparse-symbol indented_block_body) [646 654])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [689 693]))                          
+                        :decorators 
+                          ( ("check_connection" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [659 1566])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1583 1587])
+                            ("transaction" variable nil (reparse-symbol function_parameters) [1589 1600]))                          )
+                        (reparse-symbol indented_block_body) [1571 2176]))                  
+                :type "class")
+                nil [407 2176]))          
+      :file "freeze_server.py"
+      :pointmax 2176
+      :fsize 2459
+      :lastmodtime '(22624 62420 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "utils.py"
+      :file "utils.py"
+      :fsize 328
+      :lastmodtime '(21979 13475 0 0))
+    (semanticdb-table "tsserver.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Author: huhaoran <huhaoran@domob.cn>
+查找transaction_history中描述为空的的纪录，补充
+积分构成的描述
+\"\"\"" code nil nil [47 133])
+            ("json" include nil nil [177 188])
+            ("logging" include nil nil [189 203])
+            ("collections" include nil nil [204 239])
+            ("datetime" include nil nil [240 280])
+            ("django.conf" include nil nil [281 313])
+            ("domob_pyutils.statscol" include nil nil [314 354])
+            ("db.models" include nil nil [356 396])
+            ("sos_trans_supply.utils" include nil nil [397 447])
+            ("pysequoiadb" include nil nil [448 478])
+            ("" code nil nil [508 570])
+            ("logger" variable nil nil [572 620])
+            ("TsServer" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [697 717])
+                            ("self" variable nil (reparse-symbol indented_block_body) [726 778]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [665 669])
+                            ("cfg" variable nil (reparse-symbol function_parameters) [671 674])
+                            ("executeDir" variable nil (reparse-symbol function_parameters) [676 686]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [652 779])
+                    ("" code nil (reparse-symbol indented_block_body) [796 826])
+                    ("" code nil (reparse-symbol indented_block_body) [847 855])
+                    ("run" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("check_connection" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [890 894]))                          
+                        :documentation "
+        启动Query线程和Supply线程
+        ")
+                        (reparse-symbol indented_block_body) [860 1344])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1361 1365])
+                            ("transaction" variable nil (reparse-symbol function_parameters) [1367 1378]))                          )
+                        (reparse-symbol indented_block_body) [1349 1569])
+                    ("supply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1585 1589])
+                            ("transaction" variable nil (reparse-symbol function_parameters) [1591 1602]))                          
+                        :documentation "
+        补充审核需要的信息
+        ")
+                        (reparse-symbol indented_block_body) [1574 2584])
+                    ("" code nil (reparse-symbol indented_block_body) [2597 2601])
+                    ("get_income_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2626 2630])
+                            ("transaction" variable nil (reparse-symbol function_parameters) [2632 2643]))                          
+                        :documentation "
+        查找该次兑换近期的积分获取详情
+        ")
+                        (reparse-symbol indented_block_body) [2606 4297]))                  
+                :type "class")
+                nil [623 4297]))          
+      :file "tsserver.py"
+      :pointmax 4297
+      :fsize 4626
+      :lastmodtime '(22627 28582 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "defreeze_server.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+@author: chengyuhang<chengyuhang@domob.cn>
+对于待解冻用户自动解冻, 可能会扣除一定的积分
+'''" code nil nil [24 98])
+            ("logging" include nil nil [99 113])
+            ("django.db" include nil nil [114 147])
+            ("django.conf" include nil nil [148 180])
+            ("domob_pyutils.thriftext.TThriftClientPool" include nil nil [181 252])
+            ("domob_thrift.sos.pushserver" include nil nil [254 304])
+            ("sos_trans_supply.db.models" include nil nil [305 379])
+            ("sos_trans_supply.utils" include nil nil [380 430])
+            ("datetime" include nil nil [431 471])
+            ("sos_trans_supply" include nil nil [472 547])
+            ("logger" variable nil nil [549 603])
+            ("DefreezeServer" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [715 735])
+                            ("self" variable nil (reparse-symbol indented_block_body) [744 873]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [654 658]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [641 828])
+                    ("" code nil (reparse-symbol indented_block_body) [845 875])
+                    ("" code nil (reparse-symbol indented_block_body) [896 904])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1757 1761])
+                            ("trans" variable nil (reparse-symbol function_parameters) [1763 1768]))                          )
+                        (reparse-symbol indented_block_body) [1745 2362])
+                    ("" code nil (reparse-symbol indented_block_body) [2386 2401])
+                    ("defreeze_user" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2424 2428])
+                            ("uid" variable nil (reparse-symbol function_parameters) [2430 2433])
+                            ("amount" variable nil (reparse-symbol function_parameters) [2435 2441]))                          )
+                        (reparse-symbol indented_block_body) [2406 3535]))                  
+                :type "class")
+                nil [606 3535]))          
+      :file "defreeze_server.py"
+      :pointmax 3535
+      :fsize 3924
+      :lastmodtime '(22624 62124 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("functools" include nil nil [25 52])
+            ("traceback" include nil nil [53 69])
+            ("time" include nil nil [70 81])
+            ("functools" include nil nil [82 109])
+            ("errno" include nil nil [110 122])
+            ("os" include nil nil [123 132])
+            ("signal" include nil nil [133 146])
+            ("django.db" include nil nil [148 191])
+            ("catch_exception" function
+               (:documentation "
+    catch异常并log的decorater
+    "
+                :arguments 
+                  ( ("logger" variable nil (reparse-symbol function_parameters) [214 220]))                  )
+                nil [194 558])
+            ("run_forever" function
+               (:documentation "
+    永远运行的decorater
+    "
+                :arguments 
+                  ( ("sleep_time" variable nil (reparse-symbol function_parameters) [576 586]))                  )
+                nil [560 853])
+            ("check_connection" function
+               (:documentation "
+    检查连接是否正常
+    "
+                :arguments 
+                  ( ("func" variable nil (reparse-symbol function_parameters) [876 880]))                  )
+                nil [855 1045])
+            ("DbRouter" type
+               (:superclasses ("object")
+                :members 
+                  ( ("db_for_read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1092 1096])
+                            ("model" variable nil (reparse-symbol function_parameters) [1098 1103])
+                            ("hints" variable nil (reparse-symbol function_parameters) [1105 1112]))                          )
+                        (reparse-symbol indented_block_body) [1076 1140])
+                    ("db_for_write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1162 1166])
+                            ("model" variable nil (reparse-symbol function_parameters) [1168 1173])
+                            ("hints" variable nil (reparse-symbol function_parameters) [1175 1182]))                          )
+                        (reparse-symbol indented_block_body) [1145 1208]))                  
+                :type "class")
+                nil [1047 1208])
+            ("TimeoutError" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [1245 1249]))                  
+                :type "class")
+                nil [1210 1250])
+            ("timeout" function (:arguments 
+              ( ("seconds" variable nil (reparse-symbol function_parameters) [1264 1271])
+                ("error_message" variable nil (reparse-symbol function_parameters) [1276 1289]))              ) nil [1252 1772]))          
+      :file "__init__.py"
+      :pointmax 1772
+      :fsize 1805
+      :lastmodtime '(22627 28470 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "reject_server.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+@author: chengyuhang<chengyuhang@domob.cn>
+对于25天前的异常订单进行拒绝操作
+'''" code nil nil [22 90])
+            ("datetime" include nil nil [91 131])
+            ("django.db" include nil nil [132 175])
+            ("django.conf" include nil nil [176 208])
+            ("time" include nil nil [209 231])
+            ("logging" include nil nil [232 246])
+            ("sos_trans_supply.db.models" include nil nil [248 305])
+            ("sos_trans_supply.utils" include nil nil [306 356])
+            ("sos_trans_supply" include nil nil [357 432])
+            ("logger" variable nil nil [435 487])
+            ("RejectServer" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [551 571]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [536 540]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [523 572])
+                    ("" code nil (reparse-symbol indented_block_body) [589 619])
+                    ("" code nil (reparse-symbol indented_block_body) [640 648]))                  
+                :type "class")
+                nil [490 1411]))          
+      :file "reject_server.py"
+      :pointmax 1411
+      :fsize 1466
+      :lastmodtime '(22624 62656 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_trans_supply!lib!sos_trans_supply!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

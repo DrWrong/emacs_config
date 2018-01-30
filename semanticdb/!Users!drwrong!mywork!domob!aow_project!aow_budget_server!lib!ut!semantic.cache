@@ -1,0 +1,48 @@
+;; Object ut/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ut/"
+  :tables
+  (list
+    (semanticdb-table "ut_cfg.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("json" include nil nil [39 50])
+            ("logging" include nil nil [51 65])
+            ("ConfigParser" include nil nil [66 85])
+            ("socket" include nil nil [86 99])
+            ("domob_pyutils.statscol" include nil nil [100 140])
+            ("Config" type
+               (:documentation "
+    获取配置项数据的类
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [237 259])
+                            ("self" variable nil (reparse-symbol indented_block_body) [268 324])
+                            ("self" variable nil (reparse-symbol indented_block_body) [333 346])
+                            ("self" code nil (reparse-symbol indented_block_body) [355 368]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [212 216])
+                            ("filename" variable nil (reparse-symbol function_parameters) [218 226]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [199 369])
+                    ("reload" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [385 389]))                          )
+                        (reparse-symbol indented_block_body) [374 943]))                  
+                :type "class")
+                nil [143 943])
+            ("is_master" function (:arguments 
+              ( ("host" variable nil (reparse-symbol function_parameters) [959 963]))              ) nil [945 1158]))          
+      :file "ut_cfg.py"
+      :pointmax 1158
+      :fsize 1197
+      :lastmodtime '(22699 64205 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_budget_server!lib!ut!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

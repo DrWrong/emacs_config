@@ -1,0 +1,21 @@
+;; Object sos_weather_server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sos_weather_server/"
+  :tables
+  (list
+    (semanticdb-table "manage.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [23 32])
+            ("sys" include nil nil [33 43])
+            ("sys" code nil nil [45 68])
+            ("sys" code nil nil [69 91])
+            ("if" code nil nil [93 291]))          
+      :file "manage.py"
+      :pointmax 291
+      :fsize 290
+      :lastmodtime '(22293 60728 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_weather_server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

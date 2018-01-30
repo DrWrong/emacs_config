@@ -1,0 +1,438 @@
+;; Object js_game_test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "js_game_test/"
+  :tables
+  (list
+    (semanticdb-table "index.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("你咋不上天呢" section nil nil [62 2170])
+            ("3%" section nil nil [2170 28894])
+            ("function getScore() {
+        var score;
+        if (parseInt(window.localStorage.getItem('game_over')) === 1) {
+            score = window.localStorage.getItem('score_game_over') || 0;
+        } else {
+            score = window.localStorage.getItem('best_score_dragon_up') || 0;
+        }
+
+        return parseInt(score);
+    }
+    function homeSceneCallback() {
+        _a(\"back_home\");
+        // document.getElementById('wyc_google_ads').style.display = 'none';
+    }
+    function gameStartCallback() {
+        _a(\"game_start\");
+    }
+    function gameRetryCallback() {
+        //console.log('Game Retry');
+        //console.log(getScore());
+        _a(\"game_retry\");
+        // document.getElementById('wyc_google_ads').style.display = 'none';
+    }
+    function gameOverCallback() {
+        // document.getElementById('wyc_google_ads').style.display = 'block';
+        var score = getScore();
+        if(score < 50){
+            analytics.send({
+                event:\"score\",
+                attr:{
+                    score:score
+                },
+                duration:1000
+            },function(result){
+
+            });
+        }else if(score < 150){
+            analytics.send({
+                event:\"high_score\",
+                attr:{
+                    score:score
+                },
+                duration:1000
+            },function(result){
+
+            });
+        }else{
+            analytics.send({
+                event:\"super_score\",
+                attr:{
+                    score:score
+                },
+                duration:1000
+            },function(result){
+
+            });
+        }
+
+        var t = new Date().getTime();
+        var tIndex = t % 6;
+        var sText = scoreText[tIndex * 2] + score + scoreText[tIndex * 2 + 1];
+
+        var t2 = new Date().getTime();
+        tIndex = t2 % 5;
+
+        setShare(shareTitle[tIndex],sText);
+    }
+    var appid = \"x873VEvDrmoUd43o4YMXyr63-gzGzoHsz\";
+    var appsecret = \"n10KuTrXO26rDTSm57w19omO\";
+    var analytics;
+    var baseLink = \"http://v360.tttang.net/go\";
+    var para = \"\";
+    var device = \"other\";
+    var wxConfig = {
+        debug:false,
+        appId: 'wxb110e1de6e249524',
+        timestamp: 1460468255,
+        nonceStr: '6aLKqdWtajYqsIwD',
+        signature: '418b34789842c384efd05e8c3c1650356fa01674',
+        jsApiList: [
+            \"onMenuShareTimeline\",
+            \"onMenuShareAppMessage\",
+            \"onMenuShareQQ\",
+            \"onMenuShareQZone\"
+        ]
+    }
+    var spx = window.devicePixelRatio?window.devicePixelRatio:1;
+    var shareTitle = [
+        \"天天喊着要窜天猴上天的朋友们，福利来了！\",
+        \"猴腮雷！老板居然喂我吃窜天猴！\",
+        \"我窜天猴都买好了，马上要上天了！\",
+        \"过年了，家里的窜天猴买好了没？\",
+        \"送你一个窜天猴，祝你幸福又安康！\"
+    ];
+
+    var scoreText = [
+        \"虐哭了，买的窜天猴才窜了\",\"下！\",
+        \"上天不是梦，窜天猴已经窜了\",\"下！\",
+        \"猴赛雷！我的窜天猴是国产的吧？才窜了\",\"下！\",
+        \"这窜天猴吃了啥？一下子能窜\",\"下！\",
+        \"哭了，窜天猴只得了\",\"分，上天的梦想破碎了……\",
+        \"这也叫窜天猴？才\",\"下！你来试试！\"
+    ];
+    var shareText = \"啊~朋友，坐上这窜天猴后我学业进步了，事业登峰了，爱情造极了，生活美满了，理想实现了，你不试试？\";
+    wx.config(wxConfig);
+    wx.ready(function(){
+        var t = new Date().getTime();
+        var tIndex = t % 5;
+        setShare(shareTitle[tIndex],shareText);
+        _a(\"cth_wx_init\");
+    });
+    wx.error(function(res){
+        //alert(\"jssdk加载失败！\");
+    });
+
+    function setShare(title,text){
+        wx.onMenuShareTimeline({
+            title: text,
+            link: \"https://mp.weixin.qq.com/s?__biz=MzIwMTAwMTgxMQ==&mid=401730784&idx=1&sn=caee7cf48a6ac039b102fcac23af8df8\", // 分享链接
+            imgUrl: 'http://v360.tttang.net/go/icon.png',
+            success: function () {
+                _a(\"share_timeline\");
+            },
+            cancel: function () {}
+        });
+        wx.onMenuShareAppMessage({
+            title: title, // 分享标题
+            desc: text,
+            link: baseLink, // 分享链接
+            imgUrl: 'http://v360.tttang.net/go/icon.png',
+            type: '',
+            dataUrl: '',
+            success: function () {
+                _a(\"share_friend\");
+            },
+            cancel: function () {}
+        });
+        wx.onMenuShareQZone({
+            title: title, // 分享标题
+            desc: text, // 分享描述
+            link: baseLink, // 分享链接
+            imgUrl: 'http://v360.tttang.net/go/icon.png', // 分享图标
+            success: function () {
+               // 用户确认分享后执行的回调函数
+                _a(\"share_qzone\");
+            },
+            cancel: function () {
+                // 用户取消分享后执行的回调函数
+            }
+        });
+        wx.onMenuShareQQ({
+            title: title, // 分享标题
+            desc: text, // 分享描述
+            link: baseLink, // 分享链接
+            imgUrl: 'http://v360.tttang.net/go/icon.png', // 分享图标
+            success: function () {
+               // 用户确认分享后执行的回调函数
+                _a(\"share_qq\");
+            },
+            cancel: function () {
+               // 用户取消分享后执行的回调函数
+            }
+        });
+    }" section nil nil [28894 28964])
+            ("function getScore() {
+        var score;
+        if (parseInt(window.localStorage.getItem('game_over')) === 1) {
+            score = window.localStorage.getItem('score_game_over') || 0;
+        } else {
+            score = window.localStorage.getItem('best_score_dragon_up') || 0;
+        }
+
+        return parseInt(score);
+    }
+    function homeSceneCallback() {
+        _a(\"back_home\");
+        // document.getElementById('wyc_google_ads').style.display = 'none';
+    }
+    function gameStartCallback() {
+        _a(\"game_start\");
+    }
+    function gameRetryCallback() {
+        //console.log('Game Retry');
+        //console.log(getScore());
+        _a(\"game_retry\");
+        // document.getElementById('wyc_google_ads').style.display = 'none';
+    }
+    function gameOverCallback() {
+        // document.getElementById('wyc_google_ads').style.display = 'block';
+        var score = getScore();
+        if(score < 50){
+            analytics.send({
+                event:\"score\",
+                attr:{
+                    score:score
+                },
+                duration:1000
+            },function(result){
+
+            });
+        }else if(score < 150){
+            analytics.send({
+                event:\"high_score\",
+                attr:{
+                    score:score
+                },
+                duration:1000
+            },function(result){
+
+            });
+        }else{
+            analytics.send({
+                event:\"super_score\",
+                attr:{
+                    score:score
+                },
+                duration:1000
+            },function(result){
+
+            });
+        }
+
+        var t = new Date().getTime();
+        var tIndex = t % 6;
+        var sText = scoreText[tIndex * 2] + score + scoreText[tIndex * 2 + 1];
+
+        var t2 = new Date().getTime();
+        tIndex = t2 % 5;
+
+        setShare(shareTitle[tIndex],sText);
+    }
+    var appid = \"x873VEvDrmoUd43o4YMXyr63-gzGzoHsz\";
+    var appsecret = \"n10KuTrXO26rDTSm57w19omO\";
+    var analytics;
+    var baseLink = \"http://v360.tttang.net/go\";
+    var para = \"\";
+    var device = \"other\";
+    var wxConfig = {
+        debug:false,
+        appId: 'wxb110e1de6e249524',
+        timestamp: 1460468255,
+        nonceStr: '6aLKqdWtajYqsIwD',
+        signature: '418b34789842c384efd05e8c3c1650356fa01674',
+        jsApiList: [
+            \"onMenuShareTimeline\",
+            \"onMenuShareAppMessage\",
+            \"onMenuShareQQ\",
+            \"onMenuShareQZone\"
+        ]
+    }
+    var spx = window.devicePixelRatio?window.devicePixelRatio:1;
+    var shareTitle = [
+        \"天天喊着要窜天猴上天的朋友们，福利来了！\",
+        \"猴腮雷！老板居然喂我吃窜天猴！\",
+        \"我窜天猴都买好了，马上要上天了！\",
+        \"过年了，家里的窜天猴买好了没？\",
+        \"送你一个窜天猴，祝你幸福又安康！\"
+    ];
+
+    var scoreText = [
+        \"虐哭了，买的窜天猴才窜了\",\"下！\",
+        \"上天不是梦，窜天猴已经窜了\",\"下！\",
+        \"猴赛雷！我的窜天猴是国产的吧？才窜了\",\"下！\",
+        \"这窜天猴吃了啥？一下子能窜\",\"下！\",
+        \"哭了，窜天猴只得了\",\"分，上天的梦想破碎了……\",
+        \"这也叫窜天猴？才\",\"下！你来试试！\"
+    ];
+    var shareText = \"啊~朋友，坐上这窜天猴后我学业进步了，事业登峰了，爱情造极了，生活美满了，理想实现了，你不试试？\";
+    wx.config(wxConfig);
+    wx.ready(function(){
+        var t = new Date().getTime();
+        var tIndex = t % 5;
+        setShare(shareTitle[tIndex],shareText);
+        _a(\"cth_wx_init\");
+    });
+    wx.error(function(res){
+        //alert(\"jssdk加载失败！\");
+    });
+
+    function setShare(title,text){
+        wx.onMenuShareTimeline({
+            title: text,
+            link: \"https://mp.weixin.qq.com/s?__biz=MzIwMTAwMTgxMQ==&mid=401730784&idx=1&sn=caee7cf48a6ac039b102fcac23af8df8\", // 分享链接
+            imgUrl: 'http://v360.tttang.net/go/icon.png',
+            success: function () {
+                _a(\"share_timeline\");
+            },
+            cancel: function () {}
+        });
+        wx.onMenuShareAppMessage({
+            title: title, // 分享标题
+            desc: text,
+            link: baseLink, // 分享链接
+            imgUrl: 'http://v360.tttang.net/go/icon.png',
+            type: '',
+            dataUrl: '',
+            success: function () {
+                _a(\"share_friend\");
+            },
+            cancel: function () {}
+        });
+        wx.onMenuShareQZone({
+            title: title, // 分享标题
+            desc: text, // 分享描述
+            link: baseLink, // 分享链接
+            imgUrl: 'http://v360.tttang.net/go/icon.png', // 分享图标
+            success: function () {
+               // 用户确认分享后执行的回调函数
+                _a(\"share_qzone\");
+            },
+            cancel: function () {
+                // 用户取消分享后执行的回调函数
+            }
+        });
+        wx.onMenuShareQQ({
+            title: title, // 分享标题
+            desc: text, // 分享描述
+            link: baseLink, // 分享链接
+            imgUrl: 'http://v360.tttang.net/go/icon.png', // 分享图标
+            success: function () {
+               // 用户确认分享后执行的回调函数
+                _a(\"share_qq\");
+            },
+            cancel: function () {
+               // 用户取消分享后执行的回调函数
+            }
+        });
+    }" section nil nil [28964 33873])
+            ("var _a = function(_name){
+        analytics.send({
+            event:_name,
+            attr:{},
+            duration:1000
+        },function(result){
+
+        });
+    }
+    analytics = AV.analytics({
+        appId:appid,
+        appKey:appsecret,
+        version:\"1.8.6\",
+        channel:\"h5_gosky\"
+    });
+    analytics.send({
+        event:\"game_load\",
+        attr:{},
+        duration:6000
+    },function(result){
+
+    });
+    _a(\"game_start\");" section nil nil [33873 33920])
+            ("var _a = function(_name){
+        analytics.send({
+            event:_name,
+            attr:{},
+            duration:1000
+        },function(result){
+
+        });
+    }
+    analytics = AV.analytics({
+        appId:appid,
+        appKey:appsecret,
+        version:\"1.8.6\",
+        channel:\"h5_gosky\"
+    });
+    analytics.send({
+        event:\"game_load\",
+        attr:{},
+        duration:6000
+    },function(result){
+
+    });
+    _a(\"game_start\");" section nil nil [33920 33999])
+            ("var _a = function(_name){
+        analytics.send({
+            event:_name,
+            attr:{},
+            duration:1000
+        },function(result){
+
+        });
+    }
+    analytics = AV.analytics({
+        appId:appid,
+        appKey:appsecret,
+        version:\"1.8.6\",
+        channel:\"h5_gosky\"
+    });
+    analytics.send({
+        event:\"game_load\",
+        attr:{},
+        duration:6000
+    },function(result){
+
+    });
+    _a(\"game_start\");" section nil nil [33999 34043])
+            ("var _a = function(_name){
+        analytics.send({
+            event:_name,
+            attr:{},
+            duration:1000
+        },function(result){
+
+        });
+    }
+    analytics = AV.analytics({
+        appId:appid,
+        appKey:appsecret,
+        version:\"1.8.6\",
+        channel:\"h5_gosky\"
+    });
+    analytics.send({
+        event:\"game_load\",
+        attr:{},
+        duration:6000
+    },function(result){
+
+    });
+    _a(\"game_start\");" section nil nil [34043 34590]))          
+      :file "index.html"
+      :pointmax 34590
+      :fsize 35311
+      :lastmodtime '(22284 64144 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!js_game_test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

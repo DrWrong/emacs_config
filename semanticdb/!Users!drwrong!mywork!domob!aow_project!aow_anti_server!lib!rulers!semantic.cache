@@ -1,0 +1,430 @@
+;; Object rulers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "rulers/"
+  :tables
+  (list
+    (semanticdb-table "r04_ip.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [39 53])
+            ("json" include nil nil [54 65])
+            ("re" include nil nil [66 75])
+            ("ut.auto_update_set" include nil nil [76 120])
+            ("Ruler" type
+               (:documentation "
+    规则四
+    检查ip是否超出限制
+    ip为用户入网wifi的IP地址
+    限制每个媒体上，每个ip一段时间内能够安装的同一个广告次数
+    限制每个媒体上，每个ip一段时间内能够安装的总的offer次数
+    如果ip为空或者ip字段不符合ip地址的格式,则跳过该策略
+
+    检查方式:根据key获取在redis中的value
+    "
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [380 436])
+                            ("self" code nil (reparse-symbol indented_block_body) [445 543])
+                            ("self" variable nil (reparse-symbol indented_block_body) [552 570])
+                            ("self" variable nil (reparse-symbol indented_block_body) [579 605])
+                            ("self" variable nil (reparse-symbol indented_block_body) [614 626])
+                            ("self" variable nil (reparse-symbol indented_block_body) [635 684])
+                            ("file_cfg" variable nil (reparse-symbol indented_block_body) [693 721])
+                            ("self" variable nil (reparse-symbol indented_block_body) [730 767])
+                            ("re_ip1" variable nil (reparse-symbol indented_block_body) [862 902])
+                            ("re_ip" code nil (reparse-symbol indented_block_body) [911 972])
+                            ("self" variable nil (reparse-symbol indented_block_body) [981 1012])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1021 1072]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [349 353])
+                            ("cfg" variable nil (reparse-symbol function_parameters) [355 358])
+                            ("rname" variable nil (reparse-symbol function_parameters) [360 365])
+                            ("ut" variable nil (reparse-symbol function_parameters) [367 369]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [336 1073])
+                    ("get_cfg" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1090 1094]))                          
+                        :documentation "
+        获取ip.cfg中的配置
+        返回dict类型存储的配置,其中dict的key为
+        ky = \"%s#%s#%s\" % (self.rid, ld[\"pub_mediaid\"], ld[\"pub_deverid\"])
+        value是配置文件中的ipsub和max_num字段
+        ")
+                        (reparse-symbol indented_block_body) [1078 1730])
+                    ("check_ip" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1748 1752])
+                            ("ip" variable nil (reparse-symbol function_parameters) [1754 1756]))                          
+                        :documentation "
+        根据正则表达式匹配ip字段
+        匹配返回True,否则返回False
+
+        Args:
+            ip: ip地址
+        ")
+                        (reparse-symbol indented_block_body) [1735 2136])
+                    ("check_ky" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2154 2158])
+                            ("dc" variable nil (reparse-symbol function_parameters) [2160 2162])
+                            ("k" variable nil (reparse-symbol function_parameters) [2164 2165])
+                            ("ip" variable nil (reparse-symbol function_parameters) [2167 2169])
+                            ("dft" variable nil (reparse-symbol function_parameters) [2171 2174]))                          
+                        :documentation "
+        检查是否超出限制
+        其中根据参数k和dc[k]拼接新的key值
+        调用ut.check_rc()方法查询,如果check_rc返回结果为True,设置rs为dft
+        返回rs
+
+        Args:
+            dc: 配置dict
+            k: 在dict中的配置的key
+            ip: ip地址
+            dft: 超出限制返回的参数
+        ")
+                        (reparse-symbol indented_block_body) [2141 2997])
+                    ("ruler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3012 3016])
+                            ("data" variable nil (reparse-symbol function_parameters) [3018 3022]))                          )
+                        (reparse-symbol indented_block_body) [3002 3953]))                  
+                :type "class")
+                nil [123 3953]))          
+      :file "r04_ip.py"
+      :pointmax 3953
+      :fsize 4380
+      :lastmodtime '(22699 54901 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "r01_imei.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [26 40])
+            ("json" include nil nil [41 52])
+            ("Ruler" type
+               (:documentation "
+    规则一
+    根据imei号码,检查该imei号码在规定时间内,激活次数是否超出单个广告的最大激活次数和所有广告的最大激活次数。
+    如果imei为空,该规则不通过。
+
+    单个广告根据plan id拼接key_single
+    多有广告根据media id拼接key_all
+
+    检查方式:根据key获得redis中的value
+
+    单个广告的最大激活次数和所有广告的最大激活次数及其对应的有效时间在配置文件中给出
+    "
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [359 415])
+                            ("self" code nil (reparse-symbol indented_block_body) [424 522])
+                            ("self" variable nil (reparse-symbol indented_block_body) [531 543])
+                            ("max_activate" variable nil (reparse-symbol indented_block_body) [552 593])
+                            ("max_activate_all" variable nil (reparse-symbol indented_block_body) [602 651])
+                            ("self" variable nil (reparse-symbol indented_block_body) [660 678])
+                            ("self" variable nil (reparse-symbol indented_block_body) [687 742])
+                            ("self" variable nil (reparse-symbol indented_block_body) [751 815])
+                            ("self" variable nil (reparse-symbol indented_block_body) [824 861])
+                            ("self" variable nil (reparse-symbol indented_block_body) [870 915])
+                            ("self" variable nil (reparse-symbol indented_block_body) [924 950]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [328 332])
+                            ("cfg" variable nil (reparse-symbol function_parameters) [334 337])
+                            ("rname" variable nil (reparse-symbol function_parameters) [339 344])
+                            ("ut" variable nil (reparse-symbol function_parameters) [346 348]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [315 951])
+                    ("ruler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [966 970])
+                            ("data" variable nil (reparse-symbol function_parameters) [972 976]))                          )
+                        (reparse-symbol indented_block_body) [956 1918]))                  
+                :type "class")
+                nil [55 1918]))          
+      :file "r01_imei.py"
+      :pointmax 1918
+      :fsize 2195
+      :lastmodtime '(22699 54901 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "r02_android.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [26 40])
+            ("json" include nil nil [41 52])
+            ("Ruler" type
+               (:documentation "
+    规则二
+    设备任务限制
+    限制在每个媒体上,每个android id能够安装同一广告的数量
+    限制在每个媒体上,每个android id能够安装所有广告的数量
+    如果android id为空,则忽略本策略
+
+    单个广告的安装次数key_single
+    所有广告的安装次数key_all
+
+    检查方式:
+
+    单个广告和所有广告最多安装的app的限制及其有效时间在配置文件中给出
+    "
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [349 405])
+                            ("self" code nil (reparse-symbol indented_block_body) [414 512])
+                            ("expire_time" variable nil (reparse-symbol indented_block_body) [521 560])
+                            ("max_activate" variable nil (reparse-symbol indented_block_body) [569 610])
+                            ("max_activate_all" variable nil (reparse-symbol indented_block_body) [619 668])
+                            ("self" variable nil (reparse-symbol indented_block_body) [677 695])
+                            ("self" variable nil (reparse-symbol indented_block_body) [704 730])
+                            ("self" variable nil (reparse-symbol indented_block_body) [739 765])
+                            ("self" variable nil (reparse-symbol indented_block_body) [774 789])
+                            ("self" variable nil (reparse-symbol indented_block_body) [798 810])
+                            ("self" variable nil (reparse-symbol indented_block_body) [819 856])
+                            ("self" variable nil (reparse-symbol indented_block_body) [865 910]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [318 322])
+                            ("cfg" variable nil (reparse-symbol function_parameters) [324 327])
+                            ("rname" variable nil (reparse-symbol function_parameters) [329 334])
+                            ("ut" variable nil (reparse-symbol function_parameters) [336 338]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [305 911])
+                    ("ruler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [926 930])
+                            ("data" variable nil (reparse-symbol function_parameters) [932 936]))                          )
+                        (reparse-symbol indented_block_body) [916 1874]))                  
+                :type "class")
+                nil [55 1874]))          
+      :file "r02_android.py"
+      :pointmax 1874
+      :fsize 2133
+      :lastmodtime '(22699 54901 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "r03_mac.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"在媒体级别，按照amac地址的下载数做过滤
+其配置文件格式如下，时间单位是每天
+
+0,3   # 0表示所有媒体，对某一个广告一个amac最多下载3次
+10324,5  # mid=10324 这个媒体，对一个广告一天一个amac最多下载5次
+
+*_0,50  # 所有的媒体，某一个amac一天最多下载50个广告
+*_10324,100 # 10324 这个媒体，某一个amac一天最多下载100个广告
+
+只对action=0的做过滤。因为签到可以累积几天后再作，这里的限制数不适用
+\"\"\"" code nil nil [26 275])
+            ("logging" include nil nil [277 291])
+            ("ut.auto_update_set" include nil nil [292 336])
+            ("json" include nil nil [337 348])
+            ("ut.config" include nil nil [349 377])
+            ("Ruler" type
+               (:documentation "
+    规则三
+    检查amac和dmac是否超出限制
+    amac是用户上网使用的wifi接入点的mac地址
+    限制每个媒体上，每个amac一段时间内能够安装的同一个广告次数
+    限制每个媒体上，每个amac一段时间内能够安装的总的offer次数
+    限制每个媒体上，每个dmac一段时间内能够安装的同一个广告次数
+    限制每个媒体上，每个dmac一段时间内能够安装的总的offer次数
+    amac或dmac为空,则忽略本策略
+
+    检查方式:根据key获取在redis中的value
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [728 784])
+                            ("self" code nil (reparse-symbol indented_block_body) [793 891])
+                            ("file_cfg" variable nil (reparse-symbol indented_block_body) [900 928])
+                            ("self" variable nil (reparse-symbol indented_block_body) [937 976])
+                            ("self" variable nil (reparse-symbol indented_block_body) [985 1003])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1012 1052])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1061 1087])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1096 1108])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1117 1187]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [697 701])
+                            ("cfg" variable nil (reparse-symbol function_parameters) [703 706])
+                            ("rname" variable nil (reparse-symbol function_parameters) [708 713])
+                            ("ut" variable nil (reparse-symbol function_parameters) [715 717]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [684 1188])
+                    ("ruler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1203 1207])
+                            ("data" variable nil (reparse-symbol function_parameters) [1209 1213]))                          )
+                        (reparse-symbol indented_block_body) [1193 3062]))                  
+                :type "class")
+                nil [380 3062]))          
+      :file "r03_mac.py"
+      :pointmax 3063
+      :fsize 3634
+      :lastmodtime '(22699 54901 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "r05_media.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"在媒体级别，按照userid地址的下载数做过滤
+这里的userid是媒体传给我们的，在这个媒体上的唯一用户标识。
+其配置文件格式如下，时间单位是每天
+0,3   # 0表示所有媒体，对某一个广告一个userid最多下载3次，也就是说一个user最多用3个设备
+10324,5  # mid=10324 这个媒体，对一个广告一天一个userid最多下载5次
+*_0,50  # 所有的媒体，某一个userid一天最多下载50个广告
+*_10324,100 # 10324 这个媒体，某一个userid一天最多下载100个广告
+只对action=0的做过滤。因为签到可以累积几天后再作，这里的限制数不适用
+\"\"\"" code nil nil [26 333])
+            ("logging" include nil nil [335 349])
+            ("json" include nil nil [350 361])
+            ("ut.auto_update_set" include nil nil [363 407])
+            ("Ruler" type
+               (:documentation "
+    mediaid, userid任务限制
+    userid 是媒体在sdk设置的，这个媒体上的唯一用户标识。
+    如果媒体没有设置，则会使用imei
+    限制每个媒体上，每个userid能够安装的同一个广告数量，通常不应该大于3个。
+    限制每个媒体上，每个userid一段时间(一天)内，安装的总的offer数量，不应该超过50个。
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [675 731])
+                            ("self" code nil (reparse-symbol indented_block_body) [740 838])
+                            ("file_cfg" variable nil (reparse-symbol indented_block_body) [847 875])
+                            ("self" variable nil (reparse-symbol indented_block_body) [884 923])
+                            ("self" variable nil (reparse-symbol indented_block_body) [932 950])
+                            ("self" variable nil (reparse-symbol indented_block_body) [959 999])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1008 1020])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1029 1055]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [644 648])
+                            ("cfg" variable nil (reparse-symbol function_parameters) [650 653])
+                            ("rname" variable nil (reparse-symbol function_parameters) [655 660])
+                            ("ut" variable nil (reparse-symbol function_parameters) [662 664]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [631 1056])
+                    ("ruler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1071 1075])
+                            ("data" variable nil (reparse-symbol function_parameters) [1077 1081]))                          
+                        :documentation "
+        限制同一个wifi网络下对同一个广告的激活数
+        如果userid为空，则忽略本策略
+        ")
+                        (reparse-symbol indented_block_body) [1061 2157]))                  
+                :type "class")
+                nil [410 2157]))          
+      :file "r05_media.py"
+      :pointmax 2157
+      :fsize 2782
+      :lastmodtime '(22699 54901 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "r06_other.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [39 53])
+            ("json" include nil nil [54 65])
+            ("Ruler" type
+               (:documentation "
+    规则六
+    验证激活时间是否超出限制
+
+    检查方式:比较当前时间和事件触发时间
+    "
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [195 251])
+                            ("self" code nil (reparse-symbol indented_block_body) [260 362])
+                            ("self" variable nil (reparse-symbol indented_block_body) [371 389])
+                            ("self" variable nil (reparse-symbol indented_block_body) [398 410])
+                            ("self" variable nil (reparse-symbol indented_block_body) [419 445])
+                            ("self" variable nil (reparse-symbol indented_block_body) [454 526])
+                            ("self" variable nil (reparse-symbol indented_block_body) [535 583]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [164 168])
+                            ("cfg" variable nil (reparse-symbol function_parameters) [170 173])
+                            ("rname" variable nil (reparse-symbol function_parameters) [175 180])
+                            ("ut" variable nil (reparse-symbol function_parameters) [182 184]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [151 584])
+                    ("ruler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [599 603])
+                            ("data" variable nil (reparse-symbol function_parameters) [605 609]))                          )
+                        (reparse-symbol indented_block_body) [589 1224])
+                    ("get_cis" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1241 1245])
+                            ("st" variable nil (reparse-symbol function_parameters) [1247 1249])
+                            ("k" variable nil (reparse-symbol function_parameters) [1251 1252]))                          )
+                        (reparse-symbol indented_block_body) [1229 1593]))                  
+                :type "class")
+                nil [68 1593]))          
+      :file "r06_other.py"
+      :pointmax 1593
+      :fsize 1668
+      :lastmodtime '(22699 54901 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 1420 . 1507) (NEWLINE 1419 . 1420) (COLON 1418 . 1419) (TRY 1330 . 1333) (AS 1414 . 1416) (NAME 688 . 690) (IF 711 . 713) (ELSE 732 . 736)))
+    (semanticdb-table "r07_download.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [39 53])
+            ("json" include nil nil [54 65])
+            ("Ruler" type
+               (:documentation "
+        download_finish 事件核对
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [182 238])
+                            ("self" code nil (reparse-symbol indented_block_body) [247 345])
+                            ("self" variable nil (reparse-symbol indented_block_body) [354 366])
+                            ("self" variable nil (reparse-symbol indented_block_body) [375 393])
+                            ("self" variable nil (reparse-symbol indented_block_body) [402 428]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [151 155])
+                            ("cfg" variable nil (reparse-symbol function_parameters) [157 160])
+                            ("rname" variable nil (reparse-symbol function_parameters) [162 167])
+                            ("ut" variable nil (reparse-symbol function_parameters) [169 171]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [138 429])
+                    ("ruler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [444 448])
+                            ("data" variable nil (reparse-symbol function_parameters) [450 454]))                          )
+                        (reparse-symbol indented_block_body) [434 1399]))                  
+                :type "class")
+                nil [68 1399]))          
+      :file "r07_download.py"
+      :pointmax 1399
+      :fsize 1406
+      :lastmodtime '(22699 54901 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_anti_server!lib!rulers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

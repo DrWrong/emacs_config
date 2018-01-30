@@ -1,0 +1,282 @@
+;; Object task/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "task/"
+  :tables
+  (list
+    (semanticdb-table "base.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"Deprecated task base class.
+
+The task implementation has been moved to :mod:`celery.app.task`.
+
+This contains the backward compatible Task class used in the old API,
+and shouldn't be used in new applications.
+\"\"\"" code nil nil [25 240])
+            ("__future__" include nil nil [241 297])
+            ("kombu" include nil nil [298 324])
+            ("celery" include nil nil [325 355])
+            ("celery.app.task" include nil nil [356 420])
+            ("celery.five" include nil nil [421 488])
+            ("celery.local" include nil nil [489 550])
+            ("celery.schedules" include nil nil [551 594])
+            ("celery.utils.log" include nil nil [595 639])
+            ("__all__" variable nil nil [641 706])
+            ("_COMPAT_CLASSMETHODS" variable nil nil [769 975])
+            ("_CompatShared" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1081 1097])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1106 1122]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1054 1058])
+                            ("name" variable nil (reparse-symbol function_parameters) [1060 1064])
+                            ("cons" variable nil (reparse-symbol function_parameters) [1066 1070]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1041 1123])
+                    ("__hash__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1141 1145]))                          )
+                        (reparse-symbol indented_block_body) [1128 1179])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1197 1201]))                          )
+                        (reparse-symbol indented_block_body) [1184 1250])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1268 1272])
+                            ("app" variable nil (reparse-symbol function_parameters) [1274 1277]))                          )
+                        (reparse-symbol indented_block_body) [1255 1310]))                  
+                :type "class")
+                nil [1007 1310])
+            ("TaskType" type
+               (:documentation "Meta class for tasks.
+
+    Automatically registers the task in the task registry (except
+    if the :attr:`Task.abstract`` attribute is set).
+
+    If no :attr:`Task.name` attribute is provided, then the name is generated
+    from the module and class name.
+    "
+                :superclasses ("type")
+                :members 
+                  ( ("_creation_count" variable nil (reparse-symbol indented_block_body) [1611 1631])
+                    ("__new__" function (:arguments 
+                      ( ("cls" variable nil (reparse-symbol function_parameters) [1690 1693])
+                        ("name" variable nil (reparse-symbol function_parameters) [1695 1699])
+                        ("bases" variable nil (reparse-symbol function_parameters) [1701 1706])
+                        ("attrs" variable nil (reparse-symbol function_parameters) [1708 1713]))                      ) (reparse-symbol indented_block_body) [1678 4404])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4422 4426]))                          )
+                        (reparse-symbol indented_block_body) [4409 4460]))                  
+                :type "class")
+                nil [1312 4460])
+            ("" code nil nil [4477 4487])
+            ("Task" type
+               (:documentation "Deprecated Task base class.
+
+    Modern applications should use :class:`celery.Task` instead.
+    "
+                :superclasses ("BaseTask")
+                :members 
+                  ( ("abstract" variable nil (reparse-symbol indented_block_body) [4653 4668])
+                    ("__bound__" variable nil (reparse-symbol indented_block_body) [4673 4690])
+                    ("__v2_compat__" variable nil (reparse-symbol indented_block_body) [4695 4715])
+                    ("queue" variable nil (reparse-symbol indented_block_body) [4763 4775])
+                    ("routing_key" variable nil (reparse-symbol indented_block_body) [4780 4798])
+                    ("exchange" variable nil (reparse-symbol indented_block_body) [4803 4818])
+                    ("exchange_type" variable nil (reparse-symbol indented_block_body) [4823 4843])
+                    ("delivery_mode" variable nil (reparse-symbol indented_block_body) [4848 4868])
+                    ("mandatory" variable nil (reparse-symbol indented_block_body) [4873 4890])
+                    ("immediate" variable nil (reparse-symbol indented_block_body) [4913 4930])
+                    ("priority" variable nil (reparse-symbol indented_block_body) [4953 4968])
+                    ("type" variable nil (reparse-symbol indented_block_body) [4973 4989])
+                    ("from_config" code nil (reparse-symbol indented_block_body) [4995 5153])
+                    ("for" code nil (reparse-symbol indented_block_body) [5479 5577])
+                    ("request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5614 5618]))                          
+                        :decorators 
+                          ( ("class_property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5582 5656])
+                    ("backend" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5693 5697]))                          
+                        :decorators 
+                          ( ("class_property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5661 5799])
+                    ("backend" function
+                       (:decorators 
+                          ( ("backend.setter" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [5836 5839])
+                            ("value" variable nil (reparse-symbol function_parameters) [5841 5846]))                          )
+                        (reparse-symbol indented_block_body) [5804 5886])
+                    ("get_logger" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [5923 5926])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [5928 5936]))                          )
+                        (reparse-symbol indented_block_body) [5891 5980])
+                    ("establish_connection" function
+                       (:documentation "Deprecated method used to get a broker connection.
+
+        Should be replaced with :meth:`@Celery.connection`
+        instead, or by acquiring connections from the connection pool:
+
+        Examples:
+            >>> # using the connection pool
+            >>> with celery.pool.acquire(block=True) as conn:
+            ...     pass
+
+            >>> # establish fresh connection
+            >>> with celery.connection_for_write() as conn:
+            ...     pass
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [6027 6030]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5985 6572])
+                    ("get_publisher" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6595 6599])
+                            ("connection" variable nil (reparse-symbol function_parameters) [6601 6611])
+                            ("exchange" variable nil (reparse-symbol function_parameters) [6618 6626])
+                            ("exchange_type" variable nil (reparse-symbol function_parameters) [6655 6668])
+                            ("options" variable nil (reparse-symbol function_parameters) [6675 6684]))                          
+                        :documentation "Deprecated method to get the task publisher (now called producer).
+
+        Should be replaced with :class:`kombu.Producer`:
+
+        .. code-block:: python
+
+            with app.connection_for_write() as conn:
+                with app.amqp.Producer(conn) as prod:
+                    my_task.apply_async(producer=prod)
+
+            or even better is to use the :class:`@amqp.producer_pool`:
+
+            .. code-block:: python
+
+                with app.producer_or_acquire() as prod:
+                    my_task.apply_async(producer=prod)
+        ")
+                        (reparse-symbol indented_block_body) [6577 7673])
+                    ("get_consumer" function
+                       (:documentation "Get consumer for the queue this task is sent to.
+
+        Deprecated!
+
+        Should be replaced by :class:`@amqp.TaskConsumer`.
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [7712 7715])
+                            ("connection" variable nil (reparse-symbol function_parameters) [7717 7727])
+                            ("queues" variable nil (reparse-symbol function_parameters) [7734 7740])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [7747 7755]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [7678 8167]))                  
+                :type "class")
+                nil [4517 8167])
+            ("PeriodicTask" type
+               (:documentation "A task that adds itself to the :setting:`beat_schedule` setting."
+                :superclasses ("Task")
+                :members 
+                  ( ("abstract" variable nil (reparse-symbol indented_block_body) [8275 8290])
+                    ("ignore_result" variable nil (reparse-symbol indented_block_body) [8295 8315])
+                    ("relative" variable nil (reparse-symbol indented_block_body) [8320 8336])
+                    ("options" variable nil (reparse-symbol indented_block_body) [8341 8355])
+                    ("compat" variable nil (reparse-symbol indented_block_body) [8360 8373])
+                    ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [8407 8547])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8555 8617])
+                            ("super" code nil (reparse-symbol indented_block_body) [8626 8662]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8392 8396]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [8379 8663])
+                    ("on_bound" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [8698 8701])
+                            ("app" variable nil (reparse-symbol function_parameters) [8703 8706]))                          )
+                        (reparse-symbol indented_block_body) [8668 8963]))                  
+                :type "class")
+                nil [8169 8963])
+            ("task" function
+               (:documentation "Deprecated decorator, please use :func:`celery.task`."
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [8974 8979])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [8981 8989]))                  )
+                nil [8965 9125])
+            ("periodic_task" function
+               (:documentation "Deprecated decorator, please use :setting:`beat_schedule`."
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [9145 9150])
+                    ("options" variable nil (reparse-symbol function_parameters) [9152 9161]))                  )
+                nil [9127 9292]))          
+      :file "base.py"
+      :pointmax 9292
+      :fsize 9291
+      :lastmodtime '(22764 51938 0 0)
+      :unmatched-syntax '((NAME 8044 . 8050) (IF 8073 . 8075) (ELSE 8086 . 8090) (NAME 7258 . 7266) (IF 7283 . 7285) (ELSE 7303 . 7307)))
+
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+    celery.task
+    ~~~~~~~~~~~
+
+    This is the old task module, it should not be used anymore,
+    import from the main 'celery' module instead.
+    If you're looking for the decorator implementation then that's in
+    ``celery.app.base.Celery.task``.
+
+\"\"\"" code nil nil [25 287])
+            ("__future__" include nil nil [288 326])
+            ("celery._state" include nil nil [328 390])
+            ("celery.five" include nil nil [391 442])
+            ("celery.local" include nil nil [443 473])
+            ("__all__" variable nil nil [475 586])
+            ("STATICA_HACK" variable nil nil [589 608])
+            ("globals" variable nil nil [609 656])
+            ("if" code nil nil [657 983])
+            ("module" type
+               (:superclasses ("LazyModule")
+                :members 
+                  ( ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1029 1033])
+                            ("args" variable nil (reparse-symbol function_parameters) [1035 1040])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1042 1050]))                          )
+                        (reparse-symbol indented_block_body) [1016 1095]))                  
+                :type "class")
+                nil [985 1095])
+            ("old_module, new_module" code nil nil [1097 1661]))          
+      :file "__init__.py"
+      :pointmax 1662
+      :fsize 1632
+      :lastmodtime '(22764 51938 0 0)
+      :unmatched-syntax '((FROM 915 . 919) (PERIOD 920 . 921))))
+  :file "!Users!drwrong!openProject!celery!celery!task!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

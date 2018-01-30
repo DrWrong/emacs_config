@@ -1,0 +1,84 @@
+;; Object JDEE_flycheck_15399L5W/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "JDEE_flycheck_15399L5W/"
+  :tables
+  (list
+    (semanticdb-table "ZkCoordinator.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("org.apache.storm.kafka" package nil nil [804 835])
+            ("org.slf4j.Logger" include nil nil [837 861])
+            ("org.slf4j.LoggerFactory" include nil nil [862 893])
+            ("org.apache.storm.kafka.trident.GlobalPartitionInformation" include nil nil [894 959])
+            ("java.util.*" include nil nil [961 980])
+            ("ZkCoordinator" type
+               (:typemodifiers ("public")
+                :interfaces ("PartitionCoordinator")
+                :members 
+                  ( ("LOG" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1104 1183])
+                    ("_spoutConfig" variable (:type "SpoutConfig") (reparse-symbol class_member_declaration) [1189 1214])
+                    ("_taskIndex" variable (:type "int") (reparse-symbol class_member_declaration) [1219 1234])
+                    ("_totalTasks" variable (:type "int") (reparse-symbol class_member_declaration) [1239 1255])
+                    ("_topologyInstanceId" variable (:type "String") (reparse-symbol class_member_declaration) [1260 1287])
+                    ("_lastRefreshTime" variable (:type "Long") (reparse-symbol class_member_declaration) [1432 1461])
+                    ("_refreshFreqMs" variable (:type "int") (reparse-symbol class_member_declaration) [1466 1485])
+                    ("_connections" variable (:type "DynamicPartitionConnections") (reparse-symbol class_member_declaration) [1490 1531])
+                    ("_reader" variable (:type "DynamicBrokersReader") (reparse-symbol class_member_declaration) [1536 1565])
+                    ("_state" variable (:type "ZkState") (reparse-symbol class_member_declaration) [1570 1585])
+                    ("_stormConf" variable (:type "Map") (reparse-symbol class_member_declaration) [1590 1605])
+                    ("ZkCoordinator" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("connections" variable (:type "DynamicPartitionConnections") (reparse-symbol formal_parameters) [1632 1671])
+                            ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [1673 1686])
+                            ("spoutConfig" variable (:type "SpoutConfig") (reparse-symbol formal_parameters) [1688 1711])
+                            ("state" variable (:type "ZkState") (reparse-symbol formal_parameters) [1713 1726])
+                            ("taskIndex" variable (:type "int") (reparse-symbol formal_parameters) [1728 1741])
+                            ("totalTasks" variable (:type "int") (reparse-symbol formal_parameters) [1743 1757])
+                            ("topologyInstanceId" variable (:type "String") (reparse-symbol formal_parameters) [1759 1784]))                          )
+                        (reparse-symbol class_member_declaration) [1611 1931])
+                    ("ZkCoordinator" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("connections" variable (:type "DynamicPartitionConnections") (reparse-symbol formal_parameters) [1958 1997])
+                            ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [1999 2012])
+                            ("spoutConfig" variable (:type "SpoutConfig") (reparse-symbol formal_parameters) [2014 2037])
+                            ("state" variable (:type "ZkState") (reparse-symbol formal_parameters) [2039 2052])
+                            ("taskIndex" variable (:type "int") (reparse-symbol formal_parameters) [2054 2067])
+                            ("totalTasks" variable (:type "int") (reparse-symbol formal_parameters) [2069 2083])
+                            ("topologyInstanceId" variable (:type "String") (reparse-symbol formal_parameters) [2085 2110])
+                            ("reader" variable (:type "DynamicBrokersReader") (reparse-symbol formal_parameters) [2112 2139]))                          )
+                        (reparse-symbol class_member_declaration) [1937 2536])
+                    ("buildReader" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [2590 2603])
+                            ("spoutConfig" variable (:type "SpoutConfig") (reparse-symbol formal_parameters) [2605 2628]))                          
+                        :type "DynamicBrokersReader")
+                        (reparse-symbol class_member_declaration) [2542 2800])
+                    ("getMyManagedPartitions" function (:constructor-flag t) (reparse-symbol class_member_declaration) [2850 3110])
+                    ("refresh" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3130 5031])
+                    ("getManager" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("partition" variable (:type "Partition") (reparse-symbol formal_parameters) [5086 5105]))                          
+                        :type "PartitionManager")
+                        (reparse-symbol class_member_declaration) [5051 5155]))                  
+                :type "class")
+                nil [1039 5157]))          
+      :file "ZkCoordinator.java"
+      :pointmax 5158
+      :fsize 5157
+      :lastmodtime '(22735 37546 0 0)
+      :unmatched-syntax '((GT 2848 . 2849) (IDENTIFIER 2806 . 2815) (PUBLIC 2820 . 2826) (LT 2831 . 2832) (SEMICOLON 1426 . 1427) (PAREN_BLOCK 1424 . 1426) (GT 1423 . 1424) (LT 1406 . 1407) (NEW 1393 . 1396) (EQ 1391 . 1392) (GT 1377 . 1378) (LT 1360 . 1361) (SEMICOLON 1350 . 1351) (NEW 1337 . 1340) (EQ 1335 . 1336) (GT 1323 . 1324) (COMMA 1305 . 1306) (IDENTIFIER 1292 . 1295) (LT 1295 . 1296) (IDENTIFIER 1030 . 1036) (DOT 1029 . 1030) (IDENTIFIER 1019 . 1029) (DOT 1018 . 1019) (IDENTIFIER 1013 . 1018) (DOT 1012 . 1013) (IDENTIFIER 1007 . 1012) (DOT 1006 . 1007) (IDENTIFIER 1000 . 1006) (DOT 999 . 1000) (IMPORT 982 . 988) (STATIC 989 . 995) (IDENTIFIER 996 . 999))))
+  :file "!private!var!folders!hs!_yc0qs7s7r194rfd1cmmtflh0000gn!T!JDEE_flycheck_15399L5W!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

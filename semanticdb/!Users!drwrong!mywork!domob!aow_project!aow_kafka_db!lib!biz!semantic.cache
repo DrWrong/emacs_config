@@ -1,0 +1,127 @@
+;; Object biz/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "biz/"
+  :tables
+  (list
+    (semanticdb-table "workers.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.db" include nil nil [26 42])
+            ("logging" include nil nil [43 57])
+            ("threading" include nil nil [58 74])
+            ("sys" include nil nil [75 85])
+            ("time" include nil nil [86 97])
+            ("thrift.transport" include nil nil [98 137])
+            ("thrift.protocol" include nil nil [138 181])
+            ("domob_pyutils.statscol" include nil nil [217 257])
+            ("domob_thrift.aow_stat_types2.ttypes" include nil nil [325 381])
+            ("ut" include nil nil [382 406])
+            ("ut" include nil nil [407 430])
+            ("MessageReader" type
+               (:documentation "从标准输入读取thrift数据，生成结构体"
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        Args:
+         dataClass - thrift对象的类型
+        \"\"\"" code nil (reparse-symbol indented_block_body) [535 597])
+                            ("self" variable nil (reparse-symbol indented_block_body) [606 653])
+                            ("self" variable nil (reparse-symbol indented_block_body) [662 682]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [512 516])
+                            ("nowrap" variable nil (reparse-symbol function_parameters) [518 524]))                          
+                        :documentation "
+        Args:
+         dataClass - thrift对象的类型
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [499 683])
+                    ("readMessage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [704 708]))                          
+                        :documentation "读取标准输入，解析thrift对象
+
+        在logtailer运行模式，启用了对thrift对象的封装，需要用Message对象解封装
+        在测试时，可能直接发送监控信息，因此程序通过一个命令行参数支持这两种模式
+        ")
+                        (reparse-symbol indented_block_body) [688 1791]))                  
+                :type "class")
+                nil [433 1791])
+            ("WorkerThread" type
+               (:documentation "从queue中获取数据，入库"
+                :superclasses ("threading.Thread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        Args:
+          config - 配置项
+          queue - 获取待入库记录的队列
+          fail_queue - 将失败的记录放入到这个队列中
+        \"\"\"" code nil (reparse-symbol indented_block_body) [1914 2033])
+                            ("threading" code nil (reparse-symbol indented_block_body) [2042 2083])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2092 2156])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2165 2185])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2194 2212])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2221 2256])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2265 2364]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1874 1878])
+                            ("config" variable nil (reparse-symbol function_parameters) [1880 1886])
+                            ("queue" variable nil (reparse-symbol function_parameters) [1888 1893])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1895 1903]))                          
+                        :documentation "
+        Args:
+          config - 配置项
+          queue - 获取待入库记录的队列
+          fail_queue - 将失败的记录放入到这个队列中
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1861 2365])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2378 2382]))                          )
+                        (reparse-symbol indented_block_body) [2370 2519])
+                    ("process_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2541 2545])
+                            ("data" variable nil (reparse-symbol function_parameters) [2547 2551]))                          )
+                        (reparse-symbol indented_block_body) [2524 2852])
+                    ("saveRecord" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2872 2876])
+                            ("data" variable nil (reparse-symbol function_parameters) [2878 2882]))                          
+                        :documentation "保存一条数据到数据库
+        如果保存失败，会进行几次重试
+        Args:
+          data - 点击或者激活数据
+        Returns:
+          bool - 成功返回True，否则返回False
+        ")
+                        (reparse-symbol indented_block_body) [2857 3725]))                  
+                :type "class")
+                nil [1793 3725]))          
+      :file "workers.py"
+      :pointmax 3725
+      :fsize 4128
+      :lastmodtime '(22726 5565 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "partition_manager.py"
+      :file "partition_manager.py"
+      :fsize 5331
+      :lastmodtime '(22726 5565 0 0))
+    (semanticdb-table "statistics_thread.py"
+      :file "statistics_thread.py"
+      :fsize 3675
+      :lastmodtime '(22726 5565 0 0)))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_kafka_db!lib!biz!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

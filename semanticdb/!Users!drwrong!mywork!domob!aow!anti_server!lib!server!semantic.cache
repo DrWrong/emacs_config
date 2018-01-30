@@ -1,0 +1,95 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [39 78])
+            ("logging" include nil nil [80 94])
+            ("time" include nil nil [95 106])
+            ("importlib" include nil nil [107 123])
+            ("domob_pyutils.statscol" include nil nil [125 165])
+            ("domob_pyutils.func_stats" include nil nil [166 213])
+            ("django.conf" include nil nil [214 246])
+            ("server.anti" include nil nil [249 277])
+            ("server.send_data" include nil nil [278 315])
+            ("init_cls" function (:arguments 
+              ( ("process_cls" variable nil (reparse-symbol function_parameters) [538 549]))              ) nil [525 694])
+            ("Handler" type
+               (:superclasses ("object")
+                :members 
+                  ( ("'''
+    antiserver的Handler
+    '''" code nil (reparse-symbol indented_block_body) [723 757])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [802 839])
+                            ("self" variable nil (reparse-symbol indented_block_body) [884 911])
+                            ("self" variable nil (reparse-symbol indented_block_body) [920 947])
+                            ("self" variable nil (reparse-symbol indented_block_body) [956 970]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [776 780])
+                            ("cfg" variable nil (reparse-symbol function_parameters) [782 785])
+                            ("name" variable nil (reparse-symbol function_parameters) [787 791]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [763 971])
+                    ("get_anti_processor" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [999 1003])
+                            ("d" variable nil (reparse-symbol function_parameters) [1005 1006]))                          )
+                        (reparse-symbol indented_block_body) [976 1296])
+                    ("data_anti" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1491 1495])
+                            ("d" variable nil (reparse-symbol function_parameters) [1497 1498]))                          )
+                        (reparse-symbol indented_block_body) [1477 2034])
+                    ("checkIsspam" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2071 2075])
+                            ("head" variable nil (reparse-symbol function_parameters) [2077 2081])
+                            ("d" variable nil (reparse-symbol function_parameters) [2083 2084]))                          
+                        :decorators 
+                          ( ("func_stats" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2039 2564]))                  
+                :type "class")
+                nil [696 2564]))          
+      :file "handler.py"
+      :pointmax 2564
+      :fsize 2645
+      :lastmodtime '(22953 6386 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 1939 . 2034) (NEWLINE 1938 . 1939) (COLON 1937 . 1938) (TRY 1558 . 1561) (AS 1933 . 1935) (INDENT_BLOCK 1229 . 1258) (NEWLINE 1228 . 1229) (COLON 1227 . 1228) (TRY 1129 . 1132) (AS 1223 . 1225)))
+    (semanticdb-table "semanticdb-table"
+      :file "anti.py"
+      :fsize 2935
+      :lastmodtime '(22953 6386 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("SendData" type
+               (:documentation "
+        发送数据到下游aow_data_sensorsanalytics服务
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("send" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [936 940])
+                            ("data" variable nil (reparse-symbol function_parameters) [942 946]))                          )
+                        (reparse-symbol indented_block_body) [927 1313]))                  
+                :type "class")
+                nil [310 1313]))          
+      :file "send_data.py"
+      :pointmax 1313
+      :fsize 1330
+      :lastmodtime '(22969 58681 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow!anti_server!lib!server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

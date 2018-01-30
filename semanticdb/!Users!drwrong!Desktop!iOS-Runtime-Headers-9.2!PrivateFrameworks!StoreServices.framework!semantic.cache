@@ -1,0 +1,607 @@
+;; Object StoreServices.framework/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "StoreServices.framework/"
+  :tables
+  (list
+    (semanticdb-table "SSMutableURLRequestProperties.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("HTTPBody" variable
+               (:pointer 1
+                :type ("NSData" type (:type "class") nil nil))
+                nil [203 220])
+            ("HTTPBodyStream" variable
+               (:pointer 1
+                :type ("NSInputStream" type (:type "class") nil nil))
+                nil [240 270])
+            ("HTTPHeaders" variable
+               (:pointer 1
+                :type ("NSDictionary" type (:type "class") nil nil))
+                nil [288 314])
+            ("HTTPMethod" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [332 353])
+            ("ITunesStoreRequest" variable (:type ("BOOL" type (:type "class") nil nil)) nil [394 418])
+            ("KBSyncType" variable (:type "int") nil [429 444])
+            ("URL" variable
+               (:pointer 1
+                :type ("NSURL" type (:type "class") nil nil))
+                nil [464 475])
+            ("URLBagKey" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [493 513])
+            ("URLBagType" variable (:type "int") nil [524 539])
+            ("URLBagURLBlock" variable (:type ("id" type (:type "class") nil nil)) nil [557 587])
+            ("URLs" variable
+               (:pointer 1
+                :type ("NSArray" type (:type "class") nil nil))
+                nil [605 619])
+            ("allowedRetryCount" variable (:type "int") nil [630 652])
+            ("allowsBootstrapCellularData" variable (:type ("BOOL" type (:type "class") nil nil)) nil [663 696])
+            ("cachePolicy" variable (:type "unsigned int") nil [707 732])
+            ("clientAuditBundleIdentifier" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [750 788])
+            ("clientAuditTokenData" variable
+               (:pointer 1
+                :type ("NSData" type (:type "class") nil nil))
+                nil [806 835])
+            ("clientIdentifier" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [853 880])
+            ("expectedContentLength" variable (:type "long long") nil [891 923])
+            ("largeDownload" variable (:type ("BOOL" type (:type "class") nil nil)) nil [959 978])
+            ("machineDataStyle" variable (:type "int") nil [989 1010])
+            ("networkServiceType" variable (:type "unsigned int") nil [1021 1053])
+            ("requestParameters" variable
+               (:pointer 1
+                :type ("NSDictionary" type (:type "class") nil nil))
+                nil [1071 1103])
+            ("requiresCellularDataNetwork" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1114 1147])
+            ("requiresExtendedValidationCertificates" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1158 1202])
+            ("requiresHTTPS" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1213 1232])
+            ("shouldAddKBSyncData" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1243 1268])
+            ("shouldDecodeResponse" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1279 1305])
+            ("shouldDisableCellular" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1316 1343])
+            ("shouldDisableCellularFallback" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1354 1389])
+            ("shouldProcessProtocol" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1400 1427])
+            ("shouldSendSecureToken" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1438 1465])
+            ("shouldSetCookies" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1476 1498])
+            ("timeoutInterval" variable (:type "double") nil [1509 1532])
+            ("userAgentComponents" variable
+               (:pointer 1
+                :type ("NSArray" type (:type "class") nil nil))
+                nil [1550 1579])
+            ("arg1" variable (:type "int") nil [1704 1709])
+            ("arg1" variable (:type "int") nil [1744 1749])
+            ("arg1" variable (:type "int") nil [1795 1800])
+            ("arg1" variable (:type "int") nil [1838 1843])
+            ("arg1" variable (:type "int") nil [1887 1892])
+            ("arg1" variable (:type "int") nil [1929 1934])
+            ("arg1" variable (:type "int") nil [1967 1972])
+            ("arg1" variable (:type "int") nil [2017 2022])
+            ("arg1" variable (:type "int") nil [2047 2052])
+            ("arg1" variable (:type "int") nil [2083 2088])
+            ("arg1" variable (:type "int") nil [2116 2121])
+            ("arg1" variable (:type "int") nil [2148 2153])
+            ("arg1" variable (:type "int") nil [2190 2195])
+            ("arg1" variable (:type "int") nil [2223 2228])
+            ("arg1" variable (:type "int") nil [2260 2265])
+            ("arg1" variable (:type "int") nil [2299 2304])
+            ("arg1" variable (:type "int") nil [2352 2357])
+            ("arg1" variable (:type "int") nil [2402 2407])
+            ("arg1" variable (:type "int") nil [2441 2446])
+            ("arg1" variable (:type "int") nil [2492 2497])
+            ("arg1" variable (:type "int") nil [2554 2559])
+            ("arg1" variable (:type "int") nil [2591 2596])
+            ("arg1" variable (:type "int") nil [2634 2639])
+            ("arg1" variable (:type "int") nil [2678 2683])
+            ("arg1" variable (:type "int") nil [2723 2728])
+            ("arg1" variable (:type "int") nil [2776 2781])
+            ("arg1" variable (:type "int") nil [2821 2826])
+            ("arg1" variable (:type "int") nil [2866 2871])
+            ("arg1" variable (:type "int") nil [2906 2911])
+            ("arg1" variable (:type "int") nil [2947 2952])
+            ("arg1" variable (:type "int") nil [2972 2977])
+            ("arg1" variable (:type "int") nil [3003 3008])
+            ("arg1" variable (:type "int") nil [3036 3041])
+            ("arg1" variable (:type "int") nil [3084 3089])
+            ("arg1" variable (:type "int") nil [3110 3115])
+            ("arg1" variable (:type "int") nil [3151 3156])
+            ("arg2" variable (:type "int") nil [3206 3211])
+            ("arg2" variable (:type "int") nil [3262 3267])
+            ("arg1" variable (:type "int") nil [3368 3373])
+            ("arg2" variable (:type "int") nil [3439 3444]))          
+      :file "SSMutableURLRequestProperties.h"
+      :pointmax 3451
+      :fsize 3450
+      :lastmodtime '(22122 60422 0 0)
+      :unmatched-syntax '((symbol 3447 . 3450) (punctuation 3446 . 3447) (semantic-list 3435 . 3439) (punctuation 3434 . 3435) (symbol 3411 . 3434) (symbol 3406 . 3410) (semantic-list 3402 . 3406) (punctuation 3401 . 3402) (symbol 3380 . 3401) (semantic-list 3376 . 3380) (punctuation 3374 . 3375) (semantic-list 3364 . 3368) (punctuation 3363 . 3364) (symbol 3342 . 3363) (semantic-list 3338 . 3342) (punctuation 3336 . 3337) (semantic-list 3258 . 3262) (punctuation 3257 . 3258) (symbol 3238 . 3257) (symbol 3233 . 3237) (semantic-list 3229 . 3233) (punctuation 3228 . 3229) (symbol 3220 . 3228) (semantic-list 3214 . 3220) (punctuation 3212 . 3213) (semantic-list 3202 . 3206) (punctuation 3201 . 3202) (symbol 3183 . 3201) (symbol 3178 . 3182) (semantic-list 3174 . 3178) (punctuation 3173 . 3174) (symbol 3165 . 3173) (semantic-list 3159 . 3165) (punctuation 3157 . 3158) (semantic-list 3147 . 3151) (punctuation 3146 . 3147) (symbol 3124 . 3146) (semantic-list 3118 . 3124) (punctuation 3116 . 3117) (semantic-list 3106 . 3110) (punctuation 3105 . 3106) (symbol 3098 . 3105) (semantic-list 3092 . 3098) (punctuation 3090 . 3091) (semantic-list 3068 . 3084) (punctuation 3067 . 3068) (symbol 3050 . 3067) (semantic-list 3044 . 3050) (punctuation 3042 . 3043) (semantic-list 3031 . 3036) (punctuation 3030 . 3031) (symbol 3017 . 3030) (semantic-list 3011 . 3017) (punctuation 3009 . 3010) (semantic-list 2999 . 3003) (punctuation 2998 . 2999) (symbol 2986 . 2998) (semantic-list 2980 . 2986) (punctuation 2978 . 2979) (semantic-list 2968 . 2972) (punctuation 2967 . 2968) (symbol 2961 . 2967) (semantic-list 2955 . 2961) (punctuation 2953 . 2954) (semantic-list 2939 . 2947) (punctuation 2938 . 2939) (symbol 2920 . 2938) (semantic-list 2914 . 2920) (punctuation 2912 . 2913) (semantic-list 2900 . 2906) (punctuation 2899 . 2900) (symbol 2880 . 2899) (semantic-list 2874 . 2880) (punctuation 2872 . 2873) (semantic-list 2860 . 2866) (punctuation 2859 . 2860) (symbol 2835 . 2859) (semantic-list 2829 . 2835) (punctuation 2827 . 2828) (semantic-list 2815 . 2821) (punctuation 2814 . 2815) (symbol 2790 . 2814) (semantic-list 2784 . 2790) (punctuation 2782 . 2783) (semantic-list 2770 . 2776) (punctuation 2769 . 2770) (symbol 2737 . 2769) (semantic-list 2731 . 2737) (punctuation 2729 . 2730) (semantic-list 2717 . 2723) (punctuation 2716 . 2717) (symbol 2692 . 2716) (semantic-list 2686 . 2692) (punctuation 2684 . 2685) (semantic-list 2672 . 2678) (punctuation 2671 . 2672) (symbol 2648 . 2671) (semantic-list 2642 . 2648) (punctuation 2640 . 2641) (semantic-list 2628 . 2634) (punctuation 2627 . 2628) (symbol 2605 . 2627) (semantic-list 2599 . 2605) (punctuation 2597 . 2598) (semantic-list 2585 . 2591) (punctuation 2584 . 2585) (symbol 2568 . 2584) (semantic-list 2562 . 2568) (punctuation 2560 . 2561) (semantic-list 2548 . 2554) (punctuation 2547 . 2548) (symbol 2506 . 2547) (semantic-list 2500 . 2506) (punctuation 2498 . 2499) (semantic-list 2486 . 2492) (punctuation 2485 . 2486) (symbol 2455 . 2485) (semantic-list 2449 . 2455) (punctuation 2447 . 2448) (semantic-list 2437 . 2441) (punctuation 2436 . 2437) (symbol 2416 . 2436) (semantic-list 2410 . 2416) (punctuation 2408 . 2409) (semantic-list 2388 . 2402) (punctuation 2387 . 2388) (symbol 2366 . 2387) (semantic-list 2360 . 2366) (punctuation 2358 . 2359) (semantic-list 2348 . 2352) (punctuation 2347 . 2348) (symbol 2313 . 2347) (semantic-list 2307 . 2313) (punctuation 2305 . 2306) (semantic-list 2294 . 2299) (punctuation 2293 . 2294) (symbol 2274 . 2293) (semantic-list 2268 . 2274) (punctuation 2266 . 2267) (semantic-list 2254 . 2260) (punctuation 2253 . 2254) (symbol 2237 . 2253) (semantic-list 2231 . 2237) (punctuation 2229 . 2230) (semantic-list 2218 . 2223) (punctuation 2217 . 2218) (symbol 2204 . 2217) (semantic-list 2198 . 2204) (punctuation 2196 . 2197) (semantic-list 2184 . 2190) (punctuation 2183 . 2184) (symbol 2162 . 2183) (semantic-list 2156 . 2162) (punctuation 2154 . 2155) (semantic-list 2144 . 2148) (punctuation 2143 . 2144) (symbol 2130 . 2143) (semantic-list 2124 . 2130) (punctuation 2122 . 2123) (semantic-list 2112 . 2116) (punctuation 2111 . 2112) (symbol 2097 . 2111) (semantic-list 2091 . 2097) (punctuation 2089 . 2090) (semantic-list 2079 . 2083) (punctuation 2078 . 2079) (symbol 2061 . 2078) (semantic-list 2055 . 2061) (punctuation 2053 . 2054) (semantic-list 2043 . 2047) (punctuation 2042 . 2043) (symbol 2031 . 2042) (semantic-list 2025 . 2031) (punctuation 2023 . 2024) (semantic-list 2006 . 2017) (punctuation 2005 . 2006) (symbol 1981 . 2005) (semantic-list 1975 . 1981) (punctuation 1973 . 1974) (semantic-list 1963 . 1967) (punctuation 1962 . 1963) (symbol 1943 . 1962) (semantic-list 1937 . 1943) (punctuation 1935 . 1936) (semantic-list 1925 . 1929) (punctuation 1924 . 1925) (symbol 1901 . 1924) (semantic-list 1895 . 1901) (punctuation 1893 . 1894) (semantic-list 1883 . 1887) (punctuation 1882 . 1883) (symbol 1852 . 1882) (semantic-list 1846 . 1852) (punctuation 1844 . 1845) (semantic-list 1824 . 1838) (punctuation 1823 . 1824) (symbol 1809 . 1823) (semantic-list 1803 . 1809) (punctuation 1801 . 1802) (semantic-list 1789 . 1795) (punctuation 1788 . 1789) (symbol 1758 . 1788) (semantic-list 1752 . 1758) (punctuation 1750 . 1751) (semantic-list 1739 . 1744) (punctuation 1738 . 1739) (symbol 1718 . 1738) (semantic-list 1712 . 1718) (punctuation 1710 . 1711) (semantic-list 1683 . 1704) (punctuation 1682 . 1683) (symbol 1670 . 1682) (semantic-list 1666 . 1670) (punctuation 1664 . 1665) (semantic-list 1543 . 1549) (symbol 1534 . 1542) (punctuation 1533 . 1534) (symbol 1500 . 1508) (punctuation 1499 . 1500) (symbol 1467 . 1475) (punctuation 1466 . 1467) (symbol 1429 . 1437) (punctuation 1428 . 1429) (symbol 1391 . 1399) (punctuation 1390 . 1391) (symbol 1345 . 1353) (punctuation 1344 . 1345) (symbol 1307 . 1315) (punctuation 1306 . 1307) (symbol 1270 . 1278) (punctuation 1269 . 1270) (symbol 1234 . 1242) (punctuation 1233 . 1234) (symbol 1204 . 1212) (punctuation 1203 . 1204) (symbol 1149 . 1157) (punctuation 1148 . 1149) (symbol 1105 . 1113) (punctuation 1104 . 1105) (semantic-list 1064 . 1070) (symbol 1055 . 1063) (punctuation 1054 . 1055) (symbol 1012 . 1020) (punctuation 1011 . 1012) (symbol 980 . 988) (punctuation 979 . 980) (semantic-list 934 . 958) (symbol 925 . 933) (punctuation 924 . 925) (symbol 882 . 890) (punctuation 881 . 882) (semantic-list 846 . 852) (symbol 837 . 845) (punctuation 836 . 837) (semantic-list 799 . 805) (symbol 790 . 798) (punctuation 789 . 790) (semantic-list 743 . 749) (symbol 734 . 742) (punctuation 733 . 734) (symbol 698 . 706) (punctuation 697 . 698) (symbol 654 . 662) (punctuation 653 . 654) (symbol 621 . 629) (punctuation 620 . 621) (semantic-list 598 . 604) (symbol 589 . 597) (punctuation 588 . 589) (semantic-list 550 . 556) (symbol 541 . 549) (punctuation 540 . 541) (symbol 515 . 523) (punctuation 514 . 515) (semantic-list 486 . 492) (symbol 477 . 485) (punctuation 476 . 477) (semantic-list 455 . 463) (symbol 446 . 454) (punctuation 445 . 446) (symbol 420 . 428) (punctuation 419 . 420) (semantic-list 364 . 393) (symbol 355 . 363) (punctuation 354 . 355) (semantic-list 325 . 331) (symbol 316 . 324) (punctuation 315 . 316) (semantic-list 281 . 287) (symbol 272 . 280) (punctuation 271 . 272) (semantic-list 231 . 239) (symbol 222 . 230) (punctuation 221 . 222) (semantic-list 196 . 202) (symbol 187 . 195) (punctuation 186 . 187) (symbol 162 . 184) (punctuation 160 . 161) (symbol 130 . 159) (symbol 120 . 129) (punctuation 119 . 120)))
+    (semanticdb-table "SSURLBag.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("URLBagContext" variable
+               (:pointer 1
+                :type ("SSURLBagContext" type (:type "class") nil nil))
+                nil [459 490])
+            ("arg1" variable (:type "int") nil [519 524])
+            ("arg2" variable (:type "int") nil [567 572])
+            ("URLBagContext" variable (:type "int") nil [580 594])
+            ("_connection" variable (:type "int") nil [601 613])
+            ("arg1" variable (:type "int") nil [656 661])
+            ("_loadURLBag" variable (:type "int") nil [670 682])
+            ("arg1" variable (:type "int") nil [732 737])
+            ("dealloc" variable (:type "int") nil [746 754])
+            ("arg1" variable (:type "int") nil [793 798])
+            ("arg1" variable (:type "int") nil [836 841])
+            ("existingBagDictionary" variable (:type "int") nil [848 870])
+            ("arg2" variable (:type "int") nil [935 940])
+            ("init" variable (:type "int") nil [947 952])
+            ("arg1" variable (:type "int") nil [985 990])
+            ("invalidate" variable (:type "int") nil [999 1010])
+            ("arg2" variable (:type "int") nil [1076 1081])
+            ("arg1" variable (:type "int") nil [1130 1135])
+            ("arg2" variable (:type "int") nil [1174 1179]))          
+      :file "SSURLBag.h"
+      :pointmax 1186
+      :fsize 1185
+      :lastmodtime '(22122 60422 0 0)
+      :unmatched-syntax '((symbol 1182 . 1185) (punctuation 1181 . 1182) (semantic-list 1169 . 1174) (punctuation 1168 . 1169) (symbol 1163 . 1168) (symbol 1158 . 1162) (semantic-list 1154 . 1158) (punctuation 1153 . 1154) (symbol 1142 . 1153) (semantic-list 1138 . 1142) (punctuation 1136 . 1137) (semantic-list 1114 . 1130) (punctuation 1113 . 1114) (symbol 1090 . 1113) (semantic-list 1084 . 1090) (punctuation 1082 . 1083) (semantic-list 1060 . 1076) (punctuation 1059 . 1060) (symbol 1044 . 1059) (symbol 1039 . 1043) (semantic-list 1035 . 1039) (punctuation 1034 . 1035) (symbol 1019 . 1034) (semantic-list 1013 . 1019) (punctuation 1011 . 1012) (semantic-list 993 . 999) (punctuation 991 . 992) (semantic-list 981 . 985) (punctuation 980 . 981) (symbol 959 . 980) (semantic-list 955 . 959) (punctuation 953 . 954) (semantic-list 943 . 947) (punctuation 941 . 942) (semantic-list 919 . 935) (punctuation 918 . 919) (symbol 903 . 918) (symbol 898 . 902) (semantic-list 894 . 898) (punctuation 893 . 894) (symbol 879 . 893) (semantic-list 873 . 879) (punctuation 871 . 872) (semantic-list 844 . 848) (punctuation 842 . 843) (semantic-list 820 . 836) (punctuation 819 . 820) (symbol 807 . 819) (semantic-list 801 . 807) (punctuation 799 . 800) (semantic-list 777 . 793) (punctuation 776 . 777) (symbol 763 . 776) (semantic-list 757 . 763) (punctuation 755 . 756) (semantic-list 740 . 746) (punctuation 738 . 739) (semantic-list 716 . 732) (punctuation 715 . 716) (symbol 691 . 715) (semantic-list 685 . 691) (punctuation 683 . 684) (semantic-list 664 . 670) (punctuation 662 . 663) (semantic-list 652 . 656) (punctuation 651 . 652) (symbol 622 . 651) (semantic-list 616 . 622) (punctuation 614 . 615) (semantic-list 597 . 601) (punctuation 595 . 596) (semantic-list 576 . 580) (punctuation 574 . 575) (semantic-list 563 . 567) (punctuation 562 . 563) (symbol 552 . 562) (symbol 547 . 551) (semantic-list 543 . 547) (punctuation 542 . 543) (symbol 533 . 542) (semantic-list 527 . 533) (punctuation 525 . 526) (semantic-list 515 . 519) (punctuation 514 . 515) (symbol 498 . 514) (semantic-list 494 . 498) (punctuation 492 . 493) (semantic-list 448 . 458) (symbol 439 . 447) (punctuation 438 . 439) (semantic-list 150 . 436) (symbol 141 . 149) (punctuation 139 . 140) (symbol 130 . 138) (symbol 120 . 129) (punctuation 119 . 120)))
+    (semanticdb-table "SSURLBagContext.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("allHTTPHeaders" variable
+               (:pointer 1
+                :type ("NSDictionary" type (:type "class") nil nil))
+                nil [454 483])
+            ("allowedRetryCount" variable (:type "int") nil [506 528])
+            ("allowsBootstrapCellularData" variable (:type ("BOOL" type (:type "class") nil nil)) nil [551 584])
+            ("allowsExpiredBags" variable (:type ("BOOL" type (:type "class") nil nil)) nil [607 630])
+            ("bagType" variable (:type "int") nil [653 665])
+            ("cacheKey" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [698 717])
+            ("debugDescription" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [745 772])
+            ("description" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [800 822])
+            ("hash" variable (:type "unsigned int") nil [844 862])
+            ("ignoresCaches" variable (:type ("BOOL" type (:type "class") nil nil)) nil [885 904])
+            ("superclass" variable (:type ("Class" type (:type "class") nil nil)) nil [926 943])
+            ("userIdentifier" variable
+               (:pointer 1
+                :type ("NSNumber" type (:type "class") nil nil))
+                nil [974 999])
+            ("usesCachedBagsOnly" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1022 1046])
+            ("arg1" variable (:type "int") nil [1078 1083])
+            ("allHTTPHeaders" variable (:type "int") nil [1091 1106])
+            ("allowedRetryCount" variable (:type "int") nil [1114 1132])
+            ("allowsBootstrapCellularData" variable (:type "int") nil [1141 1169])
+            ("allowsExpiredBags" variable (:type "int") nil [1178 1196])
+            ("bagType" variable (:type "int") nil [1204 1212])
+            ("cacheKey" variable (:type "int") nil [1219 1228])
+            ("arg1" variable (:type "int") nil [1269 1274])
+            ("copyXPCEncoding" variable (:type "int") nil [1281 1297])
+            ("dealloc" variable (:type "int") nil [1306 1314])
+            ("description" variable (:type "int") nil [1321 1333])
+            ("hash" variable (:type "int") nil [1350 1355])
+            ("ignoresCaches" variable (:type "int") nil [1364 1378])
+            ("init" variable (:type "int") nil [1385 1390])
+            ("arg1" variable (:type "int") nil [1421 1426])
+            ("arg1" variable (:type "int") nil [1447 1452])
+            ("arg1" variable (:type "int") nil [1483 1488])
+            ("arg1" variable (:type "int") nil [1523 1528])
+            ("arg1" variable (:type "int") nil [1574 1579])
+            ("arg1" variable (:type "int") nil [1615 1620])
+            ("arg1" variable (:type "int") nil [1645 1650])
+            ("arg1" variable (:type "int") nil [1682 1687])
+            ("arg1" variable (:type "int") nil [1718 1723])
+            ("arg1" variable (:type "int") nil [1760 1765])
+            ("arg2" variable (:type "int") nil [1815 1820])
+            ("userIdentifier" variable (:type "int") nil [1827 1842])
+            ("usesCachedBagsOnly" variable (:type "int") nil [1851 1870])
+            ("arg1" variable (:type "int") nil [1905 1910]))          
+      :file "SSURLBagContext.h"
+      :pointmax 1917
+      :fsize 1916
+      :lastmodtime '(22122 60422 0 0)
+      :unmatched-syntax '((symbol 1913 . 1916) (punctuation 1912 . 1913) (semantic-list 1901 . 1905) (punctuation 1900 . 1901) (symbol 1877 . 1900) (semantic-list 1873 . 1877) (punctuation 1871 . 1872) (semantic-list 1845 . 1851) (punctuation 1843 . 1844) (semantic-list 1823 . 1827) (punctuation 1821 . 1822) (semantic-list 1811 . 1815) (punctuation 1810 . 1811) (symbol 1792 . 1810) (symbol 1787 . 1791) (semantic-list 1783 . 1787) (punctuation 1782 . 1783) (symbol 1774 . 1782) (semantic-list 1768 . 1774) (punctuation 1766 . 1767) (semantic-list 1754 . 1760) (punctuation 1753 . 1754) (symbol 1732 . 1753) (semantic-list 1726 . 1732) (punctuation 1724 . 1725) (semantic-list 1714 . 1718) (punctuation 1713 . 1714) (symbol 1696 . 1713) (semantic-list 1690 . 1696) (punctuation 1688 . 1689) (semantic-list 1676 . 1682) (punctuation 1675 . 1676) (symbol 1659 . 1675) (semantic-list 1653 . 1659) (punctuation 1651 . 1652) (semantic-list 1640 . 1645) (punctuation 1639 . 1640) (symbol 1629 . 1639) (semantic-list 1623 . 1629) (punctuation 1621 . 1622) (semantic-list 1609 . 1615) (punctuation 1608 . 1609) (symbol 1588 . 1608) (semantic-list 1582 . 1588) (punctuation 1580 . 1581) (semantic-list 1568 . 1574) (punctuation 1567 . 1568) (symbol 1537 . 1567) (semantic-list 1531 . 1537) (punctuation 1529 . 1530) (semantic-list 1518 . 1523) (punctuation 1517 . 1518) (symbol 1497 . 1517) (semantic-list 1491 . 1497) (punctuation 1489 . 1490) (semantic-list 1479 . 1483) (punctuation 1478 . 1479) (symbol 1461 . 1478) (semantic-list 1455 . 1461) (punctuation 1453 . 1454) (semantic-list 1443 . 1447) (punctuation 1442 . 1443) (symbol 1435 . 1442) (semantic-list 1429 . 1435) (punctuation 1427 . 1428) (semantic-list 1417 . 1421) (punctuation 1416 . 1417) (symbol 1397 . 1416) (semantic-list 1393 . 1397) (punctuation 1391 . 1392) (semantic-list 1381 . 1385) (punctuation 1379 . 1380) (semantic-list 1358 . 1364) (punctuation 1356 . 1357) (semantic-list 1336 . 1350) (punctuation 1334 . 1335) (semantic-list 1317 . 1321) (punctuation 1315 . 1316) (semantic-list 1300 . 1306) (punctuation 1298 . 1299) (semantic-list 1277 . 1281) (punctuation 1275 . 1276) (semantic-list 1248 . 1269) (punctuation 1247 . 1248) (symbol 1235 . 1247) (semantic-list 1231 . 1235) (punctuation 1229 . 1230) (semantic-list 1215 . 1219) (punctuation 1213 . 1214) (semantic-list 1199 . 1204) (punctuation 1197 . 1198) (semantic-list 1172 . 1178) (punctuation 1170 . 1171) (semantic-list 1135 . 1141) (punctuation 1133 . 1134) (semantic-list 1109 . 1114) (punctuation 1107 . 1108) (semantic-list 1087 . 1091) (punctuation 1085 . 1086) (semantic-list 1073 . 1078) (punctuation 1072 . 1073) (symbol 1054 . 1072) (semantic-list 1050 . 1054) (punctuation 1048 . 1049) (semantic-list 1010 . 1021) (symbol 1001 . 1009) (punctuation 1000 . 1001) (semantic-list 954 . 973) (symbol 945 . 953) (punctuation 944 . 945) (semantic-list 915 . 925) (symbol 906 . 914) (punctuation 905 . 906) (semantic-list 873 . 884) (symbol 864 . 872) (punctuation 863 . 864) (semantic-list 833 . 843) (symbol 824 . 832) (punctuation 823 . 824) (semantic-list 783 . 799) (symbol 774 . 782) (punctuation 773 . 774) (semantic-list 728 . 744) (symbol 719 . 727) (punctuation 718 . 719) (semantic-list 676 . 697) (symbol 667 . 675) (punctuation 666 . 667) (semantic-list 641 . 652) (symbol 632 . 640) (punctuation 631 . 632) (semantic-list 595 . 606) (symbol 586 . 594) (punctuation 585 . 586) (semantic-list 539 . 550) (symbol 530 . 538) (punctuation 529 . 530) (semantic-list 494 . 505) (symbol 485 . 493) (punctuation 484 . 485) (semantic-list 436 . 453) (symbol 427 . 435) (punctuation 426 . 427) (semantic-list 182 . 424) (punctuation 180 . 181) (symbol 169 . 180) (punctuation 167 . 168) (symbol 158 . 167) (punctuation 157 . 158) (symbol 148 . 156) (punctuation 146 . 147) (symbol 130 . 145) (symbol 120 . 129) (punctuation 119 . 120)))
+    (semanticdb-table "SSItemOffer.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_offerItem" variable
+               (:pointer 1
+                :type ("SSItem" type (:type "class") nil nil))
+                nil [360 379])
+            ("accountIdentifiers" variable
+               (:pointer 1
+                :type ("NSSet" type (:type "class") nil nil))
+                nil [412 438])
+            ("actionDisplayName" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [471 499])
+            ("actionType" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [532 553])
+            ("buyParameters" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [586 610])
+            ("confirmationDialog" variable
+               (:pointer 1
+                :type ("SSDialog" type (:type "class") nil nil))
+                nil [643 672])
+            ("estimatedDiskSpaceNeeded" variable (:type "long long") nil [705 740])
+            ("networkConstraints" variable
+               (:pointer 1
+                :type ("SSNetworkConstraints" type (:type "class") nil nil))
+                nil [773 814])
+            ("offerIdentifier" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [847 873])
+            ("offerMedia" variable
+               (:pointer 1
+                :type ("SSItemMedia" type (:type "class") nil nil))
+                nil [906 930])
+            ("oneTapOffer" variable (:type ("BOOL" type (:type "class") nil nil)) nil [985 1002])
+            ("preorder" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1054 1068])
+            ("priceDisplay" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1101 1124])
+            ("requiredSoftwareCapabilities" variable (:type ("id" type (:type "class") nil nil)) nil [1157 1189])
+            ("shouldShowPlusIcon" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1222 1246])
+            ("successDialog" variable
+               (:pointer 1
+                :type ("SSDialog" type (:type "class") nil nil))
+                nil [1279 1303])
+            ("supportedDevices" variable
+               (:pointer 1
+                :type ("NSArray" type (:type "class") nil nil))
+                nil [1336 1362])
+            ("_preferredOfferIdentifiers" variable (:type "int") nil [1370 1397])
+            ("_offerItem" variable (:type "int") nil [1405 1416])
+            ("arg1" variable (:type "int") nil [1443 1448])
+            ("accountIdentifiers" variable (:type "int") nil [1455 1474])
+            ("actionDisplayName" variable (:type "int") nil [1481 1499])
+            ("actionType" variable (:type "int") nil [1506 1517])
+            ("allowedToneStyles" variable (:type "int") nil [1524 1542])
+            ("buyParameters" variable (:type "int") nil [1549 1563])
+            ("confirmationDialog" variable (:type "int") nil [1570 1589])
+            ("arg1" variable (:type "int") nil [1630 1635])
+            ("dealloc" variable (:type "int") nil [1644 1652])
+            ("description" variable (:type "int") nil [1659 1671])
+            ("documentCannotOpenDialog" variable (:type "int") nil [1678 1703])
+            ("documentRequiredHandlers" variable (:type "int") nil [1710 1735])
+            ("documentUTI" variable (:type "int") nil [1742 1754])
+            ("estimatedDiskSpaceNeeded" variable (:type "int") nil [1768 1793])
+            ("init" variable (:type "int") nil [1800 1805])
+            ("arg2" variable (:type "int") nil [1860 1865])
+            ("isOneTapOffer" variable (:type "int") nil [1874 1888])
+            ("isPreorder" variable (:type "int") nil [1897 1908])
+            ("networkConstraints" variable (:type "int") nil [1915 1934])
+            ("offerIdentifier" variable (:type "int") nil [1941 1957])
+            ("offerMedia" variable (:type "int") nil [1964 1975])
+            ("playableMedia" variable (:type "int") nil [1982 1996])
+            ("priceDisplay" variable (:type "int") nil [2003 2016])
+            ("requiredSoftwareCapabilities" variable (:type "int") nil [2023 2052])
+            ("arg1" variable (:type "int") nil [2086 2091])
+            ("arg1" variable (:type "int") nil [2121 2126])
+            ("arg1" variable (:type "int") nil [2156 2161])
+            ("arg1" variable (:type "int") nil [2190 2195])
+            ("shouldShowPlusIcon" variable (:type "int") nil [2204 2223])
+            ("successDialog" variable (:type "int") nil [2230 2244])
+            ("supportedDevices" variable (:type "int") nil [2251 2268])
+            ("arg1" variable (:type "int") nil [2296 2301]))          
+      :file "SSItemOffer.h"
+      :pointmax 2308
+      :fsize 2307
+      :lastmodtime '(22122 60422 0 0)
+      :unmatched-syntax '((symbol 2304 . 2307) (punctuation 2303 . 2304) (semantic-list 2292 . 2296) (punctuation 2291 . 2292) (symbol 2275 . 2291) (semantic-list 2271 . 2275) (punctuation 2269 . 2270) (semantic-list 2247 . 2251) (punctuation 2245 . 2246) (semantic-list 2226 . 2230) (punctuation 2224 . 2225) (semantic-list 2198 . 2204) (punctuation 2196 . 2197) (semantic-list 2186 . 2190) (punctuation 2185 . 2186) (symbol 2170 . 2185) (semantic-list 2164 . 2170) (punctuation 2162 . 2163) (semantic-list 2150 . 2156) (punctuation 2149 . 2150) (symbol 2135 . 2149) (semantic-list 2129 . 2135) (punctuation 2127 . 2128) (semantic-list 2117 . 2121) (punctuation 2116 . 2117) (symbol 2100 . 2116) (semantic-list 2094 . 2100) (punctuation 2092 . 2093) (semantic-list 2082 . 2086) (punctuation 2081 . 2082) (symbol 2061 . 2081) (semantic-list 2055 . 2061) (punctuation 2053 . 2054) (semantic-list 2019 . 2023) (punctuation 2017 . 2018) (semantic-list 1999 . 2003) (punctuation 1997 . 1998) (semantic-list 1978 . 1982) (punctuation 1976 . 1977) (semantic-list 1960 . 1964) (punctuation 1958 . 1959) (semantic-list 1937 . 1941) (punctuation 1935 . 1936) (semantic-list 1911 . 1915) (punctuation 1909 . 1910) (semantic-list 1891 . 1897) (punctuation 1889 . 1890) (semantic-list 1868 . 1874) (punctuation 1866 . 1867) (semantic-list 1856 . 1860) (punctuation 1855 . 1856) (symbol 1845 . 1855) (symbol 1840 . 1844) (semantic-list 1836 . 1840) (punctuation 1835 . 1836) (symbol 1812 . 1835) (semantic-list 1808 . 1812) (punctuation 1806 . 1807) (semantic-list 1796 . 1800) (punctuation 1794 . 1795) (semantic-list 1757 . 1768) (punctuation 1755 . 1756) (semantic-list 1738 . 1742) (punctuation 1736 . 1737) (semantic-list 1706 . 1710) (punctuation 1704 . 1705) (semantic-list 1674 . 1678) (punctuation 1672 . 1673) (semantic-list 1655 . 1659) (punctuation 1653 . 1654) (semantic-list 1638 . 1644) (punctuation 1636 . 1637) (semantic-list 1609 . 1630) (punctuation 1608 . 1609) (symbol 1596 . 1608) (semantic-list 1592 . 1596) (punctuation 1590 . 1591) (semantic-list 1566 . 1570) (punctuation 1564 . 1565) (semantic-list 1545 . 1549) (punctuation 1543 . 1544) (semantic-list 1520 . 1524) (punctuation 1518 . 1519) (semantic-list 1502 . 1506) (punctuation 1500 . 1501) (semantic-list 1477 . 1481) (punctuation 1475 . 1476) (semantic-list 1451 . 1455) (punctuation 1449 . 1450) (semantic-list 1439 . 1443) (punctuation 1438 . 1439) (symbol 1425 . 1438) (semantic-list 1419 . 1425) (punctuation 1417 . 1418) (semantic-list 1401 . 1405) (punctuation 1399 . 1400) (semantic-list 1366 . 1370) (punctuation 1364 . 1365) (semantic-list 1314 . 1335) (symbol 1305 . 1313) (punctuation 1304 . 1305) (semantic-list 1257 . 1278) (symbol 1248 . 1256) (punctuation 1247 . 1248) (semantic-list 1200 . 1221) (symbol 1191 . 1199) (punctuation 1190 . 1191) (semantic-list 1135 . 1156) (symbol 1126 . 1134) (punctuation 1125 . 1126) (semantic-list 1079 . 1100) (symbol 1070 . 1078) (punctuation 1069 . 1070) (semantic-list 1013 . 1053) (symbol 1004 . 1012) (punctuation 1003 . 1004) (semantic-list 941 . 984) (symbol 932 . 940) (punctuation 931 . 932) (semantic-list 884 . 905) (symbol 875 . 883) (punctuation 874 . 875) (semantic-list 825 . 846) (symbol 816 . 824) (punctuation 815 . 816) (semantic-list 751 . 772) (symbol 742 . 750) (punctuation 741 . 742) (semantic-list 683 . 704) (symbol 674 . 682) (punctuation 673 . 674) (semantic-list 621 . 642) (symbol 612 . 620) (punctuation 611 . 612) (semantic-list 564 . 585) (symbol 555 . 563) (punctuation 554 . 555) (semantic-list 510 . 531) (symbol 501 . 509) (punctuation 500 . 501) (semantic-list 449 . 470) (symbol 440 . 448) (punctuation 439 . 440) (semantic-list 390 . 411) (symbol 381 . 389) (punctuation 380 . 381) (semantic-list 306 . 359) (symbol 297 . 305) (punctuation 296 . 297) (semantic-list 165 . 294) (punctuation 163 . 164) (symbol 154 . 163) (punctuation 153 . 154) (symbol 144 . 152) (punctuation 142 . 143) (symbol 130 . 141) (symbol 120 . 129) (punctuation 119 . 120)))
+    (semanticdb-table "SSItem.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ITunesStoreIdentifier" variable
+               (:pointer 1
+                :type ("NSNumber" type (:type "class") nil nil))
+                nil [498 530])
+            ("allItemOffers" variable
+               (:pointer 1
+                :type ("NSArray" type (:type "class") nil nil))
+                nil [563 586])
+            ("artistName" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [619 640])
+            ("averageUserRating" variable (:type "float") nil [673 697])
+            ("debugDescription" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [725 752])
+            ("defaultItemOffer" variable
+               (:pointer 1
+                :type ("SSItemOffer" type (:type "class") nil nil))
+                nil [785 815])
+            ("description" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [843 865])
+            ("expirationDate" variable
+               (:pointer 1
+                :type ("NSDate" type (:type "class") nil nil))
+                nil [898 921])
+            ("gameCenterEnabled" variable (:type ("BOOL" type (:type "class") nil nil)) nil [982 1005])
+            ("hash" variable (:type "unsigned int") nil [1027 1045])
+            ("highDefinition" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1103 1123])
+            ("imageCollection" variable
+               (:pointer 1
+                :type ("SSItemImageCollection" type (:type "class") nil nil))
+                nil [1156 1195])
+            ("itemKind" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1228 1247])
+            ("itemTitle" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1280 1300])
+            ("numberOfUserRatings" variable (:type "int") nil [1333 1357])
+            ("restricted" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1411 1427])
+            ("superclass" variable (:type ("Class" type (:type "class") nil nil)) nil [1449 1466])
+            ("thumbnailImages" variable
+               (:pointer 1
+                :type ("NSArray" type (:type "class") nil nil))
+                nil [1499 1524])
+            ("viewItemURL" variable
+               (:pointer 1
+                :type ("NSURL" type (:type "class") nil nil))
+                nil [1557 1576])
+            ("ITunesStoreIdentifier" variable (:type "int") nil [1584 1606])
+            ("arg1" variable (:type "int") nil [1651 1656])
+            ("_offers" variable (:type "int") nil [1663 1671])
+            ("arg1" variable (:type "int") nil [1703 1708])
+            ("_tellAFriendDictionary" variable (:type "int") nil [1715 1738])
+            ("allItemOffers" variable (:type "int") nil [1745 1759])
+            ("artistIdentifier" variable (:type "int") nil [1766 1783])
+            ("artistName" variable (:type "int") nil [1790 1801])
+            ("averageUserRating" variable (:type "int") nil [1811 1829])
+            ("bundleIdentifier" variable (:type "int") nil [1836 1853])
+            ("bundleVersion" variable (:type "int") nil [1860 1874])
+            ("buyParameters" variable (:type "int") nil [1881 1895])
+            ("collectionArtistName" variable (:type "int") nil [1902 1923])
+            ("collectionIdentifier" variable (:type "int") nil [1930 1951])
+            ("collectionIndexInCollectionGroup" variable (:type "int") nil [1958 1991])
+            ("collectionName" variable (:type "int") nil [1998 2013])
+            ("composerName" variable (:type "int") nil [2020 2033])
+            ("contentRating" variable (:type "int") nil [2040 2054])
+            ("dealloc" variable (:type "int") nil [2063 2071])
+            ("defaultItemOffer" variable (:type "int") nil [2078 2095])
+            ("description" variable (:type "int") nil [2102 2114])
+            ("episodeIdentifier" variable (:type "int") nil [2121 2139])
+            ("episodeSortIdentifier" variable (:type "int") nil [2146 2168])
+            ("expirationDate" variable (:type "int") nil [2175 2190])
+            ("genreIdentifier" variable (:type "int") nil [2197 2213])
+            ("genreName" variable (:type "int") nil [2220 2230])
+            ("imageCollection" variable (:type "int") nil [2237 2253])
+            ("indexInCollection" variable (:type "int") nil [2260 2278])
+            ("arg1" variable (:type "int") nil [2312 2317])
+            ("isCompilation" variable (:type "int") nil [2326 2340])
+            ("isGameCenterEnabled" variable (:type "int") nil [2349 2369])
+            ("isHighDefinition" variable (:type "int") nil [2378 2395])
+            ("isRestricted" variable (:type "int") nil [2404 2417])
+            ("itemKind" variable (:type "int") nil [2424 2433])
+            ("arg1" variable (:type "int") nil [2467 2472])
+            ("itemTitle" variable (:type "int") nil [2479 2489])
+            ("arg1" variable (:type "int") nil [2558 2563])
+            ("longDescription" variable (:type "int") nil [2570 2586])
+            ("mediaKind" variable (:type "int") nil [2593 2603])
+            ("networkName" variable (:type "int") nil [2610 2622])
+            ("numberOfCollectionsInCollectionGroup" variable (:type "int") nil [2629 2666])
+            ("numberOfItemsInCollection" variable (:type "int") nil [2673 2699])
+            ("numberOfPrintedPages" variable (:type "int") nil [2707 2728])
+            ("numberOfUserRatings" variable (:type "int") nil [2736 2756])
+            ("playableMedia" variable (:type "int") nil [2763 2777])
+            ("podcastEpisodeGUID" variable (:type "int") nil [2784 2803])
+            ("podcastFeedURL" variable (:type "int") nil [2810 2825])
+            ("preOrderIdentifier" variable (:type "int") nil [2832 2851])
+            ("priceDisplay" variable (:type "int") nil [2858 2871])
+            ("rawItemDictionary" variable (:type "int") nil [2878 2896])
+            ("arg1" variable (:type "int") nil [2935 2940])
+            ("releaseDate" variable (:type "int") nil [2947 2959])
+            ("releaseDateString" variable (:type "int") nil [2966 2984])
+            ("arg2" variable (:type "int") nil [3031 3036])
+            ("arg1" variable (:type "int") nil [3066 3071])
+            ("seasonNumber" variable (:type "int") nil [3078 3091])
+            ("sendGiftURL" variable (:type "int") nil [3098 3110])
+            ("seriesName" variable (:type "int") nil [3117 3128])
+            ("shortDescription" variable (:type "int") nil [3135 3152])
+            ("softwareType" variable (:type "int") nil [3159 3172])
+            ("tellAFriendBody" variable (:type "int") nil [3179 3195])
+            ("tellAFriendBodyMIMEType" variable (:type "int") nil [3202 3226])
+            ("tellAFriendBodyURL" variable (:type "int") nil [3233 3252])
+            ("tellAFriendSubject" variable (:type "int") nil [3259 3278])
+            ("thumbnailImages" variable (:type "int") nil [3285 3301])
+            ("tweetInitialText" variable (:type "int") nil [3308 3325])
+            ("tweetURL" variable (:type "int") nil [3332 3341])
+            ("arg2" variable (:type "int") nil [3403 3408])
+            ("arg1" variable (:type "int") nil [3436 3441])
+            ("videoDetails" variable (:type "int") nil [3448 3461])
+            ("viewItemURL" variable (:type "int") nil [3468 3480])
+            ("viewReviewsURL" variable (:type "int") nil [3487 3502]))          
+      :file "SSItem.h"
+      :pointmax 3509
+      :fsize 3508
+      :lastmodtime '(22122 60422 0 0)
+      :unmatched-syntax '((symbol 3505 . 3508) (punctuation 3504 . 3505) (semantic-list 3483 . 3487) (punctuation 3481 . 3482) (semantic-list 3464 . 3468) (punctuation 3462 . 3463) (semantic-list 3444 . 3448) (punctuation 3442 . 3443) (semantic-list 3432 . 3436) (punctuation 3431 . 3432) (symbol 3415 . 3431) (semantic-list 3411 . 3415) (punctuation 3409 . 3410) (semantic-list 3399 . 3403) (punctuation 3398 . 3399) (symbol 3380 . 3398) (symbol 3375 . 3379) (semantic-list 3371 . 3375) (punctuation 3370 . 3371) (symbol 3350 . 3370) (semantic-list 3344 . 3350) (punctuation 3342 . 3343) (semantic-list 3328 . 3332) (punctuation 3326 . 3327) (semantic-list 3304 . 3308) (punctuation 3302 . 3303) (semantic-list 3281 . 3285) (punctuation 3279 . 3280) (semantic-list 3255 . 3259) (punctuation 3253 . 3254) (semantic-list 3229 . 3233) (punctuation 3227 . 3228) (semantic-list 3198 . 3202) (punctuation 3196 . 3197) (semantic-list 3175 . 3179) (punctuation 3173 . 3174) (semantic-list 3155 . 3159) (punctuation 3153 . 3154) (semantic-list 3131 . 3135) (punctuation 3129 . 3130) (semantic-list 3113 . 3117) (punctuation 3111 . 3112) (semantic-list 3094 . 3098) (punctuation 3092 . 3093) (semantic-list 3074 . 3078) (punctuation 3072 . 3073) (semantic-list 3062 . 3066) (punctuation 3061 . 3062) (symbol 3045 . 3061) (semantic-list 3039 . 3045) (punctuation 3037 . 3038) (semantic-list 3027 . 3031) (punctuation 3026 . 3027) (symbol 3010 . 3026) (symbol 3005 . 3009) (semantic-list 3001 . 3005) (punctuation 3000 . 3001) (symbol 2993 . 3000) (semantic-list 2987 . 2993) (punctuation 2985 . 2986) (semantic-list 2962 . 2966) (punctuation 2960 . 2961) (semantic-list 2943 . 2947) (punctuation 2941 . 2942) (semantic-list 2931 . 2935) (punctuation 2930 . 2931) (symbol 2903 . 2930) (semantic-list 2899 . 2903) (punctuation 2897 . 2898) (semantic-list 2874 . 2878) (punctuation 2872 . 2873) (semantic-list 2854 . 2858) (punctuation 2852 . 2853) (semantic-list 2828 . 2832) (punctuation 2826 . 2827) (semantic-list 2806 . 2810) (punctuation 2804 . 2805) (semantic-list 2780 . 2784) (punctuation 2778 . 2779) (semantic-list 2759 . 2763) (punctuation 2757 . 2758) (semantic-list 2731 . 2736) (punctuation 2729 . 2730) (semantic-list 2702 . 2707) (punctuation 2700 . 2701) (semantic-list 2669 . 2673) (punctuation 2667 . 2668) (semantic-list 2625 . 2629) (punctuation 2623 . 2624) (semantic-list 2606 . 2610) (punctuation 2604 . 2605) (semantic-list 2589 . 2593) (punctuation 2587 . 2588) (semantic-list 2566 . 2570) (punctuation 2564 . 2565) (semantic-list 2542 . 2558) (punctuation 2541 . 2542) (symbol 2498 . 2541) (semantic-list 2492 . 2498) (punctuation 2490 . 2491) (semantic-list 2475 . 2479) (punctuation 2473 . 2474) (semantic-list 2463 . 2467) (punctuation 2462 . 2463) (symbol 2440 . 2462) (semantic-list 2436 . 2440) (punctuation 2434 . 2435) (semantic-list 2420 . 2424) (punctuation 2418 . 2419) (semantic-list 2398 . 2404) (punctuation 2396 . 2397) (semantic-list 2372 . 2378) (punctuation 2370 . 2371) (semantic-list 2343 . 2349) (punctuation 2341 . 2342) (semantic-list 2320 . 2326) (punctuation 2318 . 2319) (semantic-list 2308 . 2312) (punctuation 2307 . 2308) (symbol 2285 . 2307) (semantic-list 2281 . 2285) (punctuation 2279 . 2280) (semantic-list 2256 . 2260) (punctuation 2254 . 2255) (semantic-list 2233 . 2237) (punctuation 2231 . 2232) (semantic-list 2216 . 2220) (punctuation 2214 . 2215) (semantic-list 2193 . 2197) (punctuation 2191 . 2192) (semantic-list 2171 . 2175) (punctuation 2169 . 2170) (semantic-list 2142 . 2146) (punctuation 2140 . 2141) (semantic-list 2117 . 2121) (punctuation 2115 . 2116) (semantic-list 2098 . 2102) (punctuation 2096 . 2097) (semantic-list 2074 . 2078) (punctuation 2072 . 2073) (semantic-list 2057 . 2063) (punctuation 2055 . 2056) (semantic-list 2036 . 2040) (punctuation 2034 . 2035) (semantic-list 2016 . 2020) (punctuation 2014 . 2015) (semantic-list 1994 . 1998) (punctuation 1992 . 1993) (semantic-list 1954 . 1958) (punctuation 1952 . 1953) (semantic-list 1926 . 1930) (punctuation 1924 . 1925) (semantic-list 1898 . 1902) (punctuation 1896 . 1897) (semantic-list 1877 . 1881) (punctuation 1875 . 1876) (semantic-list 1856 . 1860) (punctuation 1854 . 1855) (semantic-list 1832 . 1836) (punctuation 1830 . 1831) (semantic-list 1804 . 1811) (punctuation 1802 . 1803) (semantic-list 1786 . 1790) (punctuation 1784 . 1785) (semantic-list 1762 . 1766) (punctuation 1760 . 1761) (semantic-list 1741 . 1745) (punctuation 1739 . 1740) (semantic-list 1711 . 1715) (punctuation 1709 . 1710) (semantic-list 1699 . 1703) (punctuation 1698 . 1699) (symbol 1680 . 1698) (semantic-list 1674 . 1680) (punctuation 1672 . 1673) (semantic-list 1659 . 1663) (punctuation 1657 . 1658) (semantic-list 1647 . 1651) (punctuation 1646 . 1647) (symbol 1615 . 1646) (semantic-list 1609 . 1615) (punctuation 1607 . 1608) (semantic-list 1580 . 1584) (punctuation 1578 . 1579) (semantic-list 1535 . 1556) (symbol 1526 . 1534) (punctuation 1525 . 1526) (semantic-list 1477 . 1498) (symbol 1468 . 1476) (punctuation 1467 . 1468) (semantic-list 1438 . 1448) (symbol 1429 . 1437) (punctuation 1428 . 1429) (semantic-list 1368 . 1410) (symbol 1359 . 1367) (punctuation 1358 . 1359) (semantic-list 1311 . 1332) (symbol 1302 . 1310) (punctuation 1301 . 1302) (semantic-list 1258 . 1279) (symbol 1249 . 1257) (punctuation 1248 . 1249) (semantic-list 1206 . 1227) (symbol 1197 . 1205) (punctuation 1196 . 1197) (semantic-list 1134 . 1155) (symbol 1125 . 1133) (punctuation 1124 . 1125) (semantic-list 1056 . 1102) (symbol 1047 . 1055) (punctuation 1046 . 1047) (semantic-list 1016 . 1026) (symbol 1007 . 1015) (punctuation 1006 . 1007) (semantic-list 932 . 981) (symbol 923 . 931) (punctuation 922 . 923) (semantic-list 876 . 897) (symbol 867 . 875) (punctuation 866 . 867) (semantic-list 826 . 842) (symbol 817 . 825) (punctuation 816 . 817) (semantic-list 763 . 784) (symbol 754 . 762) (punctuation 753 . 754) (semantic-list 708 . 724) (symbol 699 . 707) (punctuation 698 . 699) (semantic-list 651 . 672) (symbol 642 . 650) (punctuation 641 . 642) (semantic-list 597 . 618) (symbol 588 . 596) (punctuation 587 . 588) (semantic-list 541 . 562) (symbol 532 . 540) (punctuation 531 . 532) (semantic-list 476 . 497) (symbol 467 . 475) (punctuation 466 . 467) (semantic-list 181 . 464) (punctuation 179 . 180) (symbol 149 . 179) (punctuation 148 . 149) (symbol 139 . 147) (punctuation 137 . 138) (symbol 130 . 136) (symbol 120 . 129) (punctuation 119 . 120)))
+    (semanticdb-table "ISPurchaseReceipt.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("adamID" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [990 1007])
+            ("bundleIdentifier" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1029 1056])
+            ("bundleVersion" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1078 1102])
+            ("cancellationReason" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1124 1153])
+            ("developerID" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1175 1197])
+            ("downloadID" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1219 1240])
+            ("dsid" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1262 1277])
+            ("expirationDate" variable
+               (:pointer 1
+                :type ("NSDate" type (:type "class") nil nil))
+                nil [1299 1322])
+            ("frToolVersion" variable
+               (:pointer 1
+                :type ("NSNumber" type (:type "class") nil nil))
+                nil [1344 1368])
+            ("hwtype" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1390 1407])
+            ("installerVersionID" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1429 1458])
+            ("isProductionReceipt" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1480 1505])
+            ("isRevoked" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1527 1542])
+            ("isVPPLicensed" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1564 1583])
+            ("organizationDisplayName" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1605 1639])
+            ("parentalControls" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1661 1688])
+            ("purchaseDate" variable
+               (:pointer 1
+                :type ("NSDate" type (:type "class") nil nil))
+                nil [1710 1731])
+            ("purchaseDateString" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1753 1782])
+            ("receiptCreationDate" variable
+               (:pointer 1
+                :type ("NSDate" type (:type "class") nil nil))
+                nil [1804 1832])
+            ("receiptData" variable
+               (:pointer 1
+                :type ("NSData" type (:type "class") nil nil))
+                nil [1854 1874])
+            ("receiptDataString" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1896 1924])
+            ("receiptType" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1946 1968])
+            ("renewalDate" variable
+               (:pointer 1
+                :type ("NSDate" type (:type "class") nil nil))
+                nil [1990 2010])
+            ("renewalDateString" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [2032 2060])
+            ("arg1" variable (:type "int") nil [2096 2101])
+            ("arg1" variable (:type "int") nil [2135 2140])
+            ("arg1" variable (:type "int") nil [2178 2183])
+            ("arg1" variable (:type "int") nil [2220 2225])
+            ("arg1" variable (:type "int") nil [2284 2289])
+            ("_copySignedDataCertificates" variable (:type "int") nil [2315 2343])
+            ("_load" variable (:type "int") nil [2352 2358])
+            ("arg3" variable (:type "int") nil [2457 2462])
+            ("adamID" variable (:type "int") nil [2469 2476])
+            ("bundleIdentifier" variable (:type "int") nil [2483 2500])
+            ("bundleVersion" variable (:type "int") nil [2507 2521])
+            ("cancellationReason" variable (:type "int") nil [2528 2547])
+            ("checkSignature" variable (:type "int") nil [2555 2570])
+            ("checkSignatureAgainstCurrentDate" variable (:type "int") nil [2578 2611])
+            ("checkSignatureSkipRevocation" variable (:type "int") nil [2619 2648])
+            ("dealloc" variable (:type "int") nil [2657 2665])
+            ("developerID" variable (:type "int") nil [2672 2684])
+            ("downloadID" variable (:type "int") nil [2691 2702])
+            ("dsid" variable (:type "int") nil [2709 2714])
+            ("expirationDate" variable (:type "int") nil [2721 2736])
+            ("frToolVersion" variable (:type "int") nil [2743 2757])
+            ("hwtype" variable (:type "int") nil [2764 2771])
+            ("arg1" variable (:type "int") nil [2805 2810])
+            ("installerVersionID" variable (:type "int") nil [2817 2836])
+            ("isProductionReceipt" variable (:type "int") nil [2845 2865])
+            ("isRevoked" variable (:type "int") nil [2874 2884])
+            ("isVPPLicensed" variable (:type "int") nil [2893 2907])
+            ("isValid" variable (:type "int") nil [2916 2924])
+            ("organizationDisplayName" variable (:type "int") nil [2931 2955])
+            ("parentalControls" variable (:type "int") nil [2962 2979])
+            ("purchaseDate" variable (:type "int") nil [2986 2999])
+            ("purchaseDateString" variable (:type "int") nil [3006 3025])
+            ("receiptCreationDate" variable (:type "int") nil [3032 3052])
+            ("receiptData" variable (:type "int") nil [3059 3071])
+            ("receiptDataString" variable (:type "int") nil [3078 3096])
+            ("receiptType" variable (:type "int") nil [3103 3115])
+            ("renewalDate" variable (:type "int") nil [3122 3134])
+            ("renewalDateString" variable (:type "int") nil [3141 3159])
+            ("arg1" variable (:type "int") nil [3206 3211])
+            ("arg1" variable (:type "int") nil [3256 3261]))          
+      :file "ISPurchaseReceipt.h"
+      :pointmax 3268
+      :fsize 3267
+      :lastmodtime '(22122 60422 0 0)
+      :unmatched-syntax '((symbol 3264 . 3267) (punctuation 3263 . 3264) (semantic-list 3249 . 3256) (punctuation 3248 . 3249) (symbol 3220 . 3248) (semantic-list 3214 . 3220) (punctuation 3212 . 3213) (semantic-list 3199 . 3206) (punctuation 3198 . 3199) (symbol 3168 . 3198) (semantic-list 3162 . 3168) (punctuation 3160 . 3161) (semantic-list 3137 . 3141) (punctuation 3135 . 3136) (semantic-list 3118 . 3122) (punctuation 3116 . 3117) (semantic-list 3099 . 3103) (punctuation 3097 . 3098) (semantic-list 3074 . 3078) (punctuation 3072 . 3073) (semantic-list 3055 . 3059) (punctuation 3053 . 3054) (semantic-list 3028 . 3032) (punctuation 3026 . 3027) (semantic-list 3002 . 3006) (punctuation 3000 . 3001) (semantic-list 2982 . 2986) (punctuation 2980 . 2981) (semantic-list 2958 . 2962) (punctuation 2956 . 2957) (semantic-list 2927 . 2931) (punctuation 2925 . 2926) (semantic-list 2910 . 2916) (punctuation 2908 . 2909) (semantic-list 2887 . 2893) (punctuation 2885 . 2886) (semantic-list 2868 . 2874) (punctuation 2866 . 2867) (semantic-list 2839 . 2845) (punctuation 2837 . 2838) (semantic-list 2813 . 2817) (punctuation 2811 . 2812) (semantic-list 2801 . 2805) (punctuation 2800 . 2801) (symbol 2778 . 2800) (semantic-list 2774 . 2778) (punctuation 2772 . 2773) (semantic-list 2760 . 2764) (punctuation 2758 . 2759) (semantic-list 2739 . 2743) (punctuation 2737 . 2738) (semantic-list 2717 . 2721) (punctuation 2715 . 2716) (semantic-list 2705 . 2709) (punctuation 2703 . 2704) (semantic-list 2687 . 2691) (punctuation 2685 . 2686) (semantic-list 2668 . 2672) (punctuation 2666 . 2667) (semantic-list 2651 . 2657) (punctuation 2649 . 2650) (semantic-list 2614 . 2619) (punctuation 2612 . 2613) (semantic-list 2573 . 2578) (punctuation 2571 . 2572) (semantic-list 2550 . 2555) (punctuation 2548 . 2549) (semantic-list 2524 . 2528) (punctuation 2522 . 2523) (semantic-list 2503 . 2507) (punctuation 2501 . 2502) (semantic-list 2479 . 2483) (punctuation 2477 . 2478) (semantic-list 2465 . 2469) (punctuation 2463 . 2464) (semantic-list 2451 . 2457) (punctuation 2450 . 2451) (symbol 2436 . 2450) (symbol 2431 . 2435) (semantic-list 2425 . 2431) (punctuation 2424 . 2425) (symbol 2409 . 2424) (symbol 2404 . 2408) (semantic-list 2398 . 2404) (punctuation 2397 . 2398) (symbol 2366 . 2397) (semantic-list 2361 . 2366) (punctuation 2359 . 2360) (semantic-list 2346 . 2352) (punctuation 2344 . 2345) (semantic-list 2292 . 2315) (punctuation 2290 . 2291) (semantic-list 2260 . 2284) (punctuation 2259 . 2260) (symbol 2235 . 2259) (semantic-list 2229 . 2235) (punctuation 2227 . 2228) (semantic-list 2216 . 2220) (punctuation 2215 . 2216) (symbol 2190 . 2215) (semantic-list 2186 . 2190) (punctuation 2184 . 2185) (semantic-list 2174 . 2178) (punctuation 2173 . 2174) (symbol 2147 . 2173) (semantic-list 2143 . 2147) (punctuation 2141 . 2142) (semantic-list 2131 . 2135) (punctuation 2130 . 2131) (symbol 2108 . 2130) (semantic-list 2104 . 2108) (punctuation 2102 . 2103) (semantic-list 2092 . 2096) (punctuation 2091 . 2092) (symbol 2068 . 2091) (semantic-list 2064 . 2068) (punctuation 2062 . 2063) (semantic-list 2021 . 2031) (symbol 2012 . 2020) (punctuation 2011 . 2012) (semantic-list 1979 . 1989) (symbol 1970 . 1978) (punctuation 1969 . 1970) (semantic-list 1935 . 1945) (symbol 1926 . 1934) (punctuation 1925 . 1926) (semantic-list 1885 . 1895) (symbol 1876 . 1884) (punctuation 1875 . 1876) (semantic-list 1843 . 1853) (symbol 1834 . 1842) (punctuation 1833 . 1834) (semantic-list 1793 . 1803) (symbol 1784 . 1792) (punctuation 1783 . 1784) (semantic-list 1742 . 1752) (symbol 1733 . 1741) (punctuation 1732 . 1733) (semantic-list 1699 . 1709) (symbol 1690 . 1698) (punctuation 1689 . 1690) (semantic-list 1650 . 1660) (symbol 1641 . 1649) (punctuation 1640 . 1641) (semantic-list 1594 . 1604) (symbol 1585 . 1593) (punctuation 1584 . 1585) (semantic-list 1553 . 1563) (symbol 1544 . 1552) (punctuation 1543 . 1544) (semantic-list 1516 . 1526) (symbol 1507 . 1515) (punctuation 1506 . 1507) (semantic-list 1469 . 1479) (symbol 1460 . 1468) (punctuation 1459 . 1460) (semantic-list 1418 . 1428) (symbol 1409 . 1417) (punctuation 1408 . 1409) (semantic-list 1379 . 1389) (symbol 1370 . 1378) (punctuation 1369 . 1370) (semantic-list 1333 . 1343) (symbol 1324 . 1332) (punctuation 1323 . 1324) (semantic-list 1288 . 1298) (symbol 1279 . 1287) (punctuation 1278 . 1279) (semantic-list 1251 . 1261) (symbol 1242 . 1250) (punctuation 1241 . 1242) (semantic-list 1208 . 1218) (symbol 1199 . 1207) (punctuation 1198 . 1199) (semantic-list 1164 . 1174) (symbol 1155 . 1163) (punctuation 1154 . 1155) (semantic-list 1113 . 1123) (symbol 1104 . 1112) (punctuation 1103 . 1104) (semantic-list 1067 . 1077) (symbol 1058 . 1066) (punctuation 1057 . 1058) (semantic-list 1018 . 1028) (symbol 1009 . 1017) (punctuation 1008 . 1009) (semantic-list 979 . 989) (symbol 970 . 978) (punctuation 969 . 970) (semantic-list 159 . 967) (symbol 150 . 158) (punctuation 148 . 149) (symbol 130 . 147) (symbol 120 . 129) (punctuation 119 . 120)))
+    (semanticdb-table "SSEventMonitor.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("delegate" variable
+               (:pointer 1
+                :type ("property" type
+                     (:template-specifier 
+                        ( ("SSEventMonitorDelegate" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [340 384])
+            ("_connectEventConnection" variable (:type "int") nil [394 418])
+            ("arg2" variable (:type "int") nil [476 481])
+            ("dealloc" variable (:type "int") nil [490 498])
+            ("delegate" variable (:type "int") nil [505 514])
+            ("init" variable (:type "int") nil [521 526])
+            ("arg1" variable (:type "int") nil [551 556]))          
+      :file "SSEventMonitor.h"
+      :pointmax 563
+      :fsize 562
+      :lastmodtime '(22122 60422 0 0)
+      :unmatched-syntax '((symbol 559 . 562) (punctuation 558 . 559) (semantic-list 547 . 551) (punctuation 546 . 547) (symbol 535 . 546) (semantic-list 529 . 535) (punctuation 527 . 528) (semantic-list 517 . 521) (punctuation 515 . 516) (semantic-list 501 . 505) (punctuation 499 . 500) (semantic-list 484 . 490) (punctuation 482 . 483) (semantic-list 472 . 476) (punctuation 471 . 472) (symbol 451 . 471) (symbol 446 . 450) (semantic-list 442 . 446) (punctuation 441 . 442) (symbol 427 . 441) (semantic-list 421 . 427) (punctuation 419 . 420) (semantic-list 388 . 394) (punctuation 386 . 387) (punctuation 339 . 340) (semantic-list 156 . 337) (symbol 147 . 155) (punctuation 145 . 146) (symbol 130 . 144) (symbol 120 . 129) (punctuation 119 . 120))))
+  :file "!Users!drwrong!Desktop!iOS-Runtime-Headers-9.2!PrivateFrameworks!StoreServices.framework!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,41 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "start_process.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("argparse" include nil nil [24 39])
+            ("os" include nil nil [40 49])
+            ("sys" include nil nil [50 60])
+            ("BASE_DIR" variable nil nil [62 140])
+            ("sys" code nil nil [141 187])
+            ("start" function (:arguments 
+              ( ("execute_dir" variable nil (reparse-symbol function_parameters) [200 211]))              ) nil [190 468])
+            ("ap" variable nil nil [470 557])
+            ("ap" code nil nil [558 687])
+            ("args" variable nil nil [688 710])
+            ("start" code nil nil [711 733]))          
+      :file "start_process.py"
+      :pointmax 734
+      :fsize 733
+      :lastmodtime '(22716 55521 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "start_celery.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("argparse" include nil nil [48 63])
+            ("os" include nil nil [64 73])
+            ("sys" include nil nil [74 84])
+            ("BASE_DIR" variable nil nil [87 150])
+            ("sys" code nil nil [152 198])
+            ("if" code nil nil [200 971]))          
+      :file "start_celery.py"
+      :pointmax 971
+      :fsize 970
+      :lastmodtime '(22716 56235 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!domob_pad!smtp_proxy!process_server!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

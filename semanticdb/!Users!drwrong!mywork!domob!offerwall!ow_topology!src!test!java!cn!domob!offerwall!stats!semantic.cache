@@ -1,0 +1,53 @@
+;; Object stats/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "stats/"
+  :tables
+  (list
+    (semanticdb-table "StatsTest.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.stats" package nil nil [1 34])
+            ("org.junit.Test" include nil nil [36 58])
+            ("org.junit.Before" include nil nil [59 83])
+            ("cn.domob.offerwall.thrift.settle.ImpEvent" include nil nil [84 133])
+            ("cn.domob.offerwall.thrift.settle.SettleEvent" include nil nil [134 186])
+            ("cn.domob.offerwall.thrift.settle.ClkEvent" include nil nil [187 236])
+            ("cn.domob.offerwall.thrift.common.OfferType" include nil nil [237 287])
+            ("cn.domob.offerwall.thrift.common.BasicOffer" include nil nil [288 339])
+            ("StatsTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("stats" variable
+                       (:typemodifiers ("private")
+                        :type "Stats")
+                        (reparse-symbol class_member_declaration) [533 553])
+                    ("offer" variable
+                       (:typemodifiers ("private")
+                        :type "BasicOffer")
+                        (reparse-symbol class_member_declaration) [558 583])
+                    ("Setup" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [602 1425])
+                    ("TestClkStats" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1442 1768])
+                    ("TestActStats" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1784 2113])
+                    ("TestImpStats" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2129 2454]))                  
+                :type "class")
+                nil [503 2586]))          
+      :file "StatsTest.java"
+      :pointmax 2587
+      :fsize 2586
+      :lastmodtime '(22781 51567 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!offerwall!ow_topology!src!test!java!cn!domob!offerwall!stats!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

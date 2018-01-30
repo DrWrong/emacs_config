@@ -1,0 +1,455 @@
+;; Object bolts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bolts/"
+  :tables
+  (list
+    (semanticdb-table "AowAnti.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.settle.bolts" package nil nil [1 36])
+            ("cn.domob.aow.antiserver.thrift.AntiServer" include nil nil [38 87])
+            ("cn.domob.aow.stat_types2.thrift.AowEvent" include nil nil [88 136])
+            ("cn.domob.common.thrift.RequestHeader" include nil nil [137 181])
+            ("com.dmaow.aow.utils.LoadBlancer" include nil nil [182 221])
+            ("com.google.common.collect.ImmutableSet" include nil nil [222 268])
+            ("com.twitter.common.quantity.Amount" include nil nil [269 311])
+            ("com.twitter.common.quantity.Time" include nil nil [312 352])
+            ("com.twitter.common.thrift.Config" include nil nil [353 393])
+            ("com.twitter.common.thrift.Thrift" include nil nil [394 434])
+            ("com.twitter.common.thrift.ThriftFactory" include nil nil [435 482])
+            ("org.apache.thrift.TException" include nil nil [483 519])
+            ("org.slf4j.Logger" include nil nil [520 544])
+            ("org.slf4j.LoggerFactory" include nil nil [545 576])
+            ("java.net.InetSocketAddress" include nil nil [578 612])
+            ("AowAnti" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("SERVER_IP" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [700 727])
+                    ("SERVER_PORT" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [732 761])
+                    ("TIMEOUT" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [766 787])
+                    ("tolerateFailureRate" variable
+                       (:typemodifiers ("private" "static")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [792 840])
+                    ("CHECKINTERVAL" variable
+                       (:typemodifiers ("private" "static")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [845 886])
+                    ("header" variable
+                       (:typemodifiers ("private")
+                        :type "RequestHeader")
+                        (reparse-symbol class_member_declaration) [891 942])
+                    ("config" variable
+                       (:typemodifiers ("private")
+                        :type "Config")
+                        (reparse-symbol class_member_declaration) [1152 1174])
+                    ("log" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1179 1246])
+                    ("AowAnti" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("SERVER_IP" variable (:type "String") (reparse-symbol formal_parameters) [1267 1283])
+                            ("SERVER_PORT" variable (:type "String") (reparse-symbol formal_parameters) [1304 1322])
+                            ("TIMEOUT" variable (:type "int") (reparse-symbol formal_parameters) [1343 1354])
+                            ("CHECKINTERVAL" variable (:type "int") (reparse-symbol formal_parameters) [1375 1392])
+                            ("MAXCONN" variable (:type "int") (reparse-symbol formal_parameters) [1413 1424])
+                            ("RETRIES" variable (:type "int") (reparse-symbol formal_parameters) [1445 1456])
+                            ("tolerateFailureRate" variable (:type "double") (reparse-symbol formal_parameters) [1477 1503]))                          )
+                        (reparse-symbol class_member_declaration) [1252 2287])
+                    ("getThriftFromFactory" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("MAXCONN" variable (:type "int") (reparse-symbol formal_parameters) [2347 2358]))                          )
+                        (reparse-symbol class_member_declaration) [2326 3133])
+                    ("initClient" function
+                       (:typemodifiers ("public")
+                        :type "AntiServer.Iface")
+                        (reparse-symbol class_member_declaration) [3139 3273])
+                    ("antiSpam" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("clkact" variable (:type "AowEvent") (reparse-symbol formal_parameters) [3301 3316]))                          
+                        :type "short")
+                        (reparse-symbol class_member_declaration) [3279 6562]))                  
+                :type "class")
+                nil [673 6564]))          
+      :file "AowAnti.java"
+      :pointmax 6565
+      :fsize 6822
+      :lastmodtime '(22730 22977 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ReportDecoderBolt.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.settle.bolts" package nil nil [1 36])
+            ("backtype.storm.task.OutputCollector" include nil nil [38 81])
+            ("backtype.storm.task.TopologyContext" include nil nil [82 125])
+            ("backtype.storm.topology.OutputFieldsDeclarer" include nil nil [126 178])
+            ("backtype.storm.topology.base.BaseRichBolt" include nil nil [179 228])
+            ("backtype.storm.tuple.Fields" include nil nil [229 264])
+            ("backtype.storm.tuple.Tuple" include nil nil [265 299])
+            ("backtype.storm.tuple.Values" include nil nil [300 335])
+            ("cn.domob.aow.stat_types2.thrift.AowEvent" include nil nil [336 384])
+            ("com.dmaow.aow.utils.AowEventType" include nil nil [385 425])
+            ("com.dmaow.aow.utils.AowUtils" include nil nil [426 462])
+            ("com.dmaow.aow.utils.ReportDecoder" include nil nil [463 504])
+            ("org.slf4j.Logger" include nil nil [505 529])
+            ("org.slf4j.LoggerFactory" include nil nil [530 561])
+            ("java.util.Map" include nil nil [563 584])
+            ("ReportDecoderBolt" type
+               (:typemodifiers ("public")
+                :superclasses "BaseRichBolt"
+                :members 
+                  ( ("reportDecoder" variable (:type "ReportDecoder") (reparse-symbol class_member_declaration) [733 761])
+                    ("aowDFManager" variable
+                       (:typemodifiers ("private")
+                        :type "AowDFManager")
+                        (reparse-symbol class_member_declaration) [766 800])
+                    ("coll" variable
+                       (:typemodifiers ("private")
+                        :type "OutputCollector")
+                        (reparse-symbol class_member_declaration) [805 834])
+                    ("_log" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [839 917])
+                    ("prepare" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [957 970])
+                            ("context" variable (:type "TopologyContext") (reparse-symbol formal_parameters) [972 995])
+                            ("collector" variable (:type "OutputCollector") (reparse-symbol formal_parameters) [997 1022]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [937 1168])
+                    ("execute" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable (:type "Tuple") (reparse-symbol formal_parameters) [1330 1341]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1310 2643])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("declarer" variable (:type "OutputFieldsDeclarer") (reparse-symbol formal_parameters) [2695 2724]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2663 2939]))                  
+                :type "class")
+                nil [675 2941]))          
+      :file "ReportDecoderBolt.java"
+      :pointmax 2941
+      :fsize 3068
+      :lastmodtime '(22801 42348 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "AowAntiBolt.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.settle.bolts" package nil nil [1 36])
+            ("org.apache.storm.task.OutputCollector" include nil nil [38 83])
+            ("org.apache.storm.task.TopologyContext" include nil nil [84 129])
+            ("org.apache.storm.topology.OutputFieldsDeclarer" include nil nil [130 184])
+            ("org.apache.storm.topology.base.BaseRichBolt" include nil nil [185 236])
+            ("org.apache.storm.tuple.Fields" include nil nil [237 274])
+            ("org.apache.storm.tuple.Tuple" include nil nil [275 311])
+            ("org.apache.storm.tuple.Values" include nil nil [312 349])
+            ("cn.domob.aow.stat_types2.thrift.AowEvent" include nil nil [350 398])
+            ("org.slf4j.Logger" include nil nil [399 423])
+            ("org.slf4j.LoggerFactory" include nil nil [424 455])
+            ("java.util.Map" include nil nil [457 478])
+            ("AowAntiBolt" type
+               (:typemodifiers ("public")
+                :superclasses "BaseRichBolt"
+                :members 
+                  ( ("antiHandler" variable (:type "AowAnti") (reparse-symbol class_member_declaration) [605 625])
+                    ("coll" variable
+                       (:typemodifiers ("private")
+                        :type "OutputCollector")
+                        (reparse-symbol class_member_declaration) [630 659])
+                    ("log" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [664 735])
+                    ("prepare" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("conf" variable (:type "Map") (reparse-symbol formal_parameters) [775 783])
+                            ("context" variable (:type "TopologyContext") (reparse-symbol formal_parameters) [785 808])
+                            ("collector" variable (:type "OutputCollector") (reparse-symbol formal_parameters) [810 835]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [755 1758])
+                    ("execute" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable (:type "Tuple") (reparse-symbol formal_parameters) [1798 1809]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1778 2237])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("declarer" variable (:type "OutputFieldsDeclarer") (reparse-symbol formal_parameters) [2289 2318]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2257 2372]))                  
+                :type "class")
+                nil [553 2374]))          
+      :file "AowAntiBolt.java"
+      :pointmax 2375
+      :fsize 2406
+      :lastmodtime '(22801 42348 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "AowSettleBolt.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.settle.bolts" package nil nil [1 36])
+            ("org.apache.storm.task.OutputCollector" include nil nil [38 83])
+            ("org.apache.storm.task.TopologyContext" include nil nil [84 129])
+            ("org.apache.storm.topology.OutputFieldsDeclarer" include nil nil [130 184])
+            ("org.apache.storm.topology.base.BaseRichBolt" include nil nil [185 236])
+            ("org.apache.storm.tuple.Fields" include nil nil [237 274])
+            ("org.apache.storm.tuple.Tuple" include nil nil [275 311])
+            ("org.apache.storm.tuple.Values" include nil nil [312 349])
+            ("cn.domob.aow.stat_types2.thrift.AowEvent" include nil nil [350 398])
+            ("org.slf4j.Logger" include nil nil [399 423])
+            ("org.slf4j.LoggerFactory" include nil nil [424 455])
+            ("java.util.Map" include nil nil [457 478])
+            ("AowSettleBolt" type
+               (:typemodifiers ("public")
+                :superclasses "BaseRichBolt"
+                :members 
+                  ( ("settleHandler" variable (:type "AowSettle") (reparse-symbol class_member_declaration) [597 621])
+                    ("coll" variable
+                       (:typemodifiers ("private")
+                        :type "OutputCollector")
+                        (reparse-symbol class_member_declaration) [626 655])
+                    ("log" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [660 733])
+                    ("prepare" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("conf" variable (:type "Map") (reparse-symbol formal_parameters) [773 781])
+                            ("context" variable (:type "TopologyContext") (reparse-symbol formal_parameters) [783 806])
+                            ("collector" variable (:type "OutputCollector") (reparse-symbol formal_parameters) [808 833]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [753 918])
+                    ("execute" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable (:type "Tuple") (reparse-symbol formal_parameters) [958 969]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [938 1430])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("declarer" variable (:type "OutputFieldsDeclarer") (reparse-symbol formal_parameters) [1482 1511]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1450 1565]))                  
+                :type "class")
+                nil [543 1567]))          
+      :file "AowSettleBolt.java"
+      :pointmax 1568
+      :fsize 1587
+      :lastmodtime '(22801 42348 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "AowSettle.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.settle.bolts" package nil nil [1 36])
+            ("cn.domob.aow.stat_types2.thrift.AowEvent" include nil nil [39 87])
+            ("cn.domob.domob_jedis.DomobJedis" include nil nil [88 127])
+            ("cn.domob.domob_jedis.DomobJedisPool" include nil nil [128 171])
+            ("com.dmaow.aow.utils.AowUtils" include nil nil [172 208])
+            ("org.slf4j.Logger" include nil nil [209 233])
+            ("org.slf4j.LoggerFactory" include nil nil [234 265])
+            ("java.text.SimpleDateFormat" include nil nil [267 301])
+            ("java.util.Date" include nil nil [302 324])
+            ("java.util.HashMap" include nil nil [325 350])
+            ("java.util.Map" include nil nil [351 372])
+            ("AowSettle" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("budgetManager" variable
+                       (:typemodifiers ("private")
+                        :type "AowBudgetServerManager")
+                        (reparse-symbol class_member_declaration) [494 539])
+                    ("userManager" variable
+                       (:typemodifiers ("private")
+                        :type "AowUserServerManager")
+                        (reparse-symbol class_member_declaration) [544 585])
+                    ("pointManager" variable
+                       (:typemodifiers ("private")
+                        :type "AowPointServerManager")
+                        (reparse-symbol class_member_declaration) [590 633])
+                    ("jedisPool" variable
+                       (:typemodifiers ("private")
+                        :type "DomobJedisPool")
+                        (reparse-symbol class_member_declaration) [638 671])
+                    ("jedisHandler" variable
+                       (:typemodifiers ("private")
+                        :type "DomobJedis")
+                        (reparse-symbol class_member_declaration) [676 708])
+                    ("log" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [713 782])
+                    ("AowSettle" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("conf" variable (:type "Map") (reparse-symbol formal_parameters) [805 813]))                          )
+                        (reparse-symbol class_member_declaration) [788 4927])
+                    ("doSettleClkAct" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("clkact" variable (:type "AowEvent") (reparse-symbol formal_parameters) [5064 5079]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5033 6132])
+                    ("checkPlanBudgetOver" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("clkact" variable (:type "AowEvent") (reparse-symbol formal_parameters) [6268 6283]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6232 6609])
+                    ("settle" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("clkact" variable (:type "AowEvent") (reparse-symbol formal_parameters) [6637 6652]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6615 9178]))                  
+                :type "class")
+                nil [425 9180]))          
+      :file "AowSettle.java"
+      :pointmax 9181
+      :fsize 9290
+      :lastmodtime '(22730 22977 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "AowDACBolt.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.settle.bolts" package nil nil [1 36])
+            ("backtype.storm.task.OutputCollector" include nil nil [38 81])
+            ("backtype.storm.task.TopologyContext" include nil nil [82 125])
+            ("backtype.storm.topology.OutputFieldsDeclarer" include nil nil [126 178])
+            ("backtype.storm.topology.base.BaseRichBolt" include nil nil [179 228])
+            ("backtype.storm.tuple.Fields" include nil nil [229 264])
+            ("backtype.storm.tuple.Tuple" include nil nil [265 299])
+            ("backtype.storm.tuple.Values" include nil nil [300 335])
+            ("cn.domob.aow.stat_types2.thrift.AowEvent" include nil nil [336 384])
+            ("com.dmaow.aow.utils.AowDAC" include nil nil [385 419])
+            ("org.slf4j.Logger" include nil nil [420 444])
+            ("org.slf4j.LoggerFactory" include nil nil [445 476])
+            ("java.util.Map" include nil nil [478 499])
+            ("AowDACBolt" type
+               (:typemodifiers ("public")
+                :superclasses "BaseRichBolt"
+                :members 
+                  ( ("coll" variable
+                       (:typemodifiers ("private")
+                        :type "OutputCollector")
+                        (reparse-symbol class_member_declaration) [622 651])
+                    ("dacHandler" variable
+                       (:typemodifiers ("private")
+                        :type "AowDAC")
+                        (reparse-symbol class_member_declaration) [656 682])
+                    ("log" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [687 757])
+                    ("prepare" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("conf" variable (:type "Map") (reparse-symbol formal_parameters) [797 805])
+                            ("context" variable (:type "TopologyContext") (reparse-symbol formal_parameters) [807 830])
+                            ("collector" variable (:type "OutputCollector") (reparse-symbol formal_parameters) [832 857]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [777 932])
+                    ("execute" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable (:type "Tuple") (reparse-symbol formal_parameters) [972 983]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [952 1181])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("declarer" variable (:type "OutputFieldsDeclarer") (reparse-symbol formal_parameters) [1233 1262]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1201 1316]))                  
+                :type "class")
+                nil [571 1318]))          
+      :file "AowDACBolt.java"
+      :pointmax 1318
+      :fsize 1367
+      :lastmodtime '(22801 42348 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "KafkaSenderBolt.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.settle.bolts" package nil nil [1 36])
+            ("org.apache.storm.task.OutputCollector" include nil nil [38 83])
+            ("org.apache.storm.task.TopologyContext" include nil nil [84 129])
+            ("org.apache.storm.topology.OutputFieldsDeclarer" include nil nil [130 184])
+            ("org.apache.storm.topology.base.BaseRichBolt" include nil nil [185 236])
+            ("org.apache.storm.tuple.Tuple" include nil nil [237 273])
+            ("cn.domob.aow.stat_types2.thrift.AowEvent" include nil nil [274 322])
+            ("com.dmaow.aow.utils.KafkaSender" include nil nil [323 362])
+            ("java.util.Map" include nil nil [364 385])
+            ("KafkaSenderBolt" type
+               (:typemodifiers ("public")
+                :superclasses "BaseRichBolt"
+                :members 
+                  ( ("collector" variable
+                       (:typemodifiers ("private")
+                        :type "OutputCollector")
+                        (reparse-symbol class_member_declaration) [483 517])
+                    ("kafkaSender" variable
+                       (:typemodifiers ("private")
+                        :type "KafkaSender")
+                        (reparse-symbol class_member_declaration) [522 554])
+                    ("prepare" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [580 593])
+                            ("context" variable (:type "TopologyContext") (reparse-symbol formal_parameters) [595 618])
+                            ("collector" variable (:type "OutputCollector") (reparse-symbol formal_parameters) [620 645]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [560 740])
+                    ("execute" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable (:type "Tuple") (reparse-symbol formal_parameters) [766 777]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [746 1163])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("declarer" variable (:type "OutputFieldsDeclarer") (reparse-symbol formal_parameters) [1201 1230]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1169 1239])
+                    ("cleanup" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1259 1319]))                  
+                :type "class")
+                nil [427 1321]))          
+      :file "KafkaSenderBolt.java"
+      :pointmax 1322
+      :fsize 1335
+      :lastmodtime '(22801 42348 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_rp_topology!src!main!java!com!dmaow!aow!settle!bolts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

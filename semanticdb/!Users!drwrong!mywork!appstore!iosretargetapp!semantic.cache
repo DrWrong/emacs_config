@@ -1,0 +1,49 @@
+;; Object iosretargetapp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "iosretargetapp/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-bsdmake-mode
+      :tags 
+        '( ("THEOS_DEVICE_IP" variable (:default-value ("192.168.168.45")) nil [1 32])
+            ("ARCHS" variable (:default-value ("arm64")) nil [32 46])
+            ("TARGET" variable (:default-value ("iphone:latest:9.2")) nil [46 73])
+            ("$(THEOS)/makefiles/common.mk" include nil nil [73 110])
+            ("APPLICATION_NAME" variable (:default-value ("iosRETargetApp")) nil [111 145])
+            ("iosRETargetApp_FILES" variable (:default-value ("main.m" "XXAppDelegate.m" "XXRootViewController.mm")) nil [145 215])
+            ("iosRETargetApp_FRAMEWORKS" variable (:default-value ("UIKit" "CoreGraphics")) nil [215 262])
+            ("$(THEOS_MAKE_PATH)/application.mk" include nil nil [263 305])
+            ("after-install" function nil nil [306 373]))          
+      :file "Makefile"
+      :pointmax 373
+      :fsize 372
+      :lastmodtime '(22677 29879 0 0)
+      :unmatched-syntax '((shell-command 323 . 372) (bol 322 . 322)))
+    (semanticdb-table "XXRootViewController.h"
+      :major-mode 'c-mode
+      :tags nil
+      :file "XXRootViewController.h"
+      :pointmax 63
+      :fsize 62
+      :lastmodtime '(22677 28523 0 0)
+      :unmatched-syntax '((symbol 59 . 62) (punctuation 58 . 59) (symbol 35 . 56) (punctuation 33 . 34) (symbol 12 . 32) (symbol 2 . 11) (punctuation 1 . 2)))
+    (semanticdb-table "XXAppDelegate.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("window" variable
+               (:pointer 1
+                :type ("UIWindow" type (:type "class") nil nil))
+                nil [95 112])
+            ("rootViewController" variable
+               (:pointer 1
+                :type ("UINavigationController" type (:type "class") nil nil))
+                nil [143 186]))          
+      :file "XXAppDelegate.h"
+      :pointmax 193
+      :fsize 192
+      :lastmodtime '(22677 28523 0 0)
+      :unmatched-syntax '((symbol 189 . 192) (punctuation 188 . 189) (semantic-list 123 . 142) (symbol 114 . 122) (punctuation 113 . 114) (semantic-list 75 . 94) (symbol 66 . 74) (punctuation 65 . 66) (punctuation 62 . 63) (symbol 41 . 62) (punctuation 40 . 41) (symbol 28 . 39) (punctuation 26 . 27) (symbol 12 . 25) (symbol 2 . 11) (punctuation 1 . 2))))
+  :file "!Users!drwrong!mywork!appstore!iosretargetapp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

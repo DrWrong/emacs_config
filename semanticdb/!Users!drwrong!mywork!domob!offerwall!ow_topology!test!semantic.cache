@@ -1,0 +1,61 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables
+  (list
+    (semanticdb-table "kafka_consumer.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("kafka" include nil nil [24 55])
+            ("thrift.transport.TTransport" include nil nil [56 109])
+            ("thrift.protocol.TBinaryProtocol" include nil nil [110 169])
+            ("domob_thrift.ow.settle.ttypes" include nil nil [171 224])
+            ("for" code nil nil [226 454]))          
+      :file "kafka_consumer.py"
+      :pointmax 454
+      :fsize 453
+      :lastmodtime '(22759 20708 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "kafka_producer.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("time" include nil nil [48 69])
+            ("kafka" include nil nil [70 101])
+            ("domob_thrift.ow.settle.ttypes" include nil nil [102 171])
+            ("" code nil nil [214 302])
+            ("thrift.TSerialization" include nil nil [303 346])
+            ("offer" variable nil nil [348 590])
+            ("device" variable nil nil [592 668])
+            ("env_info" variable nil nil [670 711])
+            ("producer" variable nil nil [713 819])
+            ("event" variable nil nil [1037 1055])
+            ("event" variable nil nil [1056 1075])
+            ("event" variable nil nil [1076 1097])
+            ("event" variable nil nil [1098 1123])
+            ("event" variable nil nil [1124 1152])
+            ("producer" code nil nil [1154 1209])
+            ("producer" code nil nil [1211 1227]))          
+      :file "kafka_producer.py"
+      :pointmax 1228
+      :fsize 1235
+      :lastmodtime '(22775 14076 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "redis_test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("thrift.TSerialization" include nil nil [24 69])
+            ("domob_thrift.ow.settle.ttypes" include nil nil [70 120])
+            ("redis" include nil nil [121 133])
+            ("r" variable nil nil [135 192])
+            ("data" variable nil nil [193 241])
+            ("event" variable nil nil [243 261])
+            ("deserialize" code nil nil [262 286])
+            ("print" code nil nil [288 300]))          
+      :file "redis_test.py"
+      :pointmax 301
+      :fsize 300
+      :lastmodtime '(22775 1152 0 0)
+      :unmatched-syntax '(($EOI 287 . 287))))
+  :file "!Users!drwrong!mywork!domob!offerwall!ow_topology!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

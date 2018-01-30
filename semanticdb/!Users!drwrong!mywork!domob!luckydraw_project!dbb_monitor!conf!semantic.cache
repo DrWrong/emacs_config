@@ -1,0 +1,29 @@
+;; Object conf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "conf/"
+  :tables
+  (list
+    (semanticdb-table "settings.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("BASE_DIR" variable nil nil [12 65])
+            ("SECRET_KEY" variable nil nil [66 131])
+            ("DEBUG" variable nil nil [132 144])
+            ("LANGUAGE_CODE" variable nil nil [147 170])
+            ("TIME_ZONE" variable nil nil [173 200])
+            ("USE_I18N" variable nil nil [202 217])
+            ("USE_L10N" variable nil nil [219 234])
+            ("USE_TZ" variable nil nil [236 249])
+            ("DATABASES" variable nil nil [251 502])
+            ("REDIS_CONFIG" variable nil nil [542 618])
+            ("MAX_RECENT_NUMBER" variable nil nil [620 620])
+            ("MAX_DRAW_THREAD" variable nil nil [620 620]))          
+      :file "settings.py"
+      :pointmax 1236
+      :fsize 1235
+      :lastmodtime '(22304 15263 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!luckydraw_project!dbb_monitor!conf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,131 @@
+;; Object collate/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "collate/"
+  :tables
+  (list
+    (semanticdb-table "CollateBolt.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.sync_ad.bolts.collate" package nil nil [1 45])
+            ("backtype.storm.task.OutputCollector" include nil nil [47 90])
+            ("backtype.storm.task.TopologyContext" include nil nil [91 134])
+            ("backtype.storm.topology.OutputFieldsDeclarer" include nil nil [135 187])
+            ("backtype.storm.topology.base.BaseRichBolt" include nil nil [188 237])
+            ("backtype.storm.tuple.Fields" include nil nil [238 273])
+            ("backtype.storm.tuple.Tuple" include nil nil [274 308])
+            ("backtype.storm.tuple.Values" include nil nil [309 344])
+            ("cn.domob.aow.stat_types2.thrift.AowEvent" include nil nil [345 393])
+            ("com.dmaow.aow.sync_ad.bolts.AowBaseBolt" include nil nil [394 441])
+            ("com.dmaow.aow.sync_ad.utils.Callback" include nil nil [442 486])
+            ("com.dmaow.aow.sync_ad.utils.Stats" include nil nil [487 528])
+            ("org.slf4j.Logger" include nil nil [529 553])
+            ("org.slf4j.LoggerFactory" include nil nil [554 585])
+            ("java.util.Map" include nil nil [588 609])
+            ("CollateBolt" type
+               (:typemodifiers ("public")
+                :superclasses "AowBaseBolt"
+                :members 
+                  ( ("_collator" variable
+                       (:typemodifiers ("private")
+                        :type "Collator")
+                        (reparse-symbol class_member_declaration) [744 771])
+                    ("_collector" variable
+                       (:typemodifiers ("private")
+                        :type "OutputCollector")
+                        (reparse-symbol class_member_declaration) [776 811])
+                    ("_log" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [816 888])
+                    ("prepare" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [928 941])
+                            ("context" variable (:type "TopologyContext") (reparse-symbol formal_parameters) [943 966])
+                            ("collector" variable (:type "OutputCollector") (reparse-symbol formal_parameters) [968 993]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [908 1133])
+                    ("execute" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable (:type "Tuple") (reparse-symbol formal_parameters) [1173 1184]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1153 1719])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("declarer" variable (:type "OutputFieldsDeclarer") (reparse-symbol formal_parameters) [1771 1800]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1739 1860]))                  
+                :type "class")
+                nil [692 1862]))          
+      :file "CollateBolt.java"
+      :pointmax 1863
+      :fsize 2002
+      :lastmodtime '(22710 29246 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Collator.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.sync_ad.bolts.collate" package nil nil [1 45])
+            ("cn.domob.aow.stat_types2.thrift.AowAdEventReport" include nil nil [47 103])
+            ("cn.domob.aow.stat_types2.thrift.AowEvent" include nil nil [104 152])
+            ("cn.domob.common.thrift.AccessTypeCode" include nil nil [153 198])
+            ("cn.domob.common.thrift.CarrierCode" include nil nil [199 241])
+            ("cn.domob.domob_jedis.DomobJedis" include nil nil [242 281])
+            ("cn.domob.domob_jedis.DomobJedisPool" include nil nil [282 325])
+            ("com.dmaow.aow.sync_ad.utils.AowUtils" include nil nil [326 370])
+            ("com.dmaow.aow.sync_ad.utils.Callback" include nil nil [371 415])
+            ("org.json.simple.JSONObject" include nil nil [416 450])
+            ("org.json.simple.parser.JSONParser" include nil nil [451 492])
+            ("org.slf4j.Logger" include nil nil [493 517])
+            ("org.slf4j.LoggerFactory" include nil nil [518 549])
+            ("redis.clients.jedis.exceptions.JedisException" include nil nil [550 603])
+            ("java.util.Map" include nil nil [606 627])
+            ("Collator" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("_redisPool" variable
+                       (:typemodifiers ("public")
+                        :type "DomobJedisPool")
+                        (reparse-symbol class_member_declaration) [720 753])
+                    ("Collator" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("config" variable (:type "Map") (reparse-symbol formal_parameters) [775 785]))                          )
+                        (reparse-symbol class_member_declaration) [759 1311])
+                    ("_log" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1317 1386])
+                    ("Collate" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("callback" variable (:type "Callback") (reparse-symbol formal_parameters) [1563 1580]))                          
+                        :type "AowEvent")
+                        (reparse-symbol class_member_declaration) [1539 2809])
+                    ("buildAowEvent" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("callback" variable (:type "Callback") (reparse-symbol formal_parameters) [3003 3020])
+                            ("clk" variable (:type "JSONObject") (reparse-symbol formal_parameters) [3022 3036]))                          
+                        :type "AowEvent")
+                        (reparse-symbol class_member_declaration) [2972 3316])
+                    ("buildAowReport" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("callback" variable (:type "Callback") (reparse-symbol formal_parameters) [3535 3552])
+                            ("clk" variable (:type "JSONObject") (reparse-symbol formal_parameters) [3554 3568]))                          
+                        :type "AowAdEventReport")
+                        (reparse-symbol class_member_declaration) [3495 6679]))                  
+                :type "class")
+                nil [691 6681]))          
+      :file "Collator.java"
+      :pointmax 6682
+      :fsize 6997
+      :lastmodtime '(22710 22674 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_sync_ad_topology!src!main!java!com!dmaow!aow!sync_ad!bolts!collate!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

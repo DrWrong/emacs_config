@@ -1,0 +1,73 @@
+;; Object thrift/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "thrift/"
+  :tables
+  (list
+    (semanticdb-table "ThriftFactory.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.twitter.common.thrift" package nil nil [914 948])
+            ("java.io.IOException" include nil nil [950 977])
+            ("java.lang.reflect.Constructor" include nil nil [978 1015])
+            ("java.lang.reflect.InvocationTargetException" include nil nil [1016 1067])
+            ("java.net.InetSocketAddress" include nil nil [1068 1102])
+            ("java.util.Collection" include nil nil [1103 1131])
+            ("java.util.NoSuchElementException" include nil nil [1132 1172])
+            ("java.util.Set" include nil nil [1173 1194])
+            ("java.util.concurrent.RejectedExecutionException" include nil nil [1195 1250])
+            ("java.util.concurrent.RejectedExecutionHandler" include nil nil [1251 1304])
+            ("java.util.concurrent.SynchronousQueue" include nil nil [1305 1350])
+            ("java.util.concurrent.ThreadFactory" include nil nil [1351 1393])
+            ("java.util.concurrent.ThreadPoolExecutor" include nil nil [1394 1441])
+            ("java.util.concurrent.TimeUnit" include nil nil [1442 1479])
+            ("java.util.logging.Logger" include nil nil [1480 1512])
+            ("com.google.common.annotations.VisibleForTesting" include nil nil [1514 1569])
+            ("com.google.common.base.Function" include nil nil [1570 1609])
+            ("com.google.common.base.Optional" include nil nil [1610 1649])
+            ("com.google.common.base.Preconditions" include nil nil [1650 1694])
+            ("com.google.common.base.Predicate" include nil nil [1695 1735])
+            ("com.google.common.collect.ImmutableList" include nil nil [1736 1783])
+            ("com.google.common.collect.ImmutableMap" include nil nil [1784 1830])
+            ("com.google.common.collect.Iterables" include nil nil [1831 1874])
+            ("com.google.common.util.concurrent.ThreadFactoryBuilder" include nil nil [1875 1937])
+            ("org.apache.thrift.async.TAsyncClient" include nil nil [1939 1983])
+            ("org.apache.thrift.async.TAsyncClientManager" include nil nil [1984 2035])
+            ("org.apache.thrift.protocol.TBinaryProtocol" include nil nil [2036 2086])
+            ("org.apache.thrift.protocol.TProtocol" include nil nil [2087 2131])
+            ("org.apache.thrift.protocol.TProtocolFactory" include nil nil [2132 2183])
+            ("org.apache.thrift.transport.TNonblockingTransport" include nil nil [2184 2241])
+            ("org.apache.thrift.transport.TTransport" include nil nil [2242 2288])
+            ("com.twitter.common.base.Closure" include nil nil [2290 2329])
+            ("com.twitter.common.base.Closures" include nil nil [2330 2370])
+            ("com.twitter.common.base.MorePreconditions" include nil nil [2371 2420])
+            ("com.twitter.common.net.loadbalancing.LeastConnectedStrategy" include nil nil [2421 2488])
+            ("com.twitter.common.net.loadbalancing.LoadBalancer" include nil nil [2489 2546])
+            ("com.twitter.common.net.loadbalancing.LoadBalancerImpl" include nil nil [2547 2608])
+            ("com.twitter.common.net.loadbalancing.LoadBalancingStrategy" include nil nil [2609 2675])
+            ("com.twitter.common.net.loadbalancing.MarkDeadStrategyWithHostCheck" include nil nil [2676 2750])
+            ("com.twitter.common.net.loadbalancing.TrafficMonitorAdapter" include nil nil [2751 2817])
+            ("com.twitter.common.net.monitoring.TrafficMonitor" include nil nil [2818 2874])
+            ("com.twitter.common.net.pool.Connection" include nil nil [2875 2921])
+            ("com.twitter.common.net.pool.ConnectionPool" include nil nil [2922 2972])
+            ("com.twitter.common.net.pool.DynamicHostSet" include nil nil [2973 3023])
+            ("com.twitter.common.net.pool.DynamicPool" include nil nil [3024 3071])
+            ("com.twitter.common.net.pool.MetaPool" include nil nil [3072 3116])
+            ("com.twitter.common.net.pool.ObjectPool" include nil nil [3117 3163])
+            ("com.twitter.common.quantity.Amount" include nil nil [3164 3206])
+            ("com.twitter.common.quantity.Time" include nil nil [3207 3247])
+            ("com.twitter.common.stats.Stats" include nil nil [3248 3286])
+            ("com.twitter.common.stats.StatsProvider" include nil nil [3287 3333])
+            ("com.twitter.common.thrift.ThriftConnectionFactory.TransportType" include nil nil [3334 3405])
+            ("com.twitter.common.util.BackoffDecider" include nil nil [3406 3452])
+            ("com.twitter.common.util.BackoffStrategy" include nil nil [3453 3500])
+            ("com.twitter.common.util.TruncatedBinaryBackoff" include nil nil [3501 3555])
+            ("com.twitter.common.util.concurrent.ForwardingExecutorService" include nil nil [3556 3624])
+            ("com.twitter.thrift.ServiceInstance" include nil nil [3625 3667]))          
+      :file "ThriftFactory.java"
+      :pointmax 27229
+      :fsize 27228
+      :lastmodtime '(22070 56145 0 0)
+      :unmatched-syntax '((BRACE_BLOCK 5370 . 27228) (GT 5368 . 5369) (IDENTIFIER 5367 . 5368) (PUBLIC 5340 . 5346) (LT 5366 . 5367))))
+  :file "!Users!drwrong!openProject!twitter-commons!src!java!com!twitter!common!thrift!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,30 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("SendData" type
+               (:documentation "
+        发送数据到下游aow_data_sensorsanalytics服务
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("send" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [930 934])
+                            ("data" variable nil (reparse-symbol function_parameters) [936 940]))                          )
+                        (reparse-symbol indented_block_body) [921 1307]))                  
+                :type "class")
+                nil [310 1307]))          
+      :file "send_data.py"
+      :pointmax 1307
+      :fsize 1324
+      :lastmodtime '(22969 59115 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow!aow_point_server!lib!server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

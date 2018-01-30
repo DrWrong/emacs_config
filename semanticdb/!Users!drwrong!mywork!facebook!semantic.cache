@@ -1,0 +1,34 @@
+;; Object facebook/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "facebook/"
+  :tables
+  (list
+    (semanticdb-table "sample.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.facebook.ads.sdk.*" include nil nil [1112 1142])
+            ("java.io.File" include nil nil [1143 1163])
+            ("java.util.Arrays" include nil nil [1164 1188])
+            ("SAMPLE_CODE" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:throws ("APIException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1244 1257]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1219 3487]))                  
+                :type "class")
+                nil [1190 3489]))          
+      :file "sample.java"
+      :pointmax 3490
+      :fsize 3489
+      :lastmodtime '(22811 50165 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!facebook!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

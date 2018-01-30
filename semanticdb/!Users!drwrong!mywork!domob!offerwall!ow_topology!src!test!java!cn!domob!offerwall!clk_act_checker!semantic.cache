@@ -1,0 +1,47 @@
+;; Object clk_act_checker/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "clk_act_checker/"
+  :tables
+  (list
+    (semanticdb-table "ClkActCheckerTest.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.clk_act_checker" package nil nil [1 44])
+            ("org.junit.Before" include nil nil [46 70])
+            ("org.junit.Test" include nil nil [71 93])
+            ("cn.domob.offerwall.thrift.settle.ClkEvent" include nil nil [94 143])
+            ("java.util.Map" include nil nil [144 165])
+            ("java.util.HashMap" include nil nil [166 191])
+            ("cn.domob.offerwall.thrift.common.OfferType" include nil nil [192 242])
+            ("cn.domob.offerwall.thrift.common.BasicOffer" include nil nil [243 294])
+            ("cn.domob.offerwall.thrift.common.DeviceInfo" include nil nil [295 346])
+            ("cn.domob.offerwall.thrift.common.Platform" include nil nil [347 396])
+            ("ClkActCheckerTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("checker" variable
+                       (:typemodifiers ("private")
+                        :type "ClkActChecker")
+                        (reparse-symbol class_member_declaration) [634 664])
+                    ("event" variable
+                       (:typemodifiers ("private")
+                        :type "ClkEvent")
+                        (reparse-symbol class_member_declaration) [669 692])
+                    ("setUp" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [709 1800])
+                    ("testRecordEvent" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1816 2190]))                  
+                :type "class")
+                nil [597 2192]))          
+      :file "ClkActCheckerTest.java"
+      :pointmax 2193
+      :fsize 2192
+      :lastmodtime '(22775 8541 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!offerwall!ow_topology!src!test!java!cn!domob!offerwall!clk_act_checker!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

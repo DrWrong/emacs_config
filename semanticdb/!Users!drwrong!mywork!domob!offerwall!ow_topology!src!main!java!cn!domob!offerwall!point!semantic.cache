@@ -1,0 +1,86 @@
+;; Object point/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "point/"
+  :tables
+  (list
+    (semanticdb-table "PointAddBolt.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.point" package nil nil [1 34])
+            ("java.util.Map" include nil nil [36 57])
+            ("cn.domob.offerwall.common.UserServerProxy" include nil nil [59 108])
+            ("cn.domob.offerwall.common.RichBoltWithMetric" include nil nil [109 161])
+            ("cn.domob.offerwall.thrift.settle.SettleEvent" include nil nil [162 214])
+            ("cn.domob.offerwall.thrift.settle.SettleStage" include nil nil [215 267])
+            ("org.apache.storm.task.IBolt" include nil nil [268 303])
+            ("org.apache.storm.task.OutputCollector" include nil nil [304 349])
+            ("org.apache.storm.task.TopologyContext" include nil nil [350 395])
+            ("org.apache.storm.topology.IComponent" include nil nil [396 440])
+            ("org.apache.storm.topology.OutputFieldsDeclarer" include nil nil [441 495])
+            ("org.apache.storm.tuple.Fields" include nil nil [496 533])
+            ("org.apache.storm.tuple.Tuple" include nil nil [534 570])
+            ("org.apache.storm.tuple.Values" include nil nil [571 608])
+            ("org.apache.thrift.TException" include nil nil [609 645])
+            ("org.slf4j.Logger" include nil nil [646 670])
+            ("org.slf4j.LoggerFactory" include nil nil [671 702])
+            ("PointAddBolt" type
+               (:typemodifiers ("public")
+                :superclasses "RichBoltWithMetric"
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [929 1004])
+                    ("proxy" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "UserServerProxy")
+                        (reparse-symbol class_member_declaration) [1010 1050])
+                    ("collector" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "OutputCollector")
+                        (reparse-symbol class_member_declaration) [1055 1099])
+                    ("execute" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("tuple" variable
+                               (:typemodifiers ("final")
+                                :type "Tuple")
+                                (reparse-symbol formal_parameters) [1307 1324]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1281 1870])
+                    ("prepare" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("map" variable
+                               (:typemodifiers ("final")
+                                :type "Map")
+                                (reparse-symbol formal_parameters) [2153 2166])
+                            ("topologyContext" variable
+                               (:typemodifiers ("final")
+                                :type "TopologyContext")
+                                (reparse-symbol formal_parameters) [2168 2205])
+                            ("outputCollector" variable
+                               (:typemodifiers ("final")
+                                :type "OutputCollector")
+                                (reparse-symbol formal_parameters) [2207 2244]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2127 2448])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("outputFieldsDeclarer" variable
+                               (:typemodifiers ("final")
+                                :type "OutputFieldsDeclarer")
+                                (reparse-symbol formal_parameters) [2718 2765]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2680 2833]))                  
+                :type "class")
+                nil [869 2836]))          
+      :file "PointAddBolt.java"
+      :pointmax 2837
+      :fsize 2836
+      :lastmodtime '(22775 4999 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!offerwall!ow_topology!src!main!java!cn!domob!offerwall!point!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

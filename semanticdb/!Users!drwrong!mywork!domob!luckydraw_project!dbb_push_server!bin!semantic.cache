@@ -1,0 +1,23 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "dbb_push_server.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [49 58])
+            ("sys" include nil nil [59 69])
+            ("argparse" include nil nil [70 85])
+            ("domob_pyutils.dm303" include nil nil [87 128])
+            ("BASE_DIR" variable nil nil [130 193])
+            ("sys" code nil nil [194 240])
+            ("if" code nil nil [243 974]))          
+      :file "dbb_push_server.py"
+      :pointmax 974
+      :fsize 1075
+      :lastmodtime '(22469 21176 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!luckydraw_project!dbb_push_server!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

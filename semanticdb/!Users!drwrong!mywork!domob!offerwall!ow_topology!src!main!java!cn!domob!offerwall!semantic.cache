@@ -1,0 +1,376 @@
+;; Object offerwall/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "offerwall/"
+  :tables
+  (list
+    (semanticdb-table "Topology.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall" package nil nil [1 28])
+            ("java.util.Iterator" include nil nil [30 56])
+            ("java.util.Properties" include nil nil [57 85])
+            ("cn.domob.offerwall.act_sender.ActCreatorBolt" include nil nil [87 139])
+            ("cn.domob.offerwall.act_sender.ActSenderBolt" include nil nil [140 191])
+            ("cn.domob.offerwall.anti.AntiBolt" include nil nil [192 232])
+            ("cn.domob.offerwall.budget_recorder.BudgetRecordBolt" include nil nil [233 292])
+            ("cn.domob.offerwall.clk_act_checker.ActCheckerBolt" include nil nil [293 350])
+            ("cn.domob.offerwall.clk_act_checker.ClkWriterBolt" include nil nil [351 407])
+            ("cn.domob.offerwall.point.PointAddBolt" include nil nil [408 453])
+            ("cn.domob.offerwall.recorder.AdRecorderBolt" include nil nil [454 504])
+            ("cn.domob.offerwall.stats.StatsBolt" include nil nil [505 547])
+            ("cn.domob.offerwall.taskclk_recorder.TaskAdRecorderBolt" include nil nil [548 610])
+            ("cn.domob.offerwall.thrift.settle.ActEvent" include nil nil [611 660])
+            ("cn.domob.offerwall.thrift.settle.ClkEvent" include nil nil [661 710])
+            ("cn.domob.offerwall.thrift.settle.SettleEvent" include nil nil [711 763])
+            ("org.apache.commons.configuration2.Configuration" include nil nil [764 819])
+            ("org.apache.commons.configuration2.PropertiesConfiguration" include nil nil [820 885])
+            ("org.apache.commons.configuration2.builder.FileBasedConfigurationBuilder" include nil nil [886 965])
+            ("org.apache.commons.configuration2.builder.fluent.Parameters" include nil nil [966 1033])
+            ("org.apache.commons.configuration2.builder.fluent.PropertiesBuilderParameters" include nil nil [1034 1118])
+            ("org.apache.commons.configuration2.convert.DefaultListDelimiterHandler" include nil nil [1119 1196])
+            ("org.apache.storm.Config" include nil nil [1197 1228])
+            ("org.apache.storm.LocalCluster" include nil nil [1229 1266])
+            ("org.apache.storm.StormSubmitter" include nil nil [1267 1306])
+            ("org.apache.storm.generated.StormTopology" include nil nil [1307 1355])
+            ("org.apache.storm.kafka.BrokerHosts" include nil nil [1356 1398])
+            ("org.apache.storm.kafka.KafkaSpout" include nil nil [1399 1440])
+            ("org.apache.storm.kafka.SpoutConfig" include nil nil [1441 1483])
+            ("org.apache.storm.kafka.ZkHosts" include nil nil [1484 1522])
+            ("org.apache.storm.spout.Scheme" include nil nil [1523 1560])
+            ("org.apache.storm.spout.SchemeAsMultiScheme" include nil nil [1561 1611])
+            ("org.apache.storm.topology.TopologyBuilder" include nil nil [1612 1661])
+            ("Topology" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("defaultConfigFile" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1693 1764])
+                    ("topoName" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1769 1822])
+                    ("config" variable
+                       (:typemodifiers ("private")
+                        :type "Configuration")
+                        (reparse-symbol class_member_declaration) [1828 1857])
+                    ("stormConf" variable
+                       (:typemodifiers ("private")
+                        :type "Config")
+                        (reparse-symbol class_member_declaration) [1862 1887])
+                    ("brokerHosts" variable
+                       (:typemodifiers ("private")
+                        :type "BrokerHosts")
+                        (reparse-symbol class_member_declaration) [1892 1924])
+                    ("kafkaSpoutRoot" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1929 1959])
+                    ("producerProperties" variable
+                       (:typemodifiers ("private" "final")
+                        :type "Properties")
+                        (reparse-symbol class_member_declaration) [1964 2008])
+                    ("main" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [2038 2051]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2014 2849])
+                    ("Topology" function
+                       (:constructor-flag t
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("config" variable (:type "Configuration") (reparse-symbol formal_parameters) [2872 2892]))                          )
+                        (reparse-symbol class_member_declaration) [2855 3190])
+                    ("loadKafkaProducerConfig" function
+                       (:typemodifiers ("private")
+                        :type "Properties")
+                        (reparse-symbol class_member_declaration) [3196 3618])
+                    ("loadStormConfig" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3659 4146])
+                    ("submit" function
+                       (:throws ("Exception")
+                        :typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4153 4757])
+                    ("spoutConfig" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("topic" variable (:type "String") (reparse-symbol formal_parameters) [4915 4927])
+                            ("group" variable (:type "String") (reparse-symbol formal_parameters) [4929 4941])
+                            ("scheme" variable (:type "Scheme") (reparse-symbol formal_parameters) [4943 4956]))                          
+                        :type "SpoutConfig")
+                        (reparse-symbol class_member_declaration) [4883 5476])
+                    ("buildTopology" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("builder" variable (:type "TopologyBuilder") (reparse-symbol formal_parameters) [5509 5532]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5482 5808])
+                    ("buildClkTopology" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("builder" variable (:type "TopologyBuilder") (reparse-symbol formal_parameters) [5988 6011]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5958 7465])
+                    ("buildActToppology" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("builder" variable (:type "TopologyBuilder") (reparse-symbol formal_parameters) [7523 7546]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7492 8410])
+                    ("buildAntiToplogy" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("builder" variable (:type "TopologyBuilder") (reparse-symbol formal_parameters) [8467 8490]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8437 9900])
+                    ("buildRecorderTopology" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("builder" variable (:type "TopologyBuilder") (reparse-symbol formal_parameters) [9966 9989]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9931 11050])
+                    ("buildPointAdderTopology" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("builder" variable (:type "TopologyBuilder") (reparse-symbol formal_parameters) [11121 11144]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11084 12220])
+                    ("buildPostSettleTopology" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("builder" variable (:type "TopologyBuilder") (reparse-symbol formal_parameters) [12365 12388]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12328 14116])
+                    ("buildStatsTopology" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("builder" variable (:type "TopologyBuilder") (reparse-symbol formal_parameters) [14154 14177]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [14122 15339]))                  
+                :type "class")
+                nil [1665 15347]))          
+      :file "Topology.java"
+      :pointmax 15348
+      :fsize 15443
+      :lastmodtime '(22781 55089 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "KafkaSender.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall" package nil nil [1 28])
+            ("java.util.Map" include nil nil [30 51])
+            ("java.util.Properties" include nil nil [52 80])
+            ("cn.domob.offerwall.common.KafkaProducer" include nil nil [82 129])
+            ("cn.domob.offerwall.common.RichBoltWithMetric" include nil nil [130 182])
+            ("org.apache.storm.metric.api.CountMetric" include nil nil [183 230])
+            ("org.apache.storm.task.OutputCollector" include nil nil [231 276])
+            ("org.apache.storm.task.TopologyContext" include nil nil [277 322])
+            ("org.apache.storm.topology.OutputFieldsDeclarer" include nil nil [323 377])
+            ("org.apache.storm.topology.base.BaseRichBolt" include nil nil [378 429])
+            ("org.apache.storm.tuple.Tuple" include nil nil [430 466])
+            ("org.apache.thrift.TBase" include nil nil [467 498])
+            ("org.apache.thrift.TException" include nil nil [499 535])
+            ("org.apache.thrift.TSerializer" include nil nil [536 573])
+            ("KafkaSender" type
+               (:typemodifiers ("public")
+                :superclasses "RichBoltWithMetric"
+                :members 
+                  ( ("producer" variable
+                       (:typemodifiers ("private")
+                        :type "KafkaProducer")
+                        (reparse-symbol class_member_declaration) [634 665])
+                    ("collector" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "OutputCollector")
+                        (reparse-symbol class_member_declaration) [670 714])
+                    ("topic" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [720 741])
+                    ("producerProps" variable
+                       (:typemodifiers ("private")
+                        :type "Properties")
+                        (reparse-symbol class_member_declaration) [746 779])
+                    ("KafkaSender" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("topic" variable (:type "String") (reparse-symbol formal_parameters) [804 816])
+                            ("producerProps" variable (:type "Properties") (reparse-symbol formal_parameters) [818 842]))                          )
+                        (reparse-symbol class_member_declaration) [785 940])
+                    ("prepare" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [966 979])
+                            ("context" variable (:type "TopologyContext") (reparse-symbol formal_parameters) [981 1004])
+                            ("collector" variable (:type "OutputCollector") (reparse-symbol formal_parameters) [1006 1031]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [946 1295])
+                    ("execute" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable (:type "Tuple") (reparse-symbol formal_parameters) [1322 1333]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1302 1910])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("declarer" variable (:type "OutputFieldsDeclarer") (reparse-symbol formal_parameters) [1948 1977]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1916 1987])
+                    ("cleanup" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2007 2092]))                  
+                :type "class")
+                nil [576 2095]))          
+      :file "KafkaSender.java"
+      :pointmax 2096
+      :fsize 2095
+      :lastmodtime '(22774 64828 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "MetricRedisConsumer.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall" package nil nil [1 28])
+            ("java.util.Collection" include nil nil [30 58])
+            ("java.util.Iterator" include nil nil [59 85])
+            ("java.util.Map" include nil nil [86 107])
+            ("cn.domob.domob_jedis.DomobJedis" include nil nil [109 148])
+            ("cn.domob.domob_jedis.DomobJedisPool" include nil nil [149 192])
+            ("org.apache.commons.lang3.StringUtils" include nil nil [193 237])
+            ("org.apache.storm.metric.api.IMetricsConsumer" include nil nil [238 290])
+            ("org.apache.storm.metric.api.IMetricsConsumer" include nil nil [291 343])
+            ("org.apache.storm.metric.api.IMetricsConsumer" include nil nil [344 396])
+            ("org.apache.storm.task.IErrorReporter" include nil nil [397 441])
+            ("org.apache.storm.task.TopologyContext" include nil nil [442 487])
+            ("MetricRedisConsumer" type
+               (:typemodifiers ("public")
+                :interfaces ("IMetricsConsumer")
+                :members 
+                  ( ("jedisPool" variable
+                       (:typemodifiers ("private")
+                        :type "DomobJedisPool")
+                        (reparse-symbol class_member_declaration) [729 762])
+                    ("redisKey" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [767 791])
+                    ("getRedisHosts" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("map" variable
+                               (:typemodifiers ("final")
+                                :type "Map")
+                                (reparse-symbol formal_parameters) [826 839]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [797 1018])
+                    ("prepare" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("map" variable
+                               (:typemodifiers ("final")
+                                :type "Map")
+                                (reparse-symbol formal_parameters) [1419 1432])
+                            ("object" variable
+                               (:typemodifiers ("final")
+                                :type "Object")
+                                (reparse-symbol formal_parameters) [1434 1453])
+                            ("topologyContext" variable
+                               (:typemodifiers ("final")
+                                :type "TopologyContext")
+                                (reparse-symbol formal_parameters) [1455 1492])
+                            ("IErrorReporter" variable
+                               (:typemodifiers ("final")
+                                :type "IErrorReporter")
+                                (reparse-symbol formal_parameters) [1494 1529]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1393 1977])
+                    ("cleanup" function
+                       (:typemodifiers ("public" "final")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2056 2092])
+                    ("handleDataPoints" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("taskInfo" variable
+                               (:typemodifiers ("final")
+                                :type "IMetricsConsumer.TaskInfo")
+                                (reparse-symbol formal_parameters) [2343 2383])
+                            ("collection" variable
+                               (:typemodifiers ("final")
+                                :type "Collection")
+                                (reparse-symbol formal_parameters) [2385 2412]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2308 2977]))                  
+                :type "class")
+                nil [662 2980]))          
+      :file "MetricRedisConsumer.java"
+      :pointmax 2981
+      :fsize 2980
+      :lastmodtime '(22774 53012 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ThriftEventScheme.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall" package nil nil [1 28])
+            ("org.apache.storm.tuple.Fields" include nil nil [30 67])
+            ("java.util.List" include nil nil [68 90])
+            ("org.apache.storm.spout.Scheme" include nil nil [91 128])
+            ("java.nio.ByteBuffer" include nil nil [129 156])
+            ("org.apache.storm.tuple.Values" include nil nil [157 194])
+            ("org.apache.storm.utils.Utils" include nil nil [195 231])
+            ("org.apache.thrift.TBase" include nil nil [232 263])
+            ("org.apache.thrift.TDeserializer" include nil nil [264 303])
+            ("org.apache.thrift.TException" include nil nil [304 340])
+            ("org.slf4j.Logger" include nil nil [341 365])
+            ("org.slf4j.LoggerFactory" include nil nil [366 397])
+            ("ThriftEventScheme" type
+               (:typemodifiers ("public")
+                :interfaces ("Scheme")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [625 705])
+                    ("clazz" variable
+                       (:typemodifiers ("private")
+                        :type "Class")
+                        (reparse-symbol class_member_declaration) [711 731])
+                    ("ThriftEventScheme" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("clazz" variable (:type "Class") (reparse-symbol formal_parameters) [762 773]))                          )
+                        (reparse-symbol class_member_declaration) [737 810])
+                    ("deserialize" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("byteBuffer" variable
+                               (:typemodifiers ("final")
+                                :type "ByteBuffer")
+                                (reparse-symbol formal_parameters) [1162 1189]))                          
+                        :type "List")
+                        (reparse-symbol class_member_declaration) [1132 1711])
+                    ("getOutputFields" function
+                       (:typemodifiers ("public" "final")
+                        :type "Fields")
+                        (reparse-symbol class_member_declaration) [1841 1922]))                  
+                :type "class")
+                nil [569 1925]))          
+      :file "ThriftEventScheme.java"
+      :pointmax 1926
+      :fsize 1925
+      :lastmodtime '(22768 33007 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!offerwall!ow_topology!src!main!java!cn!domob!offerwall!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,257 @@
+;; Object clk_act_checker/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "clk_act_checker/"
+  :tables
+  (list
+    (semanticdb-table "ClkWriterBolt.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.clk_act_checker" package nil nil [1 44])
+            ("java.nio.ByteBuffer" include nil nil [46 73])
+            ("java.util.Map" include nil nil [74 95])
+            ("cn.domob.offerwall.common.RichBoltWithMetric" include nil nil [97 149])
+            ("cn.domob.offerwall.thrift.settle.ClkEvent" include nil nil [150 199])
+            ("org.apache.storm.spout.MultiScheme" include nil nil [200 242])
+            ("org.apache.storm.task.OutputCollector" include nil nil [243 288])
+            ("org.apache.storm.task.TopologyContext" include nil nil [289 334])
+            ("org.apache.storm.topology.OutputFieldsDeclarer" include nil nil [335 389])
+            ("org.apache.storm.tuple.Fields" include nil nil [390 427])
+            ("org.apache.storm.tuple.Tuple" include nil nil [428 464])
+            ("org.slf4j.Logger" include nil nil [465 489])
+            ("org.slf4j.LoggerFactory" include nil nil [490 521])
+            ("ClkWriterBolt" type
+               (:typemodifiers ("public")
+                :superclasses "RichBoltWithMetric"
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [749 825])
+                    ("writer" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "ClkActChecker")
+                        (reparse-symbol class_member_declaration) [831 870])
+                    ("collector" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "OutputCollector")
+                        (reparse-symbol class_member_declaration) [875 919])
+                    ("execute" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("tuple" variable
+                               (:typemodifiers ("final")
+                                :type "Tuple")
+                                (reparse-symbol formal_parameters) [1124 1141]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1098 1476])
+                    ("prepare" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("map" variable
+                               (:typemodifiers ("final")
+                                :type "Map")
+                                (reparse-symbol formal_parameters) [1759 1772])
+                            ("topologyContext" variable
+                               (:typemodifiers ("final")
+                                :type "TopologyContext")
+                                (reparse-symbol formal_parameters) [1774 1811])
+                            ("outputCollector" variable
+                               (:typemodifiers ("final")
+                                :type "OutputCollector")
+                                (reparse-symbol formal_parameters) [1813 1850]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1733 2066])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("outputFieldsDeclarer" variable
+                               (:typemodifiers ("final")
+                                :type "OutputFieldsDeclarer")
+                                (reparse-symbol formal_parameters) [2336 2383]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2298 2393]))                  
+                :type "class")
+                nil [689 2398]))          
+      :file "ClkWriterBolt.java"
+      :pointmax 2399
+      :fsize 2398
+      :lastmodtime '(22775 5087 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ActCheckerBolt.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.clk_act_checker" package nil nil [1 44])
+            ("java.util.Map" include nil nil [46 67])
+            ("cn.domob.offerwall.common.RichBoltWithMetric" include nil nil [69 121])
+            ("cn.domob.offerwall.thrift.settle.ActEvent" include nil nil [122 171])
+            ("cn.domob.offerwall.thrift.settle.SettleEvent" include nil nil [172 224])
+            ("org.apache.storm.task.OutputCollector" include nil nil [225 270])
+            ("org.apache.storm.task.TopologyContext" include nil nil [271 316])
+            ("org.apache.storm.topology.OutputFieldsDeclarer" include nil nil [317 371])
+            ("org.apache.storm.tuple.Fields" include nil nil [372 409])
+            ("org.apache.storm.tuple.Tuple" include nil nil [410 446])
+            ("org.apache.storm.tuple.Values" include nil nil [447 484])
+            ("org.slf4j.Logger" include nil nil [485 509])
+            ("org.slf4j.LoggerFactory" include nil nil [510 541])
+            ("ActCheckerBolt" type
+               (:typemodifiers ("public")
+                :superclasses "RichBoltWithMetric"
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [772 849])
+                    ("collector" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "OutputCollector")
+                        (reparse-symbol class_member_declaration) [854 898])
+                    ("checker" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "ClkActChecker")
+                        (reparse-symbol class_member_declaration) [903 943])
+                    ("execute" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("tuple" variable
+                               (:typemodifiers ("final")
+                                :type "Tuple")
+                                (reparse-symbol formal_parameters) [1148 1165]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1122 1867])
+                    ("prepare" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("map" variable
+                               (:typemodifiers ("final")
+                                :type "Map")
+                                (reparse-symbol formal_parameters) [2150 2163])
+                            ("topologyContext" variable
+                               (:typemodifiers ("final")
+                                :type "TopologyContext")
+                                (reparse-symbol formal_parameters) [2165 2202])
+                            ("outputCollector" variable
+                               (:typemodifiers ("final")
+                                :type "OutputCollector")
+                                (reparse-symbol formal_parameters) [2204 2241]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2124 2522])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("outputFieldsDeclarer" variable
+                               (:typemodifiers ("final")
+                                :type "OutputFieldsDeclarer")
+                                (reparse-symbol formal_parameters) [2792 2839]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2754 2907]))                  
+                :type "class")
+                nil [710 2910]))          
+      :file "ActCheckerBolt.java"
+      :pointmax 2911
+      :fsize 2910
+      :lastmodtime '(22775 5181 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ClkActChecker.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.clk_act_checker" package nil nil [1 44])
+            ("java.util.Map" include nil nil [46 67])
+            ("cn.domob.domob_jedis.DomobJedis" include nil nil [69 108])
+            ("cn.domob.domob_jedis.DomobJedisPool" include nil nil [109 152])
+            ("cn.domob.offerwall.thrift.common.BasicOffer" include nil nil [153 204])
+            ("cn.domob.offerwall.thrift.common.DeviceInfo" include nil nil [205 256])
+            ("cn.domob.offerwall.thrift.common.Platform" include nil nil [257 306])
+            ("cn.domob.offerwall.thrift.settle.ActEvent" include nil nil [307 356])
+            ("cn.domob.offerwall.thrift.settle.ClkEvent" include nil nil [357 406])
+            ("cn.domob.offerwall.thrift.settle.SettleEvent" include nil nil [407 459])
+            ("cn.domob.offerwall.thrift.settle.SettleStage" include nil nil [460 512])
+            ("org.apache.thrift.TDeserializer" include nil nil [513 552])
+            ("org.apache.thrift.TException" include nil nil [553 589])
+            ("org.apache.thrift.TSerializer" include nil nil [590 627])
+            ("org.slf4j.Logger" include nil nil [628 652])
+            ("org.slf4j.LoggerFactory" include nil nil [653 684])
+            ("javax.xml.bind.DatatypeConverter" include nil nil [685 725])
+            ("ClkActChecker" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [922 998])
+                    ("redisPrefix" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1003 1030])
+                    ("keyTimeOut" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1035 1058])
+                    ("jedisPool" variable
+                       (:typemodifiers ("private")
+                        :type "DomobJedisPool")
+                        (reparse-symbol class_member_declaration) [1063 1096])
+                    ("getRedisHosts" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("hosts" variable (:type "String") (reparse-symbol formal_parameters) [1132 1144]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1103 1242])
+                    ("ClkActChecker" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("config" variable
+                               (:typemodifiers ("final")
+                                :type "Map")
+                                (reparse-symbol formal_parameters) [1345 1361]))                          )
+                        (reparse-symbol class_member_declaration) [1324 1816])
+                    ("getDeviceIdentify" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("device" variable (:type "DeviceInfo") (reparse-symbol formal_parameters) [1856 1873]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1823 2206])
+                    ("getOfferIdentify" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("offer" variable (:type "BasicOffer") (reparse-symbol formal_parameters) [2244 2260]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2212 2408])
+                    ("redisKey" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("device" variable (:type "DeviceInfo") (reparse-symbol formal_parameters) [2442 2459])
+                            ("offer" variable (:type "BasicOffer") (reparse-symbol formal_parameters) [2461 2477]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2418 2784])
+                    ("recordEvent" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("event" variable (:type "ClkEvent") (reparse-symbol formal_parameters) [2857 2871]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2830 3811])
+                    ("checkEvent" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("device" variable (:type "DeviceInfo") (reparse-symbol formal_parameters) [3844 3861])
+                            ("offer" variable (:type "BasicOffer") (reparse-symbol formal_parameters) [3863 3879]))                          
+                        :type "ClkEvent")
+                        (reparse-symbol class_member_declaration) [3817 4593])
+                    ("checkAct" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("event" variable (:type "ActEvent") (reparse-symbol formal_parameters) [4627 4641]))                          
+                        :type "SettleEvent")
+                        (reparse-symbol class_member_declaration) [4599 5282]))                  
+                :type "class")
+                nil [889 5285]))          
+      :file "ClkActChecker.java"
+      :pointmax 5286
+      :fsize 5285
+      :lastmodtime '(22775 4320 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!offerwall!ow_topology!src!main!java!cn!domob!offerwall!clk_act_checker!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

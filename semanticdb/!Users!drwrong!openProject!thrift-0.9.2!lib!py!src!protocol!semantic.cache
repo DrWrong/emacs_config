@@ -1,0 +1,324 @@
+;; Object protocol/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "protocol/"
+  :tables
+  (list
+    (semanticdb-table "TBinaryProtocol.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("TProtocol" include nil nil [787 810])
+            ("struct" include nil nil [811 842])
+            ("TBinaryProtocol" type
+               (:documentation "Binary implementation of the Thrift protocol driver."
+                :superclasses ("TProtocolBase")
+                :members 
+                  ( ("VERSION_MASK" code nil (reparse-symbol indented_block_body) [1162 1183])
+                    ("VERSION_1" code nil (reparse-symbol indented_block_body) [1214 1237])
+                    ("TYPE_MASK" variable nil (reparse-symbol indented_block_body) [1241 1263])
+                    ("__init__" function
+                       (:suite 
+                          ( ("TProtocolBase" code nil (reparse-symbol indented_block_body) [1334 1369])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1374 1402])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1407 1437]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1280 1284])
+                            ("trans" variable nil (reparse-symbol function_parameters) [1286 1291])
+                            ("strictRead" variable nil (reparse-symbol function_parameters) [1293 1303])
+                            ("strictWrite" variable nil (reparse-symbol function_parameters) [1311 1322]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1267 1438])
+                    ("writeMessageBegin" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1463 1467])
+                            ("name" variable nil (reparse-symbol function_parameters) [1469 1473])
+                            ("type" variable nil (reparse-symbol function_parameters) [1475 1479])
+                            ("seqid" variable nil (reparse-symbol function_parameters) [1481 1486]))                          )
+                        (reparse-symbol indented_block_body) [1441 1717])
+                    ("writeMessageEnd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1740 1744]))                          )
+                        (reparse-symbol indented_block_body) [1720 1756])
+                    ("writeStructBegin" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1780 1784])
+                            ("name" variable nil (reparse-symbol function_parameters) [1786 1790]))                          )
+                        (reparse-symbol indented_block_body) [1759 1802])
+                    ("writeStructEnd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1824 1828]))                          )
+                        (reparse-symbol indented_block_body) [1805 1840])
+                    ("writeFieldBegin" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1863 1867])
+                            ("name" variable nil (reparse-symbol function_parameters) [1869 1873])
+                            ("type" variable nil (reparse-symbol function_parameters) [1875 1879])
+                            ("id" variable nil (reparse-symbol function_parameters) [1881 1883]))                          )
+                        (reparse-symbol indented_block_body) [1843 1933])
+                    ("writeFieldEnd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1954 1958]))                          )
+                        (reparse-symbol indented_block_body) [1936 1970])
+                    ("writeFieldStop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1992 1996]))                          )
+                        (reparse-symbol indented_block_body) [1973 2030])
+                    ("writeMapBegin" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2051 2055])
+                            ("ktype" variable nil (reparse-symbol function_parameters) [2057 2062])
+                            ("vtype" variable nil (reparse-symbol function_parameters) [2064 2069])
+                            ("size" variable nil (reparse-symbol function_parameters) [2071 2075]))                          )
+                        (reparse-symbol indented_block_body) [2033 2154])
+                    ("writeMapEnd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2173 2177]))                          )
+                        (reparse-symbol indented_block_body) [2157 2189])
+                    ("writeListBegin" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2211 2215])
+                            ("etype" variable nil (reparse-symbol function_parameters) [2217 2222])
+                            ("size" variable nil (reparse-symbol function_parameters) [2224 2228]))                          )
+                        (reparse-symbol indented_block_body) [2192 2281])
+                    ("writeListEnd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2301 2305]))                          )
+                        (reparse-symbol indented_block_body) [2284 2317])
+                    ("writeSetBegin" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2338 2342])
+                            ("etype" variable nil (reparse-symbol function_parameters) [2344 2349])
+                            ("size" variable nil (reparse-symbol function_parameters) [2351 2355]))                          )
+                        (reparse-symbol indented_block_body) [2320 2408])
+                    ("writeSetEnd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2427 2431]))                          )
+                        (reparse-symbol indented_block_body) [2411 2443])
+                    ("writeBool" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2460 2464])
+                            ("bool" variable nil (reparse-symbol function_parameters) [2466 2470]))                          )
+                        (reparse-symbol indented_block_body) [2446 2544])
+                    ("writeByte" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2561 2565])
+                            ("byte" variable nil (reparse-symbol function_parameters) [2567 2571]))                          )
+                        (reparse-symbol indented_block_body) [2547 2629])
+                    ("writeI16" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2645 2649])
+                            ("i16" variable nil (reparse-symbol function_parameters) [2651 2654]))                          )
+                        (reparse-symbol indented_block_body) [2632 2711])
+                    ("writeI32" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2727 2731])
+                            ("i32" variable nil (reparse-symbol function_parameters) [2733 2736]))                          )
+                        (reparse-symbol indented_block_body) [2714 2793])
+                    ("writeI64" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2809 2813])
+                            ("i64" variable nil (reparse-symbol function_parameters) [2815 2818]))                          )
+                        (reparse-symbol indented_block_body) [2796 2875])
+                    ("writeDouble" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2894 2898])
+                            ("dub" variable nil (reparse-symbol function_parameters) [2900 2903]))                          )
+                        (reparse-symbol indented_block_body) [2878 2960])
+                    ("writeString" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2979 2983])
+                            ("str" variable nil (reparse-symbol function_parameters) [2985 2988]))                          )
+                        (reparse-symbol indented_block_body) [2963 3045])
+                    ("readMessageBegin" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3069 3073]))                          )
+                        (reparse-symbol indented_block_body) [3048 3763])
+                    ("readMessageEnd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3785 3789]))                          )
+                        (reparse-symbol indented_block_body) [3766 3801])
+                    ("readStructBegin" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3824 3828]))                          )
+                        (reparse-symbol indented_block_body) [3804 3840])
+                    ("readStructEnd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3861 3865]))                          )
+                        (reparse-symbol indented_block_body) [3843 3877])
+                    ("readFieldBegin" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3899 3903]))                          )
+                        (reparse-symbol indented_block_body) [3880 4041])
+                    ("readFieldEnd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4061 4065]))                          )
+                        (reparse-symbol indented_block_body) [4044 4077])
+                    ("readMapBegin" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4097 4101]))                          )
+                        (reparse-symbol indented_block_body) [4080 4218])
+                    ("readMapEnd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4236 4240]))                          )
+                        (reparse-symbol indented_block_body) [4221 4252])
+                    ("readListBegin" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4273 4277]))                          )
+                        (reparse-symbol indented_block_body) [4255 4359])
+                    ("readListEnd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4378 4382]))                          )
+                        (reparse-symbol indented_block_body) [4362 4394])
+                    ("readSetBegin" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4414 4418]))                          )
+                        (reparse-symbol indented_block_body) [4397 4500])
+                    ("readSetEnd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4518 4522]))                          )
+                        (reparse-symbol indented_block_body) [4503 4534])
+                    ("readBool" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4550 4554]))                          )
+                        (reparse-symbol indented_block_body) [4537 4637])
+                    ("readByte" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4653 4657]))                          )
+                        (reparse-symbol indented_block_body) [4640 4738])
+                    ("readI16" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4753 4757]))                          )
+                        (reparse-symbol indented_block_body) [4741 4838])
+                    ("readI32" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4853 4857]))                          )
+                        (reparse-symbol indented_block_body) [4841 4938])
+                    ("readI64" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4953 4957]))                          )
+                        (reparse-symbol indented_block_body) [4941 5038])
+                    ("readDouble" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5056 5060]))                          )
+                        (reparse-symbol indented_block_body) [5041 5141])
+                    ("readString" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5159 5163]))                          )
+                        (reparse-symbol indented_block_body) [5144 5240]))                  
+                :type "class")
+                nil [845 5240])
+            ("TBinaryProtocolFactory" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [5334 5362])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5367 5397]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5287 5291])
+                            ("strictRead" variable nil (reparse-symbol function_parameters) [5293 5303])
+                            ("strictWrite" variable nil (reparse-symbol function_parameters) [5311 5322]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5274 5398])
+                    ("getProtocol" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5417 5421])
+                            ("trans" variable nil (reparse-symbol function_parameters) [5423 5428]))                          )
+                        (reparse-symbol indented_block_body) [5401 5516]))                  
+                :type "class")
+                nil [5242 5516])
+            ("TBinaryProtocolAccelerated" type
+               (:documentation "C-Accelerated version of TBinaryProtocol.
+
+  This class does not override any of TBinaryProtocol's methods,
+  but the generated code recognizes it directly and will call into
+  our C module to do the encoding, bypassing this object entirely.
+  We inherit from TBinaryProtocol so that the normal TBinaryProtocol
+  encoding can happen if the fastbinary module doesn't work for some
+  reason.  (TODO(dreiss): Make this happen sanely in more cases.)
+
+  In order to take advantage of the C module, just use
+  TBinaryProtocolAccelerated instead of TBinaryProtocol.
+
+  NOTE:  This code was contributed by an external developer.
+         The internal Thrift team has reviewed and tested it,
+         but we cannot guarantee that it is production-ready.
+         Please feel free to report bugs and/or success stories
+         to the public mailing list.
+  "
+                :superclasses ("TBinaryProtocol")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [6428 6432]))                  
+                :type "class")
+                nil [5518 6433])
+            ("TBinaryProtocolAcceleratedFactory" type
+               (:members 
+                  ( ("getProtocol" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6494 6498])
+                            ("trans" variable nil (reparse-symbol function_parameters) [6500 6505]))                          )
+                        (reparse-symbol indented_block_body) [6478 6553]))                  
+                :type "class")
+                nil [6435 6553]))          
+      :file "TBinaryProtocol.py"
+      :pointmax 6553
+      :fsize 6552
+      :lastmodtime '(21593 33383 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__all__" variable nil nil [787 889]))          
+      :file "__init__.py"
+      :pointmax 890
+      :fsize 889
+      :lastmodtime '(21593 33383 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "TProtocol.py"
+      :file "TProtocol.py"
+      :fsize 11755
+      :lastmodtime '(21593 33383 0 0)))
+  :file "!Users!drwrong!openProject!thrift-0.9.2!lib!py!src!protocol!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,124 @@
+;; Object exchange_statistic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "exchange_statistic/"
+  :tables
+  (list
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [541 580])
+            ("django.db" include nil nil [582 610])
+            ("User" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [643 685])
+                    ("phone_num" variable nil (reparse-symbol indented_block_body) [690 726])
+                    ("imei" variable nil (reparse-symbol indented_block_body) [731 769])
+                    ("create_time" variable nil (reparse-symbol indented_block_body) [774 809])
+                    ("register_ip" variable nil (reparse-symbol indented_block_body) [814 859])
+                    ("register_time" variable nil (reparse-symbol indented_block_body) [864 901])
+                    ("password" variable nil (reparse-symbol indented_block_body) [906 948])
+                    ("status" variable nil (reparse-symbol indented_block_body) [953 983])
+                    ("sex" variable nil (reparse-symbol indented_block_body) [988 1015])
+                    ("birthday" variable nil (reparse-symbol indented_block_body) [1020 1052])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [1078 1093])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [1102 1119]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1058 1120]))                  
+                :type "class")
+                nil [613 1120])
+            ("SosDevice" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [1157 1199])
+                    ("imei" variable nil (reparse-symbol indented_block_body) [1204 1255])
+                    ("create_time" variable nil (reparse-symbol indented_block_body) [1260 1295])
+                    ("status" variable nil (reparse-symbol indented_block_body) [1300 1330])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [1355 1370])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [1379 1402]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1335 1403]))                  
+                :type "class")
+                nil [1122 1403]))          
+      :file "models.py"
+      :pointmax 1403
+      :fsize 1402
+      :lastmodtime '(22071 10193 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "send_report.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Author: huhaoran <Huhaoran@domob.cn>
+发送天级用户信息以及兑换信息报表
+\"\"\"" code nil nil [26 87])
+            ("logging" include nil nil [89 103])
+            ("redis" include nil nil [104 116])
+            ("datetime" include nil nil [117 157])
+            ("models" include nil nil [158 192])
+            ("django.template.loader" include nil nil [193 244])
+            ("django.db" include nil nil [245 278])
+            ("django.core.mail" include nil nil [279 330])
+            ("django.conf" include nil nil [331 363])
+            ("SendReport" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [438 493])
+                            ("endtime" variable nil (reparse-symbol indented_block_body) [502 563])
+                            ("self" code nil (reparse-symbol indented_block_body) [572 616])
+                            ("self" variable nil (reparse-symbol indented_block_body) [625 673])
+                            ("self" variable nil (reparse-symbol indented_block_body) [700 774])
+                            ("self" variable nil (reparse-symbol indented_block_body) [801 880])
+                            ("self" variable nil (reparse-symbol indented_block_body) [889 938]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [410 414])
+                            ("domino_time" variable nil (reparse-symbol function_parameters) [416 427]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [397 939])
+                    ("userinfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [957 961]))                          
+                        :documentation "
+        获取给定日期的安装和注册信息
+        ")
+                        (reparse-symbol indented_block_body) [944 3022])
+                    ("get_channel_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3048 3052]))                          
+                        :documentation "
+        渠道的新增安装和注册信息
+        ")
+                        (reparse-symbol indented_block_body) [3027 3773])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3786 3790]))                          )
+                        (reparse-symbol indented_block_body) [3778 4303]))                  
+                :type "class")
+                nil [366 4303])
+            ("subtract" function
+               (:documentation "
+    计算百分比
+    "
+                :arguments 
+                  ( ("a" variable nil (reparse-symbol function_parameters) [4317 4318])
+                    ("b" variable nil (reparse-symbol function_parameters) [4320 4321])
+                    ("rise" variable nil (reparse-symbol function_parameters) [4323 4327]))                  )
+                nil [4304 4495]))          
+      :file "send_report.py"
+      :pointmax 4496
+      :fsize 4769
+      :lastmodtime '(22072 6510 0 0)
+      :unmatched-syntax '((NAME 1870 . 1877) (IF 1889 . 1891) (ELSE 1904 . 1908))))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_static!lib!exchange_statistic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

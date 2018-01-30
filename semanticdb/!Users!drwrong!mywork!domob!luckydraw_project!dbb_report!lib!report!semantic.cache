@@ -1,0 +1,137 @@
+;; Object report/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "report/"
+  :tables
+  (list
+    (semanticdb-table "send_report.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__author__" variable nil nil [18 62])
+            ("json" include nil nil [64 75])
+            ("logging" include nil nil [76 90])
+            ("datetime" include nil nil [91 106])
+            ("collections" include nil nil [107 142])
+            ("django.conf" include nil nil [143 175])
+            ("django.template.loader" include nil nil [176 227])
+            ("django.core.mail" include nil nil [228 266])
+            ("alarm_query" include nil nil [268 302])
+            ("product_query" include nil nil [303 330])
+            ("logger" variable nil nil [332 368])
+            ("SendAlarmReport" type
+               (:documentation "发报警邮件
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [460 481])
+                            ("self" code nil (reparse-symbol indented_block_body) [490 531])
+                            ("self" code nil (reparse-symbol indented_block_body) [540 579]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [441 445])
+                            ("dt" variable nil (reparse-symbol function_parameters) [447 449]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [428 580])
+                    ("stats" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [595 599]))                          
+                        :documentation "处理从Sensor取到的数据，并判断是否需要发报警邮件
+        ")
+                        (reparse-symbol indented_block_body) [585 1951])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1964 1968]))                          
+                        :documentation "发邮件
+        ")
+                        (reparse-symbol indented_block_body) [1956 3067]))                  
+                :type "class")
+                nil [371 3067])
+            ("SendProductReport" type
+               (:documentation "发商品数据报表邮件
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [3166 3193])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3202 3265]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3145 3149])
+                            ("date" variable nil (reparse-symbol function_parameters) [3151 3155]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3132 3266])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3279 3283]))                          )
+                        (reparse-symbol indented_block_body) [3271 4948]))                  
+                :type "class")
+                nil [3069 4948]))          
+      :file "send_report.py"
+      :pointmax 4948
+      :fsize 5131
+      :lastmodtime '(22643 23662 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "deliver_report.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__author__" variable nil nil [18 62])
+            ("openpyxl" include nil nil [64 93])
+            ("openpyxl.worksheet.datavalidation" include nil nil [94 154])
+            ("collections" include nil nil [155 202])
+            ("base64" include nil nil [203 216])
+            ("datetime" include nil nil [217 232])
+            ("django.core.mail" include nil nil [234 275])
+            ("django.conf" include nil nil [277 309])
+            ("models" include nil nil [310 339])
+            ("SendDeliverReport" type
+               (:documentation "
+    发送待发货订单给供货商
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [445 461]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [424 428])
+                            ("date" variable nil (reparse-symbol function_parameters) [430 434]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [411 462])
+                    ("query" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [477 481]))                          )
+                        (reparse-symbol indented_block_body) [467 1716])
+                    ("send" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1730 1734]))                          )
+                        (reparse-symbol indented_block_body) [1721 3014]))                  
+                :type "class")
+                nil [342 3014]))          
+      :file "deliver_report.py"
+      :pointmax 3014
+      :fsize 3109
+      :lastmodtime '(22511 26005 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "alarm_query.py"
+      :file "alarm_query.py"
+      :fsize 4898
+      :lastmodtime '(22638 10180 0 0))
+    (semanticdb-table "product_query.py"
+      :file "product_query.py"
+      :fsize 4571
+      :lastmodtime '(22638 10180 0 0))
+    (semanticdb-table "models.py"
+      :file "models.py"
+      :fsize 4022
+      :lastmodtime '(22638 10180 0 0)))
+  :file "!Users!drwrong!mywork!domob!luckydraw_project!dbb_report!lib!report!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,24 @@
+;; Object iosrehookertweak/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "iosrehookertweak/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-bsdmake-mode
+      :tags 
+        '( ("THEOS_DEVICE_IP" variable (:default-value ("192.168.168.45")) nil [1 32])
+            ("ARCHS" variable (:default-value ("arm64")) nil [32 46])
+            ("TARGET" variable (:default-value ("iphone:latest:9.2")) nil [46 73])
+            ("$(THEOS)/makefiles/common.mk" include nil nil [74 111])
+            ("TWEAK_NAME" variable (:default-value ("iOSREHookerTweak")) nil [112 142])
+            ("iOSREHookerTweak_FILES" variable (:default-value ("Tweak.xm")) nil [142 176])
+            ("$(THEOS_MAKE_PATH)/tweak.mk" include nil nil [177 213])
+            ("after-install" function nil nil [214 272]))          
+      :file "Makefile"
+      :pointmax 272
+      :fsize 271
+      :lastmodtime '(22677 32143 0 0)
+      :unmatched-syntax '((shell-command 231 . 271) (bol 230 . 230))))
+  :file "!Users!drwrong!mywork!appstore!iosrehookertweak!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

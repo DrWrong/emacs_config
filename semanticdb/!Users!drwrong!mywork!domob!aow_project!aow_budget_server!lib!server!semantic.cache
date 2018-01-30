@@ -1,0 +1,381 @@
+;; Object server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "server/"
+  :tables
+  (list
+    (semanticdb-table "handler.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [39 78])
+            ("logging" include nil nil [80 94])
+            ("time" include nil nil [95 106])
+            ("django.db" include nil nil [107 123])
+            ("server.db.models" include nil nil [125 165])
+            ("django.db" include nil nil [166 217])
+            ("django.db.models" include nil nil [218 248])
+            ("domob_pyutils.statscol" include nil nil [249 289])
+            ("domob_pyutils.func_stats" include nil nil [290 337])
+            ("BudgetServerHandler" type
+               (:documentation "结算的线程
+
+    从队列中获取待结算的记录，判断是否应该结算，并更新到数据库
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [472 529])
+                            ("self" variable nil (reparse-symbol indented_block_body) [538 558])
+                            ("self" variable nil (reparse-symbol indented_block_body) [567 634])
+                            ("self" variable nil (reparse-symbol indented_block_body) [643 657]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [449 453])
+                            ("config" variable nil (reparse-symbol function_parameters) [455 461]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [436 658])
+                    ("addPlanConsume" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("transaction.atomic" function (:type "decorator") nil nil)
+                            ("func_stats" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [722 726])
+                            ("head" variable nil (reparse-symbol function_parameters) [728 732])
+                            ("planid" variable nil (reparse-symbol function_parameters) [734 740]))                          
+                        :documentation "更新广告计划的预算消耗
+        ")
+                        (reparse-symbol indented_block_body) [663 2815])
+                    ("checkPlanBudgetOver" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("func_stats" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2860 2864])
+                            ("head" variable nil (reparse-symbol function_parameters) [2866 2870])
+                            ("planid" variable nil (reparse-symbol function_parameters) [2872 2878]))                          
+                        :documentation "
+        检查广告计划是不是超投了
+        return True|False
+        ")
+                        (reparse-symbol indented_block_body) [2820 4474]))                  
+                :type "class")
+                nil [340 4474]))          
+      :file "handler.py"
+      :pointmax 4474
+      :fsize 4661
+      :lastmodtime '(22700 2087 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 3302 . 3656) (NEWLINE 3301 . 3302) (COLON 3300 . 3301) (TRY 3202 . 3205) (AS 3296 . 3298) (INDENT_BLOCK 2409 . 2574) (NEWLINE 2408 . 2409) (COLON 2407 . 2408) (TRY 1121 . 1124) (AS 2403 . 2405)))
+    (semanticdb-table "server_main.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [26 40])
+            ("sys" include nil nil [41 51])
+            ("thrift.transport" include nil nil [53 89])
+            ("thrift.transport" include nil nil [90 129])
+            ("thrift.protocol" include nil nil [130 173])
+            ("thrift.server" include nil nil [174 207])
+            ("thrift.server.TNonblockingServer" include nil nil [208 271])
+            ("domob_pyutils.statscol" include nil nil [273 313])
+            ("server.handler" include nil nil [314 360])
+            ("domob_thrift.aow.budgetserver" include nil nil [361 418])
+            ("plan_thread" include nil nil [419 453])
+            ("plan_dailybudget_thread" include nil nil [454 511])
+            ("pkg_dailyprice_thread" include nil nil [512 565])
+            ("django.db" include nil nil [566 609])
+            ("ut" include nil nil [610 631])
+            ("HandlerWrapper" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [706 728]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [682 686])
+                            ("handler" variable nil (reparse-symbol function_parameters) [688 695]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [669 729])
+                    ("__getattr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [750 754])
+                            ("attr" variable nil (reparse-symbol function_parameters) [756 760]))                          )
+                        (reparse-symbol indented_block_body) [734 838]))                  
+                :type "class")
+                nil [634 838])
+            ("AowBudgetServerApp" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [912 969])
+                            ("self" variable nil (reparse-symbol indented_block_body) [978 992])
+                            ("sname" variable nil (reparse-symbol indented_block_body) [1001 1036])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1045 1063])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1072 1107])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1116 1160])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1169 1233])
+                            ("framed" variable nil (reparse-symbol indented_block_body) [1242 1271])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1280 1298])
+                            ("if" code nil (reparse-symbol indented_block_body) [1307 1369])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1377 1435])
+                            ("self" code nil (reparse-symbol indented_block_body) [1444 1573]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [892 896])
+                            ("cfg" variable nil (reparse-symbol function_parameters) [898 901]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [879 1574])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1587 1591]))                          )
+                        (reparse-symbol indented_block_body) [1579 2623])
+                    ("get_servertp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2645 2649])
+                            ("processor" variable nil (reparse-symbol function_parameters) [2651 2660])
+                            ("transport" variable nil (reparse-symbol function_parameters) [2662 2671])
+                            ("tfactory" variable nil (reparse-symbol function_parameters) [2673 2681])
+                            ("pfactory" variable nil (reparse-symbol function_parameters) [2683 2691])
+                            ("tp" variable nil (reparse-symbol function_parameters) [2693 2695])
+                            ("threads" variable nil (reparse-symbol function_parameters) [2718 2725]))                          )
+                        (reparse-symbol indented_block_body) [2628 3351])
+                    ("runThriftSever" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3375 3379]))                          
+                        :documentation "启动thrift server，会block，直到server退出")
+                        (reparse-symbol indented_block_body) [3356 4273]))                  
+                :type "class")
+                nil [840 4273]))          
+      :file "server_main.py"
+      :pointmax 4273
+      :fsize 4516
+      :lastmodtime '(22700 1677 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "pkg_dailyprice_thread.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [26 40])
+            ("threading" include nil nil [41 57])
+            ("time" include nil nil [58 69])
+            ("datetime" include nil nil [70 85])
+            ("django.db" include nil nil [87 103])
+            ("django.db" include nil nil [104 137])
+            ("domob_pyutils.statscol" include nil nil [138 178])
+            ("server.db.models" include nil nil [180 237])
+            ("PkgDailyPriceThread" type
+               (:documentation "检查可推包是否有排期的预算，如果有则修改
+
+    "
+                :superclasses ("threading.Thread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("threading" code nil (reparse-symbol indented_block_body) [373 414])
+                            ("self" variable nil (reparse-symbol indented_block_body) [423 508])
+                            ("self" variable nil (reparse-symbol indented_block_body) [517 537])
+                            ("self" code nil (reparse-symbol indented_block_body) [546 597]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [340 344])
+                            ("config" variable nil (reparse-symbol function_parameters) [346 352])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [354 362]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [327 598])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [611 615]))                          )
+                        (reparse-symbol indented_block_body) [603 1045])
+                    ("sleep_to_midnight" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1072 1076])
+                            ("now" variable nil (reparse-symbol function_parameters) [1078 1081]))                          
+                        :documentation "睡到明天凌晨0点
+
+        Args:
+         now - int 当前时间的时间戳
+        ")
+                        (reparse-symbol indented_block_body) [1050 1431])
+                    ("check_dailyprice" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1457 1461])
+                            ("now" variable nil (reparse-symbol function_parameters) [1463 1466]))                          
+                        :documentation "检查可推包是否需要修改当天的预算
+        这里只查询得到了所有的pkg，然后在每一次循环中建立一个事务
+        ")
+                        (reparse-symbol indented_block_body) [1436 2202])
+                    ("resetPkgPrice" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("transaction.atomic" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2249 2253])
+                            ("pkg" variable nil (reparse-symbol function_parameters) [2255 2258])
+                            ("schedule" variable nil (reparse-symbol function_parameters) [2260 2268]))                          
+                        :documentation "检查一个offer对应的pkg是否需要修改当日预算
+
+        ")
+                        (reparse-symbol indented_block_body) [2207 2675]))                  
+                :type "class")
+                nil [240 2675]))          
+      :file "pkg_dailyprice_thread.py"
+      :pointmax 2675
+      :fsize 2968
+      :lastmodtime '(22700 2338 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 879 . 1005) (NEWLINE 878 . 879) (COLON 877 . 878) (TRY 796 . 799) (AS 873 . 875)))
+    (semanticdb-table "plan_thread.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [26 40])
+            ("threading" include nil nil [41 57])
+            ("time" include nil nil [58 69])
+            ("django.db" include nil nil [70 86])
+            ("django.db" include nil nil [87 120])
+            ("domob_pyutils.statscol" include nil nil [121 161])
+            ("server.db.models" include nil nil [163 203])
+            ("server" include nil nil [204 228])
+            ("PlanThread" type
+               (:documentation "检查广告计划预算是否用尽
+
+    "
+                :superclasses ("threading.Thread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("threading" code nil (reparse-symbol indented_block_body) [347 388])
+                            ("self" variable nil (reparse-symbol indented_block_body) [397 459])
+                            ("self" variable nil (reparse-symbol indented_block_body) [468 504])
+                            ("self" code nil (reparse-symbol indented_block_body) [513 551]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [314 318])
+                            ("config" variable nil (reparse-symbol function_parameters) [320 326])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [328 336]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [301 552])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [565 569]))                          )
+                        (reparse-symbol indented_block_body) [557 961])
+                    ("checkAllAdPlanBudget" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [991 995]))                          
+                        :documentation "检查广告计划的预算是否用尽，是否需要重置天级消耗为0
+
+        这里检查库中所有的广告计划，如果随着时间积累，广告计划越来越多，则
+        可能需要优化查询，只查询“投放中”的广告
+
+        这里只查询得到了所有的pid，然后在每一次循环中建立一个事物
+        ")
+                        (reparse-symbol indented_block_body) [966 1559])
+                    ("checkAdPlanBudget" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("transaction.atomic" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1610 1614])
+                            ("adPlan" variable nil (reparse-symbol function_parameters) [1616 1622]))                          
+                        :documentation "检查一个计划的预算是否用光
+
+        这里需要考虑较复杂的并发问题。mis上可能会修改一个plan的预算，结算的工作线程可能会修改
+        消耗值。
+        这里需要判断总的预算以及天级预算是否消耗光了，
+        ")
+                        (reparse-symbol indented_block_body) [1564 4101]))                  
+                :type "class")
+                nil [231 4101]))          
+      :file "plan_thread.py"
+      :pointmax 4101
+      :fsize 4724
+      :lastmodtime '(22700 233 0 0)
+      :unmatched-syntax '((NAME 3513 . 3519) (IF 3546 . 3548) (ELSE 3565 . 3569) (NAME 2488 . 2494) (IF 2516 . 2518) (ELSE 2530 . 2534) (INDENT_BLOCK 743 . 870) (NEWLINE 742 . 743) (COLON 741 . 742) (TRY 659 . 662) (AS 737 . 739)))
+    (semanticdb-table "plan_dailybudget_thread.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [26 40])
+            ("threading" include nil nil [41 57])
+            ("time" include nil nil [58 69])
+            ("django.db" include nil nil [70 86])
+            ("django.db" include nil nil [87 120])
+            ("domob_pyutils.statscol" include nil nil [121 161])
+            ("server.db.models" include nil nil [163 239])
+            ("server" include nil nil [240 264])
+            ("PlanDailyBudgetThread" type
+               (:documentation "检查广告计划是否有排期的预算，如果有则修改
+
+    "
+                :superclasses ("threading.Thread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("threading" code nil (reparse-symbol indented_block_body) [402 443])
+                            ("self" variable nil (reparse-symbol indented_block_body) [452 526])
+                            ("self" variable nil (reparse-symbol indented_block_body) [535 555])
+                            ("self" code nil (reparse-symbol indented_block_body) [564 613]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [369 373])
+                            ("config" variable nil (reparse-symbol function_parameters) [375 381])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [383 391]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [356 614])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [627 631]))                          )
+                        (reparse-symbol indented_block_body) [619 1067])
+                    ("sleep_to_midnight" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1094 1098])
+                            ("now" variable nil (reparse-symbol function_parameters) [1100 1103]))                          
+                        :documentation "睡到明天凌晨0点
+
+        Args:
+         now - int 当前时间的时间戳
+        ")
+                        (reparse-symbol indented_block_body) [1072 1441])
+                    ("check_dailybudget" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1468 1472])
+                            ("now" variable nil (reparse-symbol function_parameters) [1474 1477]))                          
+                        :documentation "检查广告计划是否需要修改当天的预算
+
+        这里检查库中所有的广告计划，如果随着时间积累，广告计划越来越多，则
+        可能需要优化查询，只查询“投放中”的广告
+
+        这里只查询得到了所有的pid，然后在每一次循环中建立一个事物
+        ")
+                        (reparse-symbol indented_block_body) [1446 2139])
+                    ("resetPlanBudget" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("transaction.atomic" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2188 2192])
+                            ("offer" variable nil (reparse-symbol function_parameters) [2194 2199])
+                            ("schedule" variable nil (reparse-symbol function_parameters) [2201 2209]))                          
+                        :documentation "检查一个offer对应的plan是否需要修改当日预算
+
+        ")
+                        (reparse-symbol indented_block_body) [2144 2756]))                  
+                :type "class")
+                nil [266 2756]))          
+      :file "plan_dailybudget_thread.py"
+      :pointmax 2756
+      :fsize 3145
+      :lastmodtime '(22699 64205 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 898 . 1027) (NEWLINE 897 . 898) (COLON 896 . 897) (TRY 814 . 817) (AS 892 . 894))))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_budget_server!lib!server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

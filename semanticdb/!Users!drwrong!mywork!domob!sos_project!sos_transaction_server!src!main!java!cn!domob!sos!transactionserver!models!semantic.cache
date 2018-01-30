@@ -1,0 +1,216 @@
+;; Object models/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "models/"
+  :tables
+  (list
+    (semanticdb-table "InsertModel.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.sos.transactionserver.models" package nil nil [1 47])
+            ("cn.domob.jasf.bootstrap.SystemService" include nil nil [49 94])
+            ("cn.domob.sos.transactionserver.thrift.IncomeItem" include nil nil [95 151])
+            ("cn.domob.sos.transactionserver.utils.TTextProtocol" include nil nil [152 210])
+            ("com.google.gson.Gson" include nil nil [211 239])
+            ("com.sequoiadb.base.DBCollection" include nil nil [240 279])
+            ("com.sequoiadb.base.DBQuery" include nil nil [280 314])
+            ("com.sequoiadb.base.SequoiadbDatasource" include nil nil [315 361])
+            ("com.sequoiadb.exception.BaseException" include nil nil [362 407])
+            ("org.apache.thrift.TException" include nil nil [409 445])
+            ("org.apache.thrift.transport.TMemoryBuffer" include nil nil [446 495])
+            ("org.bson.BSONObject" include nil nil [496 523])
+            ("org.bson.BasicBSONObject" include nil nil [524 556])
+            ("org.bson.types.BasicBSONList" include nil nil [557 593])
+            ("org.slf4j.Logger" include nil nil [594 618])
+            ("redis.clients.jedis.Jedis" include nil nil [619 652])
+            ("java.io.UnsupportedEncodingException" include nil nil [654 698])
+            ("InsertModel" type
+               (:typemodifiers ("public")
+                :superclasses "AbstractModel"
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1138 1222])
+                    ("uid" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1227 1244])
+                    ("incomeItem" variable
+                       (:typemodifiers ("protected")
+                        :type "IncomeItem")
+                        (reparse-symbol class_member_declaration) [1249 1281])
+                    ("InsertModel" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("incomeItem" variable (:type "IncomeItem") (reparse-symbol formal_parameters) [1307 1328]))                          )
+                        (reparse-symbol class_member_declaration) [1288 1409])
+                    ("performUpdate" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("condition" variable (:type "BSONObject") (reparse-symbol formal_parameters) [1444 1464])
+                            ("obj" variable (:type "BSONObject") (reparse-symbol formal_parameters) [1466 1480])
+                            ("collection" variable (:type "DBCollection") (reparse-symbol formal_parameters) [1482 1505]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1415 2043])
+                    ("performInsert" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2136 3356])
+                    ("insertPostProcess" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3362 3549]))                  
+                :type "class")
+                nil [1085 3554]))          
+      :file "InsertModel.java"
+      :pointmax 3558
+      :fsize 3809
+      :lastmodtime '(22184 51384 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "AbstractModel.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.sos.transactionserver.models" package nil nil [1 47])
+            ("cn.domob.sos.transactionserver.TransactionServerHandler" include nil nil [49 112])
+            ("cn.domob.sos.transactionserver.configuration.TransactionServerConfig" include nil nil [113 189])
+            ("cn.domob.sos.transactionserver.thrift.IncomeItem" include nil nil [190 246])
+            ("com.sequoiadb.base.DBCollection" include nil nil [247 286])
+            ("com.sequoiadb.base.Sequoiadb" include nil nil [287 323])
+            ("com.sequoiadb.base.SequoiadbDatasource" include nil nil [324 370])
+            ("com.sequoiadb.exception.BaseException" include nil nil [371 416])
+            ("org.apache.ibatis.session.SqlSessionFactory" include nil nil [417 468])
+            ("redis.clients.jedis.JedisPool" include nil nil [469 506])
+            ("java.util.concurrent.BlockingQueue" include nil nil [508 550])
+            ("AbstractModel" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("sequoiadbDatasource" variable
+                       (:typemodifiers ("protected")
+                        :type "SequoiadbDatasource")
+                        (reparse-symbol class_member_declaration) [626 676])
+                    ("db" variable
+                       (:typemodifiers ("protected")
+                        :type "Sequoiadb")
+                        (reparse-symbol class_member_declaration) [681 704])
+                    ("collection" variable
+                       (:typemodifiers ("protected")
+                        :type "DBCollection")
+                        (reparse-symbol class_member_declaration) [709 743])
+                    ("jedisPool" variable
+                       (:typemodifiers ("protected")
+                        :type "JedisPool")
+                        (reparse-symbol class_member_declaration) [748 778])
+                    ("sqlSessionFactory" variable
+                       (:typemodifiers ("protected")
+                        :type "SqlSessionFactory")
+                        (reparse-symbol class_member_declaration) [783 829])
+                    ("transactionServerHandler" variable
+                       (:typemodifiers ("protected")
+                        :type "TransactionServerHandler")
+                        (reparse-symbol class_member_declaration) [894 954])
+                    ("minCacheSize" variable
+                       (:typemodifiers ("protected")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [960 987])
+                    ("setMinCacheSize" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("minCacheSize" variable (:type "int") (reparse-symbol formal_parameters) [1022 1038]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [994 1089])
+                    ("setTransactionServerHandler" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("transactionServerHandler" variable (:type "TransactionServerHandler") (reparse-symbol formal_parameters) [1135 1184]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1095 1259])
+                    ("setSequoiadbDatasource" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("ds" variable (:type "SequoiadbDatasource") (reparse-symbol formal_parameters) [1300 1322]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1265 1365])
+                    ("setJedisPool" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("jedisPool" variable (:type "JedisPool") (reparse-symbol formal_parameters) [1396 1415]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1371 1460])
+                    ("setSqlSessionFactory" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sqlSessionFactory" variable (:type "SqlSessionFactory") (reparse-symbol formal_parameters) [1499 1534]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1466 1595])
+                    ("setInsertedItemQueue" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "insertedItemQueue") (reparse-symbol formal_parameters) [1660 1677]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1601 1738])
+                    ("initDb" function
+                       (:typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1744 2028])
+                    ("getCollection" function
+                       (:typemodifiers ("public")
+                        :type "DBCollection")
+                        (reparse-symbol class_member_declaration) [2034 2174])
+                    ("closeDb" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2180 2248])
+                    ("getRedisKey" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("uid" variable (:type "long") (reparse-symbol formal_parameters) [2283 2291]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2254 2353]))                  
+                :type "class")
+                nil [593 2357]))          
+      :file "AbstractModel.java"
+      :pointmax 2359
+      :fsize 2358
+      :lastmodtime '(22185 35904 0 0)
+      :unmatched-syntax '((GT 1658 . 1659) (IDENTIFIER 1634 . 1647) (LT 1647 . 1648) (SEMICOLON 887 . 888) (GT 868 . 869) (PROTECTED 834 . 843) (LT 857 . 858)))
+    (semanticdb-table "UserScoreAddModel.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.sos.transactionserver.models" package nil nil [1 47])
+            ("cn.domob.sos.transactionserver.db.SosUserScore" include nil nil [49 103])
+            ("cn.domob.sos.transactionserver.mapper.UserScoreMapper" include nil nil [104 165])
+            ("cn.domob.sos.transactionserver.thrift.IncomeItem" include nil nil [166 222])
+            ("com.sequoiadb.base.SequoiadbDatasource" include nil nil [223 269])
+            ("com.sequoiadb.exception.BaseException" include nil nil [270 315])
+            ("org.apache.ibatis.session.SqlSession" include nil nil [316 360])
+            ("org.apache.ibatis.session.SqlSessionFactory" include nil nil [361 412])
+            ("org.slf4j.Logger" include nil nil [413 437])
+            ("UserScoreAddModel" type
+               (:typemodifiers ("public")
+                :superclasses "InsertModel"
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [538 628])
+                    ("UserScoreAddModel" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("incomeItem" variable (:type "IncomeItem") (reparse-symbol formal_parameters) [659 680]))                          )
+                        (reparse-symbol class_member_declaration) [634 715])
+                    ("perform" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [721 1581]))                  
+                :type "class")
+                nil [481 1583]))          
+      :file "UserScoreAddModel.java"
+      :pointmax 1584
+      :fsize 1603
+      :lastmodtime '(22184 29061 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_transaction_server!src!main!java!cn!domob!sos!transactionserver!models!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

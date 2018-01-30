@@ -1,0 +1,24 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "exchange_server.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [48 57])
+            ("time" include nil nil [58 69])
+            ("sys" include nil nil [70 80])
+            ("argparse" include nil nil [81 96])
+            ("logging.config" include nil nil [97 118])
+            ("basepath" variable nil nil [120 183])
+            ("sys" code nil nil [202 236])
+            ("if" code nil nil [238 923]))          
+      :file "exchange_server.py"
+      :pointmax 924
+      :fsize 941
+      :lastmodtime '(22071 10419 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_static!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

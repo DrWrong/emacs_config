@@ -1,0 +1,31 @@
+;; Object script/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "script/"
+  :tables
+  (list
+    (semanticdb-table "check.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [23 32])
+            ("sys" include nil nil [33 43])
+            ("csv" include nil nil [44 54])
+            ("BASE_DIR" variable nil nil [56 119])
+            ("sys" code nil nil [120 167])
+            ("os" code nil nil [168 227])
+            ("sys" code nil nil [229 275])
+            ("server.yqn_anti" include nil nil [278 313])
+            ("domob_thrift.aow_stat_types2.ttypes" include nil nil [314 370])
+            ("anti" variable nil nil [372 388])
+            ("resfile" variable nil nil [389 422])
+            ("fieldnames" variable nil nil [423 502])
+            ("writer" variable nil nil [503 558])
+            ("writer" code nil nil [559 579])
+            ("with" code nil nil [582 878]))          
+      :file "check.py"
+      :pointmax 878
+      :fsize 877
+      :lastmodtime '(22735 38621 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_anti_server!script!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,56 @@
+;; Object pkg_loader/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pkg_loader/"
+  :tables
+  (list
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+从数据库中加载需要实时对接的广告
+'''" code nil nil [25 49])
+            ("django.db" include nil nil [51 102])
+            ("django.core.cache" include nil nil [103 138])
+            ("Package" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("pkgid" variable nil (reparse-symbol indented_block_body) [174 227])
+                    ("user" variable nil (reparse-symbol indented_block_body) [232 281])
+                    ("accounting_type" variable nil (reparse-symbol indented_block_body) [286 333])
+                    ("Meta" type
+                       (:members 
+                          ( ("db_table" variable nil (reparse-symbol indented_block_body) [359 382]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [339 383]))                  
+                :type "class")
+                nil [141 383])
+            ("User" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("uid" variable nil (reparse-symbol indented_block_body) [415 466])
+                    ("sponsor_api" variable nil (reparse-symbol indented_block_body) [471 514])
+                    ("Meta" type
+                       (:members 
+                          ( ("db_table" variable nil (reparse-symbol indented_block_body) [540 563]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [520 564]))                  
+                :type "class")
+                nil [385 564])
+            ("load_pids" function nil nil [566 841])
+            ("get_pkgids" function nil nil [843 1000]))          
+      :file "models.py"
+      :pointmax 1000
+      :fsize 1031
+      :lastmodtime '(22766 2671 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22766 1277 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_kafka_db!lib!pkg_loader!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

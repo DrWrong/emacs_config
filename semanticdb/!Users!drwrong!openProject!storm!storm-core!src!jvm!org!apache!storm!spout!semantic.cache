@@ -1,0 +1,36 @@
+;; Object spout/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spout/"
+  :tables
+  (list
+    (semanticdb-table "RawMultiScheme.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("org.apache.storm.spout" package nil nil [804 835])
+            ("java.nio.ByteBuffer" include nil nil [837 864])
+            ("java.util.List" include nil nil [865 887])
+            ("org.apache.storm.tuple.Fields" include nil nil [889 926])
+            ("org.apache.storm.utils.Utils" include nil nil [927 963])
+            ("RawMultiScheme" type
+               (:typemodifiers ("public")
+                :interfaces ("MultiScheme")
+                :members 
+                  ( ("deserialize" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("ser" variable (:type "ByteBuffer") (reparse-symbol formal_parameters) [1165 1179]))                          )
+                        (reparse-symbol class_member_declaration) [1153 1236])
+                    ("getOutputFields" function
+                       (:typemodifiers ("public")
+                        :type "Fields")
+                        (reparse-symbol class_member_declaration) [1252 1321]))                  
+                :type "class")
+                nil [1056 1323]))          
+      :file "RawMultiScheme.java"
+      :pointmax 1324
+      :fsize 1323
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax '((RSHIFT 1150 . 1152) (LT 1143 . 1144) (IDENTIFIER 1111 . 1120) (PUBLIC 1123 . 1129) (LT 1138 . 1139) (IDENTIFIER 1047 . 1053) (DOT 1046 . 1047) (IDENTIFIER 1040 . 1046) (DOT 1039 . 1040) (IDENTIFIER 1035 . 1039) (DOT 1034 . 1035) (IMPORT 1016 . 1022) (STATIC 1023 . 1029) (IDENTIFIER 1030 . 1034) (IDENTIFIER 1009 . 1014) (DOT 1008 . 1009) (IDENTIFIER 1003 . 1008) (DOT 1002 . 1003) (IDENTIFIER 997 . 1002) (DOT 996 . 997) (IDENTIFIER 991 . 996) (DOT 990 . 991) (IDENTIFIER 984 . 990) (DOT 983 . 984) (IMPORT 966 . 972) (STATIC 973 . 979) (IDENTIFIER 980 . 983))))
+  :file "!Users!drwrong!openProject!storm!storm-core!src!jvm!org!apache!storm!spout!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

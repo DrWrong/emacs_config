@@ -1,0 +1,65 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables
+  (list
+    (semanticdb-table "BasicOffer.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.thrift.common" package nil nil [139 180])
+            ("org.apache.thrift.scheme.IScheme" include nil nil [182 222])
+            ("org.apache.thrift.scheme.SchemeFactory" include nil nil [223 269])
+            ("org.apache.thrift.scheme.StandardScheme" include nil nil [270 317])
+            ("org.apache.thrift.scheme.TupleScheme" include nil nil [319 363])
+            ("org.apache.thrift.protocol.TTupleProtocol" include nil nil [364 413])
+            ("org.apache.thrift.protocol.TProtocolException" include nil nil [414 467])
+            ("org.apache.thrift.EncodingUtils" include nil nil [468 507])
+            ("org.apache.thrift.TException" include nil nil [508 544])
+            ("org.apache.thrift.async.AsyncMethodCallback" include nil nil [545 596])
+            ("org.apache.thrift.server.AbstractNonblockingServer.*" include nil nil [597 657])
+            ("java.util.List" include nil nil [658 680])
+            ("java.util.ArrayList" include nil nil [681 708])
+            ("java.util.Map" include nil nil [709 730])
+            ("java.util.HashMap" include nil nil [731 756])
+            ("java.util.EnumMap" include nil nil [757 782])
+            ("java.util.Set" include nil nil [783 804])
+            ("java.util.HashSet" include nil nil [805 830])
+            ("java.util.EnumSet" include nil nil [831 856])
+            ("java.util.Collections" include nil nil [857 886])
+            ("java.util.BitSet" include nil nil [887 911])
+            ("java.nio.ByteBuffer" include nil nil [912 939])
+            ("java.util.Arrays" include nil nil [940 964])
+            ("org.slf4j.Logger" include nil nil [965 989])
+            ("org.slf4j.LoggerFactory" include nil nil [990 1021]))          
+      :file "BasicOffer.java"
+      :pointmax 42159
+      :fsize 45048
+      :lastmodtime '(22781 46034 0 0)
+      :unmatched-syntax '((BRACE_BLOCK 1171 . 42157) (GT 1169 . 1170) (IDENTIFIER 1159 . 1169) (LT 1158 . 1159) (IDENTIFIER 1148 . 1158) (COMMA 1146 . 1147) (IDENTIFIER 1137 . 1146) (COMMA 1135 . 1136) (IDENTIFIER 1123 . 1135) (DOT 1122 . 1123) (IDENTIFIER 1120 . 1122) (DOT 1119 . 1120) (IDENTIFIER 1115 . 1119) (COMMA 1113 . 1114) (GT 1112 . 1113) (IDENTIFIER 1105 . 1112) (DOT 1104 . 1105) (IDENTIFIER 1094 . 1104) (COMMA 1092 . 1093) (IDENTIFIER 1082 . 1092) (PUBLIC 1023 . 1029) (LT 1081 . 1082)))
+    (semanticdb-table "Platform.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.thrift.common" package nil nil [139 180])
+            ("java.util.Map" include nil nil [183 204])
+            ("java.util.HashMap" include nil nil [205 230])
+            ("org.apache.thrift.TEnum" include nil nil [231 262]))          
+      :file "Platform.java"
+      :pointmax 901
+      :fsize 900
+      :lastmodtime '(22781 46034 0 0)
+      :unmatched-syntax '((BRACE_BLOCK 320 . 900) (IDENTIFIER 314 . 319) (DOT 313 . 314) (IDENTIFIER 307 . 313) (DOT 306 . 307) (IDENTIFIER 300 . 306) (DOT 299 . 300) (IDENTIFIER 296 . 299) (IMPLEMENTS 285 . 295) (IDENTIFIER 276 . 284) (PUBLIC 264 . 270) (IDENTIFIER 271 . 275)))
+    (semanticdb-table "OfferType.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.thrift.common" package nil nil [139 180])
+            ("java.util.Map" include nil nil [183 204])
+            ("java.util.HashMap" include nil nil [205 230])
+            ("org.apache.thrift.TEnum" include nil nil [231 262]))          
+      :file "OfferType.java"
+      :pointmax 962
+      :fsize 961
+      :lastmodtime '(22781 46034 0 0)
+      :unmatched-syntax '((BRACE_BLOCK 321 . 961) (IDENTIFIER 315 . 320) (DOT 314 . 315) (IDENTIFIER 308 . 314) (DOT 307 . 308) (IDENTIFIER 301 . 307) (DOT 300 . 301) (IDENTIFIER 297 . 300) (IMPLEMENTS 286 . 296) (IDENTIFIER 276 . 285) (PUBLIC 264 . 270) (IDENTIFIER 271 . 275))))
+  :file "!Users!drwrong!mywork!domob!offerwall!ow_topology!src!thrift!cn!domob!offerwall!thrift!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

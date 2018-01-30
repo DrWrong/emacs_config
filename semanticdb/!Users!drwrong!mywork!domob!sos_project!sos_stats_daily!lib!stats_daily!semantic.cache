@@ -1,0 +1,188 @@
+;; Object stats_daily/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "stats_daily/"
+  :tables
+  (list
+    (semanticdb-table "ExchIncomeStats.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\" 统计用户的兑换数据和收入数据,
+    注意: exch 是exchange的缩写,由于exchange单词过长.
+\"\"\"" code nil nil [17 82])
+            ("__all__" variable nil nil [84 113])
+            ("__author__" variable nil nil [114 150])
+            ("django" include nil nil [152 165])
+            ("django.db" include nil nil [166 198])
+            ("stats_daily.db.models" include nil nil [200 262])
+            ("g_strtoint_list" variable nil nil [264 319])
+            ("ExchIncomeStats" type
+               (:documentation "统计用户的兑换数据和收入数据, 
+        涉及到的表有:
+        transac_history(在hive中), 
+        user, user_score(从线上只读库sos_online中读取)
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [542 554])
+                            ("self" variable nil (reparse-symbol indented_block_body) [563 595])
+                            ("self" variable nil (reparse-symbol indented_block_body) [604 624])
+                            ("self" variable nil (reparse-symbol indented_block_body) [633 645]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [497 501])
+                            ("hh" variable nil (reparse-symbol function_parameters) [503 505])
+                            ("hiveConnName" variable nil (reparse-symbol function_parameters) [507 519])
+                            ("logger" variable nil (reparse-symbol function_parameters) [521 527])
+                            ("dt" variable nil (reparse-symbol function_parameters) [529 531]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [484 646])
+                    ("getTranRecords" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [670 674]))                          
+                        :documentation "
+          从transaction_history中读取与用户交易相关数据
+        ")
+                        (reparse-symbol indented_block_body) [651 1133])
+                    ("getUserRecords" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1157 1161]))                          
+                        :documentation "
+            从user表中统计用户注册数
+            当前直接执行sql语句, 不是一种很好的实现.
+            在有时间时应该修改为通过django model来进行查询操作.
+        ")
+                        (reparse-symbol indented_block_body) [1138 1697])
+                    ("getUserScoreRecords" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1726 1730]))                          
+                        :documentation "
+            获取用户当天的余额
+        ")
+                        (reparse-symbol indented_block_body) [1702 2135])
+                    ("reConstructRecords" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2164 2168])
+                            ("trs" variable nil (reparse-symbol function_parameters) [2170 2173])
+                            ("ur" variable nil (reparse-symbol function_parameters) [2175 2177])
+                            ("usr" variable nil (reparse-symbol function_parameters) [2179 2182]))                          
+                        :documentation "
+            按照存库的方式重新组织records.
+
+            对从hive transaction_history表中取出的record在程序中进行统计.
+            不直接通过sql语句来得到统计结果,是因为要写出符合hive的sql语句过于复杂, 放到程序中处理更加简单, 且容易修改.
+        ")
+                        (reparse-symbol indented_block_body) [2141 4152])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4165 4169]))                          
+                        :documentation "
+            将得到的数据存储到report数据库中
+        ")
+                        (reparse-symbol indented_block_body) [4157 5973]))                  
+                :type "class")
+                nil [321 5973]))          
+      :file "ExchIncomeStats.py"
+      :pointmax 5973
+      :fsize 6552
+      :lastmodtime '(22007 49870 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "NewAliveStats.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+    提供统计每天新增用户数, 新增设备数, 日活跃用户数, 日活跃设备数的接口, 将统计结果存储到sos_report数据库中.
+\"\"\"" code nil nil [17 91])
+            ("__all__" variable nil nil [93 120])
+            ("__author__" variable nil nil [122 158])
+            ("django" include nil nil [160 173])
+            ("django.db" include nil nil [174 206])
+            ("stats_daily.db.models" include nil nil [208 265])
+            ("NewAliveStats" type
+               (:documentation "
+        统计每天新注册的用户数量, 和每天新增安装设备的数量.
+        还有每天活跃用户数和活跃设备数.
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [437 449])
+                            ("self" variable nil (reparse-symbol indented_block_body) [458 490])
+                            ("self" variable nil (reparse-symbol indented_block_body) [499 519])
+                            ("self" variable nil (reparse-symbol indented_block_body) [528 540]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [392 396])
+                            ("hh" variable nil (reparse-symbol function_parameters) [398 400])
+                            ("hiveConnName" variable nil (reparse-symbol function_parameters) [402 414])
+                            ("logger" variable nil (reparse-symbol function_parameters) [416 422])
+                            ("dt" variable nil (reparse-symbol function_parameters) [424 426]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [379 541])
+                    ("getUserReocords" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [566 570]))                          
+                        :documentation "
+            stats new user count from database sos_online
+            返回数据库查询后的原始结果
+        ")
+                        (reparse-symbol indented_block_body) [546 1149])
+                    ("getDeviceReocrds" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1175 1179]))                          
+                        :documentation "
+            分渠道统计新增设备数量
+        ")
+                        (reparse-symbol indented_block_body) [1154 1703])
+                    ("getAliveUserReocrds" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1732 1736]))                          
+                        :documentation "
+            统计日活跃用户数
+        ")
+                        (reparse-symbol indented_block_body) [1708 2191])
+                    ("getAliveDeviceReocrds" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2222 2226]))                          
+                        :documentation "
+            统计日活跃设备用户数
+        ")
+                        (reparse-symbol indented_block_body) [2196 2720])
+                    ("reConstructData" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2745 2749])
+                            ("us" variable nil (reparse-symbol function_parameters) [2751 2753])
+                            ("ds" variable nil (reparse-symbol function_parameters) [2755 2757])
+                            ("aus" variable nil (reparse-symbol function_parameters) [2759 2762])
+                            ("ads" variable nil (reparse-symbol function_parameters) [2764 2767]))                          
+                        :documentation "
+            将从数据库中获取的记录重新组织, 以sos_report库中 new_alive_daily表为基准
+        ")
+                        (reparse-symbol indented_block_body) [2725 4044])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4057 4061]))                          )
+                        (reparse-symbol indented_block_body) [4049 5022]))                  
+                :type "class")
+                nil [268 5022]))          
+      :file "NewAliveStats.py"
+      :pointmax 5022
+      :fsize 5449
+      :lastmodtime '(22086 46801 0 0)
+      :unmatched-syntax '((NAME 3441 . 3452) (IF 3518 . 3520) (ELSE 3544 . 3548))))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_stats_daily!lib!stats_daily!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,45 @@
+;; Object act_sender/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "act_sender/"
+  :tables
+  (list
+    (semanticdb-table "OwMediaTest.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.act_sender" package nil nil [1 39])
+            ("org.junit.Before" include nil nil [41 65])
+            ("org.junit.Test" include nil nil [66 88])
+            ("cn.domob.offerwall.thrift.common.OfferType" include nil nil [89 139])
+            ("cn.domob.offerwall.thrift.common.BasicOffer" include nil nil [140 191])
+            ("cn.domob.offerwall.thrift.settle.SettleEvent" include nil nil [192 244])
+            ("cn.domob.offerwall.thrift.common.Platform" include nil nil [245 294])
+            ("cn.domob.offerwall.thrift.common.DeviceInfo" include nil nil [295 346])
+            ("OwMediaTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("media" variable
+                       (:typemodifiers ("private")
+                        :type "OwMedia")
+                        (reparse-symbol class_member_declaration) [543 565])
+                    ("event" variable
+                       (:typemodifiers ("private")
+                        :type "SettleEvent")
+                        (reparse-symbol class_member_declaration) [570 596])
+                    ("SetUp" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [614 1574])
+                    ("TestCallbackUri" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1590 1718]))                  
+                :type "class")
+                nil [512 1721]))          
+      :file "OwMediaTest.java"
+      :pointmax 1722
+      :fsize 1721
+      :lastmodtime '(22775 11682 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!offerwall!ow_topology!src!test!java!cn!domob!offerwall!act_sender!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

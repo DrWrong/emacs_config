@@ -1,0 +1,29 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables
+  (list
+    (semanticdb-table "pushserver.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Author: huhaoran <huhaoran@domob.cn>
+加载配置，启动server
+\"\"\"" code nil nil [48 106])
+            ("os" include nil nil [108 117])
+            ("sys" include nil nil [118 128])
+            ("argparse" include nil nil [129 144])
+            ("ConfigParser" include nil nil [145 164])
+            ("logging.config" include nil nil [165 186])
+            ("domob_pyutils.dm303" include nil nil [188 229])
+            ("basepath" variable nil nil [231 294])
+            ("sys" code nil nil [295 329])
+            ("if" code nil nil [331 1164]))          
+      :file "pushserver.py"
+      :pointmax 1164
+      :fsize 1181
+      :lastmodtime '(22127 33462 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_push_server!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

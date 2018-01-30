@@ -1,0 +1,44 @@
+;; Object configuration/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "configuration/"
+  :tables
+  (list
+    (semanticdb-table "MyBatisConfig.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.sos.transactionserver.configuration" package nil nil [1 54])
+            ("cn.domob.sos.transactionserver.mapper.UserScoreMapper" include nil nil [56 117])
+            ("org.apache.ibatis.session.SqlSessionFactory" include nil nil [118 169])
+            ("org.apache.ibatis.session.SqlSessionFactoryBuilder" include nil nil [170 228])
+            ("org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory" include nil nil [229 294])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [295 357])
+            ("org.springframework.context.annotation.Bean" include nil nil [358 409])
+            ("org.springframework.context.annotation.Configuration" include nil nil [410 470])
+            ("org.springframework.core.env.Environment" include nil nil [471 519])
+            ("org.springframework.jdbc.datasource.DriverManagerDataSource" include nil nil [520 587])
+            ("javax.sql.DataSource" include nil nil [589 617])
+            ("MyBatisConfig" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("environment" variable
+                       (:typemodifiers ("private")
+                        :type "Environment")
+                        (reparse-symbol class_member_declaration) [726 758])
+                    ("getDataSource" function
+                       (:typemodifiers ("public")
+                        :type "DataSource")
+                        (reparse-symbol class_member_declaration) [774 1250])
+                    ("sqlSessionFactory" function
+                       (:typemodifiers ("public")
+                        :type "SqlSessionFactory")
+                        (reparse-symbol class_member_declaration) [1266 1790]))                  
+                :type "class")
+                nil [678 1794]))          
+      :file "MyBatisConfig.java"
+      :pointmax 1795
+      :fsize 1794
+      :lastmodtime '(22183 16126 0 0)
+      :unmatched-syntax '((IDENTIFIER 663 . 677))))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_transaction_server!src!main!java!cn!domob!sos!transactionserver!configuration!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

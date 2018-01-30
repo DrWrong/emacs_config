@@ -1,0 +1,37 @@
+;; Object JDEE_flycheck_15399Z9v/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "JDEE_flycheck_15399Z9v/"
+  :tables
+  (list
+    (semanticdb-table "StormDemoTopology.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("io.drwrong.storm_demo" package nil nil [1 31])
+            ("org.apache.storm.Config" include nil nil [33 64])
+            ("org.apache.storm.LocalCluster" include nil nil [65 102])
+            ("org.apache.storm.topology.TopologyBuilder" include nil nil [103 152])
+            ("org.apache.storm.starter.spout.RandomSentenceSpout" include nil nil [153 211])
+            ("java.util.HashMap" include nil nil [213 238])
+            ("java.util.Map" include nil nil [239 260])
+            ("StormDemoTopology" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [372 385]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [348 867]))                  
+                :type "class")
+                nil [310 869]))          
+      :file "StormDemoTopology.java"
+      :pointmax 870
+      :fsize 869
+      :lastmodtime '(22735 37562 0 0)
+      :unmatched-syntax nil))
+  :file "!private!var!folders!hs!_yc0qs7s7r194rfd1cmmtflh0000gn!T!JDEE_flycheck_15399Z9v!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

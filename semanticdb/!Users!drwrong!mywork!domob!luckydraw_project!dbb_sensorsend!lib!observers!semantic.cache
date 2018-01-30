@@ -1,0 +1,40 @@
+;; Object observers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "observers/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("abc" include nil nil [26 65])
+            ("AbstractObserver" type
+               (:superclasses ("object")
+                :members 
+                  ( ("'''
+    所有的观察者通过订阅主题来对需要的数据进行处理
+    '''" code nil (reparse-symbol indented_block_body) [104 143])
+                    ("__metaclass__" variable nil (reparse-symbol indented_block_body) [148 171])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [209 213])
+                            ("data" variable nil (reparse-symbol function_parameters) [215 219]))                          
+                        :decorators 
+                          ( ("abstractmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [177 235])
+                    ("notify" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [251 255])
+                            ("data" variable nil (reparse-symbol function_parameters) [257 261]))                          )
+                        (reparse-symbol indented_block_body) [240 291]))                  
+                :type "class")
+                nil [68 291]))          
+      :file "__init__.py"
+      :pointmax 291
+      :fsize 336
+      :lastmodtime '(22421 43965 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!luckydraw_project!dbb_sensorsend!lib!observers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

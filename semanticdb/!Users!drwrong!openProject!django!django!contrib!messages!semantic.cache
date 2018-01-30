@@ -1,0 +1,46 @@
+;; Object messages/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "messages/"
+  :tables
+  (list
+    (semanticdb-table "middleware.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.conf" include nil nil [1 33])
+            ("django.contrib.messages.storage" include nil nil [34 93])
+            ("django.utils.deprecation" include nil nil [94 146])
+            ("MessageMiddleware" type
+               (:documentation "
+    Middleware that handles temporary messages.
+    "
+                :superclasses ("MiddlewareMixin")
+                :members 
+                  ( ("process_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [280 284])
+                            ("request" variable nil (reparse-symbol function_parameters) [286 293]))                          )
+                        (reparse-symbol indented_block_body) [260 349])
+                    ("process_response" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [375 379])
+                            ("request" variable nil (reparse-symbol function_parameters) [381 388])
+                            ("response" variable nil (reparse-symbol function_parameters) [390 398]))                          
+                        :documentation "
+        Updates the storage backend (i.e., saves the messages).
+
+        If not all messages could not be stored and ``DEBUG`` is ``True``, a
+        ``ValueError`` is raised.
+        ")
+                        (reparse-symbol indented_block_body) [354 1020]))                  
+                :type "class")
+                nil [149 1020]))          
+      :file "middleware.py"
+      :pointmax 1020
+      :fsize 1019
+      :lastmodtime '(22408 61900 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!openProject!django!django!contrib!messages!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,537 @@
+;; Object transactionserver/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "transactionserver/"
+  :tables
+  (list
+    (semanticdb-table "TransactionServer.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("thrift.Thrift" include nil nil [176 256])
+            ("ttypes" include nil nil [257 277])
+            ("thrift.Thrift" include nil nil [278 314])
+            ("thrift.transport" include nil nil [315 354])
+            ("thrift.protocol" include nil nil [355 409])
+            ("try" code nil nil [410 484])
+            ("Iface" type
+               (:superclasses ("object")
+                :members 
+                  ( ("getIncomeItem" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [527 531])
+                            ("query" variable nil (reparse-symbol function_parameters) [533 538]))                          
+                        :documentation "
+    Parameters:
+     - query
+    ")
+                        (reparse-symbol indented_block_body) [509 595])
+                    ("insertIncomeItem" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [619 623])
+                            ("uid" variable nil (reparse-symbol function_parameters) [625 628])
+                            ("item" variable nil (reparse-symbol function_parameters) [630 634]))                          
+                        :documentation "
+    Parameters:
+     - uid
+     - item
+    ")
+                        (reparse-symbol indented_block_body) [598 701]))                  
+                :type "class")
+                nil [486 701])
+            ("Client" type
+               (:superclasses ("Iface")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [769 802])
+                            ("if" code nil (reparse-symbol indented_block_body) [807 855])
+                            ("self" variable nil (reparse-symbol indented_block_body) [859 874]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [739 743])
+                            ("iprot" variable nil (reparse-symbol function_parameters) [745 750])
+                            ("oprot" variable nil (reparse-symbol function_parameters) [752 757]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [726 875])
+                    ("getIncomeItem" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [896 900])
+                            ("query" variable nil (reparse-symbol function_parameters) [902 907]))                          
+                        :documentation "
+    Parameters:
+     - query
+    ")
+                        (reparse-symbol indented_block_body) [878 1027])
+                    ("send_getIncomeItem" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1053 1057])
+                            ("query" variable nil (reparse-symbol function_parameters) [1059 1064]))                          )
+                        (reparse-symbol indented_block_body) [1030 1297])
+                    ("recv_getIncomeItem" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1323 1327]))                          )
+                        (reparse-symbol indented_block_body) [1300 1811])
+                    ("insertIncomeItem" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1835 1839])
+                            ("uid" variable nil (reparse-symbol function_parameters) [1841 1844])
+                            ("item" variable nil (reparse-symbol function_parameters) [1846 1850]))                          
+                        :documentation "
+    Parameters:
+     - uid
+     - item
+    ")
+                        (reparse-symbol indented_block_body) [1814 1990])
+                    ("send_insertIncomeItem" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2019 2023])
+                            ("uid" variable nil (reparse-symbol function_parameters) [2025 2028])
+                            ("item" variable nil (reparse-symbol function_parameters) [2030 2034]))                          )
+                        (reparse-symbol indented_block_body) [1993 2290])
+                    ("recv_insertIncomeItem" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2319 2323]))                          )
+                        (reparse-symbol indented_block_body) [2293 2813]))                  
+                :type "class")
+                nil [703 2813])
+            ("Processor" type
+               (:superclasses ("Iface" "TProcessor")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2886 2909])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2914 2935])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2940 3007])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3012 3085]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2866 2870])
+                            ("handler" variable nil (reparse-symbol function_parameters) [2872 2879]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2853 3086])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3101 3105])
+                            ("iprot" variable nil (reparse-symbol function_parameters) [3107 3112])
+                            ("oprot" variable nil (reparse-symbol function_parameters) [3114 3119]))                          )
+                        (reparse-symbol indented_block_body) [3089 3611])
+                    ("process_getIncomeItem" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3640 3644])
+                            ("seqid" variable nil (reparse-symbol function_parameters) [3646 3651])
+                            ("iprot" variable nil (reparse-symbol function_parameters) [3653 3658])
+                            ("oprot" variable nil (reparse-symbol function_parameters) [3660 3665]))                          )
+                        (reparse-symbol indented_block_body) [3614 3993])
+                    ("process_insertIncomeItem" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4025 4029])
+                            ("seqid" variable nil (reparse-symbol function_parameters) [4031 4036])
+                            ("iprot" variable nil (reparse-symbol function_parameters) [4038 4043])
+                            ("oprot" variable nil (reparse-symbol function_parameters) [4045 4050]))                          )
+                        (reparse-symbol indented_block_body) [3996 4399]))                  
+                :type "class")
+                nil [2815 4399])
+            ("getIncomeItem_args" type
+               (:documentation "
+  Attributes:
+   - query
+  "
+                :superclasses ("object")
+                :members 
+                  ( ("thrift_spec" variable nil (reparse-symbol indented_block_body) [4510 4629])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [4670 4688]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4646 4650])
+                            ("query" variable nil (reparse-symbol function_parameters) [4652 4657]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4633 4689])
+                    ("read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4701 4705])
+                            ("iprot" variable nil (reparse-symbol function_parameters) [4707 4712]))                          )
+                        (reparse-symbol indented_block_body) [4692 5399])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5412 5416])
+                            ("oprot" variable nil (reparse-symbol function_parameters) [5418 5423]))                          )
+                        (reparse-symbol indented_block_body) [5402 5907])
+                    ("validate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5923 5927]))                          )
+                        (reparse-symbol indented_block_body) [5910 5941])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5958 5962]))                          )
+                        (reparse-symbol indented_block_body) [5945 6110])
+                    ("__eq__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6124 6128])
+                            ("other" variable nil (reparse-symbol function_parameters) [6130 6135]))                          )
+                        (reparse-symbol indented_block_body) [6113 6219])
+                    ("__ne__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6233 6237])
+                            ("other" variable nil (reparse-symbol function_parameters) [6239 6244]))                          )
+                        (reparse-symbol indented_block_body) [6222 6278]))                  
+                :type "class")
+                nil [4436 6278])
+            ("getIncomeItem_result" type
+               (:documentation "
+  Attributes:
+   - success
+  "
+                :superclasses ("object")
+                :members 
+                  ( ("thrift_spec" variable nil (reparse-symbol indented_block_body) [6357 6473])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [6516 6538]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6490 6494])
+                            ("success" variable nil (reparse-symbol function_parameters) [6496 6503]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [6477 6539])
+                    ("read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6551 6555])
+                            ("iprot" variable nil (reparse-symbol function_parameters) [6557 6562]))                          )
+                        (reparse-symbol indented_block_body) [6542 7428])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7441 7445])
+                            ("oprot" variable nil (reparse-symbol function_parameters) [7447 7452]))                          )
+                        (reparse-symbol indented_block_body) [7431 8057])
+                    ("validate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8073 8077]))                          )
+                        (reparse-symbol indented_block_body) [8060 8091])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8108 8112]))                          )
+                        (reparse-symbol indented_block_body) [8095 8260])
+                    ("__eq__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8274 8278])
+                            ("other" variable nil (reparse-symbol function_parameters) [8280 8285]))                          )
+                        (reparse-symbol indented_block_body) [8263 8369])
+                    ("__ne__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8383 8387])
+                            ("other" variable nil (reparse-symbol function_parameters) [8389 8394]))                          )
+                        (reparse-symbol indented_block_body) [8372 8428]))                  
+                :type "class")
+                nil [6279 8428])
+            ("insertIncomeItem_args" type
+               (:documentation "
+  Attributes:
+   - uid
+   - item
+  "
+                :superclasses ("object")
+                :members 
+                  ( ("thrift_spec" variable nil (reparse-symbol indented_block_body) [8514 8673])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [8723 8737])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8742 8758]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8690 8694])
+                            ("uid" variable nil (reparse-symbol function_parameters) [8696 8699])
+                            ("item" variable nil (reparse-symbol function_parameters) [8706 8710]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [8677 8759])
+                    ("read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8771 8775])
+                            ("iprot" variable nil (reparse-symbol function_parameters) [8777 8782]))                          )
+                        (reparse-symbol indented_block_body) [8762 9597])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9610 9614])
+                            ("oprot" variable nil (reparse-symbol function_parameters) [9616 9621]))                          )
+                        (reparse-symbol indented_block_body) [9600 10242])
+                    ("validate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10258 10262]))                          )
+                        (reparse-symbol indented_block_body) [10245 10276])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10293 10297]))                          )
+                        (reparse-symbol indented_block_body) [10280 10445])
+                    ("__eq__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10459 10463])
+                            ("other" variable nil (reparse-symbol function_parameters) [10465 10470]))                          )
+                        (reparse-symbol indented_block_body) [10448 10554])
+                    ("__ne__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10568 10572])
+                            ("other" variable nil (reparse-symbol function_parameters) [10574 10579]))                          )
+                        (reparse-symbol indented_block_body) [10557 10613]))                  
+                :type "class")
+                nil [8429 10613])
+            ("insertIncomeItem_result" type
+               (:documentation "
+  Attributes:
+   - success
+  "
+                :superclasses ("object")
+                :members 
+                  ( ("thrift_spec" variable nil (reparse-symbol indented_block_body) [10695 10764])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [10807 10829]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10781 10785])
+                            ("success" variable nil (reparse-symbol function_parameters) [10787 10794]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [10768 10830])
+                    ("read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10842 10846])
+                            ("iprot" variable nil (reparse-symbol function_parameters) [10848 10853]))                          )
+                        (reparse-symbol indented_block_body) [10833 11510])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11523 11527])
+                            ("oprot" variable nil (reparse-symbol function_parameters) [11529 11534]))                          )
+                        (reparse-symbol indented_block_body) [11513 12031])
+                    ("validate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12047 12051]))                          )
+                        (reparse-symbol indented_block_body) [12034 12065])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12082 12086]))                          )
+                        (reparse-symbol indented_block_body) [12069 12234])
+                    ("__eq__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12248 12252])
+                            ("other" variable nil (reparse-symbol function_parameters) [12254 12259]))                          )
+                        (reparse-symbol indented_block_body) [12237 12343])
+                    ("__ne__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12357 12361])
+                            ("other" variable nil (reparse-symbol function_parameters) [12363 12368]))                          )
+                        (reparse-symbol indented_block_body) [12346 12402]))                  
+                :type "class")
+                nil [10614 12402]))          
+      :file "TransactionServer.py"
+      :pointmax 12402
+      :fsize 12401
+      :lastmodtime '(22158 12314 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ttypes.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("thrift.Thrift" include nil nil [176 256])
+            ("thrift.transport" include nil nil [258 297])
+            ("thrift.protocol" include nil nil [298 352])
+            ("try" code nil nil [353 427])
+            ("IncomeType" type
+               (:superclasses ("object")
+                :members 
+                  ( ("NewComer" variable nil (reparse-symbol indented_block_body) [457 469])
+                    ("Invite" variable nil (reparse-symbol indented_block_body) [472 482])
+                    ("BeInvited" variable nil (reparse-symbol indented_block_body) [485 498])
+                    ("LANDING" variable nil (reparse-symbol indented_block_body) [501 512])
+                    ("DownloadTask" variable nil (reparse-symbol indented_block_body) [515 531])
+                    ("SignTask" variable nil (reparse-symbol indented_block_body) [534 546])
+                    ("Draw" variable nil (reparse-symbol indented_block_body) [549 557])
+                    ("Divide" variable nil (reparse-symbol indented_block_body) [560 570])
+                    ("DivideSenior" variable nil (reparse-symbol indented_block_body) [573 590])
+                    ("Domob" variable nil (reparse-symbol indented_block_body) [593 603])
+                    ("Dianjoy" variable nil (reparse-symbol indented_block_body) [606 618])
+                    ("Activity" variable nil (reparse-symbol indented_block_body) [621 634])
+                    ("Extra" variable nil (reparse-symbol indented_block_body) [637 647])
+                    ("SuperTask" variable nil (reparse-symbol indented_block_body) [650 664])
+                    ("H5Ad" variable nil (reparse-symbol indented_block_body) [667 676])
+                    ("Youmi" variable nil (reparse-symbol indented_block_body) [679 689])
+                    ("Share" variable nil (reparse-symbol indented_block_body) [692 702])
+                    ("RewardBack" variable nil (reparse-symbol indented_block_body) [705 721])
+                    ("_VALUES_TO_NAMES" variable nil (reparse-symbol indented_block_body) [725 1088])
+                    ("_NAMES_TO_VALUES" variable nil (reparse-symbol indented_block_body) [1092 1455]))                  
+                :type "class")
+                nil [429 1456])
+            ("IncomeItem" type
+               (:documentation "
+  Attributes:
+   - type
+   - point
+   - desc
+   - createtime
+   - dt
+  "
+                :superclasses ("object")
+                :members 
+                  ( ("thrift_spec" variable nil (reparse-symbol indented_block_body) [1568 1839])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1928 1944])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1949 1967])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1972 1988])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1993 2021])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2026 2038]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1856 1860])
+                            ("type" variable nil (reparse-symbol function_parameters) [1862 1866])
+                            ("point" variable nil (reparse-symbol function_parameters) [1873 1878])
+                            ("desc" variable nil (reparse-symbol function_parameters) [1885 1889])
+                            ("createtime" variable nil (reparse-symbol function_parameters) [1896 1906])
+                            ("dt" variable nil (reparse-symbol function_parameters) [1913 1915]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1843 2039])
+                    ("read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2051 2055])
+                            ("iprot" variable nil (reparse-symbol function_parameters) [2057 2062]))                          )
+                        (reparse-symbol indented_block_body) [2042 3257])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3270 3274])
+                            ("oprot" variable nil (reparse-symbol function_parameters) [3276 3281]))                          )
+                        (reparse-symbol indented_block_body) [3260 4335])
+                    ("validate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4351 4355]))                          )
+                        (reparse-symbol indented_block_body) [4338 4369])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4386 4390]))                          )
+                        (reparse-symbol indented_block_body) [4373 4538])
+                    ("__eq__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4552 4556])
+                            ("other" variable nil (reparse-symbol function_parameters) [4558 4563]))                          )
+                        (reparse-symbol indented_block_body) [4541 4647])
+                    ("__ne__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4661 4665])
+                            ("other" variable nil (reparse-symbol function_parameters) [4667 4672]))                          )
+                        (reparse-symbol indented_block_body) [4650 4706]))                  
+                :type "class")
+                nil [1458 4706])
+            ("QueryBuilder" type
+               (:documentation "
+  Attributes:
+   - uid
+   - start_dt
+   - end_dt
+   - limit
+   - desc
+  "
+                :superclasses ("object")
+                :members 
+                  ( ("thrift_spec" variable nil (reparse-symbol indented_block_body) [4820 5090])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [5180 5194])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5199 5223])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5228 5248])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5253 5271])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5276 5292]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5107 5111])
+                            ("uid" variable nil (reparse-symbol function_parameters) [5113 5116])
+                            ("start_dt" variable nil (reparse-symbol function_parameters) [5123 5131])
+                            ("end_dt" variable nil (reparse-symbol function_parameters) [5138 5144])
+                            ("limit" variable nil (reparse-symbol function_parameters) [5151 5156])
+                            ("desc" variable nil (reparse-symbol function_parameters) [5163 5167]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5094 5293])
+                    ("read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5305 5309])
+                            ("iprot" variable nil (reparse-symbol function_parameters) [5311 5316]))                          )
+                        (reparse-symbol indented_block_body) [5296 6508])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6521 6525])
+                            ("oprot" variable nil (reparse-symbol function_parameters) [6527 6532]))                          )
+                        (reparse-symbol indented_block_body) [6511 7587])
+                    ("validate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7603 7607]))                          )
+                        (reparse-symbol indented_block_body) [7590 7621])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7638 7642]))                          )
+                        (reparse-symbol indented_block_body) [7625 7790])
+                    ("__eq__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7804 7808])
+                            ("other" variable nil (reparse-symbol function_parameters) [7810 7815]))                          )
+                        (reparse-symbol indented_block_body) [7793 7899])
+                    ("__ne__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7913 7917])
+                            ("other" variable nil (reparse-symbol function_parameters) [7919 7924]))                          )
+                        (reparse-symbol indented_block_body) [7902 7958]))                  
+                :type "class")
+                nil [4707 7958]))          
+      :file "ttypes.py"
+      :pointmax 7958
+      :fsize 7957
+      :lastmodtime '(22158 12314 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "transactionserver.py"
+      :file "transactionserver.py"
+      :fsize 12401
+      :lastmodtime '(22158 12314 0 0)))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_transaction_server!test!domob_thrift!sos!transactionserver!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

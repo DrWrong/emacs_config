@@ -1,0 +1,28 @@
+;; Object spring_promoition/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spring_promoition/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-bsdmake-mode
+      :tags 
+        '( ("PNAME" variable (:default-value ("meow_spring_promotion")) nil [1 29])
+            ("VERSION" variable (:default-value ("0.1.10")) nil [29 44])
+            ("GOSOURCEDIR" variable (:default-value ("\"server/src\"")) nil [44 69])
+            ("GOSOURCES" variable (:default-value ("$(find $(GOSOURCEDIR) -name \"*.go\")")) nil [69 118])
+            ("GOBIN" variable (:default-value ("\"server/bin/server\"")) nil [118 144])
+            ("H5SOURCEDIR" variable (:default-value ("\"h5/app\"")) nil [145 169])
+            ("H5SOURCES" variable (:default-value ("$(find $(H5SOURCEDIR) -type f)")) nil [169 213])
+            ("NPM" variable (:default-value ("npm")) nil [213 221])
+            ("build" function (:arguments ("$(GOBIN)" "h5build")) nil [223 523])
+            ("$(GOBIN)" function (:arguments ("$(GOSOURCES)")) nil [524 566])
+            (".PHONY" function (:arguments ("h5build")) nil [567 583])
+            ("h5build" function (:arguments ("$(H5SOURCES)")) nil [583 711]))          
+      :file "Makefile"
+      :pointmax 711
+      :fsize 710
+      :lastmodtime '(22665 26912 0 0)
+      :unmatched-syntax '((shell-command 624 . 710) (bol 623 . 623))))
+  :file "!Users!drwrong!mywork!domob!spring_promoition!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

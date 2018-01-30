@@ -1,0 +1,189 @@
+;; Object ad_report/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ad_report/"
+  :tables
+  (list
+    (semanticdb-table "daily_report.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [25 56])
+            ("__future__" include nil nil [57 96])
+            ("datetime" include nil nil [98 113])
+            ("collections" include nil nil [114 161])
+            ("django.db.models" include nil nil [162 194])
+            ("django.conf" include nil nil [195 227])
+            ("django.core.exceptions" include nil nil [228 281])
+            ("DbOfferWallStats" include nil nil [296 362])
+            ("SosStatsDaily" include nil nil [296 362])
+            ("SosStatsHourly" include nil nil [296 362])
+            ("AdCreative" include nil nil [296 362])
+            ("report" include nil nil [363 397])
+            ("sensor_query" include nil nil [398 434])
+            ("StaticObj" type
+               (:superclasses ("object")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [466 470]))                  
+                :type "class")
+                nil [437 471])
+            ("cal_ratio" function (:arguments 
+              ( ("num1" variable nil (reparse-symbol function_parameters) [487 491])
+                ("num2" variable nil (reparse-symbol function_parameters) [493 497]))              ) nil [473 613])
+            ("SosDailyReport" type
+               (:superclasses ("BaseDailyReport")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [698 745])
+                            ("self" variable nil (reparse-symbol indented_block_body) [754 802])
+                            ("self" variable nil (reparse-symbol indented_block_body) [811 914])
+                            ("self" variable nil (reparse-symbol indented_block_body) [923 1026])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1035 1137])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1146 1267])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1297 1447])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1456 1493])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1502 1544])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1554 1662]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [672 676])
+                            ("timestamp" variable nil (reparse-symbol function_parameters) [678 687]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [659 1663])
+                    ("generate_config" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1688 1692]))                          
+                        :documentation "
+        执行入口
+        ")
+                        (reparse-symbol indented_block_body) [1668 6759])
+                    ("get_ad_daily_stats_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6792 6796])
+                            ("dt" variable nil (reparse-symbol function_parameters) [6798 6800]))                          
+                        :documentation "
+        group by cid 统计广告天级的各项数据
+        ")
+                        (reparse-symbol indented_block_body) [6764 7938])
+                    ("get_ad_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7959 7963])
+                            ("cidList" variable nil (reparse-symbol function_parameters) [7965 7972])
+                            ("offer_type" variable nil (reparse-symbol function_parameters) [7974 7984]))                          
+                        :documentation "
+        获取待统计所有广告的信息
+        ")
+                        (reparse-symbol indented_block_body) [7943 8543])
+                    ("build_ads" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8562 8566])
+                            ("ad_info" variable nil (reparse-symbol function_parameters) [8568 8575])
+                            ("today_stats" variable nil (reparse-symbol function_parameters) [8577 8588])
+                            ("yesterday_stats" variable nil (reparse-symbol function_parameters) [8590 8605]))                          )
+                        (reparse-symbol indented_block_body) [8548 9740])
+                    ("build_landings" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9764 9768])
+                            ("landings" variable nil (reparse-symbol function_parameters) [9770 9778])
+                            ("today_stats" variable nil (reparse-symbol function_parameters) [9780 9791]))                          )
+                        (reparse-symbol indented_block_body) [9745 10216])
+                    ("add_ad_to_category" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10244 10248])
+                            ("creative" variable nil (reparse-symbol function_parameters) [10250 10258])
+                            ("category" variable nil (reparse-symbol function_parameters) [10260 10268]))                          )
+                        (reparse-symbol indented_block_body) [10221 10525])
+                    ("categorize_ads" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10549 10553])
+                            ("ad_info" variable nil (reparse-symbol function_parameters) [10555 10562]))                          )
+                        (reparse-symbol indented_block_body) [10530 11773])
+                    ("get_summary_offerwall" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11804 11808])
+                            ("dt" variable nil (reparse-symbol function_parameters) [11810 11812]))                          )
+                        (reparse-symbol indented_block_body) [11778 12883])
+                    ("get_summary_stats_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12915 12919])
+                            ("dt" variable nil (reparse-symbol function_parameters) [12921 12923]))                          
+                        :documentation "
+        获取下载广告数据整体各项统计
+        ")
+                        (reparse-symbol indented_block_body) [12888 15002])
+                    ("get_landing_summary_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15036 15040])
+                            ("dt" variable nil (reparse-symbol function_parameters) [15042 15044]))                          
+                        :documentation "
+        获取landing类广告的整体各项数据
+        ")
+                        (reparse-symbol indented_block_body) [15007 15581]))                  
+                :type "class")
+                nil [615 15581])
+            ("BenefitReport" type
+               (:superclasses ("BaseDailyReport")
+                :members 
+                  ( ("'''
+    锁屏收支报表
+    '''" code nil (reparse-symbol indented_block_body) [15625 15647])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [15698 15750])
+                            ("self" variable nil (reparse-symbol indented_block_body) [15759 15792])
+                            ("self" variable nil (reparse-symbol indented_block_body) [15801 15998]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15666 15670])
+                            ("args" variable nil (reparse-symbol function_parameters) [15672 15677])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [15679 15687]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [15653 15999])
+                    ("generate_config" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16024 16028]))                          )
+                        (reparse-symbol indented_block_body) [16004 16293])
+                    ("stats_sos" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16312 16316]))                          )
+                        (reparse-symbol indented_block_body) [16298 16609])
+                    ("stats_offerwall" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16634 16638]))                          )
+                        (reparse-symbol indented_block_body) [16614 17018])
+                    ("charge_stats" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17040 17044]))                          )
+                        (reparse-symbol indented_block_body) [17023 18359])
+                    ("get_stats_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18383 18387]))                          )
+                        (reparse-symbol indented_block_body) [18364 18929]))                  
+                :type "class")
+                nil [15583 18929]))          
+      :file "daily_report.py"
+      :pointmax 18929
+      :fsize 19682
+      :lastmodtime '(22231 44381 0 0)
+      :unmatched-syntax '((NAME 14816 . 14823) (IF 14899 . 14901) (ELSE 14970 . 14974) (NAME 14658 . 14665) (IF 14736 . 14738) (ELSE 14782 . 14786) (FROM 283 . 287) (PERIOD 288 . 289)))
+    (semanticdb-table "models.py"
+      :file "models.py"
+      :fsize 7145
+      :lastmodtime '(22230 22933 0 0)))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_report!lib!ad_report!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

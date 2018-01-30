@@ -1,0 +1,84 @@
+;; Object utils/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "utils/"
+  :tables
+  (list
+    (semanticdb-table "Stats.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.sync_ad.utils" package nil nil [1 37])
+            ("cn.domob.domob_jedis.DomobJedis" include nil nil [39 78])
+            ("cn.domob.domob_jedis.DomobJedisPool" include nil nil [79 122])
+            ("org.apache.commons.configuration.Configuration" include nil nil [124 178])
+            ("java.util.Map" include nil nil [180 201])
+            ("Stats" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("jedisPool" variable
+                       (:typemodifiers ("private")
+                        :type "DomobJedisPool")
+                        (reparse-symbol class_member_declaration) [311 344])
+                    ("redisKey" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [349 373])
+                    ("getRedisHosts" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("config" variable (:type "Map") (reparse-symbol formal_parameters) [415 425]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [379 599])
+                    ("Stats" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("config" variable (:type "Map") (reparse-symbol formal_parameters) [618 628]))                          )
+                        (reparse-symbol class_member_declaration) [605 943])
+                    ("incr" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("key" variable (:type "String") (reparse-symbol formal_parameters) [966 976]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [949 1188]))                  
+                :type "class")
+                nil [248 1191]))          
+      :file "Stats.java"
+      :pointmax 1192
+      :fsize 1191
+      :lastmodtime '(22710 30694 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "StringMessageScheme.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.sync_ad.utils" package nil nil [1 37])
+            ("backtype.storm.spout.Scheme" include nil nil [39 74])
+            ("backtype.storm.tuple.Fields" include nil nil [75 110])
+            ("backtype.storm.tuple.Values" include nil nil [111 146])
+            ("java.io.UnsupportedEncodingException" include nil nil [148 192])
+            ("java.util.List" include nil nil [193 215])
+            ("StringMessageScheme" type
+               (:typemodifiers ("public")
+                :interfaces ("Scheme")
+                :members 
+                  ( ("deserialize" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("ser" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [350 360]))                          )
+                        (reparse-symbol class_member_declaration) [338 599])
+                    ("getOutputFields" function
+                       (:typemodifiers ("public")
+                        :type "Fields")
+                        (reparse-symbol class_member_declaration) [605 678]))                  
+                :type "class")
+                nil [260 681]))          
+      :file "StringMessageScheme.java"
+      :pointmax 682
+      :fsize 681
+      :lastmodtime '(22710 14276 0 0)
+      :unmatched-syntax '((GT 336 . 337) (PUBLIC 318 . 324) (LT 329 . 330))))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_sync_ad_topology!src!main!java!com!dmaow!aow!sync_ad!utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

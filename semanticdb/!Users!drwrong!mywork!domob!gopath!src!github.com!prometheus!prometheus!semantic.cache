@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-bsdmake-mode
+      :tags 
+        '( ("GO" variable (:default-value ("GO15VENDOREXPERIMENT=1" "go")) nil [582 624])
+            ("FIRST_GOPATH" variable (:default-value ("$(firstword $(subst :, ,$(shell $(GO) env GOPATH)))")) nil [624 692])
+            ("PROMU" variable (:default-value ("$(FIRST_GOPATH)/bin/promu")) nil [692 734])
+            ("pkgs" variable (:default-value ("$(shell $(GO) list ./... | grep -v /vendor/)")) nil [734 795])
+            ("all" function (:arguments ("format" "build" "test")) nil [1040 1063])
+            ("style" function nil nil [1064 1188])
+            ("check_license" function nil nil [1189 1269])
+            ("test-short" function nil nil [1270 1342])
+            ("test" function nil nil [1343 1400])
+            ("format" function nil nil [1401 1457])
+            ("vet" function nil nil [1458 1508])
+            ("build" function (:arguments ("promu")) nil [1509 1588])
+            ("tarball" function (:arguments ("promu")) nil [1589 1690])
+            ("docker" function nil nil [1691 1796])
+            ("assets" function nil nil [1797 2072])
+            ("promu" function nil nil [2073 2260]))          
+      :file "Makefile"
+      :pointmax 2344
+      :fsize 2343
+      :lastmodtime '(22950 5687 0 0)
+      :unmatched-syntax '((symbol 2338 . 2343) (symbol 2331 . 2337) (symbol 2323 . 2330) (symbol 2316 . 2322) (symbol 2312 . 2315) (symbol 2307 . 2311) (symbol 2301 . 2306) (symbol 2294 . 2300) (symbol 2280 . 2293) (symbol 2274 . 2279) (symbol 2270 . 2273) (punctuation 2268 . 2269) (symbol 2262 . 2268) (bol 2262 . 2262) (shell-command 1009 . 1031) (bol 1008 . 1008) (semantic-list 942 . 994) (punctuation 941 . 942) (punctuation 939 . 940) (punctuation 938 . 939) (symbol 914 . 930) (bol 914 . 914) (symbol 903 . 913) (punctuation 901 . 902) (punctuation 900 . 901) (symbol 876 . 893) (bol 876 . 876) (semantic-list 864 . 875) (punctuation 863 . 864) (punctuation 861 . 862) (punctuation 860 . 861) (symbol 836 . 843) (bol 836 . 836) (semantic-list 824 . 835) (punctuation 823 . 824) (punctuation 821 . 822) (punctuation 820 . 821) (symbol 796 . 802) (bol 796 . 796))))
+  :file "!Users!drwrong!mywork!domob!gopath!src!github.com!prometheus!prometheus!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

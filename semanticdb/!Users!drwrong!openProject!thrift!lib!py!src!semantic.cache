@@ -1,0 +1,25 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "TSerialization.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("TBinaryProtocol" include nil nil [802 824])
+            ("TTransport" include nil nil [841 858])
+            ("serialize" function (:arguments 
+              ( ("thrift_object" variable nil (reparse-symbol function_parameters) [875 888])
+                ("protocol_factory" variable nil (reparse-symbol function_parameters) [904 920]))              ) nil [861 1128])
+            ("deserialize" function (:arguments 
+              ( ("base" variable nil (reparse-symbol function_parameters) [1146 1150])
+                ("buf" variable nil (reparse-symbol function_parameters) [1168 1171])
+                ("protocol_factory" variable nil (reparse-symbol function_parameters) [1189 1205]))              ) nil [1130 1390]))          
+      :file "TSerialization.py"
+      :pointmax 1390
+      :fsize 1389
+      :lastmodtime '(22776 22406 0 0)
+      :unmatched-syntax '((FROM 825 . 829) (PERIOD 830 . 831) (PERIOD 792 . 793))))
+  :file "!Users!drwrong!openProject!thrift!lib!py!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

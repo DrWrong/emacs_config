@@ -1,0 +1,23 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "domob_decode.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("optparse" include nil nil [25 40])
+            ("urllib.parse" include nil nil [41 73])
+            ("base64" include nil nil [74 87])
+            ("Crypto.Cipher" include nil nil [88 117])
+            ("aes_decode" function (:arguments 
+              ( ("ciphertext" variable nil (reparse-symbol function_parameters) [135 145]))              ) nil [120 613])
+            ("if" code nil nil [615 778]))          
+      :file "domob_decode.py"
+      :pointmax 778
+      :fsize 777
+      :lastmodtime '(22647 13476 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

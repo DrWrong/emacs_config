@@ -1,0 +1,35 @@
+;; Object java/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "java/"
+  :tables
+  (list
+    (semanticdb-table "App.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.hankcs.hanlp.HanLP" include nil nil [1 31])
+            ("App" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("getGreeting" function
+                       (:typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [128 246])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [276 289]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [252 351]))                  
+                :type "class")
+                nil [105 353]))          
+      :file "App.java"
+      :pointmax 354
+      :fsize 431
+      :lastmodtime '(22809 30667 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!hanlp!processor!src!main!java!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

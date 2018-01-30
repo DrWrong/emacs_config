@@ -1,0 +1,27 @@
+;; Object pad_web_server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pad_web_server/"
+  :tables
+  (list
+    (semanticdb-table "wsgi.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+WSGI config for pad_web_server project.
+
+It exposes the WSGI callable as a module-level variable named ``application``.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/1.10/howto/deployment/wsgi/
+\"\"\"" code nil nil [1 230])
+            ("os" include nil nil [232 241])
+            ("django.core.wsgi" include nil nil [243 292])
+            ("application" variable nil nil [371 407]))          
+      :file "wsgi.py"
+      :pointmax 408
+      :fsize 407
+      :lastmodtime '(22627 9358 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!pad_web_server!lib!pad_web_server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

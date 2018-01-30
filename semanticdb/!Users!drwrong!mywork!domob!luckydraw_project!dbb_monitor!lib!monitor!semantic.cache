@@ -1,0 +1,59 @@
+;; Object monitor/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "monitor/"
+  :tables
+  (list
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.db" include nil nil [27 55])
+            ("ProductStock" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [96 135])
+                    ("total_stock" variable nil (reparse-symbol indented_block_body) [140 183])
+                    ("sold_amount" variable nil (reparse-symbol indented_block_body) [188 231]))                  
+                :type "class")
+                nil [58 232]))          
+      :file "models.py"
+      :pointmax 232
+      :fsize 231
+      :lastmodtime '(22304 16481 0 0)
+      :unmatched-syntax '((CLASS 58 . 63) ($EOI 96 . 96) (CLASS 58 . 63) ($EOI 92 . 92)))
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22304 16597 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "abstract_monitor.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("AbstractMonitor" type
+               (:superclasses ("object")
+                :members 
+                  ( ("'''
+    监控模块
+    '''" code nil (reparse-symbol indented_block_body) [36 56])
+                    ("__init__" function
+                       (:suite 
+                          ( ("pass" code nil (reparse-symbol indented_block_body) [107 111]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [75 79])
+                            ("args" variable nil (reparse-symbol function_parameters) [81 86])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [88 96]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [62 112]))                  
+                :type "class")
+                nil [1 112]))          
+      :file "abstract_monitor.py"
+      :pointmax 112
+      :fsize 119
+      :lastmodtime '(22304 18692 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!luckydraw_project!dbb_monitor!lib!monitor!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

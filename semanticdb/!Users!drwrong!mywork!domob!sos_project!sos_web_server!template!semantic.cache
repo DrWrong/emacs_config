@@ -1,0 +1,129 @@
+;; Object template/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "template/"
+  :tables
+  (list
+    (semanticdb-table "index2.html"
+      :major-mode 'js-mode
+      :tags nil
+      :file "index2.html"
+      :pointmax 9704
+      :fsize 10642
+      :lastmodtime '(22157 5337 0 0)
+      :unmatched-syntax '(($EOI 9704 . 9704) (DIV 9697 . 9698) (LESS_THAN 9696 . 9697) (DIV 9687 . 9688) (LESS_THAN 9686 . 9687) (PAREN_BLOCK 8063 . 9684) (DOT 8057 . 8058) (PAREN_BLOCK 8047 . 8057) (LESS_THAN 8025 . 8026) (DIV 8015 . 8016) (VARIABLE 7972 . 7975) (LESS_THAN 8014 . 8015) (LESS_THAN 7964 . 7965) (DIV 7954 . 7955) (VARIABLE 7884 . 7887) (LESS_THAN 7953 . 7954) (LESS_THAN 7876 . 7877) (DIV 7868 . 7869) (LESS_THAN 7867 . 7868) (DIV 7860 . 7861) (LESS_THAN 7859 . 7860) (DIV 7851 . 7852) (LESS_THAN 7850 . 7851) (DIV 7843 . 7844) (VARIABLE 7714 . 7719) (VARIABLE 7738 . 7742) (LESS_THAN 7842 . 7843) (LESS_THAN 7711 . 7712) (DIV 7701 . 7702) (LESS_THAN 7700 . 7701) (VARIABLE 7656 . 7661) (DIV 7689 . 7690) (VARIABLE 7610 . 7615) (VARIABLE 7633 . 7635) (LESS_THAN 7650 . 7651) (LESS_THAN 7605 . 7606) (DIV 7597 . 7598) (VARIABLE 7553 . 7558) (VARIABLE 7567 . 7570) (LESS_THAN 7596 . 7597) (VARIABLE 7519 . 7524) (LESS_THAN 7548 . 7549) (LESS_THAN 7516 . 7517) (DIV 7506 . 7507) (LESS_THAN 7505 . 7506) (VARIABLE 7475 . 7478) (GREATER_THAN 7499 . 7500) (VARIABLE 7448 . 7453) (LESS_THAN 7470 . 7471) (VARIABLE 7419 . 7424) (LESS_THAN 7443 . 7444) (LESS_THAN 7414 . 7415) (DIV 7404 . 7405) (LESS_THAN 7403 . 7404) (DIV 7394 . 7395) (LESS_THAN 7393 . 7394) (DIV 7388 . 7389) (VARIABLE 7363 . 7366) (LESS_THAN 7387 . 7388) (VARIABLE 7315 . 7320) (VARIABLE 7339 . 7344) (LESS_THAN 7358 . 7359) (LESS_THAN 7310 . 7311) (DIV 7299 . 7300) (LESS_THAN 7298 . 7299) (VARIABLE 7265 . 7268) (GREATER_THAN 7292 . 7293) (VARIABLE 7232 . 7237) (LESS_THAN 7260 . 7261) (LESS_THAN 7227 . 7228) (DIV 7218 . 7219) (GREATER_THAN 7197 . 7198) (LESS_THAN 7193 . 7194) (VARIABLE 7170 . 7174) (DIV 7185 . 7186) (LESS_THAN 7167 . 7168) (GREATER_THAN 7160 . 7161) (VARIABLE 7122 . 7127) (LESS_THAN 7156 . 7157) (LESS_THAN 7119 . 7120) (DIV 7110 . 7111) (VARIABLE 7083 . 7087) (DIV 7095 . 7096) (LESS_THAN 7080 . 7081) (GREATER_THAN 7073 . 7074) (LESS_THAN 7069 . 7070) (VARIABLE 7049 . 7053) (DIV 7061 . 7062) (GREATER_THAN 7037 . 7038) (VARIABLE 6998 . 7003) (LESS_THAN 7033 . 7034) (LESS_THAN 6995 . 6996) (DIV 6984 . 6985) (LESS_THAN 6983 . 6984) (DIV 6973 . 6974) (LESS_THAN 6972 . 6973) (VARIABLE 6941 . 6944) (GREATER_THAN 6965 . 6966) (VARIABLE 6896 . 6901) (LESS_THAN 6936 . 6937) (LESS_THAN 6891 . 6892) (DIV 6880 . 6881) (VARIABLE 6833 . 6838) (VARIABLE 6848 . 6851) (LESS_THAN 6879 . 6880) (VARIABLE 6787 . 6792) (LESS_THAN 6828 . 6829) (VARIABLE 6757 . 6762) (LESS_THAN 6782 . 6783) (VARIABLE 6728 . 6733) (LESS_THAN 6752 . 6753) (LESS_THAN 6723 . 6724) (DIV 6713 . 6714) (LESS_THAN 6712 . 6713) (DIV 6703 . 6704) (LESS_THAN 6702 . 6703) (DIV 6697 . 6698) (VARIABLE 6672 . 6675) (LESS_THAN 6696 . 6697) (VARIABLE 6624 . 6629) (VARIABLE 6648 . 6653) (LESS_THAN 6667 . 6668) (LESS_THAN 6619 . 6620) (GREATER_THAN 6612 . 6613) (DIV 6604 . 6605) (LESS_THAN 6603 . 6604) (VARIABLE 6578 . 6581) (GREATER_THAN 6597 . 6598) (VARIABLE 6545 . 6550) (LESS_THAN 6573 . 6574) (LESS_THAN 6540 . 6541) (punctuation 6536 . 6539) (LESS_THAN 6535 . 6536) (DIV 6526 . 6527) (DIV 6516 . 6517) (VARIABLE 6489 . 6493) (BRACE_BLOCK 6498 . 6515) (LESS_THAN 6515 . 6516) (VARIABLE 6431 . 6436) (GREATER_THAN 6471 . 6472) (LESS_THAN 6428 . 6429) (DIV 6419 . 6420) (LESS_THAN 6418 . 6419) (LESS_THAN 6412 . 6413) (DIV 6403 . 6404) (DIV 6389 . 6390) (VARIABLE 6362 . 6366) (BRACE_BLOCK 6371 . 6388) (LESS_THAN 6388 . 6389) (GREATER_THAN 6349 . 6350) (LESS_THAN 6345 . 6346) (DIV 6338 . 6339) (VARIABLE 6314 . 6318) (BRACE_BLOCK 6323 . 6337) (LESS_THAN 6337 . 6338) (VARIABLE 6261 . 6266) (GREATER_THAN 6300 . 6301) (LESS_THAN 6258 . 6259) (DIV 6247 . 6248) (LESS_THAN 6246 . 6247) (DIV 6236 . 6237) (LESS_THAN 6235 . 6236) (VARIABLE 6204 . 6207) (GREATER_THAN 6228 . 6229) (VARIABLE 6159 . 6164) (LESS_THAN 6199 . 6200) (LESS_THAN 6154 . 6155) (DIV 6143 . 6144) (VARIABLE 6096 . 6101) (VARIABLE 6111 . 6114) (LESS_THAN 6142 . 6143) (VARIABLE 6050 . 6055) (LESS_THAN 6091 . 6092) (VARIABLE 6020 . 6025) (LESS_THAN 6045 . 6046) (VARIABLE 5991 . 5996) (LESS_THAN 6015 . 6016) (LESS_THAN 5986 . 5987) (DIV 5976 . 5977) (LESS_THAN 5975 . 5976) (DIV 5966 . 5967) (LESS_THAN 5965 . 5966) (DIV 5960 . 5961) (VARIABLE 5935 . 5938) (LESS_THAN 5959 . 5960) (VARIABLE 5887 . 5892) (VARIABLE 5911 . 5916) (LESS_THAN 5930 . 5931) (LESS_THAN 5882 . 5883) (GREATER_THAN 5875 . 5876) (DIV 5867 . 5868) (LESS_THAN 5866 . 5867) (VARIABLE 5841 . 5844) (GREATER_THAN 5860 . 5861) (VARIABLE 5808 . 5813) (LESS_THAN 5836 . 5837) (LESS_THAN 5803 . 5804) (punctuation 5798 . 5801) (LESS_THAN 5797 . 5798) (DIV 5789 . 5790) (GREATER_THAN 5765 . 5766) (LESS_THAN 5761 . 5762) (DIV 5758 . 5759) (VARIABLE 5733 . 5737) (BRACE_BLOCK 5742 . 5757) (LESS_THAN 5757 . 5758) (VARIABLE 5701 . 5706) (LESS_THAN 5730 . 5731) (LESS_THAN 5698 . 5699) (DIV 5690 . 5691) (GREATER_THAN 5666 . 5667) (LESS_THAN 5662 . 5663) (DIV 5659 . 5660) (VARIABLE 5636 . 5640) (BRACE_BLOCK 5645 . 5658) (LESS_THAN 5658 . 5659) (VARIABLE 5604 . 5609) (LESS_THAN 5633 . 5634) (LESS_THAN 5601 . 5602) (DIV 5592 . 5593) (GREATER_THAN 5568 . 5569) (LESS_THAN 5564 . 5565) (DIV 5561 . 5562) (VARIABLE 5538 . 5542) (BRACE_BLOCK 5547 . 5560) (LESS_THAN 5560 . 5561) (VARIABLE 5506 . 5511) (LESS_THAN 5535 . 5536) (LESS_THAN 5503 . 5504) (DIV 5494 . 5495) (GREATER_THAN 5471 . 5472) (LESS_THAN 5467 . 5468) (GREATER_THAN 5451 . 5452) (LESS_THAN 5447 . 5448) (DIV 5444 . 5445) (VARIABLE 5417 . 5421) (BRACE_BLOCK 5426 . 5443) (LESS_THAN 5443 . 5444) (VARIABLE 5385 . 5390) (LESS_THAN 5414 . 5415) (LESS_THAN 5382 . 5383) (DIV 5371 . 5372) (LESS_THAN 5370 . 5371) (DIV 5360 . 5361) (LESS_THAN 5359 . 5360) (VARIABLE 5328 . 5331) (GREATER_THAN 5352 . 5353) (VARIABLE 5283 . 5288) (LESS_THAN 5323 . 5324) (LESS_THAN 5278 . 5279) (DIV 5267 . 5268) (VARIABLE 5224 . 5229) (VARIABLE 5237 . 5240) (LESS_THAN 5266 . 5267) (VARIABLE 5178 . 5183) (LESS_THAN 5219 . 5220) (VARIABLE 5148 . 5153) (LESS_THAN 5173 . 5174) (VARIABLE 5119 . 5124) (LESS_THAN 5143 . 5144) (LESS_THAN 5114 . 5115) (DIV 5104 . 5105) (LESS_THAN 5103 . 5104) (DIV 5094 . 5095) (LESS_THAN 5093 . 5094) (DIV 5088 . 5089) (VARIABLE 5063 . 5066) (LESS_THAN 5087 . 5088) (VARIABLE 5015 . 5020) (VARIABLE 5039 . 5044) (LESS_THAN 5058 . 5059) (LESS_THAN 5010 . 5011) (DIV 5002 . 5003) (VARIABLE 4945 . 4950) (NUMBER 4974 . 4977) (GREATER_THAN 4981 . 4982) (LESS_THAN 4942 . 4943) (DIV 4934 . 4935) (GREATER_THAN 4914 . 4915) (DIV 4906 . 4907) (VARIABLE 4854 . 4859) (VARIABLE 4889 . 4893) (BRACE_BLOCK 4898 . 4905) (LESS_THAN 4905 . 4906) (LESS_THAN 4851 . 4852) (DIV 4843 . 4844) (VARIABLE 4801 . 4806) (VARIABLE 4814 . 4817) (LESS_THAN 4842 . 4843) (VARIABLE 4774 . 4779) (LESS_THAN 4796 . 4797) (LESS_THAN 4771 . 4772) (DIV 4763 . 4764) (LESS_THAN 4762 . 4763) (VARIABLE 4732 . 4735) (GREATER_THAN 4756 . 4757) (VARIABLE 4706 . 4711) (LESS_THAN 4727 . 4728) (VARIABLE 4675 . 4680) (LESS_THAN 4703 . 4704) (VARIABLE 4648 . 4653) (LESS_THAN 4670 . 4671) (VARIABLE 4611 . 4623) (LESS_THAN 4643 . 4644) (LESS_THAN 4605 . 4606) (DIV 4597 . 4598) (LESS_THAN 4596 . 4597) (DIV 4587 . 4588) (LESS_THAN 4586 . 4587) (PAREN_BLOCK 4519 . 4538) (VARIABLE 4478 . 4484) (VARIABLE 4485 . 4488) (PAREN_BLOCK 4489 . 4514) (punctuation 4471 . 4472) (PAREN_BLOCK 4402 . 4421) (PAREN_BLOCK 4378 . 4397) (VARIABLE 4337 . 4343) (VARIABLE 4344 . 4347) (PAREN_BLOCK 4348 . 4373) (punctuation 4330 . 4331) (PAREN_BLOCK 4260 . 4279) (PAREN_BLOCK 4236 . 4255) (VARIABLE 4195 . 4201) (VARIABLE 4202 . 4205) (PAREN_BLOCK 4206 . 4231) (punctuation 4188 . 4189) (PAREN_BLOCK 4121 . 4140) (PAREN_BLOCK 4097 . 4116) (VARIABLE 4056 . 4062) (VARIABLE 4063 . 4066) (PAREN_BLOCK 4067 . 4092) (punctuation 4049 . 4050) (PAREN_BLOCK 3982 . 4001) (VARIABLE 3941 . 3947) (VARIABLE 3948 . 3951) (PAREN_BLOCK 3952 . 3977) (punctuation 3934 . 3935) (PAREN_BLOCK 3868 . 3886) (VARIABLE 3828 . 3834) (VARIABLE 3835 . 3838) (PAREN_BLOCK 3839 . 3863) (punctuation 3821 . 3822) (PAREN_BLOCK 3753 . 3771) (PAREN_BLOCK 3730 . 3748) (VARIABLE 3690 . 3696) (VARIABLE 3697 . 3700) (PAREN_BLOCK 3701 . 3725) (punctuation 3683 . 3684) (PAREN_BLOCK 3614 . 3632) (PAREN_BLOCK 3591 . 3609) (VARIABLE 3551 . 3557) (VARIABLE 3558 . 3561) (PAREN_BLOCK 3562 . 3586) (punctuation 3544 . 3545) (PAREN_BLOCK 3478 . 3496) (PAREN_BLOCK 3455 . 3473) (VARIABLE 3415 . 3421) (VARIABLE 3422 . 3425) (PAREN_BLOCK 3426 . 3450) (punctuation 3408 . 3409) (PAREN_BLOCK 3342 . 3360) (VARIABLE 3302 . 3308) (VARIABLE 3309 . 3312) (PAREN_BLOCK 3313 . 3337) (BRACE_BLOCK 3268 . 3291) (punctuation 3295 . 3296) (BRACE_BLOCK 3234 . 3257) (DOT 3261 . 3262) (BRACE_BLOCK 3202 . 3225) (DOT 3229 . 3230) (BRACE_BLOCK 3146 . 3191) (DOT 3195 . 3196) (BRACE_BLOCK 3113 . 3136) (DOT 3140 . 3141) (BRACE_BLOCK 3081 . 3104) (DOT 3108 . 3109) (BRACE_BLOCK 2932 . 3061) (DOT 3065 . 3066) (BRACE_BLOCK 2836 . 2916) (DOT 2920 . 2921) (COLON 2830 . 2831) (BRACE_BLOCK 2572 . 2820) (DOT 2824 . 2825) (BRACE_BLOCK 2473 . 2562) (DOT 2566 . 2567) (BRACE_BLOCK 2415 . 2460) (DOT 2464 . 2465) (BRACE_BLOCK 2283 . 2392) (DOT 2396 . 2397) (BRACE_BLOCK 2227 . 2264) (DOT 2268 . 2269) (BRACE_BLOCK 2022 . 2213) (DOT 2217 . 2218) (BRACE_BLOCK 1986 . 2010) (DOT 2014 . 2015) (BRACE_BLOCK 1952 . 1975) (DOT 1979 . 1980) (BRACE_BLOCK 1917 . 1942) (DOT 1946 . 1947) (COLON 1910 . 1911) (BRACE_BLOCK 1867 . 1897) (DOT 1901 . 1902) (VARIABLE 1800 . 1803) (BRACE_BLOCK 1804 . 1853) (DOT 1857 . 1858) (BRACE_BLOCK 1754 . 1776) (DOT 1780 . 1781) (BRACE_BLOCK 1671 . 1730) (DOT 1734 . 1735) (BRACE_BLOCK 1578 . 1648) (DOT 1652 . 1653) (BRACE_BLOCK 1507 . 1562) (DOT 1566 . 1567) (BRACE_BLOCK 1456 . 1482) (DOT 1486 . 1487) (BRACE_BLOCK 1408 . 1434) (DOT 1438 . 1439) (BRACE_BLOCK 1361 . 1387) (DOT 1392 . 1393) (BRACE_BLOCK 1300 . 1347) (DOT 1352 . 1353) (BRACE_BLOCK 1225 . 1283) (DOT 1288 . 1289) (BRACE_BLOCK 1072 . 1105) (VARIABLE 1110 . 1111) (BRACE_BLOCK 1120 . 1155) (VARIABLE 1160 . 1161) (BRACE_BLOCK 1177 . 1211) (DOT 1217 . 1218) (BRACE_BLOCK 1029 . 1059) (DOT 1064 . 1065) (DOT 1022 . 1023) (BRACE_BLOCK 862 . 1007) (DOT 1011 . 1012) (BRACE_BLOCK 720 . 852) (DOT 856 . 857) (VARIABLE 484 . 488) (BRACE_BLOCK 494 . 662) (VARIABLE 666 . 667) (BRACE_BLOCK 668 . 704) (DOT 709 . 710) (VARIABLE 357 . 361) (MULTIPLY 377 . 378) (LESS_THAN 350 . 351) (VARIABLE 228 . 232) (VARIABLE 244 . 251) (GREATER_THAN 345 . 346) (LESS_THAN 222 . 223) (VARIABLE 200 . 207) (GREATER_THAN 220 . 221) (VARIABLE 180 . 184) (ASSIGN_SYMBOL 190 . 191) (LESS_THAN 174 . 175) (VARIABLE 125 . 129) (VARIABLE 149 . 156) (GREATER_THAN 172 . 173) (LESS_THAN 119 . 120) (VARIABLE 101 . 108) (GREATER_THAN 117 . 118) (VARIABLE 71 . 75) (ASSIGN_SYMBOL 81 . 82) (LESS_THAN 65 . 66) (VARIABLE 47 . 54) (GREATER_THAN 63 . 64) (LESS_THAN 41 . 42) (VARIABLE 23 . 27) (LESS_THAN 34 . 35) (VARIABLE 11 . 15) (LESS_THAN 17 . 18) (punctuation 2 . 3) (LESS_THAN 1 . 2)))
+    (semanticdb-table "index.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("我是第<a href=\"#\">{{.Id}}" section (:members 
+              ( ("{{.Id}}" anchor nil nil [4790 4793])
+                ("{{.RegisterTime}}" anchor nil nil [5318 5321])
+                ("{{.TaskTime}}" anchor nil nil [5439 5442])
+                ("{{.DrawTime}}" anchor nil nil [5537 5540])
+                ("{{.ChargeTime}}" anchor nil nil [5634 5637])
+                ("{{.InviteNum}}" anchor nil nil [6215 6218])
+                ("{{ .InviteIncome }}" anchor nil nil [6263 6266])
+                ("{{ .DivideIncome }}" anchor nil nil [6392 6395])
+                ("美图" anchor nil nil [6954 6957])
+                ("热点" anchor nil nil [6988 6991])
+                ("趣味APP" anchor nil nil [7075 7078]))              ) nil [4509 7913])
+            ("$(document).ready(
+        function() {
+            var nowpage = 0;
+            //给最大的盒子增加事件监听
+            $(\".container\").swipe(
+                {
+                    swipe:function(event, direction, distance, duration, fingerCount) {
+                         if(direction == \"up\"){
+                            nowpage = nowpage + 1;
+                         }else if(direction == \"down\"){
+                            nowpage = nowpage - 1;
+                         }
+
+                         if(nowpage > 4){
+                            nowpage = 4;
+                         }
+
+                         if(nowpage < 0){
+                            nowpage = 0;
+                         }
+
+                        $(\".container\").animate({\"top\":nowpage * -100 + \"%\"},400);
+
+                        $(\".page\").eq(nowpage).addClass(\"cur\").siblings().removeClass(\"cur\");
+                        // console.trace(event);
+                    }
+                }
+            );
+
+        }
+    );" section nil nil [7913 8001])
+            ("$(document).ready(
+        function() {
+            var nowpage = 0;
+            //给最大的盒子增加事件监听
+            $(\".container\").swipe(
+                {
+                    swipe:function(event, direction, distance, duration, fingerCount) {
+                         if(direction == \"up\"){
+                            nowpage = nowpage + 1;
+                         }else if(direction == \"down\"){
+                            nowpage = nowpage - 1;
+                         }
+
+                         if(nowpage > 4){
+                            nowpage = 4;
+                         }
+
+                         if(nowpage < 0){
+                            nowpage = 0;
+                         }
+
+                        $(\".container\").animate({\"top\":nowpage * -100 + \"%\"},400);
+
+                        $(\".page\").eq(nowpage).addClass(\"cur\").siblings().removeClass(\"cur\");
+                        // console.trace(event);
+                    }
+                }
+            );
+
+        }
+    );" section nil nil [8001 8062])
+            ("$(document).ready(
+        function() {
+            var nowpage = 0;
+            //给最大的盒子增加事件监听
+            $(\".container\").swipe(
+                {
+                    swipe:function(event, direction, distance, duration, fingerCount) {
+                         if(direction == \"up\"){
+                            nowpage = nowpage + 1;
+                         }else if(direction == \"down\"){
+                            nowpage = nowpage - 1;
+                         }
+
+                         if(nowpage > 4){
+                            nowpage = 4;
+                         }
+
+                         if(nowpage < 0){
+                            nowpage = 0;
+                         }
+
+                        $(\".container\").animate({\"top\":nowpage * -100 + \"%\"},400);
+
+                        $(\".page\").eq(nowpage).addClass(\"cur\").siblings().removeClass(\"cur\");
+                        // console.trace(event);
+                    }
+                }
+            );
+
+        }
+    );" section nil nil [8062 9086]))          
+      :file "index.html"
+      :pointmax 9086
+      :fsize 9876
+      :lastmodtime '(22157 62026 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_web_server!template!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,151 @@
+;; Object view/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "view/"
+  :tables
+  (list
+    (semanticdb-table "index.jsp"
+      :major-mode 'html-mode
+      :tags 
+        '( ("主页" section nil nil [314 607])
+            ("var roleid = '${USER_INFO.roleid}';
+	$(function() {
+		$('ul li').click(function() {
+			for (var i = 0; i < $('ul li').size(); i++) {
+				if (this == $('ul li').get(i)) {
+					$('ul li').eq(i).children('a').addClass('hover');
+				} else {
+					$('ul li').eq(i).children('a').removeClass('hover');
+				}
+			}
+		});
+		
+		if(roleid == '1'){
+			$(\"#userPage\").hide();
+		}
+	});
+	
+	//追加tab
+	function addTab(title,url) {
+		if(title == \"退出系统\"){
+			logout();
+			return;
+		}
+		
+		$(\"#iframe_center\").attr(\"src\",url);
+	}
+	
+	function logout(){
+		//询问框
+		layer.confirm('您确定要退出本系统？', {
+		    btn: ['确定','取消'],//按钮
+		    title:'系统信息'
+		}, function(){
+			layer.msg('退出成功!', {icon: 1});
+		    
+		    $.ajax({
+				type : \"POST\",
+				url: \"${ctx}/logout\",
+				dataType:\"JSON\",
+				success : function(data) {
+					window.location.href = \"toLogin\";
+				}
+			});
+		});
+	}
+	
+	function setting(){
+		//询问框
+		layer.prompt({
+			  title: '请输入原密码',
+			  formType: 1 //prompt风格，支持0-2
+			  //maxlength: 20
+			}, 
+		function(oldPass){
+		  layer.prompt({title: '请输入新密码', formType: 1}, function(newPass){
+			  var reg = /^[\\@A-Za-z0-9\\!\\#\\$\\%\\^\\&\\*\\.\\~]{3,20}$/;			  
+			  
+			  if(reg.test(newPass)){
+				  //密码验证通过
+				  layer.prompt({title: '请输入确认新密码', formType: 1}, function(confirmPass,index,elem){					
+					  if(reg.test(confirmPass)){
+						  if(newPass === confirmPass){
+							  	//验证通过  执行修改密码操作
+							  	var ii = layer.load();
+							  	$.ajax({
+									type : \"POST\",
+									async: false,
+									url: \"${ctx}/user/update_password\",
+									data : {
+										oldPass:oldPass,
+										newPass:newPass
+									},
+									dataType:\"JSON\",
+									success : function(data) {
+										layer.close(ii);
+										layer.close(index);
+										
+										if(data.success == 1){
+											layer.msg('修改密码成功，请重新登陆!', {time:2000,icon: 1},function(){
+												window.location.href = \"toLogin\";
+											});	
+										}
+										else if(data.success == 3){
+											layer.msg('修改失败，原密码输入错误!', {time:2000,icon: 2});		
+										}													
+									},
+									error:function(){
+										layer.close(ii);
+										layer.close(index);
+										layer.msg('修改密码错误，请联系管理员!', {time:2000,icon: 2});
+									}
+								});							  												  	
+						  }
+						  else{
+							  layer.msg(\"新密码和确认新密码不一致，请重新输入！\", {time:2000,icon: 0});						 
+						  }	
+					  }
+					  else{
+						  layer.msg(\"请输入正确格式的确认密码！\", {time:2000,icon: 0}); 						 
+					  }
+				  });
+			  }
+			  else{
+				 layer.msg(\"请输入正确格式的密码！\", {time:2000,icon: 0});			 
+			  }
+		  });
+		});
+	}
+	
+	function help(){
+		layer.alert('&nbsp;&nbsp;&nbsp;&nbsp;欢迎进入公司内部资料管理系统，请点击左侧菜单，进入相应功能模块进行管理操作。');
+	}" section nil nil [607 3306])
+            ("公司内部资料管理系统" section (:members 
+              ( ("公司内部资料管理系统" section (:members 
+                  ( ("修改密码" anchor nil nil [3677 3680])
+                    ("帮助" anchor nil nil [3782 3785])
+                    ("注销" anchor nil nil [3882 3885])
+                    ("员工信息管理" anchor nil nil [4410 4413])
+                    ("文档信息管理" anchor nil nil [4496 4499])
+                    ("操作记录管理" anchor nil nil [4586 4589])
+                    ("退出系统" anchor nil nil [4674 4677]))                  ) nil [3512 5662]))              ) nil [3306 5662]))          
+      :file "index.jsp"
+      :pointmax 5662
+      :fsize 6288
+      :lastmodtime '(22752 23238 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "base.jsp"
+      :major-mode 'html-mode
+      :tags 
+        '( ("" section nil nil [436 521])
+            ("" section nil nil [521 613])
+            ("" section nil nil [613 712])
+            ("" section nil nil [712 788])
+            ("" section nil nil [788 874]))          
+      :file "base.jsp"
+      :pointmax 874
+      :fsize 883
+      :lastmodtime '(22752 19686 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!class!company-documents!src!main!webapp!WEB-INF!view!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,71 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables
+  (list
+    (semanticdb-table "defreeze_server.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Author: chengyuhang <chengyuhang@domob.cn>
+加载配置，启动server
+\"\"\"" code nil nil [48 112])
+            ("os" include nil nil [114 123])
+            ("sys" include nil nil [124 134])
+            ("argparse" include nil nil [135 150])
+            ("ConfigParser" include nil nil [151 170])
+            ("logging.config" include nil nil [171 192])
+            ("domob_pyutils.dm303" include nil nil [194 235])
+            ("basepath" variable nil nil [237 300])
+            ("sys" code nil nil [301 335])
+            ("if" code nil nil [337 1054]))          
+      :file "defreeze_server.py"
+      :pointmax 1054
+      :fsize 1089
+      :lastmodtime '(21979 13475 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "tsserver.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Author: huhaoran <huhaoran@domob.cn>
+加载配置，启动server
+\"\"\"" code nil nil [48 106])
+            ("os" include nil nil [108 117])
+            ("sys" include nil nil [118 128])
+            ("argparse" include nil nil [129 144])
+            ("ConfigParser" include nil nil [145 164])
+            ("logging.config" include nil nil [165 186])
+            ("domob_pyutils.dm303" include nil nil [188 229])
+            ("basepath" variable nil nil [231 294])
+            ("sys" code nil nil [295 329])
+            ("if" code nil nil [331 1246]))          
+      :file "tsserver.py"
+      :pointmax 1246
+      :fsize 1281
+      :lastmodtime '(21979 13475 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "reject_server.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Author: chengyuhang <chengyuhang@domob.cn>
+加载配置，启动server
+\"\"\"" code nil nil [48 112])
+            ("os" include nil nil [114 123])
+            ("sys" include nil nil [124 134])
+            ("argparse" include nil nil [135 150])
+            ("ConfigParser" include nil nil [151 170])
+            ("logging.config" include nil nil [171 192])
+            ("domob_pyutils.dm303" include nil nil [194 235])
+            ("basepath" variable nil nil [237 300])
+            ("sys" code nil nil [301 335])
+            ("if" code nil nil [337 1048]))          
+      :file "reject_server.py"
+      :pointmax 1048
+      :fsize 1083
+      :lastmodtime '(21979 13475 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_trans_supply!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

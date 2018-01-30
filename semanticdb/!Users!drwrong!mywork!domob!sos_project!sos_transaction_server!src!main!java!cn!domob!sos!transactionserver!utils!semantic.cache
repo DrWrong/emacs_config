@@ -1,0 +1,282 @@
+;; Object utils/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "utils/"
+  :tables
+  (list
+    (semanticdb-table "TTextProtocol.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.sos.transactionserver.utils" package nil nil [1 46])
+            ("org.apache.thrift.TException" include nil nil [48 84])
+            ("org.apache.thrift.protocol.*" include nil nil [85 121])
+            ("org.apache.thrift.transport.TTransport" include nil nil [122 168])
+            ("java.nio.ByteBuffer" include nil nil [170 197])
+            ("TTextProtocol" type
+               (:typemodifiers ("public")
+                :superclasses "TProtocol"
+                :members 
+                  ( ("TTextProtocol" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("trans" variable (:type "TTransport") (reparse-symbol formal_parameters) [313 329]))                          )
+                        (reparse-symbol class_member_declaration) [292 360])
+                    ("writeMessageBegin" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("tMessage" variable (:type "TMessage") (reparse-symbol formal_parameters) [412 429]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [382 456])
+                    ("writeMessageEnd" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [476 531])
+                    ("writeStructBegin" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("tStruct" variable (:type "TStruct") (reparse-symbol formal_parameters) [580 595]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [551 623])
+                    ("writeStructEnd" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [643 769])
+                    ("writeFieldBegin" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("tField" variable (:type "TField") (reparse-symbol formal_parameters) [817 830]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [789 857])
+                    ("writeFieldEnd" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [877 968])
+                    ("writeFieldStop" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [988 1043])
+                    ("writeMapBegin" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("tMap" variable (:type "TMap") (reparse-symbol formal_parameters) [1089 1098]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1063 1126])
+                    ("writeMapEnd" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1146 1198])
+                    ("writeListBegin" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("tList" variable (:type "TList") (reparse-symbol formal_parameters) [1245 1256]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1218 1284])
+                    ("writeListEnd" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1304 1357])
+                    ("writeSetBegin" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("tSet" variable (:type "TSet") (reparse-symbol formal_parameters) [1403 1412]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1377 1440])
+                    ("writeSetEnd" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1460 1512])
+                    ("writeBool" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("b" variable (:type "boolean") (reparse-symbol formal_parameters) [1554 1563]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1532 1713])
+                    ("writeByte" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("b" variable (:type "byte") (reparse-symbol formal_parameters) [1755 1761]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1733 1846])
+                    ("writeI16" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("i" variable (:type "short") (reparse-symbol formal_parameters) [1887 1894]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1866 1971])
+                    ("writeI32" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol formal_parameters) [2012 2017]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1991 2094])
+                    ("writeI64" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("l" variable (:type "long") (reparse-symbol formal_parameters) [2135 2141]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2114 2218])
+                    ("writeDouble" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("v" variable (:type "double") (reparse-symbol formal_parameters) [2262 2270]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2238 2347])
+                    ("writeString" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [2391 2399]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2367 2467])
+                    ("writeBinary" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("byteBuffer" variable (:type "ByteBuffer") (reparse-symbol formal_parameters) [2513 2534]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2489 2562])
+                    ("readMessageBegin" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "TMessage")
+                        (reparse-symbol class_member_declaration) [2582 2663])
+                    ("readMessageEnd" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2683 2738])
+                    ("readStructBegin" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "TStruct")
+                        (reparse-symbol class_member_declaration) [2758 2837])
+                    ("readStructEnd" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2857 2911])
+                    ("readFieldBegin" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "TField")
+                        (reparse-symbol class_member_declaration) [2931 3008])
+                    ("readFieldEnd" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3028 3081])
+                    ("readMapBegin" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "TMap")
+                        (reparse-symbol class_member_declaration) [3101 3174])
+                    ("readMapEnd" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3194 3245])
+                    ("readListBegin" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "TList")
+                        (reparse-symbol class_member_declaration) [3265 3340])
+                    ("readListEnd" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3360 3412])
+                    ("readSetBegin" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "TSet")
+                        (reparse-symbol class_member_declaration) [3432 3505])
+                    ("readSetEnd" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3525 3576])
+                    ("readBool" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3596 3669])
+                    ("readByte" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [3689 3755])
+                    ("readI16" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "short")
+                        (reparse-symbol class_member_declaration) [3775 3841])
+                    ("readI32" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3861 3925])
+                    ("readI64" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [3945 4010])
+                    ("readDouble" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [4030 4100])
+                    ("readString" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4120 4193])
+                    ("readBinary" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :type "ByteBuffer")
+                        (reparse-symbol class_member_declaration) [4213 4290])
+                    ("Factory" type
+                       (:typemodifiers ("public" "static")
+                        :interfaces ("TProtocolFactory")
+                        :members 
+                          ( ("Factory" function
+                               (:constructor-flag t
+                                :typemodifiers ("public"))
+                                (reparse-symbol class_member_declaration) [4363 4391])
+                            ("getProtocol" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("trans" variable (:type "TTransport") (reparse-symbol formal_parameters) [4430 4446]))                                  
+                                :type "TProtocol")
+                                (reparse-symbol class_member_declaration) [4401 4504]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [4297 4510]))                  
+                :type "class")
+                nil [240 4512]))          
+      :file "TTextProtocol.java"
+      :pointmax 4513
+      :fsize 4512
+      :lastmodtime '(22159 19355 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_transaction_server!src!main!java!cn!domob!sos!transactionserver!utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

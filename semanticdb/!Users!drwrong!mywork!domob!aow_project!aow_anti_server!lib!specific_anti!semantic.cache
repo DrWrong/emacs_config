@@ -1,0 +1,1357 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("requests" include nil nil [25 40])
+            ("hashlib" include nil nil [41 64])
+            ("django.db" include nil nil [65 108])
+            ("AbstractAntiProcessor" include nil nil [116 144])
+            ("DnUidImei" include nil nil [158 174])
+            ("Game3386Anti" type
+               (:superclasses ("AbstractAntiProcessor")
+                :members 
+                  ( ("resourceid" variable nil (reparse-symbol indented_block_body) [224 243])
+                    ("agentkey" variable nil (reparse-symbol indented_block_body) [248 293])
+                    ("activityid" variable nil (reparse-symbol indented_block_body) [298 317])
+                    ("pkgid" variable nil (reparse-symbol indented_block_body) [322 337])
+                    ("thresholds" variable nil (reparse-symbol indented_block_body) [342 462])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [496 547]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [481 485]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [468 548])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [565 569])
+                            ("imei" variable nil (reparse-symbol function_parameters) [571 575])
+                            ("action" variable nil (reparse-symbol function_parameters) [577 583]))                          )
+                        (reparse-symbol indented_block_body) [553 801])
+                    ("get_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [819 823])
+                            ("imei" variable nil (reparse-symbol function_parameters) [825 829]))                          )
+                        (reparse-symbol indented_block_body) [806 1512])
+                    ("anti_charge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1533 1537])
+                            ("imei" variable nil (reparse-symbol function_parameters) [1539 1543]))                          )
+                        (reparse-symbol indented_block_body) [1517 1765])
+                    ("anti_wingold" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1787 1791])
+                            ("imei" variable nil (reparse-symbol function_parameters) [1793 1797])
+                            ("action" variable nil (reparse-symbol function_parameters) [1799 1805]))                          )
+                        (reparse-symbol indented_block_body) [1770 2086]))                  
+                :type "class")
+                nil [177 2086]))          
+      :file "game3386_anti.py"
+      :pointmax 2086
+      :fsize 2085
+      :lastmodtime '(22785 27471 0 0)
+      :unmatched-syntax '((FROM 145 . 149) (PERIOD 150 . 151) (FROM 109 . 113) (PERIOD 114 . 115)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("unittest" include nil nil [29 58])
+            ("domob_thrift.aow_stat_types2.ttypes" include nil nil [59 115])
+            ("YQN3Anti" include nil nil [131 155])
+            ("YQNAnti" include nil nil [131 155])
+            ("ByAnti" include nil nil [170 183])
+            ("By2Anti" include nil nil [199 213])
+            ("Dn2Anti" include nil nil [228 250])
+            ("DnAnti" include nil nil [228 250])
+            ("Game3386Anti" include nil nil [271 290])
+            ("MlAnti" include nil nil [305 318])
+            ("Ddz2Anti" include nil nil [334 358])
+            ("DdzAnti" include nil nil [334 358])
+            ("YszAnti" include nil nil [374 388])
+            ("YQN2Anti" include nil nil [405 420])
+            ("Game1891Anti" include nil nil [441 460])
+            ("DnUidImei" include nil nil [474 490])
+            ("JsnAnti" include nil nil [506 520])
+            ("YQNAntiTest" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("imei" variable nil (reparse-symbol indented_block_body) [556 580])
+                    ("test_anti_install" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [608 612]))                          )
+                        (reparse-symbol indented_block_body) [586 1120]))                  
+                :type "class")
+                nil [523 1120])
+            ("ByAntiTest" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("imei" variable nil (reparse-symbol indented_block_body) [1154 1178])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1194 1198]))                          )
+                        (reparse-symbol indented_block_body) [1184 1230])
+                    ("test_anti_install" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1257 1261]))                          )
+                        (reparse-symbol indented_block_body) [1235 1429])
+                    ("test_anti_launch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1455 1459]))                          )
+                        (reparse-symbol indented_block_body) [1434 1630]))                  
+                :type "class")
+                nil [1122 1630])
+            ("By2AntiTest" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("imei" variable nil (reparse-symbol indented_block_body) [1665 1689])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1705 1709]))                          )
+                        (reparse-symbol indented_block_body) [1695 1742])
+                    ("test_anti_install" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1769 1773]))                          )
+                        (reparse-symbol indented_block_body) [1747 1941])
+                    ("test_anti_charge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1967 1971]))                          )
+                        (reparse-symbol indented_block_body) [1946 2142])
+                    ("test_anti_launch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2168 2172]))                          )
+                        (reparse-symbol indented_block_body) [2147 2343]))                  
+                :type "class")
+                nil [1632 2343])
+            ("DnAntiTest" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("imei" variable nil (reparse-symbol indented_block_body) [2377 2401])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2417 2421]))                          )
+                        (reparse-symbol indented_block_body) [2407 2453])
+                    ("test_anti_install" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2480 2484]))                          )
+                        (reparse-symbol indented_block_body) [2458 2654])
+                    ("test_anti_wingold" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2681 2685]))                          )
+                        (reparse-symbol indented_block_body) [2659 2855])
+                    ("test_anti_charge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2881 2885]))                          )
+                        (reparse-symbol indented_block_body) [2860 3055]))                  
+                :type "class")
+                nil [2345 3055])
+            ("Game3386AntiTest" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("imei" variable nil (reparse-symbol indented_block_body) [3095 3119])
+                    ("uid" variable nil (reparse-symbol indented_block_body) [3124 3139])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3155 3159]))                          )
+                        (reparse-symbol indented_block_body) [3145 3336])
+                    ("tearDown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3354 3358]))                          )
+                        (reparse-symbol indented_block_body) [3341 3429])
+                    ("test_anti_charge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3455 3459]))                          )
+                        (reparse-symbol indented_block_body) [3434 3632])
+                    ("test_anti_wingold" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3659 3663]))                          )
+                        (reparse-symbol indented_block_body) [3637 3836]))                  
+                :type "class")
+                nil [3057 3836])
+            ("MlAntiTest" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("imei" variable nil (reparse-symbol indented_block_body) [3870 3893])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3909 3913]))                          )
+                        (reparse-symbol indented_block_body) [3899 3948])
+                    ("test_anti_install" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3975 3979]))                          )
+                        (reparse-symbol indented_block_body) [3953 4097])
+                    ("test_anti_charge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4123 4127]))                          )
+                        (reparse-symbol indented_block_body) [4102 4245])
+                    ("test_anti_wingold" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4272 4276]))                          )
+                        (reparse-symbol indented_block_body) [4250 4394]))                  
+                :type "class")
+                nil [3838 4394])
+            ("DdzAntiTest" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("imei" variable nil (reparse-symbol indented_block_body) [4429 4453])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4469 4473]))                          )
+                        (reparse-symbol indented_block_body) [4459 4509])
+                    ("test_anti_register" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4537 4541]))                          )
+                        (reparse-symbol indented_block_body) [4514 4712])
+                    ("test_anti_charge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4738 4742]))                          )
+                        (reparse-symbol indented_block_body) [4717 4963])
+                    ("test_anti_wingold" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4990 4994]))                          )
+                        (reparse-symbol indented_block_body) [4968 5216]))                  
+                :type "class")
+                nil [4396 5216])
+            ("YszAntiTest" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("imei" variable nil (reparse-symbol indented_block_body) [5251 5275])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5291 5295]))                          )
+                        (reparse-symbol indented_block_body) [5281 5331])
+                    ("test_anti_register" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5359 5363]))                          )
+                        (reparse-symbol indented_block_body) [5336 5534])
+                    ("test_anti_charge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5560 5564]))                          )
+                        (reparse-symbol indented_block_body) [5539 5785])
+                    ("test_anti_wingold" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5812 5816]))                          )
+                        (reparse-symbol indented_block_body) [5790 6038]))                  
+                :type "class")
+                nil [5218 6038])
+            ("YQN2AntiTest" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("imei" variable nil (reparse-symbol indented_block_body) [6074 6097])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6113 6117]))                          )
+                        (reparse-symbol indented_block_body) [6103 6154])
+                    ("test_anti" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6173 6177]))                          )
+                        (reparse-symbol indented_block_body) [6159 6489]))                  
+                :type "class")
+                nil [6040 6489])
+            ("YQN3AntiTest" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("imei" variable nil (reparse-symbol indented_block_body) [6525 6549])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6565 6569]))                          )
+                        (reparse-symbol indented_block_body) [6555 6606])
+                    ("test_anti" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6625 6629]))                          )
+                        (reparse-symbol indented_block_body) [6611 6941]))                  
+                :type "class")
+                nil [6491 6941])
+            ("Dn2AntiTest" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("imei" variable nil (reparse-symbol indented_block_body) [6976 7000])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7016 7020]))                          )
+                        (reparse-symbol indented_block_body) [7006 7056])
+                    ("test_anti" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7075 7079]))                          )
+                        (reparse-symbol indented_block_body) [7061 7391]))                  
+                :type "class")
+                nil [6943 7391])
+            ("Game1891AntiTest" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("imei" variable nil (reparse-symbol indented_block_body) [7431 7455])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7471 7475]))                          )
+                        (reparse-symbol indented_block_body) [7461 7516])
+                    ("test_anti" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7535 7539]))                          )
+                        (reparse-symbol indented_block_body) [7521 7851]))                  
+                :type "class")
+                nil [7393 7851])
+            ("Ddz2AntiTest" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("imei" variable nil (reparse-symbol indented_block_body) [7887 7911])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7927 7931]))                          )
+                        (reparse-symbol indented_block_body) [7917 7968])
+                    ("test_anti" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7987 7991]))                          )
+                        (reparse-symbol indented_block_body) [7973 8303]))                  
+                :type "class")
+                nil [7853 8303])
+            ("JSNAntiTest" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("imei" variable nil (reparse-symbol indented_block_body) [8338 8362])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8378 8382]))                          )
+                        (reparse-symbol indented_block_body) [8368 8418])
+                    ("test_anti" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8437 8441]))                          )
+                        (reparse-symbol indented_block_body) [8423 8753]))                  
+                :type "class")
+                nil [8305 8753])
+            ("BaseTestCase" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("imei" variable nil (reparse-symbol indented_block_body) [8789 8813])
+                    ("test_anti" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8833 8837]))                          )
+                        (reparse-symbol indented_block_body) [8819 9162]))                  
+                :type "class")
+                nil [8755 9162])
+            ("YqmjAntiTest" type
+               (:superclasses ("BaseTestCase")
+                :members 
+                  ( ("max_action" variable nil (reparse-symbol indented_block_body) [9202 9217])
+                    ("imei" variable nil (reparse-symbol indented_block_body) [9222 9246])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9262 9266]))                          )
+                        (reparse-symbol indented_block_body) [9252 9342]))                  
+                :type "class")
+                nil [9164 9342])
+            ("Ysz2AntiTest" type
+               (:superclasses ("BaseTestCase")
+                :members 
+                  ( ("max_action" variable nil (reparse-symbol indented_block_body) [9382 9397])
+                    ("imei" variable nil (reparse-symbol indented_block_body) [9402 9426])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9442 9446]))                          )
+                        (reparse-symbol indented_block_body) [9432 9521]))                  
+                :type "class")
+                nil [9344 9521])
+            ("Dn3AntiTest" type
+               (:superclasses ("BaseTestCase")
+                :members 
+                  ( ("max_action" variable nil (reparse-symbol indented_block_body) [9560 9575])
+                    ("imei" variable nil (reparse-symbol indented_block_body) [9580 9604])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9620 9624]))                          )
+                        (reparse-symbol indented_block_body) [9610 9696]))                  
+                :type "class")
+                nil [9523 9696])
+            ("Game1891Anti2Test" type
+               (:superclasses ("BaseTestCase")
+                :members 
+                  ( ("max_action" variable nil (reparse-symbol indented_block_body) [9741 9756])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9772 9776]))                          )
+                        (reparse-symbol indented_block_body) [9762 9866]))                  
+                :type "class")
+                nil [9698 9866])
+            ("ByyllAntiTest" type
+               (:superclasses ("BaseTestCase")
+                :members 
+                  ( ("max_action" variable nil (reparse-symbol indented_block_body) [9907 9922])
+                    ("imei" variable nil (reparse-symbol indented_block_body) [9927 9951])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9967 9971]))                          )
+                        (reparse-symbol indented_block_body) [9957 10050]))                  
+                :type "class")
+                nil [9868 10050])
+            ("By3AntiTest" type
+               (:superclasses ("BaseTestCase")
+                :members 
+                  ( ("max_action" variable nil (reparse-symbol indented_block_body) [10089 10104])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10120 10124]))                          )
+                        (reparse-symbol indented_block_body) [10110 10197]))                  
+                :type "class")
+                nil [10052 10197])
+            ("YQN4AntiTest" type
+               (:superclasses ("BaseTestCase")
+                :members 
+                  ( ("max_action" variable nil (reparse-symbol indented_block_body) [10237 10252])
+                    ("imei" variable nil (reparse-symbol indented_block_body) [10257 10281])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10297 10301]))                          )
+                        (reparse-symbol indented_block_body) [10287 10376]))                  
+                :type "class")
+                nil [10199 10376])
+            ("Ysz3AntiTest" type
+               (:superclasses ("BaseTestCase")
+                :members 
+                  ( ("max_action" variable nil (reparse-symbol indented_block_body) [10416 10431])
+                    ("imei" variable nil (reparse-symbol indented_block_body) [10436 10460])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10476 10480]))                          )
+                        (reparse-symbol indented_block_body) [10466 10555]))                  
+                :type "class")
+                nil [10378 10555])
+            ("Byyll2AntiTest" type
+               (:superclasses ("BaseTestCase")
+                :members 
+                  ( ("max_action" variable nil (reparse-symbol indented_block_body) [10597 10612])
+                    ("imei" variable nil (reparse-symbol indented_block_body) [10617 10641])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10657 10661]))                          )
+                        (reparse-symbol indented_block_body) [10647 10742]))                  
+                :type "class")
+                nil [10557 10742])
+            ("Dn4AntiTest" type
+               (:superclasses ("BaseTestCase")
+                :members 
+                  ( ("max_action" variable nil (reparse-symbol indented_block_body) [10781 10796])
+                    ("imei" variable nil (reparse-symbol indented_block_body) [10801 10825])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10841 10845]))                          )
+                        (reparse-symbol indented_block_body) [10831 10917]))                  
+                :type "class")
+                nil [10744 10917])
+            ("Ddz3AntiTest" type
+               (:superclasses ("BaseTestCase")
+                :members 
+                  ( ("max_action" variable nil (reparse-symbol indented_block_body) [10957 10972])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11017 11021]))                          )
+                        (reparse-symbol indented_block_body) [11007 11096]))                  
+                :type "class")
+                nil [10919 11096])
+            ("PszAntiTest" type
+               (:superclasses ("BaseTestCase")
+                :members 
+                  ( ("max_action" variable nil (reparse-symbol indented_block_body) [11135 11150])
+                    ("imei" variable nil (reparse-symbol indented_block_body) [11155 11179])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11195 11199]))                          )
+                        (reparse-symbol indented_block_body) [11185 11272]))                  
+                :type "class")
+                nil [11098 11272]))          
+      :file "tests.py"
+      :pointmax 11272
+      :fsize 11271
+      :lastmodtime '(22942 40605 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("logging" include nil nil [19 33])
+            ("domob_pyutils.statscol" include nil nil [35 75])
+            ("AbstractAntiProcessor" type
+               (:superclasses ("object")
+                :members 
+                  ( ("'''
+    对于API对接的广告接入的抽象类，对于多步对接的广告需要继承这个类去做处理
+    '''" code nil (reparse-symbol indented_block_body) [119 172])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [212 228])
+                            ("self" variable nil (reparse-symbol indented_block_body) [237 292]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [191 195])
+                            ("name" variable nil (reparse-symbol function_parameters) [197 201]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [178 293])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [306 310])
+                            ("event" variable nil (reparse-symbol function_parameters) [312 317]))                          )
+                        (reparse-symbol indented_block_body) [298 958])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [975 979])
+                            ("imei" variable nil (reparse-symbol function_parameters) [981 985])
+                            ("action" variable nil (reparse-symbol function_parameters) [987 993]))                          )
+                        (reparse-symbol indented_block_body) [963 1032]))                  
+                :type "class")
+                nil [78 1032]))          
+      :file "__init__.py"
+      :pointmax 1032
+      :fsize 1312
+      :lastmodtime '(22914 50183 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 904 . 936) (NEWLINE 903 . 904) (COLON 902 . 903) (ELSE 898 . 902) (INDENT_BLOCK 650 . 890) (NEWLINE 649 . 650) (COLON 648 . 649) (TRY 563 . 566) (AS 644 . 646) ($EOI 1032 . 1032)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("requests" include nil nil [26 41])
+            ("hashlib" include nil nil [42 65])
+            ("AbstractAntiProcessor" include nil nil [73 101])
+            ("DnAnti" type
+               (:superclasses ("AbstractAntiProcessor")
+                :members 
+                  ( ("channel" variable nil (reparse-symbol indented_block_body) [145 161])
+                    ("key" variable nil (reparse-symbol indented_block_body) [166 206])
+                    ("charge_threhold" variable nil (reparse-symbol indented_block_body) [212 241])
+                    ("wingold_threhold" variable nil (reparse-symbol indented_block_body) [246 347])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [381 420]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [366 370]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [353 421])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [438 442])
+                            ("imei" variable nil (reparse-symbol function_parameters) [444 448])
+                            ("action" variable nil (reparse-symbol function_parameters) [450 456]))                          )
+                        (reparse-symbol indented_block_body) [426 689])
+                    ("get_uid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [706 710])
+                            ("imei" variable nil (reparse-symbol function_parameters) [712 716]))                          )
+                        (reparse-symbol indented_block_body) [694 1214])
+                    ("get_wingold" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1235 1239])
+                            ("uid" variable nil (reparse-symbol function_parameters) [1241 1244]))                          )
+                        (reparse-symbol indented_block_body) [1219 1816])
+                    ("anti_charge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1837 1841])
+                            ("imei" variable nil (reparse-symbol function_parameters) [1843 1847])
+                            ("level" variable nil (reparse-symbol function_parameters) [1849 1854]))                          )
+                        (reparse-symbol indented_block_body) [1821 2172])
+                    ("anti_wingold" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2194 2198])
+                            ("imei" variable nil (reparse-symbol function_parameters) [2200 2204])
+                            ("level" variable nil (reparse-symbol function_parameters) [2206 2211]))                          )
+                        (reparse-symbol indented_block_body) [2177 2518]))                  
+                :type "class")
+                nil [104 2518])
+            ("Dn2Anti" type
+               (:superclasses ("DnAnti")
+                :members 
+                  ( ("channel" variable nil (reparse-symbol indented_block_body) [2548 2565])
+                    ("key" variable nil (reparse-symbol indented_block_body) [2570 2610])
+                    ("wingold_threhold" variable nil (reparse-symbol indented_block_body) [2615 2704])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2722 2726])
+                            ("imei" variable nil (reparse-symbol function_parameters) [2728 2732])
+                            ("action" variable nil (reparse-symbol function_parameters) [2734 2740]))                          )
+                        (reparse-symbol indented_block_body) [2710 2917])
+                    ("anti_charge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2938 2942])
+                            ("imei" variable nil (reparse-symbol function_parameters) [2944 2948]))                          )
+                        (reparse-symbol indented_block_body) [2922 3120])
+                    ("anti_wingold" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3142 3146])
+                            ("imei" variable nil (reparse-symbol function_parameters) [3148 3152])
+                            ("action" variable nil (reparse-symbol function_parameters) [3154 3160]))                          )
+                        (reparse-symbol indented_block_body) [3125 3472]))                  
+                :type "class")
+                nil [2520 3472])
+            ("Dn3Anti" type
+               (:superclasses ("DnAnti")
+                :members 
+                  ( ("channel" variable nil (reparse-symbol indented_block_body) [3501 3518])
+                    ("wingold_threhold" variable nil (reparse-symbol indented_block_body) [3523 3619])
+                    ("charge_threhold" variable nil (reparse-symbol indented_block_body) [3625 3652])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3670 3674])
+                            ("imei" variable nil (reparse-symbol function_parameters) [3676 3680])
+                            ("action" variable nil (reparse-symbol function_parameters) [3682 3688]))                          )
+                        (reparse-symbol indented_block_body) [3658 3885])
+                    ("anti_viplevel" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3908 3912])
+                            ("imei" variable nil (reparse-symbol function_parameters) [3914 3918])
+                            ("level" variable nil (reparse-symbol function_parameters) [3920 3925]))                          )
+                        (reparse-symbol indented_block_body) [3890 4096]))                  
+                :type "class")
+                nil [3474 4096])
+            ("Dn4Anti" type
+               (:superclasses ("Dn3Anti")
+                :members 
+                  ( ("channel" variable nil (reparse-symbol indented_block_body) [4126 4143])
+                    ("wingold_thresholds" variable nil (reparse-symbol indented_block_body) [4148 4256])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4274 4278])
+                            ("imei" variable nil (reparse-symbol function_parameters) [4280 4284])
+                            ("action" variable nil (reparse-symbol function_parameters) [4286 4292]))                          )
+                        (reparse-symbol indented_block_body) [4262 4488]))                  
+                :type "class")
+                nil [4098 4488]))          
+      :file "dn_anti.py"
+      :pointmax 4488
+      :fsize 4501
+      :lastmodtime '(22942 36801 0 0)
+      :unmatched-syntax '((FROM 66 . 70) (PERIOD 71 . 72) (INDENT_BLOCK 3621 . 4096) (NEWLINE 3619 . 3620) (FROM 66 . 70) (PERIOD 71 . 72) (CLASS 4097 . 4102) ($EOI 4124 . 4124) (FROM 66 . 70) (PERIOD 71 . 72) (FROM 66 . 70) (PERIOD 71 . 72)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("requests" include nil nil [16 31])
+            ("hashlib" include nil nil [32 55])
+            ("AbstractAntiProcessor" include nil nil [64 92])
+            ("ByAnti" type
+               (:superclasses ("AbstractAntiProcessor")
+                :members 
+                  ( ("'''
+    对捕鱼部落Case的支持
+    '''" code nil (reparse-symbol indented_block_body) [136 164])
+                    ("qid" variable nil (reparse-symbol indented_block_body) [169 185])
+                    ("key" variable nil (reparse-symbol indented_block_body) [190 216])
+                    ("thresholds" variable nil (reparse-symbol indented_block_body) [221 287])
+                    ("query_url" variable nil (reparse-symbol indented_block_body) [292 337])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [371 410]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [356 360]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [343 411])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [428 432])
+                            ("imei" variable nil (reparse-symbol function_parameters) [434 438])
+                            ("action" variable nil (reparse-symbol function_parameters) [440 446]))                          )
+                        (reparse-symbol indented_block_body) [416 566])
+                    ("by_user_query" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [589 593])
+                            ("imei" variable nil (reparse-symbol function_parameters) [595 599]))                          )
+                        (reparse-symbol indented_block_body) [571 1097])
+                    ("anti_install" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1119 1123])
+                            ("imei" variable nil (reparse-symbol function_parameters) [1125 1129]))                          )
+                        (reparse-symbol indented_block_body) [1102 1165])
+                    ("anti_launch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1186 1190])
+                            ("imei" variable nil (reparse-symbol function_parameters) [1192 1196])
+                            ("action" variable nil (reparse-symbol function_parameters) [1198 1204]))                          )
+                        (reparse-symbol indented_block_body) [1170 1443]))                  
+                :type "class")
+                nil [95 1443]))          
+      :file "by_anti.py"
+      :pointmax 1443
+      :fsize 1466
+      :lastmodtime '(22794 43306 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("django.db" include nil nil [16 44])
+            ("YQNImeiUid" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("imei" variable nil (reparse-symbol indented_block_body) [83 121])
+                    ("uid" variable nil (reparse-symbol indented_block_body) [126 177])
+                    ("payamount" variable nil (reparse-symbol indented_block_body) [182 232])
+                    ("wingold" variable nil (reparse-symbol indented_block_body) [237 285])
+                    ("Meta" type
+                       (:members 
+                          ( ("db_table" variable nil (reparse-symbol indented_block_body) [311 336]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [291 337]))                  
+                :type "class")
+                nil [47 337])
+            ("DnUidImei" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("appid" variable nil (reparse-symbol indented_block_body) [374 411])
+                    ("uid" variable nil (reparse-symbol indented_block_body) [416 453])
+                    ("imei" variable nil (reparse-symbol indented_block_body) [458 496])
+                    ("Meta" type
+                       (:members 
+                          ( ("db_table" variable nil (reparse-symbol indented_block_body) [522 546]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [502 547]))                  
+                :type "class")
+                nil [339 547]))          
+      :file "models.py"
+      :pointmax 547
+      :fsize 546
+      :lastmodtime '(22783 8420 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("requests" include nil nil [16 31])
+            ("hashlib" include nil nil [32 55])
+            ("collections" include nil nil [56 90])
+            ("django.db" include nil nil [91 134])
+            ("YQNImeiUid" include nil nil [149 166])
+            ("AbstractAntiProcessor" include nil nil [175 203])
+            ("QueryRes" variable nil nil [206 265])
+            ("YQNAnti" type
+               (:superclasses ("AbstractAntiProcessor")
+                :members 
+                  ( ("'''
+    对一起牛这个case进行单独的处理
+    '''" code nil (reparse-symbol indented_block_body) [310 343])
+                    ("channel" variable nil (reparse-symbol indented_block_body) [348 365])
+                    ("key" variable nil (reparse-symbol indented_block_body) [370 410])
+                    ("wingold_thresholds" variable nil (reparse-symbol indented_block_body) [433 581])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [673 708]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [600 604])
+                            ("name" variable nil (reparse-symbol function_parameters) [606 610]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [587 668])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [685 689])
+                            ("imei" variable nil (reparse-symbol function_parameters) [691 695])
+                            ("action" variable nil (reparse-symbol function_parameters) [697 703]))                          )
+                        (reparse-symbol indented_block_body) [673 916])
+                    ("yqn_user_query" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [940 944])
+                            ("imei" variable nil (reparse-symbol function_parameters) [946 950]))                          )
+                        (reparse-symbol indented_block_body) [921 1550])
+                    ("yqn_wingold_query" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1577 1581])
+                            ("uid" variable nil (reparse-symbol function_parameters) [1583 1586]))                          )
+                        (reparse-symbol indented_block_body) [1555 2567])
+                    ("anti_launch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2588 2592])
+                            ("imei" variable nil (reparse-symbol function_parameters) [2594 2598])
+                            ("action" variable nil (reparse-symbol function_parameters) [2600 2606]))                          )
+                        (reparse-symbol indented_block_body) [2572 3103])
+                    ("anti_charge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3124 3128])
+                            ("imei" variable nil (reparse-symbol function_parameters) [3130 3134]))                          )
+                        (reparse-symbol indented_block_body) [3108 3518])
+                    ("anti_install" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3540 3544])
+                            ("imei" variable nil (reparse-symbol function_parameters) [3546 3550]))                          )
+                        (reparse-symbol indented_block_body) [3523 3879]))                  
+                :type "class")
+                nil [268 3879]))          
+      :file "yqn_anti.py"
+      :pointmax 3879
+      :fsize 5655
+      :lastmodtime '(22914 52479 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("requests" include nil nil [17 32])
+            ("hashlib" include nil nil [33 56])
+            ("AbstractAntiProcessor" include nil nil [65 93])
+            ("MlAnti" type
+               (:superclasses ("AbstractAntiProcessor")
+                :members 
+                  ( ("key" variable nil (reparse-symbol indented_block_body) [137 177])
+                    ("url_template" variable nil (reparse-symbol indented_block_body) [182 268])
+                    ("vip_thresholds" variable nil (reparse-symbol indented_block_body) [273 299])
+                    ("wingold_thresholds" variable nil (reparse-symbol indented_block_body) [304 372])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [406 445]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [391 395]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [378 446])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [463 467])
+                            ("imei" variable nil (reparse-symbol function_parameters) [469 473])
+                            ("action" variable nil (reparse-symbol function_parameters) [475 481]))                          )
+                        (reparse-symbol indented_block_body) [451 659])
+                    ("query" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [674 678])
+                            ("imei" variable nil (reparse-symbol function_parameters) [680 684]))                          )
+                        (reparse-symbol indented_block_body) [664 1152])
+                    ("anti_charge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1173 1177])
+                            ("imei" variable nil (reparse-symbol function_parameters) [1179 1183])
+                            ("action" variable nil (reparse-symbol function_parameters) [1185 1191]))                          )
+                        (reparse-symbol indented_block_body) [1157 1447])
+                    ("anti_win" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1465 1469])
+                            ("imei" variable nil (reparse-symbol function_parameters) [1471 1475])
+                            ("action" variable nil (reparse-symbol function_parameters) [1477 1483]))                          )
+                        (reparse-symbol indented_block_body) [1452 1760]))                  
+                :type "class")
+                nil [96 1760]))          
+      :file "ml_anti.py"
+      :pointmax 1760
+      :fsize 1759
+      :lastmodtime '(22781 47648 0 0)
+      :unmatched-syntax '((FROM 58 . 62) (PERIOD 63 . 64)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("requests" include nil nil [16 31])
+            ("hashlib" include nil nil [32 55])
+            ("AbstractAntiProcessor" include nil nil [64 92])
+            ("By2Anti" type
+               (:superclasses ("AbstractAntiProcessor")
+                :members 
+                  ( ("'''
+    对捕鱼部落Case的支持
+    '''" code nil (reparse-symbol indented_block_body) [137 165])
+                    ("qid" variable nil (reparse-symbol indented_block_body) [170 186])
+                    ("key" variable nil (reparse-symbol indented_block_body) [191 217])
+                    ("thresholds" variable nil (reparse-symbol indented_block_body) [222 288])
+                    ("query_url" variable nil (reparse-symbol indented_block_body) [293 338])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [372 413]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [357 361]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [344 414])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [431 435])
+                            ("imei" variable nil (reparse-symbol function_parameters) [437 441])
+                            ("action" variable nil (reparse-symbol function_parameters) [443 449]))                          )
+                        (reparse-symbol indented_block_body) [419 630])
+                    ("by_user_query" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [653 657])
+                            ("imei" variable nil (reparse-symbol function_parameters) [659 663]))                          )
+                        (reparse-symbol indented_block_body) [635 1178])
+                    ("anti_install" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1200 1204])
+                            ("imei" variable nil (reparse-symbol function_parameters) [1206 1210]))                          )
+                        (reparse-symbol indented_block_body) [1183 1246])
+                    ("anti_charge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1267 1271])
+                            ("imei" variable nil (reparse-symbol function_parameters) [1273 1277]))                          )
+                        (reparse-symbol indented_block_body) [1251 1405])
+                    ("anti_launch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1426 1430])
+                            ("imei" variable nil (reparse-symbol function_parameters) [1432 1436])
+                            ("action" variable nil (reparse-symbol function_parameters) [1438 1444]))                          )
+                        (reparse-symbol indented_block_body) [1410 1686]))                  
+                :type "class")
+                nil [95 1686])
+            ("By3Anti" type
+               (:superclasses ("AbstractAntiProcessor")
+                :members 
+                  ( ("'''
+    捕鱼第三期的支持
+    '''" code nil (reparse-symbol indented_block_body) [1730 1754])
+                    ("query_url" variable nil (reparse-symbol indented_block_body) [1759 1809])
+                    ("key" variable nil (reparse-symbol indented_block_body) [1814 1838])
+                    ("qid" variable nil (reparse-symbol indented_block_body) [1843 1859])
+                    ("wingold_thresholds" variable nil (reparse-symbol indented_block_body) [1865 1964])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [1998 2039]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1983 1987]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1970 2040])
+                    ("user_query" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2060 2064])
+                            ("imei" variable nil (reparse-symbol function_parameters) [2066 2070]))                          )
+                        (reparse-symbol indented_block_body) [2045 2575])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2592 2596])
+                            ("imei" variable nil (reparse-symbol function_parameters) [2598 2602])
+                            ("action" variable nil (reparse-symbol function_parameters) [2604 2610]))                          )
+                        (reparse-symbol indented_block_body) [2580 2843]))                  
+                :type "class")
+                nil [1688 2843]))          
+      :file "by2_anti.py"
+      :pointmax 2843
+      :fsize 2882
+      :lastmodtime '(22914 50381 0 0)
+      :unmatched-syntax '((FROM 57 . 61) (PERIOD 62 . 63)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("requests" include nil nil [16 31])
+            ("hashlib" include nil nil [32 55])
+            ("collections" include nil nil [56 90])
+            ("AbstractAntiProcessor" include nil nil [99 127])
+            ("UserInfo" variable nil nil [129 221])
+            ("DdzAnti" type
+               (:superclasses ("AbstractAntiProcessor")
+                :members 
+                  ( ("channel" variable nil (reparse-symbol indented_block_body) [266 283])
+                    ("key" variable nil (reparse-symbol indented_block_body) [288 328])
+                    ("charge_threshold" variable nil (reparse-symbol indented_block_body) [333 394])
+                    ("wingold_threshold" variable nil (reparse-symbol indented_block_body) [400 566])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [600 641]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [585 589]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [572 642])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [659 663])
+                            ("imei" variable nil (reparse-symbol function_parameters) [665 669])
+                            ("action" variable nil (reparse-symbol function_parameters) [671 677]))                          )
+                        (reparse-symbol indented_block_body) [647 865])
+                    ("anti_charge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [886 890])
+                            ("imei" variable nil (reparse-symbol function_parameters) [892 896])
+                            ("action" variable nil (reparse-symbol function_parameters) [898 904]))                          )
+                        (reparse-symbol indented_block_body) [870 1174])
+                    ("anti_wingold" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1196 1200])
+                            ("imei" variable nil (reparse-symbol function_parameters) [1202 1206])
+                            ("action" variable nil (reparse-symbol function_parameters) [1208 1214]))                          )
+                        (reparse-symbol indented_block_body) [1179 1506])
+                    ("query_user" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1526 1530])
+                            ("imei" variable nil (reparse-symbol function_parameters) [1532 1536]))                          )
+                        (reparse-symbol indented_block_body) [1511 2068])
+                    ("query_wingold" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2091 2095])
+                            ("imei" variable nil (reparse-symbol function_parameters) [2097 2101]))                          )
+                        (reparse-symbol indented_block_body) [2073 2805]))                  
+                :type "class")
+                nil [224 2805])
+            ("Ddz2Anti" type
+               (:superclasses ("DdzAnti")
+                :members 
+                  ( ("channel" variable nil (reparse-symbol indented_block_body) [2836 2853])
+                    ("key" variable nil (reparse-symbol indented_block_body) [2858 2898])
+                    ("wingold_threshold" variable nil (reparse-symbol indented_block_body) [2904 3067])
+                    ("charge_threshold" variable nil (reparse-symbol indented_block_body) [3073 3137])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3155 3159])
+                            ("imei" variable nil (reparse-symbol function_parameters) [3161 3165])
+                            ("action" variable nil (reparse-symbol function_parameters) [3167 3173]))                          )
+                        (reparse-symbol indented_block_body) [3143 3362])
+                    ("anti_charge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3383 3387])
+                            ("imei" variable nil (reparse-symbol function_parameters) [3389 3393])
+                            ("action" variable nil (reparse-symbol function_parameters) [3395 3401]))                          )
+                        (reparse-symbol indented_block_body) [3367 3672])
+                    ("anti_wingold" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3694 3698])
+                            ("imei" variable nil (reparse-symbol function_parameters) [3700 3704])
+                            ("action" variable nil (reparse-symbol function_parameters) [3706 3712]))                          )
+                        (reparse-symbol indented_block_body) [3677 4004]))                  
+                :type "class")
+                nil [2807 4004])
+            ("Ddz3Anti" type
+               (:superclasses ("DdzAnti")
+                :members 
+                  ( ("channel" variable nil (reparse-symbol indented_block_body) [4035 4052])
+                    ("key" variable nil (reparse-symbol indented_block_body) [4057 4097])
+                    ("redcoupon_thresholds" variable nil (reparse-symbol indented_block_body) [4103 4149])
+                    ("wingold_thresholds" variable nil (reparse-symbol indented_block_body) [4155 4354])
+                    ("charge_thresholds" variable nil (reparse-symbol indented_block_body) [4360 4453])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4471 4475])
+                            ("imei" variable nil (reparse-symbol function_parameters) [4477 4481])
+                            ("action" variable nil (reparse-symbol function_parameters) [4483 4489]))                          )
+                        (reparse-symbol indented_block_body) [4459 4971]))                  
+                :type "class")
+                nil [4006 4971]))          
+      :file "ddz_anti.py"
+      :pointmax 4971
+      :fsize 4970
+      :lastmodtime '(22942 40688 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("requests" include nil nil [25 40])
+            ("hashlib" include nil nil [41 64])
+            ("AbstractAntiProcessor" include nil nil [73 101])
+            ("YszAnti" type
+               (:superclasses ("AbstractAntiProcessor")
+                :members 
+                  ( ("channel" variable nil (reparse-symbol indented_block_body) [146 162])
+                    ("key" variable nil (reparse-symbol indented_block_body) [167 207])
+                    ("charge_threshold" variable nil (reparse-symbol indented_block_body) [212 242])
+                    ("wingold_threshold" variable nil (reparse-symbol indented_block_body) [247 317])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [351 392]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [336 340]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [323 393])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [410 414])
+                            ("imei" variable nil (reparse-symbol function_parameters) [416 420])
+                            ("action" variable nil (reparse-symbol function_parameters) [422 428]))                          )
+                        (reparse-symbol indented_block_body) [398 618])
+                    ("get_uid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [635 639])
+                            ("imei" variable nil (reparse-symbol function_parameters) [641 645]))                          )
+                        (reparse-symbol indented_block_body) [623 1140])
+                    ("query_wingold" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1163 1167])
+                            ("imei" variable nil (reparse-symbol function_parameters) [1169 1173]))                          )
+                        (reparse-symbol indented_block_body) [1145 1759])
+                    ("anti_charge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1780 1784])
+                            ("imei" variable nil (reparse-symbol function_parameters) [1786 1790])
+                            ("action" variable nil (reparse-symbol function_parameters) [1792 1798]))                          )
+                        (reparse-symbol indented_block_body) [1764 2069])
+                    ("anti_wingold" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2091 2095])
+                            ("imei" variable nil (reparse-symbol function_parameters) [2097 2101])
+                            ("action" variable nil (reparse-symbol function_parameters) [2103 2109]))                          )
+                        (reparse-symbol indented_block_body) [2074 2397]))                  
+                :type "class")
+                nil [104 2397]))          
+      :file "ysz_anti.py"
+      :pointmax 2397
+      :fsize 3525
+      :lastmodtime '(22914 52324 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("YQNAnti" include nil nil [16 30])
+            ("YQN2Anti" type
+               (:superclasses ("YQNAnti")
+                :members 
+                  ( ("channel" variable nil (reparse-symbol indented_block_body) [62 79])
+                    ("wingold_thresholds" variable nil (reparse-symbol indented_block_body) [84 248])
+                    ("payment_thresholds" variable nil (reparse-symbol indented_block_body) [253 319])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [353 396]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [338 342]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [325 397])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [414 418])
+                            ("imei" variable nil (reparse-symbol function_parameters) [420 424])
+                            ("action" variable nil (reparse-symbol function_parameters) [426 432]))                          )
+                        (reparse-symbol indented_block_body) [402 561])
+                    ("anti_wingold" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [583 587])
+                            ("imei" variable nil (reparse-symbol function_parameters) [589 593])
+                            ("action" variable nil (reparse-symbol function_parameters) [595 601]))                          )
+                        (reparse-symbol indented_block_body) [566 898])
+                    ("anti_payment" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [920 924])
+                            ("imei" variable nil (reparse-symbol function_parameters) [926 930])
+                            ("action" variable nil (reparse-symbol function_parameters) [932 938]))                          )
+                        (reparse-symbol indented_block_body) [903 1236]))                  
+                :type "class")
+                nil [33 1236]))          
+      :file "yqn2_anti.py"
+      :pointmax 1236
+      :fsize 1235
+      :lastmodtime '(22819 56855 0 0)
+      :unmatched-syntax nil)
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("hashlib" include nil nil [1 24])
+            ("requests" include nil nil [25 40])
+            ("collections" include nil nil [41 75])
+            ("AbstractAntiProcessor" include nil nil [84 112])
+            ("UserInfo" variable nil nil [114 171])
+            ("ByyllAnti" type
+               (:superclasses ("AbstractAntiProcessor")
+                :members 
+                  ( ("source" variable nil (reparse-symbol indented_block_body) [218 236])
+                    ("source_id" variable nil (reparse-symbol indented_block_body) [241 256])
+                    ("key" variable nil (reparse-symbol indented_block_body) [261 285])
+                    ("wingold_thresholds" variable nil (reparse-symbol indented_block_body) [290 380])
+                    ("charge_threshold" variable nil (reparse-symbol indented_block_body) [386 414])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [448 493]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [433 437]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [420 494])
+                    ("query_uid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [513 517])
+                            ("imei" variable nil (reparse-symbol function_parameters) [519 523]))                          )
+                        (reparse-symbol indented_block_body) [499 1095])
+                    ("query_wingold" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1118 1122])
+                            ("imei" variable nil (reparse-symbol function_parameters) [1124 1128]))                          )
+                        (reparse-symbol indented_block_body) [1100 1917])
+                    ("anti_wingold" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1939 1943])
+                            ("imei" variable nil (reparse-symbol function_parameters) [1945 1949])
+                            ("level" variable nil (reparse-symbol function_parameters) [1951 1956]))                          )
+                        (reparse-symbol indented_block_body) [1922 2097])
+                    ("anti_pay" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2115 2119])
+                            ("imei" variable nil (reparse-symbol function_parameters) [2121 2125])
+                            ("level" variable nil (reparse-symbol function_parameters) [2127 2132]))                          )
+                        (reparse-symbol indented_block_body) [2102 2268])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2285 2289])
+                            ("imei" variable nil (reparse-symbol function_parameters) [2291 2295])
+                            ("action" variable nil (reparse-symbol function_parameters) [2297 2303]))                          )
+                        (reparse-symbol indented_block_body) [2273 2433]))                  
+                :type "class")
+                nil [174 2433])
+            ("Byyll2Anti" type
+               (:superclasses ("ByyllAnti")
+                :members 
+                  ( ("source" variable nil (reparse-symbol indented_block_body) [2468 2486])
+                    ("source_id" variable nil (reparse-symbol indented_block_body) [2491 2506])
+                    ("power_thresholds" variable nil (reparse-symbol indented_block_body) [2540 2613])
+                    ("charge_threshold" variable nil (reparse-symbol indented_block_body) [2618 2660])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2678 2682])
+                            ("imei" variable nil (reparse-symbol function_parameters) [2684 2688])
+                            ("action" variable nil (reparse-symbol function_parameters) [2690 2696]))                          )
+                        (reparse-symbol indented_block_body) [2666 2998]))                  
+                :type "class")
+                nil [2435 2998]))          
+      :file "byyll_anti.py"
+      :pointmax 2998
+      :fsize 2997
+      :lastmodtime '(22942 36535 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("requests" include nil nil [16 31])
+            ("hashlib" include nil nil [32 55])
+            ("collections" include nil nil [56 90])
+            ("AbstractAntiProcessor" include nil nil [99 127])
+            ("UserInfo" variable nil nil [130 191])
+            ("PszAnti" type
+               (:superclasses ("AbstractAntiProcessor")
+                :members 
+                  ( ("channel_id" variable nil (reparse-symbol indented_block_body) [236 255])
+                    ("key" variable nil (reparse-symbol indented_block_body) [260 300])
+                    ("wingold_thresholds" variable nil (reparse-symbol indented_block_body) [306 502])
+                    ("tauruslevel_thresholds" variable nil (reparse-symbol indented_block_body) [508 575])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [609 650]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [594 598]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [581 651])
+                    ("user_query" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [671 675])
+                            ("imei" variable nil (reparse-symbol function_parameters) [677 681]))                          )
+                        (reparse-symbol indented_block_body) [656 1168])
+                    ("info_query" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1188 1192])
+                            ("imei" variable nil (reparse-symbol function_parameters) [1194 1198]))                          )
+                        (reparse-symbol indented_block_body) [1173 1878])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1895 1899])
+                            ("imei" variable nil (reparse-symbol function_parameters) [1901 1905])
+                            ("action" variable nil (reparse-symbol function_parameters) [1907 1913]))                          )
+                        (reparse-symbol indented_block_body) [1883 2297]))                  
+                :type "class")
+                nil [194 2297]))          
+      :file "psz_anti.py"
+      :pointmax 2297
+      :fsize 2296
+      :lastmodtime '(22942 40538 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_anti_server!lib!specific_anti!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

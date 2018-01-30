@@ -1,0 +1,49 @@
+;; Object utils/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "utils/"
+  :tables
+  (list
+    (semanticdb-table "utils_fromatdata.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("time" include nil nil [26 37])
+            ("domob_thrift.aow_stat_types2.ttypes" include nil nil [39 103])
+            ("FormatData" type
+               (:documentation "
+        序列化数据
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [194 230]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [179 183]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [166 231])
+                    ("format" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [247 251])
+                            ("pub_userid" variable nil (reparse-symbol function_parameters) [253 263])
+                            ("pub_mediaid" variable nil (reparse-symbol function_parameters) [265 276])
+                            ("deviceid" variable nil (reparse-symbol function_parameters) [278 286])
+                            ("point" variable nil (reparse-symbol function_parameters) [288 293])
+                            ("imei" variable nil (reparse-symbol function_parameters) [295 299])
+                            ("android_id" variable nil (reparse-symbol function_parameters) [301 311]))                          )
+                        (reparse-symbol indented_block_body) [236 746]))                  
+                :type "class")
+                nil [106 746]))          
+      :file "utils_fromatdata.py"
+      :pointmax 746
+      :fsize 755
+      :lastmodtime '(22699 62050 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "config.py"
+      :file "config.py"
+      :fsize 1036
+      :lastmodtime '(22699 62050 0 0)))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_point_server!lib!utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

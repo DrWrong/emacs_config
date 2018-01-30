@@ -1,0 +1,35 @@
+;; Object domob_pyutils/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "domob_pyutils/"
+  :tables
+  (list
+    (semanticdb-table "setup.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [73 82])
+            ("distutils.core" include nil nil [83 115])
+            ("domob_pyutils" include nil nil [116 153])
+            ("__author__" variable nil nil [155 194])
+            ("fullsplit" function
+               (:documentation "
+	Split a pathname into components (the opposite of os.path.join) in a
+	platform-neutral way.
+	"
+                :arguments 
+                  ( ("path" variable nil (reparse-symbol function_parameters) [210 214])
+                    ("result" variable nil (reparse-symbol function_parameters) [216 222]))                  )
+                nil [196 517])
+            ("packages" variable nil nil [518 531])
+            ("root_dir" variable nil nil [532 568])
+            ("if" code nil nil [569 608])
+            ("domob_pyutils_dir" variable nil nil [608 643])
+            ("for" code nil nil [645 941])
+            ("setup" code nil nil [942 1664]))          
+      :file "setup.py"
+      :pointmax 1665
+      :fsize 1684
+      :lastmodtime '(21979 13468 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!domob_pyutils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,285 @@
+;; Object taskclk_recorder/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "taskclk_recorder/"
+  :tables
+  (list
+    (semanticdb-table "TaskAdRecorder.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.taskclk_recorder" package nil nil [1 45])
+            ("java.nio.ByteBuffer" include nil nil [47 74])
+            ("java.util.List" include nil nil [75 97])
+            ("java.util.Map" include nil nil [98 119])
+            ("cn.domob.offerwall.thrift.common.BasicOffer" include nil nil [121 172])
+            ("cn.domob.offerwall.thrift.common.OfferType" include nil nil [173 223])
+            ("cn.domob.offerwall.thrift.settle.ClkEvent" include nil nil [224 273])
+            ("org.apache.ibatis.datasource.pooled.PooledDataSource" include nil nil [274 334])
+            ("org.apache.ibatis.mapping.Environment" include nil nil [335 380])
+            ("org.apache.ibatis.session.Configuration" include nil nil [381 428])
+            ("org.apache.ibatis.session.SqlSession" include nil nil [429 473])
+            ("org.apache.ibatis.session.SqlSessionFactory" include nil nil [474 525])
+            ("org.apache.ibatis.session.SqlSessionFactoryBuilder" include nil nil [526 584])
+            ("org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory" include nil nil [585 650])
+            ("org.apache.storm.spout.Scheme" include nil nil [651 688])
+            ("org.apache.storm.task.OutputCollector" include nil nil [689 734])
+            ("org.apache.storm.task.TopologyContext" include nil nil [735 780])
+            ("org.apache.storm.topology.OutputFieldsDeclarer" include nil nil [781 835])
+            ("org.apache.storm.topology.base.BaseRichBolt" include nil nil [836 887])
+            ("org.apache.storm.tuple.Fields" include nil nil [888 925])
+            ("org.apache.storm.tuple.Tuple" include nil nil [926 962])
+            ("org.slf4j.Logger" include nil nil [963 987])
+            ("org.slf4j.LoggerFactory" include nil nil [988 1019])
+            ("TaskAdRecorderBolt" type
+               (:typemodifiers ("public")
+                :superclasses "RichBoltWithMetric"
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1253 1330])
+                    ("sqlSessionFactory" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "SqlSessionFactory")
+                        (reparse-symbol class_member_declaration) [1336 1390])
+                    ("collector" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "OutputCollector")
+                        (reparse-symbol class_member_declaration) [1395 1439])
+                    ("saveEvent" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("event" variable (:type "ClkEvent") (reparse-symbol formal_parameters) [1524 1538]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1498 2346])
+                    ("execute" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("tuple" variable
+                               (:typemodifiers ("final")
+                                :type "Tuple")
+                                (reparse-symbol formal_parameters) [2497 2514]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2471 2705])
+                    ("buildSqlSessionFactory" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("conf" variable (:type "Map") (reparse-symbol formal_parameters) [2760 2768]))                          
+                        :type "SqlSessionFactory")
+                        (reparse-symbol class_member_declaration) [2711 3637])
+                    ("prepare" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("map" variable
+                               (:typemodifiers ("final")
+                                :type "Map")
+                                (reparse-symbol formal_parameters) [3919 3932])
+                            ("topologyContext" variable
+                               (:typemodifiers ("final")
+                                :type "TopologyContext")
+                                (reparse-symbol formal_parameters) [3934 3971])
+                            ("outputCollector" variable
+                               (:typemodifiers ("final")
+                                :type "OutputCollector")
+                                (reparse-symbol formal_parameters) [3973 4010]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3893 4125])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("outputFieldsDeclarer" variable
+                               (:typemodifiers ("final")
+                                :type "OutputFieldsDeclarer")
+                                (reparse-symbol formal_parameters) [4395 4442]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4357 4452]))                  
+                :type "class")
+                nil [1188 4456]))          
+      :file "TaskAdRecorder.java"
+      :pointmax 4457
+      :unmatched-syntax nil)
+    (semanticdb-table "TaskClkRecord.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.taskclk_recorder" package nil nil [1 45])
+            ("java.util.Calendar" include nil nil [47 73])
+            ("cn.domob.offerwall.thrift.common.BasicOffer" include nil nil [75 126])
+            ("cn.domob.offerwall.thrift.common.DeviceInfo" include nil nil [127 178])
+            ("cn.domob.offerwall.thrift.common.Platform" include nil nil [179 228])
+            ("cn.domob.offerwall.thrift.settle.ClkEvent" include nil nil [229 278])
+            ("TaskClkRecord" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("id" variable
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [478 493])
+                    ("pkgid" variable
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [498 516])
+                    ("action" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [521 539])
+                    ("cid" variable
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [544 560])
+                    ("platform" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [565 585])
+                    ("imei" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [590 609])
+                    ("idfa" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [614 633])
+                    ("user_supply" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [638 664])
+                    ("click_time" variable
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [669 692])
+                    ("dt" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [697 711])
+                    ("ensureNotNull" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("str" variable (:type "String") (reparse-symbol formal_parameters) [746 756]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [717 803])
+                    ("TaskClkRecord" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("event" variable (:type "ClkEvent") (reparse-symbol formal_parameters) [829 843]))                          )
+                        (reparse-symbol class_member_declaration) [808 1537]))                  
+                :type "class")
+                nil [445 1541]))          
+      :file "TaskClkRecord.java"
+      :pointmax 1541
+      :fsize 1540
+      :lastmodtime '(22774 63914 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "TaskClkRecordMapper.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.taskclk_recorder" package nil nil [1 45])
+            ("org.apache.ibatis.annotations.Insert" include nil nil [47 91])
+            ("TaskClkRecordMapper" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("insertRecord" function
+                       (:arguments 
+                          ( ("record" variable (:type "TaskClkRecord") (reparse-symbol formal_parameters) [548 568]))                          
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [531 570]))                  
+                :type "interface")
+                nil [269 572]))          
+      :file "TaskClkRecordMapper.java"
+      :pointmax 573
+      :fsize 572
+      :lastmodtime '(22768 40855 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "TaskAdRecorderBolt.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.taskclk_recorder" package nil nil [1 45])
+            ("java.util.Map" include nil nil [47 68])
+            ("cn.domob.offerwall.thrift.common.BasicOffer" include nil nil [70 121])
+            ("cn.domob.offerwall.thrift.common.OfferType" include nil nil [122 172])
+            ("cn.domob.offerwall.thrift.settle.ClkEvent" include nil nil [173 222])
+            ("cn.domob.offerwall.common.RichBoltWithMetric" include nil nil [223 275])
+            ("org.apache.ibatis.datasource.pooled.PooledDataSource" include nil nil [276 336])
+            ("org.apache.ibatis.mapping.Environment" include nil nil [337 382])
+            ("org.apache.ibatis.session.Configuration" include nil nil [383 430])
+            ("org.apache.ibatis.session.SqlSession" include nil nil [431 475])
+            ("org.apache.ibatis.session.SqlSessionFactory" include nil nil [476 527])
+            ("org.apache.ibatis.session.SqlSessionFactoryBuilder" include nil nil [528 586])
+            ("org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory" include nil nil [587 652])
+            ("org.apache.storm.task.OutputCollector" include nil nil [653 698])
+            ("org.apache.storm.task.TopologyContext" include nil nil [699 744])
+            ("org.apache.storm.topology.OutputFieldsDeclarer" include nil nil [745 799])
+            ("org.apache.storm.tuple.Tuple" include nil nil [800 836])
+            ("org.slf4j.Logger" include nil nil [837 861])
+            ("org.slf4j.LoggerFactory" include nil nil [862 893])
+            ("TaskAdRecorderBolt" type
+               (:typemodifiers ("public")
+                :superclasses "RichBoltWithMetric"
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1127 1208])
+                    ("sqlSessionFactory" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "SqlSessionFactory")
+                        (reparse-symbol class_member_declaration) [1214 1268])
+                    ("collector" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "OutputCollector")
+                        (reparse-symbol class_member_declaration) [1273 1317])
+                    ("saveEvent" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("event" variable (:type "ClkEvent") (reparse-symbol formal_parameters) [1402 1416]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1376 2224])
+                    ("execute" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("tuple" variable
+                               (:typemodifiers ("final")
+                                :type "Tuple")
+                                (reparse-symbol formal_parameters) [2375 2392]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2349 2671])
+                    ("buildSqlSessionFactory" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("conf" variable (:type "Map") (reparse-symbol formal_parameters) [2726 2734]))                          
+                        :type "SqlSessionFactory")
+                        (reparse-symbol class_member_declaration) [2677 3603])
+                    ("prepare" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("map" variable
+                               (:typemodifiers ("final")
+                                :type "Map")
+                                (reparse-symbol formal_parameters) [3885 3898])
+                            ("topologyContext" variable
+                               (:typemodifiers ("final")
+                                :type "TopologyContext")
+                                (reparse-symbol formal_parameters) [3900 3937])
+                            ("outputCollector" variable
+                               (:typemodifiers ("final")
+                                :type "OutputCollector")
+                                (reparse-symbol formal_parameters) [3939 3976]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3859 4212])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("outputFieldsDeclarer" variable
+                               (:typemodifiers ("final")
+                                :type "OutputFieldsDeclarer")
+                                (reparse-symbol formal_parameters) [4482 4529]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4444 4539]))                  
+                :type "class")
+                nil [1062 4543]))          
+      :file "TaskAdRecorderBolt.java"
+      :pointmax 4544
+      :fsize 4543
+      :lastmodtime '(22774 63892 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!offerwall!ow_topology!src!main!java!cn!domob!offerwall!taskclk_recorder!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

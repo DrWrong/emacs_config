@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+Django settings for sos_report project.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/1.6/topics/settings/
+
+For the full list of settings and their values, see
+https://docs.djangoproject.com/en/1.6/ref/settings/
+\"\"\"" code nil nil [25 272])
+            ("os" include nil nil [346 355])
+            ("BASE_DIR" variable nil nil [357 410])
+            ("SECRET_KEY" variable nil nil [615 680])
+            ("DEBUG" variable nil nil [763 776])
+            ("INSTALLED_APPS" variable nil nil [804 859])
+            ("MIDDLEWARE_CLASSES" variable nil nil [861 885])
+            ("DATABASES" variable nil nil [1051 1374])
+            ("LANGUAGE_CODE" variable nil nil [1377 1400])
+            ("TIME_ZONE" variable nil nil [1422 1449])
+            ("USE_I18N" variable nil nil [1451 1466])
+            ("USE_L10N" variable nil nil [1468 1483])
+            ("USE_TZ" variable nil nil [1485 1498])
+            ("SPECIFIC_ANTI_CONFIG" variable nil nil [1501 3161])
+            ("LOGGING" variable nil nil [3301 4749]))          
+      :file "settings.py"
+      :pointmax 4750
+      :fsize 4921
+      :lastmodtime '(22969 58723 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow!anti_server!server_conf!conf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

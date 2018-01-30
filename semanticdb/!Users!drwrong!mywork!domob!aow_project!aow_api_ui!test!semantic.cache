@@ -1,0 +1,28 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables
+  (list
+    (semanticdb-table "req_test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("time" include nil nil [24 35])
+            ("hashlib" include nil nil [36 59])
+            ("requests" include nil nil [60 75])
+            ("HOST" variable nil nil [155 177])
+            ("APPID" variable nil nil [178 195])
+            ("SECRET" variable nil nil [196 223])
+            ("req" variable nil nil [225 387])
+            ("data" variable nil nil [389 458])
+            ("req" variable nil nil [459 558])
+            ("r" variable nil nil [560 614])
+            ("print" code nil nil [615 628])
+            ("print" code nil nil [629 644]))          
+      :file "req_test.py"
+      :pointmax 645
+      :fsize 644
+      :lastmodtime '(22766 60737 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_api_ui!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

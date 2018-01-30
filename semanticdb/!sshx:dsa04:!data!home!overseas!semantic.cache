@@ -1,0 +1,21 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("json" include nil nil [23 34])
+            ("pymongo" include nil nil [35 66])
+            ("client" variable nil nil [68 90])
+            ("db" variable nil nil [93 111])
+            ("c" variable nil nil [112 129])
+            ("data" variable nil nil [130 240])
+            ("print" code nil nil [242 265]))          
+      :file "export.py"
+      :pointmax 266
+      :unmatched-syntax nil))
+  :file "!sshx:dsa04:!data!home!overseas!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

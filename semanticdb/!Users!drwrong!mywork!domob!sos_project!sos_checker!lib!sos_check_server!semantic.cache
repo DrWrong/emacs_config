@@ -1,0 +1,438 @@
+;; Object sos_check_server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sos_check_server/"
+  :tables
+  (list
+    (semanticdb-table "utils.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.conf" include nil nil [25 57])
+            ("sos_check_server.sdk.ofsdk" include nil nil [58 106])
+            ("logging" include nil nil [107 121])
+            ("redis" include nil nil [122 134])
+            ("domob_thrift.sos.checkserver_types.ttypes" include nil nil [135 198])
+            ("domob_pyutils.thriftext.TThriftClientPool" include nil nil [199 270])
+            ("domob_thrift.sos.aliserver" include nil nil [271 319])
+            ("domob_thrift.sos.aliserver.ttypes" include nil nil [320 390])
+            ("thrift.transport" include nil nil [406 442])
+            ("thrift.transport" include nil nil [443 482])
+            ("thrift.protocol" include nil nil [483 526])
+            ("domob_thrift.sos.pushserver" include nil nil [527 577])
+            ("domob_thrift.sos.transactionserver" include nil nil [578 642])
+            ("domob_thrift.common.ttypes" include nil nil [643 695])
+            ("ofcheckType" variable nil nil [696 843])
+            ("redispool" variable nil nil [845 895])
+            ("transaction_server" variable nil nil [897 1003])
+            ("ChargeClient" type
+               (:documentation "docstring for ChargeClient"
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("settings" variable nil (reparse-symbol indented_block_body) [1105 1200])
+                            ("settings" variable nil (reparse-symbol indented_block_body) [1209 1305])
+                            ("settings" variable nil (reparse-symbol indented_block_body) [1314 1357])
+                            ("settings" variable nil (reparse-symbol indented_block_body) [1366 1410])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1419 1469])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1478 1570]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1090 1094]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1077 1571])
+                    ("do_charge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1590 1594])
+                            ("ctype" variable nil (reparse-symbol function_parameters) [1596 1601])
+                            ("account" variable nil (reparse-symbol function_parameters) [1603 1610])
+                            ("num" variable nil (reparse-symbol function_parameters) [1612 1615])
+                            ("sporder_id" variable nil (reparse-symbol function_parameters) [1617 1627])
+                            ("cardid" variable nil (reparse-symbol function_parameters) [1629 1635])
+                            ("name" variable nil (reparse-symbol function_parameters) [1640 1644]))                          )
+                        (reparse-symbol indented_block_body) [1576 2417]))                  
+                :type "class")
+                nil [1006 2417])
+            ("chargeclient" variable nil nil [2418 2447])
+            ("push_status" function
+               (:documentation "
+    连接push server，推送兑换成功或失败信息
+    "
+                :arguments 
+                  ( ("account" variable nil (reparse-symbol function_parameters) [2466 2473])
+                    ("name" variable nil (reparse-symbol function_parameters) [2475 2479])
+                    ("success" variable nil (reparse-symbol function_parameters) [2481 2488]))                  )
+                nil [2450 3034]))          
+      :file "utils.py"
+      :pointmax 3034
+      :fsize 3117
+      :lastmodtime '(22267 17897 0 0)
+      :unmatched-syntax '((NAME 2757 . 2760) (IF 2784 . 2786) (ELSE 2795 . 2799)))
+    (semanticdb-table "db.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.db" include nil nil [518 546])
+            ("time" include nil nil [547 558])
+            ("datetime" include nil nil [559 588])
+            ("django.db.transaction" include nil nil [589 629])
+            ("json" include nil nil [630 641])
+            ("domob_pyutils.statscol" include nil nil [708 748])
+            ("domob_thrift.sos.checkserver_types.ttypes" include nil nil [749 827])
+            ("domob_thrift.sos.transactionserver.ttypes" include nil nil [828 904])
+            ("logging" include nil nil [906 920])
+            ("utils" include nil nil [936 999])
+            ("sensorlogger" variable nil nil [1002 1073])
+            ("UserScore" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("total" variable nil (reparse-symbol indented_block_body) [1111 1152])
+                    ("consumed" variable nil (reparse-symbol indented_block_body) [1157 1201])
+                    ("createtime" variable nil (reparse-symbol indented_block_body) [1252 1286])
+                    ("lastupdate" variable nil (reparse-symbol indented_block_body) [1291 1325])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [1351 1366])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [1375 1398]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1331 1399]))                  
+                :type "class")
+                nil [1076 1399])
+            ("User" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [1431 1470])
+                    ("phone_num" variable nil (reparse-symbol indented_block_body) [1475 1522])
+                    ("imei" variable nil (reparse-symbol indented_block_body) [1527 1565])
+                    ("create_time" variable nil (reparse-symbol indented_block_body) [1570 1605])
+                    ("register_ip" variable nil (reparse-symbol indented_block_body) [1610 1655])
+                    ("register_time" variable nil (reparse-symbol indented_block_body) [1660 1697])
+                    ("password" variable nil (reparse-symbol indented_block_body) [1702 1744])
+                    ("status" variable nil (reparse-symbol indented_block_body) [1749 1779])
+                    ("master" variable nil (reparse-symbol indented_block_body) [1784 1904])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [1930 1945])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [1954 1971]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1910 1972])
+                    ("score" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2001 2005]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1977 2190]))                  
+                :type "class")
+                nil [1401 2190])
+            ("MallItem" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [2226 2265])
+                    ("name" variable nil (reparse-symbol indented_block_body) [2270 2320])
+                    ("price" variable nil (reparse-symbol indented_block_body) [2325 2357])
+                    ("type" variable nil (reparse-symbol indented_block_body) [2362 2411])
+                    ("num" variable nil (reparse-symbol indented_block_body) [2416 2464])
+                    ("createtime" variable nil (reparse-symbol indented_block_body) [2469 2524])
+                    ("lastupdate" variable nil (reparse-symbol indented_block_body) [2529 2584])
+                    ("status" variable nil (reparse-symbol indented_block_body) [2589 2640])
+                    ("logo" variable nil (reparse-symbol indented_block_body) [2645 2696])
+                    ("prompt" variable nil (reparse-symbol indented_block_body) [2701 2753])
+                    ("finish_img" variable nil (reparse-symbol indented_block_body) [2758 2815])
+                    ("finish_text" variable nil (reparse-symbol indented_block_body) [2820 2878])
+                    ("cardid" variable nil (reparse-symbol indented_block_body) [2883 2935])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [2961 2976])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [2985 3007]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [2941 3008]))                  
+                :type "class")
+                nil [2192 3008])
+            ("TransactionHistory" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("userscore" variable nil (reparse-symbol indented_block_body) [3054 3145])
+                    ("description" variable nil (reparse-symbol indented_block_body) [3150 3207])
+                    ("dt" variable nil (reparse-symbol indented_block_body) [3212 3238])
+                    ("charge_dt" variable nil (reparse-symbol indented_block_body) [3243 3276])
+                    ("status" variable nil (reparse-symbol indented_block_body) [3281 3332])
+                    ("item_id" variable nil (reparse-symbol indented_block_body) [3337 3377])
+                    ("account" variable nil (reparse-symbol indented_block_body) [3382 3435])
+                    ("note" variable nil (reparse-symbol indented_block_body) [3440 3490])
+                    ("point" variable nil (reparse-symbol indented_block_body) [3495 3527])
+                    ("request_ip" variable nil (reparse-symbol indented_block_body) [3532 3576])
+                    ("amount" variable nil (reparse-symbol indented_block_body) [3581 3620])
+                    ("ali_account_name" variable nil (reparse-symbol indented_block_body) [3625 3687])
+                    ("channel" variable nil (reparse-symbol indented_block_body) [3692 3746])
+                    ("extinfo" variable nil (reparse-symbol indented_block_body) [3751 3789])
+                    ("alicode" variable nil (reparse-symbol indented_block_body) [3794 3848])
+                    ("real_expense" variable nil (reparse-symbol indented_block_body) [3853 3898])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [4149 4164])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [4173 4206]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [4129 4207])
+                    ("log_to_sensor" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4230 4234])
+                            ("logger" variable nil (reparse-symbol function_parameters) [4236 4242])
+                            ("event" variable nil (reparse-symbol function_parameters) [4244 4249]))                          )
+                        (reparse-symbol indented_block_body) [4212 4835])
+                    ("ext_json" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4867 4871]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [4840 5173])
+                    ("ext_json" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5212 5216])
+                            ("value" variable nil (reparse-symbol function_parameters) [5218 5223]))                          
+                        :decorators 
+                          ( ("ext_json.setter" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5178 5307])
+                    ("item" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5335 5339]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5312 5577])
+                    ("uid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5604 5608]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5582 5644])
+                    ("user" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5672 5676]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5649 5831])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5845 5849])
+                            ("args" variable nil (reparse-symbol function_parameters) [5851 5856])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [5858 5866]))                          )
+                        (reparse-symbol indented_block_body) [5836 6163])
+                    ("mark_trans_faild" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6201 6205])
+                            ("msg" variable nil (reparse-symbol function_parameters) [6207 6210]))                          
+                        :decorators 
+                          ( ("atomic" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [6168 7079])
+                    ("mark_trans_succeed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7107 7111]))                          )
+                        (reparse-symbol indented_block_body) [7084 7249])
+                    ("changestate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7270 7274])
+                            ("status" variable nil (reparse-symbol function_parameters) [7276 7282])
+                            ("err_msg" variable nil (reparse-symbol function_parameters) [7284 7291]))                          )
+                        (reparse-symbol indented_block_body) [7254 7934])
+                    ("makerequest" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7955 7959]))                          )
+                        (reparse-symbol indented_block_body) [7939 9435]))                  
+                :type "class")
+                nil [3010 9435]))          
+      :file "db.py"
+      :pointmax 9435
+      :fsize 9744
+      :lastmodtime '(22618 7224 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "checkhandler.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [25 54])
+            ("logging" include nil nil [55 69])
+            ("domob_pyutils.statscol" include nil nil [71 111])
+            ("" code nil nil [148 182])
+            ("sos_check_server.utils" include nil nil [183 230])
+            ("CheckHandler" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [311 367])
+                            ("self" variable nil (reparse-symbol indented_block_body) [376 415]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [279 283])
+                            ("args" variable nil (reparse-symbol function_parameters) [285 290])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [292 300]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [266 416])
+                    ("ping" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [430 434]))                          )
+                        (reparse-symbol indented_block_body) [421 457])
+                    ("checkRequest" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [479 483])
+                            ("header" variable nil (reparse-symbol function_parameters) [485 491])
+                            ("req" variable nil (reparse-symbol function_parameters) [493 496]))                          )
+                        (reparse-symbol indented_block_body) [462 681])
+                    ("oufeiCallback" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [704 708])
+                            ("header" variable nil (reparse-symbol function_parameters) [710 716])
+                            ("callbackbody" variable nil (reparse-symbol function_parameters) [718 730]))                          )
+                        (reparse-symbol indented_block_body) [686 954])
+                    ("log_callback_body" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [981 985])
+                            ("log_from" variable nil (reparse-symbol function_parameters) [987 995])
+                            ("callbackbody" variable nil (reparse-symbol function_parameters) [997 1009]))                          )
+                        (reparse-symbol indented_block_body) [959 1242])
+                    ("alipayCallback" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1266 1270])
+                            ("header" variable nil (reparse-symbol function_parameters) [1272 1278])
+                            ("callbackbody" variable nil (reparse-symbol function_parameters) [1280 1292]))                          )
+                        (reparse-symbol indented_block_body) [1247 1316]))                  
+                :type "class")
+                nil [233 1316]))          
+      :file "checkhandler.py"
+      :pointmax 1316
+      :fsize 1367
+      :lastmodtime '(22267 17897 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "model.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("re" include nil nil [25 34])
+            ("sos_check_server.db" include nil nil [35 112])
+            ("django.core.exceptions" include nil nil [113 166])
+            ("domob_pyutils.statscol" include nil nil [167 207])
+            ("django.db.transaction" include nil nil [208 248])
+            ("time" include nil nil [249 260])
+            ("domob_thrift.sos.checkserver_types.ttypes" include nil nil [261 328])
+            ("django" include nil nil [329 353])
+            ("logging" include nil nil [354 368])
+            ("django" include nil nil [369 390])
+            ("datetime" include nil nil [391 420])
+            ("ChargeModel" type
+               (:documentation "docstring for ChargeModel"
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("'初始化，并判断是否允许交易'" code nil (reparse-symbol indented_block_body) [525 540])
+                            ("db" code nil (reparse-symbol indented_block_body) [549 575])
+                            ("super" code nil (reparse-symbol indented_block_body) [584 619])
+                            ("self" variable nil (reparse-symbol indented_block_body) [628 710])
+                            ("self" variable nil (reparse-symbol indented_block_body) [719 812])
+                            ("self" variable nil (reparse-symbol indented_block_body) [821 845])
+                            ("self" variable nil (reparse-symbol indented_block_body) [854 880])
+                            ("self" variable nil (reparse-symbol indented_block_body) [889 923])
+                            ("self" variable nil (reparse-symbol indented_block_body) [932 962])
+                            ("\"\"" code nil (reparse-symbol indented_block_body) [1074 1076])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1085 1111])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1141 1160])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1169 1188])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1197 1240]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [505 509])
+                            ("req" variable nil (reparse-symbol function_parameters) [511 514]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [492 1241])
+                    ("ensure_account_is_phone_number_or_email" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1290 1294]))                          )
+                        (reparse-symbol indented_block_body) [1246 1885])
+                    ("ensure_user_avaliable" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1916 1920]))                          )
+                        (reparse-symbol indented_block_body) [1890 2219])
+                    ("ensure_item_avaliable" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2250 2254]))                          )
+                        (reparse-symbol indented_block_body) [2224 2558])
+                    ("ensure_user_affordble" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2589 2593]))                          )
+                        (reparse-symbol indented_block_body) [2563 2850])
+                    ("do_basic_filter" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2875 2879]))                          )
+                        (reparse-symbol indented_block_body) [2855 3085])
+                    ("make_transaction" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3123 3127]))                          
+                        :decorators 
+                          ( ("atomic" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3090 4012])
+                    ("charge_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4036 4040]))                          )
+                        (reparse-symbol indented_block_body) [4017 4785]))                  
+                :type "class")
+                nil [423 4785])
+            ("TransactionCallBack" type
+               (:documentation "docstring for TransactionCallBack"
+                :superclasses ("forms.Form")
+                :members 
+                  ( ("ret_code" variable nil (reparse-symbol indented_block_body) [4875 4906])
+                    ("sporder_id" variable nil (reparse-symbol indented_block_body) [4911 4944])
+                    ("err_msg" variable nil (reparse-symbol indented_block_body) [4949 4990])
+                    ("clean_sporder_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5017 5021]))                          )
+                        (reparse-symbol indented_block_body) [4996 5353])
+                    ("__init__" function
+                       (:suite 
+                          ( ("'初始化，并判断是否允许交易'" code nil (reparse-symbol indented_block_body) [5391 5406])
+                            ("db" code nil (reparse-symbol indented_block_body) [5415 5441])
+                            ("data" variable nil (reparse-symbol indented_block_body) [5450 5595])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5604 5699])
+                            ("super" code nil (reparse-symbol indented_block_body) [5709 5756]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5371 5375])
+                            ("req" variable nil (reparse-symbol function_parameters) [5377 5380]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5358 5757])
+                    ("process_callback" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5783 5787]))                          )
+                        (reparse-symbol indented_block_body) [5762 6031]))                  
+                :type "class")
+                nil [4787 6031]))          
+      :file "model.py"
+      :pointmax 6031
+      :fsize 6238
+      :lastmodtime '(22275 25658 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 4363 . 4657) (NEWLINE 4362 . 4363) (COLON 4361 . 4362) (TRY 4277 . 4280) (AS 4357 . 4359) (NAME 971 . 975) (IF 1033 . 1035) (ELSE 1069 . 1073))))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_checker!lib!sos_check_server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

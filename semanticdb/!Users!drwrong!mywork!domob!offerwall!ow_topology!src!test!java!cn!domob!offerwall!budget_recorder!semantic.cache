@@ -1,0 +1,27 @@
+;; Object budget_recorder/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "budget_recorder/"
+  :tables
+  (list
+    (semanticdb-table "BudgetRecorderTest.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.budget_recorder" package nil nil [1 44])
+            ("org.junit.Test" include nil nil [46 68])
+            ("BudgetRecorderTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("TestRecord" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [290 980]))                  
+                :type "class")
+                nil [241 982]))          
+      :file "BudgetRecorderTest.java"
+      :pointmax 983
+      :fsize 982
+      :lastmodtime '(22775 11567 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!offerwall!ow_topology!src!test!java!cn!domob!offerwall!budget_recorder!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,21 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.daemon.metrics.reporters" package nil nil [804 854])
+            ("com.codahale.metrics.MetricRegistry" include nil nil [856 899])
+            ("com.codahale.metrics.Reporter" include nil nil [900 937])
+            ("java.io.Closeable" include nil nil [939 964])
+            ("java.util.Map" include nil nil [965 986]))          
+      :file "PreparableReporter.java"
+      :pointmax 1156
+      :fsize 1155
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax '((BRACE_BLOCK 1057 . 1155) (GT 1055 . 1056) (IDENTIFIER 1046 . 1055) (AND 1044 . 1045) (IDENTIFIER 1035 . 1043) (EXTENDS 1027 . 1034) (IDENTIFIER 1025 . 1026) (PUBLIC 989 . 995) (LT 1024 . 1025))))
+  :file "!Users!drwrong!openProject!storm!storm-core!src!jvm!org!apache!storm!daemon!metrics!reporters!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

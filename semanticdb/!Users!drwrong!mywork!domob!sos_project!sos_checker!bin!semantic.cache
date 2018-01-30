@@ -1,0 +1,25 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "chargeserver.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+处理审核成功的订单向对应的服务端发请求
+'''" code nil nil [53 80])
+            ("argparse" include nil nil [82 97])
+            ("os" include nil nil [98 107])
+            ("sys" include nil nil [108 118])
+            ("basepath" variable nil nil [163 226])
+            ("sys" code nil nil [227 261])
+            ("if" code nil nil [264 940]))          
+      :file "chargeserver.py"
+      :pointmax 940
+      :fsize 977
+      :lastmodtime '(21979 13474 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_checker!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

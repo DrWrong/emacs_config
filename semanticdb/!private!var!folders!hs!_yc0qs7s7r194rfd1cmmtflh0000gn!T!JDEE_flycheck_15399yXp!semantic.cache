@@ -1,0 +1,58 @@
+;; Object JDEE_flycheck_15399yXp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "JDEE_flycheck_15399yXp/"
+  :tables
+  (list
+    (semanticdb-table "FailedMsgRetryManager.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("org.apache.storm.kafka" package nil nil [804 835])
+            ("java.io.Serializable" include nil nil [837 865])
+            ("java.util.Map" include nil nil [866 887])
+            ("java.util.Set" include nil nil [888 909])
+            ("FailedMsgRetryManager" type
+               (:typemodifiers ("public")
+                :interfaces ("Serializable")
+                :members 
+                  ( ("prepare" function
+                       (:arguments 
+                          ( ("spoutConfig" variable (:type "SpoutConfig") (reparse-symbol formal_parameters) [1029 1052])
+                            ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [1054 1067]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1016 1069])
+                    ("failed" function
+                       (:arguments 
+                          ( ("offset" variable (:type "Long") (reparse-symbol formal_parameters) [1190 1201]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1178 1203])
+                    ("acked" function
+                       (:arguments 
+                          ( ("offset" variable (:type "Long") (reparse-symbol formal_parameters) [1327 1338]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1316 1340])
+                    ("retryStarted" function
+                       (:arguments 
+                          ( ("offset" variable (:type "Long") (reparse-symbol formal_parameters) [1484 1495]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1466 1497])
+                    ("nextFailedMessageToRetry" function (:type "Long") (reparse-symbol interface_member_declaration) [1694 1726])
+                    ("shouldReEmitMsg" function
+                       (:arguments 
+                          ( ("offset" variable (:type "Long") (reparse-symbol formal_parameters) [1896 1907]))                          
+                        :type "boolean")
+                        (reparse-symbol interface_member_declaration) [1872 1909])
+                    ("retryFurther" function
+                       (:arguments 
+                          ( ("offset" variable (:type "Long") (reparse-symbol formal_parameters) [2123 2134]))                          
+                        :type "boolean")
+                        (reparse-symbol interface_member_declaration) [2102 2136]))                  
+                :type "interface")
+                nil [911 2365]))          
+      :file "FailedMsgRetryManager.java"
+      :pointmax 2366
+      :fsize 2365
+      :lastmodtime '(22735 37559 0 0)
+      :unmatched-syntax '((SEMICOLON 2362 . 2363) (PAREN_BLOCK 2344 . 2362) (GT 2324 . 2325) (IDENTIFIER 2316 . 2319) (LT 2319 . 2320))))
+  :file "!private!var!folders!hs!_yc0qs7s7r194rfd1cmmtflh0000gn!T!JDEE_flycheck_15399yXp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

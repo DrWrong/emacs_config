@@ -1,0 +1,27 @@
+;; Object protocols/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "protocols/"
+  :tables
+  (list
+    (semanticdb-table "SKUIItemOfferButtonDelegate.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("arg1" variable (:type "int") nil [166 171])
+            ("arg1" variable (:type "int") nil [240 245]))          
+      :file "SKUIItemOfferButtonDelegate.h"
+      :pointmax 252
+      :fsize 251
+      :lastmodtime '(22122 60422 0 0)
+      :unmatched-syntax '((symbol 248 . 251) (punctuation 247 . 248) (semantic-list 217 . 240) (punctuation 216 . 217) (symbol 180 . 216) (semantic-list 174 . 180) (punctuation 172 . 173) (semantic-list 143 . 166) (punctuation 142 . 143) (symbol 107 . 142) (semantic-list 101 . 107) (punctuation 99 . 100) (symbol 89 . 97) (punctuation 88 . 89) (punctuation 85 . 86) (symbol 77 . 85) (punctuation 76 . 77) (symbol 48 . 75) (symbol 39 . 47) (punctuation 38 . 39)))
+    (semanticdb-table "SKUINavigationControllerDelegate.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("arg2" variable (:type "int") nil [252 257]))          
+      :file "SKUINavigationControllerDelegate.h"
+      :pointmax 264
+      :fsize 263
+      :lastmodtime '(22122 60422 0 0)
+      :unmatched-syntax '((symbol 260 . 263) (punctuation 259 . 260) (semantic-list 239 . 252) (punctuation 238 . 239) (symbol 229 . 238) (symbol 224 . 228) (semantic-list 198 . 224) (punctuation 197 . 198) (symbol 154 . 197) (semantic-list 128 . 154) (punctuation 126 . 127) (symbol 116 . 124) (punctuation 115 . 116) (punctuation 112 . 113) (symbol 82 . 112) (punctuation 81 . 82) (symbol 48 . 80) (symbol 39 . 47) (punctuation 38 . 39))))
+  :file "!Users!drwrong!Desktop!iOS-Runtime-Headers-9.2!protocols!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

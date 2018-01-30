@@ -1,0 +1,43 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables
+  (list
+    (semanticdb-table "test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("unittest" include nil nil [24 39])
+            ("time" include nil nil [41 62])
+            ("datetime" include nil nil [63 92])
+            ("domob_pyutils.thriftext.TThriftClientPool" include nil nil [94 165])
+            ("domob_thrift.sos.transactionserver" include nil nil [166 230])
+            ("domob_thrift.sos.transactionserver.ttypes" include nil nil [232 310])
+            ("TestTransactionServer" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [374 378]))                          )
+                        (reparse-symbol indented_block_body) [364 480])
+                    ("testInserIncome" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [505 509]))                          )
+                        (reparse-symbol indented_block_body) [485 837])
+                    ("testFetchIncome" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [862 866]))                          )
+                        (reparse-symbol indented_block_body) [842 1016]))                  
+                :type "class")
+                nil [312 1016])
+            ("if" code nil nil [1018 1065]))          
+      :file "test.py"
+      :pointmax 1065
+      :fsize 1065
+      :lastmodtime '(22158 12453 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_transaction_server!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

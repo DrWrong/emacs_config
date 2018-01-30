@@ -1,0 +1,133 @@
+;; Object push_server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "push_server/"
+  :tables
+  (list
+    (semanticdb-table "push_handler.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [177 191])
+            ("requests" include nil nil [192 207])
+            ("sdk" include nil nil [209 230])
+            ("django.conf" include nil nil [231 263])
+            ("django.db" include nil nil [264 307])
+            ("domob_pyutils.statscol" include nil nil [308 348])
+            ("User" include nil nil [364 375])
+            ("PushHandler" type
+               (:superclasses ("object")
+                :members 
+                  ( ("'''
+    夺宝信鸽消息推送服务
+    '''" code nil (reparse-symbol indented_block_body) [410 436])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [470 527])
+                            ("self" variable nil (reparse-symbol indented_block_body) [536 586])
+                            ("self" variable nil (reparse-symbol indented_block_body) [595 654])
+                            ("if" code nil (reparse-symbol indented_block_body) [707 810])
+                            ("self" code nil (reparse-symbol indented_block_body) [818 889]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [455 459]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [442 890])
+                    ("pushToUsers" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [911 915])
+                            ("request" variable nil (reparse-symbol function_parameters) [917 924]))                          )
+                        (reparse-symbol indented_block_body) [895 1007])
+                    ("pushToUser" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1027 1031])
+                            ("request" variable nil (reparse-symbol function_parameters) [1033 1040]))                          )
+                        (reparse-symbol indented_block_body) [1012 1098])
+                    ("pushAndMessage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1122 1126])
+                            ("request" variable nil (reparse-symbol function_parameters) [1128 1135]))                          
+                        :documentation "
+        推送用户信息， 同时给用户发送短信
+        ")
+                        (reparse-symbol indented_block_body) [1103 1345])
+                    ("_pushToUser" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1366 1370])
+                            ("uid" variable nil (reparse-symbol function_parameters) [1372 1375])
+                            ("message" variable nil (reparse-symbol function_parameters) [1377 1384]))                          
+                        :documentation "
+        按照uid推送用户信息
+        ")
+                        (reparse-symbol indented_block_body) [1350 1590])
+                    ("_push_ios_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1617 1621])
+                            ("uid" variable nil (reparse-symbol function_parameters) [1623 1626])
+                            ("message" variable nil (reparse-symbol function_parameters) [1628 1635]))                          )
+                        (reparse-symbol indented_block_body) [1595 2164])
+                    ("_push_android_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2195 2199])
+                            ("uid" variable nil (reparse-symbol function_parameters) [2201 2204])
+                            ("message" variable nil (reparse-symbol function_parameters) [2206 2213]))                          )
+                        (reparse-symbol indented_block_body) [2169 2688])
+                    ("_sms_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2710 2714])
+                            ("uid" variable nil (reparse-symbol function_parameters) [2716 2719])
+                            ("message" variable nil (reparse-symbol function_parameters) [2721 2728]))                          )
+                        (reparse-symbol indented_block_body) [2693 3191]))                  
+                :type "class")
+                nil [378 3191]))          
+      :file "push_handler.py"
+      :pointmax 3191
+      :fsize 3348
+      :lastmodtime '(22474 8846 0 0)
+      :unmatched-syntax '((FROM 351 . 355) (PERIOD 356 . 357)))
+    (semanticdb-table "tests.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("unittest" include nil nil [26 55])
+            ("django.conf" include nil nil [57 89])
+            ("PushHandler" include nil nil [109 127])
+            ("User" include nil nil [141 152])
+            ("domob_thrift.luckydraw.pushserver.ttypes" include nil nil [153 227])
+            ("PushTestCase" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [275 279]))                          )
+                        (reparse-symbol indented_block_body) [265 319])
+                    ("test_push_ios" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [342 346]))                          )
+                        (reparse-symbol indented_block_body) [324 509])
+                    ("test_push_android" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [536 540]))                          )
+                        (reparse-symbol indented_block_body) [514 663])
+                    ("test_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [685 689]))                          )
+                        (reparse-symbol indented_block_body) [668 1095]))                  
+                :type "class")
+                nil [230 1095]))          
+      :file "tests.py"
+      :pointmax 1446
+      :fsize 1641
+      :lastmodtime '(22469 20729 0 0)
+      :unmatched-syntax '((FROM 128 . 132) (PERIOD 133 . 134) (FROM 90 . 94) (PERIOD 95 . 96))))
+  :file "!Users!drwrong!mywork!domob!luckydraw_project!dbb_push_server!lib!push_server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

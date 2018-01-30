@@ -1,0 +1,36 @@
+;; Object conf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "conf/"
+  :tables
+  (list
+    (semanticdb-table "django-settings.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("DEBUG" variable nil nil [24 36])
+            ("SECRET_KEY" variable nil nil [37 102])
+            ("DATABASES" variable nil nil [104 631])
+            ("LOGGING" variable nil nil [634 3851])
+            ("REDIS" variable nil nil [3855 3923])
+            ("OUFEI_CONFIG" variable nil nil [3925 4180])
+            ("ALIPAYSDK" variable nil nil [4182 4452])
+            ("OUFEICHARGE_TIMESLEEP" variable nil nil [4453 4478])
+            ("PUSHSERVER" variable nil nil [4480 4514])
+            ("LANGUAGE_CODE" variable nil nil [4593 4616])
+            ("TIME_ZONE" variable nil nil [4618 4645])
+            ("USE_I18N" variable nil nil [4647 4662])
+            ("USE_L10N" variable nil nil [4664 4679])
+            ("USE_TZ" variable nil nil [4681 4695])
+            ("USER_INVITE_PAY" variable nil nil [4697 4722])
+            ("CHARGE_SERVER_DM303_PORT" variable nil nil [4724 4756])
+            ("ALI_SERVER" variable nil nil [4758 4839])
+            ("THRIFT_TRANSACTIONSERVER" variable nil nil [4841 4935])
+            ("BILL_SEARCH_DAYS" variable nil nil [4947 4968])
+            ("REJECTED_TRANS_MANAGEMENT_SERVER_DM303_PORT" variable nil nil [4970 5021]))          
+      :file "django-settings.py"
+      :pointmax 5022
+      :fsize 5065
+      :lastmodtime '(22267 17897 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_checker!conf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

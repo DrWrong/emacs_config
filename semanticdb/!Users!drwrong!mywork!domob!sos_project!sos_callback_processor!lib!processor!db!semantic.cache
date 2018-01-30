@@ -1,0 +1,130 @@
+;; Object db/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "db/"
+  :tables
+  (list
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [485 524])
+            ("django.db" include nil nil [526 554])
+            ("SosDjCallback" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [595 640])
+                    ("snuid" variable nil (reparse-symbol indented_block_body) [645 674])
+                    ("device_id" variable nil (reparse-symbol indented_block_body) [679 722])
+                    ("app_id" variable nil (reparse-symbol indented_block_body) [727 767])
+                    ("currency" variable nil (reparse-symbol indented_block_body) [772 804])
+                    ("app_ratio" variable nil (reparse-symbol indented_block_body) [809 842])
+                    ("time_stamp" variable nil (reparse-symbol indented_block_body) [847 881])
+                    ("ad_name" variable nil (reparse-symbol indented_block_body) [886 927])
+                    ("pack_name" variable nil (reparse-symbol indented_block_body) [932 975])
+                    ("task_id" variable nil (reparse-symbol indented_block_body) [980 1021])
+                    ("trade_type" variable nil (reparse-symbol indented_block_body) [1026 1060])
+                    ("token" variable nil (reparse-symbol indented_block_body) [1065 1104])
+                    ("status" variable nil (reparse-symbol indented_block_body) [1109 1139])
+                    ("create_time" variable nil (reparse-symbol indented_block_body) [1144 1179])
+                    ("dt" variable nil (reparse-symbol indented_block_body) [1184 1210])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [1235 1250])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [1259 1287]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1215 1288]))                  
+                :type "class")
+                nil [556 1288])
+            ("SosDomobCallback" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [1340 1385])
+                    ("uid" variable nil (reparse-symbol indented_block_body) [1390 1417])
+                    ("orderid" variable nil (reparse-symbol indented_block_body) [1422 1456])
+                    ("adid" variable nil (reparse-symbol indented_block_body) [1461 1489])
+                    ("adname" variable nil (reparse-symbol indented_block_body) [1494 1534])
+                    ("action" variable nil (reparse-symbol indented_block_body) [1539 1569])
+                    ("price" variable nil (reparse-symbol indented_block_body) [1574 1603])
+                    ("point" variable nil (reparse-symbol indented_block_body) [1608 1637])
+                    ("create_time" variable nil (reparse-symbol indented_block_body) [1642 1677])
+                    ("status" variable nil (reparse-symbol indented_block_body) [1682 1712])
+                    ("dt" variable nil (reparse-symbol indented_block_body) [1717 1743])
+                    ("hr" variable nil (reparse-symbol indented_block_body) [1748 1774])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [1799 1814])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [1823 1854]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1779 1855]))                  
+                :type "class")
+                nil [1298 1855])
+            ("User" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [1896 1938])
+                    ("phone_num" variable nil (reparse-symbol indented_block_body) [1943 2000])
+                    ("imei" variable nil (reparse-symbol indented_block_body) [2005 2043])
+                    ("register_ip" variable nil (reparse-symbol indented_block_body) [2048 2093])
+                    ("register_time" variable nil (reparse-symbol indented_block_body) [2098 2135])
+                    ("password" variable nil (reparse-symbol indented_block_body) [2140 2182])
+                    ("status" variable nil (reparse-symbol indented_block_body) [2187 2217])
+                    ("sex" variable nil (reparse-symbol indented_block_body) [2222 2249])
+                    ("birthday" variable nil (reparse-symbol indented_block_body) [2254 2286])
+                    ("create_time" variable nil (reparse-symbol indented_block_body) [2291 2326])
+                    ("masterid" variable nil (reparse-symbol indented_block_body) [2331 2366])
+                    ("extra_info" variable nil (reparse-symbol indented_block_body) [2371 2402])
+                    ("denyed_time" variable nil (reparse-symbol indented_block_body) [2407 2442])
+                    ("channel" variable nil (reparse-symbol indented_block_body) [2447 2489])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [2514 2529])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [2538 2555]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [2494 2556]))                  
+                :type "class")
+                nil [1866 2556])
+            ("UserScore" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [2601 2643])
+                    ("total" variable nil (reparse-symbol indented_block_body) [2648 2680])
+                    ("consumed" variable nil (reparse-symbol indented_block_body) [2685 2720])
+                    ("createtime" variable nil (reparse-symbol indented_block_body) [2725 2759])
+                    ("lastupdate" variable nil (reparse-symbol indented_block_body) [2764 2798])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [2823 2838])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [2847 2870]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [2803 2871]))                  
+                :type "class")
+                nil [2566 2871])
+            ("SosYoumiCallback" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("order_id" variable nil (reparse-symbol indented_block_body) [2914 2970])
+                    ("ad_name" variable nil (reparse-symbol indented_block_body) [2975 3017])
+                    ("uid" variable nil (reparse-symbol indented_block_body) [3022 3049])
+                    ("points" variable nil (reparse-symbol indented_block_body) [3054 3084])
+                    ("imei" variable nil (reparse-symbol indented_block_body) [3089 3128])
+                    ("task_time" variable nil (reparse-symbol indented_block_body) [3133 3166])
+                    ("create_time" variable nil (reparse-symbol indented_block_body) [3171 3206])
+                    ("price" variable nil (reparse-symbol indented_block_body) [3211 3240])
+                    ("trade_type" variable nil (reparse-symbol indented_block_body) [3245 3279])
+                    ("dt" variable nil (reparse-symbol indented_block_body) [3284 3310])
+                    ("status" variable nil (reparse-symbol indented_block_body) [3315 3345])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [3371 3386])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [3395 3426]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [3351 3427]))                  
+                :type "class")
+                nil [2872 3427]))          
+      :file "models.py"
+      :pointmax 3437
+      :fsize 4658
+      :lastmodtime '(22072 18113 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_callback_processor!lib!processor!db!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

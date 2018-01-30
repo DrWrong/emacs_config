@@ -1,0 +1,32 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "sos_daily_report.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"发送广告天级报表
+
+\"\"\"" code nil nil [51 67])
+            ("argparse" include nil nil [69 84])
+            ("logging.config" include nil nil [85 106])
+            ("os" include nil nil [107 116])
+            ("sys" include nil nil [117 127])
+            ("time" include nil nil [128 139])
+            ("inspect" include nil nil [140 154])
+            ("importlib" include nil nil [155 190])
+            ("__author__" variable nil nil [192 235])
+            ("basepath" variable nil nil [237 300])
+            ("sys" code nil nil [301 335])
+            ("send_reports" function (:arguments 
+              ( ("timestamp" variable nil (reparse-symbol function_parameters) [355 364]))              ) nil [338 904])
+            ("if" code nil nil [906 1749]))          
+      :file "sos_daily_report.py"
+      :pointmax 1749
+      :fsize 1764
+      :lastmodtime '(22230 22933 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_report!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

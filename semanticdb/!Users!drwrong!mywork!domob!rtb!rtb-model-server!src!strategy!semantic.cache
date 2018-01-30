@@ -1,0 +1,1063 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("boost/algorithm/string.hpp" include (:system-flag t) nil [94 131])
+            ("model_process_handler.h" include nil nil [132 166])
+            ("model_process_handler-inl.h" include nil nil [167 205])
+            ("../util/ms_debug.h" include nil nil [238 267])
+            ("model_process_handler_t::_freq_redis_pool" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("d_redis_pool" type (:type "class") nil nil))
+                nil [269 332])
+            ("model_process_handler_t::_tags_device_group_redis_pool" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("d_redis_pool" type (:type "class") nil nil))
+                nil [333 409])
+            ("model_process_handler_t::_dmp_index_redis_pool" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("d_redis_pool" type (:type "class") nil nil))
+                nil [410 478])
+            ("model_process_handler_t::_keywords_redis_pool" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("d_redis_pool" type (:type "class") nil nil))
+                nil [479 546])
+            ("model_process_handler_t" function
+               (:constructor-flag t
+                :parent "model_process_handler_t"
+                :type ("model_process_handler_t" type (:type "class") nil nil))
+                nil [548 915])
+            ("model_process_handler_t" function
+               (:destructor-flag t
+                :parent "model_process_handler_t"
+                :type "void")
+                nil [917 1316])
+            ("init" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("conf_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1352 1374]))                  
+                :type "int")
+                nil [1318 4318])
+            ("_load_conf" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("conf_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4360 4382]))                  
+                :type "int")
+                nil [4320 12324])
+            ("get_index" function
+               (:parent "model_process_handler_t"
+                :type "int")
+                nil [12326 12407])
+            ("release_index" function
+               (:parent "model_process_handler_t"
+                :type "int")
+                nil [12409 12498])
+            ("get_ad_bid" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("bid_response" variable
+                       (:reference 1
+                        :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12540 12577])
+                    ("bid_request" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("RTBBidRequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12578 12611])
+                    ("ad_map" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("AdPlacementId" type nil nil nil)
+                                  ("std::vector" type (:template-specifier 
+                                    ( ("RTBModelServerAdInfo" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12612 12687]))                  
+                :type "int")
+                nil [12500 13324])
+            ("get_ad" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("bid_response" variable
+                       (:reference 1
+                        :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13362 13399])
+                    ("bid_request" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("RTBBidRequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13400 13433]))                  
+                :type "int")
+                nil [13326 15449])
+            ("get_ad_for_debug" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("bid_response" variable
+                       (:reference 1
+                        :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15497 15534])
+                    ("bid_request" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("RTBBidRequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15535 15568])
+                    ("debug_response" variable
+                       (:pointer 1
+                        :type ("RTBModelServerResponseForDebug" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15569 15616]))                  
+                :type "int")
+                nil [15451 17535])
+            ("_is_valid_req" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("bid_request" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("RTBBidRequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17582 17615]))                  
+                :type "bool")
+                nil [17538 18828])
+            ("_fill_response" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("bid_response" variable
+                       (:reference 1
+                        :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18874 18911]))                  
+                :type "int")
+                nil [18830 19620])
+            ("_fill_debug_response" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("bid_response" variable
+                       (:reference 1
+                        :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19672 19709]))                  
+                :type "int")
+                nil [19622 20689])
+            ("_fill_response_info" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("search_imp_id" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20740 20762])
+                    ("bid_response_info" variable
+                       (:reference 1
+                        :type ("RTBModelServerResponseInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20763 20809]))                  
+                :type "int")
+                nil [20691 22326])
+            ("_fill_debug_response_info" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("search_imp_id" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22383 22405])
+                    ("bid_response_info" variable
+                       (:reference 1
+                        :type ("RTBModelServerResponseInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22406 22452])
+                    ("debug_response_info" variable
+                       (:reference 1
+                        :type ("RTBModelServerResponseInfoForDebug" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22453 22509]))                  
+                :type "int")
+                nil [22328 24420])
+            ("_fill_raw_info" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("res_ad" variable
+                       (:reference 1
+                        :type ("RTBModelServerAdInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24466 24495])
+                    ("final_ad" variable
+                       (:reference 1
+                        :type ("common_ad_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24496 24518]))                  
+                :type "int")
+                nil [24422 27693])
+            ("_do_decision" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("bid_list" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("RTBRequestResponseInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27737 27784])
+                    ("ad_map" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("AdPlacementId" type nil nil nil)
+                                  ("vector" type (:template-specifier 
+                                    ( ("RTBModelServerAdInfo" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27785 27849])
+                    ("bid_res" variable
+                       (:reference 1
+                        :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27850 27882]))                  
+                :type "int")
+                nil [27695 29862])
+            ("_ad_decision" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("bid_list" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("RTBRequestResponseInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29906 29953])
+                    ("bid_res" variable
+                       (:reference 1
+                        :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29954 29986])
+                    ("search_limit_tms" variable
+                       (:constant-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29987 30018]))                  
+                :type "int")
+                nil [29864 32490])
+            ("_ad_debug_decision" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("bid_list" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("RTBRequestResponseInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32540 32587])
+                    ("bid_res" variable
+                       (:reference 1
+                        :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32588 32620]))                  
+                :type "int")
+                nil [32492 34762])
+            ("_write_notice_log" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("bid_list" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("RTBRequestResponseInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34812 34859])
+                    ("bid_response" variable
+                       (:reference 1
+                        :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34860 34897]))                  
+                :type "int")
+                nil [34765 39994])
+            ("_get_dmp_index" function
+               (:parent "model_process_handler_t"
+                :type "bool")
+                nil [39996 40755])
+            ("_get_plain_userid" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("dmp_index" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [40804 40836]))                  
+                :type "int")
+                nil [40757 41398])
+            ("_parse_tag" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("dmp_index" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41440 41472]))                  
+                :type "int")
+                nil [41400 42109])
+            ("_parse_device" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("dmp_index" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42154 42186]))                  
+                :type "int")
+                nil [42111 43049])
+            ("_pre_inquiry" function
+               (:parent "model_process_handler_t"
+                :type "int")
+                nil [43051 44476])
+            ("_get_data_from_redis" function
+               (:parent "model_process_handler_t"
+                :type "int")
+                nil [44478 45415])
+            ("_get_frequency_from_redis" function
+               (:parent "model_process_handler_t"
+                :type "bool")
+                nil [45417 48994])
+            ("_get_tags_from_redis" function
+               (:parent "model_process_handler_t"
+                :type "bool")
+                nil [48996 50605])
+            ("_get_device_group_from_redis" function
+               (:parent "model_process_handler_t"
+                :type "bool")
+                nil [50607 52389])
+            ("_get_user_id_from_redis" function
+               (:parent "model_process_handler_t"
+                :type "bool")
+                nil [52391 54025])
+            ("_get_keywords_from_redis" function
+               (:parent "model_process_handler_t"
+                :type "bool")
+                nil [54027 55899]))          
+      :file "model_process_handler.cpp"
+      :pointmax 55901
+      :fsize 56150
+      :lastmodtime '(22940 1781 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("RTB_MODEL_SERVER_STRATEGY_MODEL_PROCESS_HANDLER_H_" variable (:constant-flag t) nil [160 210])
+            ("../common/common.h" include nil nil [212 241])
+            ("../index/model_index.h" include nil nil [242 275])
+            ("../index/model_index-inl.h" include nil nil [276 313])
+            ("global_data.h" include nil nil [314 338])
+            ("basic_bid_decision.h" include nil nil [339 370])
+            ("basic_bid_decision-inl.h" include nil nil [371 406])
+            ("toutiao_bid_decision.h" include nil nil [407 440])
+            ("dvx_bid_decision.h" include nil nil [441 470])
+            ("youku_bid_decision.h" include nil nil [471 502])
+            ("baichuan_bid_decision.h" include nil nil [503 537])
+            ("sohu_bid_decision.h" include nil nil [538 568])
+            ("iqiyi_bid_decision.h" include nil nil [569 600])
+            ("momo_bid_decision.h" include nil nil [601 631])
+            ("inmobi_bid_decision.h" include nil nil [632 664])
+            ("autohome_bid_decision.h" include nil nil [665 699])
+            ("suning_bid_decision.h" include nil nil [700 732])
+            ("d_redis.h" include nil nil [733 753])
+            ("model_process_handler_t" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [787 794])
+                    ("model_process_handler_t" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("model_process_handler_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [796 822])
+                    ("model_process_handler_t" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [824 851])
+                    ("public" label nil (reparse-symbol classsubparts) [853 860])
+                    ("init" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("conf_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [871 893]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [862 894])
+                    ("get_index" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [896 912])
+                    ("release_index" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [914 934])
+                    ("get_ad" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bid_response" variable
+                               (:reference 1
+                                :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [947 984])
+                            ("bid_request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("RTBBidRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [985 1018]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [936 1019])
+                    ("get_ad_for_debug" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bid_response" variable
+                               (:reference 1
+                                :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1042 1079])
+                            ("bid_request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("RTBBidRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1080 1113])
+                            ("debug_response" variable
+                               (:pointer 1
+                                :type ("RTBModelServerResponseForDebug" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1114 1161]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1021 1162])
+                    ("get_ad_bid" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bid_response" variable
+                               (:reference 1
+                                :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1179 1216])
+                            ("bid_request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("RTBBidRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1217 1250])
+                            ("ad_map" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("AdPlacementId" type nil nil nil)
+                                          ("std::vector" type (:template-specifier 
+                                            ( ("RTBModelServerAdInfo" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1251 1326]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1164 1327])
+                    ("protected" label nil (reparse-symbol classsubparts) [1329 1339])
+                    ("_is_valid_req" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bid_request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("RTBBidRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1360 1393]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1341 1394])
+                    ("_write_notice_log" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bid_list" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("RTBRequestResponseInfo" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1418 1465])
+                            ("bid_response" variable
+                               (:reference 1
+                                :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1466 1503]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1396 1504])
+                    ("_do_decision" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bid_list" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("RTBRequestResponseInfo" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1523 1570])
+                            ("ad_map" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("map" type
+                                     (:template-specifier 
+                                        ( ("AdPlacementId" type nil nil nil)
+                                          ("vector" type (:template-specifier 
+                                            ( ("RTBModelServerAdInfo" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1571 1635])
+                            ("bid_res" variable
+                               (:reference 1
+                                :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1636 1668]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1506 1669])
+                    ("_ad_decision" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bid_list" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("RTBRequestResponseInfo" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1688 1735])
+                            ("bid_res" variable
+                               (:reference 1
+                                :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1736 1768])
+                            ("search_limit_tms" variable
+                               (:constant-flag t
+                                :default-value "0"
+                                :type ("int32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1769 1803]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1671 1805])
+                    ("_ad_debug_decision" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bid_list" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("RTBRequestResponseInfo" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1830 1877])
+                            ("bid_res" variable
+                               (:reference 1
+                                :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1878 1910]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1807 1911])
+                    ("_fill_response_info" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("search_imp_id" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1937 1959])
+                            ("bid_response" variable
+                               (:reference 1
+                                :type ("RTBModelServerResponseInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1960 2001]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1913 2002])
+                    ("_fill_debug_response_info" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("search_imp_id" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2034 2056])
+                            ("bid_response_info" variable
+                               (:reference 1
+                                :type ("RTBModelServerResponseInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2057 2103])
+                            ("debug_response_info" variable
+                               (:reference 1
+                                :type ("RTBModelServerResponseInfoForDebug" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2104 2160]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2004 2161])
+                    ("_fill_response" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bid_response" variable
+                               (:reference 1
+                                :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2182 2219]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2163 2220])
+                    ("_fill_debug_response" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bid_response" variable
+                               (:reference 1
+                                :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2247 2284]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2222 2285])
+                    ("_fill_raw_info" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("res_ad" variable
+                               (:reference 1
+                                :type ("RTBModelServerAdInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2306 2335])
+                            ("final_ad" variable
+                               (:reference 1
+                                :type ("common_ad_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2336 2358]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2287 2359])
+                    ("_load_conf" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("conf_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2376 2398]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2361 2399])
+                    ("_get_data_from_redis" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2401 2428])
+                    ("_get_frequency_from_redis" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2430 2463])
+                    ("_get_tags_from_redis" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2465 2493])
+                    ("_get_device_group_from_redis" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2495 2531])
+                    ("_get_user_id_from_redis" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2533 2564])
+                    ("_get_keywords_from_redis" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2566 2598])
+                    ("_get_dmp_index" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2600 2622])
+                    ("_parse_tag" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dmp_index" variable
+                               (:reference 1
+                                :type ("map" type
+                                     (:template-specifier 
+                                        ( ("string" type nil nil nil)
+                                          ("string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2640 2672]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2625 2673])
+                    ("_parse_device" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dmp_index" variable
+                               (:reference 1
+                                :type ("map" type
+                                     (:template-specifier 
+                                        ( ("string" type nil nil nil)
+                                          ("string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2693 2725]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2675 2726])
+                    ("_get_plain_userid" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dmp_index" variable
+                               (:reference 1
+                                :type ("map" type
+                                     (:template-specifier 
+                                        ( ("string" type nil nil nil)
+                                          ("string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2750 2782]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2728 2783])
+                    ("_pre_inquiry" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2785 2804])
+                    ("protected" label nil (reparse-symbol classsubparts) [2806 2816])
+                    ("_clear" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2818 2839])
+                    ("_pre_work" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("bid_request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("RTBBidRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2862 2895]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2841 2896])
+                    ("_bid_list_init" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("RTBRequestResponseInfo" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2925 2962])
+                            ("bit" variable
+                               (:reference 1
+                                :type ("const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2963 2983]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2898 2984])
+                    ("_get_user_key" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :pointer 1
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [2986 3027])
+                    ("_fill_user_id" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("raw_user_id" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3054 3078]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3029 3079])
+                    ("_fill_base_info" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("res_ad" variable
+                               (:reference 1
+                                :type ("RTBModelServerAdInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3108 3137])
+                            ("final_ad" variable
+                               (:reference 1
+                                :type ("common_ad_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3138 3160]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3081 3161])
+                    ("_fill_debug_info" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("res_ad" variable
+                               (:reference 1
+                                :type ("RTBModelServerAdInfoForDebug" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3191 3228])
+                            ("final_ad" variable
+                               (:reference 1
+                                :type ("common_ad_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3229 3251]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3163 3252])
+                    ("_one_decision_begin" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("" variable (:type ("vector" type
+                                 (:template-specifier 
+                                    ( ("RTBRequestResponseInfo" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [3285 3316])
+                            ("bit" variable
+                               (:reference 1
+                                :type ("const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3317 3337])
+                            ("bid_res" variable
+                               (:reference 1
+                                :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3338 3370])
+                            ("dm_adp_id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3371 3389])
+                            ("bid_floor" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3390 3408])
+                            ("deal_floor" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3409 3428])
+                            ("search_imp_id" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3429 3451]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3254 3452])
+                    ("_one_decision_end" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [3454 3485])
+                    ("protected" label nil (reparse-symbol classsubparts) [3487 3497])
+                    ("_index" variable (:type ("model_index_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3499 3520])
+                    ("_g_data" variable (:type ("global_data_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3522 3544])
+                    ("_bs_decision" variable
+                       (:pointer 1
+                        :type ("basic_bid_decision_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3600 3635])
+                    ("_pcs_time" variable (:type ("time_stat_node_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3637 3664])
+                    ("_final_ad_list" variable
+                       (:pointer 1
+                        :type ("common_ad_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3666 3694])
+                    ("_final_ad_num" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3696 3719])
+                    ("_tot_req_ad_num" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3721 3746])
+                    ("_print_ad_match_type" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3748 3777])
+                    ("_ms_debug_filename" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3779 3805])
+                    ("_is_freq_redis_open" variable (:type "bool") (reparse-symbol classsubparts) [3807 3832])
+                    ("_is_tags_redis_open" variable (:type "bool") (reparse-symbol classsubparts) [3834 3859])
+                    ("_is_user_id_redis_open" variable (:type "bool") (reparse-symbol classsubparts) [3861 3889])
+                    ("_is_dmp_index_open" variable (:type "bool") (reparse-symbol classsubparts) [3891 3915])
+                    ("_is_keywords_redis_open" variable (:type "bool") (reparse-symbol classsubparts) [3917 3946])
+                    ("_user_new_dmp_index" variable (:type "bool") (reparse-symbol classsubparts) [3948 3973])
+                    ("_freq_redis_pool" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("d_redis_pool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3975 4013])
+                    ("_tags_device_group_redis_pool" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("d_redis_pool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4015 4066])
+                    ("_dmp_index_redis_pool" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("d_redis_pool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4068 4111])
+                    ("_keywords_redis_pool" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("d_redis_pool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4113 4155])
+                    ("_is_device_group_redis_open" variable (:type "bool") (reparse-symbol classsubparts) [4157 4190])
+                    ("_ms_adindex_max_no_update_time" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4192 4231])
+                    ("_freq_redis" variable
+                       (:pointer 1
+                        :type ("d_redis" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4261 4282])
+                    ("_tags_device_group_redis" variable
+                       (:pointer 1
+                        :type ("d_redis" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4284 4318])
+                    ("_dmp_redis" variable
+                       (:pointer 1
+                        :type ("d_redis" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4320 4340])
+                    ("_keywords_redis" variable
+                       (:pointer 1
+                        :type ("d_redis" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4342 4367])
+                    ("_stat_time" variable (:type ("time_stat_node_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4369 4397])
+                    ("_all_time" variable (:type ("time_stat_node_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4399 4426]))                  
+                :type "class")
+                nil [755 4429]))          
+      :file "model_process_handler.h"
+      :pointmax 4492
+      :fsize 4537
+      :lastmodtime '(22940 1781 0 0)
+      :unmatched-syntax '((punctuation 3316 . 3317) (punctuation 3315 . 3316) (punctuation 2962 . 2963) (punctuation 2961 . 2962))
+      :lexical-table 
+        '(("RTB_MODEL_SERVER_STRATEGY_MODEL_PROCESS_HANDLER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("RTB_MODEL_SERVER_STRATEGY_MODEL_PROCESS_HANDLER_INL_H_" variable (:constant-flag t) nil [169 223])
+            ("../common/common.h" include nil nil [225 254])
+            ("model_process_handler.h" include nil nil [255 289])
+            ("_clear" function
+               (:parent "model_process_handler_t"
+                :type "void")
+                nil [291 419])
+            ("_pre_work" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("bid_request" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("RTBBidRequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [460 493]))                  
+                :type "int")
+                nil [421 906])
+            ("_bid_list_init" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("" variable
+                       (:constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("RTBRequestResponseInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [953 990])
+                    ("bit" variable
+                       (:reference 1
+                        :type ("const_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [991 1011]))                  
+                :type "void")
+                nil [908 2197])
+            ("_get_user_key" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "model_process_handler_t"
+                :constant-flag t
+                :type "char")
+                nil [2199 3016])
+            ("_fill_user_id" function
+               (:parent "model_process_handler_t"
+                :arguments 
+                  ( ("raw_user_id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3061 3085]))                  
+                :type "int")
+                nil [3018 4666])
+            ("_fill_base_info" function
+               (:parent "model_process_handler_t"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("res_ad" variable
+                       (:reference 1
+                        :type ("RTBModelServerAdInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4720 4749])
+                    ("final_ad" variable
+                       (:reference 1
+                        :type ("common_ad_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4750 4772]))                  
+                :type "int")
+                nil [4668 5458])
+            ("_fill_debug_info" function
+               (:parent "model_process_handler_t"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("res_ad" variable
+                       (:reference 1
+                        :type ("RTBModelServerAdInfoForDebug" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5513 5550])
+                    ("final_ad" variable
+                       (:reference 1
+                        :type ("common_ad_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5551 5573]))                  
+                :type "int")
+                nil [5460 5622])
+            ("_one_decision_begin" function
+               (:parent "model_process_handler_t"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("RTBRequestResponseInfo" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5680 5711])
+                    ("bit" variable
+                       (:reference 1
+                        :type ("const_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5712 5732])
+                    ("bid_res" variable
+                       (:reference 1
+                        :type ("RTBModelServerResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5733 5765])
+                    ("dm_adp_id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5766 5784])
+                    ("bid_floor" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5785 5803])
+                    ("deal_floor" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5804 5823])
+                    ("search_imp_id" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5824 5846]))                  
+                :type "int")
+                nil [5624 6712])
+            ("_one_decision_end" function
+               (:parent "model_process_handler_t"
+                :typemodifiers ("inline")
+                :type "int")
+                nil [6714 6860]))          
+      :file "model_process_handler-inl.h"
+      :pointmax 6927
+      :fsize 6942
+      :lastmodtime '(22940 1781 0 0)
+      :unmatched-syntax '((punctuation 5711 . 5712) (punctuation 5710 . 5711) (punctuation 990 . 991) (punctuation 989 . 990))
+      :lexical-table 
+        '(("RTB_MODEL_SERVER_STRATEGY_MODEL_PROCESS_HANDLER_INL_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "global_data.h"
+      :fsize 17805
+      :lastmodtime '(22940 1781 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "basic_bid_decision.h"
+      :fsize 11169
+      :lastmodtime '(22940 1781 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "basic_bid_decision-inl.h"
+      :fsize 1275
+      :lastmodtime '(22940 1781 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "toutiao_bid_decision.h"
+      :fsize 1214
+      :lastmodtime '(22940 1781 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "dvx_bid_decision.h"
+      :fsize 1025
+      :lastmodtime '(22940 1781 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "youku_bid_decision.h"
+      :fsize 1041
+      :lastmodtime '(22940 1781 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "baichuan_bid_decision.h"
+      :fsize 933
+      :lastmodtime '(22940 1781 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "sohu_bid_decision.h"
+      :fsize 901
+      :lastmodtime '(22940 1781 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "iqiyi_bid_decision.h"
+      :fsize 1202
+      :lastmodtime '(22940 1781 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "momo_bid_decision.h"
+      :fsize 775
+      :lastmodtime '(22940 1781 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "inmobi_bid_decision.h"
+      :fsize 1157
+      :lastmodtime '(22940 1781 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "autohome_bid_decision.h"
+      :fsize 980
+      :lastmodtime '(22940 1781 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "suning_bid_decision.h"
+      :fsize 1046
+      :lastmodtime '(22940 1781 0 0)))
+  :file "!Users!drwrong!mywork!domob!rtb!rtb-model-server!src!strategy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

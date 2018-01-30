@@ -1,0 +1,22 @@
+;; Object aow_anti_server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "aow_anti_server/"
+  :tables
+  (list
+    (semanticdb-table "manager.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [23 32])
+            ("sys" include nil nil [33 43])
+            ("BASE_DIR" variable nil nil [45 81])
+            ("sys" code nil nil [82 129])
+            ("sys" code nil nil [130 176])
+            ("if" code nil nil [177 375]))          
+      :file "manager.py"
+      :pointmax 375
+      :fsize 374
+      :lastmodtime '(22726 20514 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_anti_server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

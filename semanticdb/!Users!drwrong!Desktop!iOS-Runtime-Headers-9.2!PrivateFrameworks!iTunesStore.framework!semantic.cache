@@ -1,0 +1,153 @@
+;; Object iTunesStore.framework/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "iTunesStore.framework/"
+  :tables
+  (list
+    (semanticdb-table "ISSoftwareApplication.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("accountDSID" variable
+               (:pointer 1
+                :type ("NSNumber" type (:type "class") nil nil))
+                nil [935 957])
+            ("accountIdentifier" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [986 1014])
+            ("beta" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1052 1062])
+            ("bundleIdentifier" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1091 1118])
+            ("bundleShortVersionString" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1147 1182])
+            ("bundleVersion" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1211 1235])
+            ("containerPath" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1264 1288])
+            ("contentRating" variable
+               (:pointer 1
+                :type ("SSItemContentRating" type (:type "class") nil nil))
+                nil [1317 1352])
+            ("debugDescription" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1380 1407])
+            ("description" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1435 1457])
+            ("deviceIdentifierForVendor" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1486 1522])
+            ("familyAccountIdentifier" variable
+               (:pointer 1
+                :type ("NSNumber" type (:type "class") nil nil))
+                nil [1551 1585])
+            ("hasMIDBasedSINF" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1608 1629])
+            ("hash" variable (:type "unsigned int") nil [1651 1669])
+            ("itemIdentifier" variable
+               (:pointer 1
+                :type ("NSNumber" type (:type "class") nil nil))
+                nil [1700 1725])
+            ("itemName" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [1754 1773])
+            ("missingRequiredSINF" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1796 1821])
+            ("placeholder" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1866 1883])
+            ("profileValidated" variable (:type ("BOOL" type (:type "class") nil nil)) nil [1933 1955])
+            ("receiptExpirationDate" variable
+               (:pointer 1
+                :type ("NSDate" type (:type "class") nil nil))
+                nil [1988 2018])
+            ("softwareType" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [2047 2070])
+            ("storeFrontIdentifier" variable
+               (:pointer 1
+                :type ("NSNumber" type (:type "class") nil nil))
+                nil [2101 2132])
+            ("superclass" variable (:type ("Class" type (:type "class") nil nil)) nil [2154 2171])
+            ("vendorName" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [2200 2221])
+            ("versionIdentifier" variable
+               (:pointer 1
+                :type ("NSNumber" type (:type "class") nil nil))
+                nil [2252 2280])
+            ("versionOrdering" variable
+               (:pointer 1
+                :type ("NSArray" type (:type "class") nil nil))
+                nil [2309 2334])
+            ("vppStateFlags" variable (:type "unsigned int") nil [2367 2394])
+            ("ITunesMetadataDictionary" variable (:type "int") nil [2402 2427])
+            ("arg1" variable (:type "int") nil [2467 2472])
+            ("accountDSID" variable (:type "int") nil [2479 2491])
+            ("accountIdentifier" variable (:type "int") nil [2498 2516])
+            ("bundleIdentifier" variable (:type "int") nil [2523 2540])
+            ("bundleShortVersionString" variable (:type "int") nil [2547 2572])
+            ("bundleVersion" variable (:type "int") nil [2579 2593])
+            ("containerPath" variable (:type "int") nil [2600 2614])
+            ("contentRating" variable (:type "int") nil [2621 2635])
+            ("copyXPCEncoding" variable (:type "int") nil [2642 2658])
+            ("dealloc" variable (:type "int") nil [2667 2675])
+            ("description" variable (:type "int") nil [2682 2694])
+            ("deviceIdentifierForVendor" variable (:type "int") nil [2701 2727])
+            ("familyAccountIdentifier" variable (:type "int") nil [2734 2758])
+            ("hasMIDBasedSINF" variable (:type "int") nil [2767 2783])
+            ("arg1" variable (:type "int") nil [2828 2833])
+            ("arg2" variable (:type "int") nil [2901 2906])
+            ("arg1" variable (:type "int") nil [2937 2942])
+            ("isBeta" variable (:type "int") nil [2951 2958])
+            ("isPlaceholder" variable (:type "int") nil [2967 2981])
+            ("isProfileValidated" variable (:type "int") nil [2990 3009])
+            ("itemIdentifier" variable (:type "int") nil [3016 3031])
+            ("itemName" variable (:type "int") nil [3038 3047])
+            ("missingRequiredSINF" variable (:type "int") nil [3056 3076])
+            ("receiptExpirationDate" variable (:type "int") nil [3083 3105])
+            ("resetVPPStateFlags" variable (:type "int") nil [3114 3133])
+            ("arg1" variable (:type "int") nil [3161 3166])
+            ("arg1" variable (:type "int") nil [3200 3205])
+            ("arg1" variable (:type "int") nil [3228 3233])
+            ("arg1" variable (:type "int") nil [3266 3271])
+            ("arg1" variable (:type "int") nil [3312 3317])
+            ("arg1" variable (:type "int") nil [3347 3352])
+            ("arg1" variable (:type "int") nil [3382 3387])
+            ("arg1" variable (:type "int") nil [3417 3422])
+            ("arg1" variable (:type "int") nil [3464 3469])
+            ("arg1" variable (:type "int") nil [3509 3514])
+            ("arg1" variable (:type "int") nil [3548 3553])
+            ("arg1" variable (:type "int") nil [3584 3589])
+            ("arg1" variable (:type "int") nil [3614 3619])
+            ("arg1" variable (:type "int") nil [3657 3662])
+            ("arg1" variable (:type "int") nil [3692 3697])
+            ("arg1" variable (:type "int") nil [3732 3737])
+            ("arg1" variable (:type "int") nil [3766 3771])
+            ("arg1" variable (:type "int") nil [3808 3813])
+            ("arg1" variable (:type "int") nil [3840 3845])
+            ("arg1" variable (:type "int") nil [3879 3884])
+            ("arg1" variable (:type "int") nil [3916 3921])
+            ("softwareType" variable (:type "int") nil [3928 3941])
+            ("storeFrontIdentifier" variable (:type "int") nil [3948 3969])
+            ("vendorName" variable (:type "int") nil [3976 3987])
+            ("versionIdentifier" variable (:type "int") nil [3994 4012])
+            ("versionOrdering" variable (:type "int") nil [4019 4035])
+            ("vppStateFlags" variable (:type "int") nil [4052 4066]))          
+      :file "ISSoftwareApplication.h"
+      :pointmax 4073
+      :fsize 4072
+      :lastmodtime '(22122 60422 0 0)
+      :unmatched-syntax '((symbol 4069 . 4072) (punctuation 4068 . 4069) (semantic-list 4038 . 4052) (punctuation 4036 . 4037) (semantic-list 4015 . 4019) (punctuation 4013 . 4014) (semantic-list 3990 . 3994) (punctuation 3988 . 3989) (semantic-list 3972 . 3976) (punctuation 3970 . 3971) (semantic-list 3944 . 3948) (punctuation 3942 . 3943) (semantic-list 3924 . 3928) (punctuation 3922 . 3923) (semantic-list 3912 . 3916) (punctuation 3911 . 3912) (symbol 3893 . 3911) (semantic-list 3887 . 3893) (punctuation 3885 . 3886) (semantic-list 3875 . 3879) (punctuation 3874 . 3875) (symbol 3854 . 3874) (semantic-list 3848 . 3854) (punctuation 3846 . 3847) (semantic-list 3836 . 3840) (punctuation 3835 . 3836) (symbol 3822 . 3835) (semantic-list 3816 . 3822) (punctuation 3814 . 3815) (semantic-list 3804 . 3808) (punctuation 3803 . 3804) (symbol 3780 . 3803) (semantic-list 3774 . 3780) (punctuation 3772 . 3773) (semantic-list 3762 . 3766) (punctuation 3761 . 3762) (symbol 3746 . 3761) (semantic-list 3740 . 3746) (punctuation 3738 . 3739) (semantic-list 3726 . 3732) (punctuation 3725 . 3726) (symbol 3706 . 3725) (semantic-list 3700 . 3706) (punctuation 3698 . 3699) (semantic-list 3686 . 3692) (punctuation 3685 . 3686) (symbol 3671 . 3685) (semantic-list 3665 . 3671) (punctuation 3663 . 3664) (semantic-list 3651 . 3657) (punctuation 3650 . 3651) (symbol 3628 . 3650) (semantic-list 3622 . 3628) (punctuation 3620 . 3621) (semantic-list 3610 . 3614) (punctuation 3609 . 3610) (symbol 3598 . 3609) (semantic-list 3592 . 3598) (punctuation 3590 . 3591) (semantic-list 3580 . 3584) (punctuation 3579 . 3580) (symbol 3562 . 3579) (semantic-list 3556 . 3562) (punctuation 3554 . 3555) (semantic-list 3542 . 3548) (punctuation 3541 . 3542) (symbol 3523 . 3541) (semantic-list 3517 . 3523) (punctuation 3515 . 3516) (semantic-list 3505 . 3509) (punctuation 3504 . 3505) (symbol 3478 . 3504) (semantic-list 3472 . 3478) (punctuation 3470 . 3471) (semantic-list 3460 . 3464) (punctuation 3459 . 3460) (symbol 3431 . 3459) (semantic-list 3425 . 3431) (punctuation 3423 . 3424) (semantic-list 3413 . 3417) (punctuation 3412 . 3413) (symbol 3396 . 3412) (semantic-list 3390 . 3396) (punctuation 3388 . 3389) (semantic-list 3378 . 3382) (punctuation 3377 . 3378) (symbol 3361 . 3377) (semantic-list 3355 . 3361) (punctuation 3353 . 3354) (semantic-list 3343 . 3347) (punctuation 3342 . 3343) (symbol 3326 . 3342) (semantic-list 3320 . 3326) (punctuation 3318 . 3319) (semantic-list 3308 . 3312) (punctuation 3307 . 3308) (symbol 3280 . 3307) (semantic-list 3274 . 3280) (punctuation 3272 . 3273) (semantic-list 3262 . 3266) (punctuation 3261 . 3262) (symbol 3242 . 3261) (semantic-list 3236 . 3242) (punctuation 3234 . 3235) (semantic-list 3222 . 3228) (punctuation 3221 . 3222) (symbol 3214 . 3221) (semantic-list 3208 . 3214) (punctuation 3206 . 3207) (semantic-list 3196 . 3200) (punctuation 3195 . 3196) (symbol 3175 . 3195) (semantic-list 3169 . 3175) (punctuation 3167 . 3168) (semantic-list 3157 . 3161) (punctuation 3156 . 3157) (symbol 3142 . 3156) (semantic-list 3136 . 3142) (punctuation 3134 . 3135) (semantic-list 3108 . 3114) (punctuation 3106 . 3107) (semantic-list 3079 . 3083) (punctuation 3077 . 3078) (semantic-list 3050 . 3056) (punctuation 3048 . 3049) (semantic-list 3034 . 3038) (punctuation 3032 . 3033) (semantic-list 3012 . 3016) (punctuation 3010 . 3011) (semantic-list 2984 . 2990) (punctuation 2982 . 2983) (semantic-list 2961 . 2967) (punctuation 2959 . 2960) (semantic-list 2945 . 2951) (punctuation 2943 . 2944) (semantic-list 2933 . 2937) (punctuation 2932 . 2933) (symbol 2913 . 2932) (semantic-list 2909 . 2913) (punctuation 2907 . 2908) (semantic-list 2897 . 2901) (punctuation 2896 . 2897) (symbol 2883 . 2896) (symbol 2878 . 2882) (semantic-list 2874 . 2878) (punctuation 2873 . 2874) (symbol 2840 . 2873) (semantic-list 2836 . 2840) (punctuation 2834 . 2835) (semantic-list 2824 . 2828) (punctuation 2823 . 2824) (symbol 2790 . 2823) (semantic-list 2786 . 2790) (punctuation 2784 . 2785) (semantic-list 2761 . 2767) (punctuation 2759 . 2760) (semantic-list 2730 . 2734) (punctuation 2728 . 2729) (semantic-list 2697 . 2701) (punctuation 2695 . 2696) (semantic-list 2678 . 2682) (punctuation 2676 . 2677) (semantic-list 2661 . 2667) (punctuation 2659 . 2660) (semantic-list 2638 . 2642) (punctuation 2636 . 2637) (semantic-list 2617 . 2621) (punctuation 2615 . 2616) (semantic-list 2596 . 2600) (punctuation 2594 . 2595) (semantic-list 2575 . 2579) (punctuation 2573 . 2574) (semantic-list 2543 . 2547) (punctuation 2541 . 2542) (semantic-list 2519 . 2523) (punctuation 2517 . 2518) (semantic-list 2494 . 2498) (punctuation 2492 . 2493) (semantic-list 2475 . 2479) (punctuation 2473 . 2474) (semantic-list 2463 . 2467) (punctuation 2462 . 2463) (symbol 2436 . 2462) (semantic-list 2430 . 2436) (punctuation 2428 . 2429) (semantic-list 2398 . 2402) (punctuation 2396 . 2397) (semantic-list 2345 . 2366) (symbol 2336 . 2344) (punctuation 2335 . 2336) (semantic-list 2291 . 2308) (symbol 2282 . 2290) (punctuation 2281 . 2282) (semantic-list 2232 . 2251) (symbol 2223 . 2231) (punctuation 2222 . 2223) (semantic-list 2182 . 2199) (symbol 2173 . 2181) (punctuation 2172 . 2173) (semantic-list 2143 . 2153) (symbol 2134 . 2142) (punctuation 2133 . 2134) (semantic-list 2081 . 2100) (symbol 2072 . 2080) (punctuation 2071 . 2072) (semantic-list 2029 . 2046) (symbol 2020 . 2028) (punctuation 2019 . 2020) (semantic-list 1966 . 1987) (symbol 1957 . 1965) (punctuation 1956 . 1957) (semantic-list 1894 . 1932) (symbol 1885 . 1893) (punctuation 1884 . 1885) (semantic-list 1832 . 1865) (symbol 1823 . 1831) (punctuation 1822 . 1823) (semantic-list 1784 . 1795) (symbol 1775 . 1783) (punctuation 1774 . 1775) (semantic-list 1736 . 1753) (symbol 1727 . 1735) (punctuation 1726 . 1727) (semantic-list 1680 . 1699) (symbol 1671 . 1679) (punctuation 1670 . 1671) (semantic-list 1640 . 1650) (symbol 1631 . 1639) (punctuation 1630 . 1631) (semantic-list 1596 . 1607) (symbol 1587 . 1595) (punctuation 1586 . 1587) (semantic-list 1533 . 1550) (symbol 1524 . 1532) (punctuation 1523 . 1524) (semantic-list 1468 . 1485) (symbol 1459 . 1467) (punctuation 1458 . 1459) (semantic-list 1418 . 1434) (symbol 1409 . 1417) (punctuation 1408 . 1409) (semantic-list 1363 . 1379) (symbol 1354 . 1362) (punctuation 1353 . 1354) (semantic-list 1299 . 1316) (symbol 1290 . 1298) (punctuation 1289 . 1290) (semantic-list 1246 . 1263) (symbol 1237 . 1245) (punctuation 1236 . 1237) (semantic-list 1193 . 1210) (symbol 1184 . 1192) (punctuation 1183 . 1184) (semantic-list 1129 . 1146) (symbol 1120 . 1128) (punctuation 1119 . 1120) (semantic-list 1073 . 1090) (symbol 1064 . 1072) (punctuation 1063 . 1064) (semantic-list 1025 . 1051) (symbol 1016 . 1024) (punctuation 1015 . 1016) (semantic-list 968 . 985) (symbol 959 . 967) (punctuation 958 . 959) (semantic-list 915 . 934) (symbol 906 . 914) (punctuation 905 . 906) (semantic-list 173 . 903) (punctuation 171 . 172) (symbol 160 . 171) (punctuation 159 . 160) (symbol 150 . 158) (punctuation 148 . 149) (symbol 126 . 147) (symbol 116 . 125) (punctuation 115 . 116))))
+  :file "!Users!drwrong!Desktop!iOS-Runtime-Headers-9.2!PrivateFrameworks!iTunesStore.framework!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

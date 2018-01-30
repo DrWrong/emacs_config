@@ -1,0 +1,121 @@
+;; Object web_server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "web_server/"
+  :tables
+  (list
+    (semanticdb-table "urls.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.conf.urls" include nil nil [1 42])
+            ("cas.views" include nil nil [43 78])
+            ("views" include nil nil [86 98])
+            ("urlpatterns" variable nil nil [101 527]))          
+      :file "urls.py"
+      :pointmax 528
+      :fsize 527
+      :lastmodtime '(22717 10216 0 0)
+      :unmatched-syntax '((FROM 79 . 83) (PERIOD 84 . 85)))
+    (semanticdb-table "views.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.shortcuts" include nil nil [1 36])
+            ("json" include nil nil [37 48])
+            ("django.http" include nil nil [49 99])
+            ("django.views.generic" include nil nil [100 137])
+            ("django.urls" include nil nil [138 169])
+            ("CheckLoginView" type
+               (:superclasses ("View")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [278 282])
+                            ("request" variable nil (reparse-symbol function_parameters) [284 291]))                          )
+                        (reparse-symbol indented_block_body) [270 793]))                  
+                :type "class")
+                nil [237 793])
+            ("get_all_groups" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [814 821]))              ) nil [795 1978])
+            ("add_group" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1994 2001]))              ) nil [1980 2524])
+            ("edit_group" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [2541 2548]))              ) nil [2526 2967])
+            ("edit_members" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [2986 2993]))              ) nil [2969 3951])
+            ("subscribe" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [3967 3974]))              ) nil [3953 4432]))          
+      :file "views.py"
+      :pointmax 5038
+      :fsize 5037
+      :lastmodtime '(22717 13592 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "wsgi.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+WSGI config for smtp_web_server project.
+
+It exposes the WSGI callable as a module-level variable named ``application``.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/1.9/howto/deployment/wsgi/
+\"\"\"" code nil nil [1 230])
+            ("django.core.wsgi" include nil nil [233 282])
+            ("application" variable nil nil [285 321]))          
+      :file "wsgi.py"
+      :pointmax 322
+      :fsize 321
+      :lastmodtime '(22717 1326 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 40])
+            ("django.db" include nil nil [42 70])
+            ("MailGroup" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("db_table" variable nil (reparse-symbol indented_block_body) [156 178]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [136 179])
+                    ("name" variable nil (reparse-symbol indented_block_body) [184 234])
+                    ("title" variable nil (reparse-symbol indented_block_body) [239 290])
+                    ("info" variable nil (reparse-symbol indented_block_body) [295 346]))                  
+                :type "class")
+                nil [101 347])
+            ("GroupToMember" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("db_table" variable nil (reparse-symbol indented_block_body) [408 436]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [388 437])
+                    ("groupid" variable nil (reparse-symbol indented_block_body) [442 473])
+                    ("userid" variable nil (reparse-symbol indented_block_body) [478 508]))                  
+                :type "class")
+                nil [349 509])
+            ("Users" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("db_table" variable nil (reparse-symbol indented_block_body) [562 583]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [542 584])
+                    ("userid" variable nil (reparse-symbol indented_block_body) [589 635])
+                    ("username" variable nil (reparse-symbol indented_block_body) [640 682])
+                    ("password" variable nil (reparse-symbol indented_block_body) [687 729])
+                    ("roletype" variable nil (reparse-symbol indented_block_body) [734 775]))                  
+                :type "class")
+                nil [511 776]))          
+      :file "models.py"
+      :pointmax 776
+      :fsize 775
+      :lastmodtime '(22713 18294 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!domob_pad!smtp_proxy!smtp-web-server!lib!web_server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

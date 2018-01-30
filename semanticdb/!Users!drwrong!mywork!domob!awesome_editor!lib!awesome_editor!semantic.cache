@@ -1,0 +1,64 @@
+;; Object awesome_editor/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "awesome_editor/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pymysql" include nil nil [1 15])
+            ("pymysql" code nil nil [16 44]))          
+      :file "__init__.py"
+      :pointmax 45
+      :fsize 44
+      :lastmodtime '(22434 55998 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "views.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.http" include nil nil [1 37])
+            ("json" include nil nil [38 49])
+            ("qiniu" include nil nil [50 72])
+            ("django.conf" include nil nil [73 105])
+            ("json_response" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [126 130]))              ) nil [108 236])
+            ("qiniu_token" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [254 261]))              ) nil [238 484]))          
+      :file "views.py"
+      :pointmax 484
+      :fsize 487
+      :lastmodtime '(22435 493 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "urls.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"awesome_editor URL Configuration
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/1.10/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  url(r'^$', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  url(r'^$', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.conf.urls import url, include
+    2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
+\"\"\"" code nil nil [1 648])
+            ("django.conf.urls" include nil nil [649 690])
+            ("django.conf" include nil nil [725 757])
+            ("django.conf.urls.static" include nil nil [758 800])
+            ("views" include nil nil [807 819])
+            ("cas.views" include nil nil [820 855])
+            ("urlpatterns" variable nil nil [857 1096])
+            ("if" code nil nil [1098 1226]))          
+      :file "urls.py"
+      :pointmax 1226
+      :fsize 1225
+      :lastmodtime '(22443 13350 0 0)
+      :unmatched-syntax '((FROM 801 . 805) (PERIOD 806 . 807))))
+  :file "!Users!drwrong!mywork!domob!awesome_editor!lib!awesome_editor!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

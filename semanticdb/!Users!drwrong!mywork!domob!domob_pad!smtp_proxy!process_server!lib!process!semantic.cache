@@ -1,0 +1,112 @@
+;; Object process/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "process/"
+  :tables
+  (list
+    (semanticdb-table "process_redis.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("json" include nil nil [1 12])
+            ("email" include nil nil [13 25])
+            ("redis" include nil nil [26 38])
+            ("threading" include nil nil [39 67])
+            ("celery" include nil nil [68 93])
+            ("smtplib" include nil nil [94 118])
+            ("django.conf" include nil nil [119 151])
+            ("django.core.mail" include nil nil [152 190])
+            ("time" include nil nil [191 213])
+            ("logging" include nil nil [214 228])
+            ("traceback" include nil nil [229 245])
+            ("email.policy" include nil nil [246 279])
+            ("Users" include nil nil [294 332])
+            ("GroupToMember" include nil nil [294 332])
+            ("MailGroup" include nil nil [294 332])
+            ("app" variable nil nil [334 371])
+            ("app" code nil nil [372 418])
+            ("logger" variable nil nil [420 471])
+            ("" code nil nil [483 494])
+            ("send_mail" function
+               (:parent "dummy"
+                :arguments 
+                  ( ("self" variable nil (reparse-symbol function_parameters) [509 513])
+                    ("mail" variable nil (reparse-symbol function_parameters) [515 519]))                  )
+                nil [495 692])
+            ("do_send_mail" function (:arguments 
+              ( ("mail" variable nil (reparse-symbol function_parameters) [711 715]))              ) nil [694 1806])
+            ("get_mail" function nil nil [1808 2180])
+            ("size_check_thread" function (:arguments 
+              ( ("pool" variable nil (reparse-symbol function_parameters) [2245 2249]))              ) nil [2223 2539])
+            ("main" function nil nil [2541 2813]))          
+      :file "process_redis.py"
+      :pointmax 2813
+      :fsize 2836
+      :lastmodtime '(22716 64929 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.db" include nil nil [18 46])
+            ("MailGroup" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("db_table" variable nil (reparse-symbol indented_block_body) [105 127]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [85 128]))                  
+                :type "class")
+                nil [49 128])
+            ("GroupToMember" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("db_table" variable nil (reparse-symbol indented_block_body) [362 390]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [342 391])
+                    ("group" variable nil (reparse-symbol indented_block_body) [396 455])
+                    ("userid" variable nil (reparse-symbol indented_block_body) [460 490]))                  
+                :type "class")
+                nil [302 491])
+            ("Users" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("db_table" variable nil (reparse-symbol indented_block_body) [545 562]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [525 563])
+                    ("userid" variable nil (reparse-symbol indented_block_body) [568 614])
+                    ("username" variable nil (reparse-symbol indented_block_body) [619 661]))                  
+                :type "class")
+                nil [493 662]))          
+      :file "models.py"
+      :pointmax 662
+      :fsize 661
+      :lastmodtime '(22716 60351 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "celery.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 57])
+            ("celery" include nil nil [58 83])
+            ("app" variable nil nil [85 245])
+            ("app" code nil nil [247 290]))          
+      :file "celery.py"
+      :pointmax 338
+      :fsize 337
+      :lastmodtime '(22713 18353 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pymysql" include nil nil [1 15])
+            ("pymysql" code nil nil [16 44]))          
+      :file "__init__.py"
+      :pointmax 45
+      :fsize 44
+      :lastmodtime '(22716 56513 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!domob_pad!smtp_proxy!process_server!lib!process!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

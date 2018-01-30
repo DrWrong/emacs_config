@@ -1,0 +1,89 @@
+;; Object pythonsample/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pythonsample/"
+  :tables
+  (list
+    (semanticdb-table "nlpir.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__author__" variable nil nil [25 69])
+            ("'''
+Python Warpper for ICTCLAS2014
+Loading functions from Dynamic Link Library  directly.
+'''" code nil nil [71 164])
+            ("ctypes" include nil nil [165 185])
+            ("libFile" variable nil nil [314 345])
+            ("dll" variable nil nil [347 367])
+            ("loadFun" function (:arguments 
+              ( ("exportName" variable nil (reparse-symbol function_parameters) [380 390])
+                ("restype" variable nil (reparse-symbol function_parameters) [392 399])
+                ("argtypes" variable nil (reparse-symbol function_parameters) [401 409]))              ) nil [368 522])
+            ("ENCODING" type
+               (:members 
+                  ( ("GBK_CODE" variable nil (reparse-symbol indented_block_body) [543 564])
+                    ("UTF8_CODE" code nil (reparse-symbol indented_block_body) [594 624])
+                    ("BIG5_CODE" code nil (reparse-symbol indented_block_body) [642 672])
+                    ("GBK_FANTI_CODE" code nil (reparse-symbol indented_block_body) [690 720]))                  
+                :type "class")
+                nil [523 741])
+            ("POSMap" type
+               (:members 
+                  ( ("ICT_POS_MAP_SECOND" variable nil (reparse-symbol indented_block_body) [760 783])
+                    ("ICT_POS_MAP_FIRST" variable nil (reparse-symbol indented_block_body) [798 821])
+                    ("PKU_POS_MAP_SECOND" variable nil (reparse-symbol indented_block_body) [836 859])
+                    ("PKU_POS_MAP_FIRST" variable nil (reparse-symbol indented_block_body) [873 896]))                  
+                :type "class")
+                nil [742 906])
+            ("POS" variable nil nil [907 3233])
+            ("SegAtom" type
+               (:superclasses ("Structure")
+                :members 
+                  ( ("_fields_" variable nil (reparse-symbol indented_block_body) [3265 3458]))                  
+                :type "class")
+                nil [3235 3459])
+            ("translatePOS" function (:arguments 
+              ( ("sPOS" variable nil (reparse-symbol function_parameters) [3477 3481]))              ) nil [3460 3571])
+            ("Init" variable nil nil [3572 3635])
+            ("Exit" variable nil nil [3636 3677])
+            ("ParagraphProcess" variable nil nil [3678 3758])
+            ("ParagraphProcessA" variable nil nil [3759 3860])
+            ("FileProcess" variable nil nil [3951 4031])
+            ("ImportUserDict" variable nil nil [4032 4099])
+            ("AddUserWord" variable nil nil [4100 4161])
+            ("SaveTheUsrDic" variable nil nil [4162 4221])
+            ("DelUsrWord" variable nil nil [4222 4280])
+            ("GetUniProb" variable nil nil [4281 4343])
+            ("IsWord" variable nil nil [4344 4395])
+            ("GetKeyWords" variable nil nil [4396 4474])
+            ("GetFileKeyWords" variable nil nil [4475 4557])
+            ("GetNewWords" variable nil nil [4558 4637])
+            ("GetFileNewWords" variable nil nil [4638 4724])
+            ("FingerPrint" variable nil nil [4725 4787])
+            ("SetPOSmap" variable nil nil [4788 4841])
+            ("NWI_Start" variable nil nil [4867 4919])
+            ("NWI_AddFile" variable nil nil [4920 4981])
+            ("NWI_AddMem" variable nil nil [4982 5041])
+            ("NWI_Complete" variable nil nil [5042 5100])
+            ("NWI_GetResult" variable nil nil [5101 5165])
+            ("NWI_Result2UserDict" variable nil nil [5166 5237])
+            ("if" code nil nil [5239 5332])
+            ("'''
+if not SetPOSmap(3): #POSMap.ICT_POS_MAP_SECOND
+    print(\"Setting POS Map failed!\")
+    exit(-22222)
+'''" code nil nil [5333 5442])
+            ("seg" function (:arguments 
+              ( ("paragraph" variable nil (reparse-symbol function_parameters) [5452 5461]))              ) nil [5444 5677])
+            ("segment" function (:arguments 
+              ( ("paragraph" variable nil (reparse-symbol function_parameters) [5690 5699]))              ) nil [5678 5906])
+            ("Seg" function (:arguments 
+              ( ("paragraph" variable nil (reparse-symbol function_parameters) [5915 5924]))              ) nil [5907 6126])
+            ("if" code nil nil [6127 6438]))          
+      :file "nlpir.py"
+      :pointmax 6438
+      :fsize 8302
+      :lastmodtime '(21189 47840 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!Downloads!汉语分词20140928!sample!pythonsample!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

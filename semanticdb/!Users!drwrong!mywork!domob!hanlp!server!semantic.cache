@@ -1,0 +1,124 @@
+;; Object server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "server/"
+  :tables
+  (list
+    (semanticdb-table "nlpir.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__author__" variable nil nil [25 69])
+            ("'''
+Python Warpper for ICTCLAS2014
+Loading functions from Dynamic Link Library  directly.
+'''" code nil nil [71 164])
+            ("os" include nil nil [165 174])
+            ("ctypes" include nil nil [175 195])
+            ("dirname" variable nil nil [197 249])
+            ("libFile" variable nil nil [380 444])
+            ("dll" variable nil nil [446 465])
+            ("loadFun" function (:arguments 
+              ( ("exportName" variable nil (reparse-symbol function_parameters) [480 490])
+                ("restype" variable nil (reparse-symbol function_parameters) [492 499])
+                ("argtypes" variable nil (reparse-symbol function_parameters) [501 509]))              ) nil [468 623])
+            ("ENCODING" type
+               (:members 
+                  ( ("GBK_CODE" variable nil (reparse-symbol indented_block_body) [645 657])
+                    ("UTF8_CODE" code nil (reparse-symbol indented_block_body) [675 699])
+                    ("BIG5_CODE" code nil (reparse-symbol indented_block_body) [714 738])
+                    ("GBK_FANTI_CODE" code nil (reparse-symbol indented_block_body) [753 782]))                  
+                :type "class")
+                nil [625 800])
+            ("POSMap" type
+               (:members 
+                  ( ("ICT_POS_MAP_SECOND" variable nil (reparse-symbol indented_block_body) [820 842])
+                    ("ICT_POS_MAP_FIRST" variable nil (reparse-symbol indented_block_body) [859 880])
+                    ("PKU_POS_MAP_SECOND" variable nil (reparse-symbol indented_block_body) [897 919])
+                    ("PKU_POS_MAP_FIRST" variable nil (reparse-symbol indented_block_body) [935 956]))                  
+                :type "class")
+                nil [802 968])
+            ("POS" variable nil nil [969 4297])
+            ("SegAtom" type
+               (:superclasses ("Structure")
+                :members 
+                  ( ("_fields_" variable nil (reparse-symbol indented_block_body) [4330 4596]))                  
+                :type "class")
+                nil [4300 4597])
+            ("translatePOS" function (:arguments 
+              ( ("sPOS" variable nil (reparse-symbol function_parameters) [4616 4620]))              ) nil [4599 4720])
+            ("Init" variable nil nil [4721 4785])
+            ("Exit" variable nil nil [4786 4828])
+            ("ParagraphProcess" variable nil nil [4829 4937])
+            ("ParagraphProcessA" variable nil nil [4938 5069])
+            ("FileProcess" variable nil nil [5160 5263])
+            ("ImportUserDict" variable nil nil [5264 5332])
+            ("AddUserWord" variable nil nil [5333 5394])
+            ("SaveTheUsrDic" variable nil nil [5395 5454])
+            ("DelUsrWord" variable nil nil [5455 5514])
+            ("GetUniProb" variable nil nil [5515 5577])
+            ("IsWord" variable nil nil [5578 5630])
+            ("GetKeyWords" variable nil nil [5631 5710])
+            ("GetFileKeyWords" variable nil nil [5711 5821])
+            ("GetNewWords" variable nil nil [5822 5901])
+            ("GetFileNewWords" variable nil nil [5902 6016])
+            ("FingerPrint" variable nil nil [6017 6080])
+            ("SetPOSmap" variable nil nil [6081 6135])
+            ("NWI_Start" variable nil nil [6162 6214])
+            ("NWI_AddFile" variable nil nil [6215 6277])
+            ("NWI_AddMem" variable nil nil [6278 6338])
+            ("NWI_Complete" variable nil nil [6339 6397])
+            ("NWI_GetResult" variable nil nil [6398 6463])
+            ("NWI_Result2UserDict" variable nil nil [6464 6536])
+            ("if" code nil nil [6538 6633])
+            ("'''
+if not SetPOSmap(3): #POSMap.ICT_POS_MAP_SECOND
+    print(\"Setting POS Map failed!\")
+    exit(-22222)
+'''" code nil nil [6634 6743])
+            ("seg" function (:arguments 
+              ( ("paragraph" variable nil (reparse-symbol function_parameters) [6754 6763]))              ) nil [6746 6999])
+            ("segment" function (:arguments 
+              ( ("paragraph" variable nil (reparse-symbol function_parameters) [7013 7022]))              ) nil [7001 7231])
+            ("Seg" function (:arguments 
+              ( ("paragraph" variable nil (reparse-symbol function_parameters) [7241 7250]))              ) nil [7233 7557])
+            ("load_dict" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [7573 7577]))              ) nil [7559 7636])
+            ("path" variable nil nil [7646 7700])
+            ("print" code nil nil [7701 7712])
+            ("n" variable nil nil [7713 7732])
+            ("print" code nil nil [7733 7761])
+            ("if" code nil nil [7763 8010]))          
+      :file "nlpir.py"
+      :pointmax 8010
+      :fsize 9945
+      :lastmodtime '(22813 31078 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "server.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("bottle" include nil nil [24 85])
+            ("nlpir" include nil nil [86 121])
+            ("json" include nil nil [122 133])
+            ("os" include nil nil [134 143])
+            ("" code nil nil [152 170])
+            ("processor" function nil nil [171 396])
+            ("" code nil nil [404 409])
+            ("index" function nil nil [410 515])
+            ("" code nil nil [523 536])
+            ("indexjs" function nil nil [537 642])
+            ("run" code nil nil [644 686]))          
+      :file "server.py"
+      :pointmax 687
+      :fsize 686
+      :lastmodtime '(22813 26125 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "index.html"
+      :major-mode 'html-mode
+      :tags nil
+      :file "index.html"
+      :pointmax 2517
+      :fsize 2598
+      :lastmodtime '(22812 8426 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!hanlp!server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

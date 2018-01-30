@@ -1,0 +1,18 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables
+  (list
+    (semanticdb-table "smtp_sender.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("smtplib" include nil nil [24 48])
+            ("with" code nil nil [51 214]))          
+      :file "smtp_sender.py"
+      :pointmax 214
+      :fsize 213
+      :lastmodtime '(22713 18353 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!domob_pad!smtp_proxy!receive_server!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

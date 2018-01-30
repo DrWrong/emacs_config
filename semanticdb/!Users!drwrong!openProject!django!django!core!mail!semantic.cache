@@ -1,0 +1,387 @@
+;; Object mail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mail/"
+  :tables
+  (list
+    (semanticdb-table "message.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 40])
+            ("mimetypes" include nil nil [42 58])
+            ("os" include nil nil [59 68])
+            ("random" include nil nil [69 82])
+            ("time" include nil nil [83 94])
+            ("" code nil nil [113 194])
+            ("email.header" include nil nil [195 226])
+            ("email.message" include nil nil [227 260])
+            ("email.mime.base" include nil nil [261 297])
+            ("email.mime.message" include nil nil [298 340])
+            ("email.mime.multipart" include nil nil [341 387])
+            ("email.mime.text" include nil nil [388 424])
+            ("email.utils" include nil nil [425 484])
+            ("io" include nil nil [485 507])
+            ("django.conf" include nil nil [509 541])
+            ("django.core.mail.utils" include nil nil [542 585])
+            ("django.utils" include nil nil [586 614])
+            ("django.utils.encoding" include nil nil [615 659])
+            ("utf8_charset" variable nil nil [760 799])
+            ("utf8_charset" variable nil nil [800 833])
+            ("utf8_charset_qp" variable nil nil [863 905])
+            ("utf8_charset_qp" variable nil nil [906 948])
+            ("DEFAULT_ATTACHMENT_MIME_TYPE" variable nil nil [1049 1106])
+            ("RFC5322_EMAIL_LINE_LENGTH_LIMIT" variable nil nil [1108 1145])
+            ("BadHeaderError" type
+               (:superclasses ("ValueError")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [1186 1190]))                  
+                :type "class")
+                nil [1148 1191])
+            ("make_msgid" function
+               (:documentation "Returns a string suitable for RFC 5322 compliant Message-ID, e.g:
+
+    <20020201195627.33539.96671@nightshade.la.mastaler.com>
+
+    Optional idstring if given is a string used to strengthen the
+    uniqueness of the message id.  Optional domain if given provides the
+    portion of the message id after the '@'.  It defaults to the locally
+    defined hostname.
+    "
+                :arguments 
+                  ( ("idstring" variable nil (reparse-symbol function_parameters) [1479 1487])
+                    ("domain" variable nil (reparse-symbol function_parameters) [1494 1500]))                  )
+                nil [1464 2321])
+            ("ADDRESS_HEADERS" variable nil nil [2387 2573])
+            ("forbid_multi_line_headers" function
+               (:documentation "Forbids multi-line headers, to prevent header injection."
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [2606 2610])
+                    ("val" variable nil (reparse-symbol function_parameters) [2612 2615])
+                    ("encoding" variable nil (reparse-symbol function_parameters) [2617 2625]))                  )
+                nil [2576 3297])
+            ("split_addr" function
+               (:documentation "
+    Split the address into local part and domain, properly encoded.
+
+    When non-ascii characters are present in the local part, it must be
+    MIME-word encoded. The domain name must be idna-encoded if it contains
+    non-ascii characters.
+    "
+                :arguments 
+                  ( ("addr" variable nil (reparse-symbol function_parameters) [3314 3318])
+                    ("encoding" variable nil (reparse-symbol function_parameters) [3320 3328]))                  )
+                nil [3299 4176])
+            ("sanitize_address" function
+               (:documentation "
+    Format a pair of (name, address) or an email address string.
+    "
+                :arguments 
+                  ( ("addr" variable nil (reparse-symbol function_parameters) [4199 4203])
+                    ("encoding" variable nil (reparse-symbol function_parameters) [4205 4213]))                  )
+                nil [4178 5549])
+            ("MIMEMixin" type
+               (:members 
+                  ( ("as_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5588 5592])
+                            ("unixfrom" variable nil (reparse-symbol function_parameters) [5594 5602])
+                            ("linesep" variable nil (reparse-symbol function_parameters) [5610 5617]))                          
+                        :documentation "Return the entire formatted message as a string.
+        Optional `unixfrom' when True, means include the Unix From_ envelope
+        header.
+
+        This overrides the default as_string() implementation to not mangle
+        lines that begin with 'From '. See bug #13433 for details.
+        ")
+                        (reparse-symbol indented_block_body) [5574 6192])
+                    ("if" code nil (reparse-symbol indented_block_body) [6197 6824]))                  
+                :type "class")
+                nil [5551 6824])
+            ("SafeMIMEMessage" type
+               (:superclasses ("MIMEMixin" "MIMEMessage")
+                :members 
+                  ( ("__setitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6894 6898])
+                            ("name" variable nil (reparse-symbol function_parameters) [6900 6904])
+                            ("val" variable nil (reparse-symbol function_parameters) [6906 6909]))                          )
+                        (reparse-symbol indented_block_body) [6878 7078]))                  
+                :type "class")
+                nil [6826 7078])
+            ("SafeMIMEText" type
+               (:superclasses ("MIMEMixin" "MIMEText")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [7194 7218])
+                            ("if" code nil (reparse-symbol indented_block_body) [7227 8436]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7139 7143])
+                            ("_text" variable nil (reparse-symbol function_parameters) [7145 7150])
+                            ("_subtype" variable nil (reparse-symbol function_parameters) [7152 7160])
+                            ("_charset" variable nil (reparse-symbol function_parameters) [7170 7178]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [7126 8436])
+                    ("__setitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8457 8461])
+                            ("name" variable nil (reparse-symbol function_parameters) [8463 8467])
+                            ("val" variable nil (reparse-symbol function_parameters) [8469 8472]))                          )
+                        (reparse-symbol indented_block_body) [8441 8593]))                  
+                :type "class")
+                nil [7080 8593])
+            ("SafeMIMEMultipart" type
+               (:superclasses ("MIMEMixin" "MIMEMultipart")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [8754 8778])
+                            ("MIMEMultipart" code nil (reparse-symbol indented_block_body) [8787 8857]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8664 8668])
+                            ("_subtype" variable nil (reparse-symbol function_parameters) [8670 8678])
+                            ("boundary" variable nil (reparse-symbol function_parameters) [8688 8696])
+                            ("_subparts" variable nil (reparse-symbol function_parameters) [8703 8712])
+                            ("encoding" variable nil (reparse-symbol function_parameters) [8719 8727])
+                            ("_params" variable nil (reparse-symbol function_parameters) [8734 8743]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [8651 8858])
+                    ("__setitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8879 8883])
+                            ("name" variable nil (reparse-symbol function_parameters) [8885 8889])
+                            ("val" variable nil (reparse-symbol function_parameters) [8891 8894]))                          )
+                        (reparse-symbol indented_block_body) [8863 9020]))                  
+                :type "class")
+                nil [8595 9020])
+            ("EmailMessage" type
+               (:documentation "
+    A container for email information.
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("content_subtype" variable nil (reparse-symbol indented_block_body) [9109 9134])
+                    ("mixed_subtype" variable nil (reparse-symbol indented_block_body) [9139 9162])
+                    ("encoding" variable nil (reparse-symbol indented_block_body) [9167 9182])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        Initialize a single email message (which can be sent to multiple
+        recipients).
+
+        All strings used to create the message can be unicode strings
+        (or UTF-8 bytestrings). The SafeMIMEText class will handle any
+        necessary encoding conversions.
+        \"\"\"" code nil (reparse-symbol indented_block_body) [9415 9706])
+                            ("if" code nil (reparse-symbol indented_block_body) [9715 9914])
+                            ("if" code nil (reparse-symbol indented_block_body) [9922 10121])
+                            ("if" code nil (reparse-symbol indented_block_body) [10129 10334])
+                            ("if" code nil (reparse-symbol indented_block_body) [10342 10577])
+                            ("self" code nil (reparse-symbol indented_block_body) [10585 10644])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10653 10675])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10684 10700])
+                            ("self" code nil (reparse-symbol indented_block_body) [10709 10745])
+                            ("self" code nil (reparse-symbol indented_block_body) [10754 10788])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10797 10825]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9236 9240])
+                            ("subject" variable nil (reparse-symbol function_parameters) [9242 9249])
+                            ("body" variable nil (reparse-symbol function_parameters) [9254 9258])
+                            ("from_email" variable nil (reparse-symbol function_parameters) [9263 9273])
+                            ("to" variable nil (reparse-symbol function_parameters) [9280 9282])
+                            ("bcc" variable nil (reparse-symbol function_parameters) [9289 9292])
+                            ("connection" variable nil (reparse-symbol function_parameters) [9316 9326])
+                            ("attachments" variable nil (reparse-symbol function_parameters) [9333 9344])
+                            ("headers" variable nil (reparse-symbol function_parameters) [9351 9358])
+                            ("cc" variable nil (reparse-symbol function_parameters) [9365 9367])
+                            ("reply_to" variable nil (reparse-symbol function_parameters) [9391 9399]))                          
+                        :documentation "
+        Initialize a single email message (which can be sent to multiple
+        recipients).
+
+        All strings used to create the message can be unicode strings
+        (or UTF-8 bytestrings). The SafeMIMEText class will handle any
+        necessary encoding conversions.
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9223 10826])
+                    ("get_connection" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10850 10854])
+                            ("fail_silently" variable nil (reparse-symbol function_parameters) [10856 10869]))                          )
+                        (reparse-symbol indented_block_body) [10831 11067])
+                    ("message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11084 11088]))                          )
+                        (reparse-symbol indented_block_body) [11072 12625])
+                    ("recipients" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12645 12649]))                          
+                        :documentation "
+        Returns a list of all recipients of the email (includes direct
+        addressees as well as Cc and Bcc entries).
+        ")
+                        (reparse-symbol indented_block_body) [12630 12842])
+                    ("send" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12856 12860])
+                            ("fail_silently" variable nil (reparse-symbol function_parameters) [12862 12875]))                          
+                        :documentation "Sends the email message.")
+                        (reparse-symbol indented_block_body) [12847 13153])
+                    ("attach" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13169 13173])
+                            ("filename" variable nil (reparse-symbol function_parameters) [13175 13183])
+                            ("content" variable nil (reparse-symbol function_parameters) [13190 13197])
+                            ("mimetype" variable nil (reparse-symbol function_parameters) [13204 13212]))                          
+                        :documentation "
+        Attaches a file with the given filename and content. The filename can
+        be omitted and the mimetype is guessed, if not provided.
+
+        If the first parameter is a MIMEBase subclass it is inserted directly
+        into the resulting message attachments.
+        ")
+                        (reparse-symbol indented_block_body) [13158 13794])
+                    ("attach_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13815 13819])
+                            ("path" variable nil (reparse-symbol function_parameters) [13821 13825])
+                            ("mimetype" variable nil (reparse-symbol function_parameters) [13827 13835]))                          
+                        :documentation "
+        Attaches a file from the filesystem.
+
+        The mimetype will be set to the DEFAULT_ATTACHMENT_MIME_TYPE if it is
+        not specified and cannot be guessed or (PY3 only) if it suggests
+        text/* for a binary file.
+        ")
+                        (reparse-symbol indented_block_body) [13799 15022])
+                    ("_create_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15047 15051])
+                            ("msg" variable nil (reparse-symbol function_parameters) [15053 15056]))                          )
+                        (reparse-symbol indented_block_body) [15027 15104])
+                    ("_create_attachments" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15133 15137])
+                            ("msg" variable nil (reparse-symbol function_parameters) [15139 15142]))                          )
+                        (reparse-symbol indented_block_body) [15109 15667])
+                    ("_create_mime_attachment" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15700 15704])
+                            ("content" variable nil (reparse-symbol function_parameters) [15706 15713])
+                            ("mimetype" variable nil (reparse-symbol function_parameters) [15715 15723]))                          
+                        :documentation "
+        Converts the content, mimetype pair into a MIME attachment object.
+
+        If the mimetype is message/rfc822, content may be an
+        email.Message or EmailMessage object, as well as a str.
+        ")
+                        (reparse-symbol indented_block_body) [15672 17047])
+                    ("_create_attachment" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17075 17079])
+                            ("filename" variable nil (reparse-symbol function_parameters) [17081 17089])
+                            ("content" variable nil (reparse-symbol function_parameters) [17091 17098])
+                            ("mimetype" variable nil (reparse-symbol function_parameters) [17100 17108]))                          
+                        :documentation "
+        Converts the filename, content, mimetype triple into a MIME attachment
+        object.
+        ")
+                        (reparse-symbol indented_block_body) [17052 17882]))                  
+                :type "class")
+                nil [9022 17882])
+            ("EmailMultiAlternatives" type
+               (:documentation "
+    A version of EmailMessage that makes it easy to send multipart/alternative
+    messages. For example, including text and HTML versions of the text is
+    made easier.
+    "
+                :superclasses ("EmailMessage")
+                :members 
+                  ( ("alternative_subtype" variable nil (reparse-symbol indented_block_body) [18119 18154])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        Initialize a single email message (which can be sent to multiple
+        recipients).
+
+        All strings used to create the message can be unicode strings (or UTF-8
+        bytestrings). The SafeMIMEText class will handle any necessary encoding
+        conversions.
+        \"\"\"" code nil (reparse-symbol indented_block_body) [18371 18662])
+                            ("super" code nil (reparse-symbol indented_block_body) [18671 18834])
+                            ("self" code nil (reparse-symbol indented_block_body) [18843 18881]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18173 18177])
+                            ("subject" variable nil (reparse-symbol function_parameters) [18179 18186])
+                            ("body" variable nil (reparse-symbol function_parameters) [18191 18195])
+                            ("from_email" variable nil (reparse-symbol function_parameters) [18200 18210])
+                            ("to" variable nil (reparse-symbol function_parameters) [18217 18219])
+                            ("bcc" variable nil (reparse-symbol function_parameters) [18226 18229])
+                            ("connection" variable nil (reparse-symbol function_parameters) [18253 18263])
+                            ("attachments" variable nil (reparse-symbol function_parameters) [18270 18281])
+                            ("headers" variable nil (reparse-symbol function_parameters) [18288 18295])
+                            ("alternatives" variable nil (reparse-symbol function_parameters) [18302 18314])
+                            ("cc" variable nil (reparse-symbol function_parameters) [18338 18340])
+                            ("reply_to" variable nil (reparse-symbol function_parameters) [18347 18355]))                          
+                        :documentation "
+        Initialize a single email message (which can be sent to multiple
+        recipients).
+
+        All strings used to create the message can be unicode strings (or UTF-8
+        bytestrings). The SafeMIMEText class will handle any necessary encoding
+        conversions.
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [18160 18882])
+                    ("attach_alternative" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18910 18914])
+                            ("content" variable nil (reparse-symbol function_parameters) [18916 18923])
+                            ("mimetype" variable nil (reparse-symbol function_parameters) [18925 18933]))                          
+                        :documentation "Attach an alternative content representation.")
+                        (reparse-symbol indented_block_body) [18887 19121])
+                    ("_create_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19146 19150])
+                            ("msg" variable nil (reparse-symbol function_parameters) [19152 19155]))                          )
+                        (reparse-symbol indented_block_body) [19126 19230])
+                    ("_create_alternatives" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19260 19264])
+                            ("msg" variable nil (reparse-symbol function_parameters) [19266 19269]))                          )
+                        (reparse-symbol indented_block_body) [19235 19683]))                  
+                :type "class")
+                nil [17884 19683]))          
+      :file "message.py"
+      :pointmax 19683
+      :fsize 19682
+      :lastmodtime '(22408 61900 0 0)
+      :unmatched-syntax '((NAME 14366 . 14375) (IF 14382 . 14384) (ELSE 14404 . 14408)))
+    (semanticdb-table "utils.py"
+      :file "utils.py"
+      :fsize 459
+      :lastmodtime '(22174 22700 0 0)))
+  :file "!Users!drwrong!openProject!django!django!core!mail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

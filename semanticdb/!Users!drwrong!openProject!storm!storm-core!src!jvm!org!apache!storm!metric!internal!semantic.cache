@@ -1,0 +1,197 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.metric.internal" package nil nil [814 855])
+            ("java.util.Map" include nil nil [857 878])
+            ("java.util.List" include nil nil [879 901])
+            ("java.util.HashMap" include nil nil [902 927])
+            ("java.util.concurrent.ConcurrentHashMap" include nil nil [928 974])
+            ("org.apache.storm.metric.api.IMetric" include nil nil [976 1019]))          
+      :file "MultiCountStatAndMetric.java"
+      :pointmax 3863
+      :fsize 3862
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax '((BRACE_BLOCK 1231 . 3862) (IDENTIFIER 1223 . 1230) (IMPLEMENTS 1212 . 1222) (GT 1210 . 1211) (IDENTIFIER 1209 . 1210) (PUBLIC 1172 . 1178) (LT 1208 . 1209)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.metric.internal" package nil nil [814 855])
+            ("java.util.Map" include nil nil [857 878])
+            ("java.util.HashMap" include nil nil [879 904])
+            ("java.util.Timer" include nil nil [905 928])
+            ("java.util.TimerTask" include nil nil [929 956])
+            ("java.util.concurrent.atomic.AtomicLong" include nil nil [957 1003])
+            ("org.apache.storm.metric.api.IMetric" include nil nil [1005 1048])
+            ("CountStatAndMetric" type
+               (:typemodifiers ("public")
+                :interfaces ("IMetric")
+                :members 
+                  ( ("_currentBucket" variable
+                       (:typemodifiers ("private" "final")
+                        :type "AtomicLong")
+                        (reparse-symbol class_member_declaration) [1239 1279])
+                    ("_bucketStart" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1403 1429])
+                    ("_exactExtra" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1498 1523])
+                    ("_tmSize" variable
+                       (:typemodifiers ("private" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1550 1576])
+                    ("_tmBuckets" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1581 1613])
+                    ("_tmTime" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1618 1647])
+                    ("_thSize" variable
+                       (:typemodifiers ("private" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1677 1703])
+                    ("_thBuckets" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1708 1740])
+                    ("_thTime" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1745 1774])
+                    ("_odSize" variable
+                       (:typemodifiers ("private" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1799 1825])
+                    ("_odBuckets" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1830 1862])
+                    ("_odTime" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1867 1896])
+                    ("_allTime" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1918 1940])
+                    ("_task" variable
+                       (:typemodifiers ("private" "final")
+                        :type "TimerTask")
+                        (reparse-symbol class_member_declaration) [1946 1976])
+                    ("CountStatAndMetric" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("numBuckets" variable (:type "int") (reparse-symbol formal_parameters) [2104 2118]))                          )
+                        (reparse-symbol class_member_declaration) [2078 2157])
+                    ("CountStatAndMetric" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("numBuckets" variable (:type "int") (reparse-symbol formal_parameters) [2371 2385])
+                            ("startTime" variable (:type "long") (reparse-symbol formal_parameters) [2387 2401]))                          )
+                        (reparse-symbol class_member_declaration) [2352 3531])
+                    ("incBy" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("count" variable (:type "long") (reparse-symbol formal_parameters) [3660 3670]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3642 3720])
+                    ("getValueAndReset" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [3745 3859])
+                    ("getValueAndReset" function
+                       (:typemodifiers ("synchronized")
+                        :arguments 
+                          ( ("now" variable (:type "long") (reparse-symbol formal_parameters) [3902 3910]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [3865 4168])
+                    ("rotateSched" function
+                       (:typemodifiers ("synchronized")
+                        :arguments 
+                          ( ("now" variable (:type "long") (reparse-symbol formal_parameters) [4204 4212]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4174 4415])
+                    ("rotateBuckets" function
+                       (:typemodifiers ("synchronized")
+                        :arguments 
+                          ( ("value" variable (:type "long") (reparse-symbol formal_parameters) [4453 4463])
+                            ("timeSpent" variable (:type "long") (reparse-symbol formal_parameters) [4465 4479]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4421 4707])
+                    ("rotate" function
+                       (:typemodifiers ("private" "synchronized")
+                        :arguments 
+                          ( ("value" variable (:type "long") (reparse-symbol formal_parameters) [4746 4756])
+                            ("timeSpent" variable (:type "long") (reparse-symbol formal_parameters) [4758 4772])
+                            ("targetSize" variable (:type "long") (reparse-symbol formal_parameters) [4774 4789])
+                            ("times" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [4791 4804])
+                            ("buckets" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [4806 4821]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4713 5302])
+                    ("getTimeCounts" function (:constructor-flag t) (reparse-symbol class_member_declaration) [5547 5628])
+                    ("getTimeCounts" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("now" variable (:type "long") (reparse-symbol formal_parameters) [5679 5687]))                          )
+                        (reparse-symbol class_member_declaration) [5665 6197])
+                    ("readApproximateTime" function
+                       (:arguments 
+                          ( ("value" variable (:type "long") (reparse-symbol formal_parameters) [6228 6238])
+                            ("timeSpent" variable (:type "long") (reparse-symbol formal_parameters) [6240 6254])
+                            ("bucketTime" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [6256 6273])
+                            ("buckets" variable
+                               (:dereference 1
+                                :type "long")
+                                (reparse-symbol formal_parameters) [6275 6289])
+                            ("desiredTime" variable (:type "long") (reparse-symbol formal_parameters) [6291 6307]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [6203 6786])
+                    ("close" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6792 6886])
+                    ("Fresher" type
+                       (:typemodifiers ("private")
+                        :superclasses "TimerTask"
+                        :members 
+                          ( ("run" function
+                               (:typemodifiers ("public")
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [6942 7025]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [6892 7031]))                  
+                :type "class")
+                nil [1183 7033]))          
+      :file "CountStatAndMetric.java"
+      :pointmax 7034
+      :fsize 7033
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax '((GT 5663 . 5664) (COMMA 5657 . 5658) (SYNCHRONIZED 5634 . 5646) (LT 5650 . 5651) (GT 5545 . 5546) (COMMA 5539 . 5540) (PUBLIC 5509 . 5515) (LT 5532 . 5533))))
+  :file "!Users!drwrong!openProject!storm!storm-core!src!jvm!org!apache!storm!metric!internal!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

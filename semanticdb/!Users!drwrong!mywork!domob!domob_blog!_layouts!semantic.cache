@@ -1,0 +1,22 @@
+;; Object _layouts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "_layouts/"
+  :tables
+  (list
+    (semanticdb-table "project.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("{% if i.url %} <a href=\"{{ i.url }}\"> {% endif %}
+    			<h3 class=\"project-headlines\">{{ i.name }}" anchor nil nil [386 389])
+            ("{% endif %}
+    			<h3 class=\"project-headlines\">{{ i.name }}" anchor nil nil [610 613])
+            ("{{ i.name }}" section (:members 
+              ( ("View" anchor nil nil [1104 1107]))              ) nil [652 1369]))          
+      :file "project.html"
+      :pointmax 1369
+      :fsize 1368
+      :lastmodtime '(22606 7954 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!domob_blog!_layouts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

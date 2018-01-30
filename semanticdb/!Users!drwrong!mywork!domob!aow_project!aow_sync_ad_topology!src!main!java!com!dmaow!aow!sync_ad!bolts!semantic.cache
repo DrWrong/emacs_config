@@ -1,0 +1,44 @@
+;; Object bolts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bolts/"
+  :tables
+  (list
+    (semanticdb-table "AowBaseBolt.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.sync_ad.bolts" package nil nil [1 37])
+            ("backtype.storm.task.OutputCollector" include nil nil [39 82])
+            ("backtype.storm.task.TopologyContext" include nil nil [83 126])
+            ("backtype.storm.topology.base.BaseRichBolt" include nil nil [127 176])
+            ("com.dmaow.aow.sync_ad.utils.Stats" include nil nil [177 218])
+            ("java.util.Map" include nil nil [220 241])
+            ("AowBaseBolt" type
+               (:typemodifiers ("public" "abstract")
+                :superclasses "BaseRichBolt"
+                :members 
+                  ( ("stats" variable
+                       (:typemodifiers ("private")
+                        :type "Stats")
+                        (reparse-symbol class_member_declaration) [349 369])
+                    ("prepare" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [409 422])
+                            ("context" variable (:type "TopologyContext") (reparse-symbol formal_parameters) [424 447])
+                            ("collector" variable (:type "OutputCollector") (reparse-symbol formal_parameters) [449 474]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [389 521])
+                    ("getStats" function
+                       (:typemodifiers ("protected")
+                        :type "Stats")
+                        (reparse-symbol class_member_declaration) [527 583]))                  
+                :type "class")
+                nil [288 587]))          
+      :file "AowBaseBolt.java"
+      :pointmax 588
+      :fsize 587
+      :lastmodtime '(22710 30694 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_sync_ad_topology!src!main!java!com!dmaow!aow!sync_ad!bolts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

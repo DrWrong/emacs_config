@@ -1,0 +1,23 @@
+;; Object decache/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "decache/"
+  :tables
+  (list
+    (semanticdb-table "makefile"
+      :major-mode 'makefile-bsdmake-mode
+      :tags 
+        '( ("ARCHS" variable (:default-value ("arm64")) nil [2 16])
+            ("TOOL_NAME" variable (:default-value ("decache")) nil [17 37])
+            ("decache_INSTALL_PATH" variable (:default-value ("/usr/bin")) nil [38 70])
+            ("decache_OBJCC_FILES" variable (:default-value ("decache.mm" "reexport.mm")) nil [70 126])
+            ("TARGET" variable (:default-value ("iphone:latest:9.")) nil [164 190])
+            ("theos/makefiles/common.mk" include nil nil [191 225])
+            ("theos/makefiles/tool.mk" include nil nil [225 257]))          
+      :file "makefile"
+      :pointmax 258
+      :fsize 257
+      :lastmodtime '(22677 46281 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!appstore!decache!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

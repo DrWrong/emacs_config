@@ -1,0 +1,84 @@
+;; Object spiders/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spiders/"
+  :tables
+  (list
+    (semanticdb-table "baidu_hotword.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("scrapy" include nil nil [25 38])
+            ("json" include nil nil [39 50])
+            ("redis" include nil nil [51 63])
+            ("django.conf" include nil nil [64 96])
+            ("BaiduHotwordSpider" type
+               (:superclasses ("scrapy.Spider")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [144 166])
+                    ("allowed_domains" variable nil (reparse-symbol indented_block_body) [171 202])
+                    ("start_urls" variable nil (reparse-symbol indented_block_body) [207 282])
+                    ("parse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [298 302])
+                            ("response" variable nil (reparse-symbol function_parameters) [304 312]))                          )
+                        (reparse-symbol indented_block_body) [288 918]))                  
+                :type "class")
+                nil [99 918]))          
+      :file "baidu_hotword.py"
+      :pointmax 918
+      :fsize 917
+      :lastmodtime '(22294 4686 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "guokr.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("scrapy" include nil nil [25 38])
+            ("json" include nil nil [39 50])
+            ("sos_landing_scrapy.items" include nil nil [52 106])
+            ("GuokrSpider" type
+               (:superclasses ("scrapy.Spider")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [147 161])
+                    ("allowed_domains" variable nil (reparse-symbol indented_block_body) [166 202])
+                    ("start_urls" variable nil (reparse-symbol indented_block_body) [207 318])
+                    ("parse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [334 338])
+                            ("response" variable nil (reparse-symbol function_parameters) [340 348]))                          )
+                        (reparse-symbol indented_block_body) [324 793]))                  
+                :type "class")
+                nil [109 793]))          
+      :file "guokr.py"
+      :pointmax 793
+      :fsize 792
+      :lastmodtime '(22181 40145 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "douban.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("scrapy" include nil nil [25 38])
+            ("json" include nil nil [39 50])
+            ("sos_landing_scrapy.items" include nil nil [52 106])
+            ("DoubanSpider" type
+               (:superclasses ("scrapy.Spider")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [148 163])
+                    ("allowed_domains" variable nil (reparse-symbol indented_block_body) [168 208])
+                    ("start_urls" variable nil (reparse-symbol indented_block_body) [213 303])
+                    ("parse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [319 323])
+                            ("response" variable nil (reparse-symbol function_parameters) [325 333]))                          )
+                        (reparse-symbol indented_block_body) [309 1088]))                  
+                :type "class")
+                nil [109 1088]))          
+      :file "douban.py"
+      :pointmax 1088
+      :fsize 1087
+      :lastmodtime '(22181 40833 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_landing_scrapy!sos_landing_scrapy!spiders!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,108 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("model_server_manager.h" include nil nil [98 131])
+            ("app_name" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"RTB MODEL SERVER\""
+                :type "char")
+                nil [133 175])
+            ("version_id" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"unknown\""
+                :type "char")
+                nil [246 281])
+            ("app_build_date" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"unknown\""
+                :type "char")
+                nil [411 450])
+            ("g_int_to_loglevel" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{log4cpp::Priority::FATAL, log4cpp::Priority::WARN, log4cpp::Priority::DEBUG}"
+                :type ("log4cpp::Priority::PriorityLevel" type (:type "class") nil nil))
+                nil [459 606])
+            ("service_conf_t" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [631 638])
+                    ("DFT_THREAD_NUM" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "20"
+                        :type "int")
+                        (reparse-symbol classsubparts) [640 677])
+                    ("DFT_PORT" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "9876"
+                        :type "int")
+                        (reparse-symbol classsubparts) [679 712])
+                    ("public" label nil (reparse-symbol classsubparts) [713 720])
+                    ("service_conf_t" function
+                       (:constructor-flag t
+                        :type ("service_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [722 778])
+                    ("service_conf_t" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [780 799])
+                    ("public" label nil (reparse-symbol classsubparts) [800 807])
+                    ("port" variable (:type "int") (reparse-symbol classsubparts) [809 818])
+                    ("thread_num" variable (:type "int") (reparse-symbol classsubparts) [820 835])
+                    ("recv_timeout" variable (:type "int") (reparse-symbol classsubparts) [837 854])
+                    ("send_timeout" variable (:type "int") (reparse-symbol classsubparts) [856 873]))                  
+                :type "class")
+                nil [608 876])
+            ("g_service_conf" variable (:type ("service_conf_t" type (:type "class") nil nil)) nil [878 908])
+            ("init" function
+               (:parent "model_server_manager_t"
+                :arguments 
+                  ( ("conf_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [944 966]))                  
+                :type "int")
+                nil [911 4857])
+            ("run" function
+               (:parent "model_server_manager_t"
+                :type "int")
+                nil [4859 7686])
+            ("dump" function
+               (:parent "model_server_manager_t"
+                :type "int")
+                nil [7688 7917])
+            ("init_service" function
+               (:parent "model_server_manager_t"
+                :type "int")
+                nil [7919 8312])
+            ("service" function
+               (:parent "model_server_manager_t"
+                :type ("shared_ptr" type
+                     (:template-specifier 
+                        ( ("RTBModelServerIf" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [8314 8398]))          
+      :file "model_server_manager.cpp"
+      :pointmax 8399
+      :fsize 8404
+      :lastmodtime '(22940 1781 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "model_server_manager.h"
+      :fsize 1620
+      :lastmodtime '(22940 1781 0 0)))
+  :file "!Users!drwrong!mywork!domob!rtb!rtb-model-server!src!manager!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

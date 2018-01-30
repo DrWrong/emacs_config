@@ -1,0 +1,60 @@
+;; Object aowanti/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "aowanti/"
+  :tables
+  (list
+    (semanticdb-table "aow_activation_anti.py"
+      :file "aow_activation_anti.py"
+      :fsize 10451
+      :lastmodtime '(22685 33418 0 0))
+    (semanticdb-table "aow_click_anti.py"
+      :file "aow_click_anti.py"
+      :fsize 6609
+      :lastmodtime '(22685 33418 0 0))
+    (semanticdb-table "aow_download_anti.py"
+      :file "aow_download_anti.py"
+      :fsize 5669
+      :lastmodtime '(22685 33418 0 0))
+    (semanticdb-table "statistics_thread.py"
+      :file "statistics_thread.py"
+      :fsize 3781
+      :lastmodtime '(21979 13955 0 0))
+    (semanticdb-table "lineparser.py"
+      :file "lineparser.py"
+      :fsize 8041
+      :lastmodtime '(22685 33418 0 0))
+    (semanticdb-table "config.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("ConfigParser" include nil nil [26 45])
+            ("Config" type
+               (:documentation "
+	获取配置项数据的类
+	"
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [123 145])
+                            ("self" code nil (reparse-symbol indented_block_body) [148 161]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [104 108])
+                            ("filename" variable nil (reparse-symbol function_parameters) [110 118]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [91 162])
+                    ("reload" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [175 179]))                          )
+                        (reparse-symbol indented_block_body) [164 1847]))                  
+                :type "class")
+                nil [47 1847]))          
+      :file "config.py"
+      :pointmax 1847
+      :fsize 1924
+      :lastmodtime '(22685 33418 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_anti!lib!aowanti!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

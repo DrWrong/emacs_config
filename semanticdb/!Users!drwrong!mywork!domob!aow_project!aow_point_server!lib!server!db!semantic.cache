@@ -1,0 +1,59 @@
+;; Object db/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "db/"
+  :tables
+  (list
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [510 549])
+            ("django.db" include nil nil [551 579])
+            ("DbAowUser" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("owuserid" variable nil (reparse-symbol indented_block_body) [617 668])
+                    ("mediaid" variable nil (reparse-symbol indented_block_body) [673 704])
+                    ("point" variable nil (reparse-symbol indented_block_body) [709 741])
+                    ("consumed" variable nil (reparse-symbol indented_block_body) [746 781])
+                    ("did" variable nil (reparse-symbol indented_block_body) [786 816])
+                    ("createtime" variable nil (reparse-symbol indented_block_body) [821 855])
+                    ("lastupdate" variable nil (reparse-symbol indented_block_body) [860 894])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [920 935])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [944 964]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [900 965]))                  
+                :type "class")
+                nil [582 965])
+            ("DbAowUserProfile" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [1009 1048])
+                    ("dmac" variable nil (reparse-symbol indented_block_body) [1053 1092])
+                    ("oid" variable nil (reparse-symbol indented_block_body) [1097 1135])
+                    ("macmd5" variable nil (reparse-symbol indented_block_body) [1177 1218])
+                    ("idfa" variable nil (reparse-symbol indented_block_body) [1223 1262])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [1267 1306])
+                    ("userid" variable nil (reparse-symbol indented_block_body) [1311 1352])
+                    ("mediaid" variable nil (reparse-symbol indented_block_body) [1357 1388])
+                    ("imei" variable nil (reparse-symbol indented_block_body) [1393 1432])
+                    ("android_id" variable nil (reparse-symbol indented_block_body) [1437 1482])
+                    ("createtime" variable nil (reparse-symbol indented_block_body) [1487 1521])
+                    ("lastupdate" variable nil (reparse-symbol indented_block_body) [1526 1560])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [1586 1601])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [1610 1638]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1566 1639]))                  
+                :type "class")
+                nil [967 1639]))          
+      :file "models.py"
+      :pointmax 1639
+      :fsize 1638
+      :lastmodtime '(22699 62050 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_point_server!lib!server!db!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

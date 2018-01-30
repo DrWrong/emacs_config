@@ -1,0 +1,1114 @@
+;; Object celery/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "celery/"
+  :tables
+  (list
+    (semanticdb-table "beat.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+    celery.beat
+    ~~~~~~~~~~~
+
+    The periodic task scheduler.
+
+\"\"\"" code nil nil [25 99])
+            ("__future__" include nil nil [100 138])
+            ("errno" include nil nil [140 152])
+            ("heapq" include nil nil [153 165])
+            ("os" include nil nil [166 175])
+            ("time" include nil nil [176 187])
+            ("shelve" include nil nil [188 201])
+            ("sys" include nil nil [202 212])
+            ("traceback" include nil nil [213 229])
+            ("collections" include nil nil [231 265])
+            ("functools" include nil nil [266 302])
+            ("threading" include nil nil [303 338])
+            ("billiard" include nil nil [340 383])
+            ("billiard.context" include nil nil [384 420])
+            ("billiard.common" include nil nil [421 462])
+            ("kombu.utils" include nil nil [463 512])
+            ("kombu.utils.functional" include nil nil [513 562])
+            ("__version__" include nil nil [571 589])
+            ("platforms" include nil nil [597 613])
+            ("signals" include nil nil [621 635])
+            ("monotonic" include nil nil [647 687])
+            ("values" include nil nil [647 687])
+            ("reraise" include nil nil [647 687])
+            ("items" include nil nil [647 687])
+            ("crontab" include nil nil [704 734])
+            ("maybe_schedule" include nil nil [704 734])
+            ("instantiate" include nil nil [755 773])
+            ("humanize_seconds" include nil nil [796 819])
+            ("iter_open_logger_fds" include nil nil [836 875])
+            ("get_logger" include nil nil [836 875])
+            ("__all__" variable nil nil [877 1000])
+            ("event_t" variable nil nil [1002 1064])
+            ("logger" variable nil nil [1066 1095])
+            ("debug, info, error, warning" code nil nil [1096 1214])
+            ("DEFAULT_MAX_INTERVAL" variable nil nil [1216 1242])
+            ("SchedulingError" type
+               (:documentation "An error occured while scheduling a task."
+                :superclasses ("Exception")
+                :type "class")
+                nil [1258 1344])
+            ("ScheduleEntry" type
+               (:documentation "An entry in the scheduler.
+
+    :keyword name: see :attr:`name`.
+    :keyword schedule: see :attr:`schedule`.
+    :keyword args: see :attr:`args`.
+    :keyword kwargs: see :attr:`kwargs`.
+    :keyword options: see :attr:`options`.
+    :keyword last_run_at: see :attr:`last_run_at`.
+    :keyword total_run_count: see :attr:`total_run_count`.
+    :keyword relative: Is the time relative to when the server starts?
+
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [1845 1856])
+                    ("schedule" variable nil (reparse-symbol indented_block_body) [1902 1917])
+                    ("args" variable nil (reparse-symbol indented_block_body) [1961 1972])
+                    ("kwargs" variable nil (reparse-symbol indented_block_body) [2013 2026])
+                    ("options" variable nil (reparse-symbol indented_block_body) [2063 2077])
+                    ("last_run_at" variable nil (reparse-symbol indented_block_body) [2146 2164])
+                    ("total_run_count" variable nil (reparse-symbol indented_block_body) [2229 2248])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2451 2465])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2474 2490])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2499 2515])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2524 2540])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2549 2569])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2578 2600])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2609 2673])
+                            ("self" code nil (reparse-symbol indented_block_body) [2682 2735])
+                            ("self" code nil (reparse-symbol indented_block_body) [2744 2787]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2267 2271])
+                            ("name" variable nil (reparse-symbol function_parameters) [2273 2277])
+                            ("task" variable nil (reparse-symbol function_parameters) [2284 2288])
+                            ("last_run_at" variable nil (reparse-symbol function_parameters) [2295 2306])
+                            ("total_run_count" variable nil (reparse-symbol function_parameters) [2330 2345])
+                            ("schedule" variable nil (reparse-symbol function_parameters) [2352 2360])
+                            ("args" variable nil (reparse-symbol function_parameters) [2367 2371])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2376 2382])
+                            ("options" variable nil (reparse-symbol function_parameters) [2404 2411])
+                            ("relative" variable nil (reparse-symbol function_parameters) [2416 2424])
+                            ("app" variable nil (reparse-symbol function_parameters) [2432 2435]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2254 2788])
+                    ("_default_now" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2810 2814]))                          )
+                        (reparse-symbol indented_block_body) [2793 2889])
+                    ("_next_instance" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2913 2917])
+                            ("last_run_at" variable nil (reparse-symbol function_parameters) [2919 2930]))                          
+                        :documentation "Return a new instance of the same class, but with
+        its date and count fields updated.")
+                        (reparse-symbol indented_block_body) [2894 3226])
+                    ("__next__" variable nil (reparse-symbol indented_block_body) [3230 3262])
+                    ("__reduce__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3295 3299]))                          )
+                        (reparse-symbol indented_block_body) [3280 3484])
+                    ("update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3500 3504])
+                            ("other" variable nil (reparse-symbol function_parameters) [3506 3511]))                          
+                        :documentation "Update values from another entry.
+
+        Does only update \"editable\" fields (task, schedule, args, kwargs,
+        options).
+
+        ")
+                        (reparse-symbol indented_block_body) [3489 3874])
+                    ("is_due" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3890 3894]))                          
+                        :documentation "See :meth:`~celery.schedule.schedule.is_due`.")
+                        (reparse-symbol indented_block_body) [3879 4011])
+                    ("__iter__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4029 4033]))                          )
+                        (reparse-symbol indented_block_body) [4016 4075])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4093 4097]))                          )
+                        (reparse-symbol indented_block_body) [4080 4264])
+                    ("__lt__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4280 4284])
+                            ("other" variable nil (reparse-symbol function_parameters) [4286 4291]))                          )
+                        (reparse-symbol indented_block_body) [4269 4737]))                  
+                :type "class")
+                nil [1362 4737])
+            ("Scheduler" type
+               (:documentation "Scheduler for periodic tasks.
+
+    The :program:`celery beat` program may instantiate this class
+    multiple times for introspection purposes, but then with the
+    ``lazy`` argument set.  It is important for subclasses to
+    be idempotent when this argument is set.
+
+    :keyword schedule: see :attr:`schedule`.
+    :keyword max_interval: see :attr:`max_interval`.
+    :keyword lazy: Do not set up the schedule.
+
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("Entry" variable nil (reparse-symbol indented_block_body) [5199 5220])
+                    ("schedule" variable nil (reparse-symbol indented_block_body) [5259 5274])
+                    ("max_interval" variable nil (reparse-symbol indented_block_body) [5343 5378])
+                    ("sync_every" code nil (reparse-symbol indented_block_body) [5445 5464])
+                    ("sync_every_tasks" variable nil (reparse-symbol indented_block_body) [5531 5554])
+                    ("_last_sync" variable nil (reparse-symbol indented_block_body) [5560 5577])
+                    ("_tasks_since_sync" variable nil (reparse-symbol indented_block_body) [5582 5603])
+                    ("logger" variable nil (reparse-symbol indented_block_body) [5609 5624])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [5784 5798])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5807 5871])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5880 6028])
+                            ("self" code nil (reparse-symbol indented_block_body) [6037 6082])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6091 6108])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6117 6242])
+                            ("if" code nil (reparse-symbol indented_block_body) [6251 6298]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5653 5657])
+                            ("app" variable nil (reparse-symbol function_parameters) [5659 5662])
+                            ("schedule" variable nil (reparse-symbol function_parameters) [5664 5672])
+                            ("max_interval" variable nil (reparse-symbol function_parameters) [5679 5691])
+                            ("Producer" variable nil (reparse-symbol function_parameters) [5715 5723])
+                            ("lazy" variable nil (reparse-symbol function_parameters) [5730 5734])
+                            ("sync_every_tasks" variable nil (reparse-symbol function_parameters) [5742 5758])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [5765 5773]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5640 6298])
+                    ("install_default_entries" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6331 6335])
+                            ("data" variable nil (reparse-symbol function_parameters) [6337 6341]))                          )
+                        (reparse-symbol indented_block_body) [6303 6780])
+                    ("apply_entry" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6801 6805])
+                            ("entry" variable nil (reparse-symbol function_parameters) [6807 6812])
+                            ("producer" variable nil (reparse-symbol function_parameters) [6814 6822]))                          )
+                        (reparse-symbol indented_block_body) [6785 7212])
+                    ("adjust" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7228 7232])
+                            ("n" variable nil (reparse-symbol function_parameters) [7234 7235])
+                            ("drift" variable nil (reparse-symbol function_parameters) [7237 7242]))                          )
+                        (reparse-symbol indented_block_body) [7217 7322])
+                    ("is_due" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7338 7342])
+                            ("entry" variable nil (reparse-symbol function_parameters) [7344 7349]))                          )
+                        (reparse-symbol indented_block_body) [7327 7382])
+                    ("tick" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7396 7400])
+                            ("event_t" variable nil (reparse-symbol function_parameters) [7402 7409])
+                            ("min" variable nil (reparse-symbol function_parameters) [7419 7422])
+                            ("heappop" variable nil (reparse-symbol function_parameters) [7441 7448])
+                            ("heappush" variable nil (reparse-symbol function_parameters) [7464 7472])
+                            ("heapify" variable nil (reparse-symbol function_parameters) [7502 7509])
+                            ("mktime" variable nil (reparse-symbol function_parameters) [7525 7531]))                          
+                        :documentation "Run a tick, that is one iteration of the scheduler.
+
+        Executes one due task per call.
+
+        Returns preferred delay in seconds for next call.
+        ")
+                        (reparse-symbol indented_block_body) [7387 8842])
+                    ("should_sync" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8863 8867]))                          )
+                        (reparse-symbol indented_block_body) [8847 9106])
+                    ("reserve" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9123 9127])
+                            ("entry" variable nil (reparse-symbol function_parameters) [9129 9134]))                          )
+                        (reparse-symbol indented_block_body) [9111 9222])
+                    ("apply_async" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9243 9247])
+                            ("entry" variable nil (reparse-symbol function_parameters) [9249 9254])
+                            ("producer" variable nil (reparse-symbol function_parameters) [9256 9264])
+                            ("advance" variable nil (reparse-symbol function_parameters) [9271 9278])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [9285 9293]))                          )
+                        (reparse-symbol indented_block_body) [9227 10329])
+                    ("send_task" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10348 10352])
+                            ("args" variable nil (reparse-symbol function_parameters) [10354 10359])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [10361 10369]))                          )
+                        (reparse-symbol indented_block_body) [10334 10423])
+                    ("setup_schedule" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10447 10451]))                          )
+                        (reparse-symbol indented_block_body) [10428 10502])
+                    ("_do_sync" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10520 10524]))                          )
+                        (reparse-symbol indented_block_body) [10507 10715])
+                    ("sync" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10729 10733]))                          )
+                        (reparse-symbol indented_block_body) [10720 10749])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10764 10768]))                          )
+                        (reparse-symbol indented_block_body) [10754 10791])
+                    ("add" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10804 10808])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [10810 10818]))                          )
+                        (reparse-symbol indented_block_body) [10796 10935])
+                    ("_maybe_entry" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10957 10961])
+                            ("name" variable nil (reparse-symbol function_parameters) [10963 10967])
+                            ("entry" variable nil (reparse-symbol function_parameters) [10969 10974]))                          )
+                        (reparse-symbol indented_block_body) [10940 11143])
+                    ("update_from_dict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11169 11173])
+                            ("dict_" variable nil (reparse-symbol function_parameters) [11175 11180]))                          )
+                        (reparse-symbol indented_block_body) [11148 11318])
+                    ("merge_inplace" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11341 11345])
+                            ("b" variable nil (reparse-symbol function_parameters) [11347 11348]))                          )
+                        (reparse-symbol indented_block_body) [11323 11825])
+                    ("_ensure_connected" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11852 11856]))                          )
+                        (reparse-symbol indented_block_body) [11830 12244])
+                    ("get_schedule" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12266 12270]))                          )
+                        (reparse-symbol indented_block_body) [12249 12298])
+                    ("set_schedule" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12320 12324])
+                            ("schedule" variable nil (reparse-symbol function_parameters) [12326 12334]))                          )
+                        (reparse-symbol indented_block_body) [12303 12366])
+                    ("schedule" variable nil (reparse-symbol indented_block_body) [12370 12417])
+                    ("connection" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12459 12463]))                          
+                        :decorators 
+                          ( ("cached_property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [12423 12513])
+                    ("producer" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12552 12556]))                          
+                        :decorators 
+                          ( ("cached_property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [12518 12614])
+                    ("info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12642 12646]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [12619 12667]))                  
+                :type "class")
+                nil [4739 12667])
+            ("PersistentScheduler" type
+               (:superclasses ("Scheduler")
+                :members 
+                  ( ("persistence" variable nil (reparse-symbol indented_block_body) [12711 12731])
+                    ("known_suffixes" variable nil (reparse-symbol indented_block_body) [12736 12788])
+                    ("_store" variable nil (reparse-symbol indented_block_body) [12794 12807])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [12858 12914])
+                            ("Scheduler" code nil (reparse-symbol indented_block_body) [12923 12964]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12826 12830])
+                            ("args" variable nil (reparse-symbol function_parameters) [12832 12837])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [12839 12847]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [12813 12965])
+                    ("_remove_db" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12985 12989]))                          )
+                        (reparse-symbol indented_block_body) [12970 13149])
+                    ("_open_schedule" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13173 13177]))                          )
+                        (reparse-symbol indented_block_body) [13154 13257])
+                    ("_destroy_open_corrupted_schedule" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13299 13303])
+                            ("exc" variable nil (reparse-symbol function_parameters) [13305 13308]))                          )
+                        (reparse-symbol indented_block_body) [13262 13489])
+                    ("setup_schedule" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13513 13517]))                          )
+                        (reparse-symbol indented_block_body) [13494 16048])
+                    ("get_schedule" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16070 16074]))                          )
+                        (reparse-symbol indented_block_body) [16053 16115])
+                    ("set_schedule" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16137 16141])
+                            ("schedule" variable nil (reparse-symbol function_parameters) [16143 16151]))                          )
+                        (reparse-symbol indented_block_body) [16120 16196])
+                    ("schedule" variable nil (reparse-symbol indented_block_body) [16200 16247])
+                    ("sync" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16262 16266]))                          )
+                        (reparse-symbol indented_block_body) [16253 16336])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16351 16355]))                          )
+                        (reparse-symbol indented_block_body) [16341 16406])
+                    ("info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16434 16438]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [16411 16513]))                  
+                :type "class")
+                nil [12669 16513])
+            ("Service" type
+               (:superclasses ("object")
+                :members 
+                  ( ("scheduler_cls" variable nil (reparse-symbol indented_block_body) [16542 16577])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [16696 16710])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16719 16817])
+                            ("self" code nil (reparse-symbol indented_block_body) [16826 16882])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16891 16983])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16993 17020])
+                            ("self" variable nil (reparse-symbol indented_block_body) [17029 17055]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16596 16600])
+                            ("app" variable nil (reparse-symbol function_parameters) [16602 16605])
+                            ("max_interval" variable nil (reparse-symbol function_parameters) [16607 16619])
+                            ("schedule_filename" variable nil (reparse-symbol function_parameters) [16626 16643])
+                            ("scheduler_cls" variable nil (reparse-symbol function_parameters) [16667 16680]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [16583 17056])
+                    ("__reduce__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17076 17080]))                          )
+                        (reparse-symbol indented_block_body) [17061 17220])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17235 17239])
+                            ("embedded_process" variable nil (reparse-symbol function_parameters) [17241 17257]))                          )
+                        (reparse-symbol indented_block_body) [17225 18147])
+                    ("sync" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18161 18165]))                          )
+                        (reparse-symbol indented_block_body) [18152 18230])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18244 18248])
+                            ("wait" variable nil (reparse-symbol function_parameters) [18250 18254]))                          )
+                        (reparse-symbol indented_block_body) [18235 18405])
+                    ("get_scheduler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18428 18432])
+                            ("lazy" variable nil (reparse-symbol function_parameters) [18434 18438]))                          )
+                        (reparse-symbol indented_block_body) [18410 18779])
+                    ("scheduler" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18819 18823]))                          
+                        :decorators 
+                          ( ("cached_property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [18784 18862]))                  
+                :type "class")
+                nil [16515 18862])
+            ("_Threaded" type
+               (:documentation "Embedded task scheduler using threading."
+                :superclasses ("Thread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [18988 19021])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19030 19044])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19053 19090])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19099 19117])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19126 19144]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18958 18962])
+                            ("app" variable nil (reparse-symbol function_parameters) [18964 18967])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [18969 18977]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [18945 19145])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19158 19162]))                          )
+                        (reparse-symbol indented_block_body) [19150 19225])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19239 19243]))                          )
+                        (reparse-symbol indented_block_body) [19230 19283]))                  
+                :type "class")
+                nil [18864 19283])
+            ("try" code nil nil [19285 20052])
+            ("EmbeddedService" function
+               (:documentation "Return embedded clock service.
+
+    :keyword thread: Run threaded instead of as a separate process.
+        Uses :mod:`multiprocessing` by default, if available.
+
+    "
+                :arguments 
+                  ( ("app" variable nil (reparse-symbol function_parameters) [20074 20077])
+                    ("max_interval" variable nil (reparse-symbol function_parameters) [20079 20091])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [20098 20106]))                  )
+                nil [20054 20551]))          
+      :file "beat.py"
+      :pointmax 20551
+      :fsize 22063
+      :lastmodtime '(22764 51938 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 18123 . 18147) (NEWLINE 18122 . 18123) (COLON 18121 . 18122) (FINALLY 18114 . 18121) (INDENT_BLOCK 14282 . 14388) (NEWLINE 14281 . 14282) (COLON 14280 . 14281) (TRY 14189 . 14192) (AS 14274 . 14276) (INDENT_BLOCK 13959 . 14028) (NEWLINE 13958 . 13959) (COLON 13957 . 13958) (TRY 13528 . 13531) (AS 13951 . 13953) (INDENT_BLOCK 10222 . 10329) (NEWLINE 10221 . 10222) (COLON 10220 . 10221) (FINALLY 10213 . 10220) (INDENT_BLOCK 10022 . 10205) (NEWLINE 10021 . 10022) (COLON 10020 . 10021) (TRY 9575 . 9578) (AS 10014 . 10016) (NAME 9470 . 9475) (IF 9498 . 9500) (ELSE 9509 . 9513) (INDENT_BLOCK 7152 . 7212) (NEWLINE 7151 . 7152) (COLON 7150 . 7151) (ELSE 7146 . 7150) (INDENT_BLOCK 7031 . 7138) (NEWLINE 7030 . 7031) (COLON 7029 . 7030) (TRY 6914 . 6917) (AS 7023 . 7025) (RETURN 2825 . 2831) (IF 2852 . 2854) (ELSE 2869 . 2873) (FROM 820 . 824) (PERIOD 825 . 826) (FROM 774 . 778) (PERIOD 779 . 780) (FROM 735 . 739) (PERIOD 740 . 741) (FROM 688 . 692) (PERIOD 693 . 694) (FROM 636 . 640) (PERIOD 641 . 642) (FROM 614 . 618) (PERIOD 619 . 620) (FROM 590 . 594) (PERIOD 595 . 596) (FROM 564 . 568) (PERIOD 569 . 570) (INDENT_BLOCK 10222 . 10329) (NEWLINE 10221 . 10222) (COLON 10220 . 10221) (FINALLY 10213 . 10220) (INDENT_BLOCK 10022 . 10205) (NEWLINE 10021 . 10022) (COLON 10020 . 10021) (TRY 9575 . 9578) (AS 10014 . 10016) (NAME 9470 . 9475) (IF 9498 . 9500) (ELSE 9509 . 9513) (INDENT_BLOCK 7152 . 7212) (NEWLINE 7151 . 7152) (COLON 7150 . 7151) (ELSE 7146 . 7150) (INDENT_BLOCK 7031 . 7138) (NEWLINE 7030 . 7031) (COLON 7029 . 7030) (TRY 6914 . 6917) (AS 7023 . 7025) (RETURN 2825 . 2831) (IF 2852 . 2854) (ELSE 2869 . 2873) (FROM 820 . 824) (PERIOD 825 . 826) (FROM 774 . 778) (PERIOD 779 . 780) (FROM 735 . 739) (PERIOD 740 . 741) (FROM 688 . 692) (PERIOD 693 . 694) (FROM 636 . 640) (PERIOD 641 . 642) (FROM 614 . 618) (PERIOD 619 . 620) (FROM 590 . 594) (PERIOD 595 . 596) (FROM 564 . 568) (PERIOD 569 . 570) (RETURN 2825 . 2831) (IF 2852 . 2854) (ELSE 2869 . 2873) (FROM 820 . 824) (PERIOD 825 . 826) (FROM 774 . 778) (PERIOD 779 . 780) (FROM 735 . 739) (PERIOD 740 . 741) (FROM 688 . 692) (PERIOD 693 . 694) (FROM 636 . 640) (PERIOD 641 . 642) (FROM 614 . 618) (PERIOD 619 . 620) (FROM 590 . 594) (PERIOD 595 . 596) (FROM 564 . 568) (PERIOD 569 . 570)))
+    (semanticdb-table "platforms.py"
+      :file "platforms.py"
+      :fsize 24342
+      :lastmodtime '(22764 51938 0 0))
+    (semanticdb-table "signals.py"
+      :file "signals.py"
+      :fsize 3910
+      :lastmodtime '(22764 51938 0 0))
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"Distributed Task Queue.\"\"\"" code nil nil [25 54])
+            ("__future__" include nil nil [351 423])
+            ("os" include nil nil [424 433])
+            ("re" include nil nil [434 443])
+            ("sys" include nil nil [444 454])
+            ("collections" include nil nil [455 489])
+            ("SERIES" variable nil nil [491 512])
+            ("__version__" variable nil nil [514 535])
+            ("__author__" variable nil nil [536 560])
+            ("__contact__" variable nil nil [561 598])
+            ("__homepage__" variable nil nil [599 640])
+            ("__docformat__" variable nil nil [641 675])
+            ("__keywords__" variable nil nil [676 735])
+            ("__all__" variable nil nil [751 954])
+            ("VERSION_BANNER" variable nil nil [956 1012])
+            ("version_info_t" variable nil nil [1014 1121])
+            ("_temp" variable nil nil [1215 1286])
+            ("VERSION" variable nil nil [1287 1396])
+            ("del" code nil nil [1397 1406])
+            ("del" code nil nil [1407 1413])
+            ("if" code nil nil [1415 1942])
+            ("STATICA_HACK" variable nil nil [2096 2115])
+            ("globals" variable nil nil [2116 2163])
+            ("if" code nil nil [2164 2753])
+            ("_find_option_with_arg" function
+               (:documentation "Search argv for options specifying short and longopt alternatives.
+
+    Returns:
+        str: value for option found
+    Raises:
+        KeyError: if option not found.
+    "
+                :arguments 
+                  ( ("argv" variable nil (reparse-symbol function_parameters) [2892 2896])
+                    ("short_opts" variable nil (reparse-symbol function_parameters) [2898 2908])
+                    ("long_opts" variable nil (reparse-symbol function_parameters) [2915 2924]))                  )
+                nil [2866 3527])
+            ("_patch_eventlet" function nil nil [3529 3782])
+            ("_patch_gevent" function nil nil [3784 4145])
+            ("maybe_patch_concurrency" function
+               (:documentation "Apply eventlet/gevent monkeypatches.
+
+    With short and long opt alternatives that specify the command line
+    option to set the pool, this makes sure that anything that needs
+    to be patched is completed as early as possible.
+    (e.g., eventlet/gevent monkey patches).
+    "
+                :arguments 
+                  ( ("argv" variable nil (reparse-symbol function_parameters) [4175 4179])
+                    ("short_opts" variable nil (reparse-symbol function_parameters) [4218 4228])
+                    ("long_opts" variable nil (reparse-symbol function_parameters) [4237 4246])
+                    ("patches" variable nil (reparse-symbol function_parameters) [4287 4294]))                  )
+                nil [4147 5061])
+            ("local" include nil nil [5084 5096])
+            ("old_module, new_module" code nil nil [5228 6329]))          
+      :file "__init__.py"
+      :pointmax 6330
+      :fsize 6329
+      :lastmodtime '(22764 51938 0 0)
+      :unmatched-syntax '((FROM 5077 . 5081) (PERIOD 5082 . 5083) (RETURN 3343 . 3349) (IF 3354 . 3356) (ELSE 3361 . 3365) (FROM 1472 . 1476) (PERIOD 1477 . 1478)))
+    (semanticdb-table "__main__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 73])
+            ("sys" include nil nil [75 85])
+            ("maybe_patch_concurrency" include nil nil [94 124])
+            ("__all__" variable nil nil [126 144])
+            ("main" function nil nil [147 275])
+            ("if" code nil nil [277 335]))          
+      :file "__main__.py"
+      :pointmax 335
+      :fsize 461
+      :lastmodtime '(22764 51938 0 0)
+      :unmatched-syntax '((FROM 87 . 91) (PERIOD 92 . 93)))
+    (semanticdb-table "_state.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+    celery._state
+    ~~~~~~~~~~~~~~~
+
+    This is an internal module containing thread state
+    like the ``current_app``, and ``current_task``.
+
+    This module shouldn't be used directly.
+
+\"\"\"" code nil nil [25 224])
+            ("__future__" include nil nil [225 297])
+            ("os" include nil nil [299 308])
+            ("sys" include nil nil [309 319])
+            ("threading" include nil nil [320 336])
+            ("weakref" include nil nil [337 351])
+            ("celery.local" include nil nil [353 383])
+            ("celery.utils.threads" include nil nil [384 427])
+            ("__all__" variable nil nil [429 597])
+            ("default_app" variable nil nil [647 665])
+            ("_apps" variable nil nil [735 760])
+            ("_on_app_finalizers" variable nil nil [910 936])
+            ("_task_join_will_block" variable nil nil [938 967])
+            ("connect_on_app_finalize" function (:arguments 
+              ( ("callback" variable nil (reparse-symbol function_parameters) [998 1006]))              ) nil [970 1066])
+            ("_announce_app_finalized" function (:arguments 
+              ( ("app" variable nil (reparse-symbol function_parameters) [1096 1099]))              ) nil [1068 1195])
+            ("_set_task_join_will_block" function (:arguments 
+              ( ("blocks" variable nil (reparse-symbol function_parameters) [1227 1233]))              ) nil [1197 1304])
+            ("task_join_will_block" function nil nil [1306 1367])
+            ("_TLS" type
+               (:superclasses ("threading.local")
+                :members 
+                  ( ("current_app" variable nil (reparse-symbol indented_block_body) [1618 1636]))                  
+                :type "class")
+                nil [1369 1637])
+            ("_tls" variable nil nil [1637 1650])
+            ("_task_stack" variable nil nil [1652 1678])
+            ("set_default_app" function (:arguments 
+              ( ("app" variable nil (reparse-symbol function_parameters) [1701 1704]))              ) nil [1681 1752])
+            ("_get_current_app" function nil nil [1754 2104])
+            ("_set_current_app" function (:arguments 
+              ( ("app" variable nil (reparse-symbol function_parameters) [2127 2130]))              ) nil [2106 2160])
+            ("C_STRICT_APP" variable nil nil [2162 2207])
+            ("if" code nil nil [2208 2548])
+            ("get_current_task" function (:documentation "Currently executing task.") nil [2550 2637])
+            ("get_current_worker_task" function (:documentation "Currently executing task, that was applied by the worker.
+
+    This is used to differentiate between the actual task
+    executed by the worker and any task that was called within
+    a task (using ``task.__call__`` or ``task.apply``)
+
+    ") nil [2639 3035])
+            ("current_app" variable nil nil [3062 3098])
+            ("current_task" variable nil nil [3126 3164])
+            ("_register_app" function (:arguments 
+              ( ("app" variable nil (reparse-symbol function_parameters) [3185 3188]))              ) nil [3167 3210])
+            ("_deregister_app" function (:arguments 
+              ( ("app" variable nil (reparse-symbol function_parameters) [3232 3235]))              ) nil [3212 3261])
+            ("_get_active_apps" function nil nil [3263 3304]))          
+      :file "_state.py"
+      :pointmax 3304
+      :fsize 5144
+      :lastmodtime '(22764 51938 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "local.py"
+      :file "local.py"
+      :fsize 17756
+      :lastmodtime '(22764 51938 0 0))
+    (semanticdb-table "bootsteps.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"A directed acyclic graph of reusable components.\"\"\"" code nil nil [25 79])
+            ("__future__" include nil nil [80 136])
+            ("collections" include nil nil [138 167])
+            ("threading" include nil nil [168 195])
+            ("kombu.common" include nil nil [197 235])
+            ("kombu.utils.encoding" include nil nil [236 281])
+            ("kombu.utils.imports" include nil nil [282 328])
+            ("with_metaclass" include nil nil [341 384])
+            ("values" include nil nil [341 384])
+            ("bytes_if_py2" include nil nil [341 384])
+            ("GraphFormatter" include nil nil [403 441])
+            ("DependencyGraph" include nil nil [403 441])
+            ("qualname" include nil nil [462 490])
+            ("instantiate" include nil nil [462 490])
+            ("get_logger" include nil nil [507 524])
+            ("try" code nil nil [526 674])
+            ("__all__" variable nil nil [675 739])
+            ("RUN" variable nil nil [751 760])
+            ("CLOSE" variable nil nil [761 772])
+            ("TERMINATE" variable nil nil [773 788])
+            ("logger" variable nil nil [790 819])
+            ("_pre" function (:arguments 
+              ( ("ns" variable nil (reparse-symbol function_parameters) [831 833])
+                ("fmt" variable nil (reparse-symbol function_parameters) [835 838]))              ) nil [822 887])
+            ("_label" function (:arguments 
+              ( ("s" variable nil (reparse-symbol function_parameters) [900 901]))              ) nil [889 941])
+            ("StepFormatter" type
+               (:documentation "Graph formatter for :class:`Blueprint`."
+                :superclasses ("GraphFormatter")
+                :members 
+                  ( ("blueprint_prefix" variable nil (reparse-symbol indented_block_body) [1035 1057])
+                    ("conditional_prefix" variable nil (reparse-symbol indented_block_body) [1062 1086])
+                    ("blueprint_scheme" variable nil (reparse-symbol indented_block_body) [1091 1217])
+                    ("label" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1233 1237])
+                            ("step" variable nil (reparse-symbol function_parameters) [1239 1243]))                          )
+                        (reparse-symbol indented_block_body) [1223 1432])
+                    ("_get_prefix" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1453 1457])
+                            ("step" variable nil (reparse-symbol function_parameters) [1459 1463]))                          )
+                        (reparse-symbol indented_block_body) [1437 1619])
+                    ("node" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1633 1637])
+                            ("obj" variable nil (reparse-symbol function_parameters) [1639 1642])
+                            ("attrs" variable nil (reparse-symbol function_parameters) [1644 1651]))                          )
+                        (reparse-symbol indented_block_body) [1624 1777])
+                    ("edge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1791 1795])
+                            ("a" variable nil (reparse-symbol function_parameters) [1797 1798])
+                            ("b" variable nil (reparse-symbol function_parameters) [1800 1801])
+                            ("attrs" variable nil (reparse-symbol function_parameters) [1803 1810]))                          )
+                        (reparse-symbol indented_block_body) [1782 1959]))                  
+                :type "class")
+                nil [943 1959])
+            ("Blueprint" type
+               (:documentation "Blueprint containing bootsteps that can be applied to objects.
+
+    Arguments:
+        steps Sequence[Union[str, Step]]: List of steps.
+        name (str): Set explicit name for this blueprint.
+        on_start (Callable): Optional callback applied after blueprint start.
+        on_close (Callable): Optional callback applied before blueprint close.
+        on_stopped (Callable): Optional callback applied after
+            blueprint stopped.
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("GraphFormatter" variable nil (reparse-symbol indented_block_body) [2451 2481])
+                    ("name" variable nil (reparse-symbol indented_block_body) [2487 2498])
+                    ("state" variable nil (reparse-symbol indented_block_body) [2503 2515])
+                    ("started" variable nil (reparse-symbol indented_block_body) [2520 2531])
+                    ("default_steps" variable nil (reparse-symbol indented_block_body) [2536 2557])
+                    ("state_to_name" variable nil (reparse-symbol indented_block_body) [2562 2696])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [2817 2870])
+                            ("self" code nil (reparse-symbol indented_block_body) [2879 2934])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2943 2967])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2976 3000])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3009 3037])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3046 3078])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3087 3102]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2715 2719])
+                            ("steps" variable nil (reparse-symbol function_parameters) [2721 2726])
+                            ("name" variable nil (reparse-symbol function_parameters) [2733 2737])
+                            ("on_start" variable nil (reparse-symbol function_parameters) [2761 2769])
+                            ("on_close" variable nil (reparse-symbol function_parameters) [2776 2784])
+                            ("on_stopped" variable nil (reparse-symbol function_parameters) [2791 2801]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2702 3103])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3118 3122])
+                            ("parent" variable nil (reparse-symbol function_parameters) [3124 3130]))                          )
+                        (reparse-symbol indented_block_body) [3108 3446])
+                    ("human_state" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3467 3471]))                          )
+                        (reparse-symbol indented_block_body) [3451 3525])
+                    ("info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3539 3543])
+                            ("parent" variable nil (reparse-symbol function_parameters) [3545 3551]))                          )
+                        (reparse-symbol indented_block_body) [3530 3675])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3690 3694])
+                            ("parent" variable nil (reparse-symbol function_parameters) [3696 3702]))                          )
+                        (reparse-symbol indented_block_body) [3680 3824])
+                    ("restart" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3841 3845])
+                            ("parent" variable nil (reparse-symbol function_parameters) [3847 3853])
+                            ("method" variable nil (reparse-symbol function_parameters) [3855 3861])
+                            ("description" variable nil (reparse-symbol function_parameters) [3886 3897])
+                            ("propagate" variable nil (reparse-symbol function_parameters) [3912 3921]))                          )
+                        (reparse-symbol indented_block_body) [3829 4002])
+                    ("send_all" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4020 4024])
+                            ("parent" variable nil (reparse-symbol function_parameters) [4026 4032])
+                            ("method" variable nil (reparse-symbol function_parameters) [4034 4040])
+                            ("description" variable nil (reparse-symbol function_parameters) [4059 4070])
+                            ("reverse" variable nil (reparse-symbol function_parameters) [4077 4084])
+                            ("propagate" variable nil (reparse-symbol function_parameters) [4091 4100])
+                            ("args" variable nil (reparse-symbol function_parameters) [4107 4111]))                          )
+                        (reparse-symbol indented_block_body) [4007 4834])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4848 4852])
+                            ("parent" variable nil (reparse-symbol function_parameters) [4854 4860])
+                            ("close" variable nil (reparse-symbol function_parameters) [4862 4867])
+                            ("terminate" variable nil (reparse-symbol function_parameters) [4874 4883]))                          )
+                        (reparse-symbol indented_block_body) [4839 5546])
+                    ("join" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5560 5564])
+                            ("timeout" variable nil (reparse-symbol function_parameters) [5566 5573]))                          )
+                        (reparse-symbol indented_block_body) [5551 5804])
+                    ("apply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5819 5823])
+                            ("parent" variable nil (reparse-symbol function_parameters) [5825 5831])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [5833 5841]))                          
+                        :documentation "Apply the steps in this blueprint to an object.
+
+        This will apply the ``__init__`` and ``include`` methods
+        of each step, with the object as argument::
+
+            step = Step(obj)
+            ...
+            step.include(obj)
+
+        For :class:`StartStopStep` the services created
+        will also be added to the objects ``steps`` attribute.
+        ")
+                        (reparse-symbol indented_block_body) [5809 6731])
+                    ("connect_with" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6753 6757])
+                            ("other" variable nil (reparse-symbol function_parameters) [6759 6764]))                          )
+                        (reparse-symbol indented_block_body) [6736 6896])
+                    ("__getitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6917 6921])
+                            ("name" variable nil (reparse-symbol function_parameters) [6923 6927]))                          )
+                        (reparse-symbol indented_block_body) [6901 6962])
+                    ("_find_last" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6982 6986]))                          )
+                        (reparse-symbol indented_block_body) [6967 7058])
+                    ("_firstpass" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7078 7082])
+                            ("steps" variable nil (reparse-symbol function_parameters) [7084 7089]))                          )
+                        (reparse-symbol indented_block_body) [7063 7511])
+                    ("_finalize_steps" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7536 7540])
+                            ("steps" variable nil (reparse-symbol function_parameters) [7542 7547]))                          )
+                        (reparse-symbol indented_block_body) [7516 8028])
+                    ("claim_steps" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8049 8053]))                          )
+                        (reparse-symbol indented_block_body) [8033 8121])
+                    ("load_step" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8140 8144])
+                            ("step" variable nil (reparse-symbol function_parameters) [8146 8150]))                          )
+                        (reparse-symbol indented_block_body) [8126 8220])
+                    ("_debug" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8236 8240])
+                            ("msg" variable nil (reparse-symbol function_parameters) [8242 8245])
+                            ("args" variable nil (reparse-symbol function_parameters) [8247 8252]))                          )
+                        (reparse-symbol indented_block_body) [8225 8307])
+                    ("alias" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8336 8340]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [8312 8371]))                  
+                :type "class")
+                nil [1961 8371])
+            ("StepType" type
+               (:documentation "Meta-class for steps."
+                :superclasses ("type")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [8432 8443])
+                    ("requires" variable nil (reparse-symbol indented_block_body) [8448 8463])
+                    ("__new__" function (:arguments 
+                      ( ("cls" variable nil (reparse-symbol function_parameters) [8481 8484])
+                        ("name" variable nil (reparse-symbol function_parameters) [8486 8490])
+                        ("bases" variable nil (reparse-symbol function_parameters) [8492 8497])
+                        ("attrs" variable nil (reparse-symbol function_parameters) [8499 8504]))                      ) (reparse-symbol indented_block_body) [8469 8793])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8810 8814]))                          )
+                        (reparse-symbol indented_block_body) [8798 8856])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8874 8878]))                          )
+                        (reparse-symbol indented_block_body) [8861 8957]))                  
+                :type "class")
+                nil [8373 8957])
+            ("" code nil nil [8974 8984])
+            ("Step" type
+               (:documentation "A Bootstep.
+
+    The :meth:`__init__` method is called when the step
+    is bound to a parent object, and can as such be used
+    to initialize attributes in the parent object at
+    parent instantiation-time.
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [9302 9313])
+                    ("label" variable nil (reparse-symbol indented_block_body) [9382 9394])
+                    ("conditional" variable nil (reparse-symbol indented_block_body) [9472 9491])
+                    ("requires" variable nil (reparse-symbol indented_block_body) [9633 9646])
+                    ("last" variable nil (reparse-symbol indented_block_body) [9837 9849])
+                    ("enabled" variable nil (reparse-symbol indented_block_body) [9912 9926])
+                    ("__init__" function
+                       (:suite 
+                          ( ("pass" code nil (reparse-symbol indented_block_body) [9978 9982]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9945 9949])
+                            ("parent" variable nil (reparse-symbol function_parameters) [9951 9957])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [9959 9967]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9932 9983])
+                    ("include_if" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10003 10007])
+                            ("parent" variable nil (reparse-symbol function_parameters) [10009 10015]))                          
+                        :documentation "Return true if bootstep should be included.
+
+        You can define this as an optional predicate that decides whether
+        this step should be created.
+        ")
+                        (reparse-symbol indented_block_body) [9988 10225])
+                    ("instantiate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10246 10250])
+                            ("name" variable nil (reparse-symbol function_parameters) [10252 10256])
+                            ("args" variable nil (reparse-symbol function_parameters) [10258 10263])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [10265 10273]))                          )
+                        (reparse-symbol indented_block_body) [10230 10326])
+                    ("_should_include" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10351 10355])
+                            ("parent" variable nil (reparse-symbol function_parameters) [10357 10363]))                          )
+                        (reparse-symbol indented_block_body) [10331 10474])
+                    ("include" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10491 10495])
+                            ("parent" variable nil (reparse-symbol function_parameters) [10497 10503]))                          )
+                        (reparse-symbol indented_block_body) [10479 10553])
+                    ("create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10569 10573])
+                            ("parent" variable nil (reparse-symbol function_parameters) [10575 10581]))                          
+                        :documentation "Create the step.")
+                        (reparse-symbol indented_block_body) [10558 10628])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10646 10650]))                          )
+                        (reparse-symbol indented_block_body) [10633 10715])
+                    ("alias" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10744 10748]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [10720 10793])
+                    ("info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10807 10811])
+                            ("obj" variable nil (reparse-symbol function_parameters) [10813 10816]))                          )
+                        (reparse-symbol indented_block_body) [10798 10832]))                  
+                :type "class")
+                nil [8985 10832])
+            ("StartStopStep" type
+               (:documentation "Bootstep that must be started and stopped in order."
+                :superclasses ("Step")
+                :members 
+                  ( ("obj" variable nil (reparse-symbol indented_block_body) [11076 11086])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11102 11106])
+                            ("parent" variable nil (reparse-symbol function_parameters) [11108 11114]))                          )
+                        (reparse-symbol indented_block_body) [11092 11174])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11188 11192])
+                            ("parent" variable nil (reparse-symbol function_parameters) [11194 11200]))                          )
+                        (reparse-symbol indented_block_body) [11179 11259])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11274 11278])
+                            ("parent" variable nil (reparse-symbol function_parameters) [11280 11286]))                          )
+                        (reparse-symbol indented_block_body) [11264 11302])
+                    ("terminate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11321 11325])
+                            ("parent" variable nil (reparse-symbol function_parameters) [11327 11333]))                          )
+                        (reparse-symbol indented_block_body) [11307 11424])
+                    ("include" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11441 11445])
+                            ("parent" variable nil (reparse-symbol function_parameters) [11447 11453]))                          )
+                        (reparse-symbol indented_block_body) [11429 11604]))                  
+                :type "class")
+                nil [10834 11604])
+            ("ConsumerStep" type
+               (:documentation "Bootstep that starts a message consumer."
+                :superclasses ("StartStopStep")
+                :members 
+                  ( ("requires" variable nil (reparse-symbol indented_block_body) [11697 11746])
+                    ("consumers" variable nil (reparse-symbol indented_block_body) [11751 11767])
+                    ("get_consumers" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11791 11795])
+                            ("channel" variable nil (reparse-symbol function_parameters) [11797 11804]))                          )
+                        (reparse-symbol indented_block_body) [11773 11866])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11881 11885])
+                            ("c" variable nil (reparse-symbol function_parameters) [11887 11888]))                          )
+                        (reparse-symbol indented_block_body) [11871 12062])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12076 12080])
+                            ("c" variable nil (reparse-symbol function_parameters) [12082 12083]))                          )
+                        (reparse-symbol indented_block_body) [12067 12115])
+                    ("shutdown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12133 12137])
+                            ("c" variable nil (reparse-symbol function_parameters) [12139 12140]))                          )
+                        (reparse-symbol indented_block_body) [12120 12173])
+                    ("_close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12189 12193])
+                            ("c" variable nil (reparse-symbol function_parameters) [12195 12196])
+                            ("cancel_consumers" variable nil (reparse-symbol function_parameters) [12198 12214]))                          )
+                        (reparse-symbol indented_block_body) [12178 12555]))                  
+                :type "class")
+                nil [11606 12555]))          
+      :file "bootsteps.py"
+      :pointmax 12555
+      :fsize 12558
+      :lastmodtime '(22764 51938 0 0)
+      :unmatched-syntax '((NAME 8556 . 8561) (IF 8595 . 8597) (ELSE 8605 . 8609) (INDENT_BLOCK 7971 . 8028) (NEWLINE 7970 . 7971) (COLON 7969 . 7970) (TRY 7903 . 7906) (AS 7963 . 7965) (NAME 4900 . 4904) (IF 4921 . 4923) (ELSE 4934 . 4938) (INDENT_BLOCK 4640 . 4834) (NEWLINE 4639 . 4640) (COLON 4606 . 4607) (TRY 4515 . 4518) (AS 4600 . 4602) (NAME 4187 . 4192) (IF 4218 . 4220) (ELSE 4229 . 4233) (NAME 1662 . 1668) (IF 1693 . 1695) (ELSE 1705 . 1709) (FROM 491 . 495) (PERIOD 496 . 497) (FROM 442 . 446) (PERIOD 447 . 448) (FROM 385 . 389) (PERIOD 390 . 391) (FROM 330 . 334) (PERIOD 335 . 336))))
+  :file "!Users!drwrong!openProject!celery!celery!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

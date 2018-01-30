@@ -1,0 +1,74 @@
+;; Object celery/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "celery/"
+  :tables
+  (list
+    (semanticdb-table "setup.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("setuptools" include nil nil [48 91])
+            ("os" include nil nil [93 102])
+            ("re" include nil nil [103 112])
+            ("sys" include nil nil [113 123])
+            ("codecs" include nil nil [124 137])
+            ("try" code nil nil [139 288])
+            ("E_UNSUPPORTED_PYTHON" variable nil nil [289 692])
+            ("PYIMP" variable nil nil [694 710])
+            ("PY26_OR_LESS" code nil nil [711 751])
+            ("PY3" code nil nil [752 782])
+            ("PY33_OR_LESS" code nil nil [783 831])
+            ("JYTHON" variable nil nil [832 872])
+            ("PYPY_VERSION" variable nil nil [873 927])
+            ("PYPY" code nil nil [928 959])
+            ("PYPY24_ATLEAST" code nil nil [960 1016])
+            ("if" code nil nil [1018 1195])
+            ("downgrade_packages" variable nil nil [1237 1284])
+            ("orig_path" variable nil nil [1285 1308])
+            ("for" code nil nil [1309 1407])
+            ("try" code nil nil [1407 2293])
+            ("NAME" variable nil nil [2331 2346])
+            ("entrypoints" variable nil nil [2347 2363])
+            ("extra" variable nil nil [2364 2374])
+            ("classes" variable nil nil [2399 3074])
+            ("classifiers" variable nil nil [3075 3134])
+            ("re_meta" variable nil nil [3165 3211])
+            ("re_vers" variable nil nil [3212 3260])
+            ("re_doc" variable nil nil [3261 3297])
+            ("rq" function (:arguments 
+              ( ("s" variable nil (reparse-symbol function_parameters) [3307 3308]))              ) nil [3300 3337])
+            ("add_default" function (:arguments 
+              ( ("m" variable nil (reparse-symbol function_parameters) [3355 3356]))              ) nil [3339 3440])
+            ("add_version" function (:arguments 
+              ( ("m" variable nil (reparse-symbol function_parameters) [3458 3459]))              ) nil [3442 3572])
+            ("add_doc" function (:arguments 
+              ( ("m" variable nil (reparse-symbol function_parameters) [3586 3587]))              ) nil [3574 3627])
+            ("pats" variable nil nil [3628 3712])
+            ("here" variable nil nil [3713 3762])
+            ("with" code nil nil [3763 4075])
+            ("strip_comments" function (:arguments 
+              ( ("l" variable nil (reparse-symbol function_parameters) [4129 4130]))              ) nil [4110 4171])
+            ("_pip_requirement" function (:arguments 
+              ( ("req" variable nil (reparse-symbol function_parameters) [4194 4197]))              ) nil [4173 4315])
+            ("_reqs" function (:arguments 
+              ( ("f" variable nil (reparse-symbol function_parameters) [4327 4329]))              ) nil [4317 4520])
+            ("reqs" function (:arguments 
+              ( ("f" variable nil (reparse-symbol function_parameters) [4531 4533]))              ) nil [4522 4595])
+            ("install_requires" variable nil nil [4596 4634])
+            ("if" code nil nil [4635 4694])
+            ("tests_require" variable nil nil [4721 4777])
+            ("if" code nil nil [4807 4980])
+            ("console_scripts" variable nil nil [5007 5098])
+            ("extras" function (:arguments 
+              ( ("p" variable nil (reparse-symbol function_parameters) [5130 5132]))              ) nil [5119 5165])
+            ("features" variable nil nil [5184 5444])
+            ("extras_require" variable nil nil [5445 5509])
+            ("extra" variable nil nil [5510 5550])
+            ("setup" code nil nil [5567 6113]))          
+      :file "setup.py"
+      :pointmax 6114
+      :fsize 6113
+      :lastmodtime '(22222 50300 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 2302 . 2330) (COLON 2300 . 2301) (FINALLY 2293 . 2300))))
+  :file "!Users!drwrong!openProject!celery!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

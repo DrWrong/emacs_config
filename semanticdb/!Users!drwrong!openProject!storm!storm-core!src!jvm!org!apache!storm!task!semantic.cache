@@ -1,0 +1,198 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.task" package nil nil [804 834])
+            ("java.util.concurrent.ExecutorService" include nil nil [836 880])
+            ("java.util.concurrent.atomic.AtomicBoolean" include nil nil [881 930])
+            ("org.apache.storm.generated.GlobalStreamId" include nil nil [931 980])
+            ("org.apache.storm.generated.Grouping" include nil nil [981 1024])
+            ("org.apache.storm.generated.StormTopology" include nil nil [1025 1073])
+            ("org.apache.storm.hooks.ITaskHook" include nil nil [1074 1114])
+            ("org.apache.storm.metric.api.IMetric" include nil nil [1115 1158])
+            ("org.apache.storm.metric.api.IReducer" include nil nil [1159 1203])
+            ("org.apache.storm.metric.api.ICombiner" include nil nil [1204 1249])
+            ("org.apache.storm.metric.api.ReducedMetric" include nil nil [1250 1299])
+            ("org.apache.storm.metric.api.CombinedMetric" include nil nil [1300 1350])
+            ("org.apache.storm.state.ISubscribedState" include nil nil [1351 1398])
+            ("org.apache.storm.tuple.Fields" include nil nil [1399 1436])
+            ("org.apache.storm.utils.Utils" include nil nil [1437 1473])
+            ("java.util.ArrayList" include nil nil [1475 1502])
+            ("java.util.Collection" include nil nil [1503 1531])
+            ("java.util.Collections" include nil nil [1532 1561])
+            ("java.util.HashMap" include nil nil [1562 1587])
+            ("java.util.List" include nil nil [1588 1610])
+            ("java.util.Map" include nil nil [1611 1632])
+            ("java.util.Set" include nil nil [1633 1654])
+            ("org.apache.commons.lang.NotImplementedException" include nil nil [1656 1711])
+            ("org.json.simple.JSONValue" include nil nil [1712 1745])
+            ("TopologyContext" type
+               (:typemodifiers ("public")
+                :interfaces ("IMetricsContext")
+                :superclasses "WorkerTopologyContext"
+                :members 
+                  ( ("_taskId" variable
+                       (:typemodifiers ("private")
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [2237 2261])
+                    ("_openOrPrepareWasCalled" variable
+                       (:typemodifiers ("private")
+                        :type "AtomicBoolean")
+                        (reparse-symbol class_member_declaration) [2510 2556])
+                    ("TopologyContext" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("topology" variable (:type "StormTopology") (reparse-symbol formal_parameters) [2586 2608])
+                            ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [2637 2650])
+                            ("" variable (:type "Integer") (reparse-symbol formal_parameters) [2683 2690])
+                            ("" variable (:type "taskToComponent") (reparse-symbol formal_parameters) [2700 2715])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [2748 2754])
+                            ("" variable (:type "componentToSortedTasks") (reparse-symbol formal_parameters) [2771 2793])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [2826 2832])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [2838 2844])
+                            ("" variable (:type "componentToStreamToFields") (reparse-symbol formal_parameters) [2855 2880])
+                            ("stormId" variable (:type "String") (reparse-symbol formal_parameters) [2909 2923])
+                            ("codeDir" variable (:type "String") (reparse-symbol formal_parameters) [2952 2966])
+                            ("pidDir" variable (:type "String") (reparse-symbol formal_parameters) [2995 3008])
+                            ("taskId" variable (:type "Integer") (reparse-symbol formal_parameters) [3037 3051])
+                            ("workerPort" variable (:type "Integer") (reparse-symbol formal_parameters) [3080 3098])
+                            ("" variable (:type "workerTasks") (reparse-symbol formal_parameters) [3141 3152])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [3185 3191])
+                            ("" variable (:type "defaultResources") (reparse-symbol formal_parameters) [3201 3217])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [3250 3256])
+                            ("" variable (:type "userResources") (reparse-symbol formal_parameters) [3266 3279])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [3312 3318])
+                            ("" variable (:type "executorData") (reparse-symbol formal_parameters) [3328 3340])
+                            ("" variable (:type "Integer") (reparse-symbol formal_parameters) [3373 3380])
+                            ("" variable (:type "Integer") (reparse-symbol formal_parameters) [3386 3393])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [3399 3405])
+                            ("" variable (:type "registeredMetrics") (reparse-symbol formal_parameters) [3418 3435])
+                            ("openOrPrepareWasCalled" variable (:type "AtomicBoolean") (reparse-symbol formal_parameters) [3464 3500]))                          )
+                        (reparse-symbol class_member_declaration) [2563 3899])
+                    ("setAllSubscribedState" function
+                       (:arguments 
+                          ( ("obj" variable (:type "T") (reparse-symbol formal_parameters) [4485 4490]))                          
+                        :type "T")
+                        (reparse-symbol class_member_declaration) [4461 4663])
+                    ("setSubscribedState" function
+                       (:arguments 
+                          ( ("componentId" variable (:type "String") (reparse-symbol formal_parameters) [5252 5270])
+                            ("obj" variable (:type "T") (reparse-symbol formal_parameters) [5272 5277]))                          
+                        :type "T")
+                        (reparse-symbol class_member_declaration) [5231 5364])
+                    ("setSubscribedState" function
+                       (:arguments 
+                          ( ("componentId" variable (:type "String") (reparse-symbol formal_parameters) [6014 6032])
+                            ("streamId" variable (:type "String") (reparse-symbol formal_parameters) [6034 6049])
+                            ("obj" variable (:type "T") (reparse-symbol formal_parameters) [6051 6056]))                          
+                        :type "T")
+                        (reparse-symbol class_member_declaration) [5993 6110])
+                    ("getThisTaskId" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6204 6262])
+                    ("getThisComponentId" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6436 6518])
+                    ("getThisOutputFields" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("streamId" variable (:type "String") (reparse-symbol formal_parameters) [6675 6690]))                          
+                        :type "Fields")
+                        (reparse-symbol class_member_declaration) [6641 6763])
+                    ("getThisOutputFieldsForStreams" function (:constructor-flag t) (reparse-symbol class_member_declaration) [6907 7156])
+                    ("getThisStreams" function (:constructor-flag t) (reparse-symbol class_member_declaration) [7269 7351])
+                    ("getThisTaskIndex" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7613 8007])
+                    ("getThisInputFields" function (:constructor-flag t) (reparse-symbol class_member_declaration) [8196 8934])
+                    ("getThisSources" function (:constructor-flag t) (reparse-symbol class_member_declaration) [9138 9211])
+                    ("getThisTargets" function (:constructor-flag t) (reparse-symbol class_member_declaration) [9441 9514])
+                    ("setTaskData" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [9544 9555])
+                            ("data" variable (:type "Object") (reparse-symbol formal_parameters) [9557 9568]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9520 9612])
+                    ("getTaskData" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [9644 9655]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [9618 9700])
+                    ("setExecutorData" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [9734 9745])
+                            ("data" variable (:type "Object") (reparse-symbol formal_parameters) [9747 9758]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9706 9806])
+                    ("getExecutorData" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [9842 9853]))                          
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [9812 9902])
+                    ("addTaskHook" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("hook" variable (:type "ITaskHook") (reparse-symbol formal_parameters) [9932 9946]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9908 10021])
+                    ("getHooks" function (:constructor-flag t) (reparse-symbol class_member_declaration) [10056 10097])
+                    ("groupingToJSONableMap" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("grouping" variable (:type "Grouping") (reparse-symbol formal_parameters) [10157 10174]))                          )
+                        (reparse-symbol class_member_declaration) [10135 10408])
+                    ("toJSONString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [10432 12339])
+                    ("registerMetric" function
+                       (:arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [12728 12739])
+                            ("metric" variable (:type "T") (reparse-symbol formal_parameters) [12741 12749])
+                            ("timeBucketSizeInSecs" variable (:type "int") (reparse-symbol formal_parameters) [12751 12775]))                          
+                        :type "T")
+                        (reparse-symbol class_member_declaration) [12711 14293])
+                    ("getRegisteredMetricByName" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [14716 14727]))                          
+                        :type "IMetric")
+                        (reparse-symbol class_member_declaration) [14675 15234])
+                    ("registerMetric" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [15348 15359])
+                            ("reducer" variable (:type "IReducer") (reparse-symbol formal_parameters) [15361 15377])
+                            ("timeBucketSizeInSecs" variable (:type "int") (reparse-symbol formal_parameters) [15379 15403]))                          
+                        :type "ReducedMetric")
+                        (reparse-symbol class_member_declaration) [15312 15499])
+                    ("registerMetric" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [15614 15625])
+                            ("combiner" variable (:type "ICombiner") (reparse-symbol formal_parameters) [15627 15645])
+                            ("timeBucketSizeInSecs" variable (:type "int") (reparse-symbol formal_parameters) [15647 15671]))                          
+                        :type "CombinedMetric")
+                        (reparse-symbol class_member_declaration) [15577 15769]))                  
+                :type "class")
+                nil [2145 15771]))          
+      :file "TopologyContext.java"
+      :pointmax 15772
+      :fsize 15771
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax '((GT 12709 . 12710) (EXTENDS 12694 . 12701) (PUBLIC 12684 . 12690) (LT 12691 . 12692) (GT 10133 . 10134) (COMMA 10125 . 10126) (PRIVATE 10100 . 10107) (LT 10118 . 10119) (GT 10054 . 10055) (PUBLIC 10027 . 10033) (LT 10044 . 10045) (RSHIFT 9438 . 9440) (COMMA 9428 . 9429) (LT 9421 . 9422) (COMMA 9416 . 9417) (PUBLIC 9399 . 9405) (LT 9409 . 9410) (GT 9136 . 9137) (COMMA 9126 . 9127) (PUBLIC 9101 . 9107) (LT 9111 . 9112) (URSHIFT 8192 . 8195) (LT 8185 . 8186) (COMMA 8179 . 8180) (LT 8172 . 8173) (COMMA 8167 . 8168) (PUBLIC 8150 . 8156) (LT 8160 . 8161) (GT 7267 . 7268) (PUBLIC 7250 . 7256) (LT 7260 . 7261) (RSHIFT 6904 . 6906) (LT 6897 . 6898) (COMMA 6891 . 6892) (PUBLIC 6874 . 6880) (LT 6884 . 6885) (GT 5991 . 5992) (EXTENDS 5967 . 5974) (PUBLIC 5957 . 5963) (LT 5964 . 5965) (GT 5229 . 5230) (EXTENDS 5205 . 5212) (PUBLIC 5195 . 5201) (LT 5202 . 5203) (GT 4459 . 4460) (EXTENDS 4435 . 4442) (PUBLIC 4425 . 4431) (LT 4432 . 4433) (IDENTIFIER 3407 . 3414) (URSHIFT 3414 . 3417) (IDENTIFIER 3395 . 3398) (LT 3398 . 3399) (IDENTIFIER 3382 . 3385) (LT 3385 . 3386) (IDENTIFIER 3369 . 3372) (LT 3372 . 3373) (IDENTIFIER 3320 . 3326) (GT 3326 . 3327) (IDENTIFIER 3308 . 3311) (LT 3311 . 3312) (IDENTIFIER 3258 . 3264) (GT 3264 . 3265) (IDENTIFIER 3246 . 3249) (LT 3249 . 3250) (IDENTIFIER 3193 . 3199) (GT 3199 . 3200) (IDENTIFIER 3181 . 3184) (LT 3184 . 3185) (GT 3139 . 3140) (IDENTIFIER 3127 . 3131) (LT 3131 . 3132) (IDENTIFIER 2846 . 2852) (RSHIFT 2852 . 2854) (IDENTIFIER 2834 . 2837) (LT 2837 . 2838) (IDENTIFIER 2822 . 2825) (LT 2825 . 2826) (RSHIFT 2768 . 2770) (IDENTIFIER 2756 . 2760) (LT 2760 . 2761) (IDENTIFIER 2744 . 2747) (LT 2747 . 2748) (IDENTIFIER 2692 . 2698) (GT 2698 . 2699) (IDENTIFIER 2679 . 2682) (LT 2682 . 2683) (SEMICOLON 2504 . 2505) (URSHIFT 2482 . 2485) (COMMA 2473 . 2474) (LT 2466 . 2467) (COMMA 2461 . 2462) (LT 2453 . 2454) (COMMA 2449 . 2450) (LT 2441 . 2442) (SEMICOLON 2424 . 2425) (GT 2409 . 2410) (COMMA 2401 . 2402) (LT 2394 . 2395) (SEMICOLON 2377 . 2378) (PAREN_BLOCK 2375 . 2377) (GT 2374 . 2375) (LT 2373 . 2374) (NEW 2360 . 2363) (EQ 2358 . 2359) (GT 2349 . 2350) (LT 2339 . 2340) (SEMICOLON 2321 . 2322) (PAREN_BLOCK 2319 . 2321) (GT 2318 . 2319) (LT 2317 . 2318) (NEW 2306 . 2309) (EQ 2304 . 2305) (GT 2292 . 2293) (COMMA 2284 . 2285) (PRIVATE 2266 . 2273) (LT 2277 . 2278))))
+  :file "!Users!drwrong!openProject!storm!storm-core!src!jvm!org!apache!storm!task!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

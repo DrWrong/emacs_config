@@ -1,0 +1,63 @@
+;; Object conf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "conf/"
+  :tables
+  (list
+    (semanticdb-table "settings.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [25 34])
+            ("BASE_DIR" variable nil nil [36 89])
+            ("SECRET_KEY" variable nil nil [90 155])
+            ("DEBUG" variable nil nil [223 235])
+            ("INSTALLED_APPS" variable nil nil [237 277])
+            ("LANGUAGE_CODE" variable nil nil [279 302])
+            ("TIME_ZONE" variable nil nil [304 331])
+            ("USE_I18N" variable nil nil [333 348])
+            ("USE_L10N" variable nil nil [350 365])
+            ("USE_TZ" variable nil nil [367 380])
+            ("EMAIL_PORT" variable nil nil [408 425])
+            ("EMAIL_HOST_USER" variable nil nil [426 458])
+            ("EMAIL_RECIPIENT_LIST" variable nil nil [495 546])
+            ("EMAIL_CC_LIST" variable nil nil [547 590])
+            ("REPORT_RECIPIENT_LIST" variable nil nil [592 647])
+            ("REPORT_CC_LIST" variable nil nil [649 693])
+            ("jj" variable nil nil [695 731])
+            ("FEEDBACK_CC_LIST" variable nil nil [782 827])
+            ("LOGGING" variable nil nil [830 2773])
+            ("EXCEL_UPLOAD_DIR" variable nil nil [2790 2847])
+            ("EXCEL_PROCESSED_FAIL_DIR" variable nil nil [2848 2919])
+            ("EXCEL_PROCESSED_OK_DIR" variable nil nil [2920 2987])
+            ("EXCEL_VAILDATE_FAILE_DIR" variable nil nil [2988 3060])
+            ("INFORMATION_SUPPLY_DOC_UPLOAD_DIR" variable nil nil [3061 3146])
+            ("EXCEL_COLUMN_NUMBER" variable nil nil [3147 3171])
+            ("IMPORT_EXCEL_ALLOW_STATUS" variable nil nil [3173 3242])
+            ("IMPORT_EXCEL_PROCESS_TIME_FORMAT" variable nil nil [3243 3294])
+            ("SERVER_PORT" variable nil nil [3375 3394])
+            ("SERVER_WORKERS" variable nil nil [3395 3414])
+            ("DM303_PORT" variable nil nil [3416 3434])
+            ("REMOTE_FILE_SERVER" variable nil nil [3436 3537])
+            ("FEEDBACK_FILE_SERVER" variable nil nil [3539 3642])
+            ("DATABASES" variable nil nil [3643 3900])
+            ("ALI_ACCOUNT_EMAIL" variable nil nil [3902 3943])
+            ("ALI_ACCOUNT_NAME" variable nil nil [3944 3975])
+            ("SP_ID" variable nil nil [3977 3993])
+            ("SP_KEY" variable nil nil [3994 4037])
+            ("SP_CHARGE_URL" variable nil nil [4038 4099])
+            ("SP_QUERY_URL" variable nil nil [4100 4157])
+            ("SOS" variable nil nil [4159 4166])
+            ("WECHAT" variable nil nil [4167 4177])
+            ("SOSEXTRA" variable nil nil [4178 4190])
+            ("WECHATEXTRA" variable nil nil [4191 4206])
+            ("CEOTRY" variable nil nil [4207 4217])
+            ("ALIPAY_PROCESS_PRODUCTS" variable nil nil [4219 4253])
+            ("SEND_MAIL_PROUDCTS" variable nil nil [4254 4311])
+            ("PRODUCER_SLEEP_TIME" variable nil nil [4440 4463]))          
+      :file "settings.py"
+      :pointmax 4464
+      :fsize 4651
+      :lastmodtime '(22716 57245 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_aliserver!conf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

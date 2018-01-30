@@ -1,0 +1,99 @@
+;; Object backends/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "backends/"
+  :tables
+  (list
+    (semanticdb-table "smtp.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"SMTP email backend class.\"\"\"" code nil nil [1 32])
+            ("smtplib" include nil nil [33 47])
+            ("ssl" include nil nil [48 58])
+            ("threading" include nil nil [59 75])
+            ("django.conf" include nil nil [77 109])
+            ("django.core.mail.backends.base" include nil nil [110 169])
+            ("django.core.mail.message" include nil nil [170 223])
+            ("django.core.mail.utils" include nil nil [224 267])
+            ("EmailBackend" type
+               (:documentation "
+    A wrapper that manages the SMTP network connection.
+    "
+                :superclasses ("BaseEmailBackend")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [625 688])
+                            ("self" code nil (reparse-symbol indented_block_body) [697 736])
+                            ("self" code nil (reparse-symbol indented_block_body) [745 784])
+                            ("username" code nil (reparse-symbol indented_block_body) [859 867])
+                            ("password" code nil (reparse-symbol indented_block_body) [946 954])
+                            ("use_tls" code nil (reparse-symbol indented_block_body) [1025 1032])
+                            ("use_ssl" code nil (reparse-symbol indented_block_body) [1103 1110])
+                            ("timeout" code nil (reparse-symbol indented_block_body) [1181 1188])
+                            ("ssl_keyfile" code nil (reparse-symbol indented_block_body) [1271 1282])
+                            ("ssl_certfile" code nil (reparse-symbol indented_block_body) [1368 1380])
+                            ("if" code nil (reparse-symbol indented_block_body) [1389 1586])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1594 1616])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1625 1655]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [397 401])
+                            ("host" variable nil (reparse-symbol function_parameters) [403 407])
+                            ("port" variable nil (reparse-symbol function_parameters) [414 418])
+                            ("username" variable nil (reparse-symbol function_parameters) [425 433])
+                            ("password" variable nil (reparse-symbol function_parameters) [440 448])
+                            ("use_tls" variable nil (reparse-symbol function_parameters) [472 479])
+                            ("fail_silently" variable nil (reparse-symbol function_parameters) [486 499])
+                            ("use_ssl" variable nil (reparse-symbol function_parameters) [507 514])
+                            ("timeout" variable nil (reparse-symbol function_parameters) [521 528])
+                            ("ssl_keyfile" variable nil (reparse-symbol function_parameters) [552 563])
+                            ("ssl_certfile" variable nil (reparse-symbol function_parameters) [570 582])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [606 614]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [384 1656])
+                    ("open" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1670 1674]))                          
+                        :documentation "
+        Ensures we have a connection to the email server. Returns whether or
+        not a new connection was required (True or False).
+        ")
+                        (reparse-symbol indented_block_body) [1661 3183])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3198 3202]))                          
+                        :documentation "Closes the connection to the email server.")
+                        (reparse-symbol indented_block_body) [3188 3856])
+                    ("send_messages" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3879 3883])
+                            ("email_messages" variable nil (reparse-symbol function_parameters) [3885 3899]))                          
+                        :documentation "
+        Sends one or more EmailMessage objects and returns the number of email
+        messages sent.
+        ")
+                        (reparse-symbol indented_block_body) [3861 4562])
+                    ("_send" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4577 4581])
+                            ("email_message" variable nil (reparse-symbol function_parameters) [4583 4596]))                          
+                        :documentation "A helper method that does the actual sending.")
+                        (reparse-symbol indented_block_body) [4567 5260]))                  
+                :type "class")
+                nil [270 5260]))          
+      :file "smtp.py"
+      :pointmax 5260
+      :fsize 5259
+      :lastmodtime '(22408 61900 0 0)
+      :unmatched-syntax '((NAME 1962 . 1978) (IF 1998 . 2000) (ELSE 2014 . 2018) (NAME 1291 . 1295) (IF 1339 . 1341) (ELSE 1363 . 1367) (NAME 1197 . 1201) (IF 1243 . 1245) (ELSE 1266 . 1270) (NAME 1119 . 1123) (IF 1157 . 1159) (ELSE 1176 . 1180) (NAME 1041 . 1045) (IF 1079 . 1081) (ELSE 1098 . 1102) (NAME 963 . 967) (IF 1001 . 1003) (ELSE 1020 . 1024) (NAME 876 . 880) (IF 921 . 923) (ELSE 941 . 945) (NAME 793 . 797) (IF 834 . 836) (ELSE 854 . 858)))
+    (semanticdb-table "base.py"
+      :file "base.py"
+      :fsize 1573
+      :lastmodtime '(22174 22700 0 0)))
+  :file "!Users!drwrong!openProject!django!django!core!mail!backends!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

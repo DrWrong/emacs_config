@@ -1,0 +1,281 @@
+;; Object sos_aliserver/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sos_aliserver/"
+  :tables
+  (list
+    (semanticdb-table "utils.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("hmac" include nil nil [26 37])
+            ("django.conf" include nil nil [39 71])
+            ("xlwt.Workbook" include nil nil [72 106])
+            ("xlrd" include nil nil [107 137])
+            ("generate_validate" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [162 167]))              ) nil [140 316])
+            ("XlwtWrapper" type
+               (:superclasses ("object")
+                :members 
+                  ( ("'''对xlwt库做一层封装
+    '''" code nil (reparse-symbol indented_block_body) [349 371])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [414 438])
+                            ("self" variable nil (reparse-symbol indented_block_body) [447 483])
+                            ("self" variable nil (reparse-symbol indented_block_body) [492 566])
+                            ("self" variable nil (reparse-symbol indented_block_body) [575 595]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [389 393])
+                            ("filename" variable nil (reparse-symbol function_parameters) [395 403]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [376 596])
+                    ("append" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [612 616])
+                            ("cell_list" variable nil (reparse-symbol function_parameters) [618 627]))                          )
+                        (reparse-symbol indented_block_body) [601 777])
+                    ("__setitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [798 802])
+                            ("key" variable nil (reparse-symbol function_parameters) [804 807])
+                            ("value" variable nil (reparse-symbol function_parameters) [809 814]))                          )
+                        (reparse-symbol indented_block_body) [782 923])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [937 941]))                          )
+                        (reparse-symbol indented_block_body) [928 980]))                  
+                :type "class")
+                nil [318 980])
+            ("XlrdWrapper" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("wb" variable nil (reparse-symbol indented_block_body) [1051 1079])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1088 1118]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1026 1030])
+                            ("filename" variable nil (reparse-symbol function_parameters) [1032 1040]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1013 1119])
+                    ("__getattr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1140 1144])
+                            ("name" variable nil (reparse-symbol function_parameters) [1146 1150]))                          )
+                        (reparse-symbol indented_block_body) [1124 1191])
+                    ("__getitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1212 1216])
+                            ("name" variable nil (reparse-symbol function_parameters) [1218 1222]))                          )
+                        (reparse-symbol indented_block_body) [1196 1349])
+                    ("iter_rows" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1368 1372])
+                            ("range_expression" variable nil (reparse-symbol function_parameters) [1374 1390]))                          )
+                        (reparse-symbol indented_block_body) [1354 1861]))                  
+                :type "class")
+                nil [982 1861]))          
+      :file "utils.py"
+      :pointmax 1861
+      :fsize 1874
+      :lastmodtime '(22738 7404 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 40])
+            ("datetime" include nil nil [42 71])
+            ("time" include nil nil [72 93])
+            ("django.db" include nil nil [95 123])
+            ("django.conf" include nil nil [124 156])
+            ("domob_thrift.sos.aliserver.ttypes" include nil nil [158 211])
+            ("AliBatch" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("batch_no" variable nil (reparse-symbol indented_block_body) [248 302])
+                    ("amount" variable nil (reparse-symbol indented_block_body) [307 354])
+                    ("bill_num" variable nil (reparse-symbol indented_block_body) [359 408])
+                    ("success_amount" variable nil (reparse-symbol indented_block_body) [413 468])
+                    ("success_num" variable nil (reparse-symbol indented_block_body) [473 525])
+                    ("status" variable nil (reparse-symbol indented_block_body) [530 582])
+                    ("process_time" variable nil (reparse-symbol indented_block_body) [587 640])
+                    ("dt" variable nil (reparse-symbol indented_block_body) [645 688])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [714 729])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [738 760]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [694 761])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [775 779])
+                            ("args" variable nil (reparse-symbol function_parameters) [781 786])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [788 796]))                          )
+                        (reparse-symbol indented_block_body) [766 998]))                  
+                :type "class")
+                nil [214 998])
+            ("AliProcess" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("dt" variable nil (reparse-symbol indented_block_body) [1085 1120])
+                    ("product" variable nil (reparse-symbol indented_block_body) [1125 1156])
+                    ("original_id" variable nil (reparse-symbol indented_block_body) [1161 1196])
+                    ("status" variable nil (reparse-symbol indented_block_body) [1201 1240])
+                    ("account" variable nil (reparse-symbol indented_block_body) [1245 1300])
+                    ("name" variable nil (reparse-symbol indented_block_body) [1305 1357])
+                    ("amount" variable nil (reparse-symbol indented_block_body) [1362 1392])
+                    ("note" variable nil (reparse-symbol indented_block_body) [1397 1448])
+                    ("batch_no" variable nil (reparse-symbol indented_block_body) [1453 1507])
+                    ("fail_reason" variable nil (reparse-symbol indented_block_body) [1512 1570])
+                    ("ali_series_number" variable nil (reparse-symbol indented_block_body) [1575 1639])
+                    ("create_time" variable nil (reparse-symbol indented_block_body) [1644 1688])
+                    ("process_time" variable nil (reparse-symbol indented_block_body) [1693 1738])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [1764 1779])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [1788 1812]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1744 1813])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1827 1831])
+                            ("args" variable nil (reparse-symbol function_parameters) [1833 1838])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1840 1848]))                          )
+                        (reparse-symbol indented_block_body) [1818 2076])
+                    ("ext_orderid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2111 2115]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2081 2213])
+                    ("product_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2249 2253]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2218 2325])
+                    ("build_batch_number" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2353 2357])
+                            ("process_datetime" variable nil (reparse-symbol function_parameters) [2359 2375]))                          )
+                        (reparse-symbol indented_block_body) [2330 2516]))                  
+                :type "class")
+                nil [1000 2516]))          
+      :file "models.py"
+      :pointmax 2516
+      :fsize 2515
+      :lastmodtime '(22738 14337 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(21979 13474 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "handler.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+接口实现
+\"\"\"" code nil nil [26 38])
+            ("json" include nil nil [40 51])
+            ("logging" include nil nil [52 81])
+            ("os" include nil nil [82 91])
+            ("time" include nil nil [92 113])
+            ("traceback" include nil nil [114 130])
+            ("django.conf" include nil nil [132 164])
+            ("django.core.exceptions" include nil nil [165 218])
+            ("domob_pyutils.statscol" include nil nil [220 260])
+            ("" code nil nil [307 398])
+            ("sos_aliserver.forms.file_upload_handler" include nil nil [400 469])
+            ("sos_aliserver.forms.information_supply_form" include nil nil [470 547])
+            ("sos_aliserver.models" include nil nil [548 591])
+            ("django.db" include nil nil [592 635])
+            ("django.db.utils" include nil nil [636 678])
+            ("Handler" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [694 748]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [722 726]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [709 792])
+                    ("charge_notify" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [815 819])
+                            ("header" variable nil (reparse-symbol function_parameters) [821 827])
+                            ("notify" variable nil (reparse-symbol function_parameters) [829 835]))                          
+                        :documentation "
+        提交兑换数据
+        ")
+                        (reparse-symbol indented_block_body) [797 1583])
+                    ("file_import_process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1612 1616])
+                            ("header" variable nil (reparse-symbol function_parameters) [1618 1624])
+                            ("hostname" variable nil (reparse-symbol function_parameters) [1626 1634])
+                            ("remote_file_path" variable nil (reparse-symbol function_parameters) [1636 1652])
+                            ("filename" variable nil (reparse-symbol function_parameters) [1654 1662]))                          
+                        :documentation "
+        导入充值结果
+        ")
+                        (reparse-symbol indented_block_body) [1588 2505])
+                    ("information_supply" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2533 2537])
+                            ("header" variable nil (reparse-symbol function_parameters) [2539 2545])
+                            ("hostname" variable nil (reparse-symbol function_parameters) [2547 2555])
+                            ("remote_file_path" variable nil (reparse-symbol function_parameters) [2557 2573])
+                            ("filename" variable nil (reparse-symbol function_parameters) [2575 2583]))                          )
+                        (reparse-symbol indented_block_body) [2510 3074])
+                    ("bill_status_query" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3101 3105])
+                            ("header" variable nil (reparse-symbol function_parameters) [3107 3113])
+                            ("product" variable nil (reparse-symbol function_parameters) [3115 3122])
+                            ("original_id" variable nil (reparse-symbol function_parameters) [3124 3135]))                          
+                        :documentation "
+        查询订单状态
+        ")
+                        (reparse-symbol indented_block_body) [3079 4057])
+                    ("_move_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4077 4081])
+                            ("filename" variable nil (reparse-symbol function_parameters) [4083 4091])
+                            ("dest_dir" variable nil (reparse-symbol function_parameters) [4093 4101]))                          
+                        :documentation "
+        move处理后的excel文件
+        ")
+                        (reparse-symbol indented_block_body) [4062 4531]))                  
+                :type "class")
+                nil [681 4531]))          
+      :file "handler.py"
+      :pointmax 4531
+      :fsize 4684
+      :lastmodtime '(22738 7404 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_aliserver!lib!sos_aliserver!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

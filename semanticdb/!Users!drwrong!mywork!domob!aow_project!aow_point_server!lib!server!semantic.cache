@@ -1,0 +1,338 @@
+;; Object server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "server/"
+  :tables
+  (list
+    (semanticdb-table "handler.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [39 78])
+            ("logging" include nil nil [80 94])
+            ("time" include nil nil [95 106])
+            ("domob_pyutils.statscol" include nil nil [108 148])
+            ("domob_pyutils.func_stats" include nil nil [149 196])
+            ("server.point" include nil nil [197 227])
+            ("send_data" include nil nil [228 258])
+            ("utils.utils_fromatdata" include nil nil [259 304])
+            ("ServerHandler" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [373 429])
+                            ("self" variable nil (reparse-symbol indented_block_body) [438 463])
+                            ("self" variable nil (reparse-symbol indented_block_body) [472 499])
+                            ("self" variable nil (reparse-symbol indented_block_body) [508 522]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [353 357])
+                            ("cfg" variable nil (reparse-symbol function_parameters) [359 362]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [340 523])
+                    ("addUserPoint" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [561 565])
+                            ("header" variable nil (reparse-symbol function_parameters) [567 573])
+                            ("pub_userid" variable nil (reparse-symbol function_parameters) [575 585])
+                            ("pub_mediaid" variable nil (reparse-symbol function_parameters) [587 598])
+                            ("deviceid" variable nil (reparse-symbol function_parameters) [600 608])
+                            ("point" variable nil (reparse-symbol function_parameters) [610 615])
+                            ("imei" variable nil (reparse-symbol function_parameters) [617 621])
+                            ("android_id" variable nil (reparse-symbol function_parameters) [623 633]))                          
+                        :decorators 
+                          ( ("func_stats" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [528 1420]))                  
+                :type "class")
+                nil [307 1420]))          
+      :file "handler.py"
+      :pointmax 1420
+      :fsize 1431
+      :lastmodtime '(22699 62050 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "point.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [39 78])
+            ("logging" include nil nil [80 94])
+            ("time" include nil nil [95 106])
+            ("django.db" include nil nil [108 149])
+            ("django.db" include nil nil [150 183])
+            ("domob_pyutils.statscol" include nil nil [184 224])
+            ("server.aow_userid" include nil nil [225 264])
+            ("Point" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [329 385])
+                            ("self" variable nil (reparse-symbol indented_block_body) [394 414])
+                            ("self" code nil (reparse-symbol indented_block_body) [423 458])
+                            ("self" variable nil (reparse-symbol indented_block_body) [467 497])
+                            ("self" variable nil (reparse-symbol indented_block_body) [506 549]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [306 310])
+                            ("config" variable nil (reparse-symbol function_parameters) [312 318]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [293 550])
+                    ("addUserPoint" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("transaction.atomic" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [596 600])
+                            ("pub_userid" variable nil (reparse-symbol function_parameters) [602 612])
+                            ("pub_mediaid" variable nil (reparse-symbol function_parameters) [614 625])
+                            ("deviceid" variable nil (reparse-symbol function_parameters) [627 635])
+                            ("point" variable nil (reparse-symbol function_parameters) [637 642])
+                            ("imei" variable nil (reparse-symbol function_parameters) [644 648])
+                            ("android_id" variable nil (reparse-symbol function_parameters) [650 660]))                          
+                        :documentation "
+        为用户增加积分
+        TODO:
+
+        这段代码本来想保证事务性，但异常全catch了，如何保证事务性？？
+
+        TOO MANY argument
+        ")
+                        (reparse-symbol indented_block_body) [555 1688])
+                    ("updateOwUserPoint" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1715 1719])
+                            ("owuserid" variable nil (reparse-symbol function_parameters) [1721 1729])
+                            ("mediaid" variable nil (reparse-symbol function_parameters) [1731 1738])
+                            ("deviceid" variable nil (reparse-symbol function_parameters) [1740 1748])
+                            ("point" variable nil (reparse-symbol function_parameters) [1750 1755]))                          
+                        :documentation "为用户增加积分")
+                        (reparse-symbol indented_block_body) [1693 2344])
+                    ("getOwUserId" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2365 2369])
+                            ("pub_mediaid" variable nil (reparse-symbol function_parameters) [2371 2382])
+                            ("pub_userid" variable nil (reparse-symbol function_parameters) [2384 2394])
+                            ("imei" variable nil (reparse-symbol function_parameters) [2396 2400])
+                            ("android_id" variable nil (reparse-symbol function_parameters) [2402 2412]))                          
+                        :documentation "
+        获取用户id
+        ")
+                        (reparse-symbol indented_block_body) [2349 2857]))                  
+                :type "class")
+                nil [267 2857]))          
+      :file "point.py"
+      :pointmax 2857
+      :fsize 2970
+      :lastmodtime '(22783 1759 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "aow_userid.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("time" include nil nil [18 29])
+            ("django.db" include nil nil [30 71])
+            ("server.db.models" include nil nil [72 117])
+            ("AowUserid" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [177 204])
+                            ("self" code nil (reparse-symbol indented_block_body) [213 244]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [162 166]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [149 245])
+                    ("getOwUserid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [266 270])
+                            ("mediaid" variable nil (reparse-symbol function_parameters) [272 279])
+                            ("userid" variable nil (reparse-symbol function_parameters) [281 287])
+                            ("imei" variable nil (reparse-symbol function_parameters) [289 293])
+                            ("android_id" variable nil (reparse-symbol function_parameters) [295 305]))                          
+                        :documentation "根据不同维度的设备号，映射到唯一的积分墙自主的userid
+
+        Args:
+         mediaid 媒体id
+         userid 媒体设置的用户id
+         userid:
+         mediaid:
+         imei
+         android_id
+        Returns:
+         userid - int 非法时返回的时复数
+        ")
+                        (reparse-symbol indented_block_body) [250 929])
+                    ("addOwUserid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [950 954])
+                            ("mediaid" variable nil (reparse-symbol function_parameters) [956 963])
+                            ("userid" variable nil (reparse-symbol function_parameters) [965 971])
+                            ("imei" variable nil (reparse-symbol function_parameters) [973 977])
+                            ("android_id" variable nil (reparse-symbol function_parameters) [979 989]))                          
+                        :documentation "如果没有查找到或者查找过程出错，则在ow_user_profile新增一条记录
+
+        Args:
+          mediaid 媒体id
+          userid 媒体设置的用户id
+        ")
+                        (reparse-symbol indented_block_body) [934 1569])
+                    ("__getOwUserIdByUserid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1600 1604])
+                            ("mediaid" variable nil (reparse-symbol function_parameters) [1606 1613])
+                            ("userid" variable nil (reparse-symbol function_parameters) [1615 1621]))                          )
+                        (reparse-symbol indented_block_body) [1574 1759])
+                    ("__getOwUserIdByImei" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1788 1792])
+                            ("mediaid" variable nil (reparse-symbol function_parameters) [1794 1801])
+                            ("imei" variable nil (reparse-symbol function_parameters) [1803 1807]))                          )
+                        (reparse-symbol indented_block_body) [1764 1941])
+                    ("__getOwUserIdByAndroidId" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1975 1979])
+                            ("mediaid" variable nil (reparse-symbol function_parameters) [1981 1988])
+                            ("android_id" variable nil (reparse-symbol function_parameters) [1990 2000]))                          )
+                        (reparse-symbol indented_block_body) [1946 2146])
+                    ("__queryDB" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2165 2169])
+                            ("sql" variable nil (reparse-symbol function_parameters) [2171 2174])
+                            ("params" variable nil (reparse-symbol function_parameters) [2176 2183]))                          )
+                        (reparse-symbol indented_block_body) [2151 2388]))                  
+                :type "class")
+                nil [120 2388]))          
+      :file "aow_userid.py"
+      :pointmax 2388
+      :fsize 2563
+      :lastmodtime '(22699 62050 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "send_data.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [26 40])
+            ("domob_pyutils.statscol" include nil nil [42 82])
+            ("domob_pyutils.thriftext.TThriftClientPool" include nil nil [83 154])
+            ("domob_thrift.common.ttypes" include nil nil [155 207])
+            ("domob_thrift.aow.event.EventServer" include nil nil [208 261])
+            ("django.conf" include nil nil [263 295])
+            ("SendData" type
+               (:documentation "
+        发送数据到下游aow_data_sensorsanalytics服务
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [413 469])
+                            ("self" variable nil (reparse-symbol indented_block_body) [478 739])
+                            ("self" variable nil (reparse-symbol indented_block_body) [748 777])
+                            ("self" code nil (reparse-symbol indented_block_body) [786 860]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [398 402]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [385 861])
+                    ("send" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [875 879])
+                            ("data" variable nil (reparse-symbol function_parameters) [881 885]))                          )
+                        (reparse-symbol indented_block_body) [866 1238]))                  
+                :type "class")
+                nil [298 1238]))          
+      :file "send_data.py"
+      :pointmax 1238
+      :fsize 1255
+      :lastmodtime '(22699 62050 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 1096 . 1218) (NEWLINE 1095 . 1096) (COLON 1094 . 1095) (TRY 896 . 899) (AS 1090 . 1092)))
+    (semanticdb-table "server_main.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [26 40])
+            ("sys" include nil nil [41 51])
+            ("thrift.transport" include nil nil [53 89])
+            ("thrift.transport" include nil nil [90 129])
+            ("thrift.protocol" include nil nil [130 173])
+            ("thrift.server" include nil nil [174 207])
+            ("thrift.server.TNonblockingServer" include nil nil [208 271])
+            ("domob_pyutils.statscol" include nil nil [273 313])
+            ("server.handler" include nil nil [314 359])
+            ("domob_thrift.aow.pointserver" include nil nil [360 412])
+            ("django.db" include nil nil [413 456])
+            ("HandlerWrapper" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [530 552]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [506 510])
+                            ("handler" variable nil (reparse-symbol function_parameters) [512 519]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [493 553])
+                    ("__getattr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [574 578])
+                            ("attr" variable nil (reparse-symbol function_parameters) [580 584]))                          )
+                        (reparse-symbol indented_block_body) [558 662]))                  
+                :type "class")
+                nil [459 662])
+            ("ServerMain" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [727 783])
+                            ("self" variable nil (reparse-symbol indented_block_body) [792 806])
+                            ("sname" variable nil (reparse-symbol indented_block_body) [815 854])
+                            ("self" variable nil (reparse-symbol indented_block_body) [863 881])
+                            ("self" variable nil (reparse-symbol indented_block_body) [890 930])
+                            ("self" variable nil (reparse-symbol indented_block_body) [939 988])
+                            ("framed" variable nil (reparse-symbol indented_block_body) [997 1026])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1035 1099])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1108 1126])
+                            ("if" code nil (reparse-symbol indented_block_body) [1135 1192])
+                            ("self" code nil (reparse-symbol indented_block_body) [1200 1316]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [707 711])
+                            ("cfg" variable nil (reparse-symbol function_parameters) [713 716]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [694 1317])
+                    ("get_servertp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1339 1343])
+                            ("processor" variable nil (reparse-symbol function_parameters) [1345 1354])
+                            ("transport" variable nil (reparse-symbol function_parameters) [1356 1365])
+                            ("tfactory" variable nil (reparse-symbol function_parameters) [1367 1375])
+                            ("pfactory" variable nil (reparse-symbol function_parameters) [1377 1385])
+                            ("tp" variable nil (reparse-symbol function_parameters) [1387 1389])
+                            ("threads" variable nil (reparse-symbol function_parameters) [1412 1419]))                          )
+                        (reparse-symbol indented_block_body) [1322 2021])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2034 2038]))                          )
+                        (reparse-symbol indented_block_body) [2026 2890]))                  
+                :type "class")
+                nil [664 2890]))          
+      :file "server_main.py"
+      :pointmax 2890
+      :fsize 2907
+      :lastmodtime '(22699 62050 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_point_server!lib!server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

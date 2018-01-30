@@ -1,0 +1,291 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.metric.api" package nil nil [804 840])
+            ("CountMetric" type
+               (:typemodifiers ("public")
+                :interfaces ("IMetric")
+                :members 
+                  ( ("_value" variable (:type "long") (reparse-symbol class_member_declaration) [892 908])
+                    ("CountMetric" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [914 942])
+                    ("incr" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [952 996])
+                    ("incrBy" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("incrementBy" variable (:type "long") (reparse-symbol formal_parameters) [1021 1037]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1002 1077])
+                    ("getValueAndReset" function
+                       (:typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [1083 1190]))                  
+                :type "class")
+                nil [842 1192]))          
+      :file "CountMetric.java"
+      :pointmax 1194
+      :fsize 1192
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.metric.api" package nil nil [804 840])
+            ("org.apache.commons.lang.StringUtils" include nil nil [842 885])
+            ("org.apache.storm.task.IErrorReporter" include nil nil [886 930])
+            ("org.apache.storm.task.TopologyContext" include nil nil [931 976])
+            ("java.util.Collection" include nil nil [977 1005])
+            ("java.util.Map" include nil nil [1006 1027])
+            ("java.util.Objects" include nil nil [1028 1053])
+            ("IMetricsConsumer" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("TaskInfo" type
+                       (:typemodifiers ("public" "static")
+                        :members 
+                          ( ("TaskInfo" function
+                               (:constructor-flag t
+                                :typemodifiers ("public"))
+                                (reparse-symbol class_member_declaration) [1134 1154])
+                            ("TaskInfo" function
+                               (:constructor-flag t
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("srcWorkerHost" variable (:type "String") (reparse-symbol formal_parameters) [1179 1199])
+                                    ("srcWorkerPort" variable (:type "int") (reparse-symbol formal_parameters) [1201 1218])
+                                    ("srcComponentId" variable (:type "String") (reparse-symbol formal_parameters) [1220 1241])
+                                    ("srcTaskId" variable (:type "int") (reparse-symbol formal_parameters) [1243 1256])
+                                    ("timestamp" variable (:type "long") (reparse-symbol formal_parameters) [1258 1272])
+                                    ("updateIntervalSecs" variable (:type "int") (reparse-symbol formal_parameters) [1274 1296]))                                  )
+                                (reparse-symbol class_member_declaration) [1163 1596])
+                            ("srcWorkerHost" variable
+                               (:typemodifiers ("public")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [1605 1633])
+                            ("srcWorkerPort" variable
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [1642 1667])
+                            ("srcComponentId" variable
+                               (:typemodifiers ("public")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [1676 1705])
+                            ("srcTaskId" variable
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [1715 1736])
+                            ("timestamp" variable
+                               (:typemodifiers ("public")
+                                :type "long")
+                                (reparse-symbol class_member_declaration) [1746 1768])
+                            ("updateIntervalSecs" variable
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [1777 1807]))                          
+                        :type "class")
+                        (reparse-symbol interface_member_declaration) [1095 1814])
+                    ("DataPoint" type
+                       (:typemodifiers ("public" "static")
+                        :members 
+                          ( ("DataPoint" function
+                               (:constructor-flag t
+                                :typemodifiers ("public"))
+                                (reparse-symbol class_member_declaration) [1938 1959])
+                            ("DataPoint" function
+                               (:constructor-flag t
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [1985 1996])
+                                    ("value" variable (:type "Object") (reparse-symbol formal_parameters) [1998 2010]))                                  )
+                                (reparse-symbol class_member_declaration) [1968 2085])
+                            ("toString" function
+                               (:typemodifiers ("public")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [2112 2201])
+                            ("name" variable
+                               (:typemodifiers ("public")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [2210 2229])
+                            ("value" variable
+                               (:typemodifiers ("public")
+                                :type "Object")
+                                (reparse-symbol class_member_declaration) [2239 2259])
+                            ("equals" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("o" variable (:type "Object") (reparse-symbol formal_parameters) [2309 2317]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [2287 2581])
+                            ("hashCode" function
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [2609 2805]))                          
+                        :type "class")
+                        (reparse-symbol interface_member_declaration) [1898 2811])
+                    ("prepare" function
+                       (:arguments 
+                          ( ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [2830 2843])
+                            ("registrationArgument" variable (:type "Object") (reparse-symbol formal_parameters) [2845 2872])
+                            ("context" variable (:type "TopologyContext") (reparse-symbol formal_parameters) [2874 2897])
+                            ("errorReporter" variable (:type "IErrorReporter") (reparse-symbol formal_parameters) [2899 2927]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [2817 2929])
+                    ("handleDataPoints" function
+                       (:arguments 
+                          ( ("taskInfo" variable (:type "TaskInfo") (reparse-symbol formal_parameters) [2956 2973])
+                            ("" variable (:type "dataPoints") (reparse-symbol formal_parameters) [2997 3007]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [2934 3009])
+                    ("cleanup" function (:type "void") (reparse-symbol interface_member_declaration) [3014 3029]))                  
+                :type "interface")
+                nil [1055 3031]))          
+      :file "IMetricsConsumer.java"
+      :pointmax 3032
+      :fsize 3031
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax '((GT 2995 . 2996) (IDENTIFIER 2975 . 2985) (LT 2985 . 2986)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.metric.api" package nil nil [804 840])
+            ("StateMetric" type
+               (:typemodifiers ("public")
+                :interfaces ("IMetric")
+                :members 
+                  ( ("_obj" variable
+                       (:typemodifiers ("private")
+                        :type "IStatefulObject")
+                        (reparse-symbol class_member_declaration) [892 921])
+                    ("StateMetric" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("obj" variable (:type "IStatefulObject") (reparse-symbol formal_parameters) [946 965]))                          )
+                        (reparse-symbol class_member_declaration) [927 994])
+                    ("getValueAndReset" function
+                       (:typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [1014 1086]))                  
+                :type "class")
+                nil [842 1088]))          
+      :file "StateMetric.java"
+      :pointmax 1089
+      :fsize 1088
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.metric.api" package nil nil [804 840])
+            ("AssignableMetric" type
+               (:typemodifiers ("public")
+                :interfaces ("IMetric")
+                :members 
+                  ( ("_value" variable (:type "Object") (reparse-symbol class_member_declaration) [897 911])
+                    ("AssignableMetric" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("value" variable (:type "Object") (reparse-symbol formal_parameters) [941 953]))                          )
+                        (reparse-symbol class_member_declaration) [917 986])
+                    ("setValue" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("value" variable (:type "Object") (reparse-symbol formal_parameters) [1013 1025]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [992 1058])
+                    ("getValueAndReset" function
+                       (:typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [1064 1127]))                  
+                :type "class")
+                nil [842 1129]))          
+      :file "AssignableMetric.java"
+      :pointmax 1130
+      :fsize 1129
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.metric.api" package nil nil [804 840])
+            ("org.apache.storm.metric.api.IMetric" include nil nil [842 885])
+            ("java.util.HashMap" include nil nil [886 911])
+            ("java.util.Map" include nil nil [912 933])
+            ("MultiCountMetric" type
+               (:typemodifiers ("public")
+                :interfaces ("IMetric")
+                :members 
+                  ( ("MultiCountMetric" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [1046 1079])
+                    ("scope" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("key" variable (:type "String") (reparse-symbol formal_parameters) [1114 1124]))                          
+                        :type "CountMetric")
+                        (reparse-symbol class_member_declaration) [1089 1286])
+                    ("getValueAndReset" function
+                       (:typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [1292 1529]))                  
+                :type "class")
+                nil [935 1531]))          
+      :file "MultiCountMetric.java"
+      :pointmax 1532
+      :fsize 1531
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax '((SEMICOLON 1039 . 1040) (PAREN_BLOCK 1037 . 1039) (GT 1036 . 1037) (LT 1035 . 1036) (NEW 1024 . 1027) (EQ 1022 . 1023) (GT 1013 . 1014) (COMMA 1000 . 1001) (IDENTIFIER 990 . 993) (LT 993 . 994)))
+    (semanticdb-table "semanticdb-table"
+      :file "IMetric.java"
+      :fsize 1293
+      :lastmodtime '(22735 18816 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.metric.api" package nil nil [804 840])
+            ("org.apache.storm.metric.api.IMetric" include nil nil [842 885])
+            ("java.util.HashMap" include nil nil [886 911])
+            ("java.util.Map" include nil nil [912 933])
+            ("MultiReducedMetric" type
+               (:typemodifiers ("public")
+                :interfaces ("IMetric")
+                :members 
+                  ( ("_reducer" variable (:type "IReducer") (reparse-symbol class_member_declaration) [1049 1067])
+                    ("MultiReducedMetric" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("reducer" variable (:type "IReducer") (reparse-symbol formal_parameters) [1099 1115]))                          )
+                        (reparse-symbol class_member_declaration) [1073 1152])
+                    ("scope" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("key" variable (:type "String") (reparse-symbol formal_parameters) [1189 1199]))                          
+                        :type "ReducedMetric")
+                        (reparse-symbol class_member_declaration) [1162 1373])
+                    ("getValueAndReset" function
+                       (:typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [1379 1696]))                  
+                :type "class")
+                nil [935 1698]))          
+      :file "MultiReducedMetric.java"
+      :pointmax 1699
+      :fsize 1698
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax '((SEMICOLON 1043 . 1044) (PAREN_BLOCK 1041 . 1043) (GT 1040 . 1041) (LT 1039 . 1040) (NEW 1028 . 1031) (EQ 1026 . 1027) (GT 1017 . 1018) (COMMA 1002 . 1003) (IDENTIFIER 992 . 995) (LT 995 . 996))))
+  :file "!Users!drwrong!openProject!storm!storm-core!src!jvm!org!apache!storm!metric!api!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,255 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("sys" include nil nil [15 25])
+            ("time" include nil nil [26 37])
+            ("logging" include nil nil [38 52])
+            ("redis" include nil nil [66 78])
+            ("threading" include nil nil [79 95])
+            ("kazoo.client" include nil nil [96 132])
+            ("kazoo.client" include nil nil [133 168])
+            ("kazoo.client" include nil nil [169 205])
+            ("kazoo.exceptions" include nil nil [206 229])
+            ("ConsistentHash" include nil nil [231 272])
+            ("DomobPydocRedisPool" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [433 462])
+                            ("self" variable nil (reparse-symbol indented_block_body) [465 498])
+                            ("self" variable nil (reparse-symbol indented_block_body) [501 539])
+                            ("self" variable nil (reparse-symbol indented_block_body) [542 579])
+                            ("self" variable nil (reparse-symbol indented_block_body) [583 615])
+                            ("self" variable nil (reparse-symbol indented_block_body) [618 655])
+                            ("self" variable nil (reparse-symbol indented_block_body) [658 676])
+                            ("self" variable nil (reparse-symbol indented_block_body) [679 702])
+                            ("self" variable nil (reparse-symbol indented_block_body) [705 730])
+                            ("self" variable nil (reparse-symbol indented_block_body) [733 758])
+                            ("self" variable nil (reparse-symbol indented_block_body) [761 797])
+                            ("self" variable nil (reparse-symbol indented_block_body) [800 839])
+                            ("self" variable nil (reparse-symbol indented_block_body) [843 859])
+                            ("self" variable nil (reparse-symbol indented_block_body) [862 881])
+                            ("self" variable nil (reparse-symbol indented_block_body) [884 903])
+                            ("self" variable nil (reparse-symbol indented_block_body) [907 937])
+                            ("self" code nil (reparse-symbol indented_block_body) [940 985])
+                            ("self" variable nil (reparse-symbol indented_block_body) [988 1010])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1013 1037])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1040 1054])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1144 1162])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1211 1226])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1229 1269])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1272 1298])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1361 1390])
+                            ("if" code nil (reparse-symbol indented_block_body) [1394 1545])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1576 1635])
+                            ("self" code nil (reparse-symbol indented_block_body) [1638 1682])
+                            ("self" code nil (reparse-symbol indented_block_body) [1685 1702])
+                            ("self" code nil (reparse-symbol indented_block_body) [1706 1872]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [326 330])
+                            ("business" variable nil (reparse-symbol function_parameters) [332 340])
+                            ("hosts" variable nil (reparse-symbol function_parameters) [347 352])
+                            ("timeOut" variable nil (reparse-symbol function_parameters) [359 366])
+                            ("db" variable nil (reparse-symbol function_parameters) [373 375])
+                            ("mode" variable nil (reparse-symbol function_parameters) [379 383])
+                            ("slaveReadEnable" variable nil (reparse-symbol function_parameters) [389 404])
+                            ("password" variable nil (reparse-symbol function_parameters) [414 422]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [313 1873])
+                    ("__initial" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1890 1894])
+                            ("business" variable nil (reparse-symbol function_parameters) [1896 1904])
+                            ("timeOut" variable nil (reparse-symbol function_parameters) [1911 1918])
+                            ("db" variable nil (reparse-symbol function_parameters) [1925 1927])
+                            ("mode" variable nil (reparse-symbol function_parameters) [1931 1935])
+                            ("slaveReadEnable" variable nil (reparse-symbol function_parameters) [1941 1956])
+                            ("password" variable nil (reparse-symbol function_parameters) [1966 1974]))                          )
+                        (reparse-symbol indented_block_body) [1876 4063])
+                    ("__domobListener" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4085 4089])
+                            ("state" variable nil (reparse-symbol function_parameters) [4091 4096]))                          )
+                        (reparse-symbol indented_block_body) [4065 4847])
+                    ("__domobWatcher" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4868 4872])
+                            ("event" variable nil (reparse-symbol function_parameters) [4874 4879]))                          )
+                        (reparse-symbol indented_block_body) [4849 8668])
+                    ("getIpPortByKey" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8782 8786])
+                            ("key" variable nil (reparse-symbol function_parameters) [8788 8791]))                          )
+                        (reparse-symbol indented_block_body) [8763 8958])
+                    ("getGroupNameByKey" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8982 8986])
+                            ("key" variable nil (reparse-symbol function_parameters) [8988 8991]))                          )
+                        (reparse-symbol indented_block_body) [8960 9025])
+                    ("getIpPortByGroupName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9052 9056])
+                            ("groupName" variable nil (reparse-symbol function_parameters) [9058 9067]))                          )
+                        (reparse-symbol indented_block_body) [9027 9222])
+                    ("getNotCluster" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9242 9246]))                          )
+                        (reparse-symbol indented_block_body) [9224 9276])
+                    ("getNotClusterIp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9298 9302]))                          )
+                        (reparse-symbol indented_block_body) [9278 9471])
+                    ("getGroupNameToDPool" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9497 9501]))                          )
+                        (reparse-symbol indented_block_body) [9473 9537])
+                    ("getDPool" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9552 9556]))                          )
+                        (reparse-symbol indented_block_body) [9539 9580])
+                    ("getSlaveReadEnable" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9605 9609]))                          )
+                        (reparse-symbol indented_block_body) [9582 9644])
+                    ("getSlaveAlive" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9664 9668]))                          )
+                        (reparse-symbol indented_block_body) [9646 9807])
+                    ("getSlaveAliveByKey" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9832 9836])
+                            ("key" variable nil (reparse-symbol function_parameters) [9838 9841]))                          )
+                        (reparse-symbol indented_block_body) [9809 10014])
+                    ("getSlaveAliveByGroupName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10045 10049])
+                            ("groupName" variable nil (reparse-symbol function_parameters) [10051 10060]))                          )
+                        (reparse-symbol indented_block_body) [10016 10221])
+                    ("getSlaveIpPortByKey" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10311 10315])
+                            ("key" variable nil (reparse-symbol function_parameters) [10317 10320]))                          )
+                        (reparse-symbol indented_block_body) [10287 10492])
+                    ("getSlaveIpPortByGroupName" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10524 10528])
+                            ("groupName" variable nil (reparse-symbol function_parameters) [10530 10539]))                          )
+                        (reparse-symbol indented_block_body) [10494 10699])
+                    ("getNotClusterSlaveIp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10765 10769]))                          )
+                        (reparse-symbol indented_block_body) [10740 10943])
+                    ("getGroupNameToSlaveDPool" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10998 11002]))                          )
+                        (reparse-symbol indented_block_body) [10969 11043])
+                    ("getSlaveDPool" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11091 11095]))                          )
+                        (reparse-symbol indented_block_body) [11073 11124])
+                    ("getLockConnect" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11147 11151]))                          )
+                        (reparse-symbol indented_block_body) [11128 11183])
+                    ("destroy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11197 11201]))                          )
+                        (reparse-symbol indented_block_body) [11185 11220])
+                    ("__setGroupNameList" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11339 11343]))                          )
+                        (reparse-symbol indented_block_body) [11316 11566])
+                    ("'''
+	def __setPrevGroupNameToIpPort(self):
+		self.__prevGroupNameToIpPort = {}
+		for groupName in self.__groupNameToIpPort.keys():
+			self.__prevGroupNameToIpPort[groupName] = self.__groupNameToIpPort[groupName]
+	'''" code nil (reparse-symbol indented_block_body) [11568 11784])
+                    ("__setGroupNameToSlaveIpPort" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11819 11823]))                          )
+                        (reparse-symbol indented_block_body) [11787 12801])
+                    ("__setGroupNameToIpPort" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12830 12834]))                          )
+                        (reparse-symbol indented_block_body) [12803 13593])
+                    ("__setGroupNameToIpPort2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13623 13627])
+                            ("groupName" variable nil (reparse-symbol function_parameters) [13629 13638])
+                            ("path" variable nil (reparse-symbol function_parameters) [13640 13644]))                          )
+                        (reparse-symbol indented_block_body) [13595 14011])
+                    ("__updatePool" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14030 14034])
+                            ("groupName" variable nil (reparse-symbol function_parameters) [14036 14045]))                          )
+                        (reparse-symbol indented_block_body) [14013 14393])
+                    ("__updateNotClusterPool" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14422 14426]))                          )
+                        (reparse-symbol indented_block_body) [14395 14779])
+                    ("__updateSlavePool" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14803 14807])
+                            ("groupName" variable nil (reparse-symbol function_parameters) [14809 14818]))                          )
+                        (reparse-symbol indented_block_body) [14781 15309])
+                    ("__updateNotClusterSlavePool" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15343 15347]))                          )
+                        (reparse-symbol indented_block_body) [15311 15821])
+                    ("__stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15834 15838]))                          )
+                        (reparse-symbol indented_block_body) [15823 15880]))                  
+                :type "class")
+                nil [274 15880])
+            ("slaves" variable nil nil [5787 5851]))          
+      :file "DomobPydocRedisPool.py"
+      :pointmax 15884
+      :fsize 16725
+      :lastmodtime '(22823 52600 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "ConsistentHash.py"
+      :fsize 1422
+      :lastmodtime '(22823 52600 0 0)))
+  :file "!Users!drwrong!mywork!domob!inf!redis-cluster!clients!domob-pydocRedis!domob_pydocRedis!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

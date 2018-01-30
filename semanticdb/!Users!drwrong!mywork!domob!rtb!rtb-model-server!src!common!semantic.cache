@@ -1,0 +1,420 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("RTB_MODEL_SERVER_COMMON_COMMON_H_" variable (:constant-flag t) nil [131 164])
+            ("sys/time.h" include (:system-flag t) nil [175 196])
+            ("iostream" include (:system-flag t) nil [197 216])
+            ("vector" include (:system-flag t) nil [217 234])
+            ("cmath" include (:system-flag t) nil [235 251])
+            ("pthread.h" include (:system-flag t) nil [264 284])
+            ("boost/cstdint.hpp" include (:system-flag t) nil [295 323])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [324 355])
+            ("boost/filesystem.hpp" include (:system-flag t) nil [356 387])
+            ("boost" using (:type ("boost" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [388 410])
+            ("thrift/protocol/TBinaryProtocol.h" include (:system-flag t) nil [413 457])
+            ("thrift/transport/TBufferTransports.h" include (:system-flag t) nil [458 505])
+            ("thrift/transport/TSimpleFileTransport.h" include (:system-flag t) nil [506 556])
+            ("apache::thrift" using (:type ("apache::thrift" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [558 589])
+            ("apache::thrift::protocol" using (:type ("apache::thrift::protocol" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [590 631])
+            ("apache::thrift::transport" using (:type ("apache::thrift::transport" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [632 674])
+            ("domob_thrift/enums_types.h" include nil nil [700 737])
+            ("domob_thrift/rtb_adinfo_types_types.h" include nil nil [779 827])
+            ("domob_thrift/rtb_model_server_types.h" include nil nil [828 876])
+            ("domob_thrift/RTBModelServer.h" include nil nil [877 917])
+            ("domob_thrift/enums_types.h" include nil nil [918 955])
+            ("domob_thrift/rtb_debug_info_types.h" include nil nil [956 1002])
+            ("domob" using (:type ("domob" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1003 1025])
+            ("domob::common::enums" using (:type ("domob::common::enums" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1026 1063])
+            ("domob::rtb" using (:type ("domob::rtb" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1064 1091])
+            ("domob::rtb::adinfo" using (:type ("domob::rtb::adinfo" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1092 1127])
+            ("domob::rtb::modelserver" using (:type ("domob::rtb::modelserver" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1128 1168])
+            ("domob::rtb::rtb_debug_info" using (:type ("domob::rtb::rtb_debug_info" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1169 1212])
+            ("domob_log.h" include (:system-flag t) nil [1227 1249])
+            ("domob_print_buf.h" include (:system-flag t) nil [1250 1278])
+            ("adserver_read_conf.h" include (:system-flag t) nil [1279 1310])
+            ("domob_memory_pool.h" include (:system-flag t) nil [1311 1341])
+            ("thrift_factory.h" include (:system-flag t) nil [1342 1369])
+            ("basic_dict.h" include (:system-flag t) nil [1370 1393])
+            ("basic_inverted_index.h" include (:system-flag t) nil [1394 1427])
+            ("common_file_dict.h" include (:system-flag t) nil [1428 1457])
+            ("common_double_file_dict.h" include (:system-flag t) nil [1458 1494])
+            ("data_manager.h" include (:system-flag t) nil [1495 1520])
+            ("data_manager_dict.h" include (:system-flag t) nil [1521 1551])
+            ("md5_sign.h" include (:system-flag t) nil [1552 1573])
+            ("autolock.h" include (:system-flag t) nil [1574 1595])
+            ("auto_release.h" include (:system-flag t) nil [1596 1621])
+            ("DOMOB_STL_CPP" using (:type ("DOMOB_STL_CPP" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1622 1652])
+            ("DOMOB_STL_CPP::autolock" using (:type ("DOMOB_STL_CPP::autolock" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1654 1684])
+            ("../util/str_util.h" include nil nil [1686 1715])
+            ("DomobBase.h" include (:system-flag t) nil [1728 1750])
+            ("cn::domob::dm303" using (:type ("cn::domob::dm303" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1751 1784])
+            ("MAX_FILE_NAME" variable (:constant-flag t) nil [1795 1808])
+            ("MAX_BUFFER_LEN" variable (:constant-flag t) nil [1822 1836])
+            ("MAX_LINE_SIZE" variable (:constant-flag t) nil [1850 1863])
+            ("MAX_ID_LEN" variable (:constant-flag t) nil [1877 1887])
+            ("AD_MATCH_TYPE_MOD" variable (:constant-flag t) nil [1899 1916])
+            ("TIMEDIFF" variable (:constant-flag t) nil [1937 1945])
+            ("TIMETOSECOND" variable (:constant-flag t) nil [2018 2030])
+            ("app_name" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [2046 2074])
+            ("version_id" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [2075 2105])
+            ("app_build_date" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [2106 2140])
+            ("kMaxFinalAdNum" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "10240"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [2142 2187])
+            ("kCtrFeatureNum" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "7"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [2188 2229])
+            ("kActFeatureNum" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "6"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [2230 2271])
+            ("BID_STATUS_CODE" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ST_SUCCESS" variable
+                             (:constant-flag t
+                              :default-value (2304 2305)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2291 2305])
+                          ("ST_SEARCH_ID_ERROR" variable
+                             (:constant-flag t
+                              :default-value (2329 2332)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2308 2332])
+                          ("ST_DM_UID_ERROR" variable
+                             (:constant-flag t
+                              :default-value (2353 2356)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2335 2356])
+                          ("ST_DM_DEVICE_ID_ERROR" variable
+                             (:constant-flag t
+                              :default-value (2383 2386)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2359 2386])
+                          ("ST_DM_OS_ID_ERROR" variable
+                             (:constant-flag t
+                              :default-value (2409 2412)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2389 2412])
+                          ("ST_DM_ACCESSTYPE_ID_ERROR" variable
+                             (:constant-flag t
+                              :default-value (2443 2446)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2415 2446])
+                          ("ST_DM_MEDIA_ID_ERROR" variable
+                             (:constant-flag t
+                              :default-value (2472 2475)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2449 2475])
+                          ("ST_REQ_SAMPLE_FILTER" variable
+                             (:constant-flag t
+                              :default-value (2501 2504)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2478 2504])
+                          ("ST_REQ_DVOS_FILTER" variable
+                             (:constant-flag t
+                              :default-value (2528 2531)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2507 2531])
+                          ("ST_ARRIVE_STATEGY" variable
+                             (:constant-flag t
+                              :default-value (2554 2557)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2534 2557])
+                          ("ST_ARRIVE_CREATIVE" variable
+                             (:constant-flag t
+                              :default-value (2581 2584)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2560 2584])
+                          ("ST_ARRIVE_CONTAINER" variable
+                             (:constant-flag t
+                              :default-value (2609 2612)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2587 2612])
+                          ("ST_ARRIVE_ADDINFO" variable
+                             (:constant-flag t
+                              :default-value (2635 2638)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2615 2638]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [2274 2657])
+            ("eps" variable (:constant-flag t) nil [2668 2671])
+            ("IS_FLOAT_ZERO" variable (:constant-flag t) nil [2686 2699])
+            ("INVALID_CTR_COEFFICIENT" variable (:constant-flag t) nil [2738 2761])
+            ("MAX_PROB_RATIO" variable (:constant-flag t) nil [2776 2790])
+            ("ADJUST_BASE_RATIO" variable (:constant-flag t) nil [2804 2821])
+            ("MONETARY_BASE" variable (:constant-flag t) nil [2835 2848])
+            ("IMP_BASE" variable (:constant-flag t) nil [2865 2873])
+            ("MAX_TAG_TARGET_LEN" variable (:constant-flag t) nil [2888 2906])
+            ("TOUTIAO_EXCHANGEID" variable (:constant-flag t) nil [2920 2938])
+            ("GDT_EXCHANGEID" variable (:constant-flag t) nil [2951 2965])
+            ("DVX_EXCHANGEID" variable (:constant-flag t) nil [2978 2992])
+            ("BAIDU_CBG_EXCHANGEID" variable (:constant-flag t) nil [3005 3025])
+            ("NEW_USER_TAG_ID" variable (:constant-flag t) nil [3039 3054])
+            ("BASIC_DECISION_PREFIX" variable (:constant-flag t) nil [3070 3091])
+            ("MAX_SPONSOR_DOMAIN_NUM" variable (:constant-flag t) nil [3108 3130])
+            ("MAX_SPONSOR_DOMAIN_LEN" variable (:constant-flag t) nil [3143 3165])
+            ("EXCHANGE_CREATIVE_BASE" variable (:constant-flag t) nil [3179 3201])
+            ("DEBUG_FILTER_REASON" variable (:constant-flag t) nil [3220 3239])
+            ("IndexModuleIdEnums" type
+               (:members 
+                  ( ("Code" type
+                       (:members 
+                          ( ("basic_bid_decision" variable
+                               (:constant-flag t
+                                :default-value (3761 3764)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3740 3764])
+                            ("dvx_bid_decision" variable
+                               (:constant-flag t
+                                :default-value (3787 3790)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3768 3790])
+                            ("toutiao_bid_decision" variable
+                               (:constant-flag t
+                                :default-value (3817 3820)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3794 3820])
+                            ("youku_bid_decision" variable
+                               (:constant-flag t
+                                :default-value (3845 3848)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3824 3848])
+                            ("baichuan_bid_decision" variable
+                               (:constant-flag t
+                                :default-value (3876 3879)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3852 3879])
+                            ("sohu_bid_decision" variable
+                               (:constant-flag t
+                                :default-value (3903 3906)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3883 3906])
+                            ("iqiyi_bid_decision" variable
+                               (:constant-flag t
+                                :default-value (3931 3934)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3910 3934])
+                            ("momo_bid_decision" variable
+                               (:constant-flag t
+                                :default-value (3958 3961)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3938 3961])
+                            ("inmobi_bid_decision" variable
+                               (:constant-flag t
+                                :default-value (3987 3990)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3965 3990])
+                            ("pptv_bid_decision" variable
+                               (:constant-flag t
+                                :default-value (4014 4017)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3994 4017])
+                            ("autohome_bid_decision" variable
+                               (:constant-flag t
+                                :default-value (4045 4048)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4021 4048])
+                            ("suning_bid_decision" variable
+                               (:constant-flag t
+                                :default-value (4074 4077)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4052 4077])
+                            ("ad_sponsor_index" variable
+                               (:constant-flag t
+                                :default-value (4101 4104)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4082 4104])
+                            ("ad_campaign_index" variable
+                               (:constant-flag t
+                                :default-value (4128 4131)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4108 4131])
+                            ("ad_strategy_index" variable
+                               (:constant-flag t
+                                :default-value (4155 4158)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4135 4158])
+                            ("ad_creative_index" variable
+                               (:constant-flag t
+                                :default-value (4182 4185)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4162 4185])
+                            ("ad_promotion_index" variable
+                               (:constant-flag t
+                                :default-value (4210 4213)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4189 4213])
+                            ("ad_perfer_deal_index" variable
+                               (:constant-flag t
+                                :default-value (4240 4243)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4217 4243])
+                            ("media_index" variable
+                               (:constant-flag t
+                                :default-value (4261 4264)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4247 4264])
+                            ("ad_poi_index" variable
+                               (:constant-flag t
+                                :default-value (4283 4286)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4268 4286])
+                            ("lr_atr_model_list" variable
+                               (:constant-flag t
+                                :default-value (4311 4314)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4291 4314])
+                            ("dt_atr_model_list" variable
+                               (:constant-flag t
+                                :default-value (4338 4341)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4318 4341])
+                            ("dt_ctr_model_list" variable
+                               (:constant-flag t
+                                :default-value (4365 4368)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4345 4368])
+                            ("lr_ctr_model_list" variable
+                               (:constant-flag t
+                                :default-value (4392 4395)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4372 4395])
+                            ("ios_atr_model" variable
+                               (:constant-flag t
+                                :default-value (4418 4421)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4402 4421])
+                            ("android_atr_model" variable
+                               (:constant-flag t
+                                :default-value (4445 4448)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4425 4448])
+                            ("ucb_model_linUCB_list" variable
+                               (:constant-flag t
+                                :default-value (4479 4482)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4455 4482]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [3725 4487]))                  
+                :type "struct")
+                nil [3696 4490]))          
+      :file "common.h"
+      :pointmax 4536
+      :fsize 4535
+      :lastmodtime '(22940 1781 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("RTB_MODEL_SERVER_COMMON_COMMON_H_")
+          ("IS_FLOAT_ZERO" (spp-arg-list ("x") 2699 . 2702) . ((semantic-list "((x) > -eps && (x) < eps)" 2703 . 2728)))
+          ("INVALID_CTR_COEFFICIENT" . ((punctuation "-" 2762 . 2763) (number "100" 2763 . 2766)))
+          ("ADJUST_BASE_RATIO" . ((number "1000" 2822 . 2826)))
+          ("GDT_EXCHANGEID" . ((number "107" 2966 . 2969)))
+          ("BASIC_DECISION_PREFIX" . ((string "\"BASIC\"" 3092 . 3099)))
+          ("DEBUG_FILTER_REASON" (spp-arg-list ("is_debug" "filter_vector" "value_id" "filter_type_id" "_fmt_" "args...") 3239 . 3306) . 
+              ((DO "do" 3310 . 3312) (semantic-list "{\\
+		if (is_debug && filter_vector != NULL)\\
+		{\\
+			char __domobLogBuffer[4096];\\
+			snprintf(__domobLogBuffer,4096, _fmt_, ##args);\\
+			__domobLogBuffer[4096 - 1] = 0;\\
+			RTBFilterReason __node;\\
+			__node.id = value_id;\\
+			__node.filter_type = (int32_t)filter_type_id;\\
+			__node.reason = std::string(__domobLogBuffer);\\
+			filter_vector->push_back(__node);\\
+		}\\
+	}" 3315 . 3686) (WHILE "while" 3686 . 3691) (semantic-list "(0)" 3691 . 3694)))
+          ("EXCHANGE_CREATIVE_BASE" . ((number "10000000" 3202 . 3210)))
+          ("TOUTIAO_EXCHANGEID" . ((number "106" 2939 . 2942)))
+          ("MAX_FILE_NAME" . ((number "128" 1810 . 1813)))
+          ("MONETARY_BASE" . ((number "1000000" 2849 . 2856)))
+          ("MAX_SPONSOR_DOMAIN_NUM" . ((number "200" 3131 . 3134)))
+          ("MAX_SPONSOR_DOMAIN_LEN" . ((number "100" 3166 . 3169)))
+          ("TIMEDIFF" (spp-arg-list ("s" "e") 1945 . 1951) . ((semantic-list "((e.tv_sec - s.tv_sec) * 1000000 + e.tv_usec - s.tv_usec)" 1952 . 2009)))
+          ("MAX_BUFFER_LEN" . ((number "256" 1838 . 1841)))
+          ("MAX_ID_LEN" . ((number "50" 1888 . 1890)))
+          ("TIMETOSECOND" (spp-arg-list ("e") 2030 . 2033) . ((semantic-list "(e.tv_sec)" 2034 . 2044)))
+          ("eps" . ((number "1e-8" 2672 . 2676)))
+          ("MAX_PROB_RATIO" . ((number "1000" 2791 . 2795)))
+          ("IMP_BASE" . ((number "1000" 2874 . 2878)))
+          ("MAX_LINE_SIZE" . ((number "4096" 1864 . 1868)))
+          ("AD_MATCH_TYPE_MOD" . ((number "1000000000" 1917 . 1927)))
+          ("DVX_EXCHANGEID" . ((number "111" 2993 . 2996)))
+          ("MAX_TAG_TARGET_LEN" . ((number "256" 2907 . 2910)))
+          ("BAIDU_CBG_EXCHANGEID" . ((number "110" 3026 . 3029)))
+          ("NEW_USER_TAG_ID" . ((number "30112" 3055 . 3060)))
+          )
+))
+  :file "!Users!drwrong!mywork!domob!rtb!rtb-model-server!src!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

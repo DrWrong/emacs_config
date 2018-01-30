@@ -1,0 +1,57 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables
+  (list
+    (semanticdb-table "biz_main.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("Queue" include nil nil [26 38])
+            ("logging" include nil nil [39 53])
+            ("domob_pyutils.statscol" include nil nil [55 95])
+            ("biz.partition_manager" include nil nil [97 153])
+            ("biz.statistics_thread" include nil nil [154 204])
+            ("biz.workers" include nil nil [205 256])
+            ("DbApp" type
+               (:documentation "将antispam之后的数据入库"
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [369 421])
+                            ("self" variable nil (reparse-symbol indented_block_body) [430 450])
+                            ("self" variable nil (reparse-symbol indented_block_body) [459 502])
+                            ("self" variable nil (reparse-symbol indented_block_body) [511 553]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [325 329])
+                            ("execute_dir" variable nil (reparse-symbol function_parameters) [331 342])
+                            ("config" variable nil (reparse-symbol function_parameters) [344 350])
+                            ("nowrap" variable nil (reparse-symbol function_parameters) [352 358]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [312 554])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [567 571]))                          )
+                        (reparse-symbol indented_block_body) [559 1324])
+                    ("startPartitionManagerThread" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1361 1365]))                          )
+                        (reparse-symbol indented_block_body) [1329 1497])
+                    ("startStatisticThread" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1527 1531]))                          )
+                        (reparse-symbol indented_block_body) [1502 1676]))                  
+                :type "class")
+                nil [259 1676]))          
+      :file "biz_main.py"
+      :pointmax 1676
+      :fsize 1775
+      :lastmodtime '(22684 7419 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_kafaka_db!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

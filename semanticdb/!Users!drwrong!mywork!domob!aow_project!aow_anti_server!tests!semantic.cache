@@ -1,0 +1,83 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables
+  (list
+    (semanticdb-table "test_client.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("argparse" include nil nil [42 57])
+            ("logging.config" include nil nil [58 79])
+            ("os" include nil nil [80 89])
+            ("sys" include nil nil [90 100])
+            ("time" include nil nil [101 112])
+            ("json" include nil nil [113 124])
+            ("copy" include nil nil [125 136])
+            ("datetime" include nil nil [137 166])
+            ("base64" include nil nil [167 180])
+            ("binascii" include nil nil [181 196])
+            ("logging" include nil nil [197 211])
+            ("struct" include nil nil [212 225])
+            ("basepath" variable nil nil [227 290])
+            ("sys" code nil nil [291 325])
+            ("sys" code nil nil [326 367])
+            ("domob_pyutils.thriftext.TThriftClientPool" include nil nil [369 440])
+            ("domob_thrift.aow.antiserver" include nil nil [441 491])
+            ("domob_thrift.common.ttypes" include nil nil [492 544])
+            ("domob_thrift.aow_stat_types2.ttypes" include nil nil [545 609])
+            ("Client" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [659 686])
+                            ("self" code nil (reparse-symbol indented_block_body) [695 726])
+                            ("host" variable nil (reparse-symbol indented_block_body) [735 754])
+                            ("port" variable nil (reparse-symbol indented_block_body) [763 774])
+                            ("pool_size" variable nil (reparse-symbol indented_block_body) [783 797])
+                            ("self" variable nil (reparse-symbol indented_block_body) [806 959])
+                            ("self" variable nil (reparse-symbol indented_block_body) [983 1010])
+                            ("print" code nil (reparse-symbol indented_block_body) [1019 1093]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [644 648]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [631 1094])
+                    ("test" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1108 1112]))                          )
+                        (reparse-symbol indented_block_body) [1099 1784]))                  
+                :type "class")
+                nil [612 1784])
+            ("test_303" function (:documentation "test ") nil [1786 2428])
+            ("if" code nil nil [2429 2919]))          
+      :file "test_client.py"
+      :pointmax 2919
+      :fsize 2918
+      :lastmodtime '(22699 60936 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "test_anti.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("argparse" include nil nil [39 54])
+            ("logging.config" include nil nil [55 94])
+            ("logging" include nil nil [55 94])
+            ("sys" include nil nil [55 94])
+            ("os" include nil nil [55 94])
+            ("domob_pyutils.statscol" include nil nil [95 135])
+            ("domob_pydocRedis.DomobPydocRedis" include nil nil [136 196])
+            ("basepath" variable nil nil [198 261])
+            ("sys" code nil nil [262 296])
+            ("sys" code nil nil [297 338])
+            ("domob_thrift.aow_stat_types2.ttypes" include nil nil [340 404])
+            ("server.anti" include nil nil [405 433])
+            ("ut.config" include nil nil [434 462])
+            ("if" code nil nil [464 1962]))          
+      :file "test_anti.py"
+      :pointmax 2034
+      :fsize 2033
+      :lastmodtime '(22699 54901 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_anti_server!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

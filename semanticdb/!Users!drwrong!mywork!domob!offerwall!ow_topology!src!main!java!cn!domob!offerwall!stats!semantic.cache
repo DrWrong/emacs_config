@@ -1,0 +1,268 @@
+;; Object stats/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "stats/"
+  :tables
+  (list
+    (semanticdb-table "StatsMapper.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.stats" package nil nil [1 34])
+            ("org.apache.ibatis.annotations.Insert" include nil nil [36 80])
+            ("StatsMapper" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("impStats" function
+                       (:arguments 
+                          ( ("item" variable (:type "StatsItem") (reparse-symbol formal_parameters) [529 543]))                          
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [516 545])
+                    ("clickStats" function
+                       (:arguments 
+                          ( ("item" variable (:type "StatsItem") (reparse-symbol formal_parameters) [807 821]))                          
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [792 823])
+                    ("actStats" function
+                       (:arguments 
+                          ( ("item" variable (:type "StatsItem") (reparse-symbol formal_parameters) [1204 1218]))                          
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [1191 1220]))                  
+                :type "interface")
+                nil [245 1222]))          
+      :file "StatsMapper.java"
+      :pointmax 1223
+      :fsize 1222
+      :lastmodtime '(22781 51907 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "StatsItem.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.stats" package nil nil [1 34])
+            ("java.util.Calendar" include nil nil [36 62])
+            ("cn.domob.offerwall.thrift.common.BasicOffer" include nil nil [64 115])
+            ("cn.domob.offerwall.thrift.settle.ActEvent" include nil nil [116 165])
+            ("cn.domob.offerwall.thrift.settle.ClkEvent" include nil nil [166 215])
+            ("cn.domob.offerwall.thrift.settle.ImpEvent" include nil nil [216 265])
+            ("cn.domob.offerwall.thrift.settle.SettleEvent" include nil nil [266 318])
+            ("StatsItem" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("cid" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [592 609])
+                    ("action" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [614 634])
+                    ("mid" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [639 656])
+                    ("pkgid" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [661 680])
+                    ("planid" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [685 705])
+                    ("offerType" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [710 732])
+                    ("dt" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [738 753])
+                    ("hr" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [758 773])
+                    ("spPrice" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [780 801])
+                    ("mediashare" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [806 830])
+                    ("eventType" variable
+                       (:typemodifiers ("public")
+                        :type "EventType")
+                        (reparse-symbol class_member_declaration) [836 863])
+                    ("setTime" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("timestamp" variable (:type "Long") (reparse-symbol formal_parameters) [890 904]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [869 1197])
+                    ("setByOffer" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("offer" variable (:type "BasicOffer") (reparse-symbol formal_parameters) [1227 1243]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1203 1469])
+                    ("StatsItem" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("event" variable (:type "SettleEvent") (reparse-symbol formal_parameters) [1493 1510]))                          )
+                        (reparse-symbol class_member_declaration) [1476 1735])
+                    ("StatsItem" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("event" variable (:type "ClkEvent") (reparse-symbol formal_parameters) [1758 1772]))                          )
+                        (reparse-symbol class_member_declaration) [1741 1901])
+                    ("StatsItem" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("event" variable (:type "ImpEvent") (reparse-symbol formal_parameters) [1924 1938]))                          )
+                        (reparse-symbol class_member_declaration) [1907 2063]))                  
+                :type "class")
+                nil [482 2065]))          
+      :file "StatsItem.java"
+      :pointmax 2066
+      :fsize 2065
+      :lastmodtime '(22781 46206 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Stats.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.stats" package nil nil [1 34])
+            ("java.util.Map" include nil nil [36 57])
+            ("cn.domob.offerwall.thrift.settle.ActEvent" include nil nil [59 108])
+            ("cn.domob.offerwall.thrift.settle.ClkEvent" include nil nil [109 158])
+            ("cn.domob.offerwall.thrift.settle.ImpEvent" include nil nil [159 208])
+            ("cn.domob.offerwall.thrift.settle.SettleEvent" include nil nil [209 261])
+            ("org.apache.ibatis.datasource.pooled.PooledDataSource" include nil nil [262 322])
+            ("org.apache.ibatis.mapping.Environment" include nil nil [323 368])
+            ("org.apache.ibatis.session.Configuration" include nil nil [369 416])
+            ("org.apache.ibatis.session.SqlSession" include nil nil [417 461])
+            ("org.apache.ibatis.session.SqlSessionFactory" include nil nil [462 513])
+            ("org.apache.ibatis.session.SqlSessionFactoryBuilder" include nil nil [514 572])
+            ("org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory" include nil nil [573 638])
+            ("Stats" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("sqlSessionFactory" variable
+                       (:typemodifiers ("private")
+                        :type "SqlSessionFactory")
+                        (reparse-symbol class_member_declaration) [824 868])
+                    ("Stats" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("conf" variable
+                               (:typemodifiers ("final")
+                                :type "Map")
+                                (reparse-symbol formal_parameters) [959 973]))                          )
+                        (reparse-symbol class_member_declaration) [946 1217])
+                    ("Stats" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("driver" variable (:type "String") (reparse-symbol formal_parameters) [1236 1249])
+                            ("url" variable (:type "String") (reparse-symbol formal_parameters) [1251 1261])
+                            ("username" variable (:type "String") (reparse-symbol formal_parameters) [1263 1278])
+                            ("password" variable (:type "String") (reparse-symbol formal_parameters) [1280 1295]))                          )
+                        (reparse-symbol class_member_declaration) [1223 2032])
+                    ("newItem" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("event" variable (:type "Object") (reparse-symbol formal_parameters) [2064 2076]))                          
+                        :type "StatsItem")
+                        (reparse-symbol class_member_declaration) [2038 2421])
+                    ("updateStats" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("event" variable (:type "Object") (reparse-symbol formal_parameters) [2451 2463]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2427 3074]))                  
+                :type "class")
+                nil [798 3077]))          
+      :file "Stats.java"
+      :pointmax 3078
+      :fsize 3077
+      :lastmodtime '(22781 50125 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "StatsBolt.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.stats" package nil nil [1 34])
+            ("org.apache.storm.tuple.Tuple" include nil nil [36 72])
+            ("org.apache.storm.topology.OutputFieldsDeclarer" include nil nil [73 127])
+            ("org.apache.storm.task.TopologyContext" include nil nil [128 173])
+            ("org.apache.storm.task.IBolt" include nil nil [174 209])
+            ("org.apache.storm.topology.IComponent" include nil nil [210 254])
+            ("org.apache.storm.task.OutputCollector" include nil nil [255 300])
+            ("java.util.Map" include nil nil [301 322])
+            ("org.slf4j.Logger" include nil nil [323 347])
+            ("org.slf4j.LoggerFactory" include nil nil [348 379])
+            ("cn.domob.offerwall.common.RichBoltWithMetric" include nil nil [380 432])
+            ("StatsBolt" type
+               (:typemodifiers ("public")
+                :superclasses "RichBoltWithMetric"
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [652 724])
+                    ("stats" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "Stats")
+                        (reparse-symbol class_member_declaration) [730 760])
+                    ("collector" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "OutputCollector")
+                        (reparse-symbol class_member_declaration) [765 809])
+                    ("execute" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("tuple" variable
+                               (:typemodifiers ("final")
+                                :type "Tuple")
+                                (reparse-symbol formal_parameters) [1014 1031]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [988 1454])
+                    ("prepare" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("map" variable
+                               (:typemodifiers ("final")
+                                :type "Map")
+                                (reparse-symbol formal_parameters) [1737 1750])
+                            ("topologyContext" variable
+                               (:typemodifiers ("final")
+                                :type "TopologyContext")
+                                (reparse-symbol formal_parameters) [1752 1789])
+                            ("outputCollector" variable
+                               (:typemodifiers ("final")
+                                :type "OutputCollector")
+                                (reparse-symbol formal_parameters) [1791 1828]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1711 2014])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("outputFieldsDeclarer" variable
+                               (:typemodifiers ("final")
+                                :type "OutputFieldsDeclarer")
+                                (reparse-symbol formal_parameters) [2284 2331]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2246 2341])
+                    ("StatsBolt" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [2424 2451]))                  
+                :type "class")
+                nil [596 2454]))          
+      :file "StatsBolt.java"
+      :pointmax 2455
+      :fsize 2454
+      :lastmodtime '(22781 54752 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!offerwall!ow_topology!src!main!java!cn!domob!offerwall!stats!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

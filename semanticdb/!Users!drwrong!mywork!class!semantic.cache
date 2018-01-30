@@ -1,0 +1,37 @@
+;; Object class/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "class/"
+  :tables
+  (list
+    (semanticdb-table "index.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Html Title" section nil nil [21 266])
+            ("// this is javascript
+      function test() {
+      $(\"#list-ul\").hide();
+      }
+      function show() {
+      $(\"#list-ul\").show();
+      }" section nil nil [266 341])
+            ("// this is javascript
+      function test() {
+      $(\"#list-ul\").hide();
+      }
+      function show() {
+      $(\"#list-ul\").show();
+      }" section nil nil [341 548])
+            ("html -->
+    <!-- Tomcat -->
+    <!-- python server -->
+    <h1 id=\"hello-kitty\">Hello kitty" section (:members 
+              ( ("Hello kitty" section nil nil [624 811])
+                ("第二个title" section nil nil [811 1040]))              ) nil [548 1040]))          
+      :file "index.html"
+      :pointmax 1040
+      :fsize 1101
+      :lastmodtime '(22809 43620 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!class!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

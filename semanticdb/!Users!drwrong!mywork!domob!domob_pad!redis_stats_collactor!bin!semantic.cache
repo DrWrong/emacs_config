@@ -1,0 +1,22 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "collector_main.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("argparse" include nil nil [43 58])
+            ("os" include nil nil [59 68])
+            ("sys" include nil nil [69 79])
+            ("BASE_DIR" variable nil nil [81 152])
+            ("sys" code nil nil [154 200])
+            ("if" code nil nil [202 730]))          
+      :file "collector_main.py"
+      :pointmax 730
+      :fsize 729
+      :lastmodtime '(22710 39499 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!domob_pad!redis_stats_collactor!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

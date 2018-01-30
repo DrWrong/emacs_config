@@ -1,0 +1,22 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "process.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [47 57])
+            ("os" include nil nil [58 67])
+            ("argparse" include nil nil [68 83])
+            ("BASE_DIR" variable nil nil [85 148])
+            ("sys" code nil nil [149 195])
+            ("if" code nil nil [198 750]))          
+      :file "process.py"
+      :pointmax 750
+      :fsize 749
+      :lastmodtime '(22783 5986 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_point_server!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

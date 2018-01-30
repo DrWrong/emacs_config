@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("common/common.h" include nil nil [82 108])
+            ("manager/model_server_manager.h" include nil nil [109 150])
+            ("print_version" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [178 183]))                  
+                :type "void")
+                nil [152 306])
+            ("print_help" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [331 336]))                  
+                :type "void")
+                nil [308 561])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [572 581])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [582 594]))                  
+                :type "int")
+                nil [563 1466]))          
+      :file "main.cpp"
+      :pointmax 1467
+      :fsize 1466
+      :lastmodtime '(22940 1781 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!rtb!rtb-model-server!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

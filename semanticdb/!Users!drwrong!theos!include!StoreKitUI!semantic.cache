@@ -1,0 +1,43 @@
+;; Object StoreKitUI/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "StoreKitUI/"
+  :tables
+  (list
+    (semanticdb-table "SKUITabBarItem.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("alwaysCreatesRootViewController" variable (:type ("BOOL" type (:type "class") nil nil)) nil [504 541])
+            ("barTintStyle" variable (:type "int") nil [564 581])
+            ("customRootViewController" variable
+               (:pointer 1
+                :type ("UIViewController" type (:type "class") nil nil))
+                nil [612 655])
+            ("metricsIdentifier" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [684 712])
+            ("rootURL" variable
+               (:pointer 1
+                :type ("NSURL" type (:type "class") nil nil))
+                nil [741 756])
+            ("rootViewControllerClass" variable (:type ("Class" type (:type "class") nil nil)) nil [787 817])
+            ("tabIdentifier" variable
+               (:pointer 1
+                :type ("NSString" type (:type "class") nil nil))
+                nil [850 874])
+            ("underlyingTabBarItem" variable
+               (:pointer 1
+                :type ("UITabBarItem" type (:type "class") nil nil))
+                nil [905 940])
+            ("userInterfaceTintColor" variable
+               (:pointer 1
+                :type ("UIColor" type (:type "class") nil nil))
+                nil [971 1003]))          
+      :file "SKUITabBarItem.h"
+      :pointmax 1926
+      :fsize 1925
+      :lastmodtime '(22698 37764 0 0)
+      :unmatched-syntax '((symbol 1922 . 1925) (punctuation 1921 . 1922) (semantic-list 951 . 970) (symbol 942 . 950) (punctuation 941 . 942) (semantic-list 885 . 904) (symbol 876 . 884) (punctuation 875 . 876) (semantic-list 828 . 849) (symbol 819 . 827) (punctuation 818 . 819) (semantic-list 767 . 786) (symbol 758 . 766) (punctuation 757 . 758) (semantic-list 723 . 740) (symbol 714 . 722) (punctuation 713 . 714) (semantic-list 666 . 683) (symbol 657 . 665) (punctuation 656 . 657) (semantic-list 592 . 611) (symbol 583 . 591) (punctuation 582 . 583) (semantic-list 552 . 563) (symbol 543 . 551) (punctuation 542 . 543) (semantic-list 492 . 503) (symbol 483 . 491) (punctuation 482 . 483) (semantic-list 162 . 480) (punctuation 160 . 161) (symbol 151 . 160) (punctuation 150 . 151) (symbol 141 . 149) (punctuation 139 . 140) (symbol 124 . 138) (symbol 114 . 123) (punctuation 113 . 114))))
+  :file "!Users!drwrong!theos!include!StoreKitUI!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

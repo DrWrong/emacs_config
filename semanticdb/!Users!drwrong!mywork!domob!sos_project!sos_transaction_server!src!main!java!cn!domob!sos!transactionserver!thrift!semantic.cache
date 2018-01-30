@@ -1,0 +1,41 @@
+;; Object thrift/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "thrift/"
+  :tables
+  (list
+    (semanticdb-table "IncomeItem.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.sos.transactionserver.thrift" package nil nil [139 185])
+            ("org.apache.thrift.scheme.IScheme" include nil nil [187 227])
+            ("org.apache.thrift.scheme.SchemeFactory" include nil nil [228 274])
+            ("org.apache.thrift.scheme.StandardScheme" include nil nil [275 322])
+            ("org.apache.thrift.scheme.TupleScheme" include nil nil [324 368])
+            ("org.apache.thrift.protocol.TTupleProtocol" include nil nil [369 418])
+            ("org.apache.thrift.protocol.TProtocolException" include nil nil [419 472])
+            ("org.apache.thrift.EncodingUtils" include nil nil [473 512])
+            ("org.apache.thrift.TException" include nil nil [513 549])
+            ("org.apache.thrift.async.AsyncMethodCallback" include nil nil [550 601])
+            ("org.apache.thrift.server.AbstractNonblockingServer.*" include nil nil [602 662])
+            ("java.util.List" include nil nil [663 685])
+            ("java.util.ArrayList" include nil nil [686 713])
+            ("java.util.Map" include nil nil [714 735])
+            ("java.util.HashMap" include nil nil [736 761])
+            ("java.util.EnumMap" include nil nil [762 787])
+            ("java.util.Set" include nil nil [788 809])
+            ("java.util.HashSet" include nil nil [810 835])
+            ("java.util.EnumSet" include nil nil [836 861])
+            ("java.util.Collections" include nil nil [862 891])
+            ("java.util.BitSet" include nil nil [892 916])
+            ("java.nio.ByteBuffer" include nil nil [917 944])
+            ("java.util.Arrays" include nil nil [945 969])
+            ("org.slf4j.Logger" include nil nil [970 994])
+            ("org.slf4j.LoggerFactory" include nil nil [995 1026]))          
+      :file "IncomeItem.java"
+      :pointmax 29328
+      :fsize 29327
+      :lastmodtime '(22533 38537 0 0)
+      :unmatched-syntax '((BRACE_BLOCK 1176 . 29326) (GT 1174 . 1175) (IDENTIFIER 1164 . 1174) (LT 1163 . 1164) (IDENTIFIER 1153 . 1163) (COMMA 1151 . 1152) (IDENTIFIER 1142 . 1151) (COMMA 1140 . 1141) (IDENTIFIER 1128 . 1140) (DOT 1127 . 1128) (IDENTIFIER 1125 . 1127) (DOT 1124 . 1125) (IDENTIFIER 1120 . 1124) (COMMA 1118 . 1119) (GT 1117 . 1118) (IDENTIFIER 1110 . 1117) (DOT 1109 . 1110) (IDENTIFIER 1099 . 1109) (COMMA 1097 . 1098) (IDENTIFIER 1087 . 1097) (PUBLIC 1028 . 1034) (LT 1086 . 1087))))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_transaction_server!src!main!java!cn!domob!sos!transactionserver!thrift!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

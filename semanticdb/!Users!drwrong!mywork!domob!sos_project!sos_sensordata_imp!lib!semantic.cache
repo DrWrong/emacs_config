@@ -1,0 +1,49 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables
+  (list
+    (semanticdb-table "data_imp.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [24 38])
+            ("sensorsanalytics" include nil nil [39 114])
+            ("django.conf" include nil nil [115 147])
+            ("json" include nil nil [148 159])
+            ("sys" include nil nil [160 170])
+            ("domob_pyutils.statscol" include nil nil [171 211])
+            ("DataImp" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [270 330])
+                            ("self" variable nil (reparse-symbol indented_block_body) [339 447])
+                            ("if" code nil (reparse-symbol indented_block_body) [456 519])
+                            ("self" variable nil (reparse-symbol indented_block_body) [528 569]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [255 259]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [242 570])
+                    ("process_line" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [592 596])
+                            ("line" variable nil (reparse-symbol function_parameters) [598 602]))                          )
+                        (reparse-symbol indented_block_body) [575 1277])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1290 1294]))                          )
+                        (reparse-symbol indented_block_body) [1282 2073]))                  
+                :type "class")
+                nil [214 2073]))          
+      :file "data_imp.py"
+      :pointmax 2073
+      :fsize 2072
+      :lastmodtime '(22106 57378 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 1824 . 2009) (NEWLINE 1823 . 1824) (COLON 1822 . 1823) (TRY 1677 . 1680) (AS 1818 . 1820))))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_sensordata_imp!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

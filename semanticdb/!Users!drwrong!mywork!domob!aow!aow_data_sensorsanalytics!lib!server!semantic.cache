@@ -1,0 +1,54 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("logging" include nil nil [48 62])
+            ("time" include nil nil [63 74])
+            ("domob_pyutils.statscol" include nil nil [76 116])
+            ("django.conf" include nil nil [118 150])
+            ("utils.utils_formatdata" include nil nil [151 196])
+            ("server.sensorsanalytics" include nil nil [197 298])
+            ("threading" include nil nil [299 325])
+            ("Handler" type
+               (:documentation "
+        thrift服务处理入口
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [421 477]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [406 410]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [393 478])
+                    ("sendAdEvent" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [690 694])
+                            ("head" variable nil (reparse-symbol function_parameters) [696 700])
+                            ("d" variable nil (reparse-symbol function_parameters) [702 703]))                          )
+                        (reparse-symbol indented_block_body) [674 2157])
+                    ("flush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2172 2176]))                          
+                        :documentation "
+            flush掉缓存中的数据
+        ")
+                        (reparse-symbol indented_block_body) [2162 2241]))                  
+                :type "class")
+                nil [328 2241]))          
+      :file "handler.py"
+      :pointmax 2367
+      :fsize 2552
+      :lastmodtime '(22969 58180 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow!aow_data_sensorsanalytics!lib!server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

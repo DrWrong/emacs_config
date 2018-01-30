@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-bsdmake-mode
+      :tags 
+        '( ("PNAME" variable (:default-value ("aso_data_calculate")) nil [1 26])
+            ("VERSION" variable (:default-value ("0.2.6")) nil [26 40])
+            ("GOSOURCES" variable (:default-value ("$(shell find src -name *.go)")) nil [40 82])
+            ("GOPATH" variable (:default-value ("$(shell pwd)")) nil [147 170])
+            ("build" function (:arguments ("bin/data_calculate" "bin/data_calculate")) nil [171 507])
+            ("bin/data_calculate" function (:arguments ("$(GOSOURCES)")) nil [508 601])
+            (".PHONY" function (:arguments ("clean")) nil [602 616])
+            ("clean" function nil nil [616 768]))          
+      :file "Makefile"
+      :pointmax 768
+      :fsize 767
+      :lastmodtime '(22942 34145 0 0)
+      :unmatched-syntax '((shell-command 741 . 767) (bol 740 . 740) (shell-command 118 . 140) (bol 117 . 117) (shell-command 103 . 111) (bol 102 . 102) (string 99 . 101) (string 87 . 98) (IFEQ 82 . 86) (bol 82 . 82))))
+  :file "!Users!drwrong!mywork!domob!asm!aso_data_calculate!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,18 @@
+;; Object pad_web_server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pad_web_server/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pymysql" include nil nil [1 15])
+            ("pymysql" code nil nil [16 44]))          
+      :file "__init__.py"
+      :pointmax 45
+      :fsize 44
+      :lastmodtime '(22716 56811 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!pad_web!server!lib!pad_web_server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

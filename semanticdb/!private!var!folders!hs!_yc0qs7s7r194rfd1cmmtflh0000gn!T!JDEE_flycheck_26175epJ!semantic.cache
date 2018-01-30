@@ -1,0 +1,62 @@
+;; Object JDEE_flycheck_26175epJ/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "JDEE_flycheck_26175epJ/"
+  :tables
+  (list
+    (semanticdb-table "App.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("ExtInfo" type
+               (:members 
+                  ( ("failReason" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [96 121])
+                    ("tradedNumber" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [126 153]))                  
+                :type "class")
+                nil [76 155])
+            ("JsonRes" type
+               (:members 
+                  ( ("data" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [177 193])
+                    ("msg" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [198 216])
+                    ("ext" variable
+                       (:typemodifiers ("public")
+                        :type "ExtInfo")
+                        (reparse-symbol class_member_declaration) [221 240]))                  
+                :type "class")
+                nil [157 243])
+            ("App" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("getGreeting" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [272 338])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [368 381]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [344 443]))                  
+                :type "class")
+                nil [246 445]))          
+      :file "App.java"
+      :pointmax 446
+      :fsize 445
+      :lastmodtime '(22738 37220 0 0)
+      :unmatched-syntax nil))
+  :file "!private!var!folders!hs!_yc0qs7s7r194rfd1cmmtflh0000gn!T!JDEE_flycheck_26175epJ!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

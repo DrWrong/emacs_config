@@ -1,0 +1,25 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables
+  (list
+    (semanticdb-table "start_server.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+\"\"\"" code nil nil [48 55])
+            ("argparse" include nil nil [57 72])
+            ("os" include nil nil [73 82])
+            ("sys" include nil nil [83 93])
+            ("domob_pyutils.dm303" include nil nil [95 136])
+            ("BASE_DIR" variable nil nil [138 201])
+            ("sys" code nil nil [202 236])
+            ("if" code nil nil [238 912]))          
+      :file "start_server.py"
+      :pointmax 912
+      :fsize 911
+      :lastmodtime '(22076 34581 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_userstats!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

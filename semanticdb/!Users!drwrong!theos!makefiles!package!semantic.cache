@@ -1,0 +1,33 @@
+;; Object package/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "package/"
+  :tables
+  (list
+    (semanticdb-table "deb.mk"
+      :major-mode 'makefile-bsdmake-mode
+      :tags 
+        '( ("_THEOS_PACKAGE_FORMAT_LOADED" variable (:default-value ("1")) nil [41 75])
+            ("_THEOS_DEB_PACKAGE_CONTROL_PATH" variable (:default-value ("$(or $(wildcard $(THEOS_PROJECT_DIR)/control),$(wildcard $(THEOS_LAYOUT_DIR)/DEBIAN/control))")) nil [184 313])
+            ("_THEOS_DEB_CAN_PACKAGE" variable (:default-value ("$(if $(_THEOS_DEB_PACKAGE_CONTROL_PATH),$(_THEOS_TRUE),$(_THEOS_FALSE))")) nil [313 411])
+            ("_THEOS_PACKAGE_INC_VERSION_PREFIX" variable (:default-value ("-")) nil [411 450])
+            ("_THEOS_PACKAGE_EXTRA_VERSION_PREFIX" variable (:default-value ("+")) nil [450 491])
+            ("_THEOS_DEB_HAS_DPKG_DEB" variable (:default-value ("$(call __executable,$(_THEOS_PLATFORM_DPKG_DEB))")) nil [492 568])
+            ("internal-package-check" function nil nil [619 736])
+            ("THEOS_PACKAGE_NAME" variable (:default-value ("$(shell grep -i \"^Package:\" \"$(_THEOS_DEB_PACKAGE_CONTROL_PATH)\" | cut -d' ' -f2-)")) nil [841 946])
+            ("THEOS_PACKAGE_ARCH" variable (:default-value ("$(shell grep -i \"^Architecture:\" \"$(_THEOS_DEB_PACKAGE_CONTROL_PATH)\" | cut -d' ' -f2-)")) nil [946 1056])
+            ("THEOS_PACKAGE_BASE_VERSION" variable (:default-value ("$(shell grep -i \"^Version:\" \"$(_THEOS_DEB_PACKAGE_CONTROL_PATH)\" | cut -d' ' -f2-)")) nil [1056 1169])
+            ("$(_THEOS_ESCAPED_STAGING_DIR)" function nil nil [1170 1274])
+            ("$(_THEOS_ESCAPED_STAGING_DIR)" function (:arguments ("$(_THEOS_ESCAPED_STAGING_DIR)/DEBIAN")) nil [1604 2047])
+            ("before-package" function (:arguments ("$(_THEOS_ESCAPED_STAGING_DIR)/DEBIAN/control")) nil [2048 2110])
+            ("_THEOS_DEB_PACKAGE_FILENAME" variable (:default-value ("$(THEOS_PACKAGE_DIR)/$(THEOS_PACKAGE_NAME)_$(_THEOS_INTERNAL_PACKAGE_VERSION)_$(THEOS_PACKAGE_ARCH).deb")) nil [2111 2245])
+            ("internal-package" function nil nil [2245 2454])
+            ("after-package" function (:arguments ("__THEOS_LAST_PACKAGE_FILENAME" "=" "$(_THEOS_DEB_PACKAGE_FILENAME)")) nil [2493 2572])
+            ("internal-package" function nil nil [2608 2845]))          
+      :file "deb.mk"
+      :pointmax 2914
+      :fsize 2913
+      :lastmodtime '(22676 7792 0 0)
+      :unmatched-syntax '((ENDIF 2877 . 2882) (bol 2877 . 2877) (ENDIF 2846 . 2851) (bol 2846 . 2846) (ELSE 2573 . 2577) (bol 2573 . 2573) (ENDIF 1569 . 1574) (bol 1569 . 1569) (shell-command 1391 . 1568) (bol 1390 . 1390) (semantic-list 1279 . 1311) (IFEQ 1274 . 1278) (bol 1274 . 1274) (semantic-list 748 . 790) (IFEQ 743 . 747) (bol 743 . 743) (symbol 178 . 182) (punctuation 176 . 177) (punctuation 175 . 176) (symbol 138 . 174) (bol 138 . 138) (symbol 129 . 137) (punctuation 127 . 128) (punctuation 126 . 127) (symbol 101 . 125) (bol 101 . 101) (symbol 98 . 100) (punctuation 96 . 97) (punctuation 95 . 96) (symbol 76 . 94) (bol 76 . 76))))
+  :file "!Users!drwrong!theos!makefiles!package!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

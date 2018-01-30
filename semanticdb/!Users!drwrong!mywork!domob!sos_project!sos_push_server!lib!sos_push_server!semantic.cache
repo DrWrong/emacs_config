@@ -1,0 +1,128 @@
+;; Object sos_push_server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sos_push_server/"
+  :tables
+  (list
+    (semanticdb-table "pushhandler.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [25 39])
+            ("sdk" include nil nil [40 61])
+            ("PushHandler" type
+               (:documentation "
+    推送服务的实现类
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [161 217])
+                            ("self" variable nil (reparse-symbol indented_block_body) [226 275])
+                            ("self" variable nil (reparse-symbol indented_block_body) [284 332])
+                            ("self" code nil (reparse-symbol indented_block_body) [341 373])
+                            ("self" code nil (reparse-symbol indented_block_body) [382 415])
+                            ("self" variable nil (reparse-symbol indented_block_body) [424 481]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [141 145])
+                            ("cfg" variable nil (reparse-symbol function_parameters) [147 150]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [128 482])
+                    ("ping" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [496 500]))                          )
+                        (reparse-symbol indented_block_body) [487 523])
+                    ("pushUser" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [541 545])
+                            ("header" variable nil (reparse-symbol function_parameters) [547 553])
+                            ("phone_num" variable nil (reparse-symbol function_parameters) [555 564])
+                            ("title" variable nil (reparse-symbol function_parameters) [566 571])
+                            ("content" variable nil (reparse-symbol function_parameters) [573 580])
+                            ("activity" variable nil (reparse-symbol function_parameters) [582 590]))                          
+                        :documentation "
+        按照账户推送信息
+        ")
+                        (reparse-symbol indented_block_body) [528 1128])
+                    ("pushAll" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1145 1149])
+                            ("header" variable nil (reparse-symbol function_parameters) [1151 1157])
+                            ("title" variable nil (reparse-symbol function_parameters) [1159 1164])
+                            ("content" variable nil (reparse-symbol function_parameters) [1166 1173])
+                            ("activity" variable nil (reparse-symbol function_parameters) [1175 1183]))                          
+                        :documentation "
+        推送信息给所有的设备
+        ")
+                        (reparse-symbol indented_block_body) [1133 1581]))                  
+                :type "class")
+                nil [63 1581]))          
+      :file "pushhandler.py"
+      :pointmax 1581
+      :fsize 1676
+      :lastmodtime '(21979 13475 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "pushserver.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Author: huhaoran <huhaoran@domob.cn>
+划屏推送服务模块
+\"\"\"" code nil nil [26 79])
+            ("time" include nil nil [80 91])
+            ("logging" include nil nil [92 106])
+            ("pushhandler" include nil nil [108 143])
+            ("domob_thrift.sos.pushserver.PushServer" include nil nil [144 204])
+            ("thrift.transport" include nil nil [206 242])
+            ("thrift.transport" include nil nil [243 282])
+            ("thrift.protocol" include nil nil [283 326])
+            ("thrift.server.TServer" include nil nil [327 378])
+            ("PushServer" type
+               (:documentation "
+    推送服务Server，负责各种推送服务，这里使用信鸽的推送服务，简单的封装接口
+    提供给UI
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [522 577])
+                            ("self" variable nil (reparse-symbol indented_block_body) [586 600])
+                            ("self" variable nil (reparse-symbol indented_block_body) [609 629]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [494 498])
+                            ("cfg" variable nil (reparse-symbol function_parameters) [500 503])
+                            ("exeDir" variable nil (reparse-symbol function_parameters) [505 511]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [481 630])
+                    ("start_server" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [652 656]))                          
+                        :documentation "
+        启动thrift server
+        ")
+                        (reparse-symbol indented_block_body) [635 1181])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1194 1198]))                          )
+                        (reparse-symbol indented_block_body) [1186 1276]))                  
+                :type "class")
+                nil [380 1276]))          
+      :file "pushserver.py"
+      :pointmax 1276
+      :fsize 1367
+      :lastmodtime '(22127 39252 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "PushServer.py"
+      :file "PushServer.py"
+      :fsize 1367
+      :lastmodtime '(22127 39252 0 0)))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_push_server!lib!sos_push_server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

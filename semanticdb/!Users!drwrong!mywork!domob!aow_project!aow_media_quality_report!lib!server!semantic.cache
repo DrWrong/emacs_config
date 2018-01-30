@@ -1,0 +1,252 @@
+;; Object server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "server/"
+  :tables
+  (list
+    (semanticdb-table "user_tag.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [48 63])
+            ("time" include nil nil [64 75])
+            ("pandas" include nil nil [76 95])
+            ("logging" include nil nil [96 110])
+            ("django.conf" include nil nil [112 144])
+            ("utils.run_sensors_sql" include nil nil [145 205])
+            ("server.media_table" include nil nil [206 247])
+            ("UserTag" type
+               (:documentation "
+        根据前一天或者几天的数据判断用户属于哪个tag并更新到sensors
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [364 408])
+                            ("self" variable nil (reparse-symbol indented_block_body) [417 459])
+                            ("self" variable nil (reparse-symbol indented_block_body) [468 501])
+                            ("self" variable nil (reparse-symbol indented_block_body) [510 535]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [349 353]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [336 536])
+                    ("set_user_tag_by_one_day" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [569 573])
+                            ("media_id" variable nil (reparse-symbol function_parameters) [575 583])
+                            ("date" variable nil (reparse-symbol function_parameters) [585 589])
+                            ("limit" variable nil (reparse-symbol function_parameters) [591 596])
+                            ("lg" variable nil (reparse-symbol function_parameters) [601 603]))                          )
+                        (reparse-symbol indented_block_body) [541 3184])
+                    ("set_user_tag_by_few_days" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3218 3222])
+                            ("media_id" variable nil (reparse-symbol function_parameters) [3224 3232])
+                            ("date" variable nil (reparse-symbol function_parameters) [3234 3238])
+                            ("n" variable nil (reparse-symbol function_parameters) [3240 3241])
+                            ("limit" variable nil (reparse-symbol function_parameters) [3246 3251])
+                            ("lg" variable nil (reparse-symbol function_parameters) [3256 3258]))                          )
+                        (reparse-symbol indented_block_body) [3189 5841])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5854 5858])
+                            ("date" variable nil (reparse-symbol function_parameters) [5860 5864])
+                            ("media_id" variable nil (reparse-symbol function_parameters) [5866 5874]))                          )
+                        (reparse-symbol indented_block_body) [5846 6489]))                  
+                :type "class")
+                nil [250 6489]))          
+      :file "user_tag.py"
+      :pointmax 6489
+      :fsize 6652
+      :lastmodtime '(22701 13992 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "media_report.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [48 62])
+            ("datetime" include nil nil [63 78])
+            ("django.conf" include nil nil [79 111])
+            ("django.template.loader" include nil nil [112 163])
+            ("server.media_table" include nil nil [165 206])
+            ("utils.mysql_utils" include nil nil [207 247])
+            ("utils.mail_utils" include nil nil [248 285])
+            ("utils.math_utils" include nil nil [286 324])
+            ("utils.format_utils" include nil nil [325 367])
+            ("utils.sensor_api_utils" include nil nil [368 416])
+            ("MediaReport" type
+               (:documentation "
+        发送报表
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [526 580])
+                            ("self" variable nil (reparse-symbol indented_block_body) [589 605])
+                            ("self" variable nil (reparse-symbol indented_block_body) [614 638])
+                            ("self" variable nil (reparse-symbol indented_block_body) [647 678])
+                            ("self" variable nil (reparse-symbol indented_block_body) [687 716]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [492 496])
+                            ("date" variable nil (reparse-symbol function_parameters) [498 502])
+                            ("media_id" variable nil (reparse-symbol function_parameters) [504 512]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [479 717])
+                    ("send" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [731 735]))                          )
+                        (reparse-symbol indented_block_body) [722 3053]))                  
+                :type "class")
+                nil [419 3053]))          
+      :file "media_report.py"
+      :pointmax 3053
+      :fsize 3074
+      :lastmodtime '(22701 13992 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "media_calculate_rebuild.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("time" include nil nil [48 59])
+            ("datetime" include nil nil [60 75])
+            ("logging" include nil nil [76 90])
+            ("django.conf" include nil nil [92 124])
+            ("django.template.loader" include nil nil [125 176])
+            ("utils.sensor_api_utils" include nil nil [178 226])
+            ("utils.sensor_query_utils" include nil nil [227 275])
+            ("utils.math_utils" include nil nil [276 314])
+            ("utils.mysql_utils" include nil nil [315 355])
+            ("server.media_table" include nil nil [356 397])
+            ("utils.mail_utils" include nil nil [398 435])
+            ("MediaCalculate" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [506 522])
+                            ("self" variable nil (reparse-symbol indented_block_body) [531 575]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [485 489])
+                            ("date" variable nil (reparse-symbol function_parameters) [491 495]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [472 576])
+                    ("calculate_level_list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [606 610])
+                            ("data" variable nil (reparse-symbol function_parameters) [612 616])
+                            ("anti_min" variable nil (reparse-symbol function_parameters) [618 626])
+                            ("anti_max" variable nil (reparse-symbol function_parameters) [628 636])
+                            ("retention_rate" variable nil (reparse-symbol function_parameters) [638 652]))                          
+                        :documentation "
+            计算媒体在二级判定中满足项
+        ")
+                        (reparse-symbol indented_block_body) [581 1217])
+                    ("get_media_quality_and_level" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1254 1258])
+                            ("data" variable nil (reparse-symbol function_parameters) [1260 1264]))                          
+                        :documentation "
+            媒体质量计算
+            4代表A, 3代表B, 2代表C, 1代表D
+        ")
+                        (reparse-symbol indented_block_body) [1222 3108])
+                    ("update_media_tag_group" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3140 3144])
+                            ("data" variable nil (reparse-symbol function_parameters) [3146 3150]))                          
+                        :documentation "
+            更新媒体标签组
+        ")
+                        (reparse-symbol indented_block_body) [3113 4413])
+                    ("insert_media_data_local" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4446 4450])
+                            ("data" variable nil (reparse-symbol function_parameters) [4452 4456]))                          
+                        :documentation "
+            media数据本地入库
+        ")
+                        (reparse-symbol indented_block_body) [4418 6656])
+                    ("calculate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6675 6679]))                          )
+                        (reparse-symbol indented_block_body) [6661 8824]))                  
+                :type "class")
+                nil [438 8824]))          
+      :file "media_calculate_rebuild.py"
+      :pointmax 8824
+      :fsize 8971
+      :lastmodtime '(22701 13992 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "media_table.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [48 62])
+            ("utils.run_sensors_sql" include nil nil [64 124])
+            ("utils.mysql_utils" include nil nil [125 165])
+            ("MediaTable" type
+               (:documentation "
+        media的相关查询操作
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [264 306]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [249 253]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [236 307])
+                    ("get_media_data_dict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [383 387])
+                            ("date" variable nil (reparse-symbol function_parameters) [389 393])
+                            ("media_id" variable nil (reparse-symbol function_parameters) [395 403])
+                            ("event" variable nil (reparse-symbol function_parameters) [405 410]))                          
+                        :documentation "
+            根据日期、media id、事件类型,获取sensors analytics库中每次事件的相关数据
+        ")
+                        (reparse-symbol indented_block_body) [359 1227])
+                    ("get_all_media" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1250 1254])
+                            ("date" variable nil (reparse-symbol function_parameters) [1256 1260])
+                            ("event" variable nil (reparse-symbol function_parameters) [1262 1267])
+                            ("limit" variable nil (reparse-symbol function_parameters) [1274 1279]))                          
+                        :documentation "
+            获取所有的媒体ID
+        ")
+                        (reparse-symbol indented_block_body) [1232 1921])
+                    ("get_media_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1945 1949])
+                            ("arg" variable nil (reparse-symbol function_parameters) [1951 1954])
+                            ("media_id" variable nil (reparse-symbol function_parameters) [1956 1964])
+                            ("log" variable nil (reparse-symbol function_parameters) [1966 1969]))                          
+                        :documentation "
+            根据media id获取media相关信息
+        ")
+                        (reparse-symbol indented_block_body) [1926 2556]))                  
+                :type "class")
+                nil [168 2556]))          
+      :file "media_table.py"
+      :pointmax 2556
+      :fsize 2645
+      :lastmodtime '(22701 13992 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_media_quality_report!lib!server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

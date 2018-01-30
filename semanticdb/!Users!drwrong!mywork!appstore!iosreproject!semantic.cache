@@ -1,0 +1,21 @@
+;; Object iosreproject/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "iosreproject/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-bsdmake-mode
+      :tags 
+        '( ("$(THEOS)/makefiles/common.mk" include nil nil [103 140])
+            ("TWEAK_NAME" variable (:default-value ("iOSREProject")) nil [141 167])
+            ("iOSREProject_FILES" variable (:default-value ("Tweak.xm")) nil [167 197])
+            ("$(THEOS_MAKE_PATH)/tweak.mk" include nil nil [198 234])
+            ("after-install" function nil nil [235 287]))          
+      :file "Makefile"
+      :pointmax 287
+      :fsize 286
+      :lastmodtime '(22719 46433 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!appstore!iosreproject!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

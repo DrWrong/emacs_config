@@ -1,0 +1,76 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables
+  (list
+    (semanticdb-table "main.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [48 58])
+            ("os" include nil nil [59 68])
+            ("argparse" include nil nil [69 84])
+            ("logging.config" include nil nil [85 106])
+            ("domob_pyutils.dm303" include nil nil [107 148])
+            ("basepath" variable nil nil [150 213])
+            ("sys" code nil nil [214 248])
+            ("utils.config" include nil nil [250 281])
+            ("if" code nil nil [283 1345]))          
+      :file "main.py"
+      :pointmax 1419
+      :fsize 1418
+      :lastmodtime '(22783 889 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "taskad_process.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [25 35])
+            ("logging" include nil nil [36 50])
+            ("time" include nil nil [51 62])
+            ("thrift.transport" include nil nil [76 115])
+            ("thrift" include nil nil [116 149])
+            ("thrift.protocol" include nil nil [150 193])
+            ("domob_thrift.inf.sahara.logtailer_types.ttypes" include nil nil [194 260])
+            ("domob_thrift.ow.settle.ttypes" include nil nil [261 314])
+            ("domob_thrift.ow.common.ttypes" include nil nil [315 365])
+            ("server.point" include nil nil [367 397])
+            ("TaskAdProcessor" type
+               (:superclasses ("object")
+                :members 
+                  ( ("logger" variable nil (reparse-symbol indented_block_body) [435 492])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [519 544]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [511 515])
+                            ("cfg" variable nil (reparse-symbol function_parameters) [517 520]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [498 557])
+                    ("produce" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [574 578]))                          )
+                        (reparse-symbol indented_block_body) [562 1183])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1200 1204]))                          )
+                        (reparse-symbol indented_block_body) [1188 1601])
+                    ("add_point" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1620 1624])
+                            ("event" variable nil (reparse-symbol function_parameters) [1626 1631]))                          )
+                        (reparse-symbol indented_block_body) [1606 1895]))                  
+                :type "class")
+                nil [400 1895])
+            ("run" function (:arguments 
+              ( ("cfg" variable nil (reparse-symbol function_parameters) [1905 1908]))              ) nil [1897 1972]))          
+      :file "taskad_process.py"
+      :pointmax 1972
+      :fsize 1971
+      :lastmodtime '(22784 5191 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_point_server!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

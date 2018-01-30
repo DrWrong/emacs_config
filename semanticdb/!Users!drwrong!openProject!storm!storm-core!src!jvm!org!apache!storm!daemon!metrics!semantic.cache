@@ -1,0 +1,176 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.daemon.metrics" package nil nil [804 844])
+            ("org.apache.storm.metric.api.CountMetric" include nil nil [846 893])
+            ("org.apache.storm.stats.CommonStats" include nil nil [894 936])
+            ("SpoutThrottlingMetrics" type
+               (:typemodifiers ("public")
+                :superclasses "BuiltinMetrics"
+                :members 
+                  ( ("skippedMaxSpout" variable
+                       (:typemodifiers ("private" "final")
+                        :type "CountMetric")
+                        (reparse-symbol class_member_declaration) [1003 1065])
+                    ("skippedThrottle" variable
+                       (:typemodifiers ("private" "final")
+                        :type "CountMetric")
+                        (reparse-symbol class_member_declaration) [1070 1132])
+                    ("skippedInactive" variable
+                       (:typemodifiers ("private" "final")
+                        :type "CountMetric")
+                        (reparse-symbol class_member_declaration) [1137 1199])
+                    ("SpoutThrottlingMetrics" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [1205 1440])
+                    ("getSkippedMaxSpout" function
+                       (:typemodifiers ("public")
+                        :type "CountMetric")
+                        (reparse-symbol class_member_declaration) [1446 1525])
+                    ("getSkippedThrottle" function
+                       (:typemodifiers ("public")
+                        :type "CountMetric")
+                        (reparse-symbol class_member_declaration) [1531 1610])
+                    ("getSkippedInactive" function
+                       (:typemodifiers ("public")
+                        :type "CountMetric")
+                        (reparse-symbol class_member_declaration) [1616 1695])
+                    ("skippedMaxSpout" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("stats" variable (:type "CommonStats") (reparse-symbol formal_parameters) [1729 1746]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1701 1809])
+                    ("skippedThrottle" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("stats" variable (:type "CommonStats") (reparse-symbol formal_parameters) [1843 1860]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1815 1923])
+                    ("skippedInactive" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("stats" variable (:type "CommonStats") (reparse-symbol formal_parameters) [1957 1974]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1929 2037]))                  
+                :type "class")
+                nil [938 2039]))          
+      :file "SpoutThrottlingMetrics.java"
+      :pointmax 2039
+      :fsize 2038
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.daemon.metrics" package nil nil [804 844])
+            ("org.apache.storm.metric.internal.MultiCountStatAndMetric" include nil nil [846 910])
+            ("org.apache.storm.metric.internal.MultiLatencyStatAndMetric" include nil nil [911 977])
+            ("org.apache.storm.stats.BoltExecutorStats" include nil nil [978 1026])
+            ("BuiltinBoltMetrics" type
+               (:typemodifiers ("public")
+                :superclasses "BuiltinMetrics"
+                :members 
+                  ( ("ackCount" variable
+                       (:typemodifiers ("private" "final")
+                        :type "MultiCountStatAndMetric")
+                        (reparse-symbol class_member_declaration) [1089 1136])
+                    ("failCount" variable
+                       (:typemodifiers ("private" "final")
+                        :type "MultiCountStatAndMetric")
+                        (reparse-symbol class_member_declaration) [1141 1189])
+                    ("emitCount" variable
+                       (:typemodifiers ("private" "final")
+                        :type "MultiCountStatAndMetric")
+                        (reparse-symbol class_member_declaration) [1194 1242])
+                    ("executeCount" variable
+                       (:typemodifiers ("private" "final")
+                        :type "MultiCountStatAndMetric")
+                        (reparse-symbol class_member_declaration) [1247 1298])
+                    ("transferCount" variable
+                       (:typemodifiers ("private" "final")
+                        :type "MultiCountStatAndMetric")
+                        (reparse-symbol class_member_declaration) [1303 1355])
+                    ("executeLatency" variable
+                       (:typemodifiers ("private" "final")
+                        :type "MultiLatencyStatAndMetric")
+                        (reparse-symbol class_member_declaration) [1360 1415])
+                    ("processLatency" variable
+                       (:typemodifiers ("private" "final")
+                        :type "MultiLatencyStatAndMetric")
+                        (reparse-symbol class_member_declaration) [1420 1475])
+                    ("BuiltinBoltMetrics" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("stats" variable (:type "BoltExecutorStats") (reparse-symbol formal_parameters) [1507 1530]))                          )
+                        (reparse-symbol class_member_declaration) [1481 2294])
+                    ("getAckCount" function
+                       (:typemodifiers ("public")
+                        :type "MultiCountStatAndMetric")
+                        (reparse-symbol class_member_declaration) [2300 2377])
+                    ("getFailCount" function
+                       (:typemodifiers ("public")
+                        :type "MultiCountStatAndMetric")
+                        (reparse-symbol class_member_declaration) [2383 2462])
+                    ("getEmitCount" function
+                       (:typemodifiers ("public")
+                        :type "MultiCountStatAndMetric")
+                        (reparse-symbol class_member_declaration) [2468 2547])
+                    ("getTransferCount" function
+                       (:typemodifiers ("public")
+                        :type "MultiCountStatAndMetric")
+                        (reparse-symbol class_member_declaration) [2553 2640])
+                    ("getExecuteCount" function
+                       (:typemodifiers ("public")
+                        :type "MultiCountStatAndMetric")
+                        (reparse-symbol class_member_declaration) [2646 2731])
+                    ("getExecuteLatency" function
+                       (:typemodifiers ("public")
+                        :type "MultiLatencyStatAndMetric")
+                        (reparse-symbol class_member_declaration) [2737 2828])
+                    ("getProcessLatency" function
+                       (:typemodifiers ("public")
+                        :type "MultiLatencyStatAndMetric")
+                        (reparse-symbol class_member_declaration) [2834 2925]))                  
+                :type "class")
+                nil [1028 2927]))          
+      :file "BuiltinBoltMetrics.java"
+      :pointmax 2928
+      :fsize 2927
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.daemon.metrics" package nil nil [804 844])
+            ("java.util.HashMap" include nil nil [846 871])
+            ("java.util.Map" include nil nil [872 893])
+            ("org.apache.storm.metric.api.IMetric" include nil nil [894 937])
+            ("org.apache.storm.task.TopologyContext" include nil nil [938 983])
+            ("BuiltinMetrics" type
+               (:typemodifiers ("public" "abstract")
+                :members 
+                  ( ("registerAll" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [1123 1136])
+                            ("context" variable (:type "TopologyContext") (reparse-symbol formal_parameters) [1138 1161]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1099 1360]))                  
+                :type "class")
+                nil [985 1362]))          
+      :file "BuiltinMetrics.java"
+      :pointmax 1363
+      :fsize 1362
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax '((SEMICOLON 1092 . 1093) (PAREN_BLOCK 1090 . 1092) (GT 1089 . 1090) (LT 1088 . 1089) (NEW 1077 . 1080) (EQ 1075 . 1076) (GT 1063 . 1064) (COMMA 1054 . 1055) (PROTECTED 1028 . 1037) (LT 1047 . 1048))))
+  :file "!Users!drwrong!openProject!storm!storm-core!src!jvm!org!apache!storm!daemon!metrics!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

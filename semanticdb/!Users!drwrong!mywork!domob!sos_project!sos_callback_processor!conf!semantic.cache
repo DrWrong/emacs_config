@@ -1,0 +1,48 @@
+;; Object conf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "conf/"
+  :tables
+  (list
+    (semanticdb-table "django_settings.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Django settings for sos_trans_supply project.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/1.6/topics/settings/
+
+For the full list of settings and their values, see
+https://docs.djangoproject.com/en/1.6/ref/settings/
+\"\"\"" code nil nil [26 279])
+            ("os" include nil nil [353 362])
+            ("BASE_DIR" variable nil nil [363 416])
+            ("SECRET_KEY" variable nil nil [622 687])
+            ("DEBUG" variable nil nil [769 782])
+            ("TEMPLATE_DEBUG" variable nil nil [784 805])
+            ("ALLOWED_HOSTS" variable nil nil [807 825])
+            ("INSTALLED_APPS" variable nil nil [854 1060])
+            ("MIDDLEWARE_CLASSES" variable nil nil [1062 1429])
+            ("ROOT_URLCONF" variable nil nil [1431 1471])
+            ("WSGI_APPLICATION" variable nil nil [1473 1529])
+            ("DATABASES" variable nil nil [1608 2007])
+            ("DM303" variable nil nil [2115 2163])
+            ("SLEEP" variable nil nil [2174 2182])
+            ("TOPPRICE" variable nil nil [2196 2208])
+            ("PUSH_SERVER_CONFIG" variable nil nil [2210 2299])
+            ("REDIS_POOL" variable nil nil [2301 2374])
+            ("THRIFT_USERSERVER" variable nil nil [2376 2484])
+            ("LANGUAGE_CODE" variable nil nil [2660 2683])
+            ("TIME_ZONE" variable nil nil [2685 2712])
+            ("USE_I18N" variable nil nil [2714 2729])
+            ("USE_L10N" variable nil nil [2731 2746])
+            ("USE_TZ" variable nil nil [2748 2761])
+            ("STATIC_URL" variable nil nil [2865 2888]))          
+      :file "django_settings.py"
+      :pointmax 2889
+      :fsize 2926
+      :lastmodtime '(22159 25347 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_callback_processor!conf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

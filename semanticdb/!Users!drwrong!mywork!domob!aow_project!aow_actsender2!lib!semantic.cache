@@ -1,0 +1,30 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables
+  (list
+    (semanticdb-table "actsender_main.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Author: PangBo <pangbo@domob.cn>
+
+该服务主要负责向开发者发送激活数据
+\"\"\"" code nil nil [42 101])
+            ("argparse" include nil nil [103 118])
+            ("logging.config" include nil nil [119 140])
+            ("os" include nil nil [141 150])
+            ("sys" include nil nil [151 161])
+            ("domob_pyutils.dm303" include nil nil [163 204])
+            ("basepath" variable nil nil [206 267])
+            ("sys" code nil nil [268 300])
+            ("aow_actsender.config" include nil nil [302 341])
+            ("if" code nil nil [343 1082]))          
+      :file "actsender_main.py"
+      :pointmax 1084
+      :fsize 1117
+      :lastmodtime '(22684 8007 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_actsender2!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

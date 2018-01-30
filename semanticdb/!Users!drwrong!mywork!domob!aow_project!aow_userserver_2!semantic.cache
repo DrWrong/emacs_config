@@ -1,0 +1,16 @@
+;; Object aow_userserver_2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "aow_userserver_2/"
+  :tables
+  (list
+    (semanticdb-table "prj.el"
+      :major-mode 'jdee-mode
+      :tags nil
+      :file "prj.el"
+      :pointmax 1265
+      :fsize 1264
+      :lastmodtime '(22125 41223 0 0)
+      :unmatched-syntax '((RPAREN 1263 . 1264) (RPAREN 1262 . 1263) (RPAREN 1261 . 1262) (STRING_LITERAL 1189 . 1261) (STRING_LITERAL 1108 . 1185) (STRING_LITERAL 1032 . 1104) (STRING_LITERAL 951 . 1028) (STRING_LITERAL 870 . 947) (STRING_LITERAL 789 . 866) (LPAREN 784 . 785) (STRING_LITERAL 758 . 784) (RPAREN 755 . 756) (RPAREN 754 . 755) (STRING_LITERAL 682 . 754) (STRING_LITERAL 601 . 678) (STRING_LITERAL 525 . 597) (STRING_LITERAL 444 . 521) (LPAREN 439 . 440) (STRING_LITERAL 419 . 439) (RPAREN 416 . 417) (RPAREN 415 . 416) (STRING_LITERAL 409 . 415) (LPAREN 404 . 405) (STRING_LITERAL 362 . 404) (RPAREN 359 . 360) (PAREN_BLOCK 344 . 359) (STRING_LITERAL 313 . 344) (PAREN_BLOCK 37 . 311) (PAREN_BLOCK 2 . 36))))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_userserver_2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

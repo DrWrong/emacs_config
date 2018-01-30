@@ -1,0 +1,357 @@
+;; Object act_sender/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "act_sender/"
+  :tables
+  (list
+    (semanticdb-table "OwMedia.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.act_sender" package nil nil [1 39])
+            ("java.net.URLEncoder" include nil nil [41 68])
+            ("java.net.URI" include nil nil [69 89])
+            ("java.security.MessageDigest" include nil nil [90 125])
+            ("java.util.ArrayList" include nil nil [126 153])
+            ("java.util.Collections" include nil nil [154 183])
+            ("java.util.HashMap" include nil nil [184 209])
+            ("java.util.Iterator" include nil nil [210 236])
+            ("java.util.List" include nil nil [237 259])
+            ("java.util.Map" include nil nil [260 281])
+            ("cn.domob.offerwall.thrift.common.DeviceInfo" include nil nil [283 334])
+            ("cn.domob.offerwall.thrift.settle.SettleEvent" include nil nil [335 387])
+            ("java.security.NoSuchAlgorithmException" include nil nil [388 434])
+            ("org.slf4j.Logger" include nil nil [435 459])
+            ("org.slf4j.LoggerFactory" include nil nil [460 491])
+            ("java.net.URISyntaxException" include nil nil [492 527])
+            ("org.apache.commons.lang3.StringUtils" include nil nil [528 572])
+            ("OwMedia" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [761 831])
+                    ("mid" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [837 852])
+                    ("pubid" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [857 877])
+                    ("sendurl" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [882 904])
+                    ("server_secret" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [909 937])
+                    ("getIdentifier" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("device" variable (:type "DeviceInfo") (reparse-symbol formal_parameters) [972 989]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [943 1203])
+                    ("actionName" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("action" variable (:type "int") (reparse-symbol formal_parameters) [1235 1245]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1209 1361])
+                    ("sign" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("" variable (:type "String") (reparse-symbol formal_parameters) [1398 1404])
+                            ("" variable (:type "params") (reparse-symbol formal_parameters) [1414 1420]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1368 2419])
+                    ("queryString" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("" variable (:type "String") (reparse-symbol formal_parameters) [2462 2468])
+                            ("" variable (:type "params") (reparse-symbol formal_parameters) [2478 2484]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2425 2962])
+                    ("genOrderid" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("event" variable (:type "SettleEvent") (reparse-symbol formal_parameters) [2994 3011]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2968 3170])
+                    ("getCallbackUriForEvent" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("event" variable (:type "SettleEvent") (reparse-symbol formal_parameters) [3247 3264]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3210 4929]))                  
+                :type "class")
+                nil [734 4931]))          
+      :file "OwMedia.java"
+      :pointmax 4932
+      :fsize 4939
+      :lastmodtime '(22775 13267 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "OwMediaMapper.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.act_sender" package nil nil [1 39])
+            ("java.util.List" include nil nil [41 63])
+            ("org.apache.ibatis.annotations.Select" include nil nil [65 109])
+            ("OwMediaMapper" type
+               (:typemodifiers ("public")
+                :type "interface")
+                nil [276 482]))          
+      :file "OwMediaMapper.java"
+      :pointmax 483
+      :fsize 482
+      :lastmodtime '(22773 38636 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "MediaConfig.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.act_sender" package nil nil [1 39])
+            ("java.util.HashMap" include nil nil [41 66])
+            ("java.util.List" include nil nil [67 89])
+            ("java.util.Map" include nil nil [90 111])
+            ("org.apache.ibatis.datasource.pooled.PooledDataSource" include nil nil [113 173])
+            ("org.apache.ibatis.mapping.Environment" include nil nil [174 219])
+            ("org.apache.ibatis.session.Configuration" include nil nil [220 267])
+            ("org.apache.ibatis.session.SqlSession" include nil nil [268 312])
+            ("org.apache.ibatis.session.SqlSessionFactory" include nil nil [313 364])
+            ("org.apache.ibatis.session.SqlSessionFactoryBuilder" include nil nil [365 423])
+            ("org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory" include nil nil [424 489])
+            ("org.slf4j.Logger" include nil nil [490 514])
+            ("org.slf4j.LoggerFactory" include nil nil [515 546])
+            ("MediaConfig" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [743 817])
+                    ("sqlSessionFactory" variable
+                       (:typemodifiers ("private")
+                        :type "SqlSessionFactory")
+                        (reparse-symbol class_member_declaration) [822 866])
+                    ("loadMedias" function (:constructor-flag t) (reparse-symbol class_member_declaration) [944 1554])
+                    ("mediaLoadThread" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1561 2066])
+                    ("getMedia" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("mid" variable (:type "int") (reparse-symbol formal_parameters) [2096 2103]))                          
+                        :type "OwMedia")
+                        (reparse-symbol class_member_declaration) [2072 2144])
+                    ("MediaConfig" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("conf" variable (:type "Map") (reparse-symbol formal_parameters) [2247 2255]))                          )
+                        (reparse-symbol class_member_declaration) [2228 3361]))                  
+                :type "class")
+                nil [712 3364]))          
+      :file "MediaConfig.java"
+      :pointmax 3365
+      :fsize 3364
+      :lastmodtime '(22773 38643 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ActCreatorBolt.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.act_sender" package nil nil [1 39])
+            ("java.util.Map" include nil nil [41 62])
+            ("cn.domob.offerwall.common.RichBoltWithMetric" include nil nil [64 116])
+            ("cn.domob.offerwall.thrift.settle.SettleEvent" include nil nil [117 169])
+            ("com.google.gson.Gson" include nil nil [170 198])
+            ("org.apache.storm.task.OutputCollector" include nil nil [199 244])
+            ("org.apache.storm.task.TopologyContext" include nil nil [245 290])
+            ("org.apache.storm.topology.OutputFieldsDeclarer" include nil nil [291 345])
+            ("org.apache.storm.tuple.Fields" include nil nil [346 383])
+            ("org.apache.storm.tuple.Tuple" include nil nil [384 420])
+            ("org.apache.storm.tuple.Values" include nil nil [421 458])
+            ("org.slf4j.Logger" include nil nil [459 483])
+            ("org.slf4j.LoggerFactory" include nil nil [484 515])
+            ("ActCreatorBolt" type
+               (:typemodifiers ("public")
+                :superclasses "RichBoltWithMetric"
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [744 821])
+                    ("mediaConfig" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "MediaConfig")
+                        (reparse-symbol class_member_declaration) [826 868])
+                    ("collector" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "OutputCollector")
+                        (reparse-symbol class_member_declaration) [873 917])
+                    ("callbackPayload" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("event" variable (:type "SettleEvent") (reparse-symbol formal_parameters) [954 971]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [923 1170])
+                    ("execute" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("tuple" variable
+                               (:typemodifiers ("final")
+                                :type "Tuple")
+                                (reparse-symbol formal_parameters) [1374 1391]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1348 1873])
+                    ("prepare" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("map" variable
+                               (:typemodifiers ("final")
+                                :type "Map")
+                                (reparse-symbol formal_parameters) [2156 2169])
+                            ("topologyContext" variable
+                               (:typemodifiers ("final")
+                                :type "TopologyContext")
+                                (reparse-symbol formal_parameters) [2171 2208])
+                            ("outputCollector" variable
+                               (:typemodifiers ("final")
+                                :type "OutputCollector")
+                                (reparse-symbol formal_parameters) [2210 2247]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2130 2347])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("outputFieldsDeclarer" variable
+                               (:typemodifiers ("final")
+                                :type "OutputFieldsDeclarer")
+                                (reparse-symbol formal_parameters) [2617 2664]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2579 2735]))                  
+                :type "class")
+                nil [683 2738]))          
+      :file "ActCreatorBolt.java"
+      :pointmax 2739
+      :fsize 2738
+      :lastmodtime '(22775 5759 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "CallBack.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.act_sender" package nil nil [1 39])
+            ("CallBack" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("method" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [231 253])
+                    ("uri" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [258 277])
+                    ("CallBack" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("uri" variable (:type "String") (reparse-symbol formal_parameters) [374 384]))                          )
+                        (reparse-symbol class_member_declaration) [358 446]))                  
+                :type "class")
+                nil [202 449]))          
+      :file "CallBack.java"
+      :pointmax 450
+      :fsize 449
+      :lastmodtime '(22772 27326 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ActSenderBolt.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.act_sender" package nil nil [1 39])
+            ("java.util.Map" include nil nil [41 62])
+            ("java.util.Properties" include nil nil [63 91])
+            ("cn.domob.offerwall.common.RichBoltWithMetric" include nil nil [93 145])
+            ("cn.domob.offerwall.common.KafkaProducer" include nil nil [146 193])
+            ("org.apache.storm.task.IBolt" include nil nil [194 229])
+            ("org.apache.storm.task.OutputCollector" include nil nil [230 275])
+            ("org.apache.storm.task.TopologyContext" include nil nil [276 321])
+            ("org.apache.storm.topology.IComponent" include nil nil [322 366])
+            ("org.apache.storm.topology.OutputFieldsDeclarer" include nil nil [367 421])
+            ("org.apache.storm.tuple.Tuple" include nil nil [422 458])
+            ("ActSenderBolt" type
+               (:typemodifiers ("public")
+                :superclasses "RichBoltWithMetric"
+                :members 
+                  ( ("collector" variable
+                       (:typemodifiers ("private")
+                        :type "OutputCollector")
+                        (reparse-symbol class_member_declaration) [687 721])
+                    ("producer" variable
+                       (:typemodifiers ("private")
+                        :type "KafkaProducer")
+                        (reparse-symbol class_member_declaration) [726 757])
+                    ("producerProps" variable
+                       (:typemodifiers ("private")
+                        :type "Properties")
+                        (reparse-symbol class_member_declaration) [762 795])
+                    ("topic" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [800 821])
+                    ("execute" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("tuple" variable
+                               (:typemodifiers ("final")
+                                :type "Tuple")
+                                (reparse-symbol formal_parameters) [1027 1044]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1001 1323])
+                    ("prepare" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("map" variable
+                               (:typemodifiers ("final")
+                                :type "Map")
+                                (reparse-symbol formal_parameters) [1606 1619])
+                            ("topologyContext" variable
+                               (:typemodifiers ("final")
+                                :type "TopologyContext")
+                                (reparse-symbol formal_parameters) [1621 1658])
+                            ("outputCollector" variable
+                               (:typemodifiers ("final")
+                                :type "OutputCollector")
+                                (reparse-symbol formal_parameters) [1660 1697]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1580 1973])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public" "final")
+                        :arguments 
+                          ( ("outputFieldsDeclarer" variable
+                               (:typemodifiers ("final")
+                                :type "OutputFieldsDeclarer")
+                                (reparse-symbol formal_parameters) [2243 2290]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2205 2300])
+                    ("cleanup" function
+                       (:typemodifiers ("public" "final")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2393 2485])
+                    ("ActSenderBolt" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("topic" variable (:type "String") (reparse-symbol formal_parameters) [2594 2606])
+                            ("producerProps" variable (:type "Properties") (reparse-symbol formal_parameters) [2608 2632]))                          )
+                        (reparse-symbol class_member_declaration) [2573 2713]))                  
+                :type "class")
+                nil [627 2716]))          
+      :file "ActSenderBolt.java"
+      :pointmax 2717
+      :fsize 2716
+      :lastmodtime '(22774 63808 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!offerwall!ow_topology!src!main!java!cn!domob!offerwall!act_sender!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,88 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.topology.base" package nil nil [804 843])
+            ("org.apache.storm.topology.IRichBolt" include nil nil [845 888])
+            ("BaseRichBolt" type
+               (:typemodifiers ("public" "abstract")
+                :interfaces ("IRichBolt")
+                :superclasses "BaseComponent"
+                :members 
+                  ( ("cleanup" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [988 1017]))                  
+                :type "class")
+                nil [890 1023]))          
+      :file "BaseRichBolt.java"
+      :pointmax 1024
+      :fsize 1023
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.topology.base" package nil nil [804 843])
+            ("org.apache.storm.topology.IComponent" include nil nil [845 889])
+            ("java.util.Map" include nil nil [890 911])
+            ("BaseComponent" type
+               (:typemodifiers ("public" "abstract")
+                :interfaces ("IComponent")
+                :members 
+                  ( ("getComponentConfiguration" function (:constructor-flag t) (reparse-symbol class_member_declaration) [1018 1074]))                  
+                :type "class")
+                nil [913 1080]))          
+      :file "BaseComponent.java"
+      :pointmax 1081
+      :fsize 1080
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax '((GT 1016 . 1017) (COMMA 1008 . 1009) (IDENTIFIER 977 . 986) (PUBLIC 991 . 997) (LT 1001 . 1002)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.topology.base" package nil nil [904 943])
+            ("org.apache.storm.topology.IRichSpout" include nil nil [945 989])
+            ("BaseRichSpout" type
+               (:typemodifiers ("public" "abstract")
+                :interfaces ("IRichSpout")
+                :superclasses "BaseComponent"
+                :members 
+                  ( ("close" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1091 1118])
+                    ("activate" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1138 1168])
+                    ("deactivate" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1188 1220])
+                    ("ack" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("msgId" variable (:type "Object") (reparse-symbol formal_parameters) [1256 1268]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1240 1277])
+                    ("fail" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("msgId" variable (:type "Object") (reparse-symbol formal_parameters) [1314 1326]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1297 1335]))                  
+                :type "class")
+                nil [991 1337]))          
+      :file "BaseRichSpout.java"
+      :pointmax 1338
+      :fsize 1337
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!openProject!storm!storm-core!src!jvm!org!apache!storm!topology!base!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

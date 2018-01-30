@@ -1,0 +1,3113 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("d_redis_pool.h" include nil nil [371 396])
+            ("timer.h" include nil nil [397 415])
+            ("vector" include (:system-flag t) nil [416 433])
+            ("boost/algorithm/string.hpp" include (:system-flag t) nil [434 471])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [472 492])
+            ("d_redis_pool" function
+               (:constructor-flag t
+                :parent "d_redis_pool"
+                :type ("d_redis_pool" type (:type "class") nil nil))
+                nil [494 754])
+            ("d_redis_pool" function
+               (:destructor-flag t
+                :parent "d_redis_pool"
+                :type "void")
+                nil [756 1938])
+            ("init" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("conf_path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1992 2014]))                  
+                :type "int")
+                nil [1969 5790])
+            ("_initial" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("firstIni" variable (:type "bool") (reparse-symbol arg-sub-list) [5820 5834]))                  
+                :type "int")
+                nil [5793 11706])
+            ("_init_hash" function
+               (:parent "d_redis_pool"
+                :type "int")
+                nil [11708 12584])
+            ("_zk_watcher" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("zh" variable
+                       (:pointer 1
+                        :type ("zhandle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12617 12631])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [12632 12641])
+                    ("state" variable (:type "int") (reparse-symbol arg-sub-list) [12642 12652])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12653 12670])
+                    ("watcherCtx" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12671 12688]))                  
+                :type "void")
+                nil [12586 18132])
+            ("get_ipport_by_key" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18289 18305]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [18250 18423])
+            ("get_groupname_by_key" function
+               (:pointer 1
+                :parent "d_redis_pool"
+                :constant-flag t
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18472 18488]))                  
+                :type "char")
+                nil [18425 19674])
+            ("get_ipport_by_groupname" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("group_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19721 19739]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [19676 19834])
+            ("get_not_cluster" function
+               (:parent "d_redis_pool"
+                :type "bool")
+                nil [19836 19898])
+            ("get_not_cluster_ipport" function
+               (:parent "d_redis_pool"
+                :type ("string" type (:type "class") nil nil))
+                nil [19900 20061])
+            ("get_groupname_to_pool" function
+               (:pointer 1
+                :parent "d_redis_pool"
+                :type ("map" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil)
+                          ("d_connection_pool" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [20063 20166])
+            ("get_pool" function
+               (:pointer 1
+                :parent "d_redis_pool"
+                :type ("d_connection_pool" type (:type "class") nil nil))
+                nil [20168 20230])
+            ("get_slave_read_enable" function
+               (:parent "d_redis_pool"
+                :type "bool")
+                nil [20232 20306])
+            ("get_slave_alive" function
+               (:parent "d_redis_pool"
+                :type "bool")
+                nil [20308 20419])
+            ("get_slave_alive_by_key" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20463 20479]))                  
+                :type "bool")
+                nil [20421 20602])
+            ("get_slave_ipport_by_key" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20649 20665]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [20604 20789])
+            ("get_slave_ipport_by_groupname" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("group_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20842 20860]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [20791 20961])
+            ("get_not_cluster_slave_ipport" function
+               (:parent "d_redis_pool"
+                :type ("string" type (:type "class") nil nil))
+                nil [20963 21128])
+            ("get_groupname_to_slave_pool" function
+               (:pointer 1
+                :parent "d_redis_pool"
+                :type ("map" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil)
+                          ("d_connection_pool" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [21130 21245])
+            ("get_slave_pool" function
+               (:pointer 1
+                :parent "d_redis_pool"
+                :type ("d_connection_pool" type (:type "class") nil nil))
+                nil [21247 21321])
+            ("get_groupname_list" function
+               (:pointer 1
+                :parent "d_redis_pool"
+                :constant-flag t
+                :type ("String_vector" type (:type "class") nil nil))
+                nil [21323 21408])
+            ("get_retry_times" function
+               (:parent "d_redis_pool"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [21410 21476])
+            ("get_retry_interval" function
+               (:parent "d_redis_pool"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [21478 21550])
+            ("get_merge_max_cnt" function
+               (:parent "d_redis_pool"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [21552 21622])
+            ("get_merge_max_s" function
+               (:parent "d_redis_pool"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [21624 21690])
+            ("get_sample_size" function
+               (:parent "d_redis_pool"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [21692 21758])
+            ("merge_status" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("mapping" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("node_status" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21791 21827]))                  
+                :type "int")
+                nil [21760 23280])
+            ("get_db_idx" function
+               (:parent "d_redis_pool"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [23282 23338])
+            ("set_db_idx" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23370 23385]))                  
+                :type "void")
+                nil [23340 23407])
+            ("get_io_timeout" function
+               (:pointer 1
+                :parent "d_redis_pool"
+                :type ("timeval" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [23409 23481])
+            ("get_version" function
+               (:parent "d_redis_pool"
+                :type "int")
+                nil [23483 23585])
+            ("get_slave_version" function
+               (:parent "d_redis_pool"
+                :type "int")
+                nil [23587 23701])
+            ("get_version_by_groupname" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("groupname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23746 23763]))                  
+                :type "int")
+                nil [23703 23858])
+            ("get_slave_version_by_groupname" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("groupname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23909 23926]))                  
+                :type "int")
+                nil [23860 24027])
+            ("release_hiredis" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("redisContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24096 24114])
+                    ("version" variable (:type "int") (reparse-symbol arg-sub-list) [24115 24127]))                  
+                :type "void")
+                nil [24061 24385])
+            ("release_slave_hiredis" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("redisContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24428 24446])
+                    ("version" variable (:type "int") (reparse-symbol arg-sub-list) [24447 24459]))                  
+                :type "void")
+                nil [24387 24729])
+            ("release_groupname_to_hiredis" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("group_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24779 24797])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("redisContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24798 24816])
+                    ("version" variable (:type "int") (reparse-symbol arg-sub-list) [24817 24829]))                  
+                :type "void")
+                nil [24731 25099])
+            ("release_groupname_to_slave_hiredis" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("group_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25155 25173])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("redisContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25174 25192])
+                    ("version" variable (:type "int") (reparse-symbol arg-sub-list) [25193 25205]))                  
+                :type "void")
+                nil [25101 25487])
+            ("get_lock_connect" function
+               (:pointer 1
+                :parent "d_redis_pool"
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [25489 25572])
+            ("_get_timestamp_sec" function
+               (:parent "d_redis_pool"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [25574 25666])
+            ("_deallocate_String_vector" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("String_vector" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25860 25884]))                  
+                :type "int")
+                nil [25816 26039])
+            ("_set_groupname_list" function
+               (:parent "d_redis_pool"
+                :type "int")
+                nil [26041 26466])
+            ("_set_groupname_to_slave_ipport" function
+               (:parent "d_redis_pool"
+                :type "int")
+                nil [26486 27631])
+            ("_set_groupname_to_slave_ipport" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("group_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27683 27701])
+                    ("ipport" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27702 27716]))                  
+                :type "void")
+                nil [27633 28003])
+            ("_set_groupname_to_ipport" function
+               (:parent "d_redis_pool"
+                :type "int")
+                nil [28005 28816])
+            ("_set_groupname_to_ipport" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("group_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28861 28879])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28880 28897]))                  
+                :type "int")
+                nil [28818 29350])
+            ("_update_pool" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("group_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29384 29402]))                  
+                :type "void")
+                nil [29352 30384])
+            ("_update_not_cluster_pool" function
+               (:parent "d_redis_pool"
+                :type "void")
+                nil [30386 31377])
+            ("_update_slave_pool" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("group_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31417 31435]))                  
+                :type "void")
+                nil [31379 32491])
+            ("_update_not_cluster_slave_pool" function
+               (:parent "d_redis_pool"
+                :type "void")
+                nil [32493 33542])
+            ("get_businessname" function
+               (:pointer 1
+                :parent "d_redis_pool"
+                :constant-flag t
+                :type "char")
+                nil [33544 33615])
+            ("_set_groupname_to_slave_alive" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("group_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33666 33684])
+                    ("active" variable (:type "bool") (reparse-symbol arg-sub-list) [33685 33697]))                  
+                :type "void")
+                nil [33617 33750])
+            ("_set_slave_alive" function
+               (:parent "d_redis_pool"
+                :arguments 
+                  ( ("active" variable (:type "bool") (reparse-symbol arg-sub-list) [33788 33800]))                  
+                :type "void")
+                nil [33752 33828]))          
+      :file "d_redis_pool.cpp"
+      :pointmax 33873
+      :fsize 35294
+      :lastmodtime '(22940 61532 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__D_REDIS_POOL_H_" variable (:constant-flag t) nil [407 424])
+            ("hiredis/hiredis.h" include nil nil [427 455])
+            ("adserver_read_conf.h" include nil nil [456 487])
+            ("basic_dict.h" include nil nil [489 512])
+            ("MurmurHash3.h" include nil nil [513 537])
+            ("sequence_recorder.h" include nil nil [538 568])
+            ("autolock.h" include nil nil [569 590])
+            ("auto_release.h" include nil nil [591 616])
+            ("d_connection_pool.h" include nil nil [617 647])
+            ("bitmap.h" include nil nil [648 667])
+            ("zookeeper/zookeeper.h" include nil nil [708 740])
+            ("fstream" include (:system-flag t) nil [770 788])
+            ("map" include (:system-flag t) nil [789 803])
+            ("list" include (:system-flag t) nil [804 819])
+            ("pthread.h" include (:system-flag t) nil [820 840])
+            ("VIRTUAL_NODE_NUM" variable (:constant-flag t) nil [926 942])
+            ("D_Redis_Pool" type
+               (:members 
+                  ( ("node_status" type
+                       (:members 
+                          ( ("dead_time" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [997 1016])
+                            ("bm" variable
+                               (:pointer 1
+                                :type ("bitmap" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1019 1030]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [973 1034]))                  
+                :type "namespace")
+                nil [948 1036])
+            ("D_Redis_Pool" using (:type ("D_Redis_Pool" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1037 1066])
+            ("d_redis_pool" type
+               (:members 
+                  ( ("hash_node" type
+                       (:members 
+                          ( ("value" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1112 1126])
+                            ("groupname" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [1129 1149])
+                            ("<" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("hash_node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1169 1188]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1152 1229]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [1090 1233])
+                    ("REDIS_READ_TYPE" type
+                       (:members 
+                          ( ("REDIS_READ_STRING" variable
+                               (:constant-flag t
+                                :default-value (1276 1277)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1258 1277])
+                            ("REDIS_READ_HASH" variable
+                               (:constant-flag t
+                                :default-value (1295 1296)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1279 1296])
+                            ("REDIS_READ_SET" variable
+                               (:constant-flag t
+                                :default-value (1313 1314)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1298 1314]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [1236 1316])
+                    ("private" label nil (reparse-symbol classsubparts) [1318 1326])
+                    ("_zkhandle" variable
+                       (:pointer 1
+                        :type ("zhandle_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1328 1349])
+                    ("_virtual_node_total" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1357 1385])
+                    ("_retry_times" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1399 1421])
+                    ("_retry_interval" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1423 1448])
+                    ("_hash" variable
+                       (:pointer 1
+                        :type ("hash_node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1450 1467])
+                    ("_path" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1485 1501])
+                    ("_zk_hosts" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1521 1542])
+                    ("_businessname" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1560 1584])
+                    ("_passwd" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1597 1616])
+                    ("_db_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1627 1644])
+                    ("_connect_timeout" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1652 1684])
+                    ("_io_timeout" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1694 1721])
+                    ("_block_rate" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1733 1754])
+                    ("_revive_time_minute" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1756 1785])
+                    ("_sample_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1787 1809])
+                    ("_merge_max_cnt" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1811 1835])
+                    ("_merge_max_s" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1837 1859])
+                    ("_node_to_status" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("node_status" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1861 1903])
+                    ("_node_status_lock" variable (:type ("pthread_mutex_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1905 1939])
+                    ("_groupname_list" variable (:type ("String_vector" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1942 1972])
+                    ("_groupname_to_ipport" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1974 2015])
+                    ("_groupname_to_slave_ipport" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2017 2064])
+                    ("_groupname_to_slave_alive" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2066 2110])
+                    ("_groupname_to_pool" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("d_connection_pool" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2113 2164])
+                    ("_groupname_to_slave_pool" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("d_connection_pool" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2166 2223])
+                    ("_pool" variable
+                       (:pointer 1
+                        :type ("d_connection_pool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2225 2250])
+                    ("_slave_pool" variable
+                       (:pointer 1
+                        :type ("d_connection_pool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2252 2283])
+                    ("_slave_alive" variable (:type "bool") (reparse-symbol classsubparts) [2285 2303])
+                    ("_not_cluster" variable (:type "bool") (reparse-symbol classsubparts) [2305 2323])
+                    ("_slave_read_enable" variable (:type "bool") (reparse-symbol classsubparts) [2325 2349])
+                    ("_mode" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2351 2366])
+                    ("_init_succeed" variable (:type "bool") (reparse-symbol classsubparts) [2369 2388])
+                    ("_version" variable (:type "int") (reparse-symbol classsubparts) [2391 2404])
+                    ("_slave_version" variable (:type "int") (reparse-symbol classsubparts) [2406 2425])
+                    ("_groupname_to_version" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2427 2466])
+                    ("_groupname_to_slave_version" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2468 2513])
+                    ("_redis_lock_connect" variable (:type ("pthread_mutex_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2581 2617])
+                    ("_redis_lock_host" variable (:type ("pthread_mutex_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2619 2652])
+                    ("public" label nil (reparse-symbol classsubparts) [2654 2661])
+                    ("d_redis_pool" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("d_redis_pool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2663 2678])
+                    ("d_redis_pool" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2680 2696])
+                    ("init" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("conf_path" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2707 2729]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2698 2730])
+                    ("get_ipport_by_key" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2758 2774]))                          
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2733 2775])
+                    ("get_groupname_by_key" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :constant-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2810 2826]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [2777 2827])
+                    ("get_ipport_by_groupname" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("group_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2860 2878]))                          
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2829 2879])
+                    ("get_not_cluster" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2881 2904])
+                    ("get_not_cluster_ipport" function
+                       (:prototype-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2906 2938])
+                    ("get_groupname_to_pool" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("d_connection_pool" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2940 2997])
+                    ("get_pool" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("d_connection_pool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2999 3029])
+                    ("get_slave_read_enable" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3031 3060])
+                    ("get_slave_alive" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3062 3085])
+                    ("get_slave_alive_by_key" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3115 3131]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3087 3132])
+                    ("get_slave_ipport_by_key" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3165 3181]))                          
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3134 3182])
+                    ("get_slave_ipport_by_groupname" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("group_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3221 3239]))                          
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3184 3240])
+                    ("get_not_cluster_slave_ipport" function
+                       (:prototype-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3242 3280])
+                    ("get_groupname_to_slave_pool" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("d_connection_pool" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3282 3345])
+                    ("get_slave_pool" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("d_connection_pool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3347 3383])
+                    ("get_groupname_list" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :constant-flag t
+                        :type ("String_vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3385 3427])
+                    ("set_db_idx" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("index" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3446 3461]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3430 3462])
+                    ("get_db_idx" function
+                       (:prototype-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3464 3486])
+                    ("get_retry_times" function
+                       (:prototype-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3488 3515])
+                    ("get_retry_interval" function
+                       (:prototype-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3517 3547])
+                    ("get_io_timeout" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("timeval" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3549 3582])
+                    ("get_merge_max_cnt" function
+                       (:prototype-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3584 3613])
+                    ("get_merge_max_s" function
+                       (:prototype-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3615 3642])
+                    ("get_sample_size" function
+                       (:prototype-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3644 3671])
+                    ("merge_status" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("mapping" variable
+                               (:reference 1
+                                :type ("map" type
+                                     (:template-specifier 
+                                        ( ("string" type nil nil nil)
+                                          ("node_status" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3690 3726]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3673 3727])
+                    ("release_hiredis" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ctx" variable
+                               (:pointer 1
+                                :type ("redisContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3751 3769])
+                            ("version" variable (:type "int") (reparse-symbol arg-sub-list) [3770 3782]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3730 3783])
+                    ("release_slave_hiredis" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ctx" variable
+                               (:pointer 1
+                                :type ("redisContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3812 3830])
+                            ("version" variable (:type "int") (reparse-symbol arg-sub-list) [3831 3843]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3785 3844])
+                    ("release_groupname_to_hiredis" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("group_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3880 3898])
+                            ("ctx" variable
+                               (:pointer 1
+                                :type ("redisContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3899 3917])
+                            ("version" variable (:type "int") (reparse-symbol arg-sub-list) [3918 3930]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3846 3931])
+                    ("release_groupname_to_slave_hiredis" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("group_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3973 3991])
+                            ("ctx" variable
+                               (:pointer 1
+                                :type ("redisContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3992 4010])
+                            ("version" variable (:type "int") (reparse-symbol arg-sub-list) [4011 4023]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3933 4024])
+                    ("get_version" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4027 4045])
+                    ("get_slave_version" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4047 4071])
+                    ("get_version_by_groupname" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("groupname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4102 4119]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4073 4120])
+                    ("get_slave_version_by_groupname" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("groupname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4157 4174]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4122 4175])
+                    ("get_lock_connect" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("pthread_mutex_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4178 4214])
+                    ("private" label nil (reparse-symbol classsubparts) [4216 4224])
+                    ("_initial" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("firstIni" variable (:type "bool") (reparse-symbol arg-sub-list) [4239 4253]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4226 4254])
+                    ("_init_hash" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4256 4273])
+                    ("_zk_watcher" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("zh" variable
+                               (:pointer 1
+                                :type ("zhandle_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4299 4313])
+                            ("type" variable (:type "int") (reparse-symbol arg-sub-list) [4314 4323])
+                            ("state" variable (:type "int") (reparse-symbol arg-sub-list) [4324 4334])
+                            ("path" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4335 4352])
+                            ("watcherCtx" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [4353 4370]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4275 4371])
+                    ("_deallocate_String_vector" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("v" variable
+                               (:pointer 1
+                                :type ("String_vector" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4403 4427]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4373 4428])
+                    ("_set_groupname_list" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4431 4457])
+                    ("_set_groupname_to_slave_ipport" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4459 4496])
+                    ("_set_groupname_to_slave_ipport" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("group_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4534 4552])
+                            ("ipport" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4553 4567]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4498 4568])
+                    ("_set_groupname_to_ipport" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4570 4601])
+                    ("_set_groupname_to_ipport" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("group_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4632 4650])
+                            ("path" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4651 4668]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4603 4669])
+                    ("_update_pool" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("group_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4689 4707]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4671 4708])
+                    ("_update_not_cluster_pool" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4710 4742])
+                    ("_update_slave_pool" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("group_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4768 4786]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4744 4787])
+                    ("_update_not_cluster_slave_pool" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4789 4827])
+                    ("get_businessname" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [4831 4862])
+                    ("_set_groupname_to_slave_alive" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("group_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4899 4917])
+                            ("active" variable (:type "bool") (reparse-symbol arg-sub-list) [4918 4930]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4864 4931])
+                    ("_set_slave_alive" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("active" variable (:type "bool") (reparse-symbol arg-sub-list) [4955 4967]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4933 4968])
+                    ("_get_timestamp_sec" function
+                       (:prototype-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4971 5001]))                  
+                :type "class")
+                nil [1068 5024]))          
+      :file "d_redis_pool.h"
+      :pointmax 5099
+      :fsize 5316
+      :lastmodtime '(22940 61544 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__D_REDIS_POOL_H_")
+          ("VIRTUAL_NODE_NUM" . ((number "160" 943 . 946)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("d_redis.h" include nil nil [366 386])
+            ("timer.h" include nil nil [387 405])
+            ("vector" include (:system-flag t) nil [406 423])
+            ("boost/algorithm/string.hpp" include (:system-flag t) nil [424 461])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [462 482])
+            ("D_Redis" type
+               (:members 
+                  ( ("reply_free" function
+                       (:arguments 
+                          ( ("re" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [538 548]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [522 673])
+                    ("AutoFree" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [696 703])
+                            ("auto_free_t" function
+                               (:prototype-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [735 742]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [715 743])
+                            ("AutoFree" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("pf" variable (:type ("auto_free_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [756 771])
+                                    ("p" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [772 781]))                                  
+                                :type ("AutoFree" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [747 801])
+                            ("AutoFree" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [805 827])
+                            ("private" label nil (reparse-symbol classsubparts) [831 839])
+                            ("_pf" variable (:type ("auto_free_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [843 859])
+                            ("_p" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol classsubparts) [863 873]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [676 877])
+                    ("conn_free" function
+                       (:arguments 
+                          ( ("cn" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [895 905]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [880 1022]))                  
+                :type "namespace")
+                nil [484 1024])
+            ("D_Redis" using (:type ("D_Redis" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1025 1049])
+            ("d_redis" function
+               (:constructor-flag t
+                :parent "d_redis"
+                :arguments 
+                  ( ("domob_redis_pool" variable
+                       (:pointer 1
+                        :type ("d_redis_pool" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1068 1099]))                  
+                :type ("d_redis" type (:type "class") nil nil))
+                nil [1051 1727])
+            ("d_redis" function
+               (:destructor-flag t
+                :parent "d_redis"
+                :type "void")
+                nil [1729 2644])
+            ("_init" function
+               (:parent "d_redis"
+                :type "int")
+                nil [2646 8004])
+            ("set" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8303 8325])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8326 8350])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8351 8373]))                  
+                :type "int")
+                nil [8286 8867])
+            ("get_int" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8890 8912])
+                    ("value" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8913 8925]))                  
+                :type "int")
+                nil [8869 9480])
+            ("get_str" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9503 9525])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9526 9542])
+                    ("max_len" variable
+                       (:constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9543 9566]))                  
+                :type "int")
+                nil [9482 10223])
+            ("expire" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10245 10267])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10268 10290]))                  
+                :type "int")
+                nil [10225 10711])
+            ("exists" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10733 10755])
+                    ("exist" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [10756 10769]))                  
+                :type "int")
+                nil [10713 11140])
+            ("del" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11159 11181]))                  
+                :type "int")
+                nil [11142 11490])
+            ("expireat" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11514 11536])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [11537 11560]))                  
+                :type "int")
+                nil [11492 11983])
+            ("lpush" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12282 12304])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12305 12329])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12330 12352]))                  
+                :type "int")
+                nil [12263 12870])
+            ("rpush" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12891 12913])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12914 12938])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12939 12961]))                  
+                :type "int")
+                nil [12872 13479])
+            ("lpop" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13499 13521])
+                    ("value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13522 13540])
+                    ("max_len" variable
+                       (:constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13541 13564])
+                    ("is_block" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [13565 13585])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13586 13608]))                  
+                :type "int")
+                nil [13481 14685])
+            ("rpop" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14704 14726])
+                    ("value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14727 14745])
+                    ("max_len" variable
+                       (:constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14746 14769])
+                    ("is_block" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [14770 14790])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14791 14813]))                  
+                :type "int")
+                nil [14686 15890])
+            ("hset" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16189 16211])
+                    ("field" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16212 16236])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16237 16261])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [16262 16284]))                  
+                :type "int")
+                nil [16171 16842])
+            ("hmset" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16863 16885])
+                    ("keyValues" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16886 16923])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [16924 16946]))                  
+                :type "int")
+                nil [16844 17855])
+            ("hincrby" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17878 17900])
+                    ("field" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17901 17925])
+                    ("amount" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [17926 17943]))                  
+                :type "int")
+                nil [17857 18314])
+            ("hdel" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18334 18356])
+                    ("fields" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("list" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18357 18385]))                  
+                :type "int")
+                nil [18316 18801])
+            ("get_int_hash" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18829 18851])
+                    ("data_dict" variable
+                       (:reference 1
+                        :type ("basic_dict_t" type
+                             (:template-specifier 
+                                ( ("long long" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18852 18888]))                  
+                :type "int")
+                nil [18803 19860])
+            ("get_str_hash" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19888 19910])
+                    ("str2str" variable
+                       (:reference 1
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19911 19956]))                  
+                :type "int")
+                nil [19862 20694])
+            ("sadd" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20992 21014])
+                    ("members" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("list" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21015 21044])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [21045 21067]))                  
+                :type "int")
+                nil [20974 21659])
+            ("get_str_set" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21686 21708])
+                    ("strs" variable
+                       (:reference 1
+                        :type ("list" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21709 21729]))                  
+                :type "int")
+                nil [21661 22297])
+            ("scard" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22318 22340])
+                    ("num" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [22341 22351]))                  
+                :type "int")
+                nil [22299 22794])
+            ("_set" function
+               (:pointer 1
+                :parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23086 23108])
+                    ("command" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23109 23135]))                  
+                :type ("redisReply" type (:type "class") nil nil))
+                nil [23060 26473])
+            ("_get" function
+               (:pointer 1
+                :parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26501 26523])
+                    ("command" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26524 26550]))                  
+                :type ("redisReply" type (:type "class") nil nil))
+                nil [26475 30686])
+            ("_set_db" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("connect_handler" variable
+                       (:pointer 1
+                        :type ("redisContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30834 30864]))                  
+                :type "int")
+                nil [30813 31594])
+            ("_check_param" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31623 31645])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31646 31668]))                  
+                :type "bool")
+                nil [31596 31881])
+            ("_get_handler" function
+               (:pointer 1
+                :parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31919 31941])
+                    ("read_slave" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [31942 31964]))                  
+                :type ("redisContext" type (:type "class") nil nil))
+                nil [31883 33303])
+            ("_reconnect" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33329 33351])
+                    ("read_slave" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [33352 33374]))                  
+                :type "int")
+                nil [33305 38135])
+            ("_get_timestamp_ms" function
+               (:parent "d_redis"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [38137 38269])
+            ("get_last_sum_utime" function
+               (:parent "d_redis"
+                :type "int")
+                nil [38402 38462])
+            ("get_last_avg_utime" function
+               (:parent "d_redis"
+                :type "int")
+                nil [38464 38524])
+            ("get_last_retry_times" function
+               (:parent "d_redis"
+                :type "int")
+                nil [38526 38588])
+            ("get_last_redis_host" function
+               (:parent "d_redis"
+                :type ("string" type (:type "class") nil nil))
+                nil [38590 39000])
+            ("get_ipport_by_key" function
+               (:parent "d_redis"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39036 39052])
+                    ("read_only" variable (:type "bool") (reparse-symbol arg-sub-list) [39053 39068]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [39002 39622]))          
+      :file "d_redis.cpp"
+      :pointmax 39668
+      :fsize 40327
+      :lastmodtime '(22940 60964 0 0)
+      :unmatched-syntax '((TYPEDEF 707 . 714)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__D_REDIS_H_" variable (:constant-flag t) nil [397 409])
+            ("time.h" include (:system-flag t) nil [412 429])
+            ("hiredis/hiredis.h" include nil nil [430 458])
+            ("adserver_read_conf.h" include nil nil [459 490])
+            ("basic_dict.h" include nil nil [492 515])
+            ("sequence_recorder.h" include nil nil [543 573])
+            ("d_redis_pool.h" include nil nil [574 599])
+            ("D_Redis_Pool" using (:type ("D_Redis_Pool" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [761 790])
+            ("d_redis" type
+               (:members 
+                  ( ("REDIS_READ_TYPE" type
+                       (:members 
+                          ( ("REDIS_READ_STRING" variable
+                               (:constant-flag t
+                                :default-value (849 850)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [831 850])
+                            ("REDIS_READ_HASH" variable
+                               (:constant-flag t
+                                :default-value (868 869)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [852 869])
+                            ("REDIS_READ_SET" variable
+                               (:constant-flag t
+                                :default-value (886 887)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [871 887]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [809 889])
+                    ("private" label nil (reparse-symbol classsubparts) [891 899])
+                    ("_groupname_to_hiredis" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("redisContext" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [901 950])
+                    ("_groupname_to_slave_hiredis" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("redisContext" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [952 1007])
+                    ("_hiredis" variable
+                       (:pointer 1
+                        :type ("redisContext" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1009 1032])
+                    ("_slave_hiredis" variable
+                       (:pointer 1
+                        :type ("redisContext" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1034 1063])
+                    ("_not_cluster" variable (:type "bool") (reparse-symbol classsubparts) [1065 1083])
+                    ("_slave_read_enable" variable (:type "bool") (reparse-symbol classsubparts) [1085 1109])
+                    ("_d_redis_pool" variable
+                       (:pointer 1
+                        :type ("d_redis_pool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1112 1140])
+                    ("_retry_times" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1143 1165])
+                    ("_retry_interval" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1167 1192])
+                    ("_db_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1194 1211])
+                    ("_io_timeout" variable
+                       (:pointer 1
+                        :type ("timeval" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1219 1247])
+                    ("_sample_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1250 1272])
+                    ("_merge_max_cnt" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1274 1298])
+                    ("_merge_max_ms" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1300 1323])
+                    ("_last_merge_time_ms" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1325 1354])
+                    ("_cnt_from_last_merge" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1356 1386])
+                    ("_node_to_status" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("node_status" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1388 1430])
+                    ("_sr" variable (:type ("DOMOB_STL_CPP::SequenceRecorder" type
+                         (:template-specifier 
+                            ( ("long" type nil nil nil)
+                              ("10"))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1495 1541])
+                    ("_redis_lock_connect" variable
+                       (:pointer 1
+                        :type ("pthread_mutex_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1544 1582])
+                    ("_version" variable (:type "int") (reparse-symbol classsubparts) [1752 1765])
+                    ("_slave_version" variable (:type "int") (reparse-symbol classsubparts) [1767 1786])
+                    ("_groupname_to_version" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1788 1827])
+                    ("_groupname_to_slave_version" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1829 1874])
+                    ("_last_groupname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1877 1900])
+                    ("_last_read_slave" variable (:type "bool") (reparse-symbol classsubparts) [1902 1924])
+                    ("public" label nil (reparse-symbol classsubparts) [1926 1933])
+                    ("d_redis" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("domob_redis_pool" variable
+                               (:pointer 1
+                                :type ("d_redis_pool" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1943 1974]))                          
+                        :type ("d_redis" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1935 1975])
+                    ("d_redis" function
+                       (:constructor-flag t
+                        :type ("d_redis" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1977 1989])
+                    ("d_redis" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1991 2002])
+                    ("set" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2446 2468])
+                            ("value" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2469 2487])
+                            ("expire_time" variable
+                               (:constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2488 2513]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2438 2515])
+                    ("get_str" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2543 2565])
+                            ("buf" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2566 2582])
+                            ("max_len" variable
+                               (:constant-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2583 2606]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2531 2607])
+                    ("get_int" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2632 2654])
+                            ("value" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2655 2667]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2620 2668])
+                    ("expire" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2691 2713])
+                            ("expire_time" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2714 2736]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2680 2737])
+                    ("exists" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2763 2785])
+                            ("exist" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2786 2799]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2752 2800])
+                    ("del" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2819 2841]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2811 2842])
+                    ("expireat" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2974 2996])
+                            ("expire_time" variable
+                               (:constant-flag t
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [2997 3020]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2961 3021])
+                    ("lpush" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3355 3377])
+                            ("value" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3378 3402])
+                            ("expire_time" variable
+                               (:constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3403 3428]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3345 3430])
+                    ("rpush" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3517 3539])
+                            ("value" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3540 3564])
+                            ("expire_time" variable
+                               (:constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3565 3590]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3507 3592])
+                    ("lpop" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3657 3679])
+                            ("result_buf" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3680 3703])
+                            ("max_len" variable
+                               (:constant-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3709 3732])
+                            ("is_block" variable
+                               (:constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [3733 3760])
+                            ("expire_time" variable
+                               (:constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3762 3787]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3648 3789])
+                    ("rpop" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3854 3876])
+                            ("result_buf" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3877 3900])
+                            ("max_len" variable
+                               (:constant-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3906 3929])
+                            ("is_block" variable
+                               (:constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [3930 3957])
+                            ("expire_time" variable
+                               (:constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3959 3984]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3845 3986])
+                    ("hset" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4609 4631])
+                            ("field" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4632 4656])
+                            ("value" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4657 4681])
+                            ("expire_time" variable
+                               (:constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [4682 4707]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4600 4709])
+                    ("hmset" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4732 4754])
+                            ("keyValues" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("map" type
+                                     (:template-specifier 
+                                        ( ("string" type nil nil nil)
+                                          ("string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4755 4792])
+                            ("expire_time" variable
+                               (:constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [4793 4818]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4722 4820])
+                    ("hincrby" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4834 4856])
+                            ("field" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4857 4881])
+                            ("amount" variable
+                               (:constant-flag t
+                                :default-value "1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [4882 4902]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4822 4904])
+                    ("hdel" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4915 4937])
+                            ("fields" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("list" type
+                                     (:template-specifier 
+                                        ( ("string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4938 4966]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4906 4967])
+                    ("get_int_hash" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5021 5043])
+                            ("data_dict" variable
+                               (:reference 1
+                                :type ("basic_dict_t" type
+                                     (:template-specifier 
+                                        ( ("long long" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5044 5080]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5004 5081])
+                    ("get_str_hash" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5132 5154])
+                            ("str2str" variable
+                               (:reference 1
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil)
+                                          ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5155 5200]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5115 5201])
+                    ("sadd" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5435 5457])
+                            ("members" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("list" type
+                                     (:template-specifier 
+                                        ( ("string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5458 5487])
+                            ("expire_time" variable
+                               (:constant-flag t
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5488 5513]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5426 5515])
+                    ("get_str_set" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5559 5581])
+                            ("strs" variable
+                               (:reference 1
+                                :type ("list" type
+                                     (:template-specifier 
+                                        ( ("string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5582 5602]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5543 5603])
+                    ("scard" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5615 5637])
+                            ("num" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5638 5648]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5605 5649])
+                    ("get_last_sum_utime" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [5908 5933])
+                    ("get_last_retry_times" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [5935 5962])
+                    ("get_last_avg_utime" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [5964 5989])
+                    ("get_last_redis_host" function
+                       (:prototype-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5992 6021])
+                    ("get_ipport_by_key" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6048 6064])
+                            ("read_only" variable (:type "bool") (reparse-symbol arg-sub-list) [6065 6080]))                          
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6023 6081])
+                    ("private" label nil (reparse-symbol classsubparts) [6084 6092])
+                    ("_init" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [6094 6106])
+                    ("_set_db" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("connect_handler" variable
+                               (:pointer 1
+                                :type ("redisContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6120 6150]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6108 6151])
+                    ("_check_param" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6171 6193])
+                            ("buf" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6194 6216]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6153 6217])
+                    ("_set" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6237 6259])
+                            ("command" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6260 6286]))                          
+                        :type ("redisReply" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6220 6287])
+                    ("_get" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6306 6328])
+                            ("command" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6329 6355]))                          
+                        :type ("redisReply" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6289 6356])
+                    ("_get_handler" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6397 6419])
+                            ("read_slave" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [6420 6442]))                          
+                        :type ("redisContext" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6370 6443])
+                    ("_reconnect" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6460 6482])
+                            ("read_slave" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [6483 6505]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6445 6506])
+                    ("_get_timestamp_ms" function
+                       (:prototype-flag t
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6509 6538]))                  
+                :type "class")
+                nil [792 6541]))          
+      :file "d_redis.h"
+      :pointmax 6611
+      :fsize 7054
+      :lastmodtime '(22939 65471 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__D_REDIS_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("redis_pool.h" include nil nil [374 397])
+            ("timer.h" include nil nil [398 416])
+            ("vector" include (:system-flag t) nil [417 434])
+            ("boost/algorithm/string.hpp" include (:system-flag t) nil [435 472])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [473 493])
+            ("Redis_Pool" type
+               (:members 
+                  ( ("reply_free" function
+                       (:arguments 
+                          ( ("re" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [552 562]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [536 688])
+                    ("AutoFree" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [711 718])
+                            ("auto_free_t" function
+                               (:prototype-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [750 757]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [730 758])
+                            ("AutoFree" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("pf" variable (:type ("auto_free_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [771 786])
+                                    ("p" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [787 796]))                                  
+                                :type ("AutoFree" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [762 816])
+                            ("AutoFree" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [820 842])
+                            ("private" label nil (reparse-symbol classsubparts) [846 854])
+                            ("_pf" variable (:type ("auto_free_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [858 874])
+                            ("_p" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol classsubparts) [878 888]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [691 892]))                  
+                :type "namespace")
+                nil [495 894])
+            ("Redis_Pool" using (:type ("Redis_Pool" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [895 922])
+            ("redis_pool::count" variable
+               (:default-value "0"
+                :type "int")
+                nil [924 948])
+            ("redis_pool::_zkhandle" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("zhandle_t" type (:type "class") nil nil))
+                nil [949 988])
+            ("redis_pool" function
+               (:constructor-flag t
+                :parent "redis_pool"
+                :arguments 
+                  ( ("db_idx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1013 1029]))                  
+                :type ("redis_pool" type (:type "class") nil nil))
+                nil [990 1218])
+            ("redis_pool" function
+               (:constructor-flag t
+                :parent "redis_pool"
+                :type ("redis_pool" type (:type "class") nil nil))
+                nil [1220 1428])
+            ("redis_pool" function
+               (:destructor-flag t
+                :parent "redis_pool"
+                :type "void")
+                nil [1430 2061])
+            ("_zk_watcher" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("zh" variable
+                       (:pointer 1
+                        :type ("zhandle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2092 2106])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [2107 2116])
+                    ("state" variable (:type "int") (reparse-symbol arg-sub-list) [2117 2127])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2128 2145])
+                    ("watcherCtx" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2146 2163]))                  
+                :type "void")
+                nil [2063 3169])
+            ("_deallocate_String_vector" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("String_vector" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3213 3237]))                  
+                :type "int")
+                nil [3171 3392])
+            ("_set_cluster_list" function
+               (:parent "redis_pool"
+                :type "void")
+                nil [3394 3733])
+            ("_set_cluster_to_ipport" function
+               (:parent "redis_pool"
+                :type "void")
+                nil [3735 4439])
+            ("_set_prev_cluster_to_ipport" function
+               (:parent "redis_pool"
+                :type "void")
+                nil [4441 4739])
+            ("init" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("conf_path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4762 4784]))                  
+                :type "int")
+                nil [4741 11595])
+            ("_init_hash" function
+               (:parent "redis_pool"
+                :type "int")
+                nil [11597 12412])
+            ("_select_group" function
+               (:pointer 1
+                :parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12447 12463]))                  
+                :type "char")
+                nil [12415 13367])
+            ("_get_handler" function
+               (:pointer 1
+                :parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13408 13424]))                  
+                :type ("redisContext" type (:type "class") nil nil))
+                nil [13369 13941])
+            ("_check_param" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13973 13989])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13990 14006]))                  
+                :type "bool")
+                nil [13943 14219])
+            ("_push" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14243 14265])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14266 14290])
+                    ("dir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14291 14307])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14308 14330]))                  
+                :type "int")
+                nil [14221 15870])
+            ("_set_expire_time" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15905 15921])
+                    ("expire_time" variable (:type "int") (reparse-symbol arg-sub-list) [15922 15938])
+                    ("connect_handler" variable
+                       (:pointer 1
+                        :type ("redisContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15939 15969]))                  
+                :type "int")
+                nil [15872 17112])
+            ("_pop" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17135 17157])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17158 17174])
+                    ("max_len" variable
+                       (:constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17175 17198])
+                    ("dir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17199 17215])
+                    ("is_block" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17216 17237])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [17244 17266]))                  
+                :type "int")
+                nil [17114 19267])
+            ("lpop" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19289 19311])
+                    ("value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19312 19330])
+                    ("max_len" variable
+                       (:constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19331 19354])
+                    ("is_block" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [19355 19375])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [19376 19398]))                  
+                :type "int")
+                nil [19268 19574])
+            ("rpop" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19596 19618])
+                    ("value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19619 19637])
+                    ("max_len" variable
+                       (:constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19638 19661])
+                    ("is_block" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [19662 19682])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [19683 19705]))                  
+                :type "int")
+                nil [19575 19881])
+            ("rpush" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19905 19927])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19928 19952])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [19953 19975]))                  
+                :type "int")
+                nil [19883 20126])
+            ("lpush" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20150 20172])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20173 20197])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [20198 20220]))                  
+                :type "int")
+                nil [20128 20371])
+            ("_get" function
+               (:pointer 1
+                :parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20444 20460])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [20461 20470])
+                    ("read_type" variable (:type "int") (reparse-symbol arg-sub-list) [20471 20485]))                  
+                :type ("redisReply" type (:type "class") nil nil))
+                nil [20415 22563])
+            ("_reconnect" function
+               (:pointer 1
+                :parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22602 22618])
+                    ("retry_times" variable (:type "int") (reparse-symbol arg-sub-list) [22619 22635]))                  
+                :type ("redisContext" type (:type "class") nil nil))
+                nil [22565 24592])
+            ("_update_pool" function
+               (:parent "redis_pool"
+                :type "void")
+                nil [24594 25291])
+            ("_update_connect" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("tmp_cluster" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25325 25344]))                  
+                :type "int")
+                nil [25293 26974])
+            ("get_int" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27000 27022])
+                    ("value" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [27023 27034]))                  
+                :type "int")
+                nil [26976 27318])
+            ("get_str" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27344 27366])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27367 27383])
+                    ("max_len" variable
+                       (:constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27384 27407]))                  
+                :type "int")
+                nil [27320 27939])
+            ("get_int_hash" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27970 27992])
+                    ("data_dict" variable
+                       (:reference 1
+                        :type ("basic_dict_t" type
+                             (:template-specifier 
+                                ( ("long long" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27993 28028]))                  
+                :type "int")
+                nil [27941 28827])
+            ("get_str_hash" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28858 28880])
+                    ("str2str" variable
+                       (:reference 1
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28881 28926]))                  
+                :type "int")
+                nil [28829 29492])
+            ("get_str_set" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29522 29544])
+                    ("strs" variable
+                       (:reference 1
+                        :type ("list" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29545 29565]))                  
+                :type "int")
+                nil [29494 29958])
+            ("_set_db" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("connect_handler" variable
+                       (:pointer 1
+                        :type ("redisContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29984 30014]))                  
+                :type "int")
+                nil [29960 30721])
+            ("expire" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30746 30768])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [30769 30791]))                  
+                :type "int")
+                nil [30723 32112])
+            ("set" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32134 32156])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32157 32181])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [32182 32204]))                  
+                :type "int")
+                nil [32114 33807])
+            ("hset" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33830 33852])
+                    ("field" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33853 33877])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33878 33902])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [33903 33925]))                  
+                :type "int")
+                nil [33809 35520])
+            ("hmset" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35544 35560])
+                    ("keyValues" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35561 35598])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [35599 35621]))                  
+                :type "int")
+                nil [35522 37466])
+            ("hincrby" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37492 37514])
+                    ("field" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37515 37539])
+                    ("amount" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [37540 37557]))                  
+                :type "int")
+                nil [37468 38902])
+            ("hdel" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38925 38947])
+                    ("fields" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("list" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38948 38976]))                  
+                :type "int")
+                nil [38904 40365])
+            ("sadd" function
+               (:parent "redis_pool"
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40388 40410])
+                    ("members" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("list" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [40411 40440])
+                    ("expire_time" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [40441 40463]))                  
+                :type "int")
+                nil [40367 42047])
+            ("get_last_sum_utime" function
+               (:parent "redis_pool"
+                :type "int")
+                nil [42049 42112])
+            ("get_last_avg_utime" function
+               (:parent "redis_pool"
+                :type "int")
+                nil [42114 42177])
+            ("get_last_retry_times" function
+               (:parent "redis_pool"
+                :type "int")
+                nil [42179 42244]))          
+      :file "redis_pool.cpp"
+      :pointmax 42290
+      :fsize 42449
+      :lastmodtime '(22939 65471 0 0)
+      :unmatched-syntax '((TYPEDEF 722 . 729)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-bsdmake-mode
+      :tags 
+        '( ("VERSION" variable (:default-value ("4.2.8")) nil [326 342])
+            ("GCC" variable (:default-value ("gcc")) nil [426 436])
+            ("GXX" variable (:default-value ("g++")) nil [436 446])
+            ("AR" variable (:default-value ("ar" "cr")) nil [446 457])
+            ("RM" variable (:default-value ("rm" "-f")) nil [457 468])
+            ("CP" variable (:default-value ("cp" "-r")) nil [468 479])
+            ("MKDIR" variable (:default-value ("mkdir" "-p")) nil [479 496])
+            ("DM_LIB_DIR" variable (:default-value ("/usr/local/domob/cpplib")) nil [558 593])
+            ("INSTALL_PATH" variable (:default-value ("$(DM_LIB_DIR)/domob-redis/$(VERSION)")) nil [593 643])
+            ("DOMOBLIB" variable (:default-value ("$(DM_LIB_DIR)/domob-stl/1.23.0")) nil [643 683])
+            ("COMPILE_PARAM" variable (:default-value ("-g")) nil [714 733])
+            ("CFLAGS" variable (:default-value ("-DMODULE_VERSION=\\\"$(VERSION)\\\"" "$(COMPILE_PARAM)")) nil [734 792])
+            ("DEFAULT_INCLUDE" variable nil nil [833 852])
+            ("DEFAULT_LIB_DIR" variable nil nil [895 914])
+            ("DEFAULT_LIB_NAME" variable (:default-value ("-llog4cpp" "-lhiredis" "-lpthread" "-lcrypto" "-lrt" "/usr/local/lib/libzookeeper_mt.so")) nil [951 1048])
+            ("DEPENDENT_LIB_LOCAL_ROOT" variable (:default-value ("./dependent-lib")) nil [1158 1201])
+            ("THRIFT_INCLUDE" variable (:default-value ("-I/usr/local/include" "-I/usr/local/include/thrift" "-DTHRIFT_VERSION_NUM=500")) nil [1202 1293])
+            ("THRIFT_LIB_DIR" variable (:default-value ("-L/usr/local/lib")) nil [1293 1327])
+            ("DOMOB_STL_LOCAL_INCLUDE" variable (:default-value ("-I$(DEPENDENT_LIB_LOCAL_ROOT)/domoblib/domob-stl-cpp/output/basic_lib/dict/include" "-I$(DEPENDENT_LIB_LOCAL_ROOT)/domoblib/domob-stl-cpp/output/basic_lib/ccode/include" "-I$(DEPENDENT_LIB_LOCAL_ROOT)/domoblib/domob-stl-cpp/output/basic_lib/odict/include" "-I$(DEPENDENT_LIB_LOCAL_ROOT)/domoblib/domob-stl-cpp/output/basic_lib/ullib/include" "-I$(DEPENDENT_LIB_LOCAL_ROOT)/domoblib/domob-stl-cpp/output/basic_lib/other-ex/include" "-I$(DEPENDENT_LIB_LOCAL_ROOT)/domoblib/domob-stl-cpp/output/include")) nil [1327 1843])
+            ("DOMOB_STL_LOCAL_LIB_DIR" variable (:default-value ("-L$(DEPENDENT_LIB_LOCAL_ROOT)/domoblib/domob-stl-cpp/output/basic_lib/dict/lib" "-L$(DEPENDENT_LIB_LOCAL_ROOT)/domoblib/domob-stl-cpp/output/basic_lib/ccode/lib" "-L$(DEPENDENT_LIB_LOCAL_ROOT)/domoblib/domob-stl-cpp/output/basic_lib/odict" "-L$(DEPENDENT_LIB_LOCAL_ROOT)/domoblib/domob-stl-cpp/output/basic_lib/ullib/lib" "-L$(DEPENDENT_LIB_LOCAL_ROOT)/domoblib/domob-stl-cpp/output/basic_lib/other-ex/lib" "-L$(DEPENDENT_LIB_LOCAL_ROOT)/domoblib/domob-stl-cpp/output/lib")) nil [1843 2331])
+            ("DOMOB_STL_LOCAL_LIB_NAME" variable (:default-value ("-lullib_ex" "-lulccode" "-luldict" "-lodict" "-lullib" "-ldomoblib")) nil [2331 2415])
+            ("DOMOB_JSON_LOCAL_INCLUDE" variable (:default-value ("-I$(DEPENDENT_LIB_LOCAL_ROOT)/domoblib/domob-json-cpp/output/include")) nil [2415 2511])
+            ("DOMOB_JSON_LOCAL_LIB_DIR" variable nil nil [2511 2538])
+            ("DOMOB_JSON_LOCAL_LIB_NAME" variable nil nil [2538 2566])
+            ("LOCAL_INCLUDE_DIR" variable (:default-value ("$(THRIFT_INCLUDE)" "$(DEFAULT_INCLUDE)" "$(DOMOB_STL_LOCAL_INCLUDE)" "$(DOMOB_JSON_LOCAL_INCLUDE)")) nil [2567 2679])
+            ("LOCAL_LDLIB" variable (:default-value ("$(DOMOB_JSON_LOCAL_LIB_NAME)" "$(DOMOB_STL_LOCAL_LIB_NAME)")) nil [2679 2750])
+            ("LOCAL_LDFLAG" variable (:default-value ("$(THRIFT_LIB_DIR)" "$(DEFAULT_LIB_DIR)" "$(DOMOB_STL_LOCAL_LIB_DIR)" "$(DOMOB_JSON_LOCAL_LIB_DIR)" "$(LOCAL_LDLIB)" "$(DEFAULT_LIB_NAME)")) nil [2750 2892])
+            ("INCLUDE_DIR" variable (:default-value ("$(LOCAL_INCLUDE_DIR)")) nil [2999 3034])
+            ("LDFLAG" variable (:default-value ("$(LOCAL_LDFLAG)")) nil [3034 3059])
+            ("CPPCLASS" variable (:default-value ("$(wildcard *.cpp)")) nil [3213 3242])
+            ("OBJCLASS" variable (:default-value ("$(CPPCLASS:.cpp=.o)")) nil [3242 3273])
+            ("OBJ1" variable (:default-value ("libMurmurHash3.a")) nil [3372 3396])
+            ("OBJ2" variable (:default-value ("libdomobredis.a")) nil [3396 3419])
+            ("OBJS" variable (:default-value ("$(OBJ1)" "$(OBJ2)")) nil [3420 3443])
+            ("all" function (:arguments ("lib" "$(OBJS)" "output")) nil [3685 3709])
+            ("local" function (:arguments ("all")) nil [3710 3721])
+            ("$(OBJ1)" function (:arguments ("MurmurHash3.cpp" "MurmurHash3.h")) nil [3795 3923])
+            ("$(OBJ2)" function (:arguments ("redis_pool.o" "d_connection_pool.o" "d_redis_pool.o" "d_redis.o" "dredis_pool.o" "dredis.o")) nil [3924 4031])
+            ("%.o" function (:arguments ("%.cpp")) nil [4032 4088])
+            ("output" function nil nil [4089 4296])
+            ("lib" function nil nil [4297 4368])
+            (".PHONY" function (:arguments ("clean")) nil [4369 4383])
+            ("clean" function nil nil [4383 4657])
+            ("install" function nil nil [4658 4754])
+            ("test" function (:arguments ("lib" "$(OBJS)" "output")) nil [4755 4868])
+            ("test_d" function (:arguments ("lib" "$(OBJS)" "output")) nil [4869 4988])
+            ("test_qps" function (:arguments ("lib" "$(OBJS)" "output")) nil [4989 5114])
+            ("test_d_qps" function (:arguments ("lib" "$(OBJS)" "output")) nil [5115 5246])
+            ("test_dredis_qps" function (:arguments ("lib" "$(OBJS)" "output")) nil [5247 5408])
+            ("unittest_d_redis" function (:arguments ("lib" "$(OBJS)" "output")) nil [5409 5621])
+            ("unittest_d_redis_slave" function (:arguments ("lib" "$(OBJS)" "output")) nil [5622 5852])
+            ("unittest_dredis" function (:arguments ("lib" "$(OBJS)" "output")) nil [5853 6077])
+            ("unittest_dredis_slave" function (:arguments ("lib" "$(OBJS)" "output")) nil [6078 6320])
+            ("unittest_dredis_zk" function (:arguments ("lib" "$(OBJS)" "output")) nil [6321 6554])
+            ("unittest_dredis_zk_ini" function (:arguments ("lib" "$(OBJS)" "output")) nil [6555 6800])
+            ("unittest_dredis_migrating" function (:arguments ("lib" "$(OBJS)" "output")) nil [6801 7055])
+            ("unittest_bitmap" function (:arguments ("lib" "$(OBJS)" "output")) nil [7056 7220]))          
+      :file "Makefile"
+      :pointmax 7256
+      :fsize 7579
+      :lastmodtime '(22940 60964 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("limits.h" include (:system-flag t) nil [1 20])
+            ("gtest/gtest.h" include nil nil [21 45])
+            ("dredis.h" include nil nil [46 65])
+            ("timer.h" include nil nil [66 84])
+            ("time.h" include nil nil [85 102])
+            ("domob_log.h" include nil nil [103 125])
+            ("DRedisUnit" type
+               (:superclasses 
+                  ( ("testing::Test" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [170 177])
+                    ("SetUp" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [181 238])
+                    ("TearDown" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [243 289])
+                    ("SetUpTestCase" function
+                       (:typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [294 617])
+                    ("TearDownTestCase" function
+                       (:typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [622 676])
+                    ("public" label nil (reparse-symbol classsubparts) [680 687])
+                    ("d_pool" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("dredis_pool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [690 717])
+                    ("redis" variable
+                       (:pointer 1
+                        :type ("dredis" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [720 734]))                  
+                :type "class")
+                nil [127 738])
+            ("DRedisUnit::d_pool" variable
+               (:pointer 1
+                :default-value "new dredis_pool()"
+                :type ("dredis_pool" type (:type "class") nil nil))
+                nil [740 792])
+            ("WAIT_TIME" variable
+               (:default-value "1500000"
+                :type "int")
+                nil [794 818])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DRedisUnit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1056 1067])
+                    ("" variable (:type ("SetTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1068 1076]))                  
+                :type "int")
+                nil [1049 1713])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DRedisUnit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1722 1733])
+                    ("" variable (:type ("GetStrTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1734 1745]))                  
+                :type "int")
+                nil [1715 2063])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DRedisUnit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2072 2083])
+                    ("" variable (:type ("GetIntTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2084 2095]))                  
+                :type "int")
+                nil [2065 2389])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DRedisUnit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2398 2409])
+                    ("" variable (:type ("ExpireTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2410 2421]))                  
+                :type "int")
+                nil [2391 2847])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DRedisUnit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2856 2867])
+                    ("" variable (:type ("ExistsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2868 2879]))                  
+                :type "int")
+                nil [2849 3238])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DRedisUnit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3247 3258])
+                    ("" variable (:type ("DelTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3259 3267]))                  
+                :type "int")
+                nil [3240 3614])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DRedisUnit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3623 3634])
+                    ("" variable (:type ("ExpireatTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3635 3648]))                  
+                :type "int")
+                nil [3616 4171])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DRedisUnit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4408 4419])
+                    ("" variable (:type ("LpushLpopTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4420 4434]))                  
+                :type "int")
+                nil [4401 5345])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DRedisUnit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5354 5365])
+                    ("" variable (:type ("RpushRpopTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5366 5380]))                  
+                :type "int")
+                nil [5347 6291])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DRedisUnit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6528 6539])
+                    ("" variable (:type ("HsetTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6540 6549]))                  
+                :type "int")
+                nil [6521 7191])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DRedisUnit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7200 7211])
+                    ("" variable (:type ("HmsetTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7212 7222]))                  
+                :type "int")
+                nil [7193 7879])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DRedisUnit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7888 7899])
+                    ("" variable (:type ("HincrbyTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7900 7912]))                  
+                :type "int")
+                nil [7881 8317])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DRedisUnit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8326 8337])
+                    ("" variable (:type ("HdelTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8338 8347]))                  
+                :type "int")
+                nil [8319 8871])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DRedisUnit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8880 8891])
+                    ("" variable (:type ("GetIntHashTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8892 8907]))                  
+                :type "int")
+                nil [8873 9656])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DRedisUnit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9892 9903])
+                    ("" variable (:type ("SaddGetStrSetTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9904 9922]))                  
+                :type "int")
+                nil [9885 10519])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [10534 10543])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10544 10556]))                  
+                :type "int")
+                nil [10525 10663]))          
+      :file "unittest_dredis.cpp"
+      :pointmax 10664
+      :fsize 10679
+      :lastmodtime '(22939 65471 0 0)
+      :unmatched-syntax '((punctuation 676 . 677) (punctuation 617 . 618) (punctuation 289 . 290) (punctuation 238 . 239)))
+    (semanticdb-table "semanticdb-table"
+      :file "dredis.h"
+      :fsize 6236
+      :lastmodtime '(22939 65471 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "redis_pool.h"
+      :fsize 6334
+      :lastmodtime '(22939 65471 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "MurmurHash3.h"
+      :fsize 1145
+      :lastmodtime '(22939 65471 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "d_connection_pool.h"
+      :fsize 1244
+      :lastmodtime '(22940 60964 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__BITMAP_H_" variable (:constant-flag t) nil [197 208])
+            ("iostream" include (:system-flag t) nil [210 229])
+            ("stdlib.h" include (:system-flag t) nil [230 249])
+            ("string.h" include (:system-flag t) nil [250 269])
+            ("bitmap" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [353 361])
+                    ("next_pos" variable (:type "unsigned int") (reparse-symbol classsubparts) [521 543])
+                    ("sample_size" variable (:type "unsigned int") (reparse-symbol classsubparts) [585 610])
+                    ("base_size" variable (:type "unsigned int") (reparse-symbol classsubparts) [648 671])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [698 716])
+                    ("bm_size" variable (:type "unsigned int") (reparse-symbol classsubparts) [765 786])
+                    ("used_bit_size" variable (:type "unsigned int") (reparse-symbol classsubparts) [837 864])
+                    ("public" label nil (reparse-symbol classsubparts) [866 873])
+                    ("bitmap" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("sample_size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [885 910]))                          
+                        :type ("bitmap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [878 1036])
+                    ("bitmap" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1042 1098])
+                    ("init" function (:type "bool") (reparse-symbol classsubparts) [1104 1482])
+                    ("bit_count" function (:type "int") (reparse-symbol classsubparts) [1486 1687])
+                    ("set_bit" function
+                       (:arguments 
+                          ( ("set_one" variable (:type "bool") (reparse-symbol arg-sub-list) [1702 1715]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1690 2028])
+                    ("merge" function
+                       (:arguments 
+                          ( ("bm" variable
+                               (:reference 1
+                                :type ("bitmap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2041 2053]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2031 4581])
+                    ("reset" function (:type "int") (reparse-symbol classsubparts) [4584 4699])
+                    ("get_next_pos" function (:type "unsigned int") (reparse-symbol classsubparts) [4702 4753])
+                    ("get_sample_size" function (:type "unsigned int") (reparse-symbol classsubparts) [4756 4813])
+                    ("get_base_size" function (:type "unsigned int") (reparse-symbol classsubparts) [4816 4869])
+                    ("get_bm_size" function (:type "unsigned int") (reparse-symbol classsubparts) [4872 4921])
+                    ("get_used_bit_size" function (:type "unsigned int") (reparse-symbol classsubparts) [4924 4985])
+                    ("print" function (:type "void") (reparse-symbol classsubparts) [4988 5103]))                  
+                :type "class")
+                nil [338 5107]))          
+      :file "bitmap.h"
+      :pointmax 5131
+      :fsize 5492
+      :lastmodtime '(22939 65471 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__BITMAP_H_")
+          )
+))
+  :file "!Users!drwrong!mywork!domob!domob-redislib-cpp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

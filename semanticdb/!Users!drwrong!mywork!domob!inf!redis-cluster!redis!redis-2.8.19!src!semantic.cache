@@ -1,0 +1,3128 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("redis.h" include nil nil [1613 1631])
+            ("slowlog.h" include nil nil [1632 1652])
+            ("bio.h" include nil nil [1653 1669])
+            ("latency.h" include nil nil [1670 1690])
+            ("time.h" include (:system-flag t) nil [1692 1709])
+            ("signal.h" include (:system-flag t) nil [1710 1729])
+            ("sys/wait.h" include (:system-flag t) nil [1730 1751])
+            ("errno.h" include (:system-flag t) nil [1752 1770])
+            ("assert.h" include (:system-flag t) nil [1771 1790])
+            ("ctype.h" include (:system-flag t) nil [1791 1809])
+            ("stdarg.h" include (:system-flag t) nil [1810 1829])
+            ("arpa/inet.h" include (:system-flag t) nil [1830 1852])
+            ("sys/stat.h" include (:system-flag t) nil [1853 1874])
+            ("fcntl.h" include (:system-flag t) nil [1875 1893])
+            ("sys/time.h" include (:system-flag t) nil [1894 1915])
+            ("sys/resource.h" include (:system-flag t) nil [1916 1941])
+            ("sys/uio.h" include (:system-flag t) nil [1942 1962])
+            ("limits.h" include (:system-flag t) nil [1963 1982])
+            ("float.h" include (:system-flag t) nil [1983 2001])
+            ("math.h" include (:system-flag t) nil [2002 2019])
+            ("sys/resource.h" include (:system-flag t) nil [2020 2045])
+            ("sys/utsname.h" include (:system-flag t) nil [2046 2070])
+            ("locale.h" include (:system-flag t) nil [2071 2090])
+            ("shared" variable (:type ("sharedObjectsStruct" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [2127 2161])
+            ("R_Zero" variable (:type "double") nil [2368 2409])
+            ("R_PosInf" variable (:type "double") nil [2368 2409])
+            ("R_NegInf" variable (:type "double") nil [2368 2409])
+            ("R_Nan" variable (:type "double") nil [2368 2409])
+            ("server" variable (:type ("redisServer" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [2511 2537])
+            ("zk" variable
+               (:default-value "{.ip = NULL,
+				.node = NULL,
+				.zk_hosts = NULL,
+				.zk_timeout = 30000,
+				.zk_lock = PTHREAD_MUTEX_INITIALIZER,
+				.zkhandle = NULL,
+				.master_path = NULL,
+				.slave_path = NULL,
+				.redis_server = NULL,
+				.max_retry = 3000,
+				.retry_interval = 100000 }"
+                :type ("Zk" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2780 3066])
+            ("redisCommandTable" variable
+               (:dereference 1
+                :default-value "{
+    {\"get\",getCommand,2,\"rF\",0,NULL,1,1,1,0,0},
+    {\"set\",setCommand,-3,\"wm\",0,NULL,1,1,1,0,0},
+    {\"setnx\",setnxCommand,3,\"wmF\",0,NULL,1,1,1,0,0},
+    {\"setex\",setexCommand,4,\"wm\",0,NULL,1,1,1,0,0},
+    {\"psetex\",psetexCommand,4,\"wm\",0,NULL,1,1,1,0,0},
+    {\"append\",appendCommand,3,\"wm\",0,NULL,1,1,1,0,0},
+    {\"strlen\",strlenCommand,2,\"rF\",0,NULL,1,1,1,0,0},
+    {\"del\",delCommand,-2,\"w\",0,NULL,1,-1,1,0,0},
+    {\"exists\",existsCommand,2,\"rF\",0,NULL,1,1,1,0,0},
+    {\"setbit\",setbitCommand,4,\"wm\",0,NULL,1,1,1,0,0},
+    {\"getbit\",getbitCommand,3,\"rF\",0,NULL,1,1,1,0,0},
+    {\"setrange\",setrangeCommand,4,\"wm\",0,NULL,1,1,1,0,0},
+    {\"getrange\",getrangeCommand,4,\"r\",0,NULL,1,1,1,0,0},
+    {\"substr\",getrangeCommand,4,\"r\",0,NULL,1,1,1,0,0},
+    {\"incr\",incrCommand,2,\"wmF\",0,NULL,1,1,1,0,0},
+    {\"decr\",decrCommand,2,\"wmF\",0,NULL,1,1,1,0,0},
+    {\"mget\",mgetCommand,-2,\"r\",0,NULL,1,-1,1,0,0},
+    {\"rpush\",rpushCommand,-3,\"wmF\",0,NULL,1,1,1,0,0},
+    {\"lpush\",lpushCommand,-3,\"wmF\",0,NULL,1,1,1,0,0},
+    {\"rpushx\",rpushxCommand,3,\"wmF\",0,NULL,1,1,1,0,0},
+    {\"lpushx\",lpushxCommand,3,\"wmF\",0,NULL,1,1,1,0,0},
+    {\"linsert\",linsertCommand,5,\"wm\",0,NULL,1,1,1,0,0},
+    {\"rpop\",rpopCommand,2,\"wF\",0,NULL,1,1,1,0,0},
+    {\"lpop\",lpopCommand,2,\"wF\",0,NULL,1,1,1,0,0},
+    {\"brpop\",brpopCommand,-3,\"ws\",0,NULL,1,1,1,0,0},
+    {\"brpoplpush\",brpoplpushCommand,4,\"wms\",0,NULL,1,2,1,0,0},
+    {\"blpop\",blpopCommand,-3,\"ws\",0,NULL,1,-2,1,0,0},
+    {\"llen\",llenCommand,2,\"rF\",0,NULL,1,1,1,0,0},
+    {\"lindex\",lindexCommand,3,\"r\",0,NULL,1,1,1,0,0},
+    {\"lset\",lsetCommand,4,\"wm\",0,NULL,1,1,1,0,0},
+    {\"lrange\",lrangeCommand,4,\"r\",0,NULL,1,1,1,0,0},
+    {\"ltrim\",ltrimCommand,4,\"w\",0,NULL,1,1,1,0,0},
+    {\"lrem\",lremCommand,4,\"w\",0,NULL,1,1,1,0,0},
+    {\"rpoplpush\",rpoplpushCommand,3,\"wm\",0,NULL,1,2,1,0,0},
+    {\"sadd\",saddCommand,-3,\"wmF\",0,NULL,1,1,1,0,0},
+    {\"srem\",sremCommand,-3,\"wF\",0,NULL,1,1,1,0,0},
+    {\"smove\",smoveCommand,4,\"wF\",0,NULL,1,2,1,0,0},
+    {\"sismember\",sismemberCommand,3,\"rF\",0,NULL,1,1,1,0,0},
+    {\"scard\",scardCommand,2,\"rF\",0,NULL,1,1,1,0,0},
+    {\"spop\",spopCommand,2,\"wRsF\",0,NULL,1,1,1,0,0},
+    {\"srandmember\",srandmemberCommand,-2,\"rR\",0,NULL,1,1,1,0,0},
+    {\"sinter\",sinterCommand,-2,\"rS\",0,NULL,1,-1,1,0,0},
+    {\"sinterstore\",sinterstoreCommand,-3,\"wm\",0,NULL,1,-1,1,0,0},
+    {\"sunion\",sunionCommand,-2,\"rS\",0,NULL,1,-1,1,0,0},
+    {\"sunionstore\",sunionstoreCommand,-3,\"wm\",0,NULL,1,-1,1,0,0},
+    {\"sdiff\",sdiffCommand,-2,\"rS\",0,NULL,1,-1,1,0,0},
+    {\"sdiffstore\",sdiffstoreCommand,-3,\"wm\",0,NULL,1,-1,1,0,0},
+    {\"smembers\",sinterCommand,2,\"rS\",0,NULL,1,1,1,0,0},
+    {\"sscan\",sscanCommand,-3,\"rR\",0,NULL,1,1,1,0,0},
+    {\"zadd\",zaddCommand,-4,\"wmF\",0,NULL,1,1,1,0,0},
+    {\"zincrby\",zincrbyCommand,4,\"wmF\",0,NULL,1,1,1,0,0},
+    {\"zrem\",zremCommand,-3,\"wF\",0,NULL,1,1,1,0,0},
+    {\"zremrangebyscore\",zremrangebyscoreCommand,4,\"w\",0,NULL,1,1,1,0,0},
+    {\"zremrangebyrank\",zremrangebyrankCommand,4,\"w\",0,NULL,1,1,1,0,0},
+    {\"zremrangebylex\",zremrangebylexCommand,4,\"w\",0,NULL,1,1,1,0,0},
+    {\"zunionstore\",zunionstoreCommand,-4,\"wm\",0,zunionInterGetKeys,0,0,0,0,0},
+    {\"zinterstore\",zinterstoreCommand,-4,\"wm\",0,zunionInterGetKeys,0,0,0,0,0},
+    {\"zrange\",zrangeCommand,-4,\"r\",0,NULL,1,1,1,0,0},
+    {\"zrangebyscore\",zrangebyscoreCommand,-4,\"r\",0,NULL,1,1,1,0,0},
+    {\"zrevrangebyscore\",zrevrangebyscoreCommand,-4,\"r\",0,NULL,1,1,1,0,0},
+    {\"zrangebylex\",zrangebylexCommand,-4,\"r\",0,NULL,1,1,1,0,0},
+    {\"zrevrangebylex\",zrevrangebylexCommand,-4,\"r\",0,NULL,1,1,1,0,0},
+    {\"zcount\",zcountCommand,4,\"rF\",0,NULL,1,1,1,0,0},
+    {\"zlexcount\",zlexcountCommand,4,\"rF\",0,NULL,1,1,1,0,0},
+    {\"zrevrange\",zrevrangeCommand,-4,\"r\",0,NULL,1,1,1,0,0},
+    {\"zcard\",zcardCommand,2,\"rF\",0,NULL,1,1,1,0,0},
+    {\"zscore\",zscoreCommand,3,\"rF\",0,NULL,1,1,1,0,0},
+    {\"zrank\",zrankCommand,3,\"rF\",0,NULL,1,1,1,0,0},
+    {\"zrevrank\",zrevrankCommand,3,\"rF\",0,NULL,1,1,1,0,0},
+    {\"zscan\",zscanCommand,-3,\"rR\",0,NULL,1,1,1,0,0},
+    {\"hset\",hsetCommand,4,\"wmF\",0,NULL,1,1,1,0,0},
+    {\"hsetnx\",hsetnxCommand,4,\"wmF\",0,NULL,1,1,1,0,0},
+    {\"hget\",hgetCommand,3,\"rF\",0,NULL,1,1,1,0,0},
+    {\"hmset\",hmsetCommand,-4,\"wm\",0,NULL,1,1,1,0,0},
+    {\"hmget\",hmgetCommand,-3,\"r\",0,NULL,1,1,1,0,0},
+    {\"hincrby\",hincrbyCommand,4,\"wmF\",0,NULL,1,1,1,0,0},
+    {\"hincrbyfloat\",hincrbyfloatCommand,4,\"wmF\",0,NULL,1,1,1,0,0},
+    {\"hdel\",hdelCommand,-3,\"wF\",0,NULL,1,1,1,0,0},
+    {\"hlen\",hlenCommand,2,\"rF\",0,NULL,1,1,1,0,0},
+    {\"hkeys\",hkeysCommand,2,\"rS\",0,NULL,1,1,1,0,0},
+    {\"hvals\",hvalsCommand,2,\"rS\",0,NULL,1,1,1,0,0},
+    {\"hgetall\",hgetallCommand,2,\"r\",0,NULL,1,1,1,0,0},
+    {\"hexists\",hexistsCommand,3,\"rF\",0,NULL,1,1,1,0,0},
+    {\"hscan\",hscanCommand,-3,\"rR\",0,NULL,1,1,1,0,0},
+    {\"incrby\",incrbyCommand,3,\"wmF\",0,NULL,1,1,1,0,0},
+    {\"decrby\",decrbyCommand,3,\"wmF\",0,NULL,1,1,1,0,0},
+    {\"incrbyfloat\",incrbyfloatCommand,3,\"wmF\",0,NULL,1,1,1,0,0},
+    {\"getset\",getsetCommand,3,\"wm\",0,NULL,1,1,1,0,0},
+    {\"mset\",msetCommand,-3,\"wm\",0,NULL,1,-1,2,0,0},
+    {\"msetnx\",msetnxCommand,-3,\"wm\",0,NULL,1,-1,2,0,0},
+    {\"randomkey\",randomkeyCommand,1,\"rR\",0,NULL,0,0,0,0,0},
+    {\"select\",selectCommand,2,\"rlF\",0,NULL,0,0,0,0,0},
+    {\"move\",moveCommand,3,\"wF\",0,NULL,1,1,1,0,0},
+    {\"rename\",renameCommand,3,\"w\",0,NULL,1,2,1,0,0},
+    {\"renamenx\",renamenxCommand,3,\"wF\",0,NULL,1,2,1,0,0},
+    {\"expire\",expireCommand,3,\"wF\",0,NULL,1,1,1,0,0},
+    {\"expireat\",expireatCommand,3,\"wF\",0,NULL,1,1,1,0,0},
+    {\"pexpire\",pexpireCommand,3,\"wF\",0,NULL,1,1,1,0,0},
+    {\"pexpireat\",pexpireatCommand,3,\"wF\",0,NULL,1,1,1,0,0},
+    {\"keys\",keysCommand,2,\"rS\",0,NULL,0,0,0,0,0},
+    {\"scan\",scanCommand,-2,\"rR\",0,NULL,0,0,0,0,0},
+    {\"dbsize\",dbsizeCommand,1,\"rF\",0,NULL,0,0,0,0,0},
+    {\"auth\",authCommand,2,\"rsltF\",0,NULL,0,0,0,0,0},
+    {\"ping\",pingCommand,-1,\"rtF\",0,NULL,0,0,0,0,0},
+    {\"echo\",echoCommand,2,\"rF\",0,NULL,0,0,0,0,0},
+    {\"save\",saveCommand,1,\"ars\",0,NULL,0,0,0,0,0},
+    {\"bgsave\",bgsaveCommand,1,\"ar\",0,NULL,0,0,0,0,0},
+    {\"bgrewriteaof\",bgrewriteaofCommand,1,\"ar\",0,NULL,0,0,0,0,0},
+    {\"shutdown\",shutdownCommand,-1,\"arlt\",0,NULL,0,0,0,0,0},
+    {\"lastsave\",lastsaveCommand,1,\"rRF\",0,NULL,0,0,0,0,0},
+    {\"type\",typeCommand,2,\"rF\",0,NULL,1,1,1,0,0},
+    {\"multi\",multiCommand,1,\"rsF\",0,NULL,0,0,0,0,0},
+    {\"exec\",execCommand,1,\"sM\",0,NULL,0,0,0,0,0},
+    {\"discard\",discardCommand,1,\"rsF\",0,NULL,0,0,0,0,0},
+    {\"sync\",syncCommand,1,\"ars\",0,NULL,0,0,0,0,0},
+    {\"psync\",syncCommand,3,\"ars\",0,NULL,0,0,0,0,0},
+    {\"replconf\",replconfCommand,-1,\"arslt\",0,NULL,0,0,0,0,0},
+    {\"flushdb\",flushdbCommand,1,\"w\",0,NULL,0,0,0,0,0},
+    {\"flushall\",flushallCommand,1,\"w\",0,NULL,0,0,0,0,0},
+    {\"sort\",sortCommand,-2,\"wm\",0,NULL,1,1,1,0,0},
+    {\"info\",infoCommand,-1,\"rlt\",0,NULL,0,0,0,0,0},
+    {\"monitor\",monitorCommand,1,\"ars\",0,NULL,0,0,0,0,0},
+    {\"ttl\",ttlCommand,2,\"rF\",0,NULL,1,1,1,0,0},
+    {\"pttl\",pttlCommand,2,\"rF\",0,NULL,1,1,1,0,0},
+    {\"persist\",persistCommand,2,\"wF\",0,NULL,1,1,1,0,0},
+    {\"slaveof\",slaveofCommand,3,\"ast\",0,NULL,0,0,0,0,0},
+    {\"role\",roleCommand,1,\"lst\",0,NULL,0,0,0,0,0},
+    {\"debug\",debugCommand,-2,\"as\",0,NULL,0,0,0,0,0},
+    {\"config\",configCommand,-2,\"art\",0,NULL,0,0,0,0,0},
+    {\"subscribe\",subscribeCommand,-2,\"rpslt\",0,NULL,0,0,0,0,0},
+    {\"unsubscribe\",unsubscribeCommand,-1,\"rpslt\",0,NULL,0,0,0,0,0},
+    {\"psubscribe\",psubscribeCommand,-2,\"rpslt\",0,NULL,0,0,0,0,0},
+    {\"punsubscribe\",punsubscribeCommand,-1,\"rpslt\",0,NULL,0,0,0,0,0},
+    {\"publish\",publishCommand,3,\"pltrF\",0,NULL,0,0,0,0,0},
+    {\"pubsub\",pubsubCommand,-2,\"pltrR\",0,NULL,0,0,0,0,0},
+    {\"watch\",watchCommand,-2,\"rsF\",0,NULL,1,-1,1,0,0},
+    {\"unwatch\",unwatchCommand,1,\"rsF\",0,NULL,0,0,0,0,0},
+    {\"restore\",restoreCommand,4,\"wm\",0,NULL,1,1,1,0,0},
+    {\"migrate\",migrateCommand,6,\"w\",0,NULL,0,0,0,0,0},
+    {\"dump\",dumpCommand,2,\"r\",0,NULL,1,1,1,0,0},
+    {\"object\",objectCommand,3,\"r\",0,NULL,2,2,2,0,0},
+    {\"client\",clientCommand,-2,\"rs\",0,NULL,0,0,0,0,0},
+    {\"eval\",evalCommand,-3,\"s\",0,zunionInterGetKeys,0,0,0,0,0},
+    {\"evalsha\",evalShaCommand,-3,\"s\",0,zunionInterGetKeys,0,0,0,0,0},
+    {\"slowlog\",slowlogCommand,-2,\"r\",0,NULL,0,0,0,0,0},
+    {\"script\",scriptCommand,-2,\"rs\",0,NULL,0,0,0,0,0},
+    {\"time\",timeCommand,1,\"rRF\",0,NULL,0,0,0,0,0},
+    {\"bitop\",bitopCommand,-4,\"wm\",0,NULL,2,-1,1,0,0},
+    {\"bitcount\",bitcountCommand,-2,\"r\",0,NULL,1,1,1,0,0},
+    {\"bitpos\",bitposCommand,-3,\"r\",0,NULL,1,1,1,0,0},
+    {\"command\",commandCommand,0,\"rlt\",0,NULL,0,0,0,0,0},
+    {\"pfselftest\",pfselftestCommand,1,\"r\",0,NULL,0,0,0,0,0},
+    {\"pfadd\",pfaddCommand,-2,\"wmF\",0,NULL,1,1,1,0,0},
+    {\"pfcount\",pfcountCommand,-2,\"r\",0,NULL,1,1,1,0,0},
+    {\"pfmerge\",pfmergeCommand,-2,\"wm\",0,NULL,1,-1,1,0,0},
+    {\"pfdebug\",pfdebugCommand,-3,\"w\",0,NULL,0,0,0,0,0},
+    {\"latency\",latencyCommand,-2,\"arslt\",0,NULL,0,0,0,0,0}
+}"
+                :type ("redisCommand" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5749 14604])
+            ("redisLogRaw" function
+               (:arguments 
+                  ( ("level" variable (:type "int") (reparse-symbol arg-sub-list) [14803 14813])
+                    ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14814 14830]))                  
+                :type "void")
+                nil [14786 15728])
+            ("redisLog" function
+               (:arguments 
+                  ( ("level" variable (:type "int") (reparse-symbol arg-sub-list) [15929 15939])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15940 15956])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [15957 15961]))                  
+                :type "void")
+                nil [15915 16178])
+            ("redisLogFromHandler" function
+               (:arguments 
+                  ( ("level" variable (:type "int") (reparse-symbol arg-sub-list) [16539 16549])
+                    ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16550 16566]))                  
+                :type "void")
+                nil [16514 17358])
+            ("ustime" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17420 17425]))                  
+                :type "long long")
+                nil [17403 17582])
+            ("mstime" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17644 17649]))                  
+                :type "long long")
+                nil [17627 17679])
+            ("exitFromChild" function
+               (:arguments 
+                  ( ("retcode" variable (:type "int") (reparse-symbol arg-sub-list) [18002 18014]))                  
+                :type "void")
+                nil [17983 18091])
+            ("dictVanillaFree" function
+               (:arguments 
+                  ( ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18358 18373])
+                    ("val" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18374 18384]))                  
+                :type "void")
+                nil [18337 18432])
+            ("dictListDestructor" function
+               (:arguments 
+                  ( ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18458 18473])
+                    ("val" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18474 18484]))                  
+                :type "void")
+                nil [18434 18545])
+            ("dictSdsKeyCompare" function
+               (:arguments 
+                  ( ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18569 18584])
+                    ("key1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18585 18602])
+                    ("key2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18611 18628]))                  
+                :type "int")
+                nil [18547 18800])
+            ("dictSdsKeyCaseCompare" function
+               (:arguments 
+                  ( ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18976 18991])
+                    ("key1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18992 19009])
+                    ("key2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19018 19035]))                  
+                :type "int")
+                nil [18950 19108])
+            ("dictRedisObjectDestructor" function
+               (:arguments 
+                  ( ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19141 19156])
+                    ("val" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19157 19167]))                  
+                :type "void")
+                nil [19110 19300])
+            ("dictSdsDestructor" function
+               (:arguments 
+                  ( ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19325 19340])
+                    ("val" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19341 19351]))                  
+                :type "void")
+                nil [19302 19402])
+            ("dictObjKeyCompare" function
+               (:arguments 
+                  ( ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19426 19441])
+                    ("key1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19442 19459])
+                    ("key2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19468 19485]))                  
+                :type "int")
+                nil [19404 19584])
+            ("dictObjHash" function
+               (:arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19611 19627]))                  
+                :type "unsigned int")
+                nil [19586 19717])
+            ("dictSdsHash" function
+               (:arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19744 19760]))                  
+                :type "unsigned int")
+                nil [19719 19837])
+            ("dictSdsCaseHash" function
+               (:arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19868 19884]))                  
+                :type "unsigned int")
+                nil [19839 19965])
+            ("dictEncObjKeyCompare" function
+               (:arguments 
+                  ( ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19992 20007])
+                    ("key1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [20008 20025])
+                    ("key2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [20034 20051]))                  
+                :type "int")
+                nil [19967 20425])
+            ("dictEncObjHash" function
+               (:arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [20455 20471]))                  
+                :type "unsigned int")
+                nil [20427 21064])
+            ("setDictType" variable
+               (:default-value "{
+    dictEncObjHash,            /* hash function */
+    NULL,                      /* key dup */
+    NULL,                      /* val dup */
+    dictEncObjKeyCompare,      /* key compare */
+    dictRedisObjectDestructor, /* key destructor */
+    NULL                       /* val destructor */
+}"
+                :type ("dictType" type (:type "class") nil nil))
+                nil [21093 21414])
+            ("zsetDictType" variable
+               (:default-value "{
+    dictEncObjHash,            /* hash function */
+    NULL,                      /* key dup */
+    NULL,                      /* val dup */
+    dictEncObjKeyCompare,      /* key compare */
+    dictRedisObjectDestructor, /* key destructor */
+    NULL                       /* val destructor */
+}"
+                :type ("dictType" type (:type "class") nil nil))
+                nil [21496 21818])
+            ("dbDictType" variable
+               (:default-value "{
+    dictSdsHash,                /* hash function */
+    NULL,                       /* key dup */
+    NULL,                       /* val dup */
+    dictSdsKeyCompare,          /* key compare */
+    dictSdsDestructor,          /* key destructor */
+    dictRedisObjectDestructor   /* val destructor */
+}"
+                :type ("dictType" type (:type "class") nil nil))
+                nil [21882 22208])
+            ("shaScriptObjectDictType" variable
+               (:default-value "{
+    dictSdsCaseHash,            /* hash function */
+    NULL,                       /* key dup */
+    NULL,                       /* val dup */
+    dictSdsKeyCaseCompare,      /* key compare */
+    dictSdsDestructor,          /* key destructor */
+    dictRedisObjectDestructor   /* val destructor */
+}"
+                :type ("dictType" type (:type "class") nil nil))
+                nil [22283 22622])
+            ("keyptrDictType" variable
+               (:default-value "{
+    dictSdsHash,               /* hash function */
+    NULL,                      /* key dup */
+    NULL,                      /* val dup */
+    dictSdsKeyCompare,         /* key compare */
+    NULL,                      /* key destructor */
+    NULL                       /* val destructor */
+}"
+                :type ("dictType" type (:type "class") nil nil))
+                nil [22642 22966])
+            ("commandTableDictType" variable
+               (:default-value "{
+    dictSdsCaseHash,           /* hash function */
+    NULL,                      /* key dup */
+    NULL,                      /* val dup */
+    dictSdsKeyCaseCompare,     /* key compare */
+    dictSdsDestructor,         /* key destructor */
+    NULL                       /* val destructor */
+}"
+                :type ("dictType" type (:type "class") nil nil))
+                nil [23027 23357])
+            ("hashDictType" variable
+               (:default-value "{
+    dictEncObjHash,             /* hash function */
+    NULL,                       /* key dup */
+    NULL,                       /* val dup */
+    dictEncObjKeyCompare,       /* key compare */
+    dictRedisObjectDestructor,  /* key destructor */
+    dictRedisObjectDestructor   /* val destructor */
+}"
+                :type ("dictType" type (:type "class") nil nil))
+                nil [23441 23769])
+            ("keylistDictType" variable
+               (:default-value "{
+    dictObjHash,                /* hash function */
+    NULL,                       /* key dup */
+    NULL,                       /* val dup */
+    dictObjKeyCompare,          /* key compare */
+    dictRedisObjectDestructor,  /* key destructor */
+    dictListDestructor          /* val destructor */
+}"
+                :type ("dictType" type (:type "class") nil nil))
+                nil [23987 24318])
+            ("replScriptCacheDictType" variable
+               (:default-value "{
+    dictSdsCaseHash,            /* hash function */
+    NULL,                       /* key dup */
+    NULL,                       /* val dup */
+    dictSdsKeyCaseCompare,      /* key compare */
+    dictSdsDestructor,          /* key destructor */
+    NULL                        /* val destructor */
+}"
+                :type ("dictType" type (:type "class") nil nil))
+                nil [24486 24825])
+            ("migrateCacheDictType" variable
+               (:default-value "{
+    dictSdsHash,                /* hash function */
+    NULL,                       /* key dup */
+    NULL,                       /* val dup */
+    dictSdsKeyCompare,          /* key compare */
+    dictSdsDestructor,          /* key destructor */
+    NULL                        /* val destructor */
+}"
+                :type ("dictType" type (:type "class") nil nil))
+                nil [24970 25306])
+            ("htNeedsResize" function
+               (:arguments 
+                  ( ("dict" variable
+                       (:pointer 1
+                        :type ("dict" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25438 25449]))                  
+                :type "int")
+                nil [25420 25643])
+            ("tryResizeHashTables" function
+               (:arguments 
+                  ( ("dbid" variable (:type "int") (reparse-symbol arg-sub-list) [25786 25795]))                  
+                :type "void")
+                nil [25761 25979])
+            ("incrementallyRehash" function
+               (:arguments 
+                  ( ("dbid" variable (:type "int") (reparse-symbol arg-sub-list) [26396 26405]))                  
+                :type "int")
+                nil [26372 26835])
+            ("updateDictResizePolicy" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [27278 27283]))                  
+                :type "void")
+                nil [27250 27419])
+            ("activeExpireCycleTryExpire" function
+               (:arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type ("redisDb" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28090 28102])
+                    ("de" variable
+                       (:pointer 1
+                        :type ("dictEntry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28103 28124])
+                    ("now" variable (:type "long long") (reparse-symbol arg-sub-list) [28125 28139]))                  
+                :type "int")
+                nil [28059 28577])
+            ("activeExpireCycle" function
+               (:arguments 
+                  ( ("type" variable (:type "int") (reparse-symbol arg-sub-list) [29609 29618]))                  
+                :type "void")
+                nil [29586 34464])
+            ("updateLRUClock" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [34486 34491]))                  
+                :type "void")
+                nil [34466 34633])
+            ("trackInstantaneousMetric" function
+               (:arguments 
+                  ( ("metric" variable (:type "int") (reparse-symbol arg-sub-list) [34732 34743])
+                    ("current_reading" variable (:type "long long") (reparse-symbol arg-sub-list) [34744 34770]))                  
+                :type "void")
+                nil [34702 35333])
+            ("getInstantaneousMetric" function
+               (:arguments 
+                  ( ("metric" variable (:type "int") (reparse-symbol arg-sub-list) [35410 35421]))                  
+                :type "long long")
+                nil [35377 35600])
+            ("clientsCronHandleTimeout" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35703 35718]))                  
+                :type "int")
+                nil [35674 36448])
+            ("clientsCronResizeQueryBuffer" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36694 36709]))                  
+                :type "int")
+                nil [36661 37503])
+            ("clientsCron" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [37522 37527]))                  
+                :type "void")
+                nil [37505 38758])
+            ("databasesCron" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [38943 38948]))                  
+                :type "void")
+                nil [38924 40530])
+            ("updateCachedTime" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [40828 40833]))                  
+                :type "void")
+                nil [40806 40901])
+            ("serverCron" function
+               (:arguments 
+                  ( ("eventLoop" variable
+                       (:pointer 1
+                        :type ("aeEventLoop" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [41663 41693])
+                    ("id" variable (:type "long long") (reparse-symbol arg-sub-list) [41694 41707])
+                    ("clientData" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [41708 41725]))                  
+                :type "int")
+                nil [41648 48985])
+            ("beforeSleep" function
+               (:arguments 
+                  ( ("eventLoop" variable
+                       (:pointer 1
+                        :type ("aeEventLoop" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [49167 49197]))                  
+                :type "void")
+                nil [49150 50140])
+            ("createSharedObjects" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [50249 50254]))                  
+                :type "void")
+                nil [50224 55226])
+            ("initServerConfig" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [55250 55255]))                  
+                :type "void")
+                nil [55228 62254])
+            ("adjustOpenFilesLimit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [62772 62777]))                  
+                :type "void")
+                nil [62746 65915])
+            ("checkTcpBacklogSettings" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [66093 66098]))                  
+                :type "void")
+                nil [66064 66608])
+            ("listenToPort" function
+               (:arguments 
+                  ( ("port" variable (:type "int") (reparse-symbol arg-sub-list) [67535 67544])
+                    ("fds" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [67545 67554])
+                    ("count" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [67555 67566]))                  
+                :type "int")
+                nil [67518 69446])
+            ("resetServerStats" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [69679 69684]))                  
+                :type "void")
+                nil [69657 70489])
+            ("initServer" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [70507 70512]))                  
+                :type "void")
+                nil [70491 75769])
+            ("populateCommandTable" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [75906 75911]))                  
+                :type "void")
+                nil [75880 77374])
+            ("resetCommandTableStats" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [77404 77409]))                  
+                :type "void")
+                nil [77376 77654])
+            ("redisOpArrayInit" function
+               (:arguments 
+                  ( ("oa" variable
+                       (:pointer 1
+                        :type ("redisOpArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77760 77777]))                  
+                :type "void")
+                nil [77738 77821])
+            ("redisOpArrayAppend" function
+               (:arguments 
+                  ( ("oa" variable
+                       (:pointer 1
+                        :type ("redisOpArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77846 77863])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("redisCommand" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [77864 77889])
+                    ("dbid" variable (:type "int") (reparse-symbol arg-sub-list) [77890 77899])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("robj" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77923 77935])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [77936 77945])
+                    ("target" variable (:type "int") (reparse-symbol arg-sub-list) [77946 77957]))                  
+                :type "int")
+                nil [77823 78220])
+            ("redisOpArrayFree" function
+               (:arguments 
+                  ( ("oa" variable
+                       (:pointer 1
+                        :type ("redisOpArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78244 78261]))                  
+                :type "void")
+                nil [78222 78510])
+            ("lookupCommand" function
+               (:pointer 1
+                :arguments 
+                  ( ("name" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78629 78638]))                  
+                :type ("redisCommand" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [78594 78692])
+            ("lookupCommandByCString" function
+               (:pointer 1
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [78738 78746]))                  
+                :type ("redisCommand" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [78694 78891])
+            ("lookupCommandOrOriginal" function
+               (:pointer 1
+                :arguments 
+                  ( ("name" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79310 79319]))                  
+                :type ("redisCommand" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [79265 79473])
+            ("propagate" function
+               (:arguments 
+                  ( ("cmd" variable
+                       (:pointer 1
+                        :type ("redisCommand" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [79823 79848])
+                    ("dbid" variable (:type "int") (reparse-symbol arg-sub-list) [79849 79858])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("robj" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [79859 79871])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [79872 79881])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [79897 79907]))                  
+                :type "void")
+                nil [79808 80132])
+            ("alsoPropagate" function
+               (:arguments 
+                  ( ("cmd" variable
+                       (:pointer 1
+                        :type ("redisCommand" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [80296 80321])
+                    ("dbid" variable (:type "int") (reparse-symbol arg-sub-list) [80322 80331])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("robj" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80332 80344])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [80345 80354])
+                    ("target" variable (:type "int") (reparse-symbol arg-sub-list) [80374 80385]))                  
+                :type "void")
+                nil [80277 80463])
+            ("forceCommandPropagation" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80699 80714])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [80715 80725]))                  
+                :type "void")
+                nil [80670 80863])
+            ("call" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80932 80947])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [80948 80958]))                  
+                :type "void")
+                nil [80922 84124])
+            ("processCommand" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [84549 84564]))                  
+                :type "int")
+                nil [84530 90012])
+            ("closeListeningSockets" function
+               (:arguments 
+                  ( ("unlink_unix_socket" variable (:type "int") (reparse-symbol arg-sub-list) [90227 90250]))                  
+                :type "void")
+                nil [90200 90568])
+            ("prepareForShutdown" function
+               (:arguments 
+                  ( ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [90593 90603]))                  
+                :type "int")
+                nil [90570 94033])
+            ("time_independent_strcmp" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [94588 94596])
+                    ("b" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [94597 94605]))                  
+                :type "int")
+                nil [94560 95910])
+            ("authCommand" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [95929 95944]))                  
+                :type "void")
+                nil [95912 96275])
+            ("pingCommand" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [96386 96401]))                  
+                :type "void")
+                nil [96369 96976])
+            ("echoCommand" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [96995 97010]))                  
+                :type "void")
+                nil [96978 97046])
+            ("timeCommand" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [97065 97080]))                  
+                :type "void")
+                nil [97048 97346])
+            ("addReplyCommandFlag" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [97434 97449])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("redisCommand" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [97450 97475])
+                    ("f" variable (:type "int") (reparse-symbol arg-sub-list) [97476 97482])
+                    ("reply" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [97483 97495]))                  
+                :type "int")
+                nil [97410 97597])
+            ("addReplyCommand" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [97701 97716])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("redisCommand" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [97717 97742]))                  
+                :type "void")
+                nil [97680 99353])
+            ("commandCommand" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [99409 99424]))                  
+                :type "void")
+                nil [99389 100225])
+            ("bytesToHuman" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [100359 100367])
+                    ("n" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [100368 100389]))                  
+                :type "void")
+                nil [100341 101171])
+            ("genRedisInfoString" function
+               (:arguments 
+                  ( ("section" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [101374 101388]))                  
+                :type ("sds" type (:type "class") nil nil))
+                nil [101351 117988])
+            ("infoCommand" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118007 118022]))                  
+                :type "void")
+                nil [117990 118365])
+            ("monitorCommand" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118387 118402]))                  
+                :type "void")
+                nil [118367 118620])
+            ("freeMemoryIfNeeded" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [119433 119438]))                  
+                :type "int")
+                nil [119410 125350])
+            ("createPidFile" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [126568 126573]))                  
+                :type "void")
+                nil [126549 126759])
+            ("daemonize" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [126776 126781]))                  
+                :type "void")
+                nil [126761 127255])
+            ("version" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [127270 127275]))                  
+                :type "void")
+                nil [127257 127551])
+            ("usage" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [127564 127569]))                  
+                :type "void")
+                nil [127553 128468])
+            ("redisAsciiArt" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [128489 128494]))                  
+                :type "void")
+                nil [128470 129355])
+            ("sigShutdownHandler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sig" variable (:type "int") (reparse-symbol arg-sub-list) [129388 129396]))                  
+                :type "void")
+                nil [129357 130302])
+            ("setupSignalHandlers" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [130329 130334]))                  
+                :type "void")
+                nil [130304 130961])
+            ("memtest" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("megabytes" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [130976 130993])
+                    ("passes" variable (:type "int") (reparse-symbol arg-sub-list) [130994 131005]))                  
+                :type "void")
+                nil [130963 131006])
+            ("checkForSentinelMode" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [131138 131147])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [131148 131160]))                  
+                :type "int")
+                nil [131113 131334])
+            ("loadDataFromDisk" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [131426 131431]))                  
+                :type "void")
+                nil [131404 132053])
+            ("redisOutOfMemoryHandler" function
+               (:arguments 
+                  ( ("allocation_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [132084 132107]))                  
+                :type "void")
+                nil [132055 132255])
+            ("redisSetProcTitle" function
+               (:arguments 
+                  ( ("title" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [132280 132292]))                  
+                :type "void")
+                nil [132257 132483])
+            ("zk_watcher_g" function
+               (:arguments 
+                  ( ("zh" variable
+                       (:pointer 1
+                        :type ("zhandle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132643 132657])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [132658 132667])
+                    ("state" variable (:type "int") (reparse-symbol arg-sub-list) [132668 132678])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [132679 132696])
+                    ("watcherCtx" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [132697 132714]))                  
+                :type "void")
+                nil [132625 134255])
+            ("connect_zookeeper" function (:type "void") nil [134257 135195])
+            ("set_zknode_in_master_mode" function (:type "void") nil [135197 137258])
+            ("set_zknode_in_slave_mode" function (:type "void") nil [137260 139049])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [139199 139208])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [139209 139221]))                  
+                :type "int")
+                nil [139190 151268]))          
+      :file "redis.c"
+      :pointmax 151284
+      :fsize 153088
+      :lastmodtime '(22823 52600 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("redis.h" include nil nil [1657 1675])
+            ("sys/time.h" include (:system-flag t) nil [1677 1698])
+            ("unistd.h" include (:system-flag t) nil [1699 1718])
+            ("fcntl.h" include (:system-flag t) nil [1719 1737])
+            ("sys/socket.h" include (:system-flag t) nil [1738 1761])
+            ("sys/stat.h" include (:system-flag t) nil [1762 1783])
+            ("replicationDiscardCachedMaster" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1821 1826]))                  
+                :type "void")
+                nil [1785 1827])
+            ("replicationResurrectCachedMaster" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("newfd" variable (:type "int") (reparse-symbol arg-sub-list) [1866 1876]))                  
+                :type "void")
+                nil [1828 1877])
+            ("replicationSendAck" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1902 1907]))                  
+                :type "void")
+                nil [1878 1908])
+            ("putSlaveOnline" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("slave" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1929 1948]))                  
+                :type "void")
+                nil [1909 1949])
+            ("replicationGetSlaveName" function
+               (:pointer 1
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2351 2366]))                  
+                :type "char")
+                nil [2321 2859])
+            ("createReplicationBacklog" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2973 2978]))                  
+                :type "void")
+                nil [2943 3714])
+            ("resizeReplicationBacklog" function
+               (:arguments 
+                  ( ("newsize" variable (:type "long long") (reparse-symbol arg-sub-list) [4134 4152]))                  
+                :type "void")
+                nil [4104 5025])
+            ("freeReplicationBacklog" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5055 5060]))                  
+                :type "void")
+                nil [5027 5177])
+            ("feedReplicationBacklog" function
+               (:arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5448 5458])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5459 5470]))                  
+                :type "void")
+                nil [5420 6457])
+            ("feedReplicationBacklogWithObject" function
+               (:arguments 
+                  ( ("o" variable
+                       (:pointer 1
+                        :type ("robj" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6585 6593]))                  
+                :type "void")
+                nil [6547 6890])
+            ("replicationFeedSlaves" function
+               (:arguments 
+                  ( ("slaves" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6919 6932])
+                    ("dictid" variable (:type "int") (reparse-symbol arg-sub-list) [6933 6944])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("robj" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6945 6957])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6958 6967]))                  
+                :type "void")
+                nil [6892 10197])
+            ("replicationFeedMonitors" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10228 10243])
+                    ("monitors" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10244 10259])
+                    ("dictid" variable (:type "int") (reparse-symbol arg-sub-list) [10260 10271])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("robj" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10272 10284])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [10285 10294]))                  
+                :type "void")
+                nil [10199 11498])
+            ("addReplyReplicationBacklog" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11661 11676])
+                    ("offset" variable (:type "long long") (reparse-symbol arg-sub-list) [11677 11694]))                  
+                :type "long long")
+                nil [11624 13539])
+            ("masterTryPartialResynchronization" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13826 13841]))                  
+                :type "int")
+                nil [13788 17554])
+            ("startBgsaveForReplication" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17838 17843]))                  
+                :type "int")
+                nil [17808 18370])
+            ("syncCommand" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18433 18448]))                  
+                :type "void")
+                nil [18416 23674])
+            ("replconfCommand" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24268 24283]))                  
+                :type "void")
+                nil [24247 26043])
+            ("putSlaveOnline" function
+               (:arguments 
+                  ( ("slave" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26577 26596]))                  
+                :type "void")
+                nil [26557 27136])
+            ("sendBulkToSlave" function
+               (:arguments 
+                  ( ("el" variable
+                       (:pointer 1
+                        :type ("aeEventLoop" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27159 27175])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [27176 27183])
+                    ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [27184 27199])
+                    ("mask" variable (:type "int") (reparse-symbol arg-sub-list) [27200 27209]))                  
+                :type "void")
+                nil [27138 29139])
+            ("updateSlavesWaitingBgsave" function
+               (:arguments 
+                  ( ("bgsaveerr" variable (:type "int") (reparse-symbol arg-sub-list) [29921 29935])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [29936 29945]))                  
+                :type "void")
+                nil [29890 33064])
+            ("replicationAbortSyncTransfer" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [33260 33265]))                  
+                :type "void")
+                nil [33226 33596])
+            ("replicationSendNewlineToMaster" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [34069 34074]))                  
+                :type "void")
+                nil [34033 34318])
+            ("replicationEmptyDbCallback" function
+               (:arguments 
+                  ( ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [34465 34480]))                  
+                :type "void")
+                nil [34433 34551])
+            ("REPL_MAX_WRITTEN_BEFORE_FSYNC" variable (:constant-flag t) nil [34629 34658])
+            ("readSyncBulkPayload" function
+               (:arguments 
+                  ( ("el" variable
+                       (:pointer 1
+                        :type ("aeEventLoop" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34709 34725])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [34726 34733])
+                    ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [34734 34749])
+                    ("mask" variable (:type "int") (reparse-symbol arg-sub-list) [34750 34759]))                  
+                :type "void")
+                nil [34684 43083])
+            ("sendSynchronousCommand" function
+               (:pointer 1
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [43368 43375])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [43376 43380]))                  
+                :type "char")
+                nil [43339 44357])
+            ("PSYNC_CONTINUE" variable (:constant-flag t) nil [45500 45514])
+            ("PSYNC_FULLRESYNC" variable (:constant-flag t) nil [45525 45541])
+            ("PSYNC_NOT_SUPPORTED" variable (:constant-flag t) nil [45552 45571])
+            ("slaveTryPartialResynchronization" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [45611 45618]))                  
+                :type "int")
+                nil [45574 49120])
+            ("syncWithMaster" function
+               (:arguments 
+                  ( ("el" variable
+                       (:pointer 1
+                        :type ("aeEventLoop" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49142 49158])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [49159 49166])
+                    ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [49167 49182])
+                    ("mask" variable (:type "int") (reparse-symbol arg-sub-list) [49183 49192]))                  
+                :type "void")
+                nil [49122 55356])
+            ("connectWithMaster" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [55380 55385]))                  
+                :type "int")
+                nil [55358 56015])
+            ("undoConnectWithMaster" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [56149 56154]))                  
+                :type "void")
+                nil [56122 56474])
+            ("cancelReplicationHandshake" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [56896 56901]))                  
+                :type "int")
+                nil [56865 57207])
+            ("replicationSetMaster" function
+               (:arguments 
+                  ( ("ip" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [57299 57308])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [57309 57318]))                  
+                :type "void")
+                nil [57273 57797])
+            ("replicationUnsetMaster" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [57894 57899]))                  
+                :type "void")
+                nil [57866 58665])
+            ("slaveofCommand" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58687 58702]))                  
+                :type "void")
+                nil [58667 64937])
+            ("roleCommand" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65131 65146]))                  
+                :type "void")
+                nil [65114 66864])
+            ("replicationSendAck" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [67060 67065]))                  
+                :type "void")
+                nil [67036 67386])
+            ("replicationCacheMaster" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68382 68397]))                  
+                :type "void")
+                nil [68354 69691])
+            ("replicationDiscardCachedMaster" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [69845 69850]))                  
+                :type "void")
+                nil [69809 70095])
+            ("replicationResurrectCachedMaster" function
+               (:arguments 
+                  ( ("newfd" variable (:type "int") (reparse-symbol arg-sub-list) [70439 70449]))                  
+                :type "void")
+                nil [70401 71709])
+            ("refreshGoodSlavesCount" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [72038 72043]))                  
+                :type "void")
+                nil [72010 72526])
+            ("replicationScriptCacheInit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [74339 74344]))                  
+                :type "void")
+                nil [74307 74517])
+            ("replicationScriptCacheFlush" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [75094 75099]))                  
+                :type "void")
+                nil [75061 75249])
+            ("replicationScriptCacheAdd" function
+               (:arguments 
+                  ( ("sha1" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75398 75407]))                  
+                :type "void")
+                nil [75367 76014])
+            ("replicationScriptCacheExists" function
+               (:arguments 
+                  ( ("sha1" variable (:type ("sds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76181 76190]))                  
+                :type "int")
+                nil [76148 76258])
+            ("replicationCron" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [76423 76428]))                  
+                :type "void")
+                nil [76402 83175]))          
+      :file "replication.c"
+      :pointmax 83176
+      :fsize 84173
+      :lastmodtime '(22823 52600 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PSYNC_FULLRESYNC" . ((number "1" 45542 . 45543)))
+          ("REPL_MAX_WRITTEN_BEFORE_FSYNC" . ((semantic-list "(1024*1024*8)" 34659 . 34672)))
+          ("PSYNC_NOT_SUPPORTED" . ((number "2" 45572 . 45573)))
+          ("PSYNC_CONTINUE" . ((number "0" 45515 . 45516)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("redis.h" include nil nil [1645 1663])
+            ("hiredis.h" include nil nil [1664 1684])
+            ("async.h" include nil nil [1685 1703])
+            ("ctype.h" include (:system-flag t) nil [1705 1723])
+            ("arpa/inet.h" include (:system-flag t) nil [1724 1746])
+            ("sys/socket.h" include (:system-flag t) nil [1747 1770])
+            ("sys/wait.h" include (:system-flag t) nil [1771 1792])
+            ("fcntl.h" include (:system-flag t) nil [1793 1811])
+            ("environ" variable
+               (:pointer 2
+                :typemodifiers ("extern")
+                :type "char")
+                nil [1813 1835])
+            ("REDIS_SENTINEL_PORT" variable (:constant-flag t) nil [1845 1864])
+            ("sentinelAddr" type
+               (:members 
+                  ( ("ip" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2044 2053])
+                    ("port" variable (:type "int") (reparse-symbol classsubparts) [2058 2067]))                  
+                :type "struct")
+                nil [2010 2083])
+            ("sentinelAddr" type
+               (:typedef ("sentinelAddr" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [2010 2083])
+            ("SRI_MASTER" variable (:constant-flag t) nil [2147 2157])
+            ("SRI_SLAVE" variable (:constant-flag t) nil [2174 2183])
+            ("SRI_SENTINEL" variable (:constant-flag t) nil [2201 2213])
+            ("SRI_DISCONNECTED" variable (:constant-flag t) nil [2229 2245])
+            ("SRI_S_DOWN" variable (:constant-flag t) nil [2261 2271])
+            ("SRI_O_DOWN" variable (:constant-flag t) nil [2326 2336])
+            ("SRI_MASTER_DOWN" variable (:constant-flag t) nil [2400 2415])
+            ("SRI_FAILOVER_IN_PROGRESS" variable (:constant-flag t) nil [2534 2558])
+            ("SRI_PROMOTED" variable (:constant-flag t) nil [2664 2676])
+            ("SRI_RECONF_SENT" variable (:constant-flag t) nil [2739 2754])
+            ("SRI_RECONF_INPROG" variable (:constant-flag t) nil [2806 2823])
+            ("SRI_RECONF_DONE" variable (:constant-flag t) nil [2883 2898])
+            ("SRI_FORCE_FAILOVER" variable (:constant-flag t) nil [2961 2979])
+            ("SRI_SCRIPT_KILL_SENT" variable (:constant-flag t) nil [3034 3054])
+            ("SENTINEL_INFO_PERIOD" variable (:constant-flag t) nil [3151 3171])
+            ("SENTINEL_PING_PERIOD" variable (:constant-flag t) nil [3186 3206])
+            ("SENTINEL_ASK_PERIOD" variable (:constant-flag t) nil [3220 3239])
+            ("SENTINEL_PUBLISH_PERIOD" variable (:constant-flag t) nil [3253 3276])
+            ("SENTINEL_DEFAULT_DOWN_AFTER" variable (:constant-flag t) nil [3290 3317])
+            ("SENTINEL_HELLO_CHANNEL" variable (:constant-flag t) nil [3332 3354])
+            ("SENTINEL_TILT_TRIGGER" variable (:constant-flag t) nil [3384 3405])
+            ("SENTINEL_TILT_PERIOD" variable (:constant-flag t) nil [3419 3439])
+            ("SENTINEL_DEFAULT_SLAVE_PRIORITY" variable (:constant-flag t) nil [3474 3505])
+            ("SENTINEL_SLAVE_RECONF_TIMEOUT" variable (:constant-flag t) nil [3518 3547])
+            ("SENTINEL_DEFAULT_PARALLEL_SYNCS" variable (:constant-flag t) nil [3562 3593])
+            ("SENTINEL_MIN_LINK_RECONNECT_PERIOD" variable (:constant-flag t) nil [3604 3638])
+            ("SENTINEL_DEFAULT_FAILOVER_TIMEOUT" variable (:constant-flag t) nil [3653 3686])
+            ("SENTINEL_MAX_PENDING_COMMANDS" variable (:constant-flag t) nil [3707 3736])
+            ("SENTINEL_ELECTION_TIMEOUT" variable (:constant-flag t) nil [3749 3774])
+            ("SENTINEL_MAX_DESYNC" variable (:constant-flag t) nil [3789 3808])
+            ("SENTINEL_FAILOVER_STATE_NONE" variable (:constant-flag t) nil [3864 3892])
+            ("SENTINEL_FAILOVER_STATE_WAIT_START" variable (:constant-flag t) nil [3935 3969])
+            ("SENTINEL_FAILOVER_STATE_SELECT_SLAVE" variable (:constant-flag t) nil [4015 4051])
+            ("SENTINEL_FAILOVER_STATE_SEND_SLAVEOF_NOONE" variable (:constant-flag t) nil [4092 4134])
+            ("SENTINEL_FAILOVER_STATE_WAIT_PROMOTION" variable (:constant-flag t) nil [4167 4205])
+            ("SENTINEL_FAILOVER_STATE_RECONF_SLAVES" variable (:constant-flag t) nil [4248 4285])
+            ("SENTINEL_FAILOVER_STATE_UPDATE_CONFIG" variable (:constant-flag t) nil [4320 4357])
+            ("SENTINEL_MASTER_LINK_STATUS_UP" variable (:constant-flag t) nil [4399 4429])
+            ("SENTINEL_MASTER_LINK_STATUS_DOWN" variable (:constant-flag t) nil [4440 4472])
+            ("SENTINEL_NO_FLAGS" variable (:constant-flag t) nil [4627 4644])
+            ("SENTINEL_GENERATE_EVENT" variable (:constant-flag t) nil [4655 4678])
+            ("SENTINEL_LEADER" variable (:constant-flag t) nil [4695 4710])
+            ("SENTINEL_OBSERVER" variable (:constant-flag t) nil [4727 4744])
+            ("SENTINEL_SCRIPT_NONE" variable (:constant-flag t) nil [4803 4823])
+            ("SENTINEL_SCRIPT_RUNNING" variable (:constant-flag t) nil [4834 4857])
+            ("SENTINEL_SCRIPT_MAX_QUEUE" variable (:constant-flag t) nil [4868 4893])
+            ("SENTINEL_SCRIPT_MAX_RUNNING" variable (:constant-flag t) nil [4906 4933])
+            ("SENTINEL_SCRIPT_MAX_RUNTIME" variable (:constant-flag t) nil [4945 4972])
+            ("SENTINEL_SCRIPT_MAX_RETRY" variable (:constant-flag t) nil [5019 5044])
+            ("SENTINEL_SCRIPT_RETRY_DELAY" variable (:constant-flag t) nil [5056 5083])
+            ("sentinelRedisInstance" type
+               (:members 
+                  ( ("flags" variable (:type "int") (reparse-symbol classsubparts) [5168 5178])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5214 5225])
+                    ("runid" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5293 5305])
+                    ("config_epoch" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5344 5366])
+                    ("addr" variable
+                       (:pointer 1
+                        :type ("sentinelAddr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5399 5418])
+                    ("cc" variable
+                       (:pointer 1
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5442 5464])
+                    ("pc" variable
+                       (:pointer 1
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5505 5527])
+                    ("pending_commands" variable (:type "int") (reparse-symbol classsubparts) [5569 5590])
+                    ("cc_conn_time" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5648 5670])
+                    ("pc_conn_time" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5701 5723])
+                    ("pc_last_activity" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5754 5780])
+                    ("last_avail_time" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5826 5851])
+                    ("last_ping_time" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5966 5990])
+                    ("last_pong_time" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6252 6276])
+                    ("last_pub_time" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6484 6507])
+                    ("last_hello_time" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6557 6582])
+                    ("last_master_down_reply_time" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6755 6792])
+                    ("s_down_since_time" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6903 6930])
+                    ("o_down_since_time" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6971 6998])
+                    ("down_after_period" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7038 7065])
+                    ("info_refresh" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7112 7134])
+                    ("role_reported" variable (:type "int") (reparse-symbol classsubparts) [7501 7519])
+                    ("role_reported_time" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7524 7552])
+                    ("slave_conf_change_time" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7557 7589])
+                    ("sentinels" variable
+                       (:pointer 1
+                        :type ("dict" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7665 7681])
+                    ("slaves" variable
+                       (:pointer 1
+                        :type ("dict" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7739 7752])
+                    ("quorum" variable (:type "unsigned int") (reparse-symbol classsubparts) [7802 7822])
+                    ("parallel_syncs" variable (:type "int") (reparse-symbol classsubparts) [7883 7902])
+                    ("auth_pass" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [7958 7974])
+                    ("master_link_down_time" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8065 8096])
+                    ("slave_priority" variable (:type "int") (reparse-symbol classsubparts) [8141 8160])
+                    ("slave_reconf_sent_time" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8216 8248])
+                    ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8296 8333])
+                    ("slave_master_host" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [8375 8399])
+                    ("slave_master_port" variable (:type "int") (reparse-symbol classsubparts) [8445 8467])
+                    ("slave_master_link_status" variable (:type "int") (reparse-symbol classsubparts) [8515 8544])
+                    ("slave_repl_offset" variable (:type "unsigned long long") (reparse-symbol classsubparts) [8594 8631])
+                    ("leader" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [8687 8700])
+                    ("leader_epoch" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8989 9011])
+                    ("failover_epoch" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9051 9075])
+                    ("failover_state" variable (:type "int") (reparse-symbol classsubparts) [9127 9146])
+                    ("failover_state_change_time" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9196 9232])
+                    ("failover_start_time" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9237 9266])
+                    ("failover_timeout" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9313 9339])
+                    ("failover_delay_logged" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9391 9422])
+                    ("promoted_slave" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [9537 9582])
+                    ("notification_script" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [9741 9767])
+                    ("client_reconfig_script" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [9772 9801]))                  
+                :type "struct")
+                nil [5125 9826])
+            ("sentinelRedisInstance" type
+               (:typedef ("sentinelRedisInstance" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [5125 9826])
+            ("sentinel" variable (:type ("sentinelState" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [9846 10708])
+            ("sentinelState" type
+               (:members 
+                  ( ("current_epoch" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9873 9896])
+                    ("masters" variable
+                       (:pointer 1
+                        :type ("dict" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9926 9940])
+                    ("tilt" variable (:type "int") (reparse-symbol classsubparts) [10135 10144])
+                    ("running_scripts" variable (:type "int") (reparse-symbol classsubparts) [10186 10206])
+                    ("tilt_start_time" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10262 10287])
+                    ("previous_time" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10319 10342])
+                    ("scripts_queue" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10392 10412])
+                    ("announce_ip" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [10460 10478])
+                    ("announce_port" variable (:type "int") (reparse-symbol classsubparts) [10582 10600]))                  
+                :type "struct")
+                nil [9846 10708])
+            ("sentinelScriptJob" type
+               (:members 
+                  ( ("flags" variable (:type "int") (reparse-symbol classsubparts) [10779 10789])
+                    ("retry_num" variable (:type "int") (reparse-symbol classsubparts) [10849 10863])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol classsubparts) [10923 10935])
+                    ("start_time" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10987 11007])
+                    ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11352 11362]))                  
+                :type "struct")
+                nil [10740 11424])
+            ("sentinelScriptJob" type
+               (:typedef ("sentinelScriptJob" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [10740 11424])
+            ("redisAeEvents" type
+               (:members 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11746 11773])
+                    ("loop" variable
+                       (:pointer 1
+                        :type ("aeEventLoop" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11778 11796])
+                    ("fd" variable (:type "int") (reparse-symbol classsubparts) [11801 11808])
+                    ("reading" variable (:type "int") (reparse-symbol classsubparts) [11813 11834])
+                    ("writing" variable (:type "int") (reparse-symbol classsubparts) [11813 11834]))                  
+                :type "struct")
+                nil [11711 11851])
+            ("redisAeEvents" type
+               (:typedef ("redisAeEvents" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [11711 11851])
+            ("redisAeReadEvent" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("el" variable
+                       (:pointer 1
+                        :type ("aeEventLoop" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11882 11898])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [11899 11906])
+                    ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11907 11922])
+                    ("mask" variable (:type "int") (reparse-symbol arg-sub-list) [11923 11932]))                  
+                :type "void")
+                nil [11853 12066])
+            ("redisAeWriteEvent" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("el" variable
+                       (:pointer 1
+                        :type ("aeEventLoop" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12098 12114])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [12115 12122])
+                    ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12123 12138])
+                    ("mask" variable (:type "int") (reparse-symbol arg-sub-list) [12139 12148]))                  
+                :type "void")
+                nil [12068 12283])
+            ("redisAeAddRead" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12312 12327]))                  
+                :type "void")
+                nil [12285 12536])
+            ("redisAeDelRead" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12565 12580]))                  
+                :type "void")
+                nil [12538 12769])
+            ("redisAeAddWrite" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12799 12814]))                  
+                :type "void")
+                nil [12771 13024])
+            ("redisAeDelWrite" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13054 13069]))                  
+                :type "void")
+                nil [13026 13258])
+            ("redisAeCleanup" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13287 13302]))                  
+                :type "void")
+                nil [13260 13430])
+            ("redisAeAttach" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("aeEventLoop" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13457 13475])
+                    ("ac" variable
+                       (:pointer 1
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13476 13498]))                  
+                :type "int")
+                nil [13432 14174])
+            ("sentinelLinkEstablishedCallback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14295 14322])
+                    ("status" variable (:type "int") (reparse-symbol arg-sub-list) [14323 14334]))                  
+                :type "void")
+                nil [14258 14335])
+            ("sentinelDisconnectCallback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14368 14395])
+                    ("status" variable (:type "int") (reparse-symbol arg-sub-list) [14396 14407]))                  
+                :type "void")
+                nil [14336 14408])
+            ("sentinelReceiveHelloMessages" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14443 14464])
+                    ("reply" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [14465 14477])
+                    ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [14478 14493]))                  
+                :type "void")
+                nil [14409 14494])
+            ("sentinelGetMasterByName" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14542 14553]))                  
+                :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                nil [14495 14554])
+            ("sentinelGetSubjectiveLeader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14589 14619]))                  
+                :type "char")
+                nil [14555 14620])
+            ("sentinelGetObjectiveLeader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14654 14684]))                  
+                :type "char")
+                nil [14621 14685])
+            ("yesnotoi" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14699 14707]))                  
+                :type "int")
+                nil [14686 14708])
+            ("sentinelDisconnectInstanceFromContext" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14752 14779]))                  
+                :type "void")
+                nil [14709 14780])
+            ("sentinelKillLink" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14803 14829])
+                    ("c" variable
+                       (:pointer 1
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14830 14851]))                  
+                :type "void")
+                nil [14781 14852])
+            ("sentinelRedisInstanceTypeStr" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14894 14920]))                  
+                :type "char")
+                nil [14853 14921])
+            ("sentinelAbortFailover" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14949 14975]))                  
+                :type "void")
+                nil [14922 14976])
+            ("sentinelEvent" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("level" variable (:type "int") (reparse-symbol arg-sub-list) [14996 15006])
+                    ("type" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15007 15018])
+                    ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15019 15045])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15046 15062])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [15063 15067]))                  
+                :type "void")
+                nil [14977 15068])
+            ("sentinelSelectSlave" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15112 15142]))                  
+                :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                nil [15069 15143])
+            ("sentinelScheduleScriptExecution" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15181 15192])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [15193 15197]))                  
+                :type "void")
+                nil [15144 15198])
+            ("sentinelStartFailover" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15226 15256]))                  
+                :type "void")
+                nil [15199 15257])
+            ("sentinelDiscardReplyCallback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15292 15313])
+                    ("reply" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15314 15326])
+                    ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15327 15342]))                  
+                :type "void")
+                nil [15258 15343])
+            ("sentinelSendSlaveOf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15368 15394])
+                    ("host" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15395 15406])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [15407 15416]))                  
+                :type "int")
+                nil [15344 15417])
+            ("sentinelVoteLeader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15443 15473])
+                    ("req_epoch" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15474 15493])
+                    ("req_runid" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15494 15510])
+                    ("leader_epoch" variable
+                       (:pointer 1
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15511 15534]))                  
+                :type "char")
+                nil [15418 15535])
+            ("sentinelFlushConfig" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15561 15566]))                  
+                :type "void")
+                nil [15536 15567])
+            ("sentinelGenerateInitialMonitorEvents" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15610 15615]))                  
+                :type "void")
+                nil [15568 15616])
+            ("sentinelSendPing" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15638 15664]))                  
+                :type "int")
+                nil [15617 15665])
+            ("sentinelForceHelloUpdateForMaster" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15704 15734]))                  
+                :type "int")
+                nil [15666 15735])
+            ("dictSdsHash" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15844 15860]))                  
+                :type "unsigned int")
+                nil [15819 15861])
+            ("dictSdsKeyCompare" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15884 15899])
+                    ("key1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15900 15917])
+                    ("key2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15918 15935]))                  
+                :type "int")
+                nil [15862 15936])
+            ("releaseSentinelRedisInstance" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15971 15997]))                  
+                :type "void")
+                nil [15937 15998])
+            ("dictInstancesValDestructor" function
+               (:arguments 
+                  ( ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16033 16048])
+                    ("obj" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16049 16059]))                  
+                :type "void")
+                nil [16000 16131])
+            ("instancesDictType" variable
+               (:default-value "{
+    dictSdsHash,               /* hash function */
+    NULL,                      /* key dup */
+    NULL,                      /* val dup */
+    dictSdsKeyCompare,         /* key compare */
+    NULL,                      /* key destructor */
+    dictInstancesValDestructor /* val destructor */
+}"
+                :type ("dictType" type (:type "class") nil nil))
+                nil [16343 16670])
+            ("leaderVotesDictType" variable
+               (:default-value "{
+    dictSdsHash,               /* hash function */
+    NULL,                      /* key dup */
+    NULL,                      /* val dup */
+    dictSdsKeyCompare,         /* key compare */
+    NULL,                      /* key destructor */
+    NULL                       /* val destructor */
+}"
+                :type ("dictType" type (:type "class") nil nil))
+                nil [16860 17189])
+            ("sentinelCommand" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17294 17309]))                  
+                :type "void")
+                nil [17273 17310])
+            ("sentinelInfoCommand" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17336 17351]))                  
+                :type "void")
+                nil [17311 17352])
+            ("sentinelSetCommand" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17377 17392]))                  
+                :type "void")
+                nil [17353 17393])
+            ("sentinelPublishCommand" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17422 17437]))                  
+                :type "void")
+                nil [17394 17438])
+            ("sentinelRoleCommand" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17464 17479]))                  
+                :type "void")
+                nil [17439 17480])
+            ("sentinelcmds" variable
+               (:dereference 1
+                :default-value "{
+    {\"ping\",pingCommand,1,\"\",0,NULL,0,0,0,0,0},
+    {\"sentinel\",sentinelCommand,-2,\"\",0,NULL,0,0,0,0,0},
+    {\"subscribe\",subscribeCommand,-2,\"\",0,NULL,0,0,0,0,0},
+    {\"unsubscribe\",unsubscribeCommand,-1,\"\",0,NULL,0,0,0,0,0},
+    {\"psubscribe\",psubscribeCommand,-2,\"\",0,NULL,0,0,0,0,0},
+    {\"punsubscribe\",punsubscribeCommand,-1,\"\",0,NULL,0,0,0,0,0},
+    {\"publish\",sentinelPublishCommand,3,\"\",0,NULL,0,0,0,0,0},
+    {\"info\",sentinelInfoCommand,-1,\"\",0,NULL,0,0,0,0,0},
+    {\"role\",sentinelRoleCommand,1,\"l\",0,NULL,0,0,0,0,0},
+    {\"shutdown\",shutdownCommand,-1,\"\",0,NULL,0,0,0,0,0}
+}"
+                :type ("redisCommand" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [17482 18108])
+            ("initSentinelConfig" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18235 18240]))                  
+                :type "void")
+                nil [18211 18283])
+            ("initSentinel" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18351 18356]))                  
+                :type "void")
+                nil [18333 19158])
+            ("sentinelIsRunning" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19326 19331]))                  
+                :type "void")
+                nil [19303 19923])
+            ("createSentinelAddr" function
+               (:pointer 1
+                :arguments 
+                  ( ("hostname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20225 20240])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [20241 20250]))                  
+                :type ("sentinelAddr" type (:type "class") nil nil))
+                nil [20192 20603])
+            ("dupSentinelAddr" function
+               (:pointer 1
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type ("sentinelAddr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20683 20701]))                  
+                :type ("sentinelAddr" type (:type "class") nil nil))
+                nil [20653 20830])
+            ("releaseSentinelAddr" function
+               (:arguments 
+                  ( ("sa" variable
+                       (:pointer 1
+                        :type ("sentinelAddr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20900 20917]))                  
+                :type "void")
+                nil [20875 20957])
+            ("sentinelAddrIsEqual" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("sentinelAddr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21033 21049])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("sentinelAddr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21050 21066]))                  
+                :type "int")
+                nil [21009 21129])
+            ("sentinelEvent" function
+               (:arguments 
+                  ( ("level" variable (:type "int") (reparse-symbol arg-sub-list) [22149 22159])
+                    ("type" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22160 22171])
+                    ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22172 22198])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22218 22234])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [22235 22239]))                  
+                :type "void")
+                nil [22130 24105])
+            ("sentinelGenerateInitialMonitorEvents" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [24388 24393]))                  
+                :type "void")
+                nil [24346 24689])
+            ("sentinelReleaseScriptJob" function
+               (:arguments 
+                  ( ("sj" variable
+                       (:pointer 1
+                        :type ("sentinelScriptJob" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24869 24891]))                  
+                :type "void")
+                nil [24839 24994])
+            ("SENTINEL_SCRIPT_MAX_ARGS" variable (:constant-flag t) nil [25004 25028])
+            ("sentinelScheduleScriptExecution" function
+               (:arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25069 25080])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [25081 25085]))                  
+                :type "void")
+                nil [25032 26429])
+            ("sentinelGetScriptListNodeByPid" function
+               (:pointer 1
+                :arguments 
+                  ( ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26613 26623]))                  
+                :type ("listNode" type (:type "class") nil nil))
+                nil [26572 26909])
+            ("sentinelRunPendingScripts" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [27027 27032]))                  
+                :type "void")
+                nil [26996 28584])
+            ("sentinelScriptRetryDelay" function
+               (:arguments 
+                  ( ("retry_num" variable (:type "int") (reparse-symbol arg-sub-list) [29012 29026]))                  
+                :type ("mstime_t" type (:type "class") nil nil))
+                nil [28978 29139])
+            ("sentinelCollectTerminatedScripts" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [29459 29464]))                  
+                :type "void")
+                nil [29421 31132])
+            ("sentinelKillTimedoutScripts" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [31274 31279]))                  
+                :type "void")
+                nil [31241 31775])
+            ("sentinelPendingScriptsCommand" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31863 31878]))                  
+                :type "void")
+                nil [31828 33080])
+            ("sentinelCallClientReconfScript" function
+               (:arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33540 33570])
+                    ("role" variable (:type "int") (reparse-symbol arg-sub-list) [33571 33580])
+                    ("state" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33581 33593])
+                    ("from" variable
+                       (:pointer 1
+                        :type ("sentinelAddr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33594 33613])
+                    ("to" variable
+                       (:pointer 1
+                        :type ("sentinelAddr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33614 33631]))                  
+                :type "void")
+                nil [33504 34034])
+            ("createSentinelRedisInstance" function
+               (:pointer 1
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35108 35119])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [35120 35130])
+                    ("hostname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35131 35146])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [35147 35156])
+                    ("quorum" variable (:type "int") (reparse-symbol arg-sub-list) [35157 35168])
+                    ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35169 35199]))                  
+                :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                nil [35057 38766])
+            ("releaseSentinelRedisInstance" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39070 39096]))                  
+                :type "void")
+                nil [39036 39814])
+            ("sentinelRedisInstanceLookupSlave" function
+               (:pointer 1
+                :arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39954 39980])
+                    ("ip" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39981 39990])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [39991 40000]))                  
+                :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                nil [39881 40272])
+            ("sentinelRedisInstanceTypeStr" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40378 40404]))                  
+                :type "char")
+                nil [40337 40594])
+            ("removeMatchingSentinelsFromMaster" function
+               (:arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41414 41444])
+                    ("ip" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [41445 41454])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [41455 41464])
+                    ("runid" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [41465 41477]))                  
+                :type "int")
+                nil [41376 41981])
+            ("getSentinelRedisInstanceByAddrAndRunID" function
+               (:pointer 1
+                :arguments 
+                  ( ("instances" variable
+                       (:pointer 1
+                        :type ("dict" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42307 42323])
+                    ("ip" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42324 42333])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [42334 42343])
+                    ("runid" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42344 42356]))                  
+                :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                nil [42245 43001])
+            ("sentinelGetMasterByName" function
+               (:pointer 1
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [43078 43089]))                  
+                :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                nil [43031 43245])
+            ("sentinelAddFlagsToDictOfRedisInstances" function
+               (:arguments 
+                  ( ("instances" variable
+                       (:pointer 1
+                        :type ("dict" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43371 43387])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [43388 43398]))                  
+                :type "void")
+                nil [43327 43637])
+            ("sentinelDelFlagsToDictOfRedisInstances" function
+               (:arguments 
+                  ( ("instances" variable
+                       (:pointer 1
+                        :type ("dict" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43769 43785])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [43786 43796]))                  
+                :type "void")
+                nil [43725 44036])
+            ("SENTINEL_RESET_NO_SENTINELS" variable (:constant-flag t) nil [44405 44432])
+            ("sentinelResetMaster" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44465 44491])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [44492 44502]))                  
+                :type "void")
+                nil [44440 45562])
+            ("sentinelResetMastersByPattern" function
+               (:arguments 
+                  ( ("pattern" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [45694 45708])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [45709 45719]))                  
+                :type "int")
+                nil [45660 46146])
+            ("sentinelResetMasterAndChangeAddress" function
+               (:arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46513 46543])
+                    ("ip" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46544 46553])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [46554 46563]))                  
+                :type "int")
+                nil [46473 48700])
+            ("sentinelRedisInstanceNoDownFor" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48860 48886])
+                    ("ms" variable (:type ("mstime_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48887 48899]))                  
+                :type "int")
+                nil [48825 49123])
+            ("sentinelGetCurrentMasterAddress" function
+               (:pointer 1
+                :arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49297 49327]))                  
+                :type ("sentinelAddr" type (:type "class") nil nil))
+                nil [49251 49892])
+            ("sentinelPropagateDownAfterPeriod" function
+               (:arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50073 50103]))                  
+                :type "void")
+                nil [50035 50497])
+            ("sentinelHandleConfiguration" function
+               (:pointer 1
+                :arguments 
+                  ( ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [50614 50626])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [50627 50636]))                  
+                :type "char")
+                nil [50580 56064])
+            ("rewriteConfigSentinelOption" function
+               (:arguments 
+                  ( ("state" variable
+                       (:pointer 1
+                        :type ("rewriteConfigState" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [56408 56441]))                  
+                :type "void")
+                nil [56375 61860])
+            ("sentinelFlushConfig" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [62231 62236]))                  
+                :type "void")
+                nil [62206 62780])
+            ("sentinelKillLink" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [62947 62973])
+                    ("c" variable
+                       (:pointer 1
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [62974 62995]))                  
+                :type "void")
+                nil [62925 63199])
+            ("sentinelDisconnectInstanceFromContext" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63507 63534]))                  
+                :type "void")
+                nil [63464 63900])
+            ("sentinelLinkEstablishedCallback" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63939 63966])
+                    ("status" variable (:type "int") (reparse-symbol arg-sub-list) [63967 63978]))                  
+                :type "void")
+                nil [63902 64260])
+            ("sentinelDisconnectCallback" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64294 64321])
+                    ("status" variable (:type "int") (reparse-symbol arg-sub-list) [64322 64333]))                  
+                :type "void")
+                nil [64262 64410])
+            ("sentinelSendAuthIfNeeded" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64783 64809])
+                    ("c" variable
+                       (:pointer 1
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64810 64831]))                  
+                :type "void")
+                nil [64753 65140])
+            ("sentinelSetClientName" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65516 65542])
+                    ("c" variable
+                       (:pointer 1
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65543 65564])
+                    ("type" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [65565 65576]))                  
+                :type "void")
+                nil [65489 65827])
+            ("sentinelReconnectInstance" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66073 66099]))                  
+                :type "void")
+                nil [66042 68686])
+            ("sentinelMasterLooksSane" function
+               (:arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69055 69085]))                  
+                :type "int")
+                nil [69027 69311])
+            ("sentinelRefreshInstanceInfo" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69390 69416])
+                    ("info" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [69417 69434]))                  
+                :type "void")
+                nil [69357 79506])
+            ("sentinelInfoReplyCallback" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [79539 79560])
+                    ("reply" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [79561 79573])
+                    ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [79574 79589]))                  
+                :type "void")
+                nil [79508 79861])
+            ("sentinelDiscardReplyCallback" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80027 80048])
+                    ("reply" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [80049 80061])
+                    ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [80062 80077]))                  
+                :type "void")
+                nil [79993 80214])
+            ("sentinelPingReplyCallback" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80247 80268])
+                    ("reply" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [80269 80281])
+                    ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [80282 80297]))                  
+                :type "void")
+                nil [80216 81537])
+            ("sentinelPublishReplyCallback" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81695 81716])
+                    ("reply" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [81717 81729])
+                    ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [81730 81745]))                  
+                :type "void")
+                nil [81661 82123])
+            ("sentinelProcessHelloMessage" function
+               (:arguments 
+                  ( ("hello" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [82413 82425])
+                    ("hello_len" variable (:type "int") (reparse-symbol arg-sub-list) [82426 82440]))                  
+                :type "void")
+                nil [82380 86012])
+            ("sentinelReceiveHelloMessages" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86188 86209])
+                    ("reply" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [86210 86222])
+                    ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [86223 86238]))                  
+                :type "void")
+                nil [86154 87234])
+            ("sentinelSendHello" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87734 87760]))                  
+                :type "int")
+                nil [87712 89206])
+            ("sentinelForceHelloUpdateDictOfRedisInstances" function
+               (:arguments 
+                  ( ("instances" variable
+                       (:pointer 1
+                        :type ("dict" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89392 89408]))                  
+                :type "void")
+                nil [89342 89747])
+            ("sentinelForceHelloUpdateForMaster" function
+               (:arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90251 90281]))                  
+                :type "int")
+                nil [90213 90622])
+            ("sentinelSendPing" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90894 90920]))                  
+                :type "int")
+                nil [90873 91403])
+            ("sentinelSendPeriodicCommands" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91550 91576]))                  
+                :type "void")
+                nil [91516 93832])
+            ("sentinelFailoverStateStr" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("state" variable (:type "int") (reparse-symbol arg-sub-list) [93953 93963]))                  
+                :type "char")
+                nil [93916 94514])
+            ("addReplySentinelRedisInstance" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94606 94621])
+                    ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94622 94648]))                  
+                :type "void")
+                nil [94571 100533])
+            ("addReplyDictOfRedisInstances" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100656 100671])
+                    ("instances" variable
+                       (:pointer 1
+                        :type ("dict" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100672 100688]))                  
+                :type "void")
+                nil [100622 100994])
+            ("sentinelGetMasterByNameOrReplyError" function
+               (:pointer 1
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101193 101208])
+                    ("name" variable
+                       (:pointer 1
+                        :type ("robj" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101233 101244]))                  
+                :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                nil [101134 101448])
+            ("sentinelCommand" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101471 101486]))                  
+                :type "void")
+                nil [101450 108677])
+            ("sentinelInfoCommand" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108734 108749]))                  
+                :type "void")
+                nil [108709 110678])
+            ("sentinelRoleCommand" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [110838 110853]))                  
+                :type "void")
+                nil [110813 111242])
+            ("sentinelSetCommand" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111323 111338]))                  
+                :type "void")
+                nil [111299 114643])
+            ("sentinelPublishCommand" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [115029 115044]))                  
+                :type "void")
+                nil [115001 115314])
+            ("sentinelCheckSubjectivelyDown" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [115485 115511]))                  
+                :type "void")
+                nil [115450 117856])
+            ("sentinelCheckObjectivelyDown" function
+               (:arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118241 118271]))                  
+                :type "void")
+                nil [118207 119348])
+            ("sentinelReceiveIsMasterDownReply" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("redisAsyncContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119528 119549])
+                    ("reply" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [119550 119562])
+                    ("privdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [119563 119578]))                  
+                :type "void")
+                nil [119490 120959])
+            ("SENTINEL_ASK_FORCED" variable (:constant-flag t) nil [121217 121236])
+            ("sentinelAskMasterStateToOtherSentinels" function
+               (:arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [121288 121318])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [121319 121329]))                  
+                :type "void")
+                nil [121244 122932])
+            ("sentinelVoteLeader" function
+               (:pointer 1
+                :arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [123318 123348])
+                    ("req_epoch" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123349 123368])
+                    ("req_runid" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [123369 123385])
+                    ("leader_epoch" variable
+                       (:pointer 1
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [123386 123409]))                  
+                :type "char")
+                nil [123293 124490])
+            ("sentinelLeader" type
+               (:members 
+                  ( ("runid" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [124520 124532])
+                    ("votes" variable (:type "unsigned long") (reparse-symbol classsubparts) [124537 124557]))                  
+                :type "struct")
+                nil [124492 124560])
+            ("sentinelLeaderIncr" function
+               (:arguments 
+                  ( ("counters" variable
+                       (:pointer 1
+                        :type ("dict" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124688 124703])
+                    ("runid" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [124704 124716]))                  
+                :type "int")
+                nil [124665 125075])
+            ("sentinelGetLeader" function
+               (:pointer 1
+                :arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [125415 125445])
+                    ("epoch" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [125446 125461]))                  
+                :type "char")
+                nil [125391 127503])
+            ("sentinelSendSlaveOf" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [128044 128070])
+                    ("host" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [128071 128082])
+                    ("port" variable (:type "int") (reparse-symbol arg-sub-list) [128083 128092]))                  
+                :type "int")
+                nil [128020 130164])
+            ("sentinelStartFailover" function
+               (:arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [130243 130273]))                  
+                :type "void")
+                nil [130216 130788])
+            ("sentinelStartFailoverIfNeeded" function
+               (:arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [131227 131257]))                  
+                :type "int")
+                nil [131193 132251])
+            ("compareSlavesForPromotion" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [133776 133790])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [133791 133805]))                  
+                :type "int")
+                nil [133746 134980])
+            ("sentinelSelectSlave" function
+               (:pointer 1
+                :arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135025 135055]))                  
+                :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                nil [134982 136650])
+            ("sentinelFailoverWaitStart" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136764 136790]))                  
+                :type "void")
+                nil [136733 138055])
+            ("sentinelFailoverSelectSlave" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [138090 138116]))                  
+                :type "void")
+                nil [138057 138830])
+            ("sentinelFailoverSendSlaveOfNoOne" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [138870 138896]))                  
+                :type "void")
+                nil [138832 140001])
+            ("sentinelFailoverWaitPromotion" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [140144 140170]))                  
+                :type "void")
+                nil [140109 140514])
+            ("sentinelFailoverDetectEnd" function
+               (:arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [140547 140577]))                  
+                :type "void")
+                nil [140516 142724])
+            ("sentinelFailoverReconfNextSlave" function
+               (:arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [142894 142924]))                  
+                :type "void")
+                nil [142857 144994])
+            ("sentinelFailoverSwitchToPromotedSlave" function
+               (:arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [145234 145264]))                  
+                :type "void")
+                nil [145191 145648])
+            ("sentinelFailoverStateMachine" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [145684 145710]))                  
+                :type "void")
+                nil [145650 146444])
+            ("sentinelAbortFailover" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [146707 146733]))                  
+                :type "void")
+                nil [146680 147162])
+            ("sentinelHandleRedisInstance" function
+               (:arguments 
+                  ( ("ri" variable
+                       (:pointer 1
+                        :type ("sentinelRedisInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147552 147578]))                  
+                :type "void")
+                nil [147519 148699])
+            ("sentinelHandleDictOfRedisInstances" function
+               (:arguments 
+                  ( ("instances" variable
+                       (:pointer 1
+                        :type ("dict" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [148882 148898]))                  
+                :type "void")
+                nil [148842 149685])
+            ("sentinelCheckTiltCondition" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [150735 150740]))                  
+                :type "void")
+                nil [150703 151068])
+            ("sentinelTimer" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [151089 151094]))                  
+                :type "void")
+                nil [151070 151772]))          
+      :file "sentinel.c"
+      :pointmax 151774
+      :fsize 151773
+      :lastmodtime '(22823 52600 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SRI_SENTINEL" . ((semantic-list "(1<<2)" 2214 . 2220)))
+          ("SENTINEL_FAILOVER_STATE_WAIT_PROMOTION" . ((number "4" 4206 . 4207)))
+          ("SENTINEL_FAILOVER_STATE_RECONF_SLAVES" . ((number "5" 4286 . 4287)))
+          ("SENTINEL_TILT_PERIOD" . ((semantic-list "(SENTINEL_PING_PERIOD*30)" 3440 . 3465)))
+          ("SENTINEL_FAILOVER_STATE_SELECT_SLAVE" . ((number "2" 4052 . 4053)))
+          ("SENTINEL_FAILOVER_STATE_SEND_SLAVEOF_NOONE" . ((number "3" 4135 . 4136)))
+          ("SENTINEL_ASK_FORCED" . ((semantic-list "(1<<0)" 121237 . 121243)))
+          ("SENTINEL_ASK_PERIOD" . ((number "1000" 3240 . 3244)))
+          ("SENTINEL_PUBLISH_PERIOD" . ((number "2000" 3277 . 3281)))
+          ("SENTINEL_TILT_TRIGGER" . ((number "2000" 3406 . 3410)))
+          ("SENTINEL_SLAVE_RECONF_TIMEOUT" . ((number "10000" 3548 . 3553)))
+          ("SENTINEL_MAX_DESYNC" . ((number "1000" 3809 . 3813)))
+          ("SRI_RECONF_DONE" . ((semantic-list "(1<<11)" 2899 . 2906)))
+          ("SENTINEL_ELECTION_TIMEOUT" . ((number "10000" 3775 . 3780)))
+          ("SENTINEL_NO_FLAGS" . ((number "0" 4645 . 4646)))
+          ("SENTINEL_SCRIPT_MAX_ARGS" . ((number "16" 25029 . 25031)))
+          ("SENTINEL_SCRIPT_NONE" . ((number "0" 4824 . 4825)))
+          ("SRI_MASTER" . ((semantic-list "(1<<0)" 2159 . 2165)))
+          ("SRI_MASTER_DOWN" . ((semantic-list "(1<<6)" 2416 . 2422)))
+          ("SRI_PROMOTED" . ((semantic-list "(1<<8)" 2677 . 2683)))
+          ("SENTINEL_DEFAULT_PARALLEL_SYNCS" . ((number "1" 3594 . 3595)))
+          ("SENTINEL_MAX_PENDING_COMMANDS" . ((number "100" 3737 . 3740)))
+          ("SENTINEL_FAILOVER_STATE_NONE" . ((number "0" 3893 . 3894)))
+          ("SENTINEL_OBSERVER" . ((semantic-list "(1<<18)" 4745 . 4752)))
+          ("SENTINEL_SCRIPT_MAX_QUEUE" . ((number "256" 4894 . 4897)))
+          ("SENTINEL_FAILOVER_STATE_UPDATE_CONFIG" . ((number "6" 4358 . 4359)))
+          ("SENTINEL_GENERATE_EVENT" . ((semantic-list "(1<<16)" 4679 . 4686)))
+          ("SENTINEL_SCRIPT_RETRY_DELAY" . ((number "30000" 5084 . 5089)))
+          ("REDIS_SENTINEL_PORT" . ((number "26379" 1865 . 1870)))
+          ("SENTINEL_PING_PERIOD" . ((number "1000" 3207 . 3211)))
+          ("SENTINEL_FAILOVER_STATE_WAIT_START" . ((number "1" 3970 . 3971)))
+          ("SENTINEL_MASTER_LINK_STATUS_UP" . ((number "0" 4430 . 4431)))
+          ("SRI_RECONF_SENT" . ((semantic-list "(1<<9)" 2755 . 2761)))
+          ("SRI_RECONF_INPROG" . ((semantic-list "(1<<10)" 2824 . 2831)))
+          ("SENTINEL_INFO_PERIOD" . ((number "10000" 3172 . 3177)))
+          ("SENTINEL_DEFAULT_FAILOVER_TIMEOUT" . ((semantic-list "(60*3*1000)" 3687 . 3698)))
+          ("SENTINEL_SCRIPT_RUNNING" . ((number "1" 4858 . 4859)))
+          ("SENTINEL_SCRIPT_MAX_RETRY" . ((number "10" 5045 . 5047)))
+          ("SRI_S_DOWN" . ((semantic-list "(1<<4)" 2272 . 2278)))
+          ("SRI_SCRIPT_KILL_SENT" . ((semantic-list "(1<<13)" 3055 . 3062)))
+          ("SENTINEL_HELLO_CHANNEL" . ((string "\"__sentinel__:hello\"" 3355 . 3375)))
+          ("SRI_DISCONNECTED" . ((semantic-list "(1<<3)" 2246 . 2252)))
+          ("SRI_FORCE_FAILOVER" . ((semantic-list "(1<<12)" 2980 . 2987)))
+          ("SENTINEL_DEFAULT_DOWN_AFTER" . ((number "30000" 3318 . 3323)))
+          ("SENTINEL_DEFAULT_SLAVE_PRIORITY" . ((number "100" 3506 . 3509)))
+          ("SENTINEL_MIN_LINK_RECONNECT_PERIOD" . ((number "15000" 3639 . 3644)))
+          ("SENTINEL_MASTER_LINK_STATUS_DOWN" . ((number "1" 4473 . 4474)))
+          ("SENTINEL_LEADER" . ((semantic-list "(1<<17)" 4711 . 4718)))
+          ("SENTINEL_SCRIPT_MAX_RUNNING" . ((number "16" 4934 . 4936)))
+          ("SRI_SLAVE" . ((semantic-list "(1<<1)" 2186 . 2192)))
+          ("SRI_O_DOWN" . ((semantic-list "(1<<5)" 2337 . 2343)))
+          ("SRI_FAILOVER_IN_PROGRESS" . ((semantic-list "(1<<7)" 2559 . 2565)))
+          ("SENTINEL_SCRIPT_MAX_RUNTIME" . ((number "60000" 4973 . 4978)))
+          ("SENTINEL_RESET_NO_SENTINELS" . ((semantic-list "(1<<0)" 44433 . 44439)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "redis.h"
+      :fsize 66795
+      :lastmodtime '(22823 52600 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "slowlog.h"
+      :fsize 2202
+      :lastmodtime '(22823 52600 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "bio.h"
+      :fsize 2091
+      :lastmodtime '(22823 52600 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "latency.h"
+      :fsize 3788
+      :lastmodtime '(22823 52600 0 0)))
+  :file "!Users!drwrong!mywork!domob!inf!redis-cluster!redis!redis-2.8.19!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

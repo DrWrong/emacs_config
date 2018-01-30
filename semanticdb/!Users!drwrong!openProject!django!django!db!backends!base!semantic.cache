@@ -1,0 +1,16 @@
+;; Object base/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "base/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22174 22700 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!openProject!django!django!db!backends!base!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

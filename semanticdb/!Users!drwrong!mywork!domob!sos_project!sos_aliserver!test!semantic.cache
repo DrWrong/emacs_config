@@ -1,0 +1,35 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables
+  (list
+    (semanticdb-table "test_handler.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("unittest" include nil nil [48 63])
+            ("sys" include nil nil [64 74])
+            ("os" include nil nil [75 84])
+            ("TestHandler" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [140 144]))                          )
+                        (reparse-symbol indented_block_body) [130 457])
+                    ("test_charge_notify" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [485 489]))                          )
+                        (reparse-symbol indented_block_body) [462 868]))                  
+                :type "class")
+                nil [87 1126])
+            ("if" code nil nil [1126 1173]))          
+      :file "test_handler.py"
+      :pointmax 1173
+      :fsize 1182
+      :lastmodtime '(22713 4462 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_aliserver!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

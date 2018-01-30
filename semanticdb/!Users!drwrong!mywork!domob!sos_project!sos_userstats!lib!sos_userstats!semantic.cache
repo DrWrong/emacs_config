@@ -1,0 +1,312 @@
+;; Object sos_userstats/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sos_userstats/"
+  :tables
+  (list
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.db" include nil nil [22 50])
+            ("json" include nil nil [52 63])
+            ("User" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("phone_num" variable nil (reparse-symbol indented_block_body) [96 129])
+                    ("extra_info" variable nil (reparse-symbol indented_block_body) [134 165])
+                    ("register_time" variable nil (reparse-symbol indented_block_body) [170 207])
+                    ("channel" variable nil (reparse-symbol indented_block_body) [212 240])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [266 281])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [290 307]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [246 308])
+                    ("extra_json" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [342 346]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [313 446])
+                    ("extra_json" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [489 493])
+                            ("value" variable nil (reparse-symbol function_parameters) [495 500]))                          
+                        :decorators 
+                          ( ("extra_json.setter" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [451 547]))                  
+                :type "class")
+                nil [66 547])
+            ("ChannelStats" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("channel" variable nil (reparse-symbol indented_block_body) [587 615])
+                    ("dt" variable nil (reparse-symbol indented_block_body) [620 646])
+                    ("register_num" variable nil (reparse-symbol indented_block_body) [651 696])
+                    ("download_num" variable nil (reparse-symbol indented_block_body) [701 746])
+                    ("sign_num" variable nil (reparse-symbol indented_block_body) [751 792])
+                    ("task_income" variable nil (reparse-symbol indented_block_body) [797 841])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [866 881])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [890 916])
+                            ("unique_together" variable nil (reparse-symbol indented_block_body) [925 963]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [846 964]))                  
+                :type "class")
+                nil [549 964])
+            ("UserStats" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("uid" variable nil (reparse-symbol indented_block_body) [1014 1057])
+                    ("channel" variable nil (reparse-symbol indented_block_body) [1062 1100])
+                    ("dt" variable nil (reparse-symbol indented_block_body) [1105 1131])
+                    ("app_act" variable nil (reparse-symbol indented_block_body) [1136 1176])
+                    ("app_act_income" variable nil (reparse-symbol indented_block_body) [1181 1228])
+                    ("landing_act" variable nil (reparse-symbol indented_block_body) [1233 1277])
+                    ("landing_act_income" variable nil (reparse-symbol indented_block_body) [1282 1333])
+                    ("app_sign" variable nil (reparse-symbol indented_block_body) [1338 1379])
+                    ("app_sign_income" variable nil (reparse-symbol indented_block_body) [1384 1432])
+                    ("domob_act" variable nil (reparse-symbol indented_block_body) [1437 1479])
+                    ("domob_act_income" variable nil (reparse-symbol indented_block_body) [1484 1533])
+                    ("domob_sign" variable nil (reparse-symbol indented_block_body) [1538 1581])
+                    ("domob_sign_income" variable nil (reparse-symbol indented_block_body) [1586 1636])
+                    ("dj_act" variable nil (reparse-symbol indented_block_body) [1641 1680])
+                    ("dj_act_income" variable nil (reparse-symbol indented_block_body) [1685 1731])
+                    ("dj_sign" variable nil (reparse-symbol indented_block_body) [1736 1776])
+                    ("dj_sign_income" variable nil (reparse-symbol indented_block_body) [1781 1828])
+                    ("youmi_act" variable nil (reparse-symbol indented_block_body) [1833 1875])
+                    ("youmi_act_income" variable nil (reparse-symbol indented_block_body) [1880 1929])
+                    ("youmi_sign" variable nil (reparse-symbol indented_block_body) [1934 1977])
+                    ("youmi_sign_income" variable nil (reparse-symbol indented_block_body) [1982 2032])
+                    ("invite" variable nil (reparse-symbol indented_block_body) [2037 2076])
+                    ("draw" variable nil (reparse-symbol indented_block_body) [2081 2118])
+                    ("draw_income" variable nil (reparse-symbol indented_block_body) [2123 2167])
+                    ("charge_request" variable nil (reparse-symbol indented_block_body) [2172 2219])
+                    ("do_charge" variable nil (reparse-symbol indented_block_body) [2224 2266])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [2292 2307])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [2316 2339])
+                            ("unique_together" variable nil (reparse-symbol indented_block_body) [2348 2382]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [2272 2383]))                  
+                :type "class")
+                nil [979 2383])
+            ("SosUserDanger" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [2424 2466])
+                    ("uid" variable nil (reparse-symbol indented_block_body) [2471 2498])
+                    ("dt" variable nil (reparse-symbol indented_block_body) [2503 2529])
+                    ("type" variable nil (reparse-symbol indented_block_body) [2534 2583])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [2609 2624])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [2633 2661]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [2589 2662]))                  
+                :type "class")
+                nil [2385 2662]))          
+      :file "models.py"
+      :pointmax 2665
+      :fsize 2664
+      :lastmodtime '(22144 63424 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "user_stats.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+@ author: 程宇航
+@ function: 从kafka上读取事件，并进行各种计数到mysql
+'''" code nil nil [47 106])
+            ("__future__" include nil nil [107 138])
+            ("sys" include nil nil [139 149])
+            ("json" include nil nil [150 161])
+            ("logging" include nil nil [162 176])
+            ("traceback" include nil nil [177 193])
+            ("datetime" include nil nil [194 234])
+            ("time" include nil nil [235 264])
+            ("ChannelStats" include nil nil [278 344])
+            ("SosUserDanger" include nil nil [278 344])
+            ("User" include nil nil [278 344])
+            ("UserStats" include nil nil [278 344])
+            ("django.db.models" include nil nil [346 376])
+            ("django.db" include nil nil [377 420])
+            ("django.conf" include nil nil [421 453])
+            ("django.core.exceptions" include nil nil [454 507])
+            ("domob_pyutils.statscol" include nil nil [508 548])
+            ("INVITE_TOO_MUCH" variable nil nil [551 570])
+            ("CHARGE_SAME_DAY" variable nil nil [571 590])
+            ("LOW_SIGN_RATE" variable nil nil [591 608])
+            ("UserEvent" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [675 716])
+                            ("self" variable nil (reparse-symbol indented_block_body) [725 779])
+                            ("self" variable nil (reparse-symbol indented_block_body) [788 830])
+                            ("self" variable nil (reparse-symbol indented_block_body) [839 854])
+                            ("self" variable nil (reparse-symbol indented_block_body) [863 875])
+                            ("self" variable nil (reparse-symbol indented_block_body) [884 899])
+                            ("self" variable nil (reparse-symbol indented_block_body) [908 948]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [654 658])
+                            ("data" variable nil (reparse-symbol function_parameters) [660 664]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [641 949])
+                    ("parse_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [969 973])
+                            ("data" variable nil (reparse-symbol function_parameters) [975 979]))                          )
+                        (reparse-symbol indented_block_body) [954 2376]))                  
+                :type "class")
+                nil [611 2376])
+            ("AbstractProcessor" type
+               (:superclasses ("object")
+                :members 
+                  ( ("care_event" variable nil (reparse-symbol indented_block_body) [2415 2430])
+                    ("notify" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2447 2451])
+                            ("event" variable nil (reparse-symbol function_parameters) [2453 2458]))                          )
+                        (reparse-symbol indented_block_body) [2436 2564])
+                    ("process_event" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2587 2591])
+                            ("event" variable nil (reparse-symbol function_parameters) [2593 2598]))                          )
+                        (reparse-symbol indented_block_body) [2569 2668]))                  
+                :type "class")
+                nil [2378 2668])
+            ("UserStatsProcessor" type
+               (:superclasses ("AbstractProcessor")
+                :members 
+                  ( ("care_event" variable nil (reparse-symbol indented_block_body) [2719 2927])
+                    ("process_event" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2951 2955])
+                            ("event" variable nil (reparse-symbol function_parameters) [2957 2962]))                          )
+                        (reparse-symbol indented_block_body) [2933 3652]))                  
+                :type "class")
+                nil [2670 3652])
+            ("ChannelStatsProcessor" type
+               (:superclasses ("AbstractProcessor")
+                :members 
+                  ( ("care_event" variable nil (reparse-symbol indented_block_body) [3706 3863])
+                    ("event_trans_map" variable nil (reparse-symbol indented_block_body) [3869 4201])
+                    ("process_event" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4225 4229])
+                            ("eventobj" variable nil (reparse-symbol function_parameters) [4231 4239]))                          )
+                        (reparse-symbol indented_block_body) [4207 5162]))                  
+                :type "class")
+                nil [3654 5162])
+            ("AbstractUserDangerProcessor" type
+               (:superclasses ("AbstractProcessor")
+                :members 
+                  ( ("mark_user_as_dangers" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5248 5252])
+                            ("event" variable nil (reparse-symbol function_parameters) [5254 5259])
+                            ("dtype" variable nil (reparse-symbol function_parameters) [5261 5266])
+                            ("effective_until" variable nil (reparse-symbol function_parameters) [5268 5283]))                          )
+                        (reparse-symbol indented_block_body) [5223 6091])
+                    ("remove_danger_mark" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6119 6123])
+                            ("event" variable nil (reparse-symbol function_parameters) [6125 6130])
+                            ("dtype" variable nil (reparse-symbol function_parameters) [6132 6137]))                          )
+                        (reparse-symbol indented_block_body) [6096 6455])
+                    ("get_stats" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6474 6478])
+                            ("event" variable nil (reparse-symbol function_parameters) [6480 6485]))                          )
+                        (reparse-symbol indented_block_body) [6460 6660])
+                    ("get_effective_time" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6688 6692])
+                            ("event" variable nil (reparse-symbol function_parameters) [6694 6699]))                          )
+                        (reparse-symbol indented_block_body) [6665 6898]))                  
+                :type "class")
+                nil [5164 6898])
+            ("UserInviteDangerProcessor" type
+               (:superclasses ("AbstractUserDangerProcessor")
+                :members 
+                  ( ("care_event" variable nil (reparse-symbol indented_block_body) [6966 6991])
+                    ("process_event" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7015 7019])
+                            ("event" variable nil (reparse-symbol function_parameters) [7021 7026]))                          )
+                        (reparse-symbol indented_block_body) [6997 7307]))                  
+                :type "class")
+                nil [6900 7307])
+            ("UserTaskDangerProcessor" type
+               (:superclasses ("AbstractUserDangerProcessor")
+                :members 
+                  ( ("care_event" variable nil (reparse-symbol indented_block_body) [7373 7520])
+                    ("process_event" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7544 7548])
+                            ("event" variable nil (reparse-symbol function_parameters) [7550 7555]))                          )
+                        (reparse-symbol indented_block_body) [7526 8615]))                  
+                :type "class")
+                nil [7309 8615])
+            ("UserChargeDangerProcessor" type
+               (:superclasses ("AbstractUserDangerProcessor")
+                :members 
+                  ( ("care_event" variable nil (reparse-symbol indented_block_body) [8683 8727])
+                    ("process_event" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8751 8755])
+                            ("event" variable nil (reparse-symbol function_parameters) [8757 8762]))                          )
+                        (reparse-symbol indented_block_body) [8733 9262]))                  
+                :type "class")
+                nil [8617 9262])
+            ("UserStats" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [9322 9377])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9386 9606]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9307 9311]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9294 9607])
+                    ("process_line" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9629 9633])
+                            ("line" variable nil (reparse-symbol function_parameters) [9635 9639]))                          )
+                        (reparse-symbol indented_block_body) [9612 10145])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10158 10162]))                          )
+                        (reparse-symbol indented_block_body) [10150 10720]))                  
+                :type "class")
+                nil [9264 10720]))          
+      :file "user_stats.py"
+      :pointmax 10720
+      :fsize 11037
+      :lastmodtime '(22636 23945 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_userstats!lib!sos_userstats!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

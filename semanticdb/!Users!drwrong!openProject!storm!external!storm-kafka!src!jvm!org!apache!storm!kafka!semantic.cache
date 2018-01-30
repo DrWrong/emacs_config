@@ -1,0 +1,415 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.kafka" package nil nil [814 845])
+            ("com.google.common.base.Strings" include nil nil [847 885])
+            ("org.apache.storm.Config" include nil nil [887 918])
+            ("org.apache.storm.kafka.PartitionManager.KafkaMessageId" include nil nil [919 981])
+            ("org.apache.storm.kafka.trident.GlobalPartitionInformation" include nil nil [982 1047])
+            ("org.apache.storm.metric.api.IMetric" include nil nil [1048 1091])
+            ("org.apache.storm.spout.SpoutOutputCollector" include nil nil [1092 1143])
+            ("org.apache.storm.task.TopologyContext" include nil nil [1144 1189])
+            ("org.apache.storm.topology.OutputFieldsDeclarer" include nil nil [1190 1244])
+            ("org.apache.storm.topology.base.BaseRichSpout" include nil nil [1245 1297])
+            ("org.slf4j.Logger" include nil nil [1298 1322])
+            ("org.slf4j.LoggerFactory" include nil nil [1323 1354])
+            ("java.util.*" include nil nil [1356 1375])
+            ("KafkaSpout" type
+               (:typemodifiers ("public")
+                :superclasses "BaseRichSpout"
+                :members 
+                  ( ("LOG" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1642 1718])
+                    ("_spoutConfig" variable (:type "SpoutConfig") (reparse-symbol class_member_declaration) [1724 1749])
+                    ("_collector" variable (:type "SpoutOutputCollector") (reparse-symbol class_member_declaration) [1754 1786])
+                    ("_coordinator" variable (:type "PartitionCoordinator") (reparse-symbol class_member_declaration) [1791 1825])
+                    ("_connections" variable (:type "DynamicPartitionConnections") (reparse-symbol class_member_declaration) [1830 1871])
+                    ("_state" variable (:type "ZkState") (reparse-symbol class_member_declaration) [1876 1891])
+                    ("_lastUpdateMs" variable (:type "long") (reparse-symbol class_member_declaration) [1897 1920])
+                    ("_currPartitionIndex" variable (:type "int") (reparse-symbol class_member_declaration) [1926 1954])
+                    ("KafkaSpout" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("spoutConf" variable (:type "SpoutConfig") (reparse-symbol formal_parameters) [1978 1999]))                          )
+                        (reparse-symbol class_member_declaration) [1960 2042])
+                    ("open" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("conf" variable (:type "Map") (reparse-symbol formal_parameters) [2079 2087])
+                            ("context" variable
+                               (:typemodifiers ("final")
+                                :type "TopologyContext")
+                                (reparse-symbol formal_parameters) [2089 2118])
+                            ("collector" variable
+                               (:typemodifiers ("final")
+                                :type "SpoutOutputCollector")
+                                (reparse-symbol formal_parameters) [2120 2156]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2062 5077])
+                    ("close" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5097 5148])
+                    ("nextTuple" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5168 6380])
+                    ("getManagerForPartition" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("partition" variable (:type "int") (reparse-symbol formal_parameters) [6434 6447]))                          
+                        :type "PartitionManager")
+                        (reparse-symbol class_member_declaration) [6386 6705])
+                    ("ack" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("msgId" variable (:type "Object") (reparse-symbol formal_parameters) [6741 6753]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6725 7253])
+                    ("fail" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("msgId" variable (:type "Object") (reparse-symbol formal_parameters) [7290 7302]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7273 7804])
+                    ("deactivate" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7824 7874])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("declarer" variable (:type "OutputFieldsDeclarer") (reparse-symbol formal_parameters) [7926 7955]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7894 8230])
+                    ("getComponentConfiguration" function (:constructor-flag t) (reparse-symbol class_member_declaration) [8277 10505])
+                    ("commit" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10511 10713]))                  
+                :type "class")
+                nil [1488 10716]))          
+      :file "KafkaSpout.java"
+      :pointmax 10717
+      :fsize 10716
+      :lastmodtime '(22943 33471 0 0)
+      :unmatched-syntax '((GT 8275 . 8276) (COMMA 8267 . 8268) (IDENTIFIER 8236 . 8245) (PUBLIC 8250 . 8256) (LT 8260 . 8261)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.kafka" package nil nil [804 835])
+            ("java.util.List" include nil nil [837 859])
+            ("PartitionCoordinator" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("getManager" function
+                       (:arguments 
+                          ( ("partition" variable (:type "Partition") (reparse-symbol formal_parameters) [987 1006]))                          
+                        :type "PartitionManager")
+                        (reparse-symbol interface_member_declaration) [959 1008])
+                    ("refresh" function (:type "void") (reparse-symbol interface_member_declaration) [1014 1029]))                  
+                :type "interface")
+                nil [861 1031]))          
+      :file "PartitionCoordinator.java"
+      :pointmax 1032
+      :fsize 1031
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax '((SEMICOLON 952 . 953) (PAREN_BLOCK 950 . 952) (GT 926 . 927) (IDENTIFIER 905 . 909) (LT 909 . 910)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.kafka" package nil nil [804 835])
+            ("java.io.Serializable" include nil nil [837 865])
+            ("java.util.Map" include nil nil [866 887])
+            ("java.util.Set" include nil nil [888 909])
+            ("FailedMsgRetryManager" type
+               (:typemodifiers ("public")
+                :interfaces ("Serializable")
+                :members 
+                  ( ("prepare" function
+                       (:arguments 
+                          ( ("spoutConfig" variable (:type "SpoutConfig") (reparse-symbol formal_parameters) [1029 1052])
+                            ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [1054 1067]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1016 1069])
+                    ("failed" function
+                       (:arguments 
+                          ( ("offset" variable (:type "Long") (reparse-symbol formal_parameters) [1190 1201]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1178 1203])
+                    ("acked" function
+                       (:arguments 
+                          ( ("offset" variable (:type "Long") (reparse-symbol formal_parameters) [1327 1338]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1316 1340])
+                    ("retryStarted" function
+                       (:arguments 
+                          ( ("offset" variable (:type "Long") (reparse-symbol formal_parameters) [1484 1495]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1466 1497])
+                    ("nextFailedMessageToRetry" function (:type "Long") (reparse-symbol interface_member_declaration) [1694 1726])
+                    ("shouldReEmitMsg" function
+                       (:arguments 
+                          ( ("offset" variable (:type "Long") (reparse-symbol formal_parameters) [1896 1907]))                          
+                        :type "boolean")
+                        (reparse-symbol interface_member_declaration) [1872 1909])
+                    ("retryFurther" function
+                       (:arguments 
+                          ( ("offset" variable (:type "Long") (reparse-symbol formal_parameters) [2123 2134]))                          
+                        :type "boolean")
+                        (reparse-symbol interface_member_declaration) [2102 2136]))                  
+                :type "interface")
+                nil [911 2365]))          
+      :file "FailedMsgRetryManager.java"
+      :pointmax 2366
+      :fsize 2365
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax '((SEMICOLON 2362 . 2363) (PAREN_BLOCK 2344 . 2362) (GT 2324 . 2325) (IDENTIFIER 2316 . 2319) (LT 2319 . 2320)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.kafka" package nil nil [804 835])
+            ("java.io.Serializable" include nil nil [837 865])
+            ("java.util.List" include nil nil [866 888])
+            ("SpoutConfig" type
+               (:typemodifiers ("public")
+                :interfaces ("Serializable")
+                :superclasses "KafkaConfig"
+                :members 
+                  ( ("zkPort" variable
+                       (:typemodifiers ("public")
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [1008 1037])
+                    ("zkRoot" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1042 1070])
+                    ("id" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1075 1099])
+                    ("outputStreamId" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1105 1134])
+                    ("stateUpdateIntervalMs" variable
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1215 1256])
+                    ("failedMsgRetryManagerClass" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1304 1397])
+                    ("retryInitialDelayMs" variable
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1652 1688])
+                    ("retryDelayMultiplier" variable
+                       (:typemodifiers ("public")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [1693 1734])
+                    ("retryDelayMaxMs" variable
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1739 1779])
+                    ("retryLimit" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1784 1811])
+                    ("SpoutConfig" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("hosts" variable (:type "BrokerHosts") (reparse-symbol formal_parameters) [1836 1853])
+                            ("topic" variable (:type "String") (reparse-symbol formal_parameters) [1855 1867])
+                            ("zkRoot" variable (:type "String") (reparse-symbol formal_parameters) [1869 1882])
+                            ("id" variable (:type "String") (reparse-symbol formal_parameters) [1884 1893]))                          )
+                        (reparse-symbol class_member_declaration) [1817 1983]))                  
+                :type "class")
+                nil [891 1985]))          
+      :file "SpoutConfig.java"
+      :pointmax 1986
+      :fsize 1985
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.kafka" package nil nil [804 835])
+            ("org.slf4j.Logger" include nil nil [837 861])
+            ("org.slf4j.LoggerFactory" include nil nil [862 893])
+            ("org.apache.storm.kafka.trident.GlobalPartitionInformation" include nil nil [894 959])
+            ("java.util.*" include nil nil [961 980])
+            ("ZkCoordinator" type
+               (:typemodifiers ("public")
+                :interfaces ("PartitionCoordinator")
+                :members 
+                  ( ("LOG" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1104 1183])
+                    ("_spoutConfig" variable (:type "SpoutConfig") (reparse-symbol class_member_declaration) [1189 1214])
+                    ("_taskIndex" variable (:type "int") (reparse-symbol class_member_declaration) [1219 1234])
+                    ("_totalTasks" variable (:type "int") (reparse-symbol class_member_declaration) [1239 1255])
+                    ("_topologyInstanceId" variable (:type "String") (reparse-symbol class_member_declaration) [1260 1287])
+                    ("_lastRefreshTime" variable (:type "Long") (reparse-symbol class_member_declaration) [1432 1461])
+                    ("_refreshFreqMs" variable (:type "int") (reparse-symbol class_member_declaration) [1466 1485])
+                    ("_connections" variable (:type "DynamicPartitionConnections") (reparse-symbol class_member_declaration) [1490 1531])
+                    ("_reader" variable (:type "DynamicBrokersReader") (reparse-symbol class_member_declaration) [1536 1565])
+                    ("_state" variable (:type "ZkState") (reparse-symbol class_member_declaration) [1570 1585])
+                    ("_stormConf" variable (:type "Map") (reparse-symbol class_member_declaration) [1590 1605])
+                    ("ZkCoordinator" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("connections" variable (:type "DynamicPartitionConnections") (reparse-symbol formal_parameters) [1632 1671])
+                            ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [1673 1686])
+                            ("spoutConfig" variable (:type "SpoutConfig") (reparse-symbol formal_parameters) [1688 1711])
+                            ("state" variable (:type "ZkState") (reparse-symbol formal_parameters) [1713 1726])
+                            ("taskIndex" variable (:type "int") (reparse-symbol formal_parameters) [1728 1741])
+                            ("totalTasks" variable (:type "int") (reparse-symbol formal_parameters) [1743 1757])
+                            ("topologyInstanceId" variable (:type "String") (reparse-symbol formal_parameters) [1759 1784]))                          )
+                        (reparse-symbol class_member_declaration) [1611 1931])
+                    ("ZkCoordinator" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("connections" variable (:type "DynamicPartitionConnections") (reparse-symbol formal_parameters) [1958 1997])
+                            ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [1999 2012])
+                            ("spoutConfig" variable (:type "SpoutConfig") (reparse-symbol formal_parameters) [2014 2037])
+                            ("state" variable (:type "ZkState") (reparse-symbol formal_parameters) [2039 2052])
+                            ("taskIndex" variable (:type "int") (reparse-symbol formal_parameters) [2054 2067])
+                            ("totalTasks" variable (:type "int") (reparse-symbol formal_parameters) [2069 2083])
+                            ("topologyInstanceId" variable (:type "String") (reparse-symbol formal_parameters) [2085 2110])
+                            ("reader" variable (:type "DynamicBrokersReader") (reparse-symbol formal_parameters) [2112 2139]))                          )
+                        (reparse-symbol class_member_declaration) [1937 2536])
+                    ("buildReader" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [2590 2603])
+                            ("spoutConfig" variable (:type "SpoutConfig") (reparse-symbol formal_parameters) [2605 2628]))                          
+                        :type "DynamicBrokersReader")
+                        (reparse-symbol class_member_declaration) [2542 2800])
+                    ("getMyManagedPartitions" function (:constructor-flag t) (reparse-symbol class_member_declaration) [2850 3110])
+                    ("refresh" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3130 5031])
+                    ("getManager" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("partition" variable (:type "Partition") (reparse-symbol formal_parameters) [5086 5105]))                          
+                        :type "PartitionManager")
+                        (reparse-symbol class_member_declaration) [5051 5155]))                  
+                :type "class")
+                nil [1039 5157]))          
+      :file "ZkCoordinator.java"
+      :pointmax 5158
+      :fsize 5157
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax '((GT 2848 . 2849) (IDENTIFIER 2806 . 2815) (PUBLIC 2820 . 2826) (LT 2831 . 2832) (SEMICOLON 1426 . 1427) (PAREN_BLOCK 1424 . 1426) (GT 1423 . 1424) (LT 1406 . 1407) (NEW 1393 . 1396) (EQ 1391 . 1392) (GT 1377 . 1378) (LT 1360 . 1361) (SEMICOLON 1350 . 1351) (NEW 1337 . 1340) (EQ 1335 . 1336) (GT 1323 . 1324) (COMMA 1305 . 1306) (IDENTIFIER 1292 . 1295) (LT 1295 . 1296) (IDENTIFIER 1030 . 1036) (DOT 1029 . 1030) (IDENTIFIER 1019 . 1029) (DOT 1018 . 1019) (IDENTIFIER 1013 . 1018) (DOT 1012 . 1013) (IDENTIFIER 1007 . 1012) (DOT 1006 . 1007) (IDENTIFIER 1000 . 1006) (DOT 999 . 1000) (IMPORT 982 . 988) (STATIC 989 . 995) (IDENTIFIER 996 . 999)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.apache.storm.kafka" package nil nil [804 835])
+            ("java.io.Serializable" include nil nil [837 865])
+            ("org.apache.storm.spout.MultiScheme" include nil nil [867 909])
+            ("org.apache.storm.spout.RawMultiScheme" include nil nil [910 955])
+            ("kafka.api.FetchRequest" include nil nil [957 987])
+            ("KafkaConfig" type
+               (:typemodifiers ("public")
+                :interfaces ("Serializable")
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1044 1110])
+                    ("hosts" variable
+                       (:typemodifiers ("public" "final")
+                        :type "BrokerHosts")
+                        (reparse-symbol class_member_declaration) [1120 1151])
+                    ("topic" variable
+                       (:typemodifiers ("public" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1156 1182])
+                    ("clientId" variable
+                       (:typemodifiers ("public" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1187 1216])
+                    ("fetchSizeBytes" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1222 1262])
+                    ("socketTimeoutMs" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1267 1302])
+                    ("fetchMaxWait" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1307 1337])
+                    ("bufferSizeBytes" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1342 1383])
+                    ("scheme" variable
+                       (:typemodifiers ("public")
+                        :type "MultiScheme")
+                        (reparse-symbol class_member_declaration) [1388 1437])
+                    ("ignoreZkOffsets" variable
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1442 1481])
+                    ("startOffsetTime" variable
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1486 1555])
+                    ("maxOffsetBehind" variable
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1560 1605])
+                    ("useStartOffsetTimeIfOffsetOutOfRange" variable
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1610 1669])
+                    ("metricsTimeBucketSizeInSecs" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1674 1718])
+                    ("minFetchByte" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1723 1780])
+                    ("KafkaConfig" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("hosts" variable (:type "BrokerHosts") (reparse-symbol formal_parameters) [1805 1822])
+                            ("topic" variable (:type "String") (reparse-symbol formal_parameters) [1824 1836]))                          )
+                        (reparse-symbol class_member_declaration) [1786 1916])
+                    ("KafkaConfig" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("hosts" variable (:type "BrokerHosts") (reparse-symbol formal_parameters) [1941 1958])
+                            ("topic" variable (:type "String") (reparse-symbol formal_parameters) [1960 1972])
+                            ("clientId" variable (:type "String") (reparse-symbol formal_parameters) [1974 1989]))                          )
+                        (reparse-symbol class_member_declaration) [1922 2088]))                  
+                :type "class")
+                nil [989 2091]))          
+      :file "KafkaConfig.java"
+      :pointmax 2092
+      :fsize 2091
+      :lastmodtime '(22735 18816 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!openProject!storm!external!storm-kafka!src!jvm!org!apache!storm!kafka!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

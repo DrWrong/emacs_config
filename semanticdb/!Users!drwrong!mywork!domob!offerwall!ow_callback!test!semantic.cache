@@ -1,0 +1,19 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables
+  (list
+    (semanticdb-table "producer_req.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("json" include nil nil [24 35])
+            ("req" variable nil nil [38 120])
+            ("print" code nil nil [122 144]))          
+      :file "producer_req.py"
+      :pointmax 145
+      :fsize 144
+      :lastmodtime '(22767 18980 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!offerwall!ow_callback!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

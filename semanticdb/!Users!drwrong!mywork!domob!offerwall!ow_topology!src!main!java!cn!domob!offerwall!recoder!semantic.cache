@@ -1,0 +1,120 @@
+;; Object recoder/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "recoder/"
+  :tables
+  (list
+    (semanticdb-table "AdRecorderBolt.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.recoder" package nil nil [1 36])
+            ("org.apache.storm.topology.base.BaseRichBolt" include nil nil [38 89])
+            ("org.apache.storm.topology.OutputFieldsDeclarer" include nil nil [90 144])
+            ("org.apache.storm.task.OutputCollector" include nil nil [145 190])
+            ("org.apache.storm.task.TopologyContext" include nil nil [191 236])
+            ("java.util.Map" include nil nil [237 258])
+            ("org.apache.storm.tuple.Tuple" include nil nil [259 295])
+            ("org.apache.storm.metric.api.CountMetric" include nil nil [296 343])
+            ("cn.domob.offerwall.thrift.settle.SettleStage" include nil nil [344 396])
+            ("cn.domob.offerwall.thrift.settle.SettleEvent" include nil nil [397 449])
+            ("org.apache.storm.tuple.Values" include nil nil [450 487])
+            ("org.slf4j.Logger" include nil nil [488 512])
+            ("org.slf4j.LoggerFactory" include nil nil [513 544])
+            ("org.apache.storm.tuple.Fields" include nil nil [545 582])
+            ("org.apache.thrift.TException" include nil nil [583 619])
+            ("AdRecorderBolt" type
+               (:typemodifiers ("public")
+                :superclasses "BaseRichBolt"
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [844 927])
+                    ("collector" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "OutputCollector")
+                        (reparse-symbol class_member_declaration) [933 977])
+                    ("recordOkMetric" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "CountMetric")
+                        (reparse-symbol class_member_declaration) [982 1027])
+                    ("recordFailMetric" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "CountMetric")
+                        (reparse-symbol class_member_declaration) [1032 1079])
+                    ("recordDuplicateMetric" variable
+                       (:typemodifiers ("private" "transient")
+                        :type "CountMetric")
+                        (reparse-symbol class_member_declaration) [1084 1136])
+                    ("recorderProxy" variable
+                       (:typemodifiers ("private")
+                        :type "RecorderProxy")
+                        (reparse-symbol class_member_declaration) [1142 1178])
+                    ("prepare" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("stormConf" variable (:type "Map") (reparse-symbol formal_parameters) [1204 1217])
+                            ("context" variable (:type "TopologyContext") (reparse-symbol formal_parameters) [1219 1242])
+                            ("collector" variable (:type "OutputCollector") (reparse-symbol formal_parameters) [1244 1269]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1184 1620])
+                    ("execute" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("input" variable (:type "Tuple") (reparse-symbol formal_parameters) [1646 1657]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1626 2250])
+                    ("declareOutputFields" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("declarer" variable (:type "OutputFieldsDeclarer") (reparse-symbol formal_parameters) [2288 2317]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2256 2394]))                  
+                :type "class")
+                nil [788 2396]))          
+      :file "AdRecorderBolt.java"
+      :pointmax 2397
+      :fsize 2396
+      :lastmodtime '(22763 1948 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "RecorderProxy.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.offerwall.recoder" package nil nil [1 36])
+            ("cn.domob.offerwall.common.ThriftProxy" include nil nil [38 83])
+            ("cn.domob.offerwall.thrift.settle.SettleEvent" include nil nil [84 136])
+            ("cn.domob.offerwall.thrift.userserver.UserOfferRecord" include nil nil [137 197])
+            ("java.util.Map" include nil nil [198 219])
+            ("cn.domob.offerwall.thrift.userserver.UserServer" include nil nil [220 275])
+            ("org.apache.thrift.TException" include nil nil [276 312])
+            ("RecorderProxy" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("RecorderProxy" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("conf" variable (:type "Map") (reparse-symbol formal_parameters) [671 679]))                          )
+                        (reparse-symbol class_member_declaration) [650 1269])
+                    ("convertEventToRecord" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("event" variable (:type "SettleEvent") (reparse-symbol formal_parameters) [1320 1337]))                          
+                        :type "UserOfferRecord")
+                        (reparse-symbol class_member_declaration) [1275 1563])
+                    ("record" function
+                       (:throws ("TException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("event" variable (:type "SettleEvent") (reparse-symbol formal_parameters) [1591 1608]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1569 1773]))                  
+                :type "class")
+                nil [480 1775]))          
+      :file "RecorderProxy.java"
+      :pointmax 1776
+      :fsize 1775
+      :lastmodtime '(22763 4774 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!offerwall!ow_topology!src!main!java!cn!domob!offerwall!recoder!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

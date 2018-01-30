@@ -1,0 +1,26 @@
+;; Object aso_web/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "aso_web/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-bsdmake-mode
+      :tags 
+        '( ("PNAME" variable (:default-value ("aso_web")) nil [1 15])
+            ("VERSION" variable (:default-value ("0.1.18")) nil [15 30])
+            ("SERVERSOURCEDIR" variable (:default-value ("\"server\"")) nil [30 55])
+            ("PHPSOURCES" variable (:default-value ("$(find $(SERVERSOURCEDIR) -name \"*.php\")")) nil [55 110])
+            ("H5SOURCEDIR" variable (:default-value ("\"h5/app\"")) nil [111 135])
+            ("H5SOURCES" variable (:default-value ("$(find $(H5SOURCEDIR) -type f)")) nil [135 179])
+            ("NPM" variable (:default-value ("npm")) nil [179 187])
+            ("build" function (:arguments ("$(PHPSOURCES)" "h5build")) nil [189 552])
+            (".PHONY" function (:arguments ("h5build")) nil [553 569])
+            ("h5build" function (:arguments ("$(H5SOURCES)")) nil [569 679]))          
+      :file "Makefile"
+      :pointmax 679
+      :fsize 678
+      :lastmodtime '(22897 48939 0 0)
+      :unmatched-syntax '((shell-command 592 . 678) (bol 591 . 591))))
+  :file "!Users!drwrong!mywork!domob!asm!aso_web!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

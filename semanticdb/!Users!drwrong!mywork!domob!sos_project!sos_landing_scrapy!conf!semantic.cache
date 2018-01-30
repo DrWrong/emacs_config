@@ -1,0 +1,45 @@
+;; Object conf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "conf/"
+  :tables
+  (list
+    (semanticdb-table "django_settings.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [24 33])
+            ("BASE_DIR" variable nil nil [35 88])
+            ("SECRET_KEY" variable nil nil [89 154])
+            ("DEBUG" variable nil nil [222 234])
+            ("DATABASES" variable nil nil [237 481])
+            ("REDIS_CONFIG" variable nil nil [483 558])
+            ("TIME_ZONE" variable nil nil [560 587])
+            ("USE_TZ" variable nil nil [589 602]))          
+      :file "django_settings.py"
+      :pointmax 603
+      :fsize 602
+      :lastmodtime '(22294 4396 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "settings.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [444 453])
+            ("BASE_DIR" variable nil nil [456 492])
+            ("BOT_NAME" variable nil nil [494 525])
+            ("SPIDER_MODULES" variable nil nil [527 574])
+            ("NEWSPIDER_MODULE" variable nil nil [575 622])
+            ("ITEM_PIPELINES" variable nil nil [2232 2442])
+            ("QINIU_ACCESSKEY" variable nil nil [3303 3363])
+            ("QINIU_SECRETKEY" variable nil nil [3364 3424])
+            ("QINIU_BUCKET" variable nil nil [3425 3449])
+            ("QINIU_DOMAIN" variable nil nil [3450 3498])
+            ("FILTER_WORDS" variable nil nil [3499 3797])
+            ("USER_AGENT" variable nil nil [3798 3895])
+            ("os" code nil nil [3918 4006]))          
+      :file "settings.py"
+      :pointmax 4007
+      :fsize 4168
+      :lastmodtime '(22315 52 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_landing_scrapy!conf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

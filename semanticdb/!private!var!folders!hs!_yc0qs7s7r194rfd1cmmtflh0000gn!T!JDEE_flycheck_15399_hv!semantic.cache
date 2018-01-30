@@ -1,0 +1,29 @@
+;; Object JDEE_flycheck_15399_hv/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "JDEE_flycheck_15399_hv/"
+  :tables
+  (list
+    (semanticdb-table "PartitionCoordinator.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("org.apache.storm.kafka" package nil nil [804 835])
+            ("java.util.List" include nil nil [837 859])
+            ("PartitionCoordinator" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("getManager" function
+                       (:arguments 
+                          ( ("partition" variable (:type "Partition") (reparse-symbol formal_parameters) [987 1006]))                          
+                        :type "PartitionManager")
+                        (reparse-symbol interface_member_declaration) [959 1008])
+                    ("refresh" function (:type "void") (reparse-symbol interface_member_declaration) [1014 1029]))                  
+                :type "interface")
+                nil [861 1031]))          
+      :file "PartitionCoordinator.java"
+      :pointmax 1032
+      :fsize 1031
+      :lastmodtime '(22735 37559 0 0)
+      :unmatched-syntax '((SEMICOLON 952 . 953) (PAREN_BLOCK 950 . 952) (GT 926 . 927) (IDENTIFIER 905 . 909) (LT 909 . 910))))
+  :file "!private!var!folders!hs!_yc0qs7s7r194rfd1cmmtflh0000gn!T!JDEE_flycheck_15399_hv!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

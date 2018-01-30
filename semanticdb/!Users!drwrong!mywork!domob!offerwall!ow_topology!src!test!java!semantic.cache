@@ -1,0 +1,26 @@
+;; Object java/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "java/"
+  :tables
+  (list
+    (semanticdb-table "AppTest.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("org.junit.Test" include nil nil [74 96])
+            ("AppTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("testAppHasAGreeting" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [165 329]))                  
+                :type "class")
+                nil [132 331]))          
+      :file "AppTest.java"
+      :pointmax 332
+      :fsize 331
+      :lastmodtime '(22751 5120 0 0)
+      :unmatched-syntax '((MULT 128 . 129) (DOT 127 . 128) (IDENTIFIER 121 . 127) (DOT 120 . 121) (IDENTIFIER 115 . 120) (DOT 114 . 115) (IMPORT 97 . 103) (STATIC 104 . 110) (IDENTIFIER 111 . 114))))
+  :file "!Users!drwrong!mywork!domob!offerwall!ow_topology!src!test!java!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

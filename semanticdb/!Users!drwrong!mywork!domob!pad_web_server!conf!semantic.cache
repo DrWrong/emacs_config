@@ -1,0 +1,26 @@
+;; Object conf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "conf/"
+  :tables
+  (list
+    (semanticdb-table "gunicorn_config.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("multiprocessing" include nil nil [1 23])
+            ("os" include nil nil [24 33])
+            ("BASE_DIR" variable nil nil [34 104])
+            ("chdir" variable nil nil [105 121])
+            ("bind" variable nil nil [122 143])
+            ("workers" code nil nil [144 189])
+            ("worker_class" variable nil nil [190 213])
+            ("daemon" variable nil nil [214 227])
+            ("accesslog" variable nil nil [228 256])
+            ("errorlog" variable nil nil [257 283]))          
+      :file "gunicorn_config.py"
+      :pointmax 284
+      :fsize 283
+      :lastmodtime '(22627 9232 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!pad_web_server!conf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

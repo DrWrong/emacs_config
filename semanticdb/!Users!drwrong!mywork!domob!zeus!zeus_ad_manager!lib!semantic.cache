@@ -1,0 +1,564 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("''' Facebook API interface'''" code nil nil [95 124])
+            ("__author__" variable nil nil [125 156])
+            ("sys" include nil nil [158 172])
+            ("os" include nil nil [158 172])
+            ("sys" code nil nil [173 200])
+            ("facebookads" include nil nil [202 241])
+            ("facebookads" include nil nil [242 280])
+            ("facebookads.adobjects.adaccountuser" include nil nil [282 353])
+            ("facebookads.adobjects.adaccount" include nil nil [354 407])
+            ("facebookads.adobjects.campaign" include nil nil [408 459])
+            ("facebookads.adobjects.adset" include nil nil [460 505])
+            ("facebookads.adobjects.ad" include nil nil [506 545])
+            ("facebookads.adobjects.adcreative" include nil nil [546 601])
+            ("facebookads.specs" include nil nil [603 685])
+            ("domob_thrift.zeus_ad_types.ttypes" include nil nil [687 734])
+            ("domob_thrift.zeus_ad_types.constants" include nil nil [735 785])
+            ("domob_thrift.zeus_ad.ttypes" include nil nil [786 827])
+            ("domob_thrift.zeus_ad.constants" include nil nil [828 872])
+            ("domob_thrift.zeus_ad" include nil nil [873 919])
+            ("domob_thrift.common.ttypes" include nil nil [921 961])
+            ("domob_thrift.zeus_common.ttypes" include nil nil [962 1007])
+            ("ConfigParser" include nil nil [1009 1028])
+            ("pprint" include nil nil [1029 1042])
+            ("functools" include nil nil [1043 1072])
+            ("time" include nil nil [1073 1084])
+            ("datetime" include nil nil [1085 1100])
+            ("copy" include nil nil [1101 1112])
+            ("simplejson" include nil nil [1113 1138])
+            ("re" include nil nil [1139 1148])
+            ("FBI" type
+               (:superclasses ("object")
+                :members 
+                  ( ("me" variable nil (reparse-symbol indented_block_body) [1171 1193])
+                    ("''' 包装facebook python API的调用接口'''" code nil (reparse-symbol indented_block_body) [1211 1244])
+                    ("__init__" function
+                       (:suite 
+                          ( ("''' 构造session，创建api'''" code nil (reparse-symbol indented_block_body) [1442 1464])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1467 1531])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1534 1573])
+                            ("FacebookAdsApi" code nil (reparse-symbol indented_block_body) [1576 1616])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1619 1656])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1659 1692])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1695 1727])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1730 1783])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1786 1845])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1848 1892])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1895 1942])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1968 2141])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2144 2257]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1259 1263])
+                            ("app_id" variable nil (reparse-symbol function_parameters) [1265 1271])
+                            ("app_secret" variable nil (reparse-symbol function_parameters) [1273 1283])
+                            ("access_token" variable nil (reparse-symbol function_parameters) [1285 1297])
+                            ("max_repeat_num" variable nil (reparse-symbol function_parameters) [1299 1313])
+                            ("wait_seconds" variable nil (reparse-symbol function_parameters) [1317 1329])
+                            ("max_adset_num_in_batch" variable nil (reparse-symbol function_parameters) [1334 1356])
+                            ("instagram_actor_id" variable nil (reparse-symbol function_parameters) [1361 1379])
+                            ("max_creative_num_in_batch" variable nil (reparse-symbol function_parameters) [1383 1408])
+                            ("special_account_ids" variable nil (reparse-symbol function_parameters) [1413 1432]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1246 2258])
+                    ("copy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2269 2273]))                          )
+                        (reparse-symbol indented_block_body) [2260 2443])
+                    ("operate_campaign_status" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2473 2477])
+                            ("campaign" variable nil (reparse-symbol function_parameters) [2479 2487])
+                            ("operate_status" variable nil (reparse-symbol function_parameters) [2489 2503])
+                            ("n" variable nil (reparse-symbol function_parameters) [2505 2506])
+                            ("logger" variable nil (reparse-symbol function_parameters) [2508 2514]))                          )
+                        (reparse-symbol indented_block_body) [2445 4071])
+                    ("start_pause_campaigns" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4099 4103])
+                            ("start_campaign_ids" variable nil (reparse-symbol function_parameters) [4105 4123])
+                            ("pause_campaign_ids" variable nil (reparse-symbol function_parameters) [4125 4143])
+                            ("n" variable nil (reparse-symbol function_parameters) [4145 4146])
+                            ("logger" variable nil (reparse-symbol function_parameters) [4148 4154]))                          )
+                        (reparse-symbol indented_block_body) [4073 7694])
+                    ("create_campaign" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7720 7724])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [7726 7739])
+                            ("n" variable nil (reparse-symbol function_parameters) [7741 7742])
+                            ("logger" variable nil (reparse-symbol function_parameters) [7744 7750]))                          )
+                        (reparse-symbol indented_block_body) [7700 8892])
+                    ("delete_campaign" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8914 8918])
+                            ("fb_campaign_id" variable nil (reparse-symbol function_parameters) [8920 8934])
+                            ("logger" variable nil (reparse-symbol function_parameters) [8936 8942]))                          )
+                        (reparse-symbol indented_block_body) [8894 9294])
+                    ("query_ad_infos" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9315 9319])
+                            ("account_id" variable nil (reparse-symbol function_parameters) [9321 9331])
+                            ("campaign_dict" variable nil (reparse-symbol function_parameters) [9333 9346])
+                            ("adset_dict" variable nil (reparse-symbol function_parameters) [9348 9358])
+                            ("logger" variable nil (reparse-symbol function_parameters) [9360 9366]))                          )
+                        (reparse-symbol indented_block_body) [9296 14825])
+                    ("get_adset_infos" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14848 14852])
+                            ("account_id" variable nil (reparse-symbol function_parameters) [14854 14864])
+                            ("campaign" variable nil (reparse-symbol function_parameters) [14866 14874])
+                            ("adsets" variable nil (reparse-symbol function_parameters) [14876 14882])
+                            ("logger" variable nil (reparse-symbol function_parameters) [14884 14890]))                          )
+                        (reparse-symbol indented_block_body) [14828 16366])
+                    ("get_ad_infos" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16385 16389])
+                            ("account_id" variable nil (reparse-symbol function_parameters) [16391 16401])
+                            ("campaign" variable nil (reparse-symbol function_parameters) [16403 16411])
+                            ("ads" variable nil (reparse-symbol function_parameters) [16413 16416])
+                            ("logger" variable nil (reparse-symbol function_parameters) [16418 16424]))                          )
+                        (reparse-symbol indented_block_body) [16368 17404])
+                    ("_create_adset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17424 17428])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [17430 17443])
+                            ("zeus_adset" variable nil (reparse-symbol function_parameters) [17445 17455])
+                            ("adset_target_dict" variable nil (reparse-symbol function_parameters) [17457 17474])
+                            ("promoted_object" variable nil (reparse-symbol function_parameters) [17476 17491])
+                            ("logger" variable nil (reparse-symbol function_parameters) [17493 17499]))                          )
+                        (reparse-symbol indented_block_body) [17406 21411])
+                    ("delete_adset_ad" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21433 21437])
+                            ("fb_adset_id" variable nil (reparse-symbol function_parameters) [21439 21450])
+                            ("n" variable nil (reparse-symbol function_parameters) [21452 21453])
+                            ("p" variable nil (reparse-symbol function_parameters) [21455 21456])
+                            ("logger" variable nil (reparse-symbol function_parameters) [21458 21464]))                          )
+                        (reparse-symbol indented_block_body) [21413 22112])
+                    ("_read_first_ad_in_adset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22142 22146])
+                            ("fb_adset_id" variable nil (reparse-symbol function_parameters) [22148 22159])
+                            ("logger" variable nil (reparse-symbol function_parameters) [22161 22167]))                          )
+                        (reparse-symbol indented_block_body) [22114 22392])
+                    ("_delete_ad" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22409 22413])
+                            ("fb_ad_id" variable nil (reparse-symbol function_parameters) [22415 22423])
+                            ("logger" variable nil (reparse-symbol function_parameters) [22425 22431]))                          )
+                        (reparse-symbol indented_block_body) [22394 22653])
+                    ("_delete_adset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22673 22677])
+                            ("fb_adset_id" variable nil (reparse-symbol function_parameters) [22679 22690])
+                            ("logger" variable nil (reparse-symbol function_parameters) [22692 22698]))                          )
+                        (reparse-symbol indented_block_body) [22655 22943])
+                    ("_create_ad" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22960 22964])
+                            ("zeus_adset" variable nil (reparse-symbol function_parameters) [22966 22976])
+                            ("fb_creative_id" variable nil (reparse-symbol function_parameters) [22978 22992])
+                            ("logger" variable nil (reparse-symbol function_parameters) [22994 23000]))                          )
+                        (reparse-symbol indented_block_body) [22945 23529])
+                    ("_delete_adsets" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23550 23554])
+                            ("adset_infos" variable nil (reparse-symbol function_parameters) [23556 23567])
+                            ("logger" variable nil (reparse-symbol function_parameters) [23569 23575]))                          )
+                        (reparse-symbol indented_block_body) [23531 25140])
+                    ("_create_ads" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25158 25162])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [25164 25177])
+                            ("adset_infos" variable nil (reparse-symbol function_parameters) [25179 25190])
+                            ("n" variable nil (reparse-symbol function_parameters) [25192 25193])
+                            ("p" variable nil (reparse-symbol function_parameters) [25195 25196])
+                            ("logger" variable nil (reparse-symbol function_parameters) [25198 25204]))                          )
+                        (reparse-symbol indented_block_body) [25142 28143])
+                    ("_create_adsets" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28164 28168])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [28170 28183])
+                            ("adset_origin_infos" variable nil (reparse-symbol function_parameters) [28185 28203])
+                            ("promoted_object" variable nil (reparse-symbol function_parameters) [28205 28220])
+                            ("n" variable nil (reparse-symbol function_parameters) [28222 28223])
+                            ("p" variable nil (reparse-symbol function_parameters) [28225 28226])
+                            ("logger" variable nil (reparse-symbol function_parameters) [28228 28234]))                          )
+                        (reparse-symbol indented_block_body) [28145 36657])
+                    ("_update_adsets" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36678 36682])
+                            ("adset_origin_infos" variable nil (reparse-symbol function_parameters) [36684 36702])
+                            ("logger" variable nil (reparse-symbol function_parameters) [36704 36710]))                          )
+                        (reparse-symbol indented_block_body) [36659 38519])
+                    ("update_adsets_ads" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38543 38547])
+                            ("adset_origin_infos" variable nil (reparse-symbol function_parameters) [38549 38567])
+                            ("n" variable nil (reparse-symbol function_parameters) [38569 38570])
+                            ("p" variable nil (reparse-symbol function_parameters) [38572 38573])
+                            ("logger" variable nil (reparse-symbol function_parameters) [38575 38581]))                          )
+                        (reparse-symbol indented_block_body) [38521 39292])
+                    ("delete_adsets_ads" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39316 39320])
+                            ("adset_origin_infos" variable nil (reparse-symbol function_parameters) [39322 39340])
+                            ("n" variable nil (reparse-symbol function_parameters) [39342 39343])
+                            ("p" variable nil (reparse-symbol function_parameters) [39345 39346])
+                            ("logger" variable nil (reparse-symbol function_parameters) [39348 39354]))                          )
+                        (reparse-symbol indented_block_body) [39294 40035])
+                    ("create_adsets_ads" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40059 40063])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [40065 40078])
+                            ("adset_origin_infos" variable nil (reparse-symbol function_parameters) [40080 40098])
+                            ("promoted_object" variable nil (reparse-symbol function_parameters) [40100 40115])
+                            ("n" variable nil (reparse-symbol function_parameters) [40117 40118])
+                            ("p" variable nil (reparse-symbol function_parameters) [40120 40121])
+                            ("logger" variable nil (reparse-symbol function_parameters) [40123 40129]))                          )
+                        (reparse-symbol indented_block_body) [40037 42522])
+                    ("create_adset_ad" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42544 42548])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [42550 42563])
+                            ("zeus_adset" variable nil (reparse-symbol function_parameters) [42565 42575])
+                            ("adset_target_dict" variable nil (reparse-symbol function_parameters) [42577 42594])
+                            ("fb_creative_id" variable nil (reparse-symbol function_parameters) [42596 42610])
+                            ("promoted_object" variable nil (reparse-symbol function_parameters) [42612 42627])
+                            ("n" variable nil (reparse-symbol function_parameters) [42629 42630])
+                            ("p" variable nil (reparse-symbol function_parameters) [42632 42633])
+                            ("logger" variable nil (reparse-symbol function_parameters) [42635 42641]))                          )
+                        (reparse-symbol indented_block_body) [42524 43663])
+                    ("_get_account_normal_flag" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43694 43698])
+                            ("fb_account_id" variable nil (reparse-symbol function_parameters) [43700 43713])
+                            ("logger" variable nil (reparse-symbol function_parameters) [43715 43721]))                          )
+                        (reparse-symbol indented_block_body) [43665 44216])
+                    ("_get_call_to_action" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44242 44246])
+                            ("campaign" variable nil (reparse-symbol function_parameters) [44248 44256])
+                            ("logger" variable nil (reparse-symbol function_parameters) [44258 44264]))                          )
+                        (reparse-symbol indented_block_body) [44218 45738])
+                    ("create_carousel_video_creatives" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [45776 45780])
+                            ("campaign" variable nil (reparse-symbol function_parameters) [45782 45790])
+                            ("input_videos_texts_list" variable nil (reparse-symbol function_parameters) [45792 45815])
+                            ("fb_page_id" variable nil (reparse-symbol function_parameters) [45817 45827])
+                            ("promotion_url" variable nil (reparse-symbol function_parameters) [45829 45842])
+                            ("n" variable nil (reparse-symbol function_parameters) [45844 45845])
+                            ("logger" variable nil (reparse-symbol function_parameters) [45847 45853]))                          )
+                        (reparse-symbol indented_block_body) [45740 46881])
+                    ("_create_carousel_video_creatives" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [46920 46924])
+                            ("campaign" variable nil (reparse-symbol function_parameters) [46926 46934])
+                            ("standard_videos_texts_list" variable nil (reparse-symbol function_parameters) [46936 46962])
+                            ("fb_page_id" variable nil (reparse-symbol function_parameters) [46964 46974])
+                            ("promotion_url" variable nil (reparse-symbol function_parameters) [46976 46989])
+                            ("n" variable nil (reparse-symbol function_parameters) [46991 46992])
+                            ("logger" variable nil (reparse-symbol function_parameters) [46994 47000]))                          )
+                        (reparse-symbol indented_block_body) [46883 52809])
+                    ("create_carousel_creatives" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [52841 52845])
+                            ("campaign" variable nil (reparse-symbol function_parameters) [52847 52855])
+                            ("input_images_texts_list" variable nil (reparse-symbol function_parameters) [52857 52880])
+                            ("fb_page_id" variable nil (reparse-symbol function_parameters) [52882 52892])
+                            ("promotion_url" variable nil (reparse-symbol function_parameters) [52894 52907])
+                            ("n" variable nil (reparse-symbol function_parameters) [52909 52910])
+                            ("logger" variable nil (reparse-symbol function_parameters) [52912 52918]))                          )
+                        (reparse-symbol indented_block_body) [52811 53917])
+                    ("_create_carousel_creatives" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [53950 53954])
+                            ("campaign" variable nil (reparse-symbol function_parameters) [53956 53964])
+                            ("standard_images_texts_list" variable nil (reparse-symbol function_parameters) [53966 53992])
+                            ("fb_page_id" variable nil (reparse-symbol function_parameters) [53994 54004])
+                            ("promotion_url" variable nil (reparse-symbol function_parameters) [54006 54019])
+                            ("n" variable nil (reparse-symbol function_parameters) [54021 54022])
+                            ("logger" variable nil (reparse-symbol function_parameters) [54024 54030]))                          )
+                        (reparse-symbol indented_block_body) [53919 59752])
+                    ("create_video_creatives" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [59781 59785])
+                            ("campaign" variable nil (reparse-symbol function_parameters) [59787 59795])
+                            ("input_video_text_list" variable nil (reparse-symbol function_parameters) [59797 59818])
+                            ("fb_page_id" variable nil (reparse-symbol function_parameters) [59820 59830])
+                            ("promotion_url" variable nil (reparse-symbol function_parameters) [59832 59845])
+                            ("old_video_text_parts" variable nil (reparse-symbol function_parameters) [59847 59867])
+                            ("n" variable nil (reparse-symbol function_parameters) [59869 59870])
+                            ("logger" variable nil (reparse-symbol function_parameters) [59872 59878]))                          )
+                        (reparse-symbol indented_block_body) [59754 60866])
+                    ("_create_video_creatives" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [60896 60900])
+                            ("campaign" variable nil (reparse-symbol function_parameters) [60902 60910])
+                            ("standard_video_text_list" variable nil (reparse-symbol function_parameters) [60912 60936])
+                            ("fb_page_id" variable nil (reparse-symbol function_parameters) [60938 60948])
+                            ("promotion_url" variable nil (reparse-symbol function_parameters) [60950 60963])
+                            ("old_video_text_parts" variable nil (reparse-symbol function_parameters) [60965 60985])
+                            ("n" variable nil (reparse-symbol function_parameters) [60987 60988])
+                            ("logger" variable nil (reparse-symbol function_parameters) [60990 60996]))                          )
+                        (reparse-symbol indented_block_body) [60868 65367])
+                    ("create_creatives" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [65390 65394])
+                            ("campaign" variable nil (reparse-symbol function_parameters) [65396 65404])
+                            ("input_image_text_list" variable nil (reparse-symbol function_parameters) [65406 65427])
+                            ("fb_page_id" variable nil (reparse-symbol function_parameters) [65429 65439])
+                            ("promotion_url" variable nil (reparse-symbol function_parameters) [65441 65454])
+                            ("old_image_text_parts" variable nil (reparse-symbol function_parameters) [65456 65476])
+                            ("n" variable nil (reparse-symbol function_parameters) [65478 65479])
+                            ("logger" variable nil (reparse-symbol function_parameters) [65481 65487]))                          )
+                        (reparse-symbol indented_block_body) [65369 66469])
+                    ("_create_creatives" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [66493 66497])
+                            ("campaign" variable nil (reparse-symbol function_parameters) [66499 66507])
+                            ("standard_image_text_list" variable nil (reparse-symbol function_parameters) [66509 66533])
+                            ("fb_page_id" variable nil (reparse-symbol function_parameters) [66535 66545])
+                            ("promotion_url" variable nil (reparse-symbol function_parameters) [66547 66560])
+                            ("old_image_text_parts" variable nil (reparse-symbol function_parameters) [66562 66582])
+                            ("n" variable nil (reparse-symbol function_parameters) [66584 66585])
+                            ("logger" variable nil (reparse-symbol function_parameters) [66587 66593]))                          )
+                        (reparse-symbol indented_block_body) [66471 71037])
+                    ("check_account_cap" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [71061 71065])
+                            ("account_id" variable nil (reparse-symbol function_parameters) [71067 71077])
+                            ("account_warning_dict" variable nil (reparse-symbol function_parameters) [71079 71099])
+                            ("now" variable nil (reparse-symbol function_parameters) [71101 71104])
+                            ("logger" variable nil (reparse-symbol function_parameters) [71106 71112]))                          )
+                        (reparse-symbol indented_block_body) [71039 71989])
+                    ("get_yesterday_stats" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [72015 72019])
+                            ("account_id" variable nil (reparse-symbol function_parameters) [72021 72031])
+                            ("now" variable nil (reparse-symbol function_parameters) [72033 72036])
+                            ("logger" variable nil (reparse-symbol function_parameters) [72038 72044]))                          )
+                        (reparse-symbol indented_block_body) [71991 72529])
+                    ("get_account_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [72552 72556])
+                            ("account_id" variable nil (reparse-symbol function_parameters) [72558 72568])
+                            ("now" variable nil (reparse-symbol function_parameters) [72570 72573])
+                            ("logger" variable nil (reparse-symbol function_parameters) [72575 72581]))                          )
+                        (reparse-symbol indented_block_body) [72531 73493])
+                    ("get_campaign_stats" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [73518 73522])
+                            ("account_id" variable nil (reparse-symbol function_parameters) [73524 73534])
+                            ("campaigns" variable nil (reparse-symbol function_parameters) [73536 73545])
+                            ("now" variable nil (reparse-symbol function_parameters) [73547 73550])
+                            ("logger" variable nil (reparse-symbol function_parameters) [73552 73558]))                          )
+                        (reparse-symbol indented_block_body) [73495 75817])
+                    ("remove_unused_adset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [75843 75847])
+                            ("fb_campaign_id" variable nil (reparse-symbol function_parameters) [75849 75863])
+                            ("logger" variable nil (reparse-symbol function_parameters) [75865 75871]))                          )
+                        (reparse-symbol indented_block_body) [75819 76405])
+                    ("get_account_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [76428 76432])
+                            ("fb_account_id" variable nil (reparse-symbol function_parameters) [76434 76447])
+                            ("logger" variable nil (reparse-symbol function_parameters) [76449 76455]))                          )
+                        (reparse-symbol indented_block_body) [76407 76776])
+                    ("_get_campaign_status" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [76803 76807])
+                            ("fb_campaign_id" variable nil (reparse-symbol function_parameters) [76809 76823])
+                            ("logger" variable nil (reparse-symbol function_parameters) [76825 76831]))                          )
+                        (reparse-symbol indented_block_body) [76778 77003])
+                    ("_change_campaign_status" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [77033 77037])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [77039 77052])
+                            ("logger" variable nil (reparse-symbol function_parameters) [77054 77060]))                          )
+                        (reparse-symbol indented_block_body) [77005 77503])
+                    ("generate_batches" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [77526 77530])
+                            ("iterable" variable nil (reparse-symbol function_parameters) [77532 77540])
+                            ("batch_size_limit" variable nil (reparse-symbol function_parameters) [77542 77558]))                          
+                        :documentation "
+		Generator that yields lists of length size batch_size_limit containing
+		objects yielded by the iterable.
+		")
+                        (reparse-symbol indented_block_body) [77505 77843])
+                    ("_change_cost_type" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [77867 77871])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [77873 77886])
+                            ("promoted_object" variable nil (reparse-symbol function_parameters) [77888 77903])
+                            ("logger" variable nil (reparse-symbol function_parameters) [77905 77911]))                          )
+                        (reparse-symbol indented_block_body) [77845 80004])
+                    ("_is_aam_campaign" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [80027 80031])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [80033 80046])
+                            ("logger" variable nil (reparse-symbol function_parameters) [80048 80054]))                          )
+                        (reparse-symbol indented_block_body) [80006 80143])
+                    ("_is_rule_campaign" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [80167 80171])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [80173 80186])
+                            ("logger" variable nil (reparse-symbol function_parameters) [80188 80194]))                          )
+                        (reparse-symbol indented_block_body) [80145 80280])
+                    ("_change_cost_price" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [80305 80309])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [80311 80324])
+                            ("logger" variable nil (reparse-symbol function_parameters) [80326 80332]))                          )
+                        (reparse-symbol indented_block_body) [80282 80482])
+                    ("_change_daily_budget" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [80509 80513])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [80515 80528])
+                            ("logger" variable nil (reparse-symbol function_parameters) [80530 80536]))                          )
+                        (reparse-symbol indented_block_body) [80484 80757])
+                    ("_change_lifetime_budget" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [80787 80791])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [80793 80806])
+                            ("logger" variable nil (reparse-symbol function_parameters) [80808 80814]))                          )
+                        (reparse-symbol indented_block_body) [80759 81041])
+                    ("_change_pacing_type" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [81067 81071])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [81073 81086])
+                            ("logger" variable nil (reparse-symbol function_parameters) [81088 81094]))                          )
+                        (reparse-symbol indented_block_body) [81043 81234])
+                    ("_change_end_time" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [81257 81261])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [81263 81276])
+                            ("logger" variable nil (reparse-symbol function_parameters) [81278 81284]))                          )
+                        (reparse-symbol indented_block_body) [81236 81356])
+                    ("_change_setting_in_attr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [81386 81390])
+                            ("change_attr" variable nil (reparse-symbol function_parameters) [81392 81403])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [81405 81418])
+                            ("promoted_object" variable nil (reparse-symbol function_parameters) [81420 81435])
+                            ("logger" variable nil (reparse-symbol function_parameters) [81437 81443]))                          )
+                        (reparse-symbol indented_block_body) [81358 82074])
+                    ("_build_changed_setting" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [82103 82107])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [82109 82122])
+                            ("promoted_object" variable nil (reparse-symbol function_parameters) [82124 82139])
+                            ("logger" variable nil (reparse-symbol function_parameters) [82141 82147]))                          )
+                        (reparse-symbol indented_block_body) [82076 82460])
+                    ("_check_adobject_normal" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [82489 82493])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [82495 82508])
+                            ("logger" variable nil (reparse-symbol function_parameters) [82510 82516]))                          )
+                        (reparse-symbol indented_block_body) [82462 83087])
+                    ("update_campaign_status" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [83116 83120])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [83122 83135])
+                            ("logger" variable nil (reparse-symbol function_parameters) [83137 83143]))                          
+                        :documentation " 更新Campaign开关状态")
+                        (reparse-symbol indented_block_body) [83089 83649])
+                    ("_campaign_name_changed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [83678 83682])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [83684 83697])
+                            ("logger" variable nil (reparse-symbol function_parameters) [83699 83705]))                          )
+                        (reparse-symbol indented_block_body) [83651 83852])
+                    ("_change_campaign_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [83880 83884])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [83886 83899])
+                            ("logger" variable nil (reparse-symbol function_parameters) [83901 83907]))                          )
+                        (reparse-symbol indented_block_body) [83854 84063])
+                    ("update_campaign" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [84085 84089])
+                            ("zeus_campaign" variable nil (reparse-symbol function_parameters) [84091 84104])
+                            ("promoted_object" variable nil (reparse-symbol function_parameters) [84106 84121])
+                            ("special_fb_adset_ids" variable nil (reparse-symbol function_parameters) [84123 84143])
+                            ("logger" variable nil (reparse-symbol function_parameters) [84145 84151])
+                            ("repeat_num" variable nil (reparse-symbol function_parameters) [84153 84163]))                          
+                        :documentation " 除开关外，其它Campaign信息更新")
+                        (reparse-symbol indented_block_body) [84065 86761]))                  
+                :type "class")
+                nil [1151 86761]))          
+      :file "facebook_interface.py"
+      :pointmax 86761
+      :fsize 87306
+      :lastmodtime '(22948 57832 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 86636 . 86761) (NEWLINE 86635 . 86636) (COLON 86634 . 86635) (FINALLY 86627 . 86634) (INDENT_BLOCK 86605 . 86625) (NEWLINE 86604 . 86605) (COLON 86603 . 86604) (TRY 84248 . 84251) (AS 86599 . 86601) (INDENT_BLOCK 85076 . 85118) (NEWLINE 85075 . 85076) (COLON 85074 . 85075) (ELSE 85070 . 85074) (INDENT_BLOCK 85023 . 85066) (NEWLINE 85022 . 85023) (COLON 85021 . 85022) (TRY 84918 . 84921) (AS 85017 . 85019) (NAME 83710 . 83726) (IF 83773 . 83775) (ELSE 83808 . 83812) (INDENT_BLOCK 83524 . 83649) (NEWLINE 83523 . 83524) (COLON 83522 . 83523) (FINALLY 83515 . 83522) (INDENT_BLOCK 83493 . 83513) (NEWLINE 83492 . 83493) (COLON 83491 . 83492) (TRY 83221 . 83224) (AS 83487 . 83489) (NAME 82177 . 82193) (IF 82240 . 82242) (ELSE 82275 . 82279) (NAME 81099 . 81110) (IF 81124 . 81126) (ELSE 81157 . 81161) (INDENT_BLOCK 76753 . 76776) (NEWLINE 76752 . 76753) (COLON 76751 . 76752) (FINALLY 76744 . 76751) (INDENT_BLOCK 76719 . 76742) (NEWLINE 76718 . 76719) (COLON 76717 . 76718) (TRY 76495 . 76498) (AS 76713 . 76715) (INDENT_BLOCK 76382 . 76405) (NEWLINE 76381 . 76382) (COLON 76380 . 76381) (TRY 75876 . 75879) (AS 76376 . 76378) (INDENT_BLOCK 75787 . 75817) (NEWLINE 75786 . 75787) (COLON 75785 . 75786) (FINALLY 75778 . 75785) (INDENT_BLOCK 75753 . 75776) (NEWLINE 75752 . 75753) (COLON 75751 . 75752) (TRY 73590 . 73593) (AS 75747 . 75749) (INDENT_BLOCK 73470 . 73493) (NEWLINE 73469 . 73470) (COLON 73468 . 73469) (FINALLY 73461 . 73468) (INDENT_BLOCK 73436 . 73459) (NEWLINE 73435 . 73436) (COLON 73434 . 73435) (TRY 72622 . 72625) (AS 73430 . 73432) (INDENT_BLOCK 71966 . 71989) (NEWLINE 71965 . 71966) (COLON 71964 . 71965) (FINALLY 71957 . 71964) (INDENT_BLOCK 71932 . 71955) (NEWLINE 71931 . 71932) (COLON 71930 . 71931) (TRY 71158 . 71161) (AS 71926 . 71928) (INDENT_BLOCK 70878 . 71037) (NEWLINE 70877 . 70878) (COLON 70876 . 70877) (FINALLY 70869 . 70876) (INDENT_BLOCK 70824 . 70867) (NEWLINE 70823 . 70824) (COLON 70822 . 70823) (TRY 66709 . 66712) (AS 70818 . 70820) (INDENT_BLOCK 67955 . 67997) (NEWLINE 67954 . 67955) (COLON 67953 . 67954) (ELSE 67949 . 67953) (INDENT_BLOCK 67902 . 67945) (NEWLINE 67901 . 67902) (COLON 67900 . 67901) (TRY 67797 . 67800) (AS 67896 . 67898) (INDENT_BLOCK 66419 . 66469) (NEWLINE 66418 . 66419) (COLON 66417 . 66418) (FINALLY 66410 . 66417) (INDENT_BLOCK 66331 . 66408) (NEWLINE 66330 . 66331) (COLON 66329 . 66330) (TRY 65615 . 65618) (AS 66325 . 66327) (INDENT_BLOCK 65208 . 65367) (NEWLINE 65207 . 65208) (COLON 65206 . 65207) (FINALLY 65199 . 65206) (INDENT_BLOCK 65154 . 65197) (NEWLINE 65153 . 65154) (COLON 65152 . 65153) (TRY 61112 . 61115) (AS 65148 . 65150) (INDENT_BLOCK 62358 . 62400) (NEWLINE 62357 . 62358) (COLON 62356 . 62357) (ELSE 62352 . 62356) (INDENT_BLOCK 62305 . 62348) (NEWLINE 62304 . 62305) (COLON 62303 . 62304) (TRY 62200 . 62203) (AS 62299 . 62301) (INDENT_BLOCK 60816 . 60866) (NEWLINE 60815 . 60816) (COLON 60814 . 60815) (FINALLY 60807 . 60814) (INDENT_BLOCK 60728 . 60805) (NEWLINE 60727 . 60728) (COLON 60726 . 60727) (TRY 60006 . 60009) (AS 60722 . 60724) (INDENT_BLOCK 59593 . 59752) (NEWLINE 59592 . 59593) (COLON 59591 . 59592) (FINALLY 59584 . 59591) (INDENT_BLOCK 59539 . 59582) (NEWLINE 59538 . 59539) (COLON 59537 . 59538) (TRY 54146 . 54149) (AS 59533 . 59535) (INDENT_BLOCK 55559 . 55601) (NEWLINE 55558 . 55559) (COLON 55557 . 55558) (ELSE 55553 . 55557) (INDENT_BLOCK 55506 . 55549) (NEWLINE 55505 . 55506) (COLON 55504 . 55505) (TRY 55401 . 55404) (AS 55500 . 55502) (INDENT_BLOCK 53867 . 53917) (NEWLINE 53866 . 53867) (COLON 53864 . 53865) (FINALLY 53857 . 53864) (INDENT_BLOCK 53769 . 53855) (NEWLINE 53768 . 53769) (COLON 53767 . 53768) (TRY 53046 . 53049) (AS 53763 . 53765) (INDENT_BLOCK 52650 . 52809) (NEWLINE 52649 . 52650) (COLON 52648 . 52649) (FINALLY 52641 . 52648) (INDENT_BLOCK 52596 . 52639) (NEWLINE 52595 . 52596) (COLON 52594 . 52595) (TRY 47116 . 47119) (AS 52590 . 52592) (INDENT_BLOCK 48529 . 48571) (NEWLINE 48528 . 48529) (COLON 48527 . 48528) (ELSE 48523 . 48527) (INDENT_BLOCK 48476 . 48519) (NEWLINE 48475 . 48476) (COLON 48474 . 48475) (TRY 48371 . 48374) (AS 48470 . 48472) (INDENT_BLOCK 46831 . 46881) (NEWLINE 46830 . 46831) (COLON 46828 . 46829) (FINALLY 46821 . 46828) (INDENT_BLOCK 46710 . 46819) (NEWLINE 46709 . 46710) (COLON 46708 . 46709) (TRY 45981 . 45984) (AS 46704 . 46706) (INDENT_BLOCK 44186 . 44216) (NEWLINE 44185 . 44186) (COLON 44184 . 44185) (FINALLY 44177 . 44184) (INDENT_BLOCK 44152 . 44175) (NEWLINE 44151 . 44152) (COLON 44150 . 44151) (TRY 43755 . 43758) (AS 44146 . 44148) (INDENT_BLOCK 38390 . 38519) (NEWLINE 38389 . 38390) (COLON 38388 . 38389) (FINALLY 38381 . 38388) (INDENT_BLOCK 38336 . 38379) (NEWLINE 38335 . 38336) (COLON 38334 . 38335) (TRY 36815 . 36818) (AS 38330 . 38332) (INDENT_BLOCK 37386 . 37428) (NEWLINE 37385 . 37386) (COLON 37384 . 37385) (ELSE 37380 . 37384) (INDENT_BLOCK 37333 . 37376) (NEWLINE 37332 . 37333) (COLON 37331 . 37332) (TRY 37228 . 37231) (AS 37327 . 37329) (INDENT_BLOCK 36505 . 36657) (NEWLINE 36504 . 36505) (COLON 36503 . 36504) (FINALLY 36496 . 36503) (INDENT_BLOCK 36451 . 36494) (NEWLINE 36450 . 36451) (COLON 36449 . 36450) (TRY 28363 . 28366) (AS 36445 . 36447) (INDENT_BLOCK 36194 . 36347) (NEWLINE 36193 . 36194) (COLON 36192 . 36193) (ELSE 36188 . 36192) (INDENT_BLOCK 36115 . 36184) (NEWLINE 36114 . 36115) (COLON 36113 . 36114) (TRY 36016 . 36019) (AS 36109 . 36111) (INDENT_BLOCK 31282 . 31324) (NEWLINE 31281 . 31282) (COLON 31280 . 31281) (ELSE 31276 . 31280) (INDENT_BLOCK 31229 . 31272) (NEWLINE 31228 . 31229) (COLON 31227 . 31228) (TRY 31124 . 31127) (AS 31223 . 31225) (NAME 28472 . 28483) (IF 28497 . 28499) (ELSE 28530 . 28534) (INDENT_BLOCK 27982 . 28143) (NEWLINE 27981 . 27982) (COLON 27980 . 27981) (FINALLY 27973 . 27980) (INDENT_BLOCK 27928 . 27971) (NEWLINE 27927 . 27928) (COLON 27926 . 27927) (TRY 25334 . 25337) (AS 27922 . 27924) (INDENT_BLOCK 27647 . 27838) (NEWLINE 27646 . 27647) (COLON 27645 . 27646) (ELSE 27641 . 27645) (INDENT_BLOCK 27571 . 27637) (NEWLINE 27570 . 27571) (COLON 27569 . 27570) (TRY 27492 . 27495) (AS 27565 . 27567) (INDENT_BLOCK 26066 . 26108) (NEWLINE 26065 . 26066) (COLON 26064 . 26065) (ELSE 26060 . 26064) (INDENT_BLOCK 26013 . 26056) (NEWLINE 26012 . 26013) (COLON 26011 . 26012) (TRY 25834 . 25837) (AS 26007 . 26009) (INDENT_BLOCK 25011 . 25140) (NEWLINE 25010 . 25011) (COLON 25009 . 25010) (FINALLY 25002 . 25009) (INDENT_BLOCK 24957 . 25000) (NEWLINE 24956 . 24957) (COLON 24955 . 24956) (TRY 23661 . 23664) (AS 24951 . 24953) (INDENT_BLOCK 24196 . 24238) (NEWLINE 24195 . 24196) (COLON 24194 . 24195) (ELSE 24190 . 24194) (INDENT_BLOCK 24143 . 24186) (NEWLINE 24142 . 24143) (COLON 24141 . 24142) (TRY 24038 . 24041) (AS 24137 . 24139) (INDENT_BLOCK 23493 . 23529) (NEWLINE 23492 . 23493) (COLON 23491 . 23492) (TRY 23024 . 23027) (AS 23487 . 23489) (INDENT_BLOCK 22907 . 22943) (NEWLINE 22906 . 22907) (COLON 22905 . 22906) (TRY 22725 . 22728) (AS 22901 . 22903) (INDENT_BLOCK 22617 . 22653) (NEWLINE 22616 . 22617) (COLON 22615 . 22616) (TRY 22456 . 22459) (AS 22611 . 22613) (INDENT_BLOCK 22356 . 22392) (NEWLINE 22355 . 22356) (COLON 22354 . 22355) (TRY 22199 . 22202) (AS 22350 . 22352) (INDENT_BLOCK 22076 . 22112) (NEWLINE 22075 . 22076) (COLON 22074 . 22075) (TRY 21498 . 21501) (AS 22070 . 22072) (INDENT_BLOCK 21375 . 21411) (NEWLINE 21374 . 21375) (COLON 21373 . 21374) (TRY 17526 . 17529) (AS 21369 . 21371) (NAME 17575 . 17586) (IF 17600 . 17602) (ELSE 17633 . 17637) (INDENT_BLOCK 17261 . 17404) (NEWLINE 17260 . 17261) (COLON 17259 . 17260) (FINALLY 17252 . 17259) (INDENT_BLOCK 17207 . 17250) (NEWLINE 17206 . 17207) (COLON 17205 . 17206) (TRY 16526 . 16529) (AS 17201 . 17203) (INDENT_BLOCK 16188 . 16366) (NEWLINE 16187 . 16188) (COLON 16186 . 16187) (FINALLY 16179 . 16186) (INDENT_BLOCK 16134 . 16177) (NEWLINE 16133 . 16134) (COLON 16132 . 16133) (TRY 15027 . 15030) (AS 16128 . 16130) (INDENT_BLOCK 14789 . 14825) (NEWLINE 14788 . 14789) (COLON 14787 . 14788) (TRY 9394 . 9397) (AS 14783 . 14785) (INDENT_BLOCK 9258 . 9294) (NEWLINE 9257 . 9258) (COLON 9256 . 9257) (TRY 8974 . 8977) (AS 9252 . 9254) (INDENT_BLOCK 8821 . 8892) (NEWLINE 8820 . 8821) (COLON 8819 . 8820) (TRY 7812 . 7815) (AS 8815 . 8817) (INDENT_BLOCK 7645 . 7694) (NEWLINE 7644 . 7645) (COLON 7643 . 7644) (FINALLY 7636 . 7643) (INDENT_BLOCK 7611 . 7634) (NEWLINE 7610 . 7611) (COLON 7609 . 7610) (TRY 4337 . 4340) (AS 7605 . 7607) (INDENT_BLOCK 5758 . 6108) (NEWLINE 5757 . 5758) (COLON 5756 . 5757) (ELSE 5752 . 5756) (INDENT_BLOCK 5667 . 5748) (NEWLINE 5666 . 5667) (COLON 5665 . 5666) (TRY 5352 . 5355) (AS 5661 . 5663) (INDENT_BLOCK 5070 . 5112) (NEWLINE 5069 . 5070) (COLON 5068 . 5069) (ELSE 5064 . 5068) (INDENT_BLOCK 5017 . 5060) (NEWLINE 5016 . 5017) (COLON 5015 . 5016) (TRY 4912 . 4915) (AS 5011 . 5013) (INDENT_BLOCK 4048 . 4071) (NEWLINE 4047 . 4048) (COLON 4046 . 4047) (TRY 2559 . 2562) (AS 4042 . 4044) (INDENT_BLOCK 3664 . 4022) (NEWLINE 3663 . 3664) (COLON 3662 . 3663) (ELSE 3658 . 3662) (INDENT_BLOCK 3631 . 3655) (NEWLINE 3630 . 3631) (COLON 3629 . 3630) (TRY 3188 . 3191) (AS 3625 . 3627) (INDENT_BLOCK 3109 . 3152) (NEWLINE 3108 . 3109) (COLON 3107 . 3108) (TRY 3004 . 3007) (AS 3103 . 3105))))
+  :file "!Users!drwrong!mywork!domob!zeus!zeus_ad_manager!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

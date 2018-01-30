@@ -1,0 +1,75 @@
+;; Object JDEE_flycheck_15399lNj/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "JDEE_flycheck_15399lNj/"
+  :tables
+  (list
+    (semanticdb-table "SpoutConfig.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("org.apache.storm.kafka" package nil nil [804 835])
+            ("java.io.Serializable" include nil nil [837 865])
+            ("java.util.List" include nil nil [866 888])
+            ("SpoutConfig" type
+               (:typemodifiers ("public")
+                :interfaces ("Serializable")
+                :superclasses "KafkaConfig"
+                :members 
+                  ( ("zkPort" variable
+                       (:typemodifiers ("public")
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [1008 1037])
+                    ("zkRoot" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1042 1070])
+                    ("id" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1075 1099])
+                    ("outputStreamId" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1105 1134])
+                    ("stateUpdateIntervalMs" variable
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1215 1256])
+                    ("failedMsgRetryManagerClass" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1304 1397])
+                    ("retryInitialDelayMs" variable
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1652 1688])
+                    ("retryDelayMultiplier" variable
+                       (:typemodifiers ("public")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [1693 1734])
+                    ("retryDelayMaxMs" variable
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1739 1779])
+                    ("retryLimit" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1784 1811])
+                    ("SpoutConfig" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("hosts" variable (:type "BrokerHosts") (reparse-symbol formal_parameters) [1836 1853])
+                            ("topic" variable (:type "String") (reparse-symbol formal_parameters) [1855 1867])
+                            ("zkRoot" variable (:type "String") (reparse-symbol formal_parameters) [1869 1882])
+                            ("id" variable (:type "String") (reparse-symbol formal_parameters) [1884 1893]))                          )
+                        (reparse-symbol class_member_declaration) [1817 1983]))                  
+                :type "class")
+                nil [891 1985]))          
+      :file "SpoutConfig.java"
+      :pointmax 1986
+      :fsize 1985
+      :lastmodtime '(22735 37559 0 0)
+      :unmatched-syntax '((SEMICOLON 1002 . 1003) (EQ 996 . 997) (GT 984 . 985) (PUBLIC 966 . 972) (LT 977 . 978))))
+  :file "!private!var!folders!hs!_yc0qs7s7r194rfd1cmmtflh0000gn!T!JDEE_flycheck_15399lNj!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,106 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("''' Ad Manager '''" code nil nil [95 113])
+            ("__author__" variable nil nil [114 143])
+            ("sys" include nil nil [145 158])
+            ("os" include nil nil [145 158])
+            ("basepath" variable nil nil [159 215])
+            ("sys" code nil nil [216 262])
+            ("logging" include nil nil [263 277])
+            ("ConfigParser" include nil nil [278 297])
+            ("argparse" include nil nil [298 313])
+            ("re" include nil nil [314 323])
+            ("time" include nil nil [324 335])
+            ("datetime" include nil nil [336 351])
+            ("threading" include nil nil [352 368])
+            ("try" code nil nil [369 423])
+            ("multiprocessing" include nil nil [423 480])
+            ("thrift" include nil nil [507 532])
+            ("thrift.transport" include nil nil [533 569])
+            ("thrift.transport" include nil nil [570 609])
+            ("thrift.protocol" include nil nil [610 653])
+            ("thrift.server" include nil nil [654 687])
+            ("ad.campaign_manager" include nil nil [689 738])
+            ("ad.budget_checker" include nil nil [739 784])
+            ("domob_thrift.zeus_ad_types.ttypes" include nil nil [786 833])
+            ("domob_thrift.zeus_ad_types.constants" include nil nil [834 884])
+            ("domob_thrift.zeus_ad.ttypes" include nil nil [885 926])
+            ("domob_thrift.zeus_ad.constants" include nil nil [927 971])
+            ("domob_thrift.zeus_ad" include nil nil [972 1018])
+            ("domob_thrift.common.ttypes" include nil nil [1019 1059])
+            ("AdManager" type
+               (:superclasses ("object")
+                :members 
+                  ( ("''' 负责Ad模块的总体调用
+	'''" code nil (reparse-symbol indented_block_body) [1089 1109])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1139 1155])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1158 1236])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1239 1311])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1314 1376]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1124 1128])
+                            ("conf" variable nil (reparse-symbol function_parameters) [1130 1134]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1111 1377])
+                    ("_split_log" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1394 1398])
+                            ("now" variable nil (reparse-symbol function_parameters) [1400 1403])
+                            ("logger" variable nil (reparse-symbol function_parameters) [1405 1411]))                          )
+                        (reparse-symbol indented_block_body) [1379 1944])
+                    ("_open_ad_client" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1966 1970]))                          )
+                        (reparse-symbol indented_block_body) [1946 2480])
+                    ("_fetch_audit_campaigns" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2509 2513])
+                            ("ad_client" variable nil (reparse-symbol function_parameters) [2515 2524])
+                            ("logger" variable nil (reparse-symbol function_parameters) [2526 2532]))                          )
+                        (reparse-symbol indented_block_body) [2482 2866])
+                    ("_update_campaign" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2889 2893])
+                            ("campaign_queue" variable nil (reparse-symbol function_parameters) [2895 2909])
+                            ("n" variable nil (reparse-symbol function_parameters) [2911 2912])
+                            ("conf" variable nil (reparse-symbol function_parameters) [2914 2918])
+                            ("logger" variable nil (reparse-symbol function_parameters) [2920 2926]))                          )
+                        (reparse-symbol indented_block_body) [2868 3547])
+                    ("_update_campaigns" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3571 3575])
+                            ("campaign_queue" variable nil (reparse-symbol function_parameters) [3577 3591])
+                            ("ad_client" variable nil (reparse-symbol function_parameters) [3593 3602])
+                            ("logger" variable nil (reparse-symbol function_parameters) [3604 3610]))                          )
+                        (reparse-symbol indented_block_body) [3549 5011])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5021 5025])
+                            ("logger" variable nil (reparse-symbol function_parameters) [5027 5033]))                          )
+                        (reparse-symbol indented_block_body) [5013 6169]))                  
+                :type "class")
+                nil [1063 6169])
+            ("if" code nil nil [6171 6811]))          
+      :file "AdManager.py"
+      :pointmax 6812
+      :fsize 6947
+      :lastmodtime '(22948 57832 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 3432 . 3463) (NEWLINE 3431 . 3432) (COLON 3430 . 3431) (FINALLY 3423 . 3430))))
+  :file "!Users!drwrong!mywork!domob!zeus!zeus_ad_manager!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

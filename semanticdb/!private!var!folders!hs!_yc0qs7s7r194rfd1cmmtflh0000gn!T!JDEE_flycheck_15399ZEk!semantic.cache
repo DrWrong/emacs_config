@@ -1,0 +1,50 @@
+;; Object JDEE_flycheck_15399ZEk/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "JDEE_flycheck_15399ZEk/"
+  :tables
+  (list
+    (semanticdb-table "SyncAdTopology.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.sync_ad" package nil nil [1 31])
+            ("backtype.storm.Config" include nil nil [33 62])
+            ("backtype.storm.LocalCluster" include nil nil [63 98])
+            ("backtype.storm.StormSubmitter" include nil nil [99 136])
+            ("backtype.storm.spout.SchemeAsMultiScheme" include nil nil [137 185])
+            ("backtype.storm.topology.TopologyBuilder" include nil nil [186 233])
+            ("com.dmaow.aow.sync_ad.bolts.collate.CollateBolt" include nil nil [234 289])
+            ("com.dmaow.aow.sync_ad.bolts.decoder.DecoderBolt" include nil nil [290 345])
+            ("com.dmaow.aow.sync_ad.bolts.sender.KafkaSenderBolt" include nil nil [346 404])
+            ("com.dmaow.aow.sync_ad.bolts.settle.SettleBolt" include nil nil [405 458])
+            ("com.dmaow.aow.sync_ad.utils.Stats" include nil nil [459 500])
+            ("com.dmaow.aow.sync_ad.utils.StringMessageScheme" include nil nil [501 556])
+            ("org.apache.commons.configuration.Configuration" include nil nil [557 611])
+            ("org.apache.commons.configuration.PropertiesConfiguration" include nil nil [612 676])
+            ("storm.kafka.BrokerHosts" include nil nil [677 708])
+            ("storm.kafka.KafkaSpout" include nil nil [709 739])
+            ("storm.kafka.SpoutConfig" include nil nil [740 771])
+            ("storm.kafka.ZkHosts" include nil nil [772 799])
+            ("java.util.Iterator" include nil nil [801 827])
+            ("SyncAdTopology" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1062 1075]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1038 4459]))                  
+                :type "class")
+                nil [1003 4462]))          
+      :file "SyncAdTopology.java"
+      :pointmax 4463
+      :fsize 4462
+      :lastmodtime '(22735 37576 0 0)
+      :unmatched-syntax nil))
+  :file "!private!var!folders!hs!_yc0qs7s7r194rfd1cmmtflh0000gn!T!JDEE_flycheck_15399ZEk!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

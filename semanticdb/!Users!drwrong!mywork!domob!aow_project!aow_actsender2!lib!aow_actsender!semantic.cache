@@ -1,0 +1,306 @@
+;; Object aow_actsender/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "aow_actsender/"
+  :tables
+  (list
+    (semanticdb-table "manager.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Author: PangBo <pangbo@domob.cn>
+Date: 2014-08-21
+\"\"\"" code nil nil [26 83])
+            ("__future__" include nil nil [85 124])
+            ("logging" include nil nil [126 140])
+            ("time" include nil nil [141 152])
+            ("Queue" include nil nil [153 165])
+            ("domob_pyutils.statscol" include nil nil [167 207])
+            ("aow_actsender.workers" include nil nil [209 285])
+            ("aow_actsender.monitor" include nil nil [286 333])
+            ("ActSenderManager" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [398 460])
+                            ("self" variable nil (reparse-symbol indented_block_body) [463 483])
+                            ("self" variable nil (reparse-symbol indented_block_body) [517 560]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [381 385])
+                            ("config" variable nil (reparse-symbol function_parameters) [387 393]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [368 561])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [571 575]))                          
+                        :documentation "启动向广告主发送点击的多个线程和填充线程
+
+		主线程在启动工作线程后，就sleep了
+		")
+                        (reparse-symbol indented_block_body) [563 1169]))                  
+                :type "class")
+                nil [335 1169]))          
+      :file "manager.py"
+      :pointmax 1170
+      :fsize 1283
+      :lastmodtime '(22684 8007 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "workers.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Author: PangBo <pangbo@domob.cn>
+Date: 2014-08-21
+\"\"\"" code nil nil [26 83])
+            ("__future__" include nil nil [85 124])
+            ("django.db" include nil nil [126 142])
+            ("threading" include nil nil [143 159])
+            ("time" include nil nil [160 171])
+            ("logging" include nil nil [172 186])
+            ("urllib2" include nil nil [187 201])
+            ("datetime" include nil nil [202 242])
+            ("domob_pyutils.statscol" include nil nil [243 283])
+            ("aow_actsender.utils" include nil nil [285 340])
+            ("aow_actsender.db.models" include nil nil [341 433])
+            ("aow_actsender.db.aow_models" include nil nil [434 492])
+            ("RETRY_INTERVAL" variable nil nil [538 575])
+            ("SenderThread" type
+               (:documentation "负责向开发者服务器发送激活事件的线程
+
+    从任务队列中获取待发送的事件，通过http请求发送
+    在数据库中标记这次发送的状态
+
+    队列中的Job是
+    "
+                :superclasses ("threading.Thread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [770 837])
+                            ("threading" code nil (reparse-symbol indented_block_body) [846 887])
+                            ("self" variable nil (reparse-symbol indented_block_body) [896 914])
+                            ("self" variable nil (reparse-symbol indented_block_body) [923 943]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [730 734])
+                            ("queue" variable nil (reparse-symbol function_parameters) [736 741])
+                            ("config" variable nil (reparse-symbol function_parameters) [743 749])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [751 759]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [717 944])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [957 961]))                          )
+                        (reparse-symbol indented_block_body) [949 1363])
+                    ("send" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1377 1381])
+                            ("job" variable nil (reparse-symbol function_parameters) [1383 1386]))                          
+                        :documentation "将clkact发送给开发者的服务器
+
+        Args:
+         job -
+
+        ")
+                        (reparse-symbol indented_block_body) [1368 2692])
+                    ("handleOneRecord" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2717 2721])
+                            ("clkact" variable nil (reparse-symbol function_parameters) [2723 2729])
+                            ("ad" variable nil (reparse-symbol function_parameters) [2731 2733])
+                            ("pkg" variable nil (reparse-symbol function_parameters) [2735 2738])
+                            ("cfg" variable nil (reparse-symbol function_parameters) [2740 2743])
+                            ("media" variable nil (reparse-symbol function_parameters) [2745 2750]))                          
+                        :documentation "向开发者发送请求
+
+        如果时taowifi这个媒体，则使用特殊的回调规则
+        ")
+                        (reparse-symbol indented_block_body) [2697 4105]))                  
+                :type "class")
+                nil [577 4105])
+            ("FillThread" type
+               (:documentation "从数据库查询待处理的记录，放入队列的线程"
+                :superclasses ("threading.Thread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [4231 4296])
+                            ("threading" code nil (reparse-symbol indented_block_body) [4305 4346])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4355 4373])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4382 4402])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4411 4429]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4191 4195])
+                            ("queue" variable nil (reparse-symbol function_parameters) [4197 4202])
+                            ("config" variable nil (reparse-symbol function_parameters) [4204 4210])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [4212 4220]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4178 4430])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4443 4447]))                          )
+                        (reparse-symbol indented_block_body) [4435 4927])
+                    ("process_clkacts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4952 4956])
+                            ("clkacts" variable nil (reparse-symbol function_parameters) [4958 4965]))                          
+                        :documentation "将clkacts放入到队列中
+
+        对于每一个aclkact，检查其是否需要发送回调，获取其对应的广告计划和创意
+
+        Args:
+         clkacts - list<DbOwClkAct>
+        Returns:
+         bool - True
+        ")
+                        (reparse-symbol indented_block_body) [4932 8199])
+                    ("fill_clkact_queue" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8226 8230])
+                            ("first_run" variable nil (reparse-symbol function_parameters) [8232 8241]))                          
+                        :documentation "从数据库查询待发送的激活事件，放入队列中
+
+        从数据库中查询settle_dt>=昨天的最到500条待发送状态的记录，加入到队列中
+        可能因队列满而阻塞。
+
+        将这些记录先设置成处理中，在加入到队列。
+
+        Returns:
+         bool - 是否有数据添加到队列中
+        ")
+                        (reparse-symbol indented_block_body) [8204 10251]))                  
+                :type "class")
+                nil [4106 10251])
+            ("FillThreadExtend" type
+               (:documentation " 补充查询, 针对畅无限要求发送所有的记录  "
+                :superclasses ("FillThread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [10381 10444])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10453 10524]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10341 10345])
+                            ("queue" variable nil (reparse-symbol function_parameters) [10347 10352])
+                            ("config" variable nil (reparse-symbol function_parameters) [10354 10360])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [10362 10370]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [10328 10525])
+                    ("fill_clkact_queue" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10553 10557])
+                            ("first_run" variable nil (reparse-symbol function_parameters) [10559 10568]))                          )
+                        (reparse-symbol indented_block_body) [10531 11814]))                  
+                :type "class")
+                nil [10254 11814]))          
+      :file "workers.py"
+      :pointmax 11815
+      :fsize 13198
+      :lastmodtime '(22684 8007 0 0)
+      :unmatched-syntax '((RETURN 10107 . 10113) (IF 10120 . 10122) (ELSE 10137 . 10141) (INDENT_BLOCK 4073 . 4105) (NEWLINE 4072 . 4073) (COLON 4071 . 4072) (FINALLY 4063 . 4070) (INDENT_BLOCK 1324 . 1363) (NEWLINE 1323 . 1324) (COLON 1322 . 1323) (FINALLY 1315 . 1322)))
+    (semanticdb-table "monitor.py"
+      :file "monitor.py"
+      :fsize 1378
+      :lastmodtime '(22684 8007 0 0))
+    (semanticdb-table "utils.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("hashlib" include nil nil [100 114])
+            ("urllib" include nil nil [115 143])
+            ("top.api" include nil nil [144 158])
+            ("domob_pyutils.statscol" include nil nil [159 199])
+            ("enum" function (:arguments 
+              ( ("enums" variable nil (reparse-symbol function_parameters) [210 217]))              ) nil [201 279])
+            ("SEND_STATUS" variable nil nil [280 467])
+            ("UrlBuilder" type
+               (:documentation "
+	发送信息的包装类
+	处理得到sendUrl
+	"
+                :superclasses ("object")
+                :members 
+                  ( ("build_url" function
+                       (:documentation "构造回调的url
+
+		注意回调url中所有的中文用utf-8编码
+		"
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [558 561])
+                            ("clkact" variable nil (reparse-symbol function_parameters) [563 569])
+                            ("ad" variable nil (reparse-symbol function_parameters) [571 573])
+                            ("pkg" variable nil (reparse-symbol function_parameters) [575 578])
+                            ("cfg" variable nil (reparse-symbol function_parameters) [580 583])
+                            ("media" variable nil (reparse-symbol function_parameters) [585 590]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [530 2266])
+                    ("send_taowifi" function
+                       (:documentation "给淘wifi作回调
+
+		这里的接口是通过QQ沟通的，文档请看注释。
+		在 http://api.taobao.com/apidoc/api.html 也能找到一些文档
+		"
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [2299 2302])
+                            ("pay_type" variable nil (reparse-symbol function_parameters) [2304 2312])
+                            ("clkact" variable nil (reparse-symbol function_parameters) [2314 2320])
+                            ("ad" variable nil (reparse-symbol function_parameters) [2322 2324])
+                            ("config" variable nil (reparse-symbol function_parameters) [2326 2332])
+                            ("logger" variable nil (reparse-symbol function_parameters) [2334 2340]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2268 3449]))                  
+                :type "class")
+                nil [470 3449]))          
+      :file "utils.py"
+      :pointmax 3450
+      :fsize 4045
+      :lastmodtime '(22684 8007 0 0)
+      :unmatched-syntax '((NAME 3039 . 3042) (IF 3068 . 3070) (ELSE 3088 . 3092) (NAME 2158 . 2159) (IF 2166 . 2168) (ELSE 2192 . 2196) (NAME 1900 . 1901) (IF 1912 . 1914) (ELSE 1948 . 1952) (NAME 1695 . 1703) (IF 1726 . 1728) (ELSE 1746 . 1750)))
+    (semanticdb-table "config.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("ConfigParser" include nil nil [26 45])
+            ("socket" include nil nil [46 59])
+            ("Config" type
+               (:documentation "
+    获取配置项数据的类
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [155 177])
+                            ("self" code nil (reparse-symbol indented_block_body) [186 199]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [130 134])
+                            ("filename" variable nil (reparse-symbol function_parameters) [136 144]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [117 200])
+                    ("reload" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [216 220]))                          )
+                        (reparse-symbol indented_block_body) [205 2515]))                  
+                :type "class")
+                nil [61 2515]))          
+      :file "config.py"
+      :pointmax 2515
+      :fsize 2658
+      :lastmodtime '(22684 8007 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_actsender2!lib!aow_actsender!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

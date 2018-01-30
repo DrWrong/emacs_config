@@ -1,0 +1,144 @@
+;; Object ut/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ut/"
+  :tables
+  (list
+    (semanticdb-table "ut_format.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [26 40])
+            ("socket" include nil nil [41 54])
+            ("time" include nil nil [55 66])
+            ("datetime" include nil nil [67 82])
+            ("hashlib" include nil nil [83 97])
+            ("struct" include nil nil [99 112])
+            ("django.db.utils" include nil nil [113 170])
+            ("_mysql_exceptions" include nil nil [171 217])
+            ("domob_pyutils.statscol" include nil nil [219 259])
+            ("biz.db.models" include nil nil [260 348])
+            ("format_clkact" function (:arguments 
+              ( ("d" variable nil (reparse-symbol function_parameters) [369 370]))              ) nil [351 1387])
+            ("format_act" function (:arguments 
+              ( ("d" variable nil (reparse-symbol function_parameters) [1404 1405]))              ) nil [1389 2850])
+            ("format_clk" function (:arguments 
+              ( ("d" variable nil (reparse-symbol function_parameters) [2867 2868]))              ) nil [2852 4332])
+            ("format_download" function (:arguments 
+              ( ("d" variable nil (reparse-symbol function_parameters) [4354 4355]))              ) nil [4334 5784])
+            ("format_sync_callback" function
+               (:documentation "api对接，广告主回调入库，anti前数据"
+                :arguments 
+                  ( ("d" variable nil (reparse-symbol function_parameters) [5811 5812]))                  )
+                nil [5786 6513])
+            ("SaveDb" type
+               (:documentation "收集offerwall sdk areport anti之后的数据到数据库中"
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [6619 6665]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6604 6608]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [6591 6666])
+                    ("saveRecord" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6686 6690])
+                            ("d" variable nil (reparse-symbol function_parameters) [6692 6693])
+                            ("try_count" variable nil (reparse-symbol function_parameters) [6695 6704]))                          
+                        :documentation "
+        保存数据
+        :param d:
+        :param try_count:
+        :return: bool true 不重试 false 重试
+        ")
+                        (reparse-symbol indented_block_body) [6671 9083]))                  
+                :type "class")
+                nil [6515 9083]))          
+      :file "ut_format.py"
+      :pointmax 9083
+      :fsize 9190
+      :lastmodtime '(22726 5565 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ut_redis.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [39 54])
+            ("json" include nil nil [55 66])
+            ("logging" include nil nil [67 81])
+            ("django.conf" include nil nil [83 115])
+            ("domob_pydocRedis.DomobPydocRedis" include nil nil [116 176])
+            ("domob_pydocRedis.DomobPydocRedisPool" include nil nil [177 254])
+            ("domob_pyutils.statscol" include nil nil [255 295])
+            ("pkg_loader.models" include nil nil [297 337])
+            ("py_redis" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [435 484])
+                            ("if" code nil (reparse-symbol indented_block_body) [493 544])
+                            ("self" variable nil (reparse-symbol indented_block_body) [552 618])
+                            ("self" variable nil (reparse-symbol indented_block_body) [627 666])
+                            ("self" code nil (reparse-symbol indented_block_body) [675 710])
+                            ("self" code nil (reparse-symbol indented_block_body) [719 833])
+                            ("self" code nil (reparse-symbol indented_block_body) [842 891]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [376 380])
+                            ("bussiness" variable nil (reparse-symbol function_parameters) [382 391])
+                            ("zk" variable nil (reparse-symbol function_parameters) [393 395])
+                            ("tout" variable nil (reparse-symbol function_parameters) [400 404])
+                            ("retry" variable nil (reparse-symbol function_parameters) [408 413])
+                            ("after" variable nil (reparse-symbol function_parameters) [417 422]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [363 892])
+                    ("update_rc" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [911 915])
+                            ("key" variable nil (reparse-symbol function_parameters) [917 920])
+                            ("expire_time" variable nil (reparse-symbol function_parameters) [922 933])
+                            ("b0" variable nil (reparse-symbol function_parameters) [935 937]))                          )
+                        (reparse-symbol indented_block_body) [897 1581])
+                    ("check_rc" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1635 1639])
+                            ("key" variable nil (reparse-symbol function_parameters) [1641 1644])
+                            ("et" variable nil (reparse-symbol function_parameters) [1646 1648])
+                            ("num" variable nil (reparse-symbol function_parameters) [1650 1653])
+                            ("b0" variable nil (reparse-symbol function_parameters) [1655 1657]))                          )
+                        (reparse-symbol indented_block_body) [1622 1907])
+                    ("check_key_max" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1930 1934])
+                            ("dc" variable nil (reparse-symbol function_parameters) [1936 1938])
+                            ("k_base" variable nil (reparse-symbol function_parameters) [1940 1946])
+                            ("k_add" variable nil (reparse-symbol function_parameters) [1948 1953])
+                            ("cfg_k" variable nil (reparse-symbol function_parameters) [1955 1960])
+                            ("et" variable nil (reparse-symbol function_parameters) [1962 1964])
+                            ("check_id" variable nil (reparse-symbol function_parameters) [1966 1974]))                          )
+                        (reparse-symbol indented_block_body) [1912 2606])
+                    ("save_click" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2626 2630])
+                            ("data" variable nil (reparse-symbol function_parameters) [2632 2636]))                          )
+                        (reparse-symbol indented_block_body) [2611 6295])
+                    ("__del__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6312 6316]))                          )
+                        (reparse-symbol indented_block_body) [6300 6411]))                  
+                :type "class")
+                nil [340 6411]))          
+      :file "ut_redis.py"
+      :pointmax 6411
+      :fsize 6520
+      :lastmodtime '(22766 2928 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_kafka_db!lib!ut!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

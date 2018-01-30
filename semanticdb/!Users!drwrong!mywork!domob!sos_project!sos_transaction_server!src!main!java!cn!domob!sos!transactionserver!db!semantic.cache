@@ -1,0 +1,61 @@
+;; Object db/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "db/"
+  :tables
+  (list
+    (semanticdb-table "SosUserScore.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.sos.transactionserver.db" package nil nil [1 43])
+            ("SosUserScore" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("id" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [120 136])
+                    ("total" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [142 161])
+                    ("createtime" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [167 190])
+                    ("lastupdate" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [196 219])
+                    ("getId" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [226 272])
+                    ("getTotal" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [278 330])
+                    ("getCreatetime" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [336 398])
+                    ("getLastupdate" function
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [404 466])
+                    ("SosUserScore" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("uid" variable (:type "long") (reparse-symbol formal_parameters) [492 500])
+                            ("total" variable (:type "long") (reparse-symbol formal_parameters) [502 512]))                          )
+                        (reparse-symbol class_member_declaration) [472 717]))                  
+                :type "class")
+                nil [88 720]))          
+      :file "SosUserScore.java"
+      :pointmax 721
+      :fsize 720
+      :lastmodtime '(22184 12411 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_transaction_server!src!main!java!cn!domob!sos!transactionserver!db!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

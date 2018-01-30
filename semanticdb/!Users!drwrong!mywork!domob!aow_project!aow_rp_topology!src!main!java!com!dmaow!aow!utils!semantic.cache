@@ -1,0 +1,308 @@
+;; Object utils/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "utils/"
+  :tables
+  (list
+    (semanticdb-table "ReportDecoder.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.utils" package nil nil [1 29])
+            ("cn.domob.aow.stat_types2.thrift.AowAdEventReport" include nil nil [31 87])
+            ("cn.domob.aow.stat_types2.thrift.AowEvent" include nil nil [88 136])
+            ("cn.domob.aow.stat_types2.thrift.AowWallReport" include nil nil [137 190])
+            ("cn.domob.aow.ui.thrift.AowTracker" include nil nil [191 232])
+            ("cn.domob.aow.ui.thrift.AowUIProccessedRequest" include nil nil [233 286])
+            ("cn.domob.aow.ui.thrift.AowUIRequest" include nil nil [287 330])
+            ("cn.domob.domob_security.DomobSecurityManager" include nil nil [331 383])
+            ("cn.domob.domob_security.exception.DomobSecurityException" include nil nil [384 448])
+            ("cn.domob.user_profile.thrift.GeoResult" include nil nil [449 495])
+            ("net.sf.json.JSONObject" include nil nil [496 526])
+            ("org.apache.thrift.TDeserializer" include nil nil [527 566])
+            ("org.slf4j.Logger" include nil nil [567 591])
+            ("org.slf4j.LoggerFactory" include nil nil [592 623])
+            ("java.io.ByteArrayOutputStream" include nil nil [625 662])
+            ("java.text.SimpleDateFormat" include nil nil [663 697])
+            ("java.util.*" include nil nil [698 717])
+            ("java.util.regex.Matcher" include nil nil [718 749])
+            ("java.util.regex.Pattern" include nil nil [750 781])
+            ("java.util.zip.Inflater" include nil nil [782 812])
+            ("ReportDecoder" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logPattern" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [870 1007])
+                    ("r" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Pattern")
+                        (reparse-symbol class_member_declaration) [1012 1073])
+                    ("log" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1078 1151])
+                    ("deser" variable
+                       (:typemodifiers ("private")
+                        :type "TDeserializer")
+                        (reparse-symbol class_member_declaration) [1156 1184])
+                    ("domobSecurityManager" variable
+                       (:typemodifiers ("private")
+                        :type "DomobSecurityManager")
+                        (reparse-symbol class_member_declaration) [1189 1239])
+                    ("validator" variable
+                       (:typemodifiers ("private")
+                        :type "EventValidator")
+                        (reparse-symbol class_member_declaration) [1244 1277])
+                    ("ReportDecoder" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("conf" variable (:type "Map") (reparse-symbol formal_parameters) [1304 1312]))                          )
+                        (reparse-symbol class_member_declaration) [1283 1615])
+                    ("parseLine" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("line" variable (:type "String") (reparse-symbol formal_parameters) [1771 1782]))                          
+                        :type "AowEvent")
+                        (reparse-symbol class_member_declaration) [1745 3885])
+                    ("isEnventTypeValid" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("etype" variable (:type "String") (reparse-symbol formal_parameters) [3924 3936]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3891 4001])
+                    ("decompress" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("compressedTracker" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [4147 4171]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [4122 4827])
+                    ("parseUrl" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("url" variable (:type "String") (reparse-symbol formal_parameters) [4891 4901])
+                            ("e" variable (:type "AowEvent") (reparse-symbol formal_parameters) [4903 4913]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4867 5952])
+                    ("parseAdEvent" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "String") (reparse-symbol formal_parameters) [6127 6133])
+                            ("" variable (:type "params") (reparse-symbol formal_parameters) [6149 6155])
+                            ("e" variable (:type "AowEvent") (reparse-symbol formal_parameters) [6157 6167]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6095 8152])
+                    ("parseWallEvent" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "String") (reparse-symbol formal_parameters) [8331 8337])
+                            ("" variable (:type "params") (reparse-symbol formal_parameters) [8353 8359])
+                            ("e" variable (:type "AowEvent") (reparse-symbol formal_parameters) [8361 8371]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [8297 9905])
+                    ("initAowTracker" function
+                       (:typemodifiers ("public")
+                        :type "AowTracker")
+                        (reparse-symbol class_member_declaration) [9981 10386])
+                    ("parseTracker" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("tracker" variable (:type "String") (reparse-symbol formal_parameters) [10586 10600]))                          
+                        :type "AowTracker")
+                        (reparse-symbol class_member_declaration) [10555 11004])
+                    ("eventPack" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ipb" variable (:type "String") (reparse-symbol formal_parameters) [11320 11330])
+                            ("ids" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [11332 11341])
+                            ("idv" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [11343 11355])
+                            ("pubPkgName" variable (:type "String") (reparse-symbol formal_parameters) [11357 11374])
+                            ("tracker" variable (:type "String") (reparse-symbol formal_parameters) [11376 11390])
+                            ("e" variable (:type "AowEvent") (reparse-symbol formal_parameters) [11392 11402]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [11295 15865])
+                    ("copyTracker2Event" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("e" variable (:type "AowAdEventReport") (reparse-symbol formal_parameters) [16123 16141])
+                            ("tracker" variable (:type "AowTracker") (reparse-symbol formal_parameters) [16143 16161])
+                            ("ip" variable (:type "String") (reparse-symbol formal_parameters) [16163 16172])
+                            ("time" variable (:type "long") (reparse-symbol formal_parameters) [16174 16183]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [16090 21613])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [21643 21656]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21619 23372]))                  
+                :type "class")
+                nil [837 23375]))          
+      :file "ReportDecoder.java"
+      :pointmax 23376
+      :fsize 24063
+      :lastmodtime '(22801 46655 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "AowDAC.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.utils" package nil nil [1 29])
+            ("AowDAC" type
+               (:typemodifiers ("public")
+                :type "class")
+                nil [116 139]))          
+      :file "AowDAC.java"
+      :pointmax 140
+      :fsize 169
+      :lastmodtime '(22730 22977 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "KafkaSender.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.utils" package nil nil [1 29])
+            ("cn.domob.aow.stat_types2.thrift.AowAdEventReport" include nil nil [31 87])
+            ("cn.domob.aow.stat_types2.thrift.AowEvent" include nil nil [88 136])
+            ("kafka.javaapi.producer.Producer" include nil nil [137 176])
+            ("kafka.producer.KeyedMessage" include nil nil [177 212])
+            ("kafka.producer.ProducerConfig" include nil nil [213 250])
+            ("org.apache.thrift.TSerializer" include nil nil [251 288])
+            ("org.slf4j.Logger" include nil nil [289 313])
+            ("org.slf4j.LoggerFactory" include nil nil [314 345])
+            ("java.util.Map" include nil nil [347 368])
+            ("java.util.Properties" include nil nil [369 397])
+            ("KafkaSender" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("imp_topic" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [497 522])
+                    ("wall_topic" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [527 553])
+                    ("anti_topic" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [558 584])
+                    ("seri" variable
+                       (:typemodifiers ("private")
+                        :type "TSerializer")
+                        (reparse-symbol class_member_declaration) [589 614])
+                    ("log" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [619 690])
+                    ("KafkaSender" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("conf" variable (:type "Map") (reparse-symbol formal_parameters) [715 723]))                          )
+                        (reparse-symbol class_member_declaration) [696 1532])
+                    ("send" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("aowEvents" variable (:type "AowEvent") (reparse-symbol formal_parameters) [1646 1664]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1629 3989])
+                    ("cleanup" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3995 4050]))                  
+                :type "class")
+                nil [427 4052]))          
+      :file "KafkaSender.java"
+      :pointmax 4053
+      :fsize 4084
+      :lastmodtime '(22801 42348 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "LoadBlancer.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.utils" package nil nil [1 29])
+            ("com.google.common.base.Function" include nil nil [32 71])
+            ("com.twitter.common.net.loadbalancing.LeastConnectedStrategy" include nil nil [72 139])
+            ("com.twitter.common.net.loadbalancing.LoadBalancingStrategy" include nil nil [140 206])
+            ("com.twitter.common.net.loadbalancing.MarkDeadStrategyWithHostCheck" include nil nil [207 281])
+            ("com.twitter.common.quantity.Amount" include nil nil [282 324])
+            ("com.twitter.common.quantity.Time" include nil nil [325 365])
+            ("com.twitter.common.stats.Stats" include nil nil [366 404])
+            ("com.twitter.common.stats.StatsProvider" include nil nil [405 451])
+            ("com.twitter.common.util.BackoffDecider" include nil nil [452 498])
+            ("com.twitter.common.util.BackoffStrategy" include nil nil [499 546])
+            ("com.twitter.common.util.TruncatedBinaryBackoff" include nil nil [547 601])
+            ("java.net.InetSocketAddress" include nil nil [603 637])
+            ("LoadBlancer" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("statsProvider" variable
+                       (:typemodifiers ("private")
+                        :type "StatsProvider")
+                        (reparse-symbol class_member_declaration) [711 770])
+                    ("createDefaultLoadBalancingStrategy" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("tolerateFailureRate" variable
+                               (:typemodifiers ("final")
+                                :type "double")
+                                (reparse-symbol formal_parameters) [859 891]))                          )
+                        (reparse-symbol class_member_declaration) [824 2060]))                  
+                :type "class")
+                nil [680 2062]))          
+      :file "LoadBlancer.java"
+      :pointmax 2063
+      :fsize 2062
+      :lastmodtime '(22730 22977 0 0)
+      :unmatched-syntax '((GT 822 . 823) (PUBLIC 776 . 782) (LT 804 . 805)))
+    (semanticdb-table "StringMessageScheme.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.utils" package nil nil [1 29])
+            ("org.apache.storm.spout.Scheme" include nil nil [31 68])
+            ("org.apache.storm.tuple.Fields" include nil nil [69 106])
+            ("org.apache.storm.tuple.Values" include nil nil [107 144])
+            ("java.io.UnsupportedEncodingException" include nil nil [146 190])
+            ("java.nio.ByteBuffer" include nil nil [191 218])
+            ("java.util.List" include nil nil [219 241])
+            ("StringMessageScheme" type
+               (:typemodifiers ("public")
+                :interfaces ("Scheme")
+                :members 
+                  ( ("deserialize" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("ser" variable (:type "ByteBuffer") (reparse-symbol formal_parameters) [365 379]))                          )
+                        (reparse-symbol class_member_declaration) [353 626])
+                    ("getOutputFields" function
+                       (:typemodifiers ("public")
+                        :type "Fields")
+                        (reparse-symbol class_member_declaration) [632 705])
+                    ("getOutputFields" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [741 751]))                          
+                        :type "Fields")
+                        (reparse-symbol class_member_declaration) [711 792]))                  
+                :type "class")
+                nil [261 795]))          
+      :file "StringMessageScheme.java"
+      :pointmax 796
+      :fsize 746
+      :lastmodtime '(22801 42348 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_rp_topology!src!main!java!com!dmaow!aow!utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

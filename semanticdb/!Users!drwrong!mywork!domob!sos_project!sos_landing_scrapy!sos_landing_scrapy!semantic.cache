@@ -1,0 +1,262 @@
+;; Object sos_landing_scrapy/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sos_landing_scrapy/"
+  :tables
+  (list
+    (semanticdb-table "pipelines.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [193 224])
+            ("os" include nil nil [225 234])
+            ("StringIO" include nil nil [235 264])
+            ("uuid" include nil nil [265 287])
+            ("time" include nil nil [288 317])
+            ("datetime" include nil nil [318 347])
+            ("requests" include nil nil [349 364])
+            ("PIL" include nil nil [365 408])
+            ("PIL.ImageFilter" include nil nil [409 455])
+            ("qiniu" include nil nil [457 489])
+            ("django.db" include nil nil [490 526])
+            ("scrapy.exceptions" include nil nil [527 565])
+            ("" code nil nil [605 670])
+            ("BlackListFilterPipeline" type
+               (:superclasses ("object")
+                :members 
+                  ( ("'''
+    处理新闻抓取时的黑名单
+    '''" code nil (reparse-symbol indented_block_body) [716 743])
+                    ("from_crawler" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [782 785])
+                            ("clawler" variable nil (reparse-symbol function_parameters) [787 794]))                          )
+                        (reparse-symbol indented_block_body) [748 904])
+                    ("process_item" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [926 930])
+                            ("item" variable nil (reparse-symbol function_parameters) [932 936])
+                            ("spider" variable nil (reparse-symbol function_parameters) [938 944]))                          )
+                        (reparse-symbol indented_block_body) [909 1179]))                  
+                :type "class")
+                nil [673 1179])
+            ("BackgroudGeneratePipeline" type
+               (:superclasses ("object")
+                :members 
+                  ( ("'''
+    处理生成背景图
+    '''" code nil (reparse-symbol indented_block_body) [1226 1249])
+                    ("process_item" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2410 2414])
+                            ("item" variable nil (reparse-symbol function_parameters) [2416 2420])
+                            ("spider" variable nil (reparse-symbol function_parameters) [2422 2428]))                          )
+                        (reparse-symbol indented_block_body) [2393 2762])
+                    ("fetch_img" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3406 3410])
+                            ("item" variable nil (reparse-symbol function_parameters) [3412 3416]))                          )
+                        (reparse-symbol indented_block_body) [3392 3960])
+                    ("upload_img" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3980 3984])
+                            ("img" variable nil (reparse-symbol function_parameters) [3986 3989]))                          )
+                        (reparse-symbol indented_block_body) [3965 4441])
+                    ("backgroudv2_generate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4471 4475])
+                            ("item" variable nil (reparse-symbol function_parameters) [4477 4481]))                          )
+                        (reparse-symbol indented_block_body) [4446 5746])
+                    ("basic_generate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5770 5774])
+                            ("item" variable nil (reparse-symbol function_parameters) [5776 5780])
+                            ("logoname" variable nil (reparse-symbol function_parameters) [5782 5790]))                          )
+                        (reparse-symbol indented_block_body) [5751 6406]))                  
+                :type "class")
+                nil [1181 6406])
+            ("DbRecordPipeline" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [5159 5182])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5209 5274]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6458 6462])
+                            ("args" variable nil (reparse-symbol function_parameters) [6464 6469])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [6471 6479]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [6445 6606])
+                    ("init_categorymap" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6632 6636]))                          )
+                        (reparse-symbol indented_block_body) [6611 6795])
+                    ("get_offer_endtime" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6822 6826])
+                            ("item" variable nil (reparse-symbol function_parameters) [6828 6832]))                          )
+                        (reparse-symbol indented_block_body) [6800 7110])
+                    ("process_item" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7132 7136])
+                            ("item" variable nil (reparse-symbol function_parameters) [7138 7142])
+                            ("spider" variable nil (reparse-symbol function_parameters) [7144 7150]))                          )
+                        (reparse-symbol indented_block_body) [7115 8466]))                  
+                :type "class")
+                nil [6408 8466]))          
+      :file "pipelines.py"
+      :pointmax 8466
+      :fsize 8623
+      :lastmodtime '(22315 2877 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "items.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("scrapy" include nil nil [153 166])
+            ("LandingScrapyItem" type
+               (:superclasses ("scrapy.Item")
+                :members 
+                  ( ("title" variable nil (reparse-symbol indented_block_body) [288 310])
+                    ("link" variable nil (reparse-symbol indented_block_body) [315 336])
+                    ("uniq_id" variable nil (reparse-symbol indented_block_body) [341 365])
+                    ("content_source" variable nil (reparse-symbol indented_block_body) [370 401])
+                    ("background_image" variable nil (reparse-symbol indented_block_body) [406 439])
+                    ("background_image_v2" variable nil (reparse-symbol indented_block_body) [444 480])
+                    ("target_gender" variable nil (reparse-symbol indented_block_body) [526 556]))                  
+                :type "class")
+                nil [169 557]))          
+      :file "items.py"
+      :pointmax 557
+      :fsize 556
+      :lastmodtime '(22314 57371 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.db" include nil nil [26 54])
+            ("AdStrategy" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("user_gender_target" variable nil (reparse-symbol indented_block_body) [93 144])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [170 185])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [194 218]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [150 219]))                  
+                :type "class")
+                nil [57 219])
+            ("PackageCategory" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("category_name" variable nil (reparse-symbol indented_block_body) [262 309])
+                    ("type" variable nil (reparse-symbol indented_block_body) [314 342])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [368 383])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [392 421]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [348 422]))                  
+                :type "class")
+                nil [221 422])
+            ("AdLanding" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("appid" variable nil (reparse-symbol indented_block_body) [459 511])
+                    ("name" variable nil (reparse-symbol indented_block_body) [559 597])
+                    ("category_id" variable nil (reparse-symbol indented_block_body) [602 637])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [663 678])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [687 710]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [643 711]))                  
+                :type "class")
+                nil [424 711])
+            ("AdPlan" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [745 783])
+                    ("paused" variable nil (reparse-symbol indented_block_body) [788 831])
+                    ("starttime" variable nil (reparse-symbol indented_block_body) [836 878])
+                    ("endtime" variable nil (reparse-symbol indented_block_body) [883 923])
+                    ("createtime" variable nil (reparse-symbol indented_block_body) [928 962])
+                    ("lastupdate" variable nil (reparse-symbol indented_block_body) [967 1001])
+                    ("offer_type" variable nil (reparse-symbol indented_block_body) [1006 1049])
+                    ("landing_id" variable nil (reparse-symbol indented_block_body) [1054 1097])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [1123 1138])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [1147 1167]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1103 1168]))                  
+                :type "class")
+                nil [713 1168])
+            ("AdStrategy" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("user_gender_target" variable nil (reparse-symbol indented_block_body) [1206 1257])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [1283 1298])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [1307 1331]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1263 1332]))                  
+                :type "class")
+                nil [1170 1332])
+            ("AdCreative" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [1370 1408])
+                    ("pid" variable nil (reparse-symbol indented_block_body) [1413 1463])
+                    ("sid" variable nil (reparse-symbol indented_block_body) [1468 1504])
+                    ("brief_descrip" variable nil (reparse-symbol indented_block_body) [1509 1557])
+                    ("weight" variable nil (reparse-symbol indented_block_body) [1562 1601])
+                    ("background" variable nil (reparse-symbol indented_block_body) [1606 1651])
+                    ("life_cycle" variable nil (reparse-symbol indented_block_body) [1656 1701])
+                    ("background_v2" variable nil (reparse-symbol indented_block_body) [1706 1754])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [1780 1795])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [1804 1828]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1760 1829]))                  
+                :type "class")
+                nil [1334 1829])
+            ("AdAction" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("cid" variable nil (reparse-symbol indented_block_body) [1865 1892])
+                    ("action" variable nil (reparse-symbol indented_block_body) [1897 1927])
+                    ("rate" variable nil (reparse-symbol indented_block_body) [1932 1960])
+                    ("description" variable nil (reparse-symbol indented_block_body) [1965 2010])
+                    ("start_time_interval" variable nil (reparse-symbol indented_block_body) [2015 2058])
+                    ("stay_time_interval" variable nil (reparse-symbol indented_block_body) [2063 2105])
+                    ("button_text" variable nil (reparse-symbol indented_block_body) [2110 2155])
+                    ("Meta" type
+                       (:members 
+                          ( ("managed" variable nil (reparse-symbol indented_block_body) [2181 2196])
+                            ("db_table" variable nil (reparse-symbol indented_block_body) [2205 2227]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [2161 2228]))                  
+                :type "class")
+                nil [1831 2228]))          
+      :file "models.py"
+      :pointmax 2228
+      :fsize 2227
+      :lastmodtime '(22315 611 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_landing_scrapy!sos_landing_scrapy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

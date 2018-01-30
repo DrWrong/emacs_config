@@ -1,0 +1,71 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "user_quality_calcultor.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+@Author Wuyingchuan <Wuyingchuan@domob.cn>
+统计用户和媒体的状态并入库
+\"\"\"" code nil nil [51 115])
+            ("argparse" include nil nil [116 131])
+            ("os" include nil nil [132 141])
+            ("sys" include nil nil [142 152])
+            ("time" include nil nil [153 164])
+            ("datetime" include nil nil [165 180])
+            ("logging" include nil nil [181 195])
+            ("BASE_DIR" variable nil nil [197 260])
+            ("sys" code nil nil [261 295])
+            ("if" code nil nil [297 1388]))          
+      :file "user_quality_calcultor.py"
+      :pointmax 1388
+      :fsize 1427
+      :lastmodtime '(22701 13992 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "media_quality_report.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+@Author Wuyingchuan <Wuyingchuan@domob.cn>
+媒体质量天级报表
+\"\"\"" code nil nil [51 110])
+            ("argparse" include nil nil [111 126])
+            ("os" include nil nil [127 136])
+            ("sys" include nil nil [137 147])
+            ("time" include nil nil [148 159])
+            ("datetime" include nil nil [160 175])
+            ("logging" include nil nil [176 190])
+            ("BASE_DIR" variable nil nil [193 256])
+            ("sys" code nil nil [257 291])
+            ("if" code nil nil [293 1367]))          
+      :file "media_quality_report.py"
+      :pointmax 1367
+      :fsize 1396
+      :lastmodtime '(22701 13992 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "media_quality_calculator.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+@Author Wuyingchuan <Wuyingchuan@domob.cn>
+统计媒体的状态并入库
+\"\"\"" code nil nil [51 112])
+            ("argparse" include nil nil [159 174])
+            ("os" include nil nil [175 184])
+            ("sys" include nil nil [185 195])
+            ("time" include nil nil [196 207])
+            ("datetime" include nil nil [208 223])
+            ("logging" include nil nil [224 238])
+            ("BASE_DIR" variable nil nil [241 304])
+            ("sys" code nil nil [305 339])
+            ("if" code nil nil [341 1976]))          
+      :file "media_quality_calculator.py"
+      :pointmax 1976
+      :fsize 2159
+      :lastmodtime '(22701 13992 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_media_quality_report!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

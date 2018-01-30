@@ -1,0 +1,54 @@
+;; Object py_test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "py_test/"
+  :tables
+  (list
+    (semanticdb-table "a.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("hide" function (:arguments 
+              ( ("iterable" variable nil (reparse-symbol function_parameters) [35 43]))              ) nil [26 85])
+            ("windows" function (:arguments 
+              ( ("iterable" variable nil (reparse-symbol function_parameters) [99 107])
+                ("n" variable nil (reparse-symbol function_parameters) [109 110])
+                ("m" variable nil (reparse-symbol function_parameters) [112 113]))              ) nil [87 633])
+            ("data" variable nil nil [708 749])
+            ("v1" variable nil nil [751 766])
+            ("print" code nil nil [768 797])
+            ("v2" variable nil nil [799 814])
+            ("print" code nil nil [815 844])
+            ("print" code nil nil [845 868])
+            ("a" variable nil nil [871 922])
+            ("print" code nil nil [923 931]))          
+      :file "a.py"
+      :pointmax 932
+      :fsize 931
+      :lastmodtime '(22682 40984 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("VERSRION" code nil nil [3 11]))          
+      :file "test.py"
+      :pointmax 12
+      :fsize 11
+      :lastmodtime '(22214 43864 0 0)
+      :unmatched-syntax '((DIV 2 . 3) (PERIOD 1 . 2)))
+    (semanticdb-table "merge.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("insert_ele" function (:arguments 
+              ( ("sorted_list" variable nil (reparse-symbol function_parameters) [41 52])
+                ("ele" variable nil (reparse-symbol function_parameters) [54 57]))              ) nil [26 317])
+            ("merge" function (:arguments 
+              ( ("l1" variable nil (reparse-symbol function_parameters) [329 331])
+                ("l2" variable nil (reparse-symbol function_parameters) [333 335]))              ) nil [319 443])
+            ("a" variable nil nil [445 504]))          
+      :file "merge.py"
+      :pointmax 514
+      :fsize 513
+      :lastmodtime '(22688 12293 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!py_test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

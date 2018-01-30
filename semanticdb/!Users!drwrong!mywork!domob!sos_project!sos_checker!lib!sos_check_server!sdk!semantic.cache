@@ -1,0 +1,148 @@
+;; Object sdk/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sdk/"
+  :tables
+  (list
+    (semanticdb-table "ofsdk.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+
+@author:
+    chengyuhang < chengyuhang@dombo.cn >
+
+
+@function:
+    of兑换SDK接口
+'''" code nil nil [24 109])
+            ("requests" include nil nil [111 126])
+            ("xml2dict.encoder" include nil nil [127 164])
+            ("md5" include nil nil [165 175])
+            ("datetime" include nil nil [176 205])
+            ("logging" include nil nil [206 220])
+            ("domob_thrift.sos.checkserver_types.ttypes" include nil nil [221 284])
+            ("OFCharger" type
+               (:superclasses ("object")
+                :members 
+                  ( ("OFPAY_ERRORS" variable nil (reparse-symbol indented_block_body) [330 554])
+                    ("onlinechargeurl" variable nil (reparse-symbol indented_block_body) [560 616])
+                    ("getcardurl" variable nil (reparse-symbol indented_block_body) [621 666])
+                    ("__init__" function
+                       (:suite 
+                          ( ("'''
+            初始化函数
+        '''" code nil (reparse-symbol indented_block_body) [767 800])
+                            ("self" variable nil (reparse-symbol indented_block_body) [809 832])
+                            ("self" variable nil (reparse-symbol indented_block_body) [841 866])
+                            ("self" variable nil (reparse-symbol indented_block_body) [875 903])
+                            ("self" variable nil (reparse-symbol indented_block_body) [912 932])
+                            ("self" variable nil (reparse-symbol indented_block_body) [941 968])
+                            ("self" variable nil (reparse-symbol indented_block_body) [977 994])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1003 1027])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1036 1095])
+                            ("if" code nil (reparse-symbol indented_block_body) [1104 1170])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1178 1198])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1208 1516]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [685 689])
+                            ("of_userid" variable nil (reparse-symbol function_parameters) [691 700])
+                            ("of_userpws" variable nil (reparse-symbol function_parameters) [702 712])
+                            ("debug_mode" variable nil (reparse-symbol function_parameters) [714 724])
+                            ("of_key" variable nil (reparse-symbol function_parameters) [726 732])
+                            ("of_returl" variable nil (reparse-symbol function_parameters) [734 743])
+                            ("logger" variable nil (reparse-symbol function_parameters) [745 751]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [672 1517])
+                    ("do_charge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1536 1540])
+                            ("ctype" variable nil (reparse-symbol function_parameters) [1542 1547])
+                            ("account" variable nil (reparse-symbol function_parameters) [1549 1556])
+                            ("num" variable nil (reparse-symbol function_parameters) [1558 1561])
+                            ("sporder_id" variable nil (reparse-symbol function_parameters) [1563 1573])
+                            ("cardid" variable nil (reparse-symbol function_parameters) [1575 1581]))                          )
+                        (reparse-symbol indented_block_body) [1522 1705])
+                    ("accountinfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1795 1799]))                          )
+                        (reparse-symbol indented_block_body) [1779 2110])
+                    ("querystatus" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2131 2135])
+                            ("sporder_id" variable nil (reparse-symbol function_parameters) [2137 2147]))                          )
+                        (reparse-symbol indented_block_body) [2115 2736])
+                    ("__chargedict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2836 2840])
+                            ("account" variable nil (reparse-symbol function_parameters) [2842 2849])
+                            ("num" variable nil (reparse-symbol function_parameters) [2851 2854])
+                            ("sporder_id" variable nil (reparse-symbol function_parameters) [2856 2866])
+                            ("cardid" variable nil (reparse-symbol function_parameters) [2868 2874]))                          )
+                        (reparse-symbol indented_block_body) [2819 3896])
+                    ("makerequest" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3917 3921])
+                            ("url" variable nil (reparse-symbol function_parameters) [3923 3926])
+                            ("requestdict" variable nil (reparse-symbol function_parameters) [3928 3939]))                          )
+                        (reparse-symbol indented_block_body) [3901 4629])
+                    ("chargePhone" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4650 4654])
+                            ("account" variable nil (reparse-symbol function_parameters) [4656 4663])
+                            ("num" variable nil (reparse-symbol function_parameters) [4665 4668])
+                            ("sporder_id" variable nil (reparse-symbol function_parameters) [4670 4680])
+                            ("cardid" variable nil (reparse-symbol function_parameters) [4682 4688]))                          
+                        :documentation "
+            话费充值
+        ")
+                        (reparse-symbol indented_block_body) [4634 4873])
+                    ("chargeAlipay" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4895 4899])
+                            ("account" variable nil (reparse-symbol function_parameters) [4901 4908])
+                            ("num" variable nil (reparse-symbol function_parameters) [4910 4913])
+                            ("sporder_id" variable nil (reparse-symbol function_parameters) [4915 4925])
+                            ("cardid" variable nil (reparse-symbol function_parameters) [4927 4933]))                          )
+                        (reparse-symbol indented_block_body) [4878 5122])
+                    ("chargeQQ" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5140 5144])
+                            ("account" variable nil (reparse-symbol function_parameters) [5146 5153])
+                            ("num" variable nil (reparse-symbol function_parameters) [5155 5158])
+                            ("sporder_id" variable nil (reparse-symbol function_parameters) [5160 5170])
+                            ("cardid" variable nil (reparse-symbol function_parameters) [5172 5178]))                          )
+                        (reparse-symbol indented_block_body) [5127 5247])
+                    ("chargeCard" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5267 5271])
+                            ("account" variable nil (reparse-symbol function_parameters) [5273 5280])
+                            ("num" variable nil (reparse-symbol function_parameters) [5282 5285])
+                            ("sporder_id" variable nil (reparse-symbol function_parameters) [5287 5297])
+                            ("cardid" variable nil (reparse-symbol function_parameters) [5299 5305]))                          )
+                        (reparse-symbol indented_block_body) [5252 6133])
+                    ("__md5sum" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6151 6155])
+                            ("str" variable nil (reparse-symbol function_parameters) [6157 6160]))                          )
+                        (reparse-symbol indented_block_body) [6138 6211]))                  
+                :type "class")
+                nil [287 6211]))          
+      :file "ofsdk.py"
+      :pointmax 6211
+      :fsize 6374
+      :lastmodtime '(22267 17897 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_checker!lib!sos_check_server!sdk!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1026 @@
+;; Object transport/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "transport/"
+  :tables
+  (list
+    (semanticdb-table "TSocket.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("errno" include nil nil [787 799])
+            ("os" include nil nil [800 809])
+            ("socket" include nil nil [810 823])
+            ("sys" include nil nil [824 834])
+            ("TTransport" include nil nil [836 860])
+            ("TSocketBase" type
+               (:superclasses ("TTransportBase")
+                :members 
+                  ( ("_resolveAddr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [920 924]))                          )
+                        (reparse-symbol indented_block_body) [903 1429])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1444 1448]))                          )
+                        (reparse-symbol indented_block_body) [1434 1538]))                  
+                :type "class")
+                nil [863 1538])
+            ("TSocket" type
+               (:documentation "Socket implementation of TTransport base."
+                :superclasses ("TSocketBase")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"Initialize a TSocket
+
+        @param host(str)  The host to connect to.
+        @param port(int)  The (TCP) port to connect to.
+        @param unix_socket(str)  The filename of a unix socket to connect to.
+                                 (host and port will be ignored.)
+        @param socket_family(int)  The socket family to use with this socket.
+        \"\"\"" code nil (reparse-symbol indented_block_body) [1732 2096])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2105 2121])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2130 2146])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2155 2173])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2182 2213])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2222 2242])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2251 2286]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1638 1642])
+                            ("host" variable nil (reparse-symbol function_parameters) [1644 1648])
+                            ("port" variable nil (reparse-symbol function_parameters) [1662 1666])
+                            ("unix_socket" variable nil (reparse-symbol function_parameters) [1673 1684])
+                            ("socket_family" variable nil (reparse-symbol function_parameters) [1691 1704]))                          
+                        :documentation "Initialize a TSocket
+
+        @param host(str)  The host to connect to.
+        @param port(int)  The (TCP) port to connect to.
+        @param unix_socket(str)  The filename of a unix socket to connect to.
+                                 (host and port will be ignored.)
+        @param socket_family(int)  The socket family to use with this socket.
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1625 2287])
+                    ("setHandle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2306 2310])
+                            ("h" variable nil (reparse-symbol function_parameters) [2312 2313]))                          )
+                        (reparse-symbol indented_block_body) [2292 2340])
+                    ("isOpen" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2356 2360]))                          )
+                        (reparse-symbol indented_block_body) [2345 2402])
+                    ("setTimeout" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2422 2426])
+                            ("ms" variable nil (reparse-symbol function_parameters) [2428 2430]))                          )
+                        (reparse-symbol indented_block_body) [2407 2630])
+                    ("open" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2644 2648]))                          )
+                        (reparse-symbol indented_block_body) [2635 3483])
+                    ("read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3497 3501])
+                            ("sz" variable nil (reparse-symbol function_parameters) [3503 3505]))                          )
+                        (reparse-symbol indented_block_body) [3488 4366])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4381 4385])
+                            ("buff" variable nil (reparse-symbol function_parameters) [4387 4391]))                          )
+                        (reparse-symbol indented_block_body) [4371 4910])
+                    ("flush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4925 4929]))                          )
+                        (reparse-symbol indented_block_body) [4915 4945]))                  
+                :type "class")
+                nil [1540 4945])
+            ("TServerSocket" type
+               (:documentation "Socket implementation of TServerTransport base."
+                :superclasses ("TSocketBase" "TServerTransportBase")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [5166 5182])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5191 5207])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5216 5247])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5256 5291])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5300 5318]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5079 5083])
+                            ("host" variable nil (reparse-symbol function_parameters) [5085 5089])
+                            ("port" variable nil (reparse-symbol function_parameters) [5096 5100])
+                            ("unix_socket" variable nil (reparse-symbol function_parameters) [5107 5118])
+                            ("socket_family" variable nil (reparse-symbol function_parameters) [5125 5138]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5066 5319])
+                    ("listen" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5335 5339]))                          )
+                        (reparse-symbol indented_block_body) [5324 6286])
+                    ("accept" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6302 6306]))                          )
+                        (reparse-symbol indented_block_body) [6291 6435]))                  
+                :type "class")
+                nil [4947 6435]))          
+      :file "TSocket.py"
+      :pointmax 6435
+      :fsize 5726
+      :lastmodtime '(21593 33383 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "TTransport.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("cStringIO" include nil nil [787 817])
+            ("struct" include nil nil [818 849])
+            ("thrift.Thrift" include nil nil [850 886])
+            ("TTransportException" type
+               (:documentation "Custom Transport Exception class"
+                :superclasses ("TException")
+                :members 
+                  ( ("UNKNOWN" variable nil (reparse-symbol indented_block_body) [972 983])
+                    ("NOT_OPEN" variable nil (reparse-symbol indented_block_body) [986 998])
+                    ("ALREADY_OPEN" variable nil (reparse-symbol indented_block_body) [1001 1017])
+                    ("TIMED_OUT" variable nil (reparse-symbol indented_block_body) [1020 1033])
+                    ("END_OF_FILE" variable nil (reparse-symbol indented_block_body) [1036 1051])
+                    ("__init__" function
+                       (:suite 
+                          ( ("TException" code nil (reparse-symbol indented_block_body) [1107 1141])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1146 1162]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1068 1072])
+                            ("type" variable nil (reparse-symbol function_parameters) [1074 1078])
+                            ("message" variable nil (reparse-symbol function_parameters) [1088 1095]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1055 1163]))                  
+                :type "class")
+                nil [889 1163])
+            ("TTransportBase" type
+               (:documentation "Base class for Thrift transport layer."
+                :members 
+                  ( ("isOpen" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1248 1252]))                          )
+                        (reparse-symbol indented_block_body) [1237 1264])
+                    ("open" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1276 1280]))                          )
+                        (reparse-symbol indented_block_body) [1267 1292])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1305 1309]))                          )
+                        (reparse-symbol indented_block_body) [1295 1321])
+                    ("read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1333 1337])
+                            ("sz" variable nil (reparse-symbol function_parameters) [1339 1341]))                          )
+                        (reparse-symbol indented_block_body) [1324 1353])
+                    ("readAll" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1368 1372])
+                            ("sz" variable nil (reparse-symbol function_parameters) [1374 1376]))                          )
+                        (reparse-symbol indented_block_body) [1356 1578])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1591 1595])
+                            ("buf" variable nil (reparse-symbol function_parameters) [1597 1600]))                          )
+                        (reparse-symbol indented_block_body) [1581 1612])
+                    ("flush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1625 1629]))                          )
+                        (reparse-symbol indented_block_body) [1615 1641]))                  
+                :type "class")
+                nil [1165 1641])
+            ("CReadableTransport" type
+               (:documentation "base class for transports that are readable from C"
+                :members 
+                  ( ("cstringio_buf" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2100 2104]))                          
+                        :documentation "A cStringIO buffer that contains the current chunk we are reading.")
+                        (reparse-symbol indented_block_body) [2070 2193])
+                    ("cstringio_refill" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2217 2221])
+                            ("partialread" variable nil (reparse-symbol function_parameters) [2223 2234])
+                            ("reqlen" variable nil (reparse-symbol function_parameters) [2236 2242]))                          
+                        :documentation "Refills cstringio_buf.
+
+    Returns the currently used buffer (which can but need not be the same as
+    the old cstringio_buf). partialread is what the C code has read from the
+    buffer, and should be inserted into the buffer before any more reads.  The
+    return value must be a new, not borrowed reference.  Something along the
+    lines of self._buf should be fine.
+
+    If reqlen bytes can't be read, throw EOFError.
+    ")
+                        (reparse-symbol indented_block_body) [2196 2694]))                  
+                :type "class")
+                nil [1694 2694])
+            ("TServerTransportBase" type
+               (:documentation "Base class for Thrift server transports."
+                :members 
+                  ( ("listen" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2787 2791]))                          )
+                        (reparse-symbol indented_block_body) [2776 2803])
+                    ("accept" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2817 2821]))                          )
+                        (reparse-symbol indented_block_body) [2806 2833])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2846 2850]))                          )
+                        (reparse-symbol indented_block_body) [2836 2862]))                  
+                :type "class")
+                nil [2696 2862])
+            ("TTransportFactoryBase" type
+               (:documentation "Base class for a Transport Factory"
+                :members 
+                  ( ("getTransport" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2956 2960])
+                            ("trans" variable nil (reparse-symbol function_parameters) [2962 2967]))                          )
+                        (reparse-symbol indented_block_body) [2939 2987]))                  
+                :type "class")
+                nil [2864 2987])
+            ("TBufferedTransportFactory" type
+               (:documentation "Factory transport that builds buffered transports"
+                :members 
+                  ( ("getTransport" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3100 3104])
+                            ("trans" variable nil (reparse-symbol function_parameters) [3106 3111]))                          )
+                        (reparse-symbol indented_block_body) [3083 3175]))                  
+                :type "class")
+                nil [2989 3175])
+            ("TBufferedTransport" type
+               (:documentation "Class that wraps another transport and buffers its I/O.
+
+  The implementation uses a (configurable) fixed-size read buffer
+  but buffers all writes until a flush is performed.
+  "
+                :superclasses ("TTransportBase" "CReadableTransport")
+                :members 
+                  ( ("DEFAULT_BUFFER" variable nil (reparse-symbol indented_block_body) [3428 3449])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [3510 3530])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3535 3559])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3564 3590])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3595 3623]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3466 3470])
+                            ("trans" variable nil (reparse-symbol function_parameters) [3472 3477])
+                            ("rbuf_size" variable nil (reparse-symbol function_parameters) [3479 3488]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3453 3624])
+                    ("isOpen" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3638 3642]))                          )
+                        (reparse-symbol indented_block_body) [3627 3678])
+                    ("open" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3690 3694]))                          )
+                        (reparse-symbol indented_block_body) [3681 3728])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3741 3745]))                          )
+                        (reparse-symbol indented_block_body) [3731 3780])
+                    ("read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3792 3796])
+                            ("sz" variable nil (reparse-symbol function_parameters) [3798 3800]))                          )
+                        (reparse-symbol indented_block_body) [3783 3979])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3992 3996])
+                            ("buf" variable nil (reparse-symbol function_parameters) [3998 4001]))                          )
+                        (reparse-symbol indented_block_body) [3982 4031])
+                    ("flush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4044 4048]))                          )
+                        (reparse-symbol indented_block_body) [4034 4242])
+                    ("cstringio_buf" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4323 4327]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [4293 4353])
+                    ("cstringio_refill" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4377 4381])
+                            ("partialread" variable nil (reparse-symbol function_parameters) [4383 4394])
+                            ("reqlen" variable nil (reparse-symbol function_parameters) [4396 4402]))                          )
+                        (reparse-symbol indented_block_body) [4356 4776]))                  
+                :type "class")
+                nil [3177 4776])
+            ("TMemoryBuffer" type
+               (:documentation "Wraps a cStringIO object as a TTransport.
+
+  NOTE: Unlike the C++ version of this class, you cannot write to it
+        then immediately read from it.  If you want to read from a
+        TMemoryBuffer, you must either pass a string to the constructor.
+  TODO(dreiss): Make this work like the C++ version.
+  "
+                :superclasses ("TTransportBase" "CReadableTransport")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"value -- a value to read from for stringio
+
+    If value is set, this will be a transport for reading,
+    otherwise, it is for writing\"\"\"" code nil (reparse-symbol indented_block_body) [5190 5331])
+                            ("if" code nil (reparse-symbol indented_block_body) [5336 5437]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5167 5171])
+                            ("value" variable nil (reparse-symbol function_parameters) [5173 5178]))                          
+                        :documentation "value -- a value to read from for stringio
+
+    If value is set, this will be a transport for reading,
+    otherwise, it is for writing"
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5154 5437])
+                    ("isOpen" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5451 5455]))                          )
+                        (reparse-symbol indented_block_body) [5440 5493])
+                    ("open" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5505 5509]))                          )
+                        (reparse-symbol indented_block_body) [5496 5521])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5534 5538]))                          )
+                        (reparse-symbol indented_block_body) [5524 5566])
+                    ("read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5578 5582])
+                            ("sz" variable nil (reparse-symbol function_parameters) [5584 5586]))                          )
+                        (reparse-symbol indented_block_body) [5569 5622])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5635 5639])
+                            ("buf" variable nil (reparse-symbol function_parameters) [5641 5644]))                          )
+                        (reparse-symbol indented_block_body) [5625 5675])
+                    ("flush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5688 5692]))                          )
+                        (reparse-symbol indented_block_body) [5678 5704])
+                    ("getvalue" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5720 5724]))                          )
+                        (reparse-symbol indented_block_body) [5707 5762])
+                    ("cstringio_buf" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5843 5847]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5813 5874])
+                    ("cstringio_refill" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5898 5902])
+                            ("partialread" variable nil (reparse-symbol function_parameters) [5904 5915])
+                            ("reqlen" variable nil (reparse-symbol function_parameters) [5917 5923]))                          )
+                        (reparse-symbol indented_block_body) [5877 5981]))                  
+                :type "class")
+                nil [4778 5981])
+            ("TFramedTransportFactory" type
+               (:documentation "Factory transport that builds framed transports"
+                :members 
+                  ( ("getTransport" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6090 6094])
+                            ("trans" variable nil (reparse-symbol function_parameters) [6096 6101]))                          )
+                        (reparse-symbol indented_block_body) [6073 6159]))                  
+                :type "class")
+                nil [5983 6159])
+            ("TFramedTransport" type
+               (:documentation "Class that wraps another transport and frames its I/O when writing."
+                :superclasses ("TTransportBase" "CReadableTransport")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [6332 6352])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6357 6381])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6386 6410]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6313 6317])
+                            ("trans" variable nil (reparse-symbol function_parameters) [6319 6324]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [6300 6411])
+                    ("isOpen" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6425 6429]))                          )
+                        (reparse-symbol indented_block_body) [6414 6465])
+                    ("open" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6477 6481]))                          )
+                        (reparse-symbol indented_block_body) [6468 6515])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6528 6532]))                          )
+                        (reparse-symbol indented_block_body) [6518 6567])
+                    ("read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6579 6583])
+                            ("sz" variable nil (reparse-symbol function_parameters) [6585 6587]))                          )
+                        (reparse-symbol indented_block_body) [6570 6714])
+                    ("readFrame" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6731 6735]))                          )
+                        (reparse-symbol indented_block_body) [6717 6855])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6868 6872])
+                            ("buf" variable nil (reparse-symbol function_parameters) [6874 6877]))                          )
+                        (reparse-symbol indented_block_body) [6858 6907])
+                    ("flush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6920 6924]))                          )
+                        (reparse-symbol indented_block_body) [6910 7469])
+                    ("cstringio_buf" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7550 7554]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [7520 7580])
+                    ("cstringio_refill" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7604 7608])
+                            ("prefix" variable nil (reparse-symbol function_parameters) [7610 7616])
+                            ("reqlen" variable nil (reparse-symbol function_parameters) [7618 7624]))                          )
+                        (reparse-symbol indented_block_body) [7583 7973]))                  
+                :type "class")
+                nil [6161 7973])
+            ("TFileObjectTransport" type
+               (:documentation "Wraps a file-like object to make it work as a Thrift transport."
+                :superclasses ("TTransportBase")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [8127 8149]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8107 8111])
+                            ("fileobj" variable nil (reparse-symbol function_parameters) [8113 8120]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [8094 8150])
+                    ("isOpen" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8164 8168]))                          )
+                        (reparse-symbol indented_block_body) [8153 8187])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8200 8204]))                          )
+                        (reparse-symbol indented_block_body) [8190 8232])
+                    ("read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8244 8248])
+                            ("sz" variable nil (reparse-symbol function_parameters) [8250 8252]))                          )
+                        (reparse-symbol indented_block_body) [8235 8288])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8301 8305])
+                            ("buf" variable nil (reparse-symbol function_parameters) [8307 8310]))                          )
+                        (reparse-symbol indented_block_body) [8291 8341])
+                    ("flush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8354 8358]))                          )
+                        (reparse-symbol indented_block_body) [8344 8386]))                  
+                :type "class")
+                nil [7975 8386])
+            ("TSaslClientTransport" type
+               (:documentation "
+  SASL transport 
+  "
+                :superclasses ("TTransportBase" "CReadableTransport")
+                :members 
+                  ( ("START" variable nil (reparse-symbol indented_block_body) [8485 8494])
+                    ("OK" variable nil (reparse-symbol indented_block_body) [8497 8503])
+                    ("BAD" variable nil (reparse-symbol indented_block_body) [8506 8513])
+                    ("ERROR" variable nil (reparse-symbol indented_block_body) [8516 8525])
+                    ("COMPLETE" variable nil (reparse-symbol indented_block_body) [8528 8540])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+    transport: an underlying transport to use, typically just a TSocket
+    host: the name of the server, from a SASL perspective
+    service: the name of the server's service, from a SASL perspective
+    mechanism: the name of the preferred mechanism to use
+
+    All other kwargs will be passed to the puresasl.client.SASLClient
+    constructor.
+    \"\"\"" code nil (reparse-symbol indented_block_body) [8635 8993])
+                            ("puresasl.client" include nil (reparse-symbol indented_block_body) [8999 9037])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9043 9069])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9074 9137])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9143 9167])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9172 9196]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8557 8561])
+                            ("transport" variable nil (reparse-symbol function_parameters) [8563 8572])
+                            ("host" variable nil (reparse-symbol function_parameters) [8574 8578])
+                            ("service" variable nil (reparse-symbol function_parameters) [8580 8587])
+                            ("mechanism" variable nil (reparse-symbol function_parameters) [8589 8598])
+                            ("sasl_kwargs" variable nil (reparse-symbol function_parameters) [8615 8628]))                          
+                        :documentation "
+    transport: an underlying transport to use, typically just a TSocket
+    host: the name of the server, from a SASL perspective
+    service: the name of the server's service, from a SASL perspective
+    mechanism: the name of the preferred mechanism to use
+
+    All other kwargs will be passed to the puresasl.client.SASLClient
+    constructor.
+    "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [8544 9197])
+                    ("open" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9209 9213]))                          )
+                        (reparse-symbol indented_block_body) [9200 9893])
+                    ("send_sasl_msg" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9914 9918])
+                            ("status" variable nil (reparse-symbol function_parameters) [9920 9926])
+                            ("body" variable nil (reparse-symbol function_parameters) [9928 9932]))                          )
+                        (reparse-symbol indented_block_body) [9896 10046])
+                    ("recv_sasl_msg" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10067 10071]))                          )
+                        (reparse-symbol indented_block_body) [10049 10278])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10291 10295])
+                            ("data" variable nil (reparse-symbol function_parameters) [10297 10301]))                          )
+                        (reparse-symbol indented_block_body) [10281 10332])
+                    ("flush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10345 10349]))                          )
+                        (reparse-symbol indented_block_body) [10335 10548])
+                    ("read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10560 10564])
+                            ("sz" variable nil (reparse-symbol function_parameters) [10566 10568]))                          )
+                        (reparse-symbol indented_block_body) [10551 10697])
+                    ("_read_frame" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10716 10720]))                          )
+                        (reparse-symbol indented_block_body) [10700 10896])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10909 10913]))                          )
+                        (reparse-symbol indented_block_body) [10899 10967])
+                    ("cstringio_buf" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11030 11034]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [11000 11060])
+                    ("cstringio_refill" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11084 11088])
+                            ("prefix" variable nil (reparse-symbol function_parameters) [11090 11096])
+                            ("reqlen" variable nil (reparse-symbol function_parameters) [11098 11104]))                          )
+                        (reparse-symbol indented_block_body) [11063 11455]))                  
+                :type "class")
+                nil [8388 11455]))          
+      :file "TTransport.py"
+      :pointmax 11456
+      :fsize 11455
+      :lastmodtime '(21593 33383 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__all__" variable nil nil [787 855]))          
+      :file "__init__.py"
+      :pointmax 856
+      :fsize 855
+      :lastmodtime '(21593 33383 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "TTwisted.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("struct" include nil nil [787 800])
+            ("cStringIO" include nil nil [801 831])
+            ("zope.interface" include nil nil [833 892])
+            ("twisted.internet.protocol" include nil nil [893 981])
+            ("twisted.internet" include nil nil [982 1016])
+            ("twisted.internet.threads" include nil nil [1017 1067])
+            ("twisted.protocols" include nil nil [1068 1103])
+            ("twisted.web" include nil nil [1104 1150])
+            ("thrift.transport" include nil nil [1152 1191])
+            ("TMessageSenderTransport" type
+               (:superclasses ("TTransport.TTransportBase")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1285 1309]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1270 1274]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1257 1310])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1325 1329])
+                            ("buf" variable nil (reparse-symbol function_parameters) [1331 1334]))                          )
+                        (reparse-symbol indented_block_body) [1315 1368])
+                    ("flush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1383 1387]))                          )
+                        (reparse-symbol indented_block_body) [1373 1497])
+                    ("sendMessage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1518 1522])
+                            ("message" variable nil (reparse-symbol function_parameters) [1524 1531]))                          )
+                        (reparse-symbol indented_block_body) [1502 1568]))                  
+                :type "class")
+                nil [1194 1568])
+            ("TCallbackTransport" type
+               (:superclasses ("TMessageSenderTransport")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("TMessageSenderTransport" code nil (reparse-symbol indented_block_body) [1660 1698])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1707 1723]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1639 1643])
+                            ("func" variable nil (reparse-symbol function_parameters) [1645 1649]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1626 1724])
+                    ("sendMessage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1745 1749])
+                            ("message" variable nil (reparse-symbol function_parameters) [1751 1758]))                          )
+                        (reparse-symbol indented_block_body) [1729 1795]))                  
+                :type "class")
+                nil [1570 1795])
+            ("ThriftClientProtocol" type
+               (:superclasses ("basic.Int32StringReceiver")
+                :members 
+                  ( ("MAX_LENGTH" code nil (reparse-symbol indented_block_body) [1857 1881])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1964 1997])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2006 2041])
+                            ("if" code nil (reparse-symbol indented_block_body) [2050 2186])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2195 2213])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2222 2253]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1900 1904])
+                            ("client_class" variable nil (reparse-symbol function_parameters) [1906 1918])
+                            ("iprot_factory" variable nil (reparse-symbol function_parameters) [1920 1933])
+                            ("oprot_factory" variable nil (reparse-symbol function_parameters) [1935 1948]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1887 2254])
+                    ("dispatch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2272 2276])
+                            ("msg" variable nil (reparse-symbol function_parameters) [2278 2281]))                          )
+                        (reparse-symbol indented_block_body) [2259 2313])
+                    ("connectionMade" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2337 2341]))                          )
+                        (reparse-symbol indented_block_body) [2318 2502])
+                    ("connectionLost" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2526 2530])
+                            ("reason" variable nil (reparse-symbol function_parameters) [2532 2538]))                          )
+                        (reparse-symbol indented_block_body) [2507 2794])
+                    ("stringReceived" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2818 2822])
+                            ("frame" variable nil (reparse-symbol function_parameters) [2824 2829]))                          )
+                        (reparse-symbol indented_block_body) [2799 3207]))                  
+                :type "class")
+                nil [1797 3207])
+            ("ThriftSASLClientProtocol" type
+               (:superclasses ("ThriftClientProtocol")
+                :members 
+                  ( ("START" variable nil (reparse-symbol indented_block_body) [3268 3277])
+                    ("OK" variable nil (reparse-symbol indented_block_body) [3282 3288])
+                    ("BAD" variable nil (reparse-symbol indented_block_body) [3293 3300])
+                    ("ERROR" variable nil (reparse-symbol indented_block_body) [3305 3314])
+                    ("COMPLETE" variable nil (reparse-symbol indented_block_body) [3319 3331])
+                    ("MAX_LENGTH" code nil (reparse-symbol indented_block_body) [3337 3361])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        host: the name of the server, from a SASL perspective
+        service: the name of the server's service, from a SASL perspective
+        mechanism: the name of the preferred mechanism to use
+
+        All other kwargs will be passed to the puresasl.client.SASLClient
+        constructor.
+        \"\"\"" code nil (reparse-symbol indented_block_body) [3516 3826])
+                            ("puresasl.client" include nil (reparse-symbol indented_block_body) [3836 3874])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3883 3911])
+                            ("ThriftClientProtocol" code nil (reparse-symbol indented_block_body) [3921 4000])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4010 4048])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4057 4093])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4102 4120])
+                            ("if" code nil (reparse-symbol indented_block_body) [4130 4226]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3380 3384])
+                            ("client_class" variable nil (reparse-symbol function_parameters) [3386 3398])
+                            ("iprot_factory" variable nil (reparse-symbol function_parameters) [3400 3413])
+                            ("oprot_factory" variable nil (reparse-symbol function_parameters) [3415 3428])
+                            ("host" variable nil (reparse-symbol function_parameters) [3447 3451])
+                            ("service" variable nil (reparse-symbol function_parameters) [3458 3465])
+                            ("mechanism" variable nil (reparse-symbol function_parameters) [3472 3481])
+                            ("sasl_kwargs" variable nil (reparse-symbol function_parameters) [3492 3505]))                          
+                        :documentation "
+        host: the name of the server, from a SASL perspective
+        service: the name of the server's service, from a SASL perspective
+        mechanism: the name of the preferred mechanism to use
+
+        All other kwargs will be passed to the puresasl.client.SASLClient
+        constructor.
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3367 4226])
+                    ("createSASLClient" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4252 4256])
+                            ("host" variable nil (reparse-symbol function_parameters) [4258 4262])
+                            ("service" variable nil (reparse-symbol function_parameters) [4264 4271])
+                            ("mechanism" variable nil (reparse-symbol function_parameters) [4273 4282])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [4284 4292]))                          )
+                        (reparse-symbol indented_block_body) [4231 4367])
+                    ("dispatch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4385 4389])
+                            ("msg" variable nil (reparse-symbol function_parameters) [4391 4394]))                          )
+                        (reparse-symbol indented_block_body) [4372 4574])
+                    ("connectionMade" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4625 4629]))                          
+                        :decorators 
+                          ( ("defer.inlineCallbacks" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [4579 5675])
+                    ("_sendSASLMessage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5701 5705])
+                            ("status" variable nil (reparse-symbol function_parameters) [5707 5713])
+                            ("body" variable nil (reparse-symbol function_parameters) [5715 5719]))                          )
+                        (reparse-symbol indented_block_body) [5680 5868])
+                    ("_receiveSASLMessage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5897 5901]))                          )
+                        (reparse-symbol indented_block_body) [5873 6055])
+                    ("connectionLost" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6079 6083])
+                            ("reason" variable nil (reparse-symbol function_parameters) [6085 6091]))                          )
+                        (reparse-symbol indented_block_body) [6060 6195])
+                    ("dataReceived" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6217 6221])
+                            ("data" variable nil (reparse-symbol function_parameters) [6223 6227]))                          )
+                        (reparse-symbol indented_block_body) [6200 6718])
+                    ("stringReceived" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6742 6746])
+                            ("frame" variable nil (reparse-symbol function_parameters) [6748 6753]))                          )
+                        (reparse-symbol indented_block_body) [6723 7182]))                  
+                :type "class")
+                nil [3209 7182])
+            ("ThriftServerProtocol" type
+               (:superclasses ("basic.Int32StringReceiver")
+                :members 
+                  ( ("MAX_LENGTH" code nil (reparse-symbol indented_block_body) [7244 7268])
+                    ("dispatch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7287 7291])
+                            ("msg" variable nil (reparse-symbol function_parameters) [7293 7296]))                          )
+                        (reparse-symbol indented_block_body) [7274 7328])
+                    ("processError" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7350 7354])
+                            ("error" variable nil (reparse-symbol function_parameters) [7356 7361]))                          )
+                        (reparse-symbol indented_block_body) [7333 7404])
+                    ("processOk" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7423 7427])
+                            ("_" variable nil (reparse-symbol function_parameters) [7429 7430])
+                            ("tmo" variable nil (reparse-symbol function_parameters) [7432 7435]))                          )
+                        (reparse-symbol indented_block_body) [7409 7524])
+                    ("stringReceived" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7548 7552])
+                            ("frame" variable nil (reparse-symbol function_parameters) [7554 7559]))                          )
+                        (reparse-symbol indented_block_body) [7529 7919]))                  
+                :type "class")
+                nil [7184 7919])
+            ("IThriftServerFactory" type
+               (:superclasses ("Interface")
+                :members 
+                  ( ("processor" variable nil (reparse-symbol indented_block_body) [7965 8006])
+                    ("iprot_factory" variable nil (reparse-symbol indented_block_body) [8012 8063])
+                    ("oprot_factory" variable nil (reparse-symbol indented_block_body) [8069 8121]))                  
+                :type "class")
+                nil [7921 8122])
+            ("IThriftClientFactory" type
+               (:superclasses ("Interface")
+                :members 
+                  ( ("client_class" variable nil (reparse-symbol indented_block_body) [8168 8215])
+                    ("iprot_factory" variable nil (reparse-symbol indented_block_body) [8221 8272])
+                    ("oprot_factory" variable nil (reparse-symbol indented_block_body) [8278 8330]))                  
+                :type "class")
+                nil [8124 8331])
+            ("ThriftServerFactory" type
+               (:superclasses ("ServerFactory")
+                :members 
+                  ( ("implements" code nil (reparse-symbol indented_block_body) [8380 8412])
+                    ("protocol" variable nil (reparse-symbol indented_block_body) [8418 8449])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [8529 8555])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8564 8598])
+                            ("if" code nil (reparse-symbol indented_block_body) [8607 8741]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8468 8472])
+                            ("processor" variable nil (reparse-symbol function_parameters) [8474 8483])
+                            ("iprot_factory" variable nil (reparse-symbol function_parameters) [8485 8498])
+                            ("oprot_factory" variable nil (reparse-symbol function_parameters) [8500 8513]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [8455 8741]))                  
+                :type "class")
+                nil [8333 8741])
+            ("ThriftClientFactory" type
+               (:superclasses ("ClientFactory")
+                :members 
+                  ( ("implements" code nil (reparse-symbol indented_block_body) [8790 8822])
+                    ("protocol" variable nil (reparse-symbol indented_block_body) [8828 8859])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [8942 8974])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8983 9017])
+                            ("if" code nil (reparse-symbol indented_block_body) [9026 9160]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8878 8882])
+                            ("client_class" variable nil (reparse-symbol function_parameters) [8884 8896])
+                            ("iprot_factory" variable nil (reparse-symbol function_parameters) [8898 8911])
+                            ("oprot_factory" variable nil (reparse-symbol function_parameters) [8913 8926]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [8865 9160])
+                    ("buildProtocol" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9183 9187])
+                            ("addr" variable nil (reparse-symbol function_parameters) [9189 9193]))                          )
+                        (reparse-symbol indented_block_body) [9165 9335]))                  
+                :type "class")
+                nil [8743 9335])
+            ("ThriftResource" type
+               (:superclasses ("resource.Resource")
+                :members 
+                  ( ("allowedMethods" variable nil (reparse-symbol indented_block_body) [9383 9409])
+                    ("__init__" function
+                       (:suite 
+                          ( ("resource" code nil (reparse-symbol indented_block_body) [9512 9544])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9553 9601])
+                            ("if" code nil (reparse-symbol indented_block_body) [9610 9783])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9791 9817]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9428 9432])
+                            ("processor" variable nil (reparse-symbol function_parameters) [9434 9443])
+                            ("inputProtocolFactory" variable nil (reparse-symbol function_parameters) [9445 9465])
+                            ("outputProtocolFactory" variable nil (reparse-symbol function_parameters) [9475 9496]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9415 9818])
+                    ("getChild" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9836 9840])
+                            ("path" variable nil (reparse-symbol function_parameters) [9842 9846])
+                            ("request" variable nil (reparse-symbol function_parameters) [9848 9855]))                          )
+                        (reparse-symbol indented_block_body) [9823 9878])
+                    ("_cbProcess" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9898 9902])
+                            ("_" variable nil (reparse-symbol function_parameters) [9904 9905])
+                            ("request" variable nil (reparse-symbol function_parameters) [9907 9914])
+                            ("tmo" variable nil (reparse-symbol function_parameters) [9916 9919]))                          )
+                        (reparse-symbol indented_block_body) [9883 10110])
+                    ("render_POST" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10131 10135])
+                            ("request" variable nil (reparse-symbol function_parameters) [10137 10144]))                          )
+                        (reparse-symbol indented_block_body) [10115 10564]))                  
+                :type "class")
+                nil [9337 10564]))          
+      :file "TTwisted.py"
+      :pointmax 10564
+      :fsize 10563
+      :lastmodtime '(21593 33383 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!openProject!thrift-0.9.2!lib!py!src!transport!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

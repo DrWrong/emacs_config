@@ -1,0 +1,550 @@
+;; Object generic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "generic/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.views.generic.base" include nil nil [1 71])
+            ("" code nil nil [111 242])
+            ("django.views.generic.detail" include nil nil [243 293])
+            ("" code nil nil [332 385])
+            ("django.views.generic.list" include nil nil [386 432])
+            ("__all__" variable nil nil [434 737])
+            ("GenericViewError" type
+               (:documentation "A problem in a generic view."
+                :superclasses ("Exception")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [818 822]))                  
+                :type "class")
+                nil [740 823]))          
+      :file "__init__.py"
+      :pointmax 823
+      :fsize 822
+      :lastmodtime '(22174 22700 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "list.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 40])
+            ("django.core.exceptions" include nil nil [42 97])
+            ("django.core.paginator" include nil nil [98 154])
+            ("django.db.models.query" include nil nil [155 198])
+            ("django.http" include nil nil [199 230])
+            ("django.utils" include nil nil [231 259])
+            ("django.utils.translation" include nil nil [260 310])
+            ("django.views.generic.base" include nil nil [311 390])
+            ("MultipleObjectMixin" type
+               (:documentation "
+    A mixin for views manipulating multiple objects.
+    "
+                :superclasses ("ContextMixin")
+                :members 
+                  ( ("allow_empty" variable nil (reparse-symbol indented_block_body) [507 525])
+                    ("queryset" variable nil (reparse-symbol indented_block_body) [530 545])
+                    ("model" variable nil (reparse-symbol indented_block_body) [550 562])
+                    ("paginate_by" variable nil (reparse-symbol indented_block_body) [567 585])
+                    ("paginate_orphans" variable nil (reparse-symbol indented_block_body) [590 610])
+                    ("context_object_name" variable nil (reparse-symbol indented_block_body) [615 641])
+                    ("paginator_class" variable nil (reparse-symbol indented_block_body) [646 673])
+                    ("page_kwarg" variable nil (reparse-symbol indented_block_body) [678 697])
+                    ("ordering" variable nil (reparse-symbol indented_block_body) [702 717])
+                    ("get_queryset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [740 744]))                          
+                        :documentation "
+        Return the list of items for this view.
+
+        The return value must be an iterable and may be an instance of
+        `QuerySet` in which case `QuerySet` specific behavior will be enabled.
+        ")
+                        (reparse-symbol indented_block_body) [723 1763])
+                    ("get_ordering" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1785 1789]))                          
+                        :documentation "
+        Return the field or fields to use for ordering the queryset.
+        ")
+                        (reparse-symbol indented_block_body) [1768 1914])
+                    ("paginate_queryset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1941 1945])
+                            ("queryset" variable nil (reparse-symbol function_parameters) [1947 1955])
+                            ("page_size" variable nil (reparse-symbol function_parameters) [1957 1966]))                          
+                        :documentation "
+        Paginate the queryset, if needed.
+        ")
+                        (reparse-symbol indented_block_body) [1919 2935])
+                    ("get_paginate_by" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2960 2964])
+                            ("queryset" variable nil (reparse-symbol function_parameters) [2966 2974]))                          
+                        :documentation "
+        Get the number of items to paginate by, or ``None`` for no pagination.
+        ")
+                        (reparse-symbol indented_block_body) [2940 3112])
+                    ("get_paginator" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3135 3139])
+                            ("queryset" variable nil (reparse-symbol function_parameters) [3141 3149])
+                            ("per_page" variable nil (reparse-symbol function_parameters) [3151 3159])
+                            ("orphans" variable nil (reparse-symbol function_parameters) [3161 3168])
+                            ("allow_empty_first_page" variable nil (reparse-symbol function_parameters) [3194 3216])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [3223 3231]))                          
+                        :documentation "
+        Return an instance of the paginator for this view.
+        ")
+                        (reparse-symbol indented_block_body) [3117 3472])
+                    ("get_paginate_orphans" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3502 3506]))                          
+                        :documentation "
+        Returns the maximum number of orphans extend the last page by when
+        paginating.
+        ")
+                        (reparse-symbol indented_block_body) [3477 3665])
+                    ("get_allow_empty" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3690 3694]))                          
+                        :documentation "
+        Returns ``True`` if the view should display empty lists, and ``False``
+        if a 404 should be raised instead.
+        ")
+                        (reparse-symbol indented_block_body) [3670 3875])
+                    ("get_context_object_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3908 3912])
+                            ("object_list" variable nil (reparse-symbol function_parameters) [3914 3925]))                          
+                        :documentation "
+        Get the name of the item to be used in the context.
+        ")
+                        (reparse-symbol indented_block_body) [3880 4241])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4267 4271])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [4273 4281]))                          
+                        :documentation "
+        Get the context for this view.
+        ")
+                        (reparse-symbol indented_block_body) [4246 5251]))                  
+                :type "class")
+                nil [393 5251])
+            ("BaseListView" type
+               (:documentation "
+    A base view for displaying a list of objects.
+    "
+                :superclasses ("MultipleObjectMixin" "View")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5378 5382])
+                            ("request" variable nil (reparse-symbol function_parameters) [5384 5391])
+                            ("args" variable nil (reparse-symbol function_parameters) [5393 5398])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [5400 5408]))                          )
+                        (reparse-symbol indented_block_body) [5370 6235]))                  
+                :type "class")
+                nil [5253 6235])
+            ("MultipleObjectTemplateResponseMixin" type
+               (:documentation "
+    Mixin for responding with a template and list of objects.
+    "
+                :superclasses ("TemplateResponseMixin")
+                :members 
+                  ( ("template_name_suffix" variable nil (reparse-symbol indented_block_body) [6385 6415])
+                    ("get_template_names" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6444 6448]))                          
+                        :documentation "
+        Return a list of template names to be used for the request. Must return
+        a list. May not be called if render_to_response is overridden.
+        ")
+                        (reparse-symbol indented_block_body) [6421 7386]))                  
+                :type "class")
+                nil [6237 7386])
+            ("ListView" type
+               (:documentation "
+    Render some list of objects, set by `self.model` or `self.queryset`.
+    `self.queryset` can actually be any iterable of items, not just a queryset.
+    "
+                :superclasses ("MultipleObjectTemplateResponseMixin" "BaseListView")
+                :type "class")
+                nil [7388 7624]))          
+      :file "list.py"
+      :pointmax 7624
+      :fsize 7623
+      :lastmodtime '(22408 61900 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 2763 . 2935) (NEWLINE 2762 . 2763) (COLON 2761 . 2762) (TRY 2599 . 2602) (AS 2757 . 2759)))
+    (semanticdb-table "base.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 40])
+            ("logging" include nil nil [42 56])
+            ("functools" include nil nil [57 93])
+            ("django" include nil nil [95 118])
+            ("django.core.exceptions" include nil nil [119 174])
+            ("django.template.response" include nil nil [175 228])
+            ("django.urls" include nil nil [229 276])
+            ("django.utils" include nil nil [277 305])
+            ("django.utils.decorators" include nil nil [306 357])
+            ("logger" variable nil nil [359 403])
+            ("ContextMixin" type
+               (:documentation "
+    A default context mixin that passes the keyword arguments received by
+    get_context_data as the template context.
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [596 600])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [602 610]))                          )
+                        (reparse-symbol indented_block_body) [575 702]))                  
+                :type "class")
+                nil [406 702])
+            ("View" type
+               (:documentation "
+    Intentionally simple parent class for all views. Only implements
+    dispatch-by-method and simple sanity checking.
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("http_method_names" variable nil (reparse-symbol indented_block_body) [865 954])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        Constructor. Called in the URLconf; can contain helpful extra
+        keyword arguments, and other things.
+        \"\"\"" code nil (reparse-symbol indented_block_body) [998 1128])
+                            ("for" code nil (reparse-symbol indented_block_body) [1252 1331]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [973 977])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [979 987]))                          
+                        :documentation "
+        Constructor. Called in the URLconf; can contain helpful extra
+        keyword arguments, and other things.
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [960 1331])
+                    ("as_view" function
+                       (:documentation "
+        Main entry point for a request-response process.
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [1369 1372])
+                            ("initkwargs" variable nil (reparse-symbol function_parameters) [1374 1386]))                          
+                        :decorators 
+                          ( ("classonlymethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1336 2707])
+                    ("dispatch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2725 2729])
+                            ("request" variable nil (reparse-symbol function_parameters) [2731 2738])
+                            ("args" variable nil (reparse-symbol function_parameters) [2740 2745])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2747 2755]))                          )
+                        (reparse-symbol indented_block_body) [2712 3227])
+                    ("http_method_not_allowed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3260 3264])
+                            ("request" variable nil (reparse-symbol function_parameters) [3266 3273])
+                            ("args" variable nil (reparse-symbol function_parameters) [3275 3280])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [3282 3290]))                          )
+                        (reparse-symbol indented_block_body) [3232 3527])
+                    ("options" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3544 3548])
+                            ("request" variable nil (reparse-symbol function_parameters) [3550 3557])
+                            ("args" variable nil (reparse-symbol function_parameters) [3559 3564])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [3566 3574]))                          
+                        :documentation "
+        Handles responding to requests for the OPTIONS HTTP verb.
+        ")
+                        (reparse-symbol indented_block_body) [3532 3834])
+                    ("_allowed_methods" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3860 3864]))                          )
+                        (reparse-symbol indented_block_body) [3839 3946]))                  
+                :type "class")
+                nil [704 3946])
+            ("TemplateResponseMixin" type
+               (:documentation "
+    A mixin that can be used to render a template.
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [4056 4076])
+                    ("template_engine" variable nil (reparse-symbol indented_block_body) [4081 4103])
+                    ("response_class" variable nil (reparse-symbol indented_block_body) [4108 4141])
+                    ("content_type" variable nil (reparse-symbol indented_block_body) [4146 4165])
+                    ("render_to_response" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4194 4198])
+                            ("context" variable nil (reparse-symbol function_parameters) [4200 4207])
+                            ("response_kwargs" variable nil (reparse-symbol function_parameters) [4209 4226]))                          
+                        :documentation "
+        Returns a response, using the `response_class` for this
+        view, with a template rendered with the given context.
+
+        If any keyword arguments are provided, they will be
+        passed to the constructor of the response class.
+        ")
+                        (reparse-symbol indented_block_body) [4171 4795])
+                    ("get_template_names" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4823 4827]))                          
+                        :documentation "
+        Returns a list of template names to be used for the request. Must return
+        a list. May not be called if render_to_response is overridden.
+        ")
+                        (reparse-symbol indented_block_body) [4800 5294]))                  
+                :type "class")
+                nil [3948 5294])
+            ("TemplateView" type
+               (:documentation "
+    A view that renders a template.  This view will also pass into the context
+    any keyword arguments passed by the URLconf.
+    "
+                :superclasses ("TemplateResponseMixin" "ContextMixin" "View")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5515 5519])
+                            ("request" variable nil (reparse-symbol function_parameters) [5521 5528])
+                            ("args" variable nil (reparse-symbol function_parameters) [5530 5535])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [5537 5545]))                          )
+                        (reparse-symbol indented_block_body) [5507 5646]))                  
+                :type "class")
+                nil [5296 5646])
+            ("RedirectView" type
+               (:documentation "
+    A view that provides a redirect on any GET request.
+    "
+                :superclasses ("View")
+                :members 
+                  ( ("permanent" variable nil (reparse-symbol indented_block_body) [5750 5767])
+                    ("url" variable nil (reparse-symbol indented_block_body) [5772 5782])
+                    ("pattern_name" variable nil (reparse-symbol indented_block_body) [5787 5806])
+                    ("query_string" variable nil (reparse-symbol indented_block_body) [5811 5831])
+                    ("get_redirect_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5858 5862])
+                            ("args" variable nil (reparse-symbol function_parameters) [5864 5869])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [5871 5879]))                          
+                        :documentation "
+        Return the URL redirect to. Keyword arguments from the
+        URL pattern match generating the redirect request
+        are provided as kwargs to this method.
+        ")
+                        (reparse-symbol indented_block_body) [5837 6512])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6525 6529])
+                            ("request" variable nil (reparse-symbol function_parameters) [6531 6538])
+                            ("args" variable nil (reparse-symbol function_parameters) [6540 6545])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [6547 6555]))                          )
+                        (reparse-symbol indented_block_body) [6517 6997])
+                    ("head" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7011 7015])
+                            ("request" variable nil (reparse-symbol function_parameters) [7017 7024])
+                            ("args" variable nil (reparse-symbol function_parameters) [7026 7031])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [7033 7041]))                          )
+                        (reparse-symbol indented_block_body) [7002 7094])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7108 7112])
+                            ("request" variable nil (reparse-symbol function_parameters) [7114 7121])
+                            ("args" variable nil (reparse-symbol function_parameters) [7123 7128])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [7130 7138]))                          )
+                        (reparse-symbol indented_block_body) [7099 7191])
+                    ("options" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7208 7212])
+                            ("request" variable nil (reparse-symbol function_parameters) [7214 7221])
+                            ("args" variable nil (reparse-symbol function_parameters) [7223 7228])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [7230 7238]))                          )
+                        (reparse-symbol indented_block_body) [7196 7291])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7307 7311])
+                            ("request" variable nil (reparse-symbol function_parameters) [7313 7320])
+                            ("args" variable nil (reparse-symbol function_parameters) [7322 7327])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [7329 7337]))                          )
+                        (reparse-symbol indented_block_body) [7296 7390])
+                    ("put" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7403 7407])
+                            ("request" variable nil (reparse-symbol function_parameters) [7409 7416])
+                            ("args" variable nil (reparse-symbol function_parameters) [7418 7423])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [7425 7433]))                          )
+                        (reparse-symbol indented_block_body) [7395 7486])
+                    ("patch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7501 7505])
+                            ("request" variable nil (reparse-symbol function_parameters) [7507 7514])
+                            ("args" variable nil (reparse-symbol function_parameters) [7516 7521])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [7523 7531]))                          )
+                        (reparse-symbol indented_block_body) [7491 7584]))                  
+                :type "class")
+                nil [5648 7584]))          
+      :file "base.py"
+      :pointmax 7584
+      :fsize 7583
+      :lastmodtime '(22408 61900 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "detail.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 40])
+            ("django.core.exceptions" include nil nil [42 97])
+            ("django.db" include nil nil [98 126])
+            ("django.http" include nil nil [127 158])
+            ("django.utils.translation" include nil nil [159 209])
+            ("django.views.generic.base" include nil nil [210 289])
+            ("SingleObjectMixin" type
+               (:documentation "
+    Provides the ability to retrieve a single object for further manipulation.
+    "
+                :superclasses ("ContextMixin")
+                :members 
+                  ( ("model" variable nil (reparse-symbol indented_block_body) [430 442])
+                    ("queryset" variable nil (reparse-symbol indented_block_body) [447 462])
+                    ("slug_field" variable nil (reparse-symbol indented_block_body) [467 486])
+                    ("context_object_name" variable nil (reparse-symbol indented_block_body) [491 517])
+                    ("slug_url_kwarg" variable nil (reparse-symbol indented_block_body) [522 545])
+                    ("pk_url_kwarg" variable nil (reparse-symbol indented_block_body) [550 569])
+                    ("query_pk_and_slug" variable nil (reparse-symbol indented_block_body) [574 599])
+                    ("get_object" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [620 624])
+                            ("queryset" variable nil (reparse-symbol function_parameters) [626 634]))                          
+                        :documentation "
+        Returns the object the view is displaying.
+
+        By default this requires `self.queryset` and a `pk` or `slug` argument
+        in the URLconf, but subclasses can override this to return any object.
+        ")
+                        (reparse-symbol indented_block_body) [605 2126])
+                    ("get_queryset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2148 2152]))                          
+                        :documentation "
+        Return the `QuerySet` that will be used to look up the object.
+
+        Note that this method is called by the default implementation of
+        `get_object` and may not be called if `get_object` is overridden.
+        ")
+                        (reparse-symbol indented_block_body) [2131 2887])
+                    ("get_slug_field" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2911 2915]))                          
+                        :documentation "
+        Get the name of a slug field to be used to look up by slug.
+        ")
+                        (reparse-symbol indented_block_body) [2892 3041])
+                    ("get_context_object_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3074 3078])
+                            ("obj" variable nil (reparse-symbol function_parameters) [3080 3083]))                          
+                        :documentation "
+        Get the name to use for the object.
+        ")
+                        (reparse-symbol indented_block_body) [3046 3357])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3383 3387])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [3389 3397]))                          
+                        :documentation "
+        Insert the single object into the context dict.
+        ")
+                        (reparse-symbol indented_block_body) [3362 3845]))                  
+                :type "class")
+                nil [292 3845])
+            ("BaseDetailView" type
+               (:documentation "
+    A base view for displaying a single object
+    "
+                :superclasses ("SingleObjectMixin" "View")
+                :members 
+                  ( ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3969 3973])
+                            ("request" variable nil (reparse-symbol function_parameters) [3975 3982])
+                            ("args" variable nil (reparse-symbol function_parameters) [3984 3989])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [3991 3999]))                          )
+                        (reparse-symbol indented_block_body) [3961 4150]))                  
+                :type "class")
+                nil [3847 4150])
+            ("SingleObjectTemplateResponseMixin" type
+               (:superclasses ("TemplateResponseMixin")
+                :members 
+                  ( ("template_name_field" variable nil (reparse-symbol indented_block_body) [4220 4246])
+                    ("template_name_suffix" variable nil (reparse-symbol indented_block_body) [4251 4283])
+                    ("get_template_names" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4312 4316]))                          
+                        :documentation "
+        Return a list of template names to be used for the request. May not be
+        called if render_to_response is overridden. Returns the following list:
+
+        * the value of ``template_name`` on the view (if provided)
+        * the contents of the ``template_name_field`` field on the
+          object instance that the view is operating upon (if available)
+        * ``<app_label>/<model_name><template_name_suffix>.html``
+        ")
+                        (reparse-symbol indented_block_body) [4289 6431]))                  
+                :type "class")
+                nil [4152 6431])
+            ("DetailView" type
+               (:documentation "
+    Render a \"detail\" view of an object.
+
+    By default this is a model instance looked up from `self.queryset`, but the
+    view will support display of *any* object by overriding `self.get_object()`.
+    "
+                :superclasses ("SingleObjectTemplateResponseMixin" "BaseDetailView")
+                :type "class")
+                nil [6433 6721]))          
+      :file "detail.py"
+      :pointmax 6721
+      :fsize 6720
+      :lastmodtime '(22408 61900 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!openProject!django!django!views!generic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

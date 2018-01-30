@@ -1,0 +1,43 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "order_batch_process.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+导出待充值订单数据并发送邮件
+\"\"\"" code nil nil [48 70])
+            ("argparse" include nil nil [72 87])
+            ("os" include nil nil [88 97])
+            ("sys" include nil nil [98 108])
+            ("BASE_DIR" variable nil nil [110 173])
+            ("sys" code nil nil [174 208])
+            ("if" code nil nil [210 777]))          
+      :file "order_batch_process.py"
+      :pointmax 777
+      :fsize 804
+      :lastmodtime '(21979 13474 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "alithriftserver.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+启动AliServer服务
+\"\"\"" code nil nil [49 70])
+            ("argparse" include nil nil [72 87])
+            ("os" include nil nil [88 97])
+            ("sys" include nil nil [98 108])
+            ("domob_pyutils.dm303" include nil nil [110 151])
+            ("BASE_DIR" variable nil nil [153 216])
+            ("sys" code nil nil [217 251])
+            ("if" code nil nil [253 961]))          
+      :file "alithriftserver.py"
+      :pointmax 961
+      :fsize 968
+      :lastmodtime '(22694 27976 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_aliserver!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

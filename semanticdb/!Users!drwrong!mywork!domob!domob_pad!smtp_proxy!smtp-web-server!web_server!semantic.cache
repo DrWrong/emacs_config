@@ -1,0 +1,29 @@
+;; Object web_server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "web_server/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pymysql" include nil nil [1 15])
+            ("pymysql" code nil nil [16 44]))          
+      :file "__init__.py"
+      :pointmax 45
+      :fsize 44
+      :lastmodtime '(22717 398 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "urls.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.conf.urls" include nil nil [1 33])
+            ("cas.views" include nil nil [34 69])
+            ("views" include nil nil [77 89]))          
+      :file "urls.py"
+      :pointmax 398
+      :fsize 397
+      :lastmodtime '(22717 589 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!domob_pad!smtp_proxy!smtp-web-server!web_server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

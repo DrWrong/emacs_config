@@ -1,0 +1,161 @@
+;; Object JDEE_flycheck_15399YKR/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "JDEE_flycheck_15399YKR/"
+  :tables
+  (list
+    (semanticdb-table "ReportDecoder.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.dmaow.aow.utils" package nil nil [1 29])
+            ("cn.domob.aow.stat_types2.thrift.AowAdEventReport" include nil nil [31 87])
+            ("cn.domob.aow.stat_types2.thrift.AowEvent" include nil nil [88 136])
+            ("cn.domob.aow.stat_types2.thrift.AowWallReport" include nil nil [137 190])
+            ("cn.domob.aow.ui.thrift.AowTracker" include nil nil [191 232])
+            ("cn.domob.aow.ui.thrift.AowUIProccessedRequest" include nil nil [233 286])
+            ("cn.domob.aow.ui.thrift.AowUIRequest" include nil nil [287 330])
+            ("cn.domob.domob_security.DomobSecurityManager" include nil nil [331 383])
+            ("cn.domob.domob_security.exception.DomobSecurityException" include nil nil [384 448])
+            ("cn.domob.user_profile.thrift.GeoResult" include nil nil [449 495])
+            ("net.sf.json.JSONObject" include nil nil [496 526])
+            ("org.apache.thrift.TDeserializer" include nil nil [527 566])
+            ("org.slf4j.Logger" include nil nil [567 591])
+            ("org.slf4j.LoggerFactory" include nil nil [592 623])
+            ("java.io.ByteArrayOutputStream" include nil nil [625 662])
+            ("java.text.SimpleDateFormat" include nil nil [663 697])
+            ("java.util.*" include nil nil [698 717])
+            ("java.util.regex.Matcher" include nil nil [718 749])
+            ("java.util.regex.Pattern" include nil nil [750 781])
+            ("java.util.zip.Inflater" include nil nil [782 812])
+            ("ReportDecoder" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logPattern" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [882 1019])
+                    ("r" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Pattern")
+                        (reparse-symbol class_member_declaration) [1024 1085])
+                    ("log" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1090 1163])
+                    ("deser" variable
+                       (:typemodifiers ("private")
+                        :type "TDeserializer")
+                        (reparse-symbol class_member_declaration) [1168 1196])
+                    ("domobSecurityManager" variable
+                       (:typemodifiers ("private")
+                        :type "DomobSecurityManager")
+                        (reparse-symbol class_member_declaration) [1201 1251])
+                    ("validator" variable
+                       (:typemodifiers ("private")
+                        :type "EventValidator")
+                        (reparse-symbol class_member_declaration) [1256 1289])
+                    ("ReportDecoder" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("conf" variable (:type "Map") (reparse-symbol formal_parameters) [1316 1324]))                          )
+                        (reparse-symbol class_member_declaration) [1295 1627])
+                    ("parseLine" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("line" variable (:type "String") (reparse-symbol formal_parameters) [1783 1794]))                          
+                        :type "AowEvent")
+                        (reparse-symbol class_member_declaration) [1757 3932])
+                    ("isEnventTypeValid" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("etype" variable (:type "String") (reparse-symbol formal_parameters) [3971 3983]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3938 4048])
+                    ("decompress" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("compressedTracker" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [4236 4260]))                          
+                        :type "byte[]")
+                        (reparse-symbol class_member_declaration) [4211 4916])
+                    ("parseUrl" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("url" variable (:type "String") (reparse-symbol formal_parameters) [4992 5002])
+                            ("e" variable (:type "AowEvent") (reparse-symbol formal_parameters) [5004 5014]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4968 6093])
+                    ("parseAdEvent" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "String") (reparse-symbol formal_parameters) [6280 6286])
+                            ("" variable (:type "params") (reparse-symbol formal_parameters) [6302 6308])
+                            ("e" variable (:type "AowEvent") (reparse-symbol formal_parameters) [6310 6320]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6248 8417])
+                    ("parseWallEvent" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "String") (reparse-symbol formal_parameters) [8612 8618])
+                            ("" variable (:type "params") (reparse-symbol formal_parameters) [8634 8640])
+                            ("e" variable (:type "AowEvent") (reparse-symbol formal_parameters) [8642 8652]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [8578 10186])
+                    ("initAowTracker" function
+                       (:typemodifiers ("public")
+                        :type "AowTracker")
+                        (reparse-symbol class_member_declaration) [10268 10673])
+                    ("parseTracker" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("tracker" variable (:type "String") (reparse-symbol formal_parameters) [10927 10941]))                          
+                        :type "AowTracker")
+                        (reparse-symbol class_member_declaration) [10896 11345])
+                    ("eventPack" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("ipb" variable (:type "String") (reparse-symbol formal_parameters) [11665 11675])
+                            ("ids" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [11677 11686])
+                            ("idv" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [11688 11700])
+                            ("pubPkgName" variable (:type "String") (reparse-symbol formal_parameters) [11702 11719])
+                            ("tracker" variable (:type "String") (reparse-symbol formal_parameters) [11721 11735])
+                            ("e" variable (:type "AowEvent") (reparse-symbol formal_parameters) [11737 11747]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [11640 16394])
+                    ("copyTracker2Event" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("e" variable (:type "AowAdEventReport") (reparse-symbol formal_parameters) [16674 16692])
+                            ("tracker" variable (:type "AowTracker") (reparse-symbol formal_parameters) [16694 16712])
+                            ("ip" variable (:type "String") (reparse-symbol formal_parameters) [16714 16723])
+                            ("time" variable (:type "long") (reparse-symbol formal_parameters) [16725 16734]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [16641 22276])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [22306 22319]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [22282 24035]))                  
+                :type "class")
+                nil [849 24038]))          
+      :file "ReportDecoder.java"
+      :pointmax 24039
+      :fsize 24038
+      :lastmodtime '(22735 37561 0 0)
+      :unmatched-syntax '((RSHIFT 8631 . 8633) (IDENTIFIER 8620 . 8624) (LT 8624 . 8625) (IDENTIFIER 8608 . 8611) (LT 8611 . 8612) (RSHIFT 6299 . 6301) (IDENTIFIER 6288 . 6292) (LT 6292 . 6293) (IDENTIFIER 6276 . 6279) (LT 6279 . 6280))))
+  :file "!private!var!folders!hs!_yc0qs7s7r194rfd1cmmtflh0000gn!T!JDEE_flycheck_15399YKR!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

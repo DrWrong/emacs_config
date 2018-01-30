@@ -1,0 +1,46 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "dbb_daily_report.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__author__" variable nil nil [41 85])
+            ("argparse" include nil nil [87 102])
+            ("os" include nil nil [103 112])
+            ("sys" include nil nil [113 123])
+            ("datetime" include nil nil [124 139])
+            ("time" include nil nil [140 151])
+            ("basepath" variable nil nil [153 216])
+            ("sys" code nil nil [217 251])
+            ("print" code nil nil [253 279])
+            ("start" function nil nil [282 1379])
+            ("if" code nil nil [1380 1418]))          
+      :file "dbb_daily_report.py"
+      :pointmax 1418
+      :fsize 1439
+      :lastmodtime '(22638 10180 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "deliver_order_report.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__author__" variable nil nil [18 62])
+            ("argparse" include nil nil [64 79])
+            ("os" include nil nil [80 89])
+            ("sys" include nil nil [90 100])
+            ("datetime" include nil nil [101 116])
+            ("time" include nil nil [117 128])
+            ("basepath" variable nil nil [199 238])
+            ("sys" code nil nil [241 275])
+            ("print" code nil nil [277 303])
+            ("start" function nil nil [306 1164])
+            ("if" code nil nil [1165 1204]))          
+      :file "deliver_order_report.py"
+      :pointmax 1204
+      :fsize 1225
+      :lastmodtime '(22511 26005 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!luckydraw_project!dbb_report!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

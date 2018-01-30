@@ -1,0 +1,35 @@
+;; Object mapper/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mapper/"
+  :tables
+  (list
+    (semanticdb-table "UserScoreMapper.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("cn.domob.sos.transactionserver.mapper" package nil nil [1 47])
+            ("cn.domob.sos.transactionserver.db.SosUserScore" include nil nil [50 104])
+            ("org.apache.ibatis.annotations.Insert" include nil nil [105 149])
+            ("org.apache.ibatis.annotations.Update" include nil nil [150 194])
+            ("UserScoreMapper" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("insertUserScore" function
+                       (:arguments 
+                          ( ("userScore" variable (:type "SosUserScore") (reparse-symbol formal_parameters) [383 405]))                          
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [363 407])
+                    ("updateUserScore" function
+                       (:arguments 
+                          ( ("userScore" variable (:type "SosUserScore") (reparse-symbol formal_parameters) [537 559]))                          
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [517 561]))                  
+                :type "interface")
+                nil [196 563]))          
+      :file "UserScoreMapper.java"
+      :pointmax 563
+      :fsize 562
+      :lastmodtime '(22184 12605 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sos_project!sos_transaction_server!src!main!java!cn!domob!sos!transactionserver!mapper!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

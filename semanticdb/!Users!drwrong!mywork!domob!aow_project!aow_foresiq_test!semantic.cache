@@ -1,0 +1,50 @@
+;; Object aow_foresiq_test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "aow_foresiq_test/"
+  :tables
+  (list
+    (semanticdb-table "process_data.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("csv" include nil nil [24 34])
+            ("json" include nil nil [35 46])
+            ("clk_event" variable nil nil [48 62])
+            ("result" variable nil nil [64 97])
+            ("process_clk" function (:arguments 
+              ( ("row" variable nil (reparse-symbol function_parameters) [116 119]))              ) nil [100 224])
+            ("process_act" function (:arguments 
+              ( ("row" variable nil (reparse-symbol function_parameters) [242 245]))              ) nil [226 794])
+            ("process" function (:arguments 
+              ( ("row" variable nil (reparse-symbol function_parameters) [808 811]))              ) nil [796 920])
+            ("with" code nil nil [922 1037])
+            ("result" code nil nil [1038 1052]))          
+      :file "process_data.py"
+      :pointmax 1053
+      :fsize 1052
+      :lastmodtime '(22711 50125 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "foresiq_request.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("json" include nil nil [24 35])
+            ("requests" include nil nil [36 51])
+            ("csv" include nil nil [52 62])
+            ("CLIENT_KEY" variable nil nil [64 99])
+            ("process_data" function (:arguments 
+              ( ("record" variable nil (reparse-symbol function_parameters) [119 125]))              ) nil [102 475])
+            ("csvfile" variable nil nil [476 515])
+            ("fieldnames" variable nil nil [516 622])
+            ("writer" variable nil nil [623 678])
+            ("writer" code nil nil [679 699])
+            ("process_record" function (:arguments 
+              ( ("record" variable nil (reparse-symbol function_parameters) [721 727]))              ) nil [702 960])
+            ("with" code nil nil [962 1169])
+            ("csvfile" code nil nil [1171 1186]))          
+      :file "foresiq_request.py"
+      :pointmax 1187
+      :fsize 1186
+      :lastmodtime '(22711 50153 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_foresiq_test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

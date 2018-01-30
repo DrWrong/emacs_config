@@ -1,0 +1,47 @@
+;; Object printer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "printer/"
+  :tables
+  (list
+    (semanticdb-table "PrinterTools.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.sf.oapi.test.printer" package nil nil [1 34])
+            ("java.io.BufferedReader" include nil nil [36 66])
+            ("java.io.InputStream" include nil nil [67 94])
+            ("java.io.InputStreamReader" include nil nil [95 128])
+            ("java.io.StringWriter" include nil nil [129 157])
+            ("java.net.HttpURLConnection" include nil nil [158 192])
+            ("java.net.URL" include nil nil [193 213])
+            ("java.util.ArrayList" include nil nil [214 241])
+            ("java.util.List" include nil nil [242 264])
+            ("com.fasterxml.jackson.databind.ObjectMapper" include nil nil [266 317])
+            ("com.sf.openapi.util.hk.MyJsonUtil" include nil nil [318 359])
+            ("PrinterTools" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("testprinter" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [395 5359])
+                    ("main" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [5387 5401]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5363 5456]))                  
+                :type "class")
+                nil [362 5459]))          
+      :file "PrinterTools.java"
+      :pointmax 5460
+      :fsize 6705
+      :lastmodtime '(22295 20589 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!sf_test!src!main!java!com!sf!oapi!test!printer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

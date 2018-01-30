@@ -1,0 +1,79 @@
+;; Object itunesstored.class/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "itunesstored.class/"
+  :tables
+  (list
+    (semanticdb-table "RequestQueue.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ISOperationQueue" variable (:type "int") nil [169 215])
+            ("NSObject" variable (:type "int") nil [169 215])
+            ("arg2" variable (:type "int") nil [392 397])
+            ("arg2" variable (:type "int") nil [449 454])
+            ("arg1" variable (:type "int") nil [480 485])
+            ("arg3" variable (:type "int") nil [572 577])
+            ("arg4" variable (:type "int") nil [679 684])
+            ("arg1" variable (:type "int") nil [726 731])
+            ("dealloc" variable (:type "int") nil [740 748])
+            ("arg1" variable (:type "int") nil [794 799])
+            ("init" variable (:type "int") nil [806 811])
+            ("arg1" variable (:type "int") nil [841 846])
+            ("arg1" variable (:type "int") nil [880 885])
+            ("operationQueue" variable
+               (:pointer 1
+                :type ("ISOperationQueue" type (:type "class") nil nil))
+                nil [904 937]))          
+      :file "RequestQueue.h"
+      :pointmax 945
+      :fsize 944
+      :lastmodtime '(22676 20987 0 0)
+      :unmatched-syntax '((symbol 940 . 943) (punctuation 939 . 940) (semantic-list 895 . 903) (symbol 887 . 895) (punctuation 886 . 887) (semantic-list 876 . 880) (punctuation 875 . 876) (symbol 853 . 875) (semantic-list 849 . 853) (punctuation 847 . 848) (semantic-list 837 . 841) (punctuation 836 . 837) (symbol 820 . 836) (semantic-list 814 . 820) (punctuation 812 . 813) (semantic-list 802 . 806) (punctuation 800 . 801) (semantic-list 790 . 794) (punctuation 789 . 790) (symbol 757 . 789) (semantic-list 751 . 757) (punctuation 749 . 750) (semantic-list 734 . 740) (punctuation 732 . 733) (semantic-list 722 . 726) (punctuation 721 . 722) (symbol 693 . 721) (semantic-list 687 . 693) (punctuation 685 . 686) (semantic-list 659 . 679) (punctuation 658 . 659) (symbol 648 . 658) (symbol 643 . 647) (semantic-list 639 . 643) (punctuation 638 . 639) (symbol 628 . 638) (symbol 623 . 627) (semantic-list 619 . 623) (punctuation 618 . 619) (symbol 608 . 618) (symbol 603 . 607) (semantic-list 599 . 603) (punctuation 598 . 599) (symbol 586 . 598) (semantic-list 580 . 586) (punctuation 578 . 579) (semantic-list 552 . 572) (punctuation 551 . 552) (symbol 535 . 551) (symbol 530 . 534) (semantic-list 526 . 530) (punctuation 525 . 526) (symbol 516 . 525) (symbol 511 . 515) (semantic-list 507 . 511) (punctuation 506 . 507) (symbol 494 . 506) (semantic-list 488 . 494) (punctuation 486 . 487) (semantic-list 476 . 480) (punctuation 475 . 476) (symbol 463 . 475) (semantic-list 457 . 463) (punctuation 455 . 456) (semantic-list 445 . 449) (punctuation 444 . 445) (symbol 434 . 444) (symbol 429 . 433) (semantic-list 425 . 429) (punctuation 424 . 425) (symbol 406 . 424) (semantic-list 400 . 406) (punctuation 398 . 399) (semantic-list 388 . 392) (punctuation 387 . 388) (symbol 377 . 387) (symbol 372 . 376) (semantic-list 368 . 372) (punctuation 367 . 368) (symbol 353 . 367) (semantic-list 347 . 353) (punctuation 345 . 346) (semantic-list 252 . 343) (symbol 243 . 251) (punctuation 241 . 242) (symbol 228 . 240) (symbol 218 . 227) (punctuation 217 . 218) (CLASS 163 . 168) (punctuation 162 . 163) (string 148 . 160) (symbol 141 . 147) (punctuation 140 . 141)))
+    (semanticdb-table "SSAccount-Daemon.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("arg1" variable (:type "int") nil [250 255])
+            ("arg1" variable (:type "int") nil [320 325])
+            ("arg2" variable (:type "int") nil [394 399])
+            ("commitToUserDefaults" variable (:type "int") nil [408 429])
+            ("loadFromKeychain" variable (:type "int") nil [438 455])
+            ("removeFromKeychain" variable (:type "int") nil [464 483])
+            ("saveToKeychain" variable (:type "int") nil [492 507]))          
+      :file "SSAccount-Daemon.h"
+      :pointmax 514
+      :fsize 513
+      :lastmodtime '(22676 20987 0 0)
+      :unmatched-syntax '((symbol 509 . 512) (punctuation 508 . 509) (semantic-list 486 . 492) (punctuation 484 . 485) (semantic-list 458 . 464) (punctuation 456 . 457) (semantic-list 432 . 438) (punctuation 430 . 431) (semantic-list 402 . 408) (punctuation 400 . 401) (semantic-list 373 . 394) (punctuation 372 . 373) (symbol 355 . 372) (symbol 350 . 354) (semantic-list 346 . 350) (punctuation 345 . 346) (symbol 334 . 345) (semantic-list 328 . 334) (punctuation 326 . 327) (semantic-list 299 . 320) (punctuation 298 . 299) (symbol 264 . 298) (semantic-list 258 . 264) (punctuation 256 . 257) (semantic-list 229 . 250) (punctuation 228 . 229) (symbol 199 . 228) (semantic-list 195 . 199) (punctuation 193 . 194) (semantic-list 184 . 192) (symbol 174 . 183) (symbol 164 . 173) (punctuation 163 . 164) (string 148 . 161) (symbol 141 . 147) (punctuation 140 . 141)))
+    (semanticdb-table "PurchaseManagerClient.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("NSMutableArray" type
+               (:prototype t
+                :type "class")
+                nil [164 185])
+            ("URLBagType" variable (:type "int") nil [351 366])
+            ("ackConnection" variable (:type "int") nil [375 389])
+            ("dealloc" variable (:type "int") nil [398 406])
+            ("finishesPurchases" variable (:type ("BOOL" type (:type "class") nil nil)) nil [417 440])
+            ("arg1" variable (:type "int") nil [475 480])
+            ("arg2" variable (:type "int") nil [525 530])
+            ("arg1" variable (:type "int") nil [556 561])
+            ("arg2" variable (:type "int") nil [609 614])
+            ("arg1" variable (:type "int") nil [641 646])
+            ("uniqueIdentifier" variable (:type "long long") nil [657 684]))          
+      :file "PurchaseManagerClient.h"
+      :pointmax 692
+      :fsize 691
+      :lastmodtime '(22676 20987 0 0)
+      :unmatched-syntax '((symbol 687 . 690) (punctuation 686 . 687) (symbol 648 . 656) (punctuation 647 . 648) (semantic-list 637 . 641) (punctuation 636 . 637) (symbol 623 . 636) (semantic-list 617 . 623) (punctuation 615 . 616) (semantic-list 605 . 609) (punctuation 604 . 605) (symbol 592 . 604) (symbol 587 . 591) (semantic-list 583 . 587) (punctuation 582 . 583) (symbol 570 . 582) (semantic-list 564 . 570) (punctuation 562 . 563) (semantic-list 552 . 556) (punctuation 551 . 552) (symbol 539 . 551) (semantic-list 533 . 539) (punctuation 531 . 532) (semantic-list 521 . 525) (punctuation 520 . 521) (symbol 508 . 520) (symbol 503 . 507) (semantic-list 499 . 503) (punctuation 498 . 499) (symbol 489 . 498) (semantic-list 483 . 489) (punctuation 481 . 482) (semantic-list 471 . 475) (punctuation 470 . 471) (symbol 447 . 470) (semantic-list 443 . 447) (punctuation 441 . 442) (symbol 408 . 416) (punctuation 407 . 408) (semantic-list 392 . 398) (punctuation 390 . 391) (semantic-list 369 . 375) (punctuation 367 . 368) (semantic-list 340 . 350) (symbol 332 . 340) (punctuation 331 . 332) (semantic-list 232 . 329) (symbol 222 . 231) (punctuation 220 . 221) (symbol 198 . 219) (symbol 188 . 197) (punctuation 187 . 188) (punctuation 163 . 164) (string 148 . 161) (symbol 141 . 147) (punctuation 140 . 141)))
+    (semanticdb-table "PurchaseManager.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("databaseEntityClass" variable (:type "int") nil [226 246]))          
+      :file "PurchaseManager.h"
+      :pointmax 254
+      :fsize 253
+      :lastmodtime '(22676 20987 0 0)
+      :unmatched-syntax '((symbol 249 . 252) (punctuation 248 . 249) (semantic-list 219 . 226) (punctuation 217 . 218) (semantic-list 212 . 215) (symbol 197 . 211) (punctuation 195 . 196) (symbol 179 . 194) (symbol 169 . 178) (punctuation 168 . 169) (string 148 . 166) (symbol 141 . 147) (punctuation 140 . 141))))
+  :file "!Users!drwrong!mywork!appstore!itunesstored.class!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

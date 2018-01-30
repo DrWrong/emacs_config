@@ -1,0 +1,68 @@
+;; Object ad_callback_observer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ad_callback_observer/"
+  :tables
+  (list
+    (semanticdb-table "android_ad_callback_obsever.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.conf" include nil nil [27 59])
+            ("requests" include nil nil [61 76])
+            ("redis" include nil nil [77 89])
+            ("json" include nil nil [90 101])
+            ("time" include nil nil [102 113])
+            ("logging" include nil nil [114 128])
+            ("django.conf" include nil nil [129 161])
+            ("domob_pyutils.statscol" include nil nil [162 202])
+            ("hashlib" include nil nil [203 217])
+            ("observers" include nil nil [219 257])
+            ("AndroidAdCallbackObserver" type
+               (:superclasses ("AbstractObserver")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [344 430])
+                            ("self" variable nil (reparse-symbol indented_block_body) [440 485])
+                            ("self" variable nil (reparse-symbol indented_block_body) [494 526])
+                            ("self" variable nil (reparse-symbol indented_block_body) [535 576])
+                            ("self" variable nil (reparse-symbol indented_block_body) [585 627])
+                            ("self" variable nil (reparse-symbol indented_block_body) [636 665])
+                            ("self" variable nil (reparse-symbol indented_block_body) [674 731]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [329 333]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [316 732])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [749 753])
+                            ("data" variable nil (reparse-symbol function_parameters) [755 759]))                          )
+                        (reparse-symbol indented_block_body) [737 1304])
+                    ("_regist_process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1329 1333])
+                            ("redis_cli" variable nil (reparse-symbol function_parameters) [1335 1344])
+                            ("data" variable nil (reparse-symbol function_parameters) [1346 1350]))                          )
+                        (reparse-symbol indented_block_body) [1309 2080])
+                    ("_charge_process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2105 2109])
+                            ("redis_cli" variable nil (reparse-symbol function_parameters) [2111 2120])
+                            ("data" variable nil (reparse-symbol function_parameters) [2122 2126]))                          )
+                        (reparse-symbol indented_block_body) [2085 3399]))                  
+                :type "class")
+                nil [260 3399])
+            ("get_sign" function (:arguments 
+              ( ("params" variable nil (reparse-symbol function_parameters) [3414 3420])
+                ("private_key" variable nil (reparse-symbol function_parameters) [3422 3433]))              ) nil [3401 3831]))          
+      :file "android_ad_callback_obsever.py"
+      :pointmax 3831
+      :fsize 3942
+      :lastmodtime '(22509 54284 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!drwrong!mywork!domob!luckydraw_project!dbb_sensorsend!lib!observers!ad_callback_observer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

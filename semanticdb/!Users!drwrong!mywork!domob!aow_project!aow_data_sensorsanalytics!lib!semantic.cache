@@ -1,0 +1,68 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables
+  (list
+    (semanticdb-table "data_sensors.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [48 62])
+            ("sys" include nil nil [63 73])
+            ("Queue" include nil nil [74 86])
+            ("signal" include nil nil [87 100])
+            ("django.conf" include nil nil [102 134])
+            ("domob_thrift.aow.event" include nil nil [135 181])
+            ("thrift.transport" include nil nil [183 219])
+            ("thrift.transport" include nil nil [220 259])
+            ("thrift.protocol" include nil nil [260 303])
+            ("thrift.server" include nil nil [304 337])
+            ("server.handler" include nil nil [339 373])
+            ("DataSensors" type
+               (:documentation "
+        启动服务
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [464 521])
+                            ("signal" code nil (reparse-symbol indented_block_body) [578 626]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [449 453]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [436 627])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [640 644]))                          
+                        :documentation "
+            多线程server，每来一个请求都会fork一个子线程去处理
+            当上游使用TThriftClientPool来发送数据时，建立的是长链接
+
+            子线程设为守护线程，当主线程接收到kill -15信号时，子线程直接挂掉
+            不然子线程一直停不掉，除非上游模块停掉或者kill -9 主线程，关闭长链接
+
+            这里会丢失一部分数据，数据大小只要依赖于上游模块pool的大小
+        ")
+                        (reparse-symbol indented_block_body) [632 1686])
+                    ("handleSignal" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1708 1712])
+                            ("sig" variable nil (reparse-symbol function_parameters) [1714 1717])
+                            ("frame" variable nil (reparse-symbol function_parameters) [1719 1724]))                          
+                        :documentation "
+        接收到停止信号，进行一次flush再exit
+        ")
+                        (reparse-symbol indented_block_body) [1691 1882]))                  
+                :type "class")
+                nil [376 1882]))          
+      :file "data_sensors.py"
+      :pointmax 1882
+      :fsize 2207
+      :lastmodtime '(22701 13115 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 1596 . 1686) (NEWLINE 1595 . 1596) (COLON 1594 . 1595) (TRY 1448 . 1451) (AS 1588 . 1590))))
+  :file "!Users!drwrong!mywork!domob!aow_project!aow_data_sensorsanalytics!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
